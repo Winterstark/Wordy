@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Wordy.exe" version="0.8.0.1" publicKeyToken="eec35f7e4b39cbf1" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="wordy.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Wordy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Wordy.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrNet.dll" size="344064">
+      <assemblyIdentity name="FlickrNet" version="3.4.0.0" publicKeyToken="2491DF59EFA5D132" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>6UGpATqR5E9ae1e7HkCl7Lgcr+A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenericForms.dll" size="24064">
+      <assemblyIdentity name="GenericForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EubDRuBFic5G2b27Hqi2uvLFzpo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hammock.ClientProfile.dll" size="193536">
+      <assemblyIdentity name="Hammock.ClientProfile" version="1.0.0.0" publicKeyToken="C148CFBA29ED1A4D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xAgK50Ph7lrYc1/Ntcm4E7MAaOQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="340480">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+H+C3eL5+4jZ4rcBZQEjGg5dQyM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NikSharp.ClientProfile.dll" size="60416">
+      <assemblyIdentity name="NikSharp.ClientProfile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>d6SdDNHQKPqLBDaBmCp5ovE2UwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="466432">
+      <assemblyIdentity name="Wordy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WoZG9Wl2iujr2Lsemb60u++FhOU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Wordy.exe.config" size="144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cpzNzlRjZspwKGLNlX6RAlU3880=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wordy.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oML7ZOeRCB4f+YE92Ik7cL+mZg8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Winterlap\Winterstark" issuerKeyHash="0fa0d668618640af5138d57a010395ed07c3d05b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>0FFojvven9j8zZkP+0qzgjt6Kq4=</DigestValue></Reference></SignedInfo><SignatureValue>YyhiSJNXiIeXV9Y0ow7v6LucEuUhWz6WmHf/MD71yzIQnL1sa2kAY8VI+ncH6e2ZnwR6sEeCXMklFAPJYKdLtKjpHOVhgh8DT307a/34EYazI31VShTBBCsVLRJCRw9RWPUxlioyckX32SGinMAWP0AWAv+W81pc0dTBwykKVDU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sevIgILOUjzZ794X1f6x3MYFoDEXdsLoIqIp0OWSc1QCa7W7wu3YGQvbQJMB7WqQCvaSF3U7oe1+hApASmOGqs+jgsEdbQue2p9mECx6H04/etYnWQnpLf8VWscj8vkn2YKIzF+FFZ2BUGBi6ccgpKIRXmJo/myfdzfD1EJ+MEU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ae2a7a3b82b34afb0f99cdfcd89fdefb8e6851d0" Description="" Url=""><as:assemblyIdentity name="Wordy.exe" version="0.8.0.1" publicKeyToken="eec35f7e4b39cbf1" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Winterlap\Winterstark</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>c4sJBNcTUsUGRDQQsGA/msxMl2Q=</DigestValue></Reference></SignedInfo><SignatureValue>cK04fCQwJGMUC00Aj4cUmeKe3Lng7D0lzkrWf03saK7y/9J5hgVUNxEyYrjjvlkKigjenUGnUiTI3E7Fs6gMM6DB1Rzrc1u+fRYgxbahr1CNpOd7ojHt44RqJQkjKwAPyHn/qW13+/pQsFFCJxUGFawOx2D7BL0h+semEyboqjI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sevIgILOUjzZ794X1f6x3MYFoDEXdsLoIqIp0OWSc1QCa7W7wu3YGQvbQJMB7WqQCvaSF3U7oe1+hApASmOGqs+jgsEdbQue2p9mECx6H04/etYnWQnpLf8VWscj8vkn2YKIzF+FFZ2BUGBi6ccgpKIRXmJo/myfdzfD1EJ+MEU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQHj20sf/N059FAnCI9QeAazANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioAVwBpAG4AdABlAHIAbABhAHAAXABXAGkAbgB0AGUAcgBzAHQAYQByAGswHhcNMTQwMTIyMTk0NjU4WhcNMTUwMTIzMDE0NjU4WjA1MTMwMQYDVQQDHioAVwBpAG4AdABlAHIAbABhAHAAXABXAGkAbgB0AGUAcgBzAHQAYQByAGswgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALHryICCzlI82e/eF9X+sdzGBaAxF3bC6CKiKdDlknNUAmu1u8Lt2BkL20CTAe1qkAr2khd1O6HtfoQKQEpjhqrPo4LBHW0LntqfZhAseh9OP3rWJ1kJ6S3/FVrHI/L5J9mCiMxfhRWdgVBgYunHIKSiEV5iaP5sn3c3w9RCfjBFAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAWhYRn/l7G5DEWc3tO47ewk3+Yf3NfZKOb+c4XqYzUigRAHF8RlGi1KA/W3G+krZlQcEhJVXa/PaW7WBYmfqRqP7mGxvOctyJ9ywznFRNjJjuMCHJ6xXIbbe39XE1MUSzCfvyHXFhxwWlTWUPSh0SpqqsOQA/1u11kZfr5ftyzlo=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

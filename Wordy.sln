@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordy", "Wordy\Wordy.csproj", "{EB3BA20C-1C15-4BE7-932A-97914EC6D338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3BA20C-1C15-4BE7-932A-97914EC6D338}.Debug|x86.ActiveCfg = Debug|x86
+		{EB3BA20C-1C15-4BE7-932A-97914EC6D338}.Debug|x86.Build.0 = Debug|x86
+		{EB3BA20C-1C15-4BE7-932A-97914EC6D338}.Release|x86.ActiveCfg = Release|x86
+		{EB3BA20C-1C15-4BE7-932A-97914EC6D338}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

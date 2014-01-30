@@ -1,0 +1,8 @@
+noun->n.
+verb-intransitive->v.-i.
+verb-transitive->v.-t.
+verb->v.
+adjective->adj.
+preposition->prep.
+interjection->interj.
+phrasal->phras.

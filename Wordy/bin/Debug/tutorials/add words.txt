@@ -1,0 +1,13 @@
+"Enter words you wish to add here, one word per line.\nYou can enter a word (or more) now to help you follow the tutorial more closely."->[textNewWords]
+"Click here to begin the search, which usually takes several seconds (a bit more if visuals are enabled)."->(buttFindDefs)
+"All recognized words will be transfered to this column. Clicking on a word will show its definition and, if available, visuals that were found for that word."->[listFoundWords]
+"You can edit a word's definition here, removing parts of it or adding your own definitions. One definition per line."->[textDef]
+"Note that some words are colored in blue - these are keywords that are crucial to a word's definition. Words colored in black are ignored during testing."->[textDef]*You can change whether a word is considered a keyword or not by selecting it, right-clicking to display the context menu and then selecting the 'Toggle keyword' option.
+"Also note that parts of the definition that are enclosed within parentheses or quotes are ignored during testing."->[textDef]*Besides manually adding parentheses or quotes to a definition, you can just select a part of text, right-click to display the context menu and then select an option to surround the selected text with parentheses or quotes.
+"Click this button to save any changes you have made."->(buttUpdateDef)
+"This button opens the Wordnik website for the selected word."->(buttOpenWordnik)
+"Each word can have up to 6 visuals associated with it. Their thumbnails are shown here; mousing over them will display them in full size."->[picThumbnails]*Left click on them to open their source Flickr page.
+"If you aren't satisfied with a visual you can remove it by right-clicking on its thumbnail."->picThumbnails
+"Click here to load more visuals."->(buttLoadMoreVisuals)
+"Click here to reset any changes you made to the visual content and display the original 6 images."->(buttReloadVisuals)
+"When you are satisfied with the definitions and visuals of all recognized words, click this button to save them all."->(buttAcceptWords)
