@@ -24,9 +24,25 @@ Wordy has a built-in tutorial that will inform you about the process of adding w
 
 ### Learning words
 
-~~asdf~~
+To learn a word you will have to solve seven tests about it, each more difficult than the last:
+1. Select the correct word (from 6 random words)
+2. Select the correct word (from 6 words that sound very much the same)
+3. Type the word
+4. Fill out missing keywords in the word's definitions (one keyword per definition)
+5. Fill out approx. half the missing keywords per definition
+6. Fill out all of the keywords in the definitions
+
+The release version of Wordy has several words set in various stages of learning, so you can see how these tests look. You can delete these words in Options.
+
+Although this may seem overkill, the point of having so many tests (which become somewhat difficult near the end) is to help the user learn the word thoroughly. Many vocabulary services are much less demanding of their students, but their end result is also much less comprehensive and not as lasting. That is why Wordy is designed for either students that already have a good grasp of English, or native speakers that want to increase their vocabulary.
+
+Note: after a word has been tested, it will not show up again until 24 hours pass.
 
 ### Remembering learned words
+
+~~asdf~~
+
+### Word of the day subscriptions
 
 ~~asdf~~
 
