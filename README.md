@@ -39,19 +39,18 @@ Wordy has a built-in tutorial that will inform you about the process of adding w
 To learn a word you will have to solve six tests about it, each more difficult than the last:
 
 1. Select the correct word (from 6 random words)
-
-![Screenshot: test type 1](http://i.imgur.com/DogST6y.png)
-
 2. Select the correct word (from 6 words that sound very much the same)
 3. Type the word
-
-![Screenshot: test type 1](http://i.imgur.com/HtWv1OA.png)
-
 4. Fill out missing keywords in the word's definitions (one keyword per definition)
 5. Fill out approx. half the missing keywords per definition
 6. Fill out all of the keywords in the definitions
 
-![Screenshot: test type 1](http://i.imgur.com/PkSxPql.png) [Screenshot: test type 1](http://i.imgur.com/ZQjWR6Y.png)
+![Screenshot: test type 1](http://i.imgur.com/DogST6y.png)
+
+![Screenshot: test type 1](http://i.imgur.com/HtWv1OA.png)
+
+![Screenshot: test type 1](http://i.imgur.com/PkSxPql.png) ![Screenshot: test type 1](http://i.imgur.com/ZQjWR6Y.png)
+
 
 The release version of Wordy has several words set in various stages of learning, so you can see how these tests look. You can delete these words in Options.
 
