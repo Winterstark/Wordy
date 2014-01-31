@@ -1,7 +1,15 @@
 Wordy
 =====
 
-~intro todo~
+Wordy is a Windows program that helps users expand their English vocabulary.
+
+What sets it apart from the other vocabulary-learning software?
+
+- You can add any word you want to learn and Wordy will generate many different types of questions and tests around that word.
+- At first, these tests are simple (e.g. choose the correct word), but later on they involve filling out multiple definitions, which is what makes Wordy more suited for advanced students.
+- Besides definitions words can have images associated with them to help with the learning process.
+- After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but using a different set of question types.
+- Wordy also supports word of the day subscriptions, which are an easy way to discover new words.
 
 
 Installation
@@ -55,9 +63,10 @@ If you fail a test then the word becomes "unlearned" again; answer correctly and
 
 ### Word of the day subscriptions
 
-You can add multiple WotD subscriptions in the Options menu. A subscription consists of a name and a valid RSS address.
+Wordy comes with several WotD subscriptions; you can disable or delete them in Options, as well as add new ones. To add a new subscription you need a valid RSS address.
 
-Wordy comes with several WotD subscriptions, which you can disable or delete in Options.
+Once a day Wordy will check the subscriptions and if there are any updates a new button will appear in the main menu. Clicking on that button will open the Add Words window where the new WotD's will be shown for the user to edit the definitions and reject or accepts them.
+
 
 Alternate way of adding words
 -------------------------------
