@@ -109,7 +109,7 @@ Of course, you need to change the path to the "add words.vbs" script, which you 
 
 3. Open Wordy's options and set the path to that same text file in this textbox:
 
-![](http://i.imgur.com/nbJxR1P.png)
+![Screenshot: Wordy configuration](http://i.imgur.com/nbJxR1P.png)
 
 
 APIs used & other credits
