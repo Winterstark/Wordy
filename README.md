@@ -5,7 +5,7 @@ Wordy is a Windows program that helps users expand their English vocabulary.
 
 What sets it apart from the other vocabulary-learning software?
 
-- You can add any word you want to learn and Wordy will generate many different types of questions and tests around that word.
+- You can add any word you want to learn and Wordy will generate different types of questions and tests for that word.
 - At first, these tests are simple (e.g. choose the correct word), but later on they involve filling out multiple definitions, which is what makes Wordy more suited for advanced students.
 - Besides definitions words can have images associated with them to help with the learning process.
 - After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but using a different set of question types.
@@ -30,7 +30,7 @@ To add new words click on the top button and enter a list of words in the textbo
 
 ![Screenshot: adding words](http://i.imgur.com/1dQHQA7.png)
 
-I've found that usually a word will have several definitions with which I am already familiar with, so I filter those out and keep only those that I want to learn. Also, sometimes a word can have two definitions of basically the same meaning, only one of the definitions is a noun and the other is a verb (or another combination). In those instances I prefer to keep just one of the definitions.
+I've found that usually a word will have several definitions with which I am already familiar with, so I filter these out and keep only those that I want to learn. Also, sometimes a word can have two definitions of basically the same meaning: one a noun and the other a verb (or another combination). In those instances I prefer to keep just one of the definitions.
 
 Wordy has a built-in tutorial that will inform you about the process of adding words in detail.
 
@@ -39,8 +39,8 @@ Wordy has a built-in tutorial that will inform you about the process of adding w
 To learn a word you will have to solve six tests about it, each more difficult than the last:
 
 1. Select the correct word (from 6 random words)
-2. Select the correct word (from 6 words that sound very much the same)
-3. Type the word
+2. Select the correct word (from 6 words that sound very similar)
+3. Type out the word
 4. Fill out missing keywords in the word's definitions (one keyword per definition)
 5. Fill out approx. half the missing keywords per definition
 6. Fill out all of the keywords in the definitions
@@ -52,7 +52,7 @@ To learn a word you will have to solve six tests about it, each more difficult t
 ![Screenshot: test type 3](http://i.imgur.com/PkSxPql.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/ZQjWR6Y.png)
 
 
-The release version of Wordy has several words set in various stages of learning, so you can see how these tests look. You can delete these words in Options.
+The release version of Wordy has several words set in various stages of learning, so you can see how these tests look. You can delete these words in the Options.
 
 Although this may seem overkill, the point of having so many tests (which become somewhat difficult near the end) is to help the user learn the word thoroughly. Many vocabulary services are much less demanding of their students, but their end result is also much less comprehensive and not as lasting. That is why Wordy is designed for either students that already have a good grasp of English, or native speakers that want to increase their vocabulary.
 
@@ -61,7 +61,7 @@ Note: after a word has been tested, it will not show up again until 24 hours pas
 ### Remembering learned words
 
 To ensure that the words you learn remain in your long-term memory you should keep testing them with the "Test Recall of Learned Words" option. Learned words will have different types of tests, and they will be picked randomly:
-* Type the word
+* Type out the word
 * Fill in the blanks in the definitions
 * Select only the correct definitions
 * Complete the word based on its synonyms
@@ -81,9 +81,9 @@ If you fail a test then the word becomes "unlearned" again; answer correctly and
 
 ### Word of the day subscriptions
 
-Wordy comes with several WotD subscriptions; you can disable or delete them in Options, as well as add new ones. To add a new subscription you need a valid RSS address.
+Wordy comes with several WotD subscriptions; you can disable or delete them in the Options, as well as add new ones. To add a new subscription you need a valid RSS address.
 
-Once a day Wordy will check the subscriptions and if there are any updates a new button will appear in the main menu. Clicking on that button will open the Add Words window where the new WotD's will be shown for the user to edit the definitions and reject or accepts them.
+Once a day Wordy will check the subscriptions and if there are any updates a new button will appear in the main menu. Clicking on that button will open the Add Words window where the new WotD's will be shown for the user to edit the definitions and either reject or accept them.
 
 ### Options
 
