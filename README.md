@@ -37,6 +37,7 @@ Wordy has a built-in tutorial that will inform you about the process of adding w
 ### Learning words
 
 To learn a word you will have to solve six tests about it, each more difficult than the last:
+
 1. Select the correct word (from 6 random words)
 
 ![Screenshot: test type 1](http://i.imgur.com/DogST6y.png)
