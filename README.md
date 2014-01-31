@@ -85,6 +85,12 @@ Wordy comes with several WotD subscriptions; you can disable or delete them in O
 
 Once a day Wordy will check the subscriptions and if there are any updates a new button will appear in the main menu. Clicking on that button will open the Add Words window where the new WotD's will be shown for the user to edit the definitions and reject or accepts them.
 
+### Options
+
+In the options you can view a list of all the words you've added, edit their definitions, synonyms, and delete them. You can also edit word of the day subscriptions, as well as modify other general options.
+
+![Screenshot: options](http://i.imgur.com/i5TBmW4.png)
+
 
 Alternate way of adding words
 -------------------------------
