@@ -47,9 +47,9 @@ To learn a word you will have to solve six tests about it, each more difficult t
 
 ![Screenshot: test type 1](http://i.imgur.com/DogST6y.png)
 
-![Screenshot: test type 1](http://i.imgur.com/HtWv1OA.png)
+![Screenshot: test type 2](http://i.imgur.com/HtWv1OA.png)
 
-![Screenshot: test type 1](http://i.imgur.com/PkSxPql.png) ![Screenshot: test type 1](http://i.imgur.com/ZQjWR6Y.png)
+![Screenshot: test type 3](http://i.imgur.com/PkSxPql.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/ZQjWR6Y.png)
 
 
 The release version of Wordy has several words set in various stages of learning, so you can see how these tests look. You can delete these words in Options.
@@ -68,6 +68,14 @@ To ensure that the words you learn remain in your long-term memory you should ke
 * Enter the word that fits the example sentence
 * Unscramble the letters of the word
 * Recognize the word by its visuals
+
+![Screenshot: test type 1](http://i.imgur.com/nU9d5kc.png)
+
+![Screenshot: test type 1](http://i.imgur.com/CiqoWtn.png)
+
+![Screenshot: test type 1](http://i.imgur.com/p9o4pyG.png)
+
+![Screenshot: test type 1](http://i.imgur.com/E2jcbPt.png)
 
 If you fail a test then the word becomes "unlearned" again; answer correctly and the word will be avaiable for testing again in a week. After each successful test the length of time before the next test increases by a week.
 
