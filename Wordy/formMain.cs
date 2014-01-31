@@ -218,7 +218,7 @@ namespace Wordy
             for (int i = 0; i < prefs.UpdateNotifs; i++)
                 askPermissions[i] = false;
 
-            Updater.Update(0.95, "https://docs.google.com/document/pub?id=11hVN4KxQ1WTqQVAy2DvQZ889uBr_DvLFsn1pb0zgeP8", askPermissions, prefs.ShowChangelog);
+            Updater.Update(1.0, "https://raw2.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
         }
 
         private void formMain_Activated(object sender, EventArgs e)

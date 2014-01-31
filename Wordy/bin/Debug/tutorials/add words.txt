@@ -1,3 +1,4 @@
+SKIP
 "Enter words you wish to add here, one word per line.\nYou can enter a word (or more) now to help you follow the tutorial more closely."->[textNewWords]
 "Click here to begin the search, which usually takes several seconds (a bit more if visuals are enabled)."->(buttFindDefs)
 "All recognized words will be transfered to this column. Clicking on a word will show its definition and, if available, visuals that were found for that word."->[listFoundWords]

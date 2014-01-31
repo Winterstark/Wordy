@@ -1,20 +1,20 @@
 Merriam-Webster
 http://www.merriam-webster.com/word/index.xml
 True
-passim
+aerie
 The Free Dictionary
 http://www.thefreedictionary.com/_/WoD/rss.aspx
 True
-malleable
+situated
 A.Word.A.Day
 http://wordsmith.org/awad/rss1.xml
 True
-lallygag
+bumfuzzle
 Dictionary.com
 http://dictionary.reference.com/wordoftheday/wotd.rss
 True
-sessile: Dictionary.com Word of the Day
+boffin: Dictionary.com Word of the Day
 Yahoo! Education: Word of the Day
 http://xml.education.yahoo.com/rss/wotd/
-False
-tedium - August 29, 2013
+True
+tedium - January 31, 2014

@@ -345,7 +345,7 @@ namespace Wordy
                             lblDef.Text = "What word has these synonyms?";
                             mtbTestWord.Text = "";
                             mtbTestWord.Top = 17;
-
+                                
                             //reveal every other letter
                             mask = createMask();
                             offset = 0;
