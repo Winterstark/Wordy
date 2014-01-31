@@ -19,7 +19,9 @@ Usage
 ### Adding words
 
 To add new words click on the top button and enter a list of words in the textbox. After the definitions have been found you can edit them, and you probably should too.
+
 I've found that usually a word will have several definitions with which I am already familiar with, so I filter those out and keep only those that I want to learn. Also, sometimes a word can have two definitions of basically the same meaning, only one of the definitions is a noun and the other is a verb (or another combination). In those instances I prefer to keep just one of the definitions.
+
 Wordy has a built-in tutorial that will inform you about the process of adding words in detail.
 
 ### Learning words
@@ -40,12 +42,22 @@ Note: after a word has been tested, it will not show up again until 24 hours pas
 
 ### Remembering learned words
 
-~~asdf~~
+To ensure that the words you learn remain in your long-term memory you should keep testing them with the "Test Recall of Learned Words" option. Learned words will have different types of tests, and they will be picked randomly:
+* Type the word
+* Fill in the blanks in the definitions
+* Select only the correct definitions
+* Complete the word based on its synonyms
+* Enter the word that fits the example sentence
+* Unscramble the letters of the word
+* Recognize the word by its visuals
+
+If you fail a test then the word becomes "unlearned" again; answer correctly and the word will be avaiable for testing again in a week. After each successful test the length of time before the next test increases by a week.
 
 ### Word of the day subscriptions
 
-~~asdf~~
+You can add multiple WotD subscriptions in the Options menu. A subscription consists of a name and a valid RSS address.
 
+Wordy comes with several WotD subscriptions, which you can disable or delete in Options.
 
 Alternate way of adding words
 -------------------------------
