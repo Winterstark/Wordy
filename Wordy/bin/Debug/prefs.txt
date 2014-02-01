@@ -1,5 +1,5 @@
 True
-31.1.2014. 16:11:38
+2014-02-01 15:21
 False
 C:\dev\projex\Wordy\Wordy\bin\Debug\newwords.txt
 1

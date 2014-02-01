@@ -72,8 +72,9 @@
     <Reference Include="FlickrNet">
       <HintPath>FlickrNet-3.4.0\FlickrNet.dll</HintPath>
     </Reference>
-    <Reference Include="GenericForms">
-      <HintPath>..\..\GenericForms\GenericForms\bin\Release\GenericForms.dll</HintPath>
+    <Reference Include="GenericForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>GenericForms\GenericForms.dll</HintPath>
     </Reference>
     <Reference Include="Hammock.ClientProfile">
       <HintPath>Client Profile\Hammock.ClientProfile.dll</HintPath>
@@ -101,6 +102,12 @@
   <ItemGroup>
     <Compile Include="classMisc.cs" />
     <Compile Include="classTypes.cs" />
+    <Compile Include="formAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAbout.Designer.cs">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="formAddWords.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +134,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAbout.resx">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formAddWords.resx">
       <DependentUpon>formAddWords.cs</DependentUpon>
     </EmbeddedResource>

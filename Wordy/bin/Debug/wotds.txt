@@ -1,11 +1,11 @@
 Merriam-Webster
 http://www.merriam-webster.com/word/index.xml
 True
-aerie
+pusillanimous
 The Free Dictionary
 http://www.thefreedictionary.com/_/WoD/rss.aspx
 True
-situated
+avowal
 A.Word.A.Day
 http://wordsmith.org/awad/rss1.xml
 True
@@ -13,8 +13,8 @@ bumfuzzle
 Dictionary.com
 http://dictionary.reference.com/wordoftheday/wotd.rss
 True
-boffin: Dictionary.com Word of the Day
+galligaskins: Dictionary.com Word of the Day
 Yahoo! Education: Word of the Day
 http://xml.education.yahoo.com/rss/wotd/
 True
-tedium - January 31, 2014
+tedium - February 1, 2014

@@ -15,6 +15,8 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
+        const double VERSION = 1.0;
+
         List<Entry> words;
         public List<WordOfTheDay> wotds;
         public Preferences prefs;
@@ -218,7 +220,7 @@ namespace Wordy
             for (int i = 0; i < prefs.UpdateNotifs; i++)
                 askPermissions[i] = false;
 
-            Updater.Update(1.0, "https://raw2.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
+            Updater.Update(VERSION, "https://raw2.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
         }
 
         private void formMain_Activated(object sender, EventArgs e)
@@ -260,6 +262,20 @@ namespace Wordy
             wordlist.wotds = wotds;
 
             wordlist.Show();
+            this.Hide();
+        }
+
+        private void buttAbout_Click(object sender, EventArgs e)
+        {
+            formAbout about = new formAbout();
+
+            about.main = this;
+            
+            about.lblVersion.Text = "v" + VERSION;
+            if (!about.lblVersion.Text.Contains("."))
+                about.lblVersion.Text += ".0";
+
+            about.Show();
             this.Hide();
         }
         

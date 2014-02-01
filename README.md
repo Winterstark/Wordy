@@ -1,4 +1,4 @@
-Wordy
+﻿Wordy
 =====
 
 Wordy is a Windows program that helps users expand their English vocabulary.
@@ -119,4 +119,4 @@ APIs used & other credits
 * Word visuals: [Flickr API](http://www.flickr.com/services/api/)
 * Word rhymes: [RhymeBrain](http://rhymebrain.com/)
 * Book icon by ~XTUX345 @ [deviantART](http://xtux345.deviantart.com/art/Elements-of-Harmony-Dictionary-Icon-280443607?q=boost%3Apopular%20dictionary%20icon&qo=9)
-* Checkmarck graphics: [psdGraphics](http://www.psdgraphics.com/psd-icons/psd-check-and-cross-icons/)
+* Checkmark graphics: [psdGraphics](http://www.psdgraphics.com/psd-icons/psd-check-and-cross-icons/)

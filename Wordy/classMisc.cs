@@ -132,6 +132,16 @@ namespace Wordy
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
+        public static string ToUniversalString(DateTime dt)
+        {
+            return dt.ToString("yyyy-MM-dd HH:mm");
+        }
+
+        //public static DateTime FromUniversalString(string s)
+        //{
+        //    return DateTime.ParseExact(s, "yyyy-MM-dd HH:mm", null);
+        //}
+
         static void appendText(RichTextBox textDef, string txt, bool keyword)
         {
             textDef.SelectionColor = keyword ? Color.Blue : Color.Black;

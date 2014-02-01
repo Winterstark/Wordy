@@ -355,7 +355,7 @@ namespace Wordy
 
             txt += Environment.NewLine;
 
-            txt += created.ToString() + Environment.NewLine + learned.ToString() + Environment.NewLine + lastTest.ToString() + Environment.NewLine + nextTest.ToString() + Environment.NewLine + learningPhase.ToString() + Environment.NewLine + nStudyAttempts.ToString() + Environment.NewLine + nRecallAttempts.ToString() + Environment.NewLine + nRecallSuccesses.ToString() + Environment.NewLine + archived.ToString() + Environment.NewLine + "</entry>" + Environment.NewLine;
+            txt += Misc.ToUniversalString(created) + Environment.NewLine + Misc.ToUniversalString(learned) + Environment.NewLine + Misc.ToUniversalString(lastTest) + Environment.NewLine + Misc.ToUniversalString(nextTest) + Environment.NewLine + learningPhase.ToString() + Environment.NewLine + nStudyAttempts.ToString() + Environment.NewLine + nRecallAttempts.ToString() + Environment.NewLine + nRecallSuccesses.ToString() + Environment.NewLine + archived.ToString() + Environment.NewLine + "</entry>" + Environment.NewLine;
 
             return txt;
         }
@@ -579,7 +579,7 @@ namespace Wordy
         {
             StreamWriter fWrtr = new StreamWriter("prefs.txt");
             fWrtr.WriteLine(AutoVisuals.ToString());
-            fWrtr.WriteLine(LastFeedCheck.ToString());
+            fWrtr.WriteLine(Misc.ToUniversalString(LastFeedCheck));
             fWrtr.WriteLine(NewWotDs.ToString());
             fWrtr.WriteLine(NewWordsPath);
             fWrtr.WriteLine(UpdateNotifs.ToString());

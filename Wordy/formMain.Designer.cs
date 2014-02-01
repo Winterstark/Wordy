@@ -34,6 +34,7 @@
             this.buttOptions = new System.Windows.Forms.Button();
             this.buttNewWotD = new System.Windows.Forms.Button();
             this.lblCheckingWotDs = new System.Windows.Forms.Label();
+            this.buttAbout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttAdd
@@ -94,19 +95,30 @@
             this.lblCheckingWotDs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCheckingWotDs.Location = new System.Drawing.Point(0, 0);
             this.lblCheckingWotDs.Name = "lblCheckingWotDs";
-            this.lblCheckingWotDs.Size = new System.Drawing.Size(181, 256);
+            this.lblCheckingWotDs.Size = new System.Drawing.Size(181, 282);
             this.lblCheckingWotDs.TabIndex = 5;
             this.lblCheckingWotDs.Text = "Checking for new Words of the Day\r\nPlease wait a moment...";
             this.lblCheckingWotDs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCheckingWotDs.Visible = false;
             // 
+            // buttAbout
+            // 
+            this.buttAbout.Location = new System.Drawing.Point(21, 247);
+            this.buttAbout.Name = "buttAbout";
+            this.buttAbout.Size = new System.Drawing.Size(138, 23);
+            this.buttAbout.TabIndex = 3;
+            this.buttAbout.Text = "About";
+            this.buttAbout.UseVisualStyleBackColor = true;
+            this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(181, 256);
+            this.ClientSize = new System.Drawing.Size(181, 282);
             this.Controls.Add(this.lblCheckingWotDs);
             this.Controls.Add(this.buttNewWotD);
+            this.Controls.Add(this.buttAbout);
             this.Controls.Add(this.buttOptions);
             this.Controls.Add(this.buttRecall);
             this.Controls.Add(this.buttStudyWords);
@@ -130,6 +142,7 @@
         private System.Windows.Forms.Button buttOptions;
         private System.Windows.Forms.Button buttNewWotD;
         private System.Windows.Forms.Label lblCheckingWotDs;
+        private System.Windows.Forms.Button buttAbout;
     }
 }
 

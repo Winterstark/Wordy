@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>APXUU8TwmdvTizZHNxPz38FwKEc=</dsig:DigestValue>
+        <dsig:DigestValue>zJ0LM9qu/PlgHXmUy/B7CZlNHVs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="466432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="472576">
       <assemblyIdentity name="Wordy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>J+kSTrncgz+si3BphMYb6l52dNE=</dsig:DigestValue>
+        <dsig:DigestValue>mYxSudCDbLaxVpqsJZwO9BMTFi8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
