@@ -3,7 +3,7 @@
 
 Wordy is a Windows program that helps users expand their English vocabulary.
 
-What sets it apart from the other vocabulary-learning software?
+What sets it apart from other vocabulary-learning software?
 
 - You can add any word you want to learn and Wordy will generate different types of questions and tests for that word.
 - At first, these tests are simple (e.g. choose the correct word), but later on they involve filling out multiple definitions, which is what makes Wordy more suited for advanced students.
