@@ -55,7 +55,7 @@ namespace Wordy
             chklistDefs.Size = new Size(this.Width - 80, this.Height - 120);
             chklistDefs.Height = 22 * chklistDefs.Items.Count;
 
-            if (mtbDefs != null)
+            if (mtbDefs != null && mtbDefs.Count > 0)
             {
                 foreach (MaskedTextBox mtbDef in mtbDefs)
                     mtbDef.Width = this.Width - 60;
@@ -329,8 +329,10 @@ namespace Wordy
                             }
 
                             chklistDefs.Items.Clear();
+                            int ind = 1;
+
                             foreach (string d in defs)
-                                chklistDefs.Items.Add(d);
+                                chklistDefs.Items.Add(ind++ + ".  " + d);
 
                             chklistDefs.Height = 22 * chklistDefs.Items.Count;
                             buttFinished.Top = chklistDefs.Top + chklistDefs.Height + 16;
@@ -352,7 +354,6 @@ namespace Wordy
 
                             for (int i = 2; i < testWord.ToString().Length; i += 2)
                             {
-                                //offset += (mask[i - 2] == '\\' ? 1 : 0) + (mask[i - 1] == '\\' ? 1 : 0);
                                 offset += (mask[i + offset - 2] == '\\' ? 1 : 0) + (mask[i + offset - 1] == '\\' ? 1 : 0);
 
                                 mask = mask.Remove(i + offset, 1);
@@ -384,7 +385,6 @@ namespace Wordy
                             
                             for (int i = 1; i < testWord.ToString().Length; i++)
                             {
-                                //offset += mask[i - 1] == '\\' ? 1 : 0;
                                 offset += mask[i + offset - 1] == '\\' ? 1 : 0;
 
                                 if (testWord.ToString()[i] == 'a' || testWord.ToString()[i] == 'e' || testWord.ToString()[i] == 'i' || testWord.ToString()[i] == 'o' || testWord.ToString()[i] == 'u' || testWord.ToString()[i] == 'y')
@@ -999,8 +999,15 @@ namespace Wordy
         {
             if (e.KeyValue == 13 && picWrong.Visible && !timerProgressChange.Enabled && !buttNext.Visible) //enter
                 nextWord();
-            else if (buttPickWord1.Visible && char.IsDigit((char)e.KeyData))
-                answer(correctPick == (char)e.KeyData - 49);
+            else if (char.IsDigit((char)e.KeyData))
+            {
+                int num = (char)e.KeyData - 49;
+
+                if (buttPickWord1.Visible)
+                    answer(correctPick == num);
+                else if (num >= 0 && num < chklistDefs.Items.Count)
+                    chklistDefs.SetItemChecked(num, !chklistDefs.GetItemChecked(num));
+            }
         }
 
         private void lblVisualTrigger_MouseEnter(object sender, EventArgs e)
@@ -1026,6 +1033,14 @@ namespace Wordy
                 buttFinished.Visible = false;
                 chklistDefs.Visible = false;
 
+                //remove indices from the items
+                for (int i = 0; i < chklistDefs.Items.Count; i++)
+                {
+                    string item = chklistDefs.Items[i].ToString();
+                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3);
+                }
+
+                //check answers
                 for (int i = 0; i < chklistDefs.Items.Count; i++)
                     if (chklistDefs.GetItemChecked(i) != testWord.GetDefinition().Contains(chklistDefs.Items[i].ToString()))
                     {
@@ -1135,6 +1150,11 @@ namespace Wordy
                 answer(checkEnteredWord(mtbTestWord.Text));
                 e.Handled = true;
             }
+        }
+
+        private void chklistDefs_KeyDown(object sender, KeyEventArgs e)
+        {
+            formTestRecall_KeyDown(sender, e);
         }
     }
 }

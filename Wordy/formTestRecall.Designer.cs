@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelDef = new System.Windows.Forms.Panel();
-            this.chklistDefs = new System.Windows.Forms.CheckedListBox();
             this.picVisual = new System.Windows.Forms.PictureBox();
+            this.buttSkip = new System.Windows.Forms.Button();
+            this.chklistDefs = new System.Windows.Forms.CheckedListBox();
             this.buttFinished = new System.Windows.Forms.Button();
             this.lblSynonyms = new System.Windows.Forms.Label();
             this.lblVisualTrigger = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.rtbDef = new System.Windows.Forms.RichTextBox();
             this.lblDef = new System.Windows.Forms.Label();
             this.mtbTestWord = new System.Windows.Forms.MaskedTextBox();
-            this.buttSkip = new System.Windows.Forms.Button();
             this.buttAnotherExample = new System.Windows.Forms.Button();
             this.panelTestWord = new System.Windows.Forms.Panel();
             this.textTestWord = new System.Windows.Forms.TextBox();
@@ -86,6 +86,28 @@
             this.panelDef.TabIndex = 6;
             this.panelDef.Visible = false;
             // 
+            // picVisual
+            // 
+            this.picVisual.Location = new System.Drawing.Point(17, 63);
+            this.picVisual.Name = "picVisual";
+            this.picVisual.Size = new System.Drawing.Size(720, 480);
+            this.picVisual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picVisual.TabIndex = 7;
+            this.picVisual.TabStop = false;
+            this.picVisual.Visible = false;
+            // 
+            // buttSkip
+            // 
+            this.buttSkip.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttSkip.Location = new System.Drawing.Point(220, 295);
+            this.buttSkip.Name = "buttSkip";
+            this.buttSkip.Size = new System.Drawing.Size(196, 43);
+            this.buttSkip.TabIndex = 13;
+            this.buttSkip.Text = "Skip question";
+            this.buttSkip.UseVisualStyleBackColor = true;
+            this.buttSkip.Visible = false;
+            this.buttSkip.Click += new System.EventHandler(this.buttSkip_Click);
+            // 
             // chklistDefs
             // 
             this.chklistDefs.BackColor = System.Drawing.SystemColors.Control;
@@ -98,16 +120,7 @@
             this.chklistDefs.Size = new System.Drawing.Size(71, 22);
             this.chklistDefs.TabIndex = 22;
             this.chklistDefs.Visible = false;
-            // 
-            // picVisual
-            // 
-            this.picVisual.Location = new System.Drawing.Point(17, 63);
-            this.picVisual.Name = "picVisual";
-            this.picVisual.Size = new System.Drawing.Size(720, 480);
-            this.picVisual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picVisual.TabIndex = 7;
-            this.picVisual.TabStop = false;
-            this.picVisual.Visible = false;
+            this.chklistDefs.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chklistDefs_KeyDown);
             // 
             // buttFinished
             // 
@@ -220,18 +233,6 @@
             this.mtbTestWord.TabIndex = 21;
             this.mtbTestWord.Visible = false;
             this.mtbTestWord.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbTestWord_KeyPress);
-            // 
-            // buttSkip
-            // 
-            this.buttSkip.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttSkip.Location = new System.Drawing.Point(220, 295);
-            this.buttSkip.Name = "buttSkip";
-            this.buttSkip.Size = new System.Drawing.Size(196, 43);
-            this.buttSkip.TabIndex = 13;
-            this.buttSkip.Text = "Skip question";
-            this.buttSkip.UseVisualStyleBackColor = true;
-            this.buttSkip.Visible = false;
-            this.buttSkip.Click += new System.EventHandler(this.buttSkip_Click);
             // 
             // buttAnotherExample
             // 
