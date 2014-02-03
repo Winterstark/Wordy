@@ -69,13 +69,15 @@ To ensure that the words you learn remain in your long-term memory you should ke
 * Unscramble the letters of the word
 * Recognize the word by its visuals
 
+When testing learned words, some minor mistakes are ignored. If you forget to use a diacritic mark or a hyphen, your answer will still be correct. Also, synonyms of the requested word will also be accepted.
+
 ![Screenshot: test type 1](http://i.imgur.com/nU9d5kc.png)
 
-![Screenshot: test type 1](http://i.imgur.com/CiqoWtn.png)
+![Screenshot: test type 2](http://i.imgur.com/CiqoWtn.png)
 
-![Screenshot: test type 1](http://i.imgur.com/p9o4pyG.png)
+![Screenshot: test type 3](http://i.imgur.com/p9o4pyG.png)
 
-![Screenshot: test type 1](http://i.imgur.com/E2jcbPt.png)
+![Screenshot: test type 4](http://i.imgur.com/E2jcbPt.png)
 
 If you fail a test then the word becomes "unlearned" again; answer correctly and the word will be avaiable for testing again in a week. After each successful test the length of time before the next test increases by a week.
 
