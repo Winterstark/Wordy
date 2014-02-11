@@ -155,15 +155,54 @@ namespace Wordy
             return randWords;
         }
 
-        public List<string> GetRandDefs(int n)
+        public List<string> GetRandDefs(int n, string ignoreWord)
         {
+            //create a list of words from which definitions can be taken
+            List<string> availableWords = new List<string>();
+
+            foreach (Entry word in words)
+                if (word.ToString() != ignoreWord)
+                    availableWords.Add(word.ToString());
+
+            //create a list of backup definitions (in case there are not enough words in Wordy's archive to fulfill the request)
+            List<string> randDefs = new List<string>();
+
+            randDefs.Add("(n.) Confused, rambling, or incoherent discourse; nonsense.");
+            randDefs.Add("(n.) A sneaker or rubber overshoe.");
+            randDefs.Add("(adj.) Heavy with or as if with moisture or water.");
+            randDefs.Add("(adj.) Catlike; stealthy.");
+            randDefs.Add("(adv.) without partiality; fairly.");
+            randDefs.Add("(adv.) From side to side; crosswise or transversely.");
+            randDefs.Add("(v.) To censure scathingly.");
+            randDefs.Add("(v.) To complain or protest with great hostility.");
+            randDefs.Add("(n.) A calculated move.");
+            randDefs.Add("(n.) A piece of wood driven into a wall to act as an anchor for nails.");
+
+            //grab random definitions
             Random rand = new Random((int)DateTime.Now.Ticks);
             List<string> defs = new List<string>();
+            int ind;
 
             for (int i = 0; i < n; i++)
             {
-                string[] defList = words[rand.Next(words.Count)].GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Where(d => d[0] != '"').ToArray();
-                defs.Add(defList[rand.Next(defList.Length)]);
+                if (availableWords.Count > 0)
+                {
+                    //take 1 definition per word
+                    ind = rand.Next(availableWords.Count);
+
+                    string[] defList = words.Find(w => w.ToString() == availableWords[ind]).GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Where(d => d[0] != '"').ToArray();
+                    defs.Add(defList[rand.Next(defList.Length)]);
+
+                    availableWords.RemoveAt(ind);
+                }
+                else
+                {
+                    //take a definition from the backup defs
+                    ind = rand.Next(randDefs.Count);
+
+                    defs.Add(randDefs[ind]);
+                    defs.RemoveAt(ind);
+                }
             }
 
             return defs;

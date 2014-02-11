@@ -30,7 +30,6 @@ namespace Wordy
         List<string> corewords = new List<string>();
         string[] exampleSentences;
         bool[] answCorrectly;
-        
         WordnikService wordnik;
 
 
@@ -319,7 +318,7 @@ namespace Wordy
                             for (int i = rand.Next((int)(defs.Count * 0.75)) - 1; i >= 0; i--)
                                 defs.RemoveAt(rand.Next(defs.Count));
 
-                            List<string> wrongDefs = main.GetRandDefs(1 + rand.Next(5));
+                            List<string> wrongDefs = main.GetRandDefs(1 + rand.Next(5), testWord.ToString());
                             while (wrongDefs.Count > 0)
                             {
                                 int next = rand.Next(wrongDefs.Count);
@@ -340,6 +339,8 @@ namespace Wordy
                             chklistDefs.Visible = true;
                             panelDef.Visible = true;
                             buttFinished.Visible = true;
+
+                            chklistDefs.Focus();
 
                             resetLearningPhase = 1;
                             break;
@@ -997,8 +998,13 @@ namespace Wordy
 
         private void formTestRecall_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue == 13 && picWrong.Visible && !timerProgressChange.Enabled && !buttNext.Visible) //enter
-                nextWord();
+            if (e.KeyValue == 13) //enter
+            {
+                if (picWrong.Visible && !timerProgressChange.Enabled && !buttNext.Visible)
+                    nextWord();
+                else if (chklistDefs.Visible)
+                    buttFinished.PerformClick();
+            }
             else if (char.IsDigit((char)e.KeyData))
             {
                 int num = (char)e.KeyData - 49;
