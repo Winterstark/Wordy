@@ -15,7 +15,7 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.0;
+        const double VERSION = 1.01;
 
         List<Entry> words;
         public List<WordOfTheDay> wotds;
@@ -309,8 +309,8 @@ namespace Wordy
             formAbout about = new formAbout();
 
             about.main = this;
-            
-            about.lblVersion.Text = "v" + VERSION;
+
+            about.lblVersion.Text = "v" + VERSION.ToString().Replace(',', '.');
             if (!about.lblVersion.Text.Contains("."))
                 about.lblVersion.Text += ".0";
 
