@@ -1,9 +1,1 @@
-[UPDATE]
-[VERSION]1.01[/VERSION]
-[FILE]https://raw2.github.com/Winterstark/Wordy/master/update/Wordy.exe->root\Wordy.exe[/FILE]
-[FILE]https://raw2.github.com/Winterstark/Wordy/master/update/asdf.txt->root\asdf.txt[/FILE]
-[CHANGELOG]fixed a bug with selecting correct definitions
-this is 1.01 version
-
-^^[/CHANGELOG]
-[/UPDATE]
+no update

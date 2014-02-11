@@ -15,7 +15,7 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.01;
+        const double VERSION = 1.0;
 
         List<Entry> words;
         public List<WordOfTheDay> wotds;
@@ -259,7 +259,7 @@ namespace Wordy
             for (int i = 0; i < prefs.UpdateNotifs; i++)
                 askPermissions[i] = false;
 
-            Updater.Update(VERSION, "https://raw2.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
+            Updater.Update(VERSION, "https://raw.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
         }
 
         private void formMain_Activated(object sender, EventArgs e)
