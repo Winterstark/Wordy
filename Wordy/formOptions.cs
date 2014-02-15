@@ -173,6 +173,7 @@ namespace Wordy
             if (chklistWords.SelectedIndex == -1)
             {
                 buttDelete.Enabled = false;
+                picWordnik.Enabled = false;
 
                 textDef.Text = "";
                 lblInfo.Text = "";
@@ -184,6 +185,8 @@ namespace Wordy
             else
             {
                 buttDelete.Enabled = true;
+                picWordnik.Enabled = true;
+
                 textDef.Enabled = true;
                 lblDef.Enabled = true;
                 textSynonyms.Enabled = true;
@@ -423,6 +426,11 @@ namespace Wordy
         private void textFilter_TextChanged(object sender, EventArgs e)
         {
             displayWords();
+        }
+
+        private void picWordnik_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.wordnik.com/words/" + chklistWords.Text);
         }
     }
 }

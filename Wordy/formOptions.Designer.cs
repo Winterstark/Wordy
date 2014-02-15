@@ -40,6 +40,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.checkAutoVisuals = new System.Windows.Forms.CheckBox();
             this.tabWordlist = new System.Windows.Forms.TabPage();
+            this.textSynonyms = new System.Windows.Forms.TextBox();
+            this.lblSyns = new System.Windows.Forms.Label();
             this.textFilter = new System.Windows.Forms.TextBox();
             this.lblVisualTrigger = new System.Windows.Forms.Label();
             this.textDef = new System.Windows.Forms.RichTextBox();
@@ -65,14 +67,14 @@
             this.buttAddSub = new System.Windows.Forms.Button();
             this.chklistSubscriptions = new System.Windows.Forms.CheckedListBox();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
-            this.textSynonyms = new System.Windows.Forms.TextBox();
-            this.lblSyns = new System.Windows.Forms.Label();
+            this.picWordnik = new System.Windows.Forms.PictureBox();
             this.tabs.SuspendLayout();
             this.tabPreferences.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackUpdate)).BeginInit();
             this.tabWordlist.SuspendLayout();
             this.textDefMenu.SuspendLayout();
             this.tabWotD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.SuspendLayout();
             // 
             // tabs
@@ -83,7 +85,7 @@
             this.tabs.Location = new System.Drawing.Point(12, 12);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(578, 409);
+            this.tabs.Size = new System.Drawing.Size(578, 425);
             this.tabs.TabIndex = 14;
             this.tabs.SelectedIndexChanged += new System.EventHandler(this.tabs_SelectedIndexChanged);
             // 
@@ -183,6 +185,7 @@
             // 
             // tabWordlist
             // 
+            this.tabWordlist.Controls.Add(this.picWordnik);
             this.tabWordlist.Controls.Add(this.textSynonyms);
             this.tabWordlist.Controls.Add(this.lblSyns);
             this.tabWordlist.Controls.Add(this.textFilter);
@@ -198,10 +201,27 @@
             this.tabWordlist.Location = new System.Drawing.Point(4, 22);
             this.tabWordlist.Name = "tabWordlist";
             this.tabWordlist.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWordlist.Size = new System.Drawing.Size(570, 383);
+            this.tabWordlist.Size = new System.Drawing.Size(570, 399);
             this.tabWordlist.TabIndex = 1;
             this.tabWordlist.Text = "Word List";
             this.tabWordlist.UseVisualStyleBackColor = true;
+            // 
+            // textSynonyms
+            // 
+            this.textSynonyms.Location = new System.Drawing.Point(414, 180);
+            this.textSynonyms.Name = "textSynonyms";
+            this.textSynonyms.Size = new System.Drawing.Size(130, 20);
+            this.textSynonyms.TabIndex = 27;
+            this.textSynonyms.TextChanged += new System.EventHandler(this.textSynonyms_TextChanged);
+            // 
+            // lblSyns
+            // 
+            this.lblSyns.AutoSize = true;
+            this.lblSyns.Location = new System.Drawing.Point(350, 183);
+            this.lblSyns.Name = "lblSyns";
+            this.lblSyns.Size = new System.Drawing.Size(58, 13);
+            this.lblSyns.TabIndex = 26;
+            this.lblSyns.Text = "Synonyms:";
             // 
             // textFilter
             // 
@@ -217,7 +237,7 @@
             this.lblVisualTrigger.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblVisualTrigger.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVisualTrigger.ForeColor = System.Drawing.Color.White;
-            this.lblVisualTrigger.Location = new System.Drawing.Point(350, 333);
+            this.lblVisualTrigger.Location = new System.Drawing.Point(350, 362);
             this.lblVisualTrigger.Name = "lblVisualTrigger";
             this.lblVisualTrigger.Size = new System.Drawing.Size(194, 23);
             this.lblVisualTrigger.TabIndex = 24;
@@ -282,7 +302,7 @@
             // 
             // buttSortName
             // 
-            this.buttSortName.Location = new System.Drawing.Point(242, 333);
+            this.buttSortName.Location = new System.Drawing.Point(239, 362);
             this.buttSortName.Name = "buttSortName";
             this.buttSortName.Size = new System.Drawing.Size(102, 23);
             this.buttSortName.TabIndex = 22;
@@ -293,7 +313,7 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(353, 242);
+            this.lblInfo.Location = new System.Drawing.Point(350, 271);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(0, 13);
             this.lblInfo.TabIndex = 20;
@@ -311,7 +331,7 @@
             // buttUpdateDef
             // 
             this.buttUpdateDef.Enabled = false;
-            this.buttUpdateDef.Location = new System.Drawing.Point(353, 206);
+            this.buttUpdateDef.Location = new System.Drawing.Point(350, 235);
             this.buttUpdateDef.Name = "buttUpdateDef";
             this.buttUpdateDef.Size = new System.Drawing.Size(194, 23);
             this.buttUpdateDef.TabIndex = 18;
@@ -333,7 +353,7 @@
             this.chklistWords.FormattingEnabled = true;
             this.chklistWords.Location = new System.Drawing.Point(6, 35);
             this.chklistWords.Name = "chklistWords";
-            this.chklistWords.Size = new System.Drawing.Size(338, 289);
+            this.chklistWords.Size = new System.Drawing.Size(338, 319);
             this.chklistWords.TabIndex = 15;
             this.chklistWords.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chklistWords_ItemCheck);
             this.chklistWords.SelectedIndexChanged += new System.EventHandler(this.chklistWords_SelectedIndexChanged);
@@ -342,7 +362,7 @@
             // buttDelete
             // 
             this.buttDelete.Enabled = false;
-            this.buttDelete.Location = new System.Drawing.Point(6, 333);
+            this.buttDelete.Location = new System.Drawing.Point(6, 362);
             this.buttDelete.Name = "buttDelete";
             this.buttDelete.Size = new System.Drawing.Size(102, 23);
             this.buttDelete.TabIndex = 14;
@@ -447,28 +467,24 @@
             // 
             this.openDiag.Filter = "Text files|*.txt";
             // 
-            // textSynonyms
+            // picWordnik
             // 
-            this.textSynonyms.Location = new System.Drawing.Point(414, 180);
-            this.textSynonyms.Name = "textSynonyms";
-            this.textSynonyms.Size = new System.Drawing.Size(130, 20);
-            this.textSynonyms.TabIndex = 27;
-            this.textSynonyms.TextChanged += new System.EventHandler(this.textSynonyms_TextChanged);
-            // 
-            // lblSyns
-            // 
-            this.lblSyns.AutoSize = true;
-            this.lblSyns.Location = new System.Drawing.Point(350, 183);
-            this.lblSyns.Name = "lblSyns";
-            this.lblSyns.Size = new System.Drawing.Size(58, 13);
-            this.lblSyns.TabIndex = 26;
-            this.lblSyns.Text = "Synonyms:";
+            this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picWordnik.Enabled = false;
+            this.picWordnik.Image = global::Wordy.Properties.Resources.wordnik_badge_a2;
+            this.picWordnik.Location = new System.Drawing.Point(350, 206);
+            this.picWordnik.Name = "picWordnik";
+            this.picWordnik.Size = new System.Drawing.Size(194, 23);
+            this.picWordnik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picWordnik.TabIndex = 28;
+            this.picWordnik.TabStop = false;
+            this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
             // 
             // formOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 431);
+            this.ClientSize = new System.Drawing.Size(596, 448);
             this.Controls.Add(this.tabs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -486,6 +502,7 @@
             this.textDefMenu.ResumeLayout(false);
             this.tabWotD.ResumeLayout(false);
             this.tabWotD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -530,6 +547,7 @@
         private System.Windows.Forms.TextBox textFilter;
         private System.Windows.Forms.TextBox textSynonyms;
         private System.Windows.Forms.Label lblSyns;
+        private System.Windows.Forms.PictureBox picWordnik;
 
     }
 }

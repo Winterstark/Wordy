@@ -31,11 +31,6 @@ namespace Wordy
             Process.Start("https://github.com/Winterstark");
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("http://developer.wordnik.com/");
-        }
-
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("http://www.flickr.com/services/api/");
@@ -79,6 +74,11 @@ namespace Wordy
         private void formAbout_FormClosing(object sender, FormClosingEventArgs e)
         {
             main.Show();
+        }
+
+        private void picWordnik_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://developer.wordnik.com/");
         }
     }
 }

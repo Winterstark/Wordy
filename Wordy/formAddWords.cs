@@ -61,7 +61,7 @@ namespace Wordy
             {
                 updateStatus("Searching definitions for '" + word + "' ...");
                 WordnikDefinition[] wdDefs = wordnik.GetDefinitions(word).ToArray();
-
+                
                 if (wdDefs.Length > 0)
                 {
                     newDefs.Add(word, new Definition(wdDefs));
@@ -465,7 +465,7 @@ namespace Wordy
             if (listFoundWords.SelectedIndex == -1)
             {
                 buttRemoveWord.Enabled = false;
-                buttOpenWordnik.Enabled = false;
+                picWordnik.Enabled = false;
                 textDef.Enabled = false;
                 lblDef.Enabled = false;
                 buttOpenWotD.Enabled = false;
@@ -478,7 +478,7 @@ namespace Wordy
             else
             {
                 buttRemoveWord.Enabled = true;
-                buttOpenWordnik.Enabled = true;
+                picWordnik.Enabled = true;
                 lblDef.Enabled = true;
                 textDef.Enabled = true;
                 buttOpenWotD.Enabled = true;
@@ -654,11 +654,6 @@ namespace Wordy
             }
         }
 
-        private void buttOpenWordnik_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://www.wordnik.com/words/" + listFoundWords.Text);
-        }
-
         private void buttOpenWotD_Click(object sender, EventArgs e)
         {
             Process.Start(links[listFoundWords.Text]);
@@ -707,6 +702,11 @@ namespace Wordy
         {
             if (listFoundWords.Text != "")
                 synonyms[listFoundWords.Text] = textSynonyms.Text;
+        }
+
+        private void picWordnik_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.wordnik.com/words/" + listFoundWords.Text);
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using NikSharp;
 using NikSharp.Model;
+using System.Diagnostics;
 
 namespace Wordy
 {
@@ -71,6 +72,9 @@ namespace Wordy
             buttNext.Left = picWrong.Left + picWrong.Width / 2 - buttNext.Width / 2;
             buttNext.Top = picWrong.Top + picWrong.Height + 12;
 
+            picWordnik.Left = this.Width - picWordnik.Width - 12;
+            picWordnik.Top = this.Height - picWordnik.Height - 48;
+
             panelDef.Refresh();
         }
 
@@ -131,7 +135,8 @@ namespace Wordy
             rtbDef.Visible = false;
             chklistDefs.Visible = false;
             buttAnotherExample.Visible = false;
-            
+            picWordnik.Enabled = false;
+
             lblWord.ForeColor = Color.Black;
             answCorrectly = null;
 
@@ -494,8 +499,9 @@ namespace Wordy
                 mtbTestWord.Visible = false;
                 buttAnotherExample.Visible = false;
                 lblWord.Visible = true;
-                lblDef.Text = testWord.GetDefinition();
             }
+
+            lblDef.Text = testWord.GetDefinition();
 
             if (picVisual.ImageLocation != "")
                 lblVisualTrigger.Visible = true;
@@ -503,6 +509,8 @@ namespace Wordy
                 lblSynonyms.Text = testWord.GetSynonyms();
             else
                 panelDef.Visible = true;
+
+            picWordnik.Enabled = true;
 
             picRight.Left = lblSynonyms.Left + (this.Width - 60) / 2 - picRight.Width / 2;
             picWrong.Left = picRight.Left;
@@ -1125,12 +1133,17 @@ namespace Wordy
             curX += deltaX;
             if ((deltaX > 0 && curX >= endX) || (deltaX < 0 && curX <= endX))
             {
+                curX = endX;
+
                 timerProgressChange.Enabled = false;
 
                 if (deltaX > 0)
                     nextWord();
                 else
+                {
                     buttNext.Visible = true;
+                    drawProgress();
+                }
             }
         }
 
@@ -1161,6 +1174,12 @@ namespace Wordy
         private void chklistDefs_KeyDown(object sender, KeyEventArgs e)
         {
             formTestRecall_KeyDown(sender, e);
+        }
+
+        private void picWordnik_Click(object sender, EventArgs e)
+        {
+            if (lblWord.Text != "")
+                Process.Start("http://www.wordnik.com/words/" + lblWord.Text);
         }
     }
 }

@@ -190,7 +190,7 @@ namespace Wordy
                     //take 1 definition per word
                     ind = rand.Next(availableWords.Count);
 
-                    string[] defList = words.Find(w => w.ToString() == availableWords[ind]).GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Where(d => d[0] != '"').ToArray();
+                    string[] defList = words.Find(w => w.ToString() == availableWords[ind]).GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Where(d => d[0] != '"' && d.Substring(0, 8) != "(Source)").ToArray();
                     defs.Add(defList[rand.Next(defList.Length)]);
 
                     availableWords.RemoveAt(ind);
@@ -201,7 +201,7 @@ namespace Wordy
                     ind = rand.Next(randDefs.Count);
 
                     defs.Add(randDefs[ind]);
-                    defs.RemoveAt(ind);
+                    randDefs.RemoveAt(ind);
                 }
             }
 

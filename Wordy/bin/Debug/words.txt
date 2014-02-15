@@ -7398,10 +7398,10 @@ queer street
 
 2013-05-06 14:17
 0001-01-01 00:00
-2014-02-09 13:01
+2014-02-15 01:10
 2014-02-07 16:10
 1
-7
+8
 6
 5
 False
@@ -7566,10 +7566,10 @@ decussated, crossed, decussating, intersected, intersect, cross,
 percolate, debate, dominate, activate, delegate, dictate, terminate, decorate, dedicate, deviate, 
 2013-05-13 14:48
 0001-01-01 00:00
-2014-02-09 13:00
+2014-02-14 15:41
 2014-02-07 16:08
-1
-8
+2
+9
 6
 5
 False
@@ -10273,10 +10273,10 @@ demo, fairy, imaginary being, woman, adult female, imaginary creature, hamadryad
 hills, fills, filth, sills, skills, bills, fears, fierce, mills, kills, 
 2013-10-14 12:47
 0001-01-01 00:00
-2014-02-09 12:58
+2014-02-14 16:38
 2014-02-08 12:51
 1
-7
+8
 5
 4
 False
@@ -11000,10 +11000,10 @@ staggered, staggering, totter, hesitate, bewilderment, fail, sway, shaken, weake
 dagger, swagger, attacker, backer, packer, lacquer, blacker, cracker, hacker, tracker, 
 2013-11-06 13:08
 0001-01-01 00:00
-2014-02-09 12:56
+2014-02-15 01:10
 2014-02-03 18:23
 4
-15
+16
 4
 3
 False
@@ -11407,10 +11407,10 @@ corpus callosum, chiasma, simple commissure of the cerebellum, gray commissure o
 kisser, quiver, sniffer, river, differ, liver, deliver, hither, thither, whither, 
 2013-11-14 13:02
 0001-01-01 00:00
-2014-02-09 12:43
+2014-02-14 16:41
 2014-02-05 13:02
-3
-10
+4
+11
 4
 3
 False
@@ -12481,19 +12481,19 @@ True
 <entry>
 arroyo
 [defs]
-(n.) A deep gully cut by an intermittent stream; a dry gulch.::True
-(n.) A brook; a creek.::True
+(n.) A deep gully cut by an intermittent stream; a dry gulch.::False
+(n.) A brook; a creek.::False
 [/defs]
 rivulet, gully, footpath, acclivity, wadi, senador, watercourse, river-bed, gulch, swale, 
 apoyo, boyo, moyo, hoyo, koyo, goyo, noyeau, lloilo, coino, pointto, 
 2013-12-15 13:20
 0001-01-01 00:00
-2014-01-22 13:13
-2014-02-12 13:13
+2014-02-15 01:09
+2014-03-15 01:09
 7
 10
-2
-2
+3
+3
 True
 </entry>
 
@@ -12507,10 +12507,10 @@ pilfer, filch, acquire, steal, get,
 crumb, glum, from, drum, rum, plum, slum, plumb, scrum, yum, 
 2013-12-16 14:31
 0001-01-01 00:00
-2014-02-09 12:56
+2014-02-15 01:10
 2014-02-05 13:58
 3
-10
+11
 6
 3
 False
@@ -12525,10 +12525,10 @@ claxon, horn, bagpipe, tooting, bray, conch, singer/songwriter, turgidity, evers
 flaxen, taxon, waxen, fraction, traction, reaction, attraction, faction, maxim, inaction, 
 2013-12-16 14:31
 0001-01-01 00:00
-2014-02-09 13:00
+2014-02-14 16:41
 2014-02-08 12:48
 1
-7
+8
 3
 2
 False
@@ -13246,10 +13246,10 @@ scrum, rucking, rucked, heap, squat, roc, mob, rick, cower, crowd, crease,
 luck, yuk, yuck, truck, duck, buck, fuck, pluck, suck, chuck, 
 2014-01-04 15:36
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 16:31
 2014-02-05 13:38
 3
-17
+18
 1
 0
 False
@@ -13264,10 +13264,10 @@ tabarded, tabard of arms, tunic, skullcap, poncho, bornouse, under-garment, loin
 barred, bard, charred, bobbed, jarred, tarred, hard, bond, card, charged, 
 2014-01-06 13:06
 0001-01-01 00:00
-2014-02-10 12:46
+2014-02-15 01:10
 2014-02-09 13:38
-1
-8
+2
+9
 2
 1
 False
@@ -13452,10 +13452,10 @@ domineering, imperative, decisive, commanding, arbitrary, final, conclusive, dic
 directory, memory, treasury, exemplary, trajectory, treachery, plenary, rectory, peppery, sensory, 
 2014-01-13 12:33
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 16:39
 2014-02-05 13:39
 2
-12
+13
 1
 0
 False
@@ -13801,13 +13801,13 @@ headless, acephalously, ill-regulated, intrauterine, malformed, overwound, testa
 hydrocephalus, sedulous, perilous, credulous, venomous, garrulous, querulous, heftiness, genesis, stenosis, 
 2014-01-24 13:10
 0001-01-01 00:00
-2014-02-10 12:42
+2014-02-15 01:10
 2014-02-24 12:42
-7
 6
+7
 1
 1
-True
+False
 </entry>
 
 <entry>
@@ -13875,10 +13875,10 @@ Narthex, vestibule of the ear, vestibule of the vagina, vestibuled, vestibular, 
 ridicule, ferrule, spicule, minuscule, misrule, overrule, drool, school, rule, molecule, 
 2014-01-25 12:29
 0001-01-01 00:00
-2014-02-09 12:44
+2014-02-14 15:57
 0001-01-01 00:00
 5
-10
+11
 0
 0
 False
@@ -13943,19 +13943,19 @@ True
 <entry>
 bloviate
 [defs]
-(v.) To speak pompously.::True
+(v.) To speak pompously.::False
 [/defs]
 bloviated, bloviation, bloviating, bloviates, blowhard, orate, 
 appreciate, alleviate, deviate, create, initiate, negotiate, translate, delineate, obviate, permeate, 
 2014-01-27 13:33
 0001-01-01 00:00
-2014-02-06 13:36
+2014-02-15 01:09
 2014-02-13 13:36
-7
+1
 6
+1
 0
-0
-True
+False
 </entry>
 
 <entry>
@@ -14035,17 +14035,17 @@ True
 <entry>
 passim
 [defs]
-(adv.) here and there::True
+(adv.) here and there::False
 "Readers will have no trouble determining the editor's opinions about the text, as her strongly worded footnotes appear passim. "::False
 [/defs]
 everywhere, brave, virtuti, sensibus, sceptra, antea, poemata, seigneurie, habetur, gestis, 
 regime, beseem, seem, cm, dream, theme, esteem, seam, feem, bream, 
 2014-01-30 15:23
 0001-01-01 00:00
-2014-02-09 12:56
+2014-02-15 01:10
 0001-01-01 00:00
 6
-6
+7
 0
 0
 False
@@ -14072,16 +14072,16 @@ True
 <entry>
 boffin
 [defs]
-(n.) a scientist or technical expert.::True
+(n.) a scientist or technical expert.::False
 [/defs]
 boffinry, research worker, investigator, researcher, neutralists, titbit, raconteur, mightbe, link, polacca, 
 pawing, drawing, gnawing, sawing, thawing, cawing, hawing, soughing, yawing, shirring, 
 2014-01-31 13:38
 0001-01-01 00:00
-2014-02-09 12:56
+2014-02-14 16:00
 0001-01-01 00:00
 6
-6
+7
 0
 0
 False
@@ -14096,10 +14096,10 @@ galligaskins
 calabashes, napkins, relaxes, gasses, pickaxes, calcines, lambkins, lambskins, crosshatches, kaffeeklatsches, 
 2014-02-01 14:01
 0001-01-01 00:00
-2014-02-09 12:44
+2014-02-15 01:10
 0001-01-01 00:00
 5
-5
+6
 0
 0
 False
@@ -14108,17 +14108,17 @@ False
 <entry>
 scud
 [defs]
-(v.) (In nautical parlance) To run before a gale with little or no sail set.::False
+(v.) (In nautical parlance) To run before a gale with little or no sail set.::True
 (n.) Clouds or spray driven by the wind.::False
 [/defs]
 plunge, scudded, scudding, wind, spray, speed, drive, sad, cloudy, shower, 
 flood, stud, blood, mud, bud, thud, cut, cup, gut, scrub, 
 2014-02-03 12:52
 0001-01-01 00:00
-2014-02-09 12:43
+2014-02-15 01:12
 0001-01-01 00:00
-4
-4
+6
+6
 0
 0
 False
@@ -14133,10 +14133,10 @@ lid, chapeau, hat, brimless, crownless, raisers, pork-pie, emu, long-billed, clo
 stalker, talker, thwacker, walker, hawker, squawker, cataloger, cataloguer, restorer, defrauder, 
 2014-02-03 12:53
 0001-01-01 00:00
-2014-02-09 12:44
+2014-02-14 16:38
 0001-01-01 00:00
+6
 5
-4
 0
 0
 False
@@ -14151,10 +14151,10 @@ corner, nook, frontcourt, common room, mantlepiece, nightrobe, stone-built, gate
 undertook, pocketbook, tenterhook, overlook, overtook, crook, forsook, mistook, nook, partook, 
 2014-02-04 13:06
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 15:58
 0001-01-01 00:00
 2
-3
+4
 0
 0
 False
@@ -14170,10 +14170,10 @@ meedful, merit, deserve, recompense, gift, reward, repay, worth,
 need, mead, knead, kneed, feed, seed, deed, heed, weed, bead, 
 2014-02-06 13:32
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 15:57
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -14189,10 +14189,10 @@ flash, scintillate, sheen, glisten, radiate, glimmer, shine, sparkle, gleam, gli
 allocate, gravitate, irrigate, create, illustrate, alleviate, cooperate, correlate, delegate, educate, 
 2014-02-06 13:32
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 16:40
 0001-01-01 00:00
+4
 3
-2
 0
 0
 False
@@ -14207,10 +14207,10 @@ ballyhooing, ballyhooed, ballyhoos, advertize, advertise, packaging, publicise, 
 review, pursue, bamboo, taboo, jusqu, piu, tattoo, redo, honeydew, bugaboo, 
 2014-02-06 13:33
 0001-01-01 00:00
-2014-02-09 12:57
+2014-02-14 16:33
 0001-01-01 00:00
-2
-2
+3
+3
 0
 0
 False
@@ -14226,10 +14226,10 @@ junior, social climber, climber, new, pretentious, upstar, upstart, unpleasant p
 venue, sensu, menu, hairdo, ingenue, setscrew, nephew, rescue, grandnephew, 
 2014-02-08 12:21
 0001-01-01 00:00
-2014-02-09 12:44
+2014-02-15 01:10
 0001-01-01 00:00
 2
-1
+2
 0
 0
 False
@@ -14245,10 +14245,10 @@ disreputable, shady, self-glorification, gormandism, thanswahili', hosannas, sta
 rouse, louse, loughs, house, mouth, south, allows, mouse, cows, arouse, 
 2014-02-10 12:37
 0001-01-01 00:00
-2014-02-10 12:37
+2014-02-14 16:39
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False
@@ -14263,10 +14263,10 @@ figure, intuit, cotton on, get onto, get wise, catch on, twig, tumble, digest, g
 cluck, luck, truck, pluck, ruck, yuk, yuck, struck, stuck, duck, 
 2014-02-10 12:37
 0001-01-01 00:00
-2014-02-10 12:37
+2014-02-15 01:10
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False
@@ -14281,10 +14281,10 @@ gibber, gibberish, houses, highfalutin, wyfe, fermer, plaace, beldame, licht, wi
 
 2014-02-10 12:37
 0001-01-01 00:00
-2014-02-10 12:37
+2014-02-14 15:56
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False

@@ -46,7 +46,6 @@
             this.buttLoadMoreVisuals = new System.Windows.Forms.Button();
             this.buttReloadVisuals = new System.Windows.Forms.Button();
             this.buttUpdateDef = new System.Windows.Forms.Button();
-            this.buttOpenWordnik = new System.Windows.Forms.Button();
             this.buttOpenWotD = new System.Windows.Forms.Button();
             this.textDef = new System.Windows.Forms.RichTextBox();
             this.textDefMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -56,9 +55,11 @@
             this.menuSurroundWParentheses = new System.Windows.Forms.ToolStripMenuItem();
             this.lblSyns = new System.Windows.Forms.Label();
             this.textSynonyms = new System.Windows.Forms.TextBox();
+            this.picWordnik = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picThumbnails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVisual)).BeginInit();
             this.textDefMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -235,17 +236,6 @@
             this.buttUpdateDef.UseVisualStyleBackColor = true;
             this.buttUpdateDef.Click += new System.EventHandler(this.buttUpdateDef_Click);
             // 
-            // buttOpenWordnik
-            // 
-            this.buttOpenWordnik.Enabled = false;
-            this.buttOpenWordnik.Location = new System.Drawing.Point(435, 299);
-            this.buttOpenWordnik.Name = "buttOpenWordnik";
-            this.buttOpenWordnik.Size = new System.Drawing.Size(139, 23);
-            this.buttOpenWordnik.TabIndex = 17;
-            this.buttOpenWordnik.Text = "Open Wordnik Page";
-            this.buttOpenWordnik.UseVisualStyleBackColor = true;
-            this.buttOpenWordnik.Click += new System.EventHandler(this.buttOpenWordnik_Click);
-            // 
             // buttOpenWotD
             // 
             this.buttOpenWotD.Enabled = false;
@@ -330,16 +320,29 @@
             this.textSynonyms.TabIndex = 20;
             this.textSynonyms.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textSynonyms_KeyUp);
             // 
+            // picWordnik
+            // 
+            this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picWordnik.Enabled = false;
+            this.picWordnik.Image = global::Wordy.Properties.Resources.wordnik_badge_a2;
+            this.picWordnik.Location = new System.Drawing.Point(435, 299);
+            this.picWordnik.Name = "picWordnik";
+            this.picWordnik.Size = new System.Drawing.Size(139, 23);
+            this.picWordnik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picWordnik.TabIndex = 22;
+            this.picWordnik.TabStop = false;
+            this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
+            // 
             // formAddWords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 462);
+            this.Controls.Add(this.picWordnik);
             this.Controls.Add(this.textDef);
             this.Controls.Add(this.textSynonyms);
             this.Controls.Add(this.lblSyns);
             this.Controls.Add(this.buttOpenWotD);
-            this.Controls.Add(this.buttOpenWordnik);
             this.Controls.Add(this.buttReloadVisuals);
             this.Controls.Add(this.buttLoadMoreVisuals);
             this.Controls.Add(this.buttToggleVisuals);
@@ -366,6 +369,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picThumbnails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVisual)).EndInit();
             this.textDefMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,7 +394,6 @@
         private System.Windows.Forms.Button buttLoadMoreVisuals;
         private System.Windows.Forms.Button buttReloadVisuals;
         private System.Windows.Forms.Button buttUpdateDef;
-        private System.Windows.Forms.Button buttOpenWordnik;
         private System.Windows.Forms.Button buttOpenWotD;
         private System.Windows.Forms.RichTextBox textDef;
         private System.Windows.Forms.Label lblSyns;
@@ -400,5 +403,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuSurroundWQuotes;
         private System.Windows.Forms.ToolStripMenuItem menuSurroundWParentheses;
+        private System.Windows.Forms.PictureBox picWordnik;
     }
 }

@@ -23,13 +23,12 @@ namespace Wordy
         {
             defs = new string[wdDefs.Length];
             partsOfSpeech = new string[wdDefs.Length];
-            learned = new bool[wdDefs.Length];
 
             for (int i = 0; i < wdDefs.Length; i++)
             {
                 defs[i] = wdDefs[i].Text;
                 partsOfSpeech[i] = cleanUp(wdDefs[i].PartOfSpeech);
-
+                
                 if (defs[i].Contains(":  ")) // quote examples separated only by a colon
                     defs[i] = defs[i].Replace(":  ", " \"") + '"';
                 if (defs[i].Contains('”')) // use standard quotes only
@@ -37,7 +36,6 @@ namespace Wordy
                 if (defs[i].Contains('—')) // replace em dash with standard hyphen
                     defs[i] = defs[i].Replace('—', '-');
                 
-
                 //moar cleanup
                 int lb = defs[i].IndexOf("See Synonyms");
 
@@ -57,6 +55,62 @@ namespace Wordy
 
                     lb = defs[i].IndexOf("See Synonyms", ub);
                 }
+            }
+
+            if (defs.Length > 0)
+            {
+                //append dictionary sources
+                //insert the source in a new line after the definition
+                //if multiple definitions come from the same source, insert the new line only once, after all of them
+                List<string> newDefs = new List<string>();
+                List<string> newParts = new List<string>();
+
+                newDefs.Add(defs[0]);
+                newParts.Add(partsOfSpeech[0]);
+
+                string prevSource = wdDefs[0].SourceDictionary;
+
+                for (int i = 1; i < defs.Length; i++)
+                {
+                    if (wdDefs[i].SourceDictionary != prevSource) //insert source if it's different than the previous definition
+                    {
+                        newDefs.Add(attribution(prevSource));
+                        newParts.Add("Source");
+                    }
+
+                    prevSource = wdDefs[i].SourceDictionary;
+
+                    //add definition
+                    newDefs.Add(defs[i]);
+                    newParts.Add(partsOfSpeech[i]);
+                }
+
+                //always insert source after last definition
+                newDefs.Add(attribution(wdDefs[wdDefs.Length - 1].SourceDictionary));
+                newParts.Add("Source");
+
+                defs = newDefs.ToArray();
+                partsOfSpeech = newParts.ToArray();
+                learned = new bool[wdDefs.Length];
+            }
+        }
+
+        string attribution(string source)
+        {
+            switch (source)
+            {
+                case "ahd-legacy":
+                    return "(from The American Heritage® Dictionary of the English Language, 4th Edition)";
+                case "century":
+                    return "(from The Century Dictionary and Cyclopedia)";
+                case "wiktionary":
+                    return "(from Wiktionary, Creative Commons Attribution/Share-Alike License)";
+                case "wordnet":
+                    return "(from WordNet 3.0 Copyright 2006 by Princeton University. All rights reserved.)";
+                case "gcide":
+                    return "(from the GNU version of the Collaborative International Dictionary of English)";
+                default:
+                    return "(from unknown)";
             }
         }
 
@@ -111,7 +165,7 @@ namespace Wordy
             string output = "";
 
             for (int i = 0; i < defs.Length; i++)
-                if (defs[i][0] != '"' && !learned[i])
+                if (defs[i][0] != '"' && partsOfSpeech[i] != "Source" && !learned[i])
                 {
                     if (partsOfSpeech[i] != null)
                         output += "(" + partsOfSpeech[i] + ") " + defs[i] + Environment.NewLine;
@@ -142,7 +196,7 @@ namespace Wordy
             int j = 0;
 
             for (int i = 0; i < defs.Length; i++)
-                if (defs[i][0] != '"' && !learned[i])
+                if (defs[i][0] != '"' && partsOfSpeech[i] != "Source" && !learned[i])
                     learned[i] = answCorrectly[j++];
         }
 

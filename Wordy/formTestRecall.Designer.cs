@@ -56,12 +56,14 @@
             this.lblTestWordDef = new System.Windows.Forms.Label();
             this.timerProgressChange = new System.Windows.Forms.Timer(this.components);
             this.timerWait = new System.Windows.Forms.Timer(this.components);
+            this.picWordnik = new System.Windows.Forms.PictureBox();
             this.panelDef.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picVisual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWrong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRight)).BeginInit();
             this.panelTestWord.SuspendLayout();
             this.flowpanelPickAnswers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDef
@@ -369,11 +371,24 @@
             this.timerWait.Interval = 1500;
             this.timerWait.Tick += new System.EventHandler(this.timerWait_Tick);
             // 
+            // picWordnik
+            // 
+            this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picWordnik.Image = global::Wordy.Properties.Resources.wordnik_badge_a2;
+            this.picWordnik.Location = new System.Drawing.Point(288, 277);
+            this.picWordnik.Name = "picWordnik";
+            this.picWordnik.Size = new System.Drawing.Size(194, 23);
+            this.picWordnik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picWordnik.TabIndex = 25;
+            this.picWordnik.TabStop = false;
+            this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
+            // 
             // formTestRecall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 577);
+            this.Controls.Add(this.picWordnik);
             this.Controls.Add(this.panelDef);
             this.Controls.Add(this.panelTestWord);
             this.KeyPreview = true;
@@ -392,6 +407,7 @@
             this.panelTestWord.ResumeLayout(false);
             this.panelTestWord.PerformLayout();
             this.flowpanelPickAnswers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,6 +441,7 @@
         private System.Windows.Forms.MaskedTextBox mtbTestWord;
         private System.Windows.Forms.CheckedListBox chklistDefs;
         private System.Windows.Forms.Button buttAnotherExample;
+        private System.Windows.Forms.PictureBox picWordnik;
 
     }
 }
