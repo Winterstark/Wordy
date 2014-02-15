@@ -28,7 +28,7 @@ Usage
 
 To add new words enter a list of words in the leftmost textbox. After the definitions have been found you can edit them; words usually have multiple definitions and some of them are probably not pertinent to your inquiry. You should delete any irrelevant definitions and also superfluous wording - your future self will be grateful.
 
-![Screenshot: adding words](http://i.imgur.com/1dQHQA7.png)
+![Screenshot: adding words](http://i.imgur.com/KQrrqgf.png)
 
 Any found visuals will be displayed in a row of small thumbnails. Mouse over one of the thumbnails to view the visual in full size. Left-click on it to open its Flickr page; right-click on it to remove it. After you delete some of them you can search for more visuals.
 
@@ -45,11 +45,11 @@ To learn a word you will have to solve six increasingly difficult tests about it
 5. Fill out approx. half the missing keywords per definition
 6. Fill out all of the keywords in the definitions
 
-![Screenshot: test type 1](http://i.imgur.com/DogST6y.png)
+![Screenshot: test type 1](http://i.imgur.com/a4HDE22.png)
 
-![Screenshot: test type 2](http://i.imgur.com/HtWv1OA.png)
+![Screenshot: test type 2](http://i.imgur.com/gTerbZj.png)
 
-![Screenshot: test type 3](http://i.imgur.com/PkSxPql.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/ZQjWR6Y.png)
+![Screenshot: test type 3](http://i.imgur.com/93S1w45.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/jbZoirT.png)
 
 Note that in the last screenshot the user correctly filled out only one of the definitions. This means the test is partially completed: the user will still have to repeat that test, but only for the failed definition.
 
@@ -70,17 +70,21 @@ To ensure that the words you learn remain in your long-term memory you should ke
 * Unscramble the letters of the word
 * Recognize the word by its visuals
 
-![Screenshot: test type 1](http://i.imgur.com/nU9d5kc.png)
+![Screenshot: test type 1](http://i.imgur.com/YUNCp7g.png)
 
-![Screenshot: test type 2](http://i.imgur.com/CiqoWtn.png)
+![Screenshot: test type 2](http://i.imgur.com/fltHjpN.png)
 
-![Screenshot: test type 3](http://i.imgur.com/p9o4pyG.png)
+![Screenshot: test type 3](http://i.imgur.com/Bnx2Gv5.png)
 
-![Screenshot: test type 4](http://i.imgur.com/E2jcbPt.png)
+![Screenshot: test type 4](http://i.imgur.com/4Scmch1.png)
 
 If you fail a test then the word becomes "unlearned" again; answer correctly and the word will be available for testing again in a week. After each successful test the length of time before the next test increases by a week.
 
 When testing learned words, some minor mistakes are ignored. If you forget to use a diacritic mark or a hyphen, your answer will still be correct. Synonyms of the requested word will also be accepted.
+
+Visuals may also be used for testing purposes.
+
+![Screenshot: test type 5](http://i.imgur.com/QKCxEBD.png) ![Screenshot: test type 5 with displayed visuals](http://i.imgur.com/Hbf9ZQt.png)
 
 ### Word of the day subscriptions
 
@@ -92,7 +96,7 @@ Once per day Wordy will check the subscriptions and if there are any updates a n
 
 In the Options you can view a list of all the words you've added, edit their definitions and synonyms, and delete them. You can also edit word of the day subscriptions, as well as modify other general options.
 
-![Screenshot: options](http://i.imgur.com/i5TBmW4.png)
+![Screenshot: options](http://i.imgur.com/Dn5UhuF.png)
 
 
 Alternate way of adding words
