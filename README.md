@@ -49,7 +49,7 @@ To learn a word you will have to solve six increasingly difficult tests about it
 
 ![Screenshot: test type 2](http://i.imgur.com/gTerbZj.png)
 
-![Screenshot: test type 3](http://i.imgur.com/93S1w45.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/jbZoirT.png)
+![Screenshot: test type 3](http://i.imgur.com/93S1w45.png) ![Screenshot: test type 3 with answers revealed](http://i.imgur.com/VMYhBxg.png)
 
 Note that in the last screenshot the user correctly filled out only one of the definitions. This means the test is partially completed: the user will still have to repeat that test, but only for the failed definition.
 
