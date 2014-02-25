@@ -188,16 +188,22 @@ namespace Wordy
             return output;
         }
 
-        public void LearnedDefs(bool[] answCorrectly)
+        public void LearnedDefs(Answer[] answCorrectly)
         {
             if (answCorrectly == null)
                 return;
 
-            int j = 0;
-
             for (int i = 0; i < defs.Length; i++)
                 if (defs[i][0] != '"' && partsOfSpeech[i] != "Source" && !learned[i])
-                    learned[i] = answCorrectly[j++];
+                {
+                    //find answer
+                    foreach (Answer answer in answCorrectly)
+                        if (answer.def == defs[i])
+                        {
+                            learned[i] = answer.correct;
+                            break;
+                        }
+                }
         }
 
         public void Parse(string txt, bool parseLearned)
@@ -529,7 +535,7 @@ namespace Wordy
             return info;
         }
 
-        public void LogTest(bool success, bool[] answCorrectly)
+        public void LogTest(bool success, Answer[] answCorrectly)
         {
             if (!archived)
             {
@@ -753,6 +759,17 @@ namespace Wordy
                 return word.Substring(0, ub);
             else
                 return word;
+        }
+    }
+
+    public class Answer
+    {
+        public string def;
+        public bool correct;
+
+        public Answer(string def)
+        {
+            this.def = def;
         }
     }
 }

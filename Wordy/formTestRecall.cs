@@ -27,10 +27,10 @@ namespace Wordy
         Random rand;
         List<MaskedTextBox> mtbDefs;
         List<List<Tuple<int, int>>> kwBounds;
-        List<Tuple<int, int, bool>> answers;
+        List<Tuple<int, int, bool, string>> answers;
         List<string> corewords = new List<string>();
         string[] exampleSentences;
-        bool[] answCorrectly;
+        Answer[] answCorrectly;
         WordnikService wordnik;
 
 
@@ -501,7 +501,8 @@ namespace Wordy
                 lblWord.Visible = true;
             }
 
-            lblDef.Text = testWord.GetDefinition();
+            string questionDef = lblDef.Text; //currently displayed definitions
+            lblDef.Text = testWord.GetDefinition(); //display full list of definitions
 
             if (picVisual.ImageLocation != "")
                 lblVisualTrigger.Visible = true;
@@ -525,20 +526,44 @@ namespace Wordy
             if (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0)
             {
                 rtbDef.Text = "";
-                rtbDef.AppendText(lblDef.Text.Substring(0, answers[0].Item1));
+                rtbDef.AppendText(questionDef.Substring(0, answers[0].Item1));
 
                 for (int i = 0; i < answers.Count - 1; i++)
                 {
                     rtbDef.SelectionBackColor = answers[i].Item3 ? Color.Green : Color.Red;
-                    rtbDef.AppendText(lblDef.Text.Substring(answers[i].Item1, answers[i].Item2 - answers[i].Item1));
+                    rtbDef.AppendText(questionDef.Substring(answers[i].Item1, answers[i].Item2 - answers[i].Item1));
                     rtbDef.SelectionBackColor = SystemColors.Control;
-                    rtbDef.AppendText(lblDef.Text.Substring(answers[i].Item2, answers[i + 1].Item1 - answers[i].Item2));
+                    rtbDef.AppendText(questionDef.Substring(answers[i].Item2, answers[i + 1].Item1 - answers[i].Item2));
                 }
 
                 rtbDef.SelectionBackColor = answers[answers.Count - 1].Item3 ? Color.Green : Color.Red;
-                rtbDef.AppendText(lblDef.Text.Substring(answers[answers.Count - 1].Item1, answers[answers.Count - 1].Item2 - answers[answers.Count - 1].Item1));
+                rtbDef.AppendText(questionDef.Substring(answers[answers.Count - 1].Item1, answers[answers.Count - 1].Item2 - answers[answers.Count - 1].Item1));
                 rtbDef.SelectionBackColor = SystemColors.Control;
-                rtbDef.AppendText(lblDef.Text.Substring(answers[answers.Count - 1].Item2));
+                rtbDef.AppendText(questionDef.Substring(answers[answers.Count - 1].Item2));
+
+                //display any other definitions that may be hidden (such as definitions that weren't part of the test or definition sources)
+                rtbDef.SelectionBackColor = SystemColors.Control;
+                string[] defLines = lblDef.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                
+                for (int i = 0; i < defLines.Length; i++)
+                {
+                    if (!rtbDef.Text.Contains(defLines[i]))
+                    {
+                        //find the index of the previous definition
+                        int pos;
+
+                        if (i == 0)
+                            pos = 0; //insert def at the beginning
+                        else if (rtbDef.Text.Contains(defLines[i - 1]))
+                            pos = rtbDef.Text.IndexOf(defLines[i - 1]) + defLines[i - 1].Length + 1; //insert new def after the previous def
+                        else
+                            pos = rtbDef.Text.Length; //insert def at the end
+
+                        //the new lines need to be inserted like this to preserve colors in the richtextbox
+                        rtbDef.Select(pos, 0);
+                        rtbDef.SelectedText = defLines[i] + Environment.NewLine;
+                    }
+                }
 
                 rtbDef.Visible = true;
             }
@@ -624,22 +649,24 @@ namespace Wordy
             buttSkip.Visible = false;
             buttAnotherExample.Visible = false;
 
-            answers = new List<Tuple<int, int, bool>>();
-            answCorrectly = new bool[mtbDefs.Count];
+            answers = new List<Tuple<int, int, bool, string>>();
+            answCorrectly = new Answer[mtbDefs.Count];
             int i = 0;
 
             if (mtbDefs != null)
                 while (mtbDefs.Count > 0)
                 {
+                    answCorrectly[i] = new Answer(mtbDefs[0].Tag.ToString());
+                    answCorrectly[i].correct = true;
+
                     mtbDefs[0].TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
-                    answCorrectly[i] = true;
 
                     for (int j = 0; j < kwBounds[0].Count; j++)
                     {
                         bool res = mtbDefs[0].Text.Length >= kwBounds[0][j].Item2 && mtbDefs[0].Text.Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower() == mtbDefs[0].Tag.ToString().Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
-                        answCorrectly[i] = answCorrectly[i] && res;
+                        answCorrectly[i].correct = answCorrectly[i].correct && res;
 
-                        answers.Add(new Tuple<int, int, bool>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, res));
+                        answers.Add(new Tuple<int, int, bool, string>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, res, mtbDefs[0].Text));
                     }
 
                     mtbDefs[0].Dispose();
@@ -755,6 +782,7 @@ namespace Wordy
                 mtbDef.GotFocus += new EventHandler(mtbDef_Enter);
                 mtbDef.KeyPress += new KeyPressEventHandler(mtbDef_KeyPress);
                 mtbDef.KeyUp += new KeyEventHandler(mtbDef_KeyUp);
+                mtbDef.Tag = defs[i];
 
                 panelDef.Controls.Add(mtbDef);
                 mtbDefs.Add(mtbDef);
@@ -826,7 +854,9 @@ namespace Wordy
 
             for (int i = 0; i <= 6; i++)
                 if (x1 + (x2 - x1) / 6 * i <= curX)
+                {
                     gfx.FillEllipse(brushGreen, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
+                }
                 else
                     gfx.FillEllipse(deltaX >= 0 ? brushBlack : brushRed, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
 
@@ -837,9 +867,23 @@ namespace Wordy
             string[] defs = getLineDefs();
             int skipLines = 0;
 
-            for (int i = 0; i < answCorrectly.Length; i++)
+            for (int i = 0; i < defs.Length; i++)
             {
-                gfx.DrawImage(answCorrectly[i] ? picRight.Image : picWrong.Image, lblDef.Left, rtbDef.Top + 20 * (i + skipLines) + 2, 20, 16);
+                int currAnsw = 0;
+
+                foreach (Answer answer in answCorrectly)
+                    if (answer.def == defs[i])
+                    {
+                        if (answer.correct)
+                            currAnsw = 1; //correct
+                        else
+                            currAnsw = 2; //wrong
+                        break;
+                    }
+
+                if (currAnsw != 0)
+                    gfx.DrawImage(currAnsw == 1 ? picRight.Image : picWrong.Image, lblDef.Left, rtbDef.Top + 20 * (i + skipLines) + 2, 20, 16);
+
                 skipLines += (int)(gfx.MeasureString(defs[i], rtbDef.Font).Width / rtbDef.Width);
             }
         }
@@ -1012,6 +1056,12 @@ namespace Wordy
                     nextWord();
                 else if (chklistDefs.Visible)
                     buttFinished.PerformClick();
+            }
+            else if (e.KeyData == Keys.Tab)
+            {
+                //disable tab jumping when between tests
+                if (timerProgressChange.Enabled || buttNext.Visible)
+                    e.Handled = true;
             }
             else if (char.IsDigit((char)e.KeyData))
             {
