@@ -5,10 +5,10 @@ Wordy is a Windows program that helps users improve their English vocabulary.
 
 What sets it apart from other vocabulary-learning software?
 
-- There are no predefined tests and quizzes that you can take. Instead, you can add any word you want to learn and Wordy will generate different types of questions and tests for that word.
+- There are no predefined tests and quizzes that you can take. Instead, you can add any word you want to learn and Wordy will generate different types of questions for that word.
 - At first, these tests are simple (e.g. choose the correct word), but later on they involve filling out multiple definitions, which is what makes Wordy more suited for advanced students.
 - Besides definitions words can have images associated with them to help with the learning process.
-- After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but using a different set of question types.
+- After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but with a different set of question types.
 - Wordy also supports word of the day subscriptions, which are an easy way to discover new words.
 
 
@@ -26,9 +26,17 @@ Usage
 
 ### Adding words
 
-To add new words enter a list of words in the leftmost textbox. After the definitions have been found you can edit them; words usually have multiple definitions and some of them are probably not pertinent to your inquiry. You should delete any irrelevant definitions and also superfluous wording - your future self will be grateful.
+To add new words enter a list of words in the leftmost textbox. After the definitions have been found you can edit them - words usually have multiple definitions and some of them are probably not related to your inquiry or you are already familiar with them. You should delete any irrelevant definitions and also superfluous wording; keeping only a few definitions and no redundant details will make it much easier to answer tests in the future.
 
 ![Screenshot: adding words](http://i.imgur.com/KQrrqgf.png)
+
+Note that some words are colored in blue - these are keywords, critical parts of the definitions. Some tests will require you to fill out a word's definition, but you will only have to memorize the keywords.
+
+Wordy will automatically mark words as keywords, but you can change their status by selecting them, right-clicking and choosing the Toggle keyword option.
+
+![Screenshot: adding words, context menu options](http://i.imgur.com/6YYGSQx.png)
+
+You can also surround parts of text with quotes or parentheses - in both cases the effect is the same: the text enclosed within the symbols will be ignored during testing. This is because definitions sometimes include examples of usage, which are usually not necessary to memorize. Also, word definitions will be followed with information about their source dictionary - you don't have to delete this line because it will be enclosed within parentheses and will be ignored.
 
 Any found visuals will be displayed in a row of small thumbnails. Mouse over one of the thumbnails to view the visual in full size. Left-click on it to open its Flickr page; right-click on it to remove it. After you delete some of them you can search for more visuals.
 
@@ -39,7 +47,7 @@ Wordy also has a built-in tutorial that will inform you about the process of add
 To learn a word you will have to solve six increasingly difficult tests about it:
 
 1. Select the correct word (from 6 random words)
-2. Select the correct word (from 6 words that sound very similar)
+2. Select the correct word (from 6 similar-sounding words)
 3. Type out the word
 4. Fill out missing keywords in the word's definitions (one keyword per definition)
 5. Fill out approx. half the missing keywords per definition
@@ -55,7 +63,7 @@ Note that in the last screenshot the user correctly filled out only one of the d
 
 Although this may seem like overkill, the point of having so many tests (which become somewhat difficult near the end) is to help the user learn the word thoroughly. Many vocabulary services are much less demanding of their students, but their end result is also much less comprehensive and not as lasting. That is why Wordy is designed for either students that already have a good grasp of English, or native speakers that want to improve their vocabulary.
 
-After a word has been tested, the following test will become available after 24 hours.
+After a word has been tested, its next test will become available after 24 hours.
 
 The release version of Wordy has several example words set in various stages of learning so you can see how these tests look. You can delete these words in the Options menu.
 
