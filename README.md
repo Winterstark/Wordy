@@ -88,13 +88,13 @@ Visuals may also be used for testing purposes.
 
 ### Word of the day subscriptions
 
-Wordy comes with several WotD subscriptions; you can disable or delete them in the Options, as well as add new ones. To add a new subscription you need a valid RSS address.
+Wordy comes with several WotD subscriptions; you can enable or delete them in the Options menu, as well as add new ones. To add a new subscription you need a valid RSS address.
 
 Once per day Wordy will check the subscriptions and if there are any updates a new button will appear in the main menu. Clicking on that button will open the Add Words window where the new WotDs will be shown for the user to edit the definitions and either reject or accept them.
 
 ### Options
 
-In the Options you can view a list of all the words you've added, edit their definitions and synonyms, and delete them. You can also edit word of the day subscriptions, as well as modify other general options.
+In the Options menu you can view a list of all the words you've added, edit their definitions and synonyms, and delete them. You can also edit word of the day subscriptions, as well as modify other general options.
 
 ![Screenshot: options](http://i.imgur.com/Dn5UhuF.png)
 
@@ -106,7 +106,7 @@ If you use a program called [Launchy](http://www.launchy.net/) or use command pr
 
 To setup this script you need to perform the following:
 
-* In Launchy, open its options and select Runner under the Plugins tab. Add a new line and configure it as in the following picture:
+* In Launchy, open its options window and select Runner under the Plugins tab. Add a new line and configure it as in the following picture:
 
 ![Launchy configuration](http://i.imgur.com/n78kYeB.png)
 
@@ -114,7 +114,7 @@ Of course, you need to change the path to the "add words.vbs" script, which you 
 
 * Edit "add words.vbs" and set strTxtFile to be equal to the path of an empty text file that will store the added words.
 
-* Open Wordy's options and set the path to that same text file in this textbox:
+* Open Wordy's options menu and set the path to that same text file in this textbox:
 
 ![Screenshot: Wordy configuration](http://i.imgur.com/nbJxR1P.png)
 
