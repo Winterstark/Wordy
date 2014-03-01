@@ -100,6 +100,8 @@ This feature allows you to review the words in Wordy's database, which can be us
 
 Besides definitions and visuals, you can also see other information, such as which words are hardest to learn or remember.
 
+![Screenshot: Review words](http://i.imgur.com/K5azIi7.png)
+
 ### Word of the day subscriptions
 
 Wordy comes with several WotD subscriptions; you can enable or delete them in the Options menu, as well as add new ones. To add a new subscription you need a valid RSS address.
