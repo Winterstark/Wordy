@@ -378,5 +378,20 @@ namespace Wordy
             SaveSubs();
             buttNewWotD.Visible = false;
         }
+
+        private void buttReview_Click(object sender, EventArgs e)
+        {
+            if (words.Count > 0)
+            {
+                formReview review = new formReview();
+
+                review.main = this;
+                review.words = words;
+                review.Show();
+                this.Hide();
+            }
+            else
+                MessageBox.Show("You have no words! Use the Add New Words button first.");
+        }
     }
 }

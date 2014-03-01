@@ -72,6 +72,33 @@ namespace Wordy
             }
         }
 
+        public static void AppendDefs(RichTextBox textDef, string defs, List<string> corewords)
+        {
+            if (defs.Length > 0)
+            {
+                //find keywords
+                var kwBounds = GetKeywordBounds("", defs, corewords);
+
+                if (kwBounds.Count == 0)
+                {
+                    appendText(textDef, defs, true);
+                    return;
+                }
+
+                //append text
+                appendText(textDef, defs.Substring(0, kwBounds[0].Item1), false);
+
+                for (int i = 0; i < kwBounds.Count - 1; i++)
+                {
+                    appendText(textDef, defs.Substring(kwBounds[i].Item1, kwBounds[i].Item2 - kwBounds[i].Item1), true);
+                    appendText(textDef, defs.Substring(kwBounds[i].Item2, kwBounds[i + 1].Item1 - kwBounds[i].Item2), false);
+                }
+
+                appendText(textDef, defs.Substring(kwBounds[kwBounds.Count - 1].Item1, kwBounds[kwBounds.Count - 1].Item2 - kwBounds[kwBounds.Count - 1].Item1), true);
+                appendText(textDef, defs.Substring(kwBounds[kwBounds.Count - 1].Item2, defs.Length - kwBounds[kwBounds.Count - 1].Item2), false);
+            }
+        }
+
         public static List<Tuple<int, int>> GetKeywordBounds(string word, string defs, List<string> corewords)
         {
             List<Tuple<int, int>> kwBounds = new List<Tuple<int, int>>();
@@ -136,11 +163,6 @@ namespace Wordy
         {
             return dt.ToString("yyyy-MM-dd HH:mm");
         }
-
-        //public static DateTime FromUniversalString(string s)
-        //{
-        //    return DateTime.ParseExact(s, "yyyy-MM-dd HH:mm", null);
-        //}
 
         static void appendText(RichTextBox textDef, string txt, bool keyword)
         {

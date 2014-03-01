@@ -535,6 +535,24 @@ namespace Wordy
             return info;
         }
 
+        public DateTime GetCreationDate()
+        {
+            return created;
+        }
+
+        public int GetNStudyAttempts()
+        {
+            return nStudyAttempts;
+        }
+
+        public float GetRecallSuccessRate()
+        {
+            if (nRecallAttempts == 0)
+                return -1;
+            else
+                return (float)nRecallSuccesses / nRecallAttempts;
+        }
+
         public void LogTest(bool success, Answer[] answCorrectly)
         {
             if (!archived)

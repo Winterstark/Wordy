@@ -1,0 +1,9 @@
+SKIP
+"Words, their definitions, visuals, and extra info are shown here."->[rtbDef]
+"Click this button to view only words you haven't yet learned."->(rdbShowUnlearned)
+"Click this button to view only learned words."->(rdbShowLearned)
+"Click this button to view every word that you have added to Wordy."->(rdbShowAll)
+"This option controls how the list is sorted."->(comboSortBy)*Also, the word list will contain extra information based on this value, such as the date when a word was added.
+"This button toggles ascending or descending sort order."->(buttSortOrder)
+"Only words that contain this query will be shown. Leave it blank to display all available words."->(textSearch)
+"By checking this option the search query will extend to words' definitions as well."->(checkSearchDefs)

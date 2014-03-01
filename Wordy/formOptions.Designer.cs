@@ -40,6 +40,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.checkAutoVisuals = new System.Windows.Forms.CheckBox();
             this.tabWordlist = new System.Windows.Forms.TabPage();
+            this.picWordnik = new System.Windows.Forms.PictureBox();
             this.textSynonyms = new System.Windows.Forms.TextBox();
             this.lblSyns = new System.Windows.Forms.Label();
             this.textFilter = new System.Windows.Forms.TextBox();
@@ -67,14 +68,13 @@
             this.buttAddSub = new System.Windows.Forms.Button();
             this.chklistSubscriptions = new System.Windows.Forms.CheckedListBox();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
-            this.picWordnik = new System.Windows.Forms.PictureBox();
             this.tabs.SuspendLayout();
             this.tabPreferences.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackUpdate)).BeginInit();
             this.tabWordlist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.textDefMenu.SuspendLayout();
             this.tabWotD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.SuspendLayout();
             // 
             // tabs
@@ -102,7 +102,7 @@
             this.tabPreferences.Location = new System.Drawing.Point(4, 22);
             this.tabPreferences.Name = "tabPreferences";
             this.tabPreferences.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPreferences.Size = new System.Drawing.Size(570, 383);
+            this.tabPreferences.Size = new System.Drawing.Size(570, 399);
             this.tabPreferences.TabIndex = 2;
             this.tabPreferences.Text = "Preferences";
             this.tabPreferences.UseVisualStyleBackColor = true;
@@ -206,6 +206,19 @@
             this.tabWordlist.Text = "Word List";
             this.tabWordlist.UseVisualStyleBackColor = true;
             // 
+            // picWordnik
+            // 
+            this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picWordnik.Enabled = false;
+            this.picWordnik.Image = global::Wordy.Properties.Resources.wordnik_badge_a2;
+            this.picWordnik.Location = new System.Drawing.Point(350, 206);
+            this.picWordnik.Name = "picWordnik";
+            this.picWordnik.Size = new System.Drawing.Size(194, 23);
+            this.picWordnik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picWordnik.TabIndex = 28;
+            this.picWordnik.TabStop = false;
+            this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
+            // 
             // textSynonyms
             // 
             this.textSynonyms.Location = new System.Drawing.Point(414, 180);
@@ -306,7 +319,7 @@
             this.buttSortName.Name = "buttSortName";
             this.buttSortName.Size = new System.Drawing.Size(102, 23);
             this.buttSortName.TabIndex = 22;
-            this.buttSortName.Text = "Sort by Name";
+            this.buttSortName.Text = "Sort A-Z";
             this.buttSortName.UseVisualStyleBackColor = true;
             this.buttSortName.Click += new System.EventHandler(this.buttSortName_Click);
             // 
@@ -383,7 +396,7 @@
             this.tabWotD.Location = new System.Drawing.Point(4, 22);
             this.tabWotD.Name = "tabWotD";
             this.tabWotD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWotD.Size = new System.Drawing.Size(570, 383);
+            this.tabWotD.Size = new System.Drawing.Size(570, 399);
             this.tabWotD.TabIndex = 3;
             this.tabWotD.Text = "WotD";
             this.tabWotD.UseVisualStyleBackColor = true;
@@ -467,19 +480,6 @@
             // 
             this.openDiag.Filter = "Text files|*.txt";
             // 
-            // picWordnik
-            // 
-            this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picWordnik.Enabled = false;
-            this.picWordnik.Image = global::Wordy.Properties.Resources.wordnik_badge_a2;
-            this.picWordnik.Location = new System.Drawing.Point(350, 206);
-            this.picWordnik.Name = "picWordnik";
-            this.picWordnik.Size = new System.Drawing.Size(194, 23);
-            this.picWordnik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picWordnik.TabIndex = 28;
-            this.picWordnik.TabStop = false;
-            this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
-            // 
             // formOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,10 +499,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackUpdate)).EndInit();
             this.tabWordlist.ResumeLayout(false);
             this.tabWordlist.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
             this.textDefMenu.ResumeLayout(false);
             this.tabWotD.ResumeLayout(false);
             this.tabWotD.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
             this.ResumeLayout(false);
 
         }

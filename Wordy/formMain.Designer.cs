@@ -35,6 +35,7 @@
             this.buttNewWotD = new System.Windows.Forms.Button();
             this.lblCheckingWotDs = new System.Windows.Forms.Label();
             this.buttAbout = new System.Windows.Forms.Button();
+            this.buttReview = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttAdd
@@ -70,7 +71,7 @@
             // 
             // buttOptions
             // 
-            this.buttOptions.Location = new System.Drawing.Point(21, 218);
+            this.buttOptions.Location = new System.Drawing.Point(21, 259);
             this.buttOptions.Name = "buttOptions";
             this.buttOptions.Size = new System.Drawing.Size(138, 23);
             this.buttOptions.TabIndex = 3;
@@ -81,7 +82,7 @@
             // buttNewWotD
             // 
             this.buttNewWotD.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttNewWotD.Location = new System.Drawing.Point(21, 169);
+            this.buttNewWotD.Location = new System.Drawing.Point(21, 175);
             this.buttNewWotD.Name = "buttNewWotD";
             this.buttNewWotD.Size = new System.Drawing.Size(138, 43);
             this.buttNewWotD.TabIndex = 4;
@@ -95,7 +96,7 @@
             this.lblCheckingWotDs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCheckingWotDs.Location = new System.Drawing.Point(0, 0);
             this.lblCheckingWotDs.Name = "lblCheckingWotDs";
-            this.lblCheckingWotDs.Size = new System.Drawing.Size(181, 282);
+            this.lblCheckingWotDs.Size = new System.Drawing.Size(181, 337);
             this.lblCheckingWotDs.TabIndex = 5;
             this.lblCheckingWotDs.Text = "Checking for new Words of the Day\r\nPlease wait a moment...";
             this.lblCheckingWotDs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +104,7 @@
             // 
             // buttAbout
             // 
-            this.buttAbout.Location = new System.Drawing.Point(21, 247);
+            this.buttAbout.Location = new System.Drawing.Point(21, 288);
             this.buttAbout.Name = "buttAbout";
             this.buttAbout.Size = new System.Drawing.Size(138, 23);
             this.buttAbout.TabIndex = 3;
@@ -111,12 +112,23 @@
             this.buttAbout.UseVisualStyleBackColor = true;
             this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
             // 
+            // buttReview
+            // 
+            this.buttReview.Location = new System.Drawing.Point(21, 230);
+            this.buttReview.Name = "buttReview";
+            this.buttReview.Size = new System.Drawing.Size(138, 23);
+            this.buttReview.TabIndex = 6;
+            this.buttReview.Text = "Review Words";
+            this.buttReview.UseVisualStyleBackColor = true;
+            this.buttReview.Click += new System.EventHandler(this.buttReview_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(181, 282);
+            this.ClientSize = new System.Drawing.Size(181, 337);
             this.Controls.Add(this.lblCheckingWotDs);
+            this.Controls.Add(this.buttReview);
             this.Controls.Add(this.buttNewWotD);
             this.Controls.Add(this.buttAbout);
             this.Controls.Add(this.buttOptions);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.Button buttNewWotD;
         private System.Windows.Forms.Label lblCheckingWotDs;
         private System.Windows.Forms.Button buttAbout;
+        private System.Windows.Forms.Button buttReview;
     }
 }
 
