@@ -94,6 +94,12 @@ Visuals may also be used for testing purposes.
 
 ![Screenshot: test type 5](http://i.imgur.com/QKCxEBD.png) ![Screenshot: test type 5 with displayed visuals](http://i.imgur.com/Hbf9ZQt.png)
 
+### Review words
+
+This feature allows you to review the words in Wordy's database, which can be useful if you want to study the words before actually testing yourself.
+
+Besides definitions and visuals, you can also see other information, such as which words are hardest to learn or remember.
+
 ### Word of the day subscriptions
 
 Wordy comes with several WotD subscriptions; you can enable or delete them in the Options menu, as well as add new ones. To add a new subscription you need a valid RSS address.
