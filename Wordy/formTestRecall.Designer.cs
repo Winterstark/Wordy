@@ -90,9 +90,9 @@
             // 
             // picVisual
             // 
-            this.picVisual.Location = new System.Drawing.Point(17, 63);
+            this.picVisual.Location = new System.Drawing.Point(5, 63);
             this.picVisual.Name = "picVisual";
-            this.picVisual.Size = new System.Drawing.Size(720, 480);
+            this.picVisual.Size = new System.Drawing.Size(732, 480);
             this.picVisual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picVisual.TabIndex = 7;
             this.picVisual.TabStop = false;

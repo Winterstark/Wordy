@@ -505,7 +505,10 @@ namespace Wordy
             lblDef.Text = testWord.GetDefinition(); //display full list of definitions
 
             if (picVisual.ImageLocation != "")
+            {
                 lblVisualTrigger.Visible = true;
+                lblVisualTrigger.Left = lblWord.Width + 18;
+            }
             if (panelDef.Visible)
                 lblSynonyms.Text = testWord.GetSynonyms();
             else

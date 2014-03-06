@@ -3235,13 +3235,13 @@ bright, beaming, splendid, shining, luminous, effulgence, late-morning, full-orb
 element, excellent, settlement, eminent, elegant, eloquent, arrogant, elephant, efferent, emigrant, 
 2013-02-12 20:30
 0001-01-01 00:00
-2014-01-21 12:45
+2014-03-06 11:11
 2014-03-04 12:45
-7
+1
 14
-8
+9
 7
-True
+False
 </entry>
 
 <entry>
@@ -9066,13 +9066,13 @@ parnassian school,
 napkin, draughtsmen, lambskin, lapin, lambkin, ratlin, examine, tannin, batsmen, calcine, 
 2013-09-20 13:26
 0001-01-01 00:00
-2014-01-17 12:32
+2014-03-06 11:11
 2014-02-28 12:32
-7
+1
+6
 6
 5
-5
-True
+False
 </entry>
 
 <entry>
@@ -9318,20 +9318,20 @@ True
 <entry>
 albedo
 [defs]
-(n.) the white, inner rind of a citrus fruit::True
-(n.) Astronomy the ratio of the light reflected by a planet or satellite to that received by it::True
+(n.) the white, inner rind of a citrus fruit::False
+(n.) Astronomy the ratio of the light reflected by a planet or satellite to that received by it::False
 [/defs]
 whiteness, ratio, alij, ceterae, albo, spectrophotometry, stupenda, indigeat, sizer, quodcumque, 
 handbarrow, 
 2013-09-25 12:38
 0001-01-01 00:00
-2014-01-29 13:44
+2014-03-06 11:11
 2014-02-26 13:44
-7
+1
 8
-8
+9
 7
-True
+False
 </entry>
 
 <entry>
