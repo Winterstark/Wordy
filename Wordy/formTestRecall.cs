@@ -697,8 +697,6 @@ namespace Wordy
 
                 while (ub < txt.Length && char.IsLetter(txt[ub]))
                     ub++;
-                if (ub >= txt.Length)
-                    break;
 
                 string seg = txt.Substring(lb, ub - lb).ToLower();
                 if (!char.IsLetter(seg[0]))
@@ -714,6 +712,9 @@ namespace Wordy
 
                 if (seg != "" && seg.ToLower() == word)
                     txt = txt.Substring(0, lb) + "???" + txt.Substring(ub);
+
+                if (ub >= txt.Length)
+                    break;
 
                 lb = ub + 1;
                 if (lb == txt.Length)
