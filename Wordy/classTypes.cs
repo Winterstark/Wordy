@@ -553,6 +553,11 @@ namespace Wordy
                 return (float)nRecallSuccesses / nRecallAttempts;
         }
 
+        public DateTime GetLastTest()
+        {
+            return lastTest;
+        }
+
         public void LogTest(bool success, Answer[] answCorrectly)
         {
             if (!archived)

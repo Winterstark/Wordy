@@ -47,6 +47,12 @@ namespace Wordy
                     else
                         selectedWords = selectedWords.OrderByDescending<Entry, DateTime>(w => w.GetCreationDate()).ToArray();
                     break;
+                case "Sort by date tested":
+                    if (buttSortOrder.Text == "Ascending")
+                        selectedWords = selectedWords.OrderBy<Entry, DateTime>(w => w.GetLastTest()).ToArray();
+                    else
+                        selectedWords = selectedWords.OrderByDescending<Entry, DateTime>(w => w.GetLastTest()).ToArray();
+                    break;
                 case "Sort by A-Z":
                     if (buttSortOrder.Text == "Ascending")
                         selectedWords = selectedWords.OrderBy<Entry, string>(w => w.ToString()).ToArray();
@@ -102,7 +108,10 @@ namespace Wordy
                     case "Sort by date added":
                         rtbDef.AppendText("Added on " + word.GetCreationDate() + Environment.NewLine);
                         break;
-                    case "Sort by current learning step": ;
+                    case "Sort by date tested":
+                        rtbDef.AppendText("Last test on " + word.GetLastTest() + Environment.NewLine);
+                        break;
+                    case "Sort by current learning step":
                         if (!word.archived)
                             rtbDef.AppendText("Current learning step: " + word.learningPhase + Environment.NewLine);
                         else

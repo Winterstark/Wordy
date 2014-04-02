@@ -92,6 +92,7 @@
             this.comboSortBy.FormattingEnabled = true;
             this.comboSortBy.Items.AddRange(new object[] {
             "Sort by date added",
+            "Sort by date tested",
             "Sort by A-Z",
             "Sort by current learning step",
             "Sort by hardest to learn",
