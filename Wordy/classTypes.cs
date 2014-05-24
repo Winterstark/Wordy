@@ -198,7 +198,7 @@ namespace Wordy
                 {
                     //find answer
                     foreach (Answer answer in answCorrectly)
-                        if (answer.def == defs[i])
+                        if (answer.def == "(" + partsOfSpeech[i] + ") " + defs[i])
                         {
                             learned[i] = answer.correct;
                             break;

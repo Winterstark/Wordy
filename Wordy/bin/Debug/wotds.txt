@@ -1,19 +1,19 @@
 Merriam-Webster
 http://www.merriam-webster.com/word/index.xml
 True
-simpatico
+kith
 The Free Dictionary
 http://www.thefreedictionary.com/_/WoD/rss.aspx
 True
-lily-livered
+rascality
 A.Word.A.Day
 http://wordsmith.org/awad/rss1.xml
 True
-scud
+sashay
 Dictionary.com
 http://dictionary.reference.com/wordoftheday/wotd.rss
 True
-posy: Dictionary.com Word of the Day
+vastitude: Dictionary.com Word of the Day
 Yahoo! Education: Word of the Day
 http://xml.education.yahoo.com/rss/wotd/
 False
