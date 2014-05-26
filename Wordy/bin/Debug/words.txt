@@ -7081,10 +7081,10 @@ caudilloship, hamed, vecino, dueno, mancebo, musico, clerigo, garbanzo, caracter
 pillow, billow, willow, kilo, peccadillo, armadillo, zero, hero, nonzero, ditto, 
 2013-05-01 15:03
 0001-01-01 00:00
-2014-05-24 15:36
+2014-05-26 14:41
 2014-05-07 13:42
-3
-8
+4
+9
 12
 9
 False
@@ -15301,7 +15301,7 @@ False
 <entry>
 bole
 [defs]
-(n.) The trunk of a tree.::True
+(n.) The trunk of a tree.::False
 [/defs]
 armoniak, bolus, dose, west chadic, stalk, stem, dirt, pigment, soil, bola, 
 pole, bowl, poll, toll, dole, boll, tole, dolour, whole, role, 
@@ -15382,10 +15382,10 @@ haedine, hircine,
 confine, align, brine, consign, malign, aline, line, decline, alkaline, assign, 
 2014-05-08 13:15
 0001-01-01 00:00
-2014-05-24 15:36
+2014-05-26 14:41
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False

@@ -231,6 +231,25 @@ namespace Wordy
             prefs.Save();
         }
 
+        void setInfo(string info)
+        {
+            if (!buttNewWotD.Visible)
+                lblInfo.Text = info;
+        }
+
+        void displayWordCount(List<Entry> wordList)
+        {
+            //display how many words are ready to be tested
+            int n = wordList.Count;
+
+            if (n == 0)
+                setInfo("You have no words ready to be tested.");
+            else if (n == 1)
+                setInfo("You have 1 word ready to be tested.");
+            else
+                setInfo("You have " + n + " words ready to be tested.");
+        }
+
 
         public formMain()
         {
@@ -247,9 +266,32 @@ namespace Wordy
 
             loadWords();
 
-            //icon
+            //app icon
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))
                 this.Icon = new Icon(Application.StartupPath + "\\Wordy.ico");
+
+            //ui icons
+            if (File.Exists(Application.StartupPath + "\\ui\\add.png"))
+                buttAdd.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\add.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\study new.png"))
+                buttStudyWords.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\study new.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\test recall.png"))
+                buttRecall.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\test recall.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\new wotd.png"))
+                buttNewWotD.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\new wotd.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\review.png"))
+                buttReview.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\review.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\options.png"))
+                buttOptions.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\options.png");
+
+            if (File.Exists(Application.StartupPath + "\\ui\\about.png"))
+                buttAbout.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\about.png");
+            
 
             //show tutorial
             new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
@@ -268,7 +310,7 @@ namespace Wordy
             {
                 needWotDCheck = false;
 
-                lblCheckingWotDs.Visible = true;
+                lblInfo.Text = "Checking for new Words of the Day" + Environment.NewLine + "Please wait a moment...";
                 this.Refresh();
 
                 LoadSubs();
@@ -277,7 +319,7 @@ namespace Wordy
                 prefs.LastFeedCheck = DateTime.Now;
                 prefs.Save();
 
-                lblCheckingWotDs.Visible = false;
+                lblInfo.Text = "";
             }
         }
 
@@ -392,6 +434,47 @@ namespace Wordy
             }
             else
                 MessageBox.Show("You have no words! Use the Add New Words button first.");
+        }
+
+        private void button_MouseLeave(object sender, EventArgs e)
+        {
+            lblInfo.Text = "";
+        }
+
+        private void buttAdd_MouseEnter(object sender, EventArgs e)
+        {
+            //get number of new words in text file
+            int n = Misc.LoadNewWordsFromFile(prefs.NewWordsPath).Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Length;
+
+            if (n == 0)
+                setInfo("Add new words that you want to study.");
+            else
+                setInfo("Add new words that you want to study." + Environment.NewLine + "You have " + n + " new words to add from your designated text file.");
+        }
+
+        private void buttStudyWords_MouseEnter(object sender, EventArgs e)
+        {
+            displayWordCount(copyList(words.Where(w => !w.archived && w.CanTest()).ToList()));
+        }
+
+        private void buttRecall_MouseEnter(object sender, EventArgs e)
+        {
+            displayWordCount(copyList(words.Where(w => w.archived && w.CanTest()).ToList()));
+        }
+
+        private void buttReview_MouseEnter(object sender, EventArgs e)
+        {
+            setInfo("View a list of all the words that you have added.");
+        }
+
+        private void buttOptions_MouseEnter(object sender, EventArgs e)
+        {
+            setInfo("Edit your word collection, Word of the Day subscriptions, and other options.");
+        }
+
+        private void buttAbout_MouseEnter(object sender, EventArgs e)
+        {
+            setInfo("Display information about Wordy.");
         }
     }
 }

@@ -169,5 +169,19 @@ namespace Wordy
             textDef.SelectionColor = keyword ? Color.Blue : Color.Black;
             textDef.AppendText(txt);
         }
+
+        public static string LoadNewWordsFromFile(string path)
+        {
+            if (File.Exists(path))
+            {
+                StreamReader file = new StreamReader(path);
+                string newWords = file.ReadToEnd();
+                file.Close();
+
+                return newWords;
+            }
+            else
+                return "";
+        }
     }
 }

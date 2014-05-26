@@ -1026,10 +1026,10 @@ namespace Wordy
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))
                 this.Icon = new Icon(Application.StartupPath + "\\Wordy.ico");
 
-            if (File.Exists(Application.StartupPath + "\\1.png"))
-                picRight.Image = new Bitmap(Application.StartupPath + "\\1.png");
-            if (File.Exists(Application.StartupPath + "\\2.png"))
-                picWrong.Image = new Bitmap(Application.StartupPath + "\\2.png");
+            if (File.Exists(Application.StartupPath + "\\ui\\1.png"))
+                picRight.Image = new Bitmap(Application.StartupPath + "\\ui\\1.png");
+            if (File.Exists(Application.StartupPath + "\\ui\\2.png"))
+                picWrong.Image = new Bitmap(Application.StartupPath + "\\ui\\2.png");
 
             corewords = Misc.LoadCoreWords();
 

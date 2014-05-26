@@ -377,12 +377,8 @@ namespace Wordy
             corewords = Misc.LoadCoreWords();
 
             //load new words
-            if (chkNewWordsFile && File.Exists(main.prefs.NewWordsPath))
-            {
-                StreamReader file = new StreamReader(main.prefs.NewWordsPath);
-                textNewWords.Text = file.ReadToEnd();
-                file.Close();
-            }
+            if (chkNewWordsFile)
+                textNewWords.Text = Misc.LoadNewWordsFromFile(main.prefs.NewWordsPath);
 
             //cleanup
             while (textNewWords.Text.Length >= 2 && textNewWords.Text.Substring(0, 2) == Environment.NewLine)
