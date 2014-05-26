@@ -11,6 +11,8 @@ What sets it apart from other vocabulary-learning software?
 - After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but with a different set of question types.
 - Wordy also supports word of the day subscriptions, which are an easy way to discover new words.
 
+![Screenshot: Wordy main window](http://i.imgur.com/GkpybHW.png)
+
 
 Installation
 --------------
