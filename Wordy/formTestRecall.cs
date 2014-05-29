@@ -581,7 +581,11 @@ namespace Wordy
                 {
                     if (testWord.learningPhase == 6)
                     {
-                        lblWord.Text += " learned!";
+                        if (testWord.GetRecallSuccessRate() == -1)
+                            lblWord.Text += " learned!";
+                        else
+                            lblWord.Text += " relearned!";
+
                         lblWord.ForeColor = Color.Green;
                         lblVisualTrigger.Left = lblWord.Width + 18;
                     }
