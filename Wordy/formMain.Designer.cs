@@ -114,6 +114,7 @@
             // 
             // lblInfo
             // 
+            this.lblInfo.Font = new System.Drawing.Font("Candara", 12F);
             this.lblInfo.Location = new System.Drawing.Point(21, 112);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(492, 80);

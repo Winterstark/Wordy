@@ -1,6 +1,6 @@
 True
 2014-05-29 15:24
-True
+False
 C:\dev\projex\Wordy\Wordy\bin\Debug\newwords.txt
 1
 True
