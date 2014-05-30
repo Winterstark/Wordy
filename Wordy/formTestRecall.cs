@@ -509,10 +509,10 @@ namespace Wordy
         {
             if (timerProgressChange.Enabled || timerWait.Enabled || buttNext.Visible) //disable answering between questions
                 return;
-
+            
             panelTestWord.Visible = false;
             lblWord.Text = testWord.ToString();
-
+            
             if (testWord.archived)
             {
                 mtbTestWord.Visible = false;
@@ -881,9 +881,7 @@ namespace Wordy
 
             for (int i = 0; i <= 6; i++)
                 if (x1 + (x2 - x1) / 6 * i <= curX)
-                {
                     gfx.FillEllipse(brushGreen, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
-                }
                 else
                     gfx.FillEllipse(deltaX >= 0 ? brushBlack : brushRed, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
 
@@ -1044,7 +1042,7 @@ namespace Wordy
         private void formTestRecall_Load(object sender, EventArgs e)
         {
             setupUI();
-
+            
             //icon & images
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))
                 this.Icon = new Icon(Application.StartupPath + "\\Wordy.ico");

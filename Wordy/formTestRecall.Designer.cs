@@ -210,6 +210,7 @@
             this.rtbDef.Font = new System.Drawing.Font("Calibri", 12F);
             this.rtbDef.Location = new System.Drawing.Point(34, 108);
             this.rtbDef.Name = "rtbDef";
+            this.rtbDef.ReadOnly = true;
             this.rtbDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbDef.Size = new System.Drawing.Size(49, 19);
             this.rtbDef.TabIndex = 19;
