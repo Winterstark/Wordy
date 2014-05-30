@@ -17,11 +17,11 @@ namespace Wordy
     {
         public formMain main;
         public List<Entry> words;
-        public bool newWords;
+        public bool testUnlearned;
 
         string def;
         float lineHeight, curX, endX, deltaX;
-        int correctPick, resetLearningPhase;
+        int nTests, correctPick, resetLearningPhase;
 
         Entry testWord;
         Random rand;
@@ -125,6 +125,7 @@ namespace Wordy
 
         void nextWord()
         {
+            //reset UI
             panelDef.Visible = false;
             picRight.Visible = false;
             picWrong.Visible = false;
@@ -139,6 +140,16 @@ namespace Wordy
 
             lblWord.ForeColor = Color.Black;
             answCorrectly = null;
+
+            //get/refresh word list (some words might've only just become available for testing)
+            int prevWordCount = 0;
+            if (words != null)
+                prevWordCount = words.Count;
+
+            words = main.GetWordsReadyForTesting(!testUnlearned);
+
+            if (words.Count != prevWordCount) //if the wordcount changed...
+                nTests += words.Count - prevWordCount; //...update nTests value accordingly
 
             //load word
             if (words.Count > 0)
@@ -463,13 +474,21 @@ namespace Wordy
             }
             else
             {
-                if (newWords)
+                if (testUnlearned)
                     MessageBox.Show("No more unlearned words.");
                 else
                     MessageBox.Show("No more learned words.");
 
                 this.Close();
             }
+
+            //display how many words remain to be tested
+            if (testUnlearned)
+                this.Text = "Study New Words (";
+            else
+                this.Text = "Test Learned Words (";
+
+            this.Text += (nTests - words.Count) + " / " + nTests + ")";
         }
 
         void finish()
@@ -1042,7 +1061,10 @@ namespace Wordy
 
             lineHeight = lblDef.CreateGraphics().MeasureString("1", lblDef.Font).Height;
 
+            //start testing
+            nTests = 0;
             rand = new Random((int)DateTime.Now.Ticks);
+
             nextWord();
         }
 

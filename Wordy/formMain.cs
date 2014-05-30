@@ -208,6 +208,14 @@ namespace Wordy
             return defs;
         }
 
+        public List<Entry> GetWordsReadyForTesting(bool archived)
+        {
+            if (!archived)
+                return copyList(words.Where(w => !w.archived && w.CanTest()).ToList());
+            else
+                return copyList(words.Where(w => w.archived && w.CanTest()).ToList());
+        }
+
         List<Entry> copyList(List<Entry> orig)
         {
             List<Entry> copy = new List<Entry>();
@@ -367,9 +375,7 @@ namespace Wordy
                 formTestRecall test = new formTestRecall();
 
                 test.main = this;
-                test.newWords = true;
-                test.words = copyList(words.Where(w => !w.archived && w.CanTest()).ToList());
-                test.Text = "Study New Words";
+                test.testUnlearned = true;
 
                 test.Show();
                 this.Hide();
@@ -387,10 +393,7 @@ namespace Wordy
                 formTestRecall test = new formTestRecall();
 
                 test.main = this;
-                test.newWords = false;
-                test.words = copyList(words.Where(w => w.archived && w.CanTest()).ToList());
-
-                test.Text = "Test Learned Words";
+                test.testUnlearned = false;
 
                 test.Show();
                 this.Hide();
@@ -454,12 +457,12 @@ namespace Wordy
 
         private void buttStudyWords_MouseEnter(object sender, EventArgs e)
         {
-            displayWordCount(copyList(words.Where(w => !w.archived && w.CanTest()).ToList()));
+            displayWordCount(GetWordsReadyForTesting(false));
         }
 
         private void buttRecall_MouseEnter(object sender, EventArgs e)
         {
-            displayWordCount(copyList(words.Where(w => w.archived && w.CanTest()).ToList()));
+            displayWordCount(GetWordsReadyForTesting(true));
         }
 
         private void buttReview_MouseEnter(object sender, EventArgs e)

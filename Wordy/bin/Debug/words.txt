@@ -1029,12 +1029,12 @@ praedial
 medial, remedial, anteromedial, dorsomedial, ventromedial, collegial, perineal, menial, magisterial, ministerial, 
 2012-10-23 11:13
 0001-01-01 00:00
-2014-04-02 14:39
-2014-05-28 14:39
+2014-05-30 16:21
+2014-08-01 16:21
 7
 10
-10
-10
+11
+11
 True
 </entry>
 
@@ -1599,13 +1599,13 @@ damaged, bedraggled, ruinous, rundown, loose, rickety, ricket, disjointed, tatte
 panhandle, manhandle, radical, rational, national, practical, lateral, irrational, fractional, clavicle, 
 2013-01-12 14:45
 0001-01-01 00:00
-2014-04-04 15:19
+2014-05-30 17:00
 2014-05-30 15:19
-7
+1
 16
-10
+11
 9
-True
+False
 </entry>
 
 <entry>
@@ -1666,19 +1666,19 @@ True
 <entry>
 eurytopic
 [defs]
-(adj.) tolerant of wide variation in one or more environmental factors::False
+(adj.) tolerant of wide variation in one or more environmental factors::True
 "Eurytopic groups are observed in a wide range of habitats."::False
 [/defs]
 eurytopicity, 
 isotopic, atopic, topic, isotropic, tropic, inotropic, myopic, psychotropic, microscopic, macroscopic, 
 2013-02-04 22:52
 0001-01-01 00:00
-2014-03-31 14:17
-2014-05-26 14:17
+2014-05-30 16:20
+2014-08-01 16:20
 7
 12
+11
 10
-9
 True
 </entry>
 
@@ -2388,12 +2388,12 @@ farm, presidio, carboy, Lara, cinches, brownness, pinfold, Logan, mowing, farrie
 aloft, loft, coughed, scoffed, crossed, glossed, lost, frost, quashed, exhaust, 
 2013-02-11 19:25
 0001-01-01 00:00
-2014-04-17 15:15
-2014-05-15 15:15
+2014-05-30 16:20
+2014-07-04 16:20
 7
 22
-15
-11
+16
+12
 True
 </entry>
 
@@ -4369,18 +4369,18 @@ True
 <entry>
 snit
 [defs]
-(n.) Informal   A state of agitation or irritation.::False
+(n.) Informal   A state of agitation or irritation.::True
 [/defs]
 snit fit, snitty, vexation, annoyance, irritation, botheration, rockwork, Alice, makery, she-sleen, 
 cit, cet, tnat, dit, att, fet, fut, mot, bot, wot, 
 2013-03-13 21:29
 0001-01-01 00:00
-2014-04-21 15:50
-2014-05-19 15:50
+2014-05-30 17:00
+2014-07-04 17:00
 7
 27
-10
-8
+11
+9
 True
 </entry>
 
@@ -5390,18 +5390,18 @@ True
 <entry>
 scrimshaw
 [defs]
-(n.) The art of carving or incising intricate designs on whalebone or whale ivory.::False
+(n.) The art of carving or incising intricate designs on whalebone or whale ivory.::True
 [/defs]
 scrimshaws, carving, hand-tailored, loggerhead, onepiece, breach of promise, aldermanic, three-thousand-dollar, zoot, tomato-red, 
 rickshaw, ripsaw, jigsaw, limbo, limo, akimbo, zero, hero, vitro, fresco, 
 2013-03-27 16:48
 0001-01-01 00:00
-2014-04-02 14:41
-2014-05-28 14:41
+2014-05-30 16:20
+2014-08-01 16:20
 7
 9
-8
-8
+9
+9
 True
 </entry>
 
@@ -6306,12 +6306,12 @@ chinwag
 dishrag, wigwag, drag, wag, brag, swag, bag, flag, lag, tag, 
 2013-04-15 15:59
 0001-01-01 00:00
-2014-04-04 15:24
-2014-05-30 15:24
+2014-05-30 16:21
+2014-08-01 16:21
 7
 8
-8
-8
+9
+9
 True
 </entry>
 
@@ -6400,10 +6400,10 @@ fare-thee-well, finish, refinement, intactness, dream, cultivation, culture, pol
 
 2013-04-15 15:59
 0001-01-01 00:00
-2014-05-29 15:15
+2014-05-30 17:02
 2014-05-24 14:25
 3
-16
+17
 8
 7
 False
@@ -6510,10 +6510,10 @@ whispered, sharp, nonvocal, unintonated, aspirated, voiceless, irrational, atoni
 heard, third, herd, word, bird, curd, gird, nerd, absurd, unheard, 
 2013-04-17 16:12
 0001-01-01 00:00
-2014-05-29 15:15
+2014-05-30 17:02
 2014-05-18 15:00
 3
-20
+21
 11
 8
 False
@@ -7008,12 +7008,12 @@ done deal, accomplishment, achievement,
 
 2013-04-28 16:49
 0001-01-01 00:00
-2014-04-04 15:22
-2014-05-30 15:22
+2014-05-30 16:21
+2014-08-01 16:21
 7
 8
-8
-8
+9
+9
 True
 </entry>
 
@@ -7045,10 +7045,10 @@ sumptuary regulations, restrictive, sumptuary tax, sumptuary law, expense, prohi
 sanctuary, voluptuary, sanitary, statuary, centenary, january, contemporary, temporary, arbitrary, customary, 
 2013-04-29 15:36
 0001-01-01 00:00
-2014-05-29 15:15
+2014-05-30 17:01
 2014-07-23 14:38
-2
-16
+3
+17
 10
 9
 False
@@ -7081,10 +7081,10 @@ caudilloship, hamed, vecino, dueno, mancebo, musico, clerigo, garbanzo, caracter
 pillow, billow, willow, kilo, peccadillo, armadillo, zero, hero, nonzero, ditto, 
 2013-05-01 15:03
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 17:02
 2014-05-07 13:42
-5
-10
+6
+11
 12
 9
 False
@@ -7119,12 +7119,12 @@ culturati, literati, intelligentsia, elite group, élite,
 
 2013-05-02 15:19
 0001-01-01 00:00
-2014-04-12 16:31
-2014-05-24 16:31
+2014-05-30 15:00
+2014-07-18 15:00
 7
 6
-15
-13
+16
+14
 True
 </entry>
 
@@ -7602,10 +7602,10 @@ headspring, headspring, head, well, wellspring, beginning, rootage, source, root
 
 2013-05-15 13:48
 0001-01-01 00:00
-2014-05-29 15:14
+2014-05-30 17:02
 2014-05-05 14:40
 5
-31
+32
 10
 7
 False
@@ -9065,10 +9065,10 @@ battle cry, mantra, catchphrase, rallying cry, watchword, war cry, catch phrase,
 breath, death, neath, stress, suppress, redress, depress, letterpress, fresh, press, 
 2013-09-23 13:12
 0001-01-01 00:00
-2014-05-29 14:59
+2014-05-30 15:04
 2014-05-14 14:33
 3
-17
+18
 9
 7
 False
@@ -10718,10 +10718,10 @@ resister, obstructionist, obstructer, logomach, arguer, debater, obstructor, log
 artistic, cystic, mystic, holistic, autistic, ballistic, theistic, juristic, realistic, stylistic, 
 2013-11-02 12:36
 0001-01-01 00:00
-2014-05-29 15:13
+2014-05-30 16:20
 2014-05-22 13:26
-2
-20
+3
+21
 8
 6
 False
@@ -11032,10 +11032,10 @@ manhood, caliphate, generalship, captaincy, cadetship, incumbency, excuse, rabbi
 millet, skillet, spirit, village, peerage, fillip, steerage, enfilade, preterit, inspirit, 
 2013-11-06 13:13
 0001-01-01 00:00
-2014-05-29 14:59
+2014-05-30 17:01
 2014-05-09 14:27
-3
-15
+4
+17
 9
 6
 False
@@ -11417,17 +11417,17 @@ True
 <entry>
 Svengali
 [defs]
-(n.) a person who manipulates or exerts excessive control over another::True
+(n.) a person who manipulates or exerts excessive control over another::False
 "In her tell-all autobiography, the singer portrays her former husband/manager as an abusive and controlling Svengali."::False
 [/defs]
 persuader, fictional character, fictitious character, character, inducer, 
 melancholy, collie, golly, folly, jolly, poly, volley, trolley, holly, dolly, 
 2013-11-23 12:37
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 16:18
 2014-05-03 14:52
 6
-13
+14
 6
 5
 False
@@ -12131,12 +12131,12 @@ bean curd, tofu, lemon curd, curded, curdle, curds and whey, crud, curding, clab
 heard, third, word, occurred, bird, herd, furred, sherd, incurred, stirred, 
 2013-12-12 13:33
 0001-01-01 00:00
-2014-04-12 16:35
-2014-05-24 16:35
+2014-05-30 16:20
+2014-07-18 16:20
 7
 8
-5
-5
+6
+6
 True
 </entry>
 
@@ -12149,13 +12149,13 @@ Jerusalem artichoke, water chestnut, groundnut, yam, wild bean, potato bean, tub
 rubber, blubber, scrubber, butter, putter, supper, cutter, gutter, rudder, shudder, 
 2013-12-12 13:33
 0001-01-01 00:00
-2014-04-17 15:18
+2014-05-30 17:00
 2014-05-29 15:18
-7
+1
 13
+6
 5
-5
-True
+False
 </entry>
 
 <entry>
@@ -12427,10 +12427,10 @@ stroke, kotow, truckle, toady, suck up, kowtow, soft soap, adulate, butter up, f
 brandish, outlandish, blanches, standeth, mutandis, mantis, avalanches, banish, blackish, brackish, 
 2013-12-18 12:50
 0001-01-01 00:00
-2014-05-29 15:16
+2014-05-30 16:20
 2014-05-28 12:58
-2
-8
+3
+9
 6
 5
 False
@@ -12482,13 +12482,13 @@ have in mind, remember, free-associate, identify, mean, think of, correlate, int
 allocate, carbonate, cultivate, correlate, delegate, complicate, conjugate, navigate, congregate, abrogate, 
 2013-12-20 13:19
 0001-01-01 00:00
-2014-04-17 15:51
+2014-05-30 16:20
 2014-05-29 15:51
+1
 7
-7
+6
 5
-5
-True
+False
 </entry>
 
 <entry>
@@ -13072,10 +13072,10 @@ make the welkin ring, lift, heave, firmament, surface, daimone, b}, buildeth, ae
 elfin, hairpin, chessmen, rennin, redskin, lenten, freshmen, chairmen, ephedrine, pressmen, 
 2014-01-08 12:54
 0001-01-01 00:00
-2014-05-29 14:13
+2014-05-30 17:02
 2014-05-08 12:45
 4
-11
+12
 5
 4
 False
@@ -13105,16 +13105,16 @@ True
 <entry>
 spoonerism
 [defs]
-(n.) A transposition of sounds of two or more words, especially a ludicrous one. (E.g., let me sew you to your sheet for Let me show you to your seat.)::True
+(n.) A transposition of sounds of two or more words, especially a ludicrous one. (E.g., let me sew you to your sheet for Let me show you to your seat.)::False
 [/defs]
 slip of the tongue, 
 hedonism, feminism, heroism, optimism, prism, dualism, humanism, modernism, schism, fatalism, 
 2014-01-09 12:36
 0001-01-01 00:00
-2014-05-29 15:16
+2014-05-30 16:31
 2014-05-08 12:46
 5
-11
+12
 5
 4
 False
@@ -13335,10 +13335,10 @@ documented, attested, old, veritable, authentic, authenticated, honest-to-goodne
 checked, sect, wrecked, decked, necked, effect, direct, correct, affect, elect, 
 2014-01-16 13:07
 0001-01-01 00:00
-2014-05-29 15:20
+2014-05-30 17:02
 2014-05-17 18:06
-1
-8
+2
+10
 5
 4
 False
@@ -13517,10 +13517,10 @@ willywaw, whillywha,
 
 2014-01-21 12:39
 0001-01-01 00:00
-2014-05-29 15:14
+2014-05-30 16:33
 2014-05-24 16:24
 3
-17
+18
 6
 4
 False
@@ -13592,12 +13592,12 @@ salty, unpalatable, brackishness, sal, acrid, tepid, soapy, malodorous, turbid,
 blackish, waggish, haggish, haggis, parish, lavish, banish, radish, brandish, clannish, 
 2014-01-24 13:12
 0001-01-01 00:00
-2014-05-27 13:56
-2014-05-25 13:54
+2014-05-30 16:20
+2014-06-04 16:20
 7
 8
+6
 5
-4
 True
 </entry>
 
@@ -14474,10 +14474,10 @@ formicary, kopje, ant-hill, molehill, koppie, hill, protuberance, islet, tussock
 stomach, buttock, tussock, alack, rucksack, mukluk, dumbstruck, republic, 
 2014-03-05 20:00
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 15:00
 2014-05-05 14:39
-5
-11
+6
+12
 3
 2
 False
@@ -14529,10 +14529,10 @@ disobedient, enfroward, untoward, petulant, ungovernable: refractory, obstinate,
 lowered, sobered, brokered, snowbird, homeward, shouldered, motored, sojourned, smoldered, smouldered, 
 2014-03-08 14:35
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-29 16:32
 2014-05-19 15:32
-3
-17
+4
+18
 3
 2
 False
@@ -14663,10 +14663,10 @@ wordy, windy, tautological, tautologic, pleonastic, verbose, redundant, long-win
 biopics, aerobics, heroics, yogis, phobics, stoics, bobolinks, crochets, closeness, wholeness, 
 2014-03-19 13:13
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 16:31
 2014-05-18 14:22
-3
-11
+4
+12
 3
 2
 False
@@ -14701,10 +14701,10 @@ detachment, turtleback, 43rd, paramagnet, sand-colored, neoliberalism, heavy-arm
 shinguard, shipyard, brickyard, rewarmed, slipshod, milliard, nimrod, 
 2014-03-20 13:06
 0001-01-01 00:00
-2014-05-29 15:08
+2014-05-30 17:00
 2014-05-18 14:20
-3
-11
+4
+12
 3
 2
 False
@@ -15118,10 +15118,10 @@ flame, objurgating, objurgated, chide, reprove, objurgates, call down, lecture,
 abdicate, adjudicate, subjugate, indicate, educate, originate, update, dedicate, mitigate, abrogate, 
 2014-04-22 13:22
 0001-01-01 00:00
-2014-05-29 15:24
+2014-05-30 17:02
 2014-05-11 14:51
 2
-9
+10
 1
 0
 False
@@ -15264,17 +15264,17 @@ True
 <entry>
 aplomb
 [defs]
-(n.) complete and confident composure or self-assurance::False
+(n.) complete and confident composure or self-assurance::True
 "On her first day as a teacher, June handled herself with aplomb, keeping the class engaged and focused. "::False
 [/defs]
 vertical, assurance, verticality, self-possession, equanimity, calm, composure, calmness, poise, self-mastery, 
 prom, rom, pogrom, salaam, com, calm, bomb, palm, mom, quam, 
 2014-05-01 15:16
 0001-01-01 00:00
-2014-05-29 15:14
+2014-05-30 17:01
 0001-01-01 00:00
-4
-6
+5
+7
 0
 0
 False
@@ -15283,16 +15283,16 @@ False
 <entry>
 effloresce
 [defs]
-(v.) to burst into bloom; blossom.::True
+(v.) to burst into bloom; blossom.::False
 [/defs]
 devitrify, effloresced, efflorescing, bloom, crust, effloresces, encrust, 
 authoress, stress, suppress, less, success, express, press, unless, dress, nevertheless, 
 2014-05-01 15:16
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 15:00
 0001-01-01 00:00
 5
-6
+7
 0
 0
 False
@@ -15319,7 +15319,7 @@ True
 <entry>
 concomitant
 [defs]
-(n.) One that occurs or exists concurrently with another.::True
+(n.) One that occurs or exists concurrently with another.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 background, associate, subsequent, coexistent, attendant, incidental, simultaneous, coincident, accompanying, accompaniment, 
@@ -15338,17 +15338,17 @@ False
 <entry>
 risible
 [defs]
-(adj.) arousing or provoking laughter; especially : laughable::True
+(adj.) arousing or provoking laughter; especially : laughable::False
 "Megan's friends teased her for the risible notion that one day she'd find a unicorn lurking in her yard."::False
 [/defs]
 humourous, humorous, ridiculous, laughing, ludicrous, amusing, funny, laughable, unhackneyed, anecdotical, 
 sizable, sizeable, advisable, realizable, analyzable, cognizable, recognizable, inadvisable, unrecognizable, liveable, 
 2014-05-04 14:51
 0001-01-01 00:00
-2014-05-29 15:08
+2014-05-30 17:02
 0001-01-01 00:00
 6
-5
+6
 0
 0
 False
@@ -15357,17 +15357,17 @@ False
 <entry>
 percutaneous
 [defs]
-(adj.) Passed, done, or effected through the skin.::False
+(adj.) Passed, done, or effected through the skin.::True
 "I simply apply the ointment to my arm, and the medication makes its way into my bloodstream in a process called percutaneous absorption."::False
 [/defs]
 transluminal, endometrial, subchronic, dose-dependent, large-bore, organophosphate, fallopian, asymptomatic, endovascular, postnatal, 
 cutaneous, subcutaneous, spontaneous, simultaneous, extraneous, miscellaneous, contemporaneous, extemporaneous, macadamias, manias, 
 2014-05-07 14:15
 0001-01-01 00:00
-2014-05-29 15:14
+2014-05-30 16:31
 0001-01-01 00:00
-4
-4
+5
+5
 0
 0
 False
@@ -15382,10 +15382,10 @@ haedine, hircine,
 confine, align, brine, consign, malign, aline, line, decline, alkaline, assign, 
 2014-05-08 13:15
 0001-01-01 00:00
-2014-05-29 15:15
+2014-05-30 17:01
 0001-01-01 00:00
+6
 5
-4
 0
 0
 False
@@ -15401,10 +15401,10 @@ wish, choice, alternative, option, druther,
 brothers, mothers, lovers, covers, suffers, buffers, hovers, discovers, recovers, uncovers, 
 2014-05-11 14:10
 0001-01-01 00:00
-2014-05-29 15:24
+2014-05-30 17:00
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -15419,10 +15419,10 @@ showy, contemptible, trifling, finery, triviality, trivia, small beer, trifle, b
 slippery, jittery, witchery, fishery, livery, hickory, trickery, history, delivery, victory, 
 2014-05-12 16:48
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-30 17:01
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -15437,10 +15437,10 @@ forward, bumptiously, bumptiousness, pushing, self-assertiv, self-conceited, can
 compass, pumice, tapas, dumbness, pashas, rumpus, justice, duchess, sumptuous, toughness, 
 2014-05-13 12:59
 0001-01-01 00:00
-2014-05-29 14:58
+2014-05-30 16:18
 0001-01-01 00:00
-3
-3
+4
+4
 0
 0
 False
@@ -15457,10 +15457,10 @@ titbit, nectar, savoury, choice morsel, ambrosia, bone marrow, tidbit, sweet, ge
 rickshaw, jigsaw, scrimshaw, ripsaw, whipsaw, 
 2014-05-24 15:21
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 16:20
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -15476,10 +15476,10 @@ past, past tense, participle, nominative, neuter, noes', agentive, conjugation, 
 spirit, inspirit, billet, peerage, steerage, millet, skillet, mucilage, sirup, village, 
 2014-05-24 15:21
 0001-01-01 00:00
-2014-05-29 14:09
+2014-05-30 17:02
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -15495,10 +15495,10 @@ jewel, trinket, jewellery, jewelry, door-plate, nuns', fraudulence, encrustation
 bijoux, iu, preview, emu, itu, eeuw, hsiu, iew, sieu, redrew, 
 2014-05-24 15:21
 0001-01-01 00:00
-2014-05-29 15:24
+2014-05-30 16:18
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -15514,10 +15514,10 @@ money,
 headmaster, plaster, disaster, pilaster, master, faster, pastor, alabaster, castor, vaster, 
 2014-05-24 15:21
 0001-01-01 00:00
-2014-05-29 14:09
+2014-05-30 17:02
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -15533,10 +15533,10 @@ head cheese, brawn, gelatin, jelly, chokecherry, chirurgical, red-streaked, chip
 stick, spic, shtick, spik, schtick, pick, chick, tick, slick, tic, 
 2014-05-24 15:22
 0001-01-01 00:00
-2014-05-29 14:08
+2014-05-30 16:18
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -15552,10 +15552,10 @@ coin, money, specie circular, payment in kind, currency,
 cheesy, fleecy, sleazy, beefy, uneasy, greasy, leafy, nisi, breezy, queasy, 
 2014-05-24 15:22
 0001-01-01 00:00
-2014-05-29 15:24
+2014-05-30 17:02
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -15571,10 +15571,10 @@ spumous, spuming, spumy, spumed, froth, scum, foam, foal, spumes,
 sebum, from, dem, dumb, slum, bum, dum, scum, tum, chum, 
 2014-05-26 15:47
 0001-01-01 00:00
-2014-05-29 15:08
+2014-05-30 17:02
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -15591,10 +15591,10 @@ riding bitt, cone, post, drawbar, onlyto, cleat, driller, spillway, bitt, freq,
 collared, hollered, bothered, tottered, honored, chartered, pondered, proffered, faltered, soldered, 
 2014-05-27 14:04
 0001-01-01 00:00
-2014-05-29 14:09
+2014-05-30 15:00
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -15629,10 +15629,10 @@ toxophilite
 obsolete, complete, concrete, discrete, incomplete, delete, discreet, excrete, bittersweet, parrakeet, 
 2014-05-28 13:43
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-30 17:01
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
@@ -15647,10 +15647,10 @@ belief, meliorist,
 militarism, terrorism, mesmerism, mechanism, heroism, mysticism, barbarism, parallelism, narcissism, secularism, 
 2014-05-28 13:43
 0001-01-01 00:00
-2014-05-29 14:06
+2014-05-30 17:01
 0001-01-01 00:00
 2
-1
+2
 0
 0
 False
@@ -15666,10 +15666,10 @@ breastwork, parapet, machicolated, castle, battlement,
 modulation, circulation, integration, immigration, migration, modification, navigation, nomination, calibration, emigration, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-30 16:21
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
@@ -15685,10 +15685,10 @@ corbel out, corbels, corbelled, corbelling, corbeled capital, furnish, provide, 
 warble, cordial, chordal, mortal, portal, chortle, immortal, coral, choral, moral, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-29 14:06
+2014-05-30 17:02
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
@@ -15705,10 +15705,10 @@ outgoing, waste, waste material, waste product, waste matter, wastewater, sewage
 menstruate, bemusement, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-30 17:02
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
@@ -15724,10 +15724,10 @@ wright, wheelwright, wain, wagonwright,
 daylight, playwright, jadeite, snakebite, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-29 14:07
+2014-05-30 17:02
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
