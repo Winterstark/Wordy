@@ -100,8 +100,10 @@ namespace Wordy
         {
             chklistWords.Items.Clear();
 
+            string filter = textFilter.Text.ToLower();
+
             foreach (Entry word in words)
-                if (word.ToString().Contains(textFilter.Text))
+                if (word.ToString().ToLower().Contains(filter))
                     chklistWords.Items.Add(word.ToString(), word.archived);
         }
 
