@@ -2661,13 +2661,13 @@ warn, direct, call, instruct, command, send for, require, enjoining, enjoined, d
 join, rejoin, adjoin, conjoin, coin, goin, groin, loin, tenderloin, purloin, 
 2013-02-11 19:25
 0001-01-01 00:00
-2014-04-04 15:19
+2014-05-30 18:03
 2014-05-30 15:19
-7
+1
 10
+9
 8
-8
-True
+False
 </entry>
 
 <entry>
@@ -7576,7 +7576,7 @@ True
 <entry>
 fountainhead
 [defs]
-(n.) a spring that is the source of a stream::False
+(n.) a spring that is the source of a stream::True
 (n.) principal source : origin::True
 "Rachel considers Aristotle's Poetics to be the fountainhead of modern art criticism."::False
 [/defs]
@@ -7584,10 +7584,10 @@ headspring, headspring, head, well, wellspring, beginning, rootage, source, root
 
 2013-05-15 13:48
 0001-01-01 00:00
-2014-05-29 15:14
+2014-05-30 18:25
 2014-05-05 14:40
-5
-31
+6
+32
 10
 7
 False
@@ -13087,16 +13087,16 @@ True
 <entry>
 spoonerism
 [defs]
-(n.) A transposition of sounds of two or more words, especially a ludicrous one. (E.g., let me sew you to your sheet for Let me show you to your seat.)::False
+(n.) A transposition of sounds of two or more words, especially a ludicrous one. (E.g., let me sew you to your sheet for Let me show you to your seat.)::True
 [/defs]
 slip of the tongue, 
 hedonism, feminism, heroism, optimism, prism, dualism, humanism, modernism, schism, fatalism, 
 2014-01-09 12:36
 0001-01-01 00:00
-2014-05-29 15:16
+2014-05-30 18:25
 2014-05-08 12:46
-5
-11
+6
+12
 5
 4
 False
@@ -13224,10 +13224,10 @@ sarcastic, ill-natured, saturnine gout, depressed, dull, grave, heavy, gloomy, s
 fettuccine, nomine, threonine, valine, gaberdine, patinae, methionine, serine, pontine, bikini, 
 2014-01-13 12:33
 0001-01-01 00:00
-2014-05-29 15:50
+2014-05-30 18:25
 2014-05-15 15:15
-1
-14
+2
+15
 6
 4
 False
@@ -13734,19 +13734,19 @@ True
 <entry>
 logy
 [defs]
-(adj.) marked by sluggishness and lack of vitality : groggy::False
+(adj.) marked by sluggishness and lack of vitality : groggy::True
 "I was feeling logy after eating such a big meal, so I decided to take a brief nap."::False
 [/defs]
 lethargic, unenrgetic, adopter, underachievement, double-minded, faded-looking, overprotection, woundy, half-shut, out-of-favor, 
 pudgy, smudgy, ruddy, yuppie, bloody, muddy, puppy, buddy, duchy, chubby, 
 2014-01-29 13:27
 0001-01-01 00:00
-2014-05-02 14:30
-2014-05-30 14:30
+2014-05-30 18:03
+2014-07-04 18:03
 7
 13
+6
 5
-4
 True
 </entry>
 
@@ -14180,18 +14180,18 @@ True
 <entry>
 acedia
 [defs]
-(n.) Apathy; boredom; sloth.::False
+(n.) Apathy; boredom; sloth.::True
 [/defs]
 ennui, accedie, laziness, weltschmerz, sloth, deadly sin, mortal sin, 
 media, hypermedia, multimedia, cyclopaedia, cyclopedia, encyclopedia, encyclopaedia, sepia, regia, hemiplegia, 
 2014-02-19 13:03
 0001-01-01 00:00
-2014-04-30 17:16
-2014-05-14 17:16
+2014-05-30 18:05
+2014-06-20 18:05
 7
 18
+4
 3
-2
 True
 </entry>
 
@@ -15081,10 +15081,10 @@ polar star, North Star, Polaris, polestar, cynosure, guiding star, model, star, 
 loadstar, costar, sonar, crowbar, trocar, 
 2014-04-18 13:43
 0001-01-01 00:00
-2014-05-29 15:26
+2014-05-30 18:26
 0001-01-01 00:00
 6
-14
+15
 0
 0
 False
@@ -15553,10 +15553,10 @@ spumous, spuming, spumy, spumed, froth, scum, foam, foal, spumes,
 sebum, from, dem, dumb, slum, bum, dum, scum, tum, chum, 
 2014-05-26 15:47
 0001-01-01 00:00
-2014-05-29 15:08
+2014-05-30 18:25
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False

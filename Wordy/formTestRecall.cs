@@ -21,7 +21,7 @@ namespace Wordy
 
         string def;
         float lineHeight, curX, endX, deltaX;
-        int nTests, correctPick, resetLearningPhase;
+        int nTests, nCorrectAnswers, correctPick, resetLearningPhase;
 
         Entry testWord;
         Random rand;
@@ -482,13 +482,16 @@ namespace Wordy
                 this.Close();
             }
 
-            //display how many words remain to be tested
+            //display how many words remain to be tested and success rate so far
             if (testUnlearned)
                 this.Text = "Study New Words (";
             else
                 this.Text = "Test Learned Words (";
 
             this.Text += (nTests - words.Count) + " / " + nTests + ")";
+
+            if (prevWordCount != 0) //display the success rate only if this isn't the first test
+                this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
         }
 
         void finish()
@@ -507,6 +510,9 @@ namespace Wordy
 
         void answer(bool success)
         {
+            if (success)
+                nCorrectAnswers++;
+
             if (timerProgressChange.Enabled || timerWait.Enabled || buttNext.Visible) //disable answering between questions
                 return;
             
