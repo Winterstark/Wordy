@@ -1,4 +1,3 @@
-SKIP
 "Words, their definitions, visuals, and extra info are shown here."->[rtbDef]
 "Click this button to view only words you haven't yet learned."->(rdbShowUnlearned)
 "Click this button to view only learned words."->(rdbShowLearned)
