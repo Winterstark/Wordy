@@ -143,5 +143,6 @@ APIs used & other credits
 * Word definitions & examples: [Wordnik API](http://developer.wordnik.com/)
 * Word visuals: [Flickr API](http://www.flickr.com/services/api/)
 * Word rhymes: [RhymeBrain](http://rhymebrain.com/)
+* UI icons by: [Adam Whitcroft](http://adamwhitcroft.com/batch/) and [Modern UI Icons](http://modernuiicons.com/)
 * Book icon by ~XTUX345 @ [deviantART](http://xtux345.deviantart.com/art/Elements-of-Harmony-Dictionary-Icon-280443607?q=boost%3Apopular%20dictionary%20icon&qo=9)
 * Checkmark graphics: [psdGraphics](http://www.psdgraphics.com/psd-icons/psd-check-and-cross-icons/)
