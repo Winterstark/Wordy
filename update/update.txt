@@ -14,11 +14,10 @@
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/review.png->root\ui\review.png[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/study new.png->root\ui\study new.png[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/test recall.png->root\ui\test recall.png[/FILE]
-[CHANGELOG]- Improved UI in main window
+[CHANGELOG]IMPORTANT: If you have problems downloading the update you should download the new version manually from Github: https://github.com/Winterstark/Wordy/releases/tag/v1.1
+- Improved UI in main window
 - Various other UI changes
 - Added a Review words feature to allow users to study words at their own pace, without tests
 - Testing words now displays how many more tests remain, as well as success rate
-- Various bug fixes and improvements
-
-IMPORTANT: If you have problems downloading the update you should download the new version manually from Github: https://github.com/Winterstark/Wordy/releases/tag/v1.1[/CHANGELOG]
+- Various bug fixes and improvements[/CHANGELOG]
 [/UPDATE]
