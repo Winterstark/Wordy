@@ -1,1 +1,22 @@
-no update
+[UPDATE]
+[VERSION]1.1[/VERSION]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/GenericForms.dll->root\GenericForms.dll[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/README.MD->root\README.MD[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/tutorials/main.txt->root\tutorials\main.txt[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/tutorials/review.txt->root\tutorials\review.txt[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/1.png->root\ui\1.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/2.png->root\ui\2.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/about.png->root\ui\about.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/add.png->root\ui\add.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/new wotd.png->root\ui\new wotd.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/options.png->root\ui\options.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/review.png->root\ui\review.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/study new.png->root\ui\study new.png[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/test recall.png->root\ui\test recall.png[/FILE]
+[CHANGELOG]- Improved UI in main window
+- Various other UI changes
+- Added a Review words feature to allow users to study words at their own pace, without tests
+- Testing words now displays how many more tests remain, as well as success rate
+- Various bug fixes and improvements[/CHANGELOG]
+[/UPDATE]
