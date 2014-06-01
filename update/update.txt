@@ -18,5 +18,7 @@
 - Various other UI changes
 - Added a Review words feature to allow users to study words at their own pace, without tests
 - Testing words now displays how many more tests remain, as well as success rate
-- Various bug fixes and improvements[/CHANGELOG]
+- Various bug fixes and improvements
+
+IMPORTANT: If you have problems downloading the update you should download the new version manually from Github: https://github.com/Winterstark/Wordy/releases/tag/v1.1[/CHANGELOG]
 [/UPDATE]
