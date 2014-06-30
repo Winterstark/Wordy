@@ -172,8 +172,9 @@ namespace Wordy
                 visuals.Add(word, new List<Image>());
                 loadVisuals(word);
             }
-            catch
+            catch (Exception exc)
             {
+                MessageBox.Show("Error while accessing Flickr." + Environment.NewLine + exc.Message);
             }
         }
 

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrNet.dll" size="344064">
-      <assemblyIdentity name="FlickrNet" version="3.4.0.0" publicKeyToken="2491DF59EFA5D132" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrNet.dll" size="389120">
+      <assemblyIdentity name="FlickrNet" version="3.10.0.0" publicKeyToken="2491DF59EFA5D132" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6UGpATqR5E9ae1e7HkCl7Lgcr+A=</dsig:DigestValue>
+        <dsig:DigestValue>5u4uB0PpjzrH+Siy6xljEQtC7fI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>eVlnj9Eyx+KzGskrAzAxuQzQgVs=</dsig:DigestValue>
+        <dsig:DigestValue>yiEEvo166Akze96ikHw1wxfj5cI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
