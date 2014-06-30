@@ -56,6 +56,11 @@ namespace Wordy
             Process.Start("mailto:winterstark@gmail.com");
         }
 
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://flickrnet.codeplex.com/");
+        }
+
         private void formAbout_Load(object sender, EventArgs e)
         {
             //icon

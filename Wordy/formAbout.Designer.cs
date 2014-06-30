@@ -39,6 +39,7 @@
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.picWordnik = new System.Windows.Forms.PictureBox();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +118,7 @@
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel5.LinkArea = new System.Windows.Forms.LinkArea(15, 10);
-            this.linkLabel5.Location = new System.Drawing.Point(41, 304);
+            this.linkLabel5.Location = new System.Drawing.Point(39, 325);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(173, 21);
             this.linkLabel5.TabIndex = 1;
@@ -132,7 +133,7 @@
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel6.LinkArea = new System.Windows.Forms.LinkArea(8, 9);
-            this.linkLabel6.Location = new System.Drawing.Point(102, 325);
+            this.linkLabel6.Location = new System.Drawing.Point(100, 346);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(112, 21);
             this.linkLabel6.TabIndex = 1;
@@ -147,7 +148,7 @@
             this.linkLabel7.AutoSize = true;
             this.linkLabel7.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel7.LinkArea = new System.Windows.Forms.LinkArea(22, 11);
-            this.linkLabel7.Location = new System.Drawing.Point(1, 346);
+            this.linkLabel7.Location = new System.Drawing.Point(-1, 367);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(212, 21);
             this.linkLabel7.TabIndex = 1;
@@ -182,16 +183,32 @@
             this.picWordnik.TabStop = false;
             this.picWordnik.Click += new System.EventHandler(this.picWordnik_Click);
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkArea = new System.Windows.Forms.LinkArea(9, 10);
+            this.linkLabel3.Location = new System.Drawing.Point(58, 304);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(153, 21);
+            this.linkLabel3.TabIndex = 1;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Uses the Flickr.Net library";
+            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel3.UseCompatibleTextRendering = true;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // formAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 390);
+            this.ClientSize = new System.Drawing.Size(486, 408);
             this.Controls.Add(this.picWordnik);
             this.Controls.Add(this.linkLabel8);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.linkLabel7);
             this.Controls.Add(this.linkLabel6);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel2);
@@ -224,5 +241,6 @@
         private System.Windows.Forms.LinkLabel linkLabel8;
         public System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.PictureBox picWordnik;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }
