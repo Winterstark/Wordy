@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenericForms.dll" size="24576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenericForms.dll" size="25600">
       <assemblyIdentity name="GenericForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>uz40DdbPaW1MwbckhvpmdTA9tzQ=</dsig:DigestValue>
+        <dsig:DigestValue>+GTzs1qTsF+wKwMNdlQv1Mzb43E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>VMwo4o3P/3QOn+YZJ3UeY3venQU=</dsig:DigestValue>
+        <dsig:DigestValue>dszCNyHUqLZCxoxlpmlYXEAWErE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
