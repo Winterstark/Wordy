@@ -1,7 +1,8 @@
 [UPDATE]
-[VERSION]1.1[/VERSION]
+[VERSION]1.12[/VERSION]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/GenericForms.dll->root\GenericForms.dll[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/FlickrNet.dll->root\FlickrNet.dll[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/README.md->root\README.md[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/tutorials/main.txt->root\tutorials\main.txt[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/tutorials/review.txt->root\tutorials\review.txt[/FILE]
@@ -19,14 +20,6 @@
 - Various other UI changes
 - Added a Review words feature to allow users to study words at their own pace, without tests
 - Testing words now displays how many more tests remain, as well as success rate
-- Various bug fixes and improvements[/CHANGELOG]
-[/UPDATE]
-
-[UPDATE]
-[VERSION]1.11[/VERSION]
-[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
-[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/FlickrNet.dll->root\FlickrNet.dll[/FILE]
-[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/README.md->root\README.md[/FILE]
-[CHANGELOG]IMPORTANT: If you have problems downloading the update you should download the new version manually from Github: https://github.com/Winterstark/Wordy/releases/tag/v1.11
+- Various bug fixes and improvements
 - Updated to newest version of Flickr.Net, so visuals search works again[/CHANGELOG]
 [/UPDATE]
