@@ -1102,7 +1102,10 @@ namespace Wordy
                 int num = (char)e.KeyData - 49;
 
                 if (buttPickWord1.Visible)
+                {
                     answer(correctPick == num);
+                    e.Handled = e.SuppressKeyPress = true;
+                }
                 else if (num >= 0 && num < chklistDefs.Items.Count)
                     chklistDefs.SetItemChecked(num, !chklistDefs.GetItemChecked(num));
             }

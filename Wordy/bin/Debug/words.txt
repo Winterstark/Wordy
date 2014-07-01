@@ -494,10 +494,10 @@ variable, multiform, shapeshifting, protean stone, protean animalcules, Protea, 
 plebeian, boolean, ideation, ruffian, paean, peon, european, korean, chorion, yean, 
 2012-10-02 10:00
 0001-01-01 00:00
-2014-05-30 13:15
+2014-07-01 16:40
 2014-05-28 14:38
 1
-6
+7
 11
 10
 False
@@ -6382,10 +6382,10 @@ fare-thee-well, finish, refinement, intactness, dream, cultivation, culture, pol
 
 2013-04-15 15:59
 0001-01-01 00:00
-2014-05-30 17:17
+2014-07-01 16:24
 2014-05-24 14:25
 4
-17
+18
 8
 7
 False
@@ -6484,7 +6484,7 @@ True
 <entry>
 surd
 [defs]
-(adj.) lacking sense : irrational::False
+(adj.) lacking sense : irrational::True
 (adj.) voiceless - used of speech sounds::True
 "The artist is known for creating videos in which well-known speeches with surd utterances scattered throughout are recited by everyday people."::False
 [/defs]
@@ -6492,10 +6492,10 @@ whispered, sharp, nonvocal, unintonated, aspirated, voiceless, irrational, atoni
 heard, third, herd, word, bird, curd, gird, nerd, absurd, unheard, 
 2013-04-17 16:12
 0001-01-01 00:00
-2014-05-30 17:18
+2014-07-01 16:40
 2014-05-18 15:00
-4
-21
+5
+22
 11
 8
 False
@@ -7063,13 +7063,13 @@ caudilloship, hamed, vecino, dueno, mancebo, musico, clerigo, garbanzo, caracter
 pillow, billow, willow, kilo, peccadillo, armadillo, zero, hero, nonzero, ditto, 
 2013-05-01 15:03
 0001-01-01 00:00
-2014-05-30 14:36
-2014-05-07 13:42
-6
-11
+2014-07-01 16:44
+2014-07-08 16:44
+7
+12
 12
 9
-False
+True
 </entry>
 
 <entry>
@@ -7584,13 +7584,13 @@ headspring, headspring, head, well, wellspring, beginning, rootage, source, root
 
 2013-05-15 13:48
 0001-01-01 00:00
-2014-05-30 18:00
-2014-05-05 14:40
-6
-32
+2014-07-01 16:43
+2014-07-08 16:43
+7
+33
 10
 7
-False
+True
 </entry>
 
 <entry>
@@ -8188,10 +8188,10 @@ haze, dun, bedevil, rag, goad, needle, frustrate, crucify, torment, chivvier,
 kami, gamy, rashly, scaly, drily, unfree, 
 2013-08-23 14:47
 0001-01-01 00:00
-2014-05-30 18:10
+2014-07-01 16:44
 2014-05-27 14:15
 1
-15
+16
 10
 8
 False
@@ -10180,10 +10180,10 @@ lightness, nimbleness, gracefulness,
 
 2013-10-19 12:42
 0001-01-01 00:00
-2014-05-30 18:02
+2014-07-01 16:43
 2014-05-17 14:26
 2
-7
+8
 7
 6
 False
@@ -13054,10 +13054,10 @@ make the welkin ring, lift, heave, firmament, surface, daimone, b}, buildeth, ae
 elfin, hairpin, chessmen, rennin, redskin, lenten, freshmen, chairmen, ephedrine, pressmen, 
 2014-01-08 12:54
 0001-01-01 00:00
-2014-05-30 14:29
+2014-07-01 16:43
 2014-05-08 12:45
-5
-12
+6
+13
 5
 4
 False
@@ -14084,17 +14084,17 @@ True
 <entry>
 carrel
 [defs]
-(n.) A partially partitioned nook in or near the stacks in a library, used for private study.::False
+(n.) A partially partitioned nook in or near the stacks in a library, used for private study.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 box, corner, cubicle, counter, 
 carol, barrel, apparel, cattle, castle, camel, cavil, cackle, gavel, gabble, 
 2014-02-15 01:28
 0001-01-01 00:00
-2014-05-30 17:11
+2014-07-01 16:43
 2014-05-15 15:23
-4
-13
+5
+14
 4
 3
 False
@@ -14456,13 +14456,13 @@ formicary, kopje, ant-hill, molehill, koppie, hill, protuberance, islet, tussock
 stomach, buttock, tussock, alack, rucksack, mukluk, dumbstruck, republic, 
 2014-03-05 20:00
 0001-01-01 00:00
-2014-05-30 17:11
-2014-05-05 14:39
-6
-12
+2014-07-01 16:24
+2014-07-08 16:24
+7
+13
 3
 2
-False
+True
 </entry>
 
 <entry>
@@ -14568,10 +14568,10 @@ luxurious, aristocratic, stocking, down-and-out, left-luggage, sideline, Unitari
 stocking, interlocking, docking, flocking, blocking, knocking, shocking, locking, mocking, rocking, 
 2014-03-13 14:49
 0001-01-01 00:00
-2014-05-30 18:27
+2014-07-01 16:24
 2014-05-11 13:55
 1
-6
+7
 3
 2
 False
@@ -15093,17 +15093,17 @@ True
 <entry>
 objurgate
 [defs]
-(v.) Express strong disapproval of.::False
+(v.) Express strong disapproval of.::True
 "During the sentencing, the judge objurgated the crime in the strongest possible terms."::False
 [/defs]
 flame, objurgating, objurgated, chide, reprove, objurgates, call down, lecture, 
 abdicate, adjudicate, subjugate, indicate, educate, originate, update, dedicate, mitigate, abrogate, 
 2014-04-22 13:22
 0001-01-01 00:00
-2014-05-30 17:12
+2014-07-01 16:43
 2014-05-11 14:51
-4
-10
+5
+11
 1
 0
 False
@@ -15265,16 +15265,16 @@ False
 <entry>
 effloresce
 [defs]
-(v.) to burst into bloom; blossom.::True
+(v.) to burst into bloom; blossom.::False
 [/defs]
 devitrify, effloresced, efflorescing, bloom, crust, effloresces, encrust, 
 authoress, stress, suppress, less, success, express, press, unless, dress, nevertheless, 
 2014-05-01 15:16
 0001-01-01 00:00
-2014-05-30 14:35
+2014-07-01 16:24
 0001-01-01 00:00
 6
-7
+8
 0
 0
 False
@@ -15376,17 +15376,17 @@ False
 <entry>
 druthers
 [defs]
-(n.-plural) Informal   A choice or preference: "Given their druthers, these hell-for-leather free marketeers might sell the post office"  ( George F. Will). ::True
+(n.-plural) Informal   A choice or preference: "Given their druthers, these hell-for-leather free marketeers might sell the post office"  ( George F. Will). ::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 wish, choice, alternative, option, druther, 
 brothers, mothers, lovers, covers, suffers, buffers, hovers, discovers, recovers, uncovers, 
 2014-05-11 14:10
 0001-01-01 00:00
-2014-05-30 17:11
+2014-07-01 16:24
 0001-01-01 00:00
 5
-4
+5
 0
 0
 False
@@ -15458,10 +15458,10 @@ past, past tense, participle, nominative, neuter, noes', agentive, conjugation, 
 spirit, inspirit, billet, peerage, steerage, millet, skillet, mucilage, sirup, village, 
 2014-05-24 15:21
 0001-01-01 00:00
-2014-05-30 17:19
+2014-07-01 16:44
 0001-01-01 00:00
+6
 5
-4
 0
 0
 False
@@ -15573,10 +15573,10 @@ riding bitt, cone, post, drawbar, onlyto, cleat, driller, spillway, bitt, freq,
 collared, hollered, bothered, tottered, honored, chartered, pondered, proffered, faltered, soldered, 
 2014-05-27 14:04
 0001-01-01 00:00
-2014-05-30 17:19
+2014-07-01 16:24
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -15592,10 +15592,10 @@ rope, switchblade, grapnel, staysail, windlass, winch,
 causer, saucer, coffer, scoffer, tosser, mauver, crosser, embosser, counteroffer, horror, 
 2014-05-27 14:04
 0001-01-01 00:00
-2014-05-30 17:17
+2014-07-01 16:24
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -15629,10 +15629,10 @@ belief, meliorist,
 militarism, terrorism, mesmerism, mechanism, heroism, mysticism, barbarism, parallelism, narcissism, secularism, 
 2014-05-28 13:43
 0001-01-01 00:00
-2014-05-30 17:08
+2014-07-01 16:43
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -15667,10 +15667,10 @@ corbel out, corbels, corbelled, corbelling, corbeled capital, furnish, provide, 
 warble, cordial, chordal, mortal, portal, chortle, immortal, coral, choral, moral, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-30 17:11
+2014-07-01 16:24
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
