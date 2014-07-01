@@ -104,7 +104,7 @@
             this.buttSkip.Location = new System.Drawing.Point(220, 295);
             this.buttSkip.Name = "buttSkip";
             this.buttSkip.Size = new System.Drawing.Size(196, 43);
-            this.buttSkip.TabIndex = 13;
+            this.buttSkip.TabIndex = 16;
             this.buttSkip.Text = "Skip question";
             this.buttSkip.UseVisualStyleBackColor = true;
             this.buttSkip.Visible = false;

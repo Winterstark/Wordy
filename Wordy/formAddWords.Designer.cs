@@ -138,7 +138,7 @@
             this.buttAcceptWords.Location = new System.Drawing.Point(435, 357);
             this.buttAcceptWords.Name = "buttAcceptWords";
             this.buttAcceptWords.Size = new System.Drawing.Size(194, 52);
-            this.buttAcceptWords.TabIndex = 7;
+            this.buttAcceptWords.TabIndex = 10;
             this.buttAcceptWords.Text = "Accept Words";
             this.buttAcceptWords.UseVisualStyleBackColor = true;
             this.buttAcceptWords.Click += new System.EventHandler(this.buttAcceptWords_Click);
@@ -198,7 +198,7 @@
             this.buttToggleVisuals.Location = new System.Drawing.Point(580, 299);
             this.buttToggleVisuals.Name = "buttToggleVisuals";
             this.buttToggleVisuals.Size = new System.Drawing.Size(49, 52);
-            this.buttToggleVisuals.TabIndex = 14;
+            this.buttToggleVisuals.TabIndex = 8;
             this.buttToggleVisuals.Text = "No Visuals <<";
             this.buttToggleVisuals.UseVisualStyleBackColor = true;
             this.buttToggleVisuals.Click += new System.EventHandler(this.buttToggleVisuals_Click);
@@ -208,7 +208,7 @@
             this.buttLoadMoreVisuals.Location = new System.Drawing.Point(835, 9);
             this.buttLoadMoreVisuals.Name = "buttLoadMoreVisuals";
             this.buttLoadMoreVisuals.Size = new System.Drawing.Size(40, 63);
-            this.buttLoadMoreVisuals.TabIndex = 15;
+            this.buttLoadMoreVisuals.TabIndex = 12;
             this.buttLoadMoreVisuals.Text = "Load More";
             this.buttLoadMoreVisuals.UseVisualStyleBackColor = true;
             this.buttLoadMoreVisuals.Visible = false;
@@ -219,7 +219,7 @@
             this.buttReloadVisuals.Location = new System.Drawing.Point(683, 9);
             this.buttReloadVisuals.Name = "buttReloadVisuals";
             this.buttReloadVisuals.Size = new System.Drawing.Size(146, 23);
-            this.buttReloadVisuals.TabIndex = 16;
+            this.buttReloadVisuals.TabIndex = 11;
             this.buttReloadVisuals.Text = "Reload All";
             this.buttReloadVisuals.UseVisualStyleBackColor = true;
             this.buttReloadVisuals.Visible = false;
@@ -242,7 +242,7 @@
             this.buttOpenWotD.Location = new System.Drawing.Point(435, 328);
             this.buttOpenWotD.Name = "buttOpenWotD";
             this.buttOpenWotD.Size = new System.Drawing.Size(139, 23);
-            this.buttOpenWotD.TabIndex = 18;
+            this.buttOpenWotD.TabIndex = 9;
             this.buttOpenWotD.Text = "Open WotD Page";
             this.buttOpenWotD.UseVisualStyleBackColor = true;
             this.buttOpenWotD.Visible = false;
@@ -251,10 +251,11 @@
             // textDef
             // 
             this.textDef.ContextMenuStrip = this.textDefMenu;
+            this.textDef.Enabled = false;
             this.textDef.Location = new System.Drawing.Point(435, 25);
             this.textDef.Name = "textDef";
             this.textDef.Size = new System.Drawing.Size(194, 213);
-            this.textDef.TabIndex = 21;
+            this.textDef.TabIndex = 5;
             this.textDef.Text = "";
             this.textDef.SelectionChanged += new System.EventHandler(this.textDef_SelectionChanged);
             this.textDef.TextChanged += new System.EventHandler(this.textDef_TextChanged);
@@ -317,7 +318,7 @@
             this.textSynonyms.Location = new System.Drawing.Point(499, 273);
             this.textSynonyms.Name = "textSynonyms";
             this.textSynonyms.Size = new System.Drawing.Size(130, 20);
-            this.textSynonyms.TabIndex = 20;
+            this.textSynonyms.TabIndex = 7;
             this.textSynonyms.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textSynonyms_KeyUp);
             // 
             // picWordnik

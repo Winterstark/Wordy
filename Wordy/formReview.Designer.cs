@@ -82,7 +82,7 @@
             this.textSearch.Location = new System.Drawing.Point(65, 513);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(397, 20);
-            this.textSearch.TabIndex = 4;
+            this.textSearch.TabIndex = 6;
             this.textSearch.TextChanged += new System.EventHandler(this.textSearch_TextChanged);
             // 
             // comboSortBy
@@ -100,7 +100,7 @@
             this.comboSortBy.Location = new System.Drawing.Point(13, 484);
             this.comboSortBy.Name = "comboSortBy";
             this.comboSortBy.Size = new System.Drawing.Size(449, 21);
-            this.comboSortBy.TabIndex = 5;
+            this.comboSortBy.TabIndex = 4;
             this.comboSortBy.SelectedIndexChanged += new System.EventHandler(this.comboSortBy_SelectedIndexChanged);
             // 
             // label1
@@ -122,7 +122,7 @@
             this.rtbDef.ReadOnly = true;
             this.rtbDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.rtbDef.Size = new System.Drawing.Size(610, 437);
-            this.rtbDef.TabIndex = 20;
+            this.rtbDef.TabIndex = 0;
             this.rtbDef.Text = "";
             // 
             // buttSortOrder
@@ -130,17 +130,17 @@
             this.buttSortOrder.Location = new System.Drawing.Point(468, 482);
             this.buttSortOrder.Name = "buttSortOrder";
             this.buttSortOrder.Size = new System.Drawing.Size(145, 23);
-            this.buttSortOrder.TabIndex = 22;
+            this.buttSortOrder.TabIndex = 5;
             this.buttSortOrder.Text = "Ascending";
             this.buttSortOrder.UseVisualStyleBackColor = true;
             this.buttSortOrder.Click += new System.EventHandler(this.buttSortOrder_Click);
             // 
             // checkSearchDefs
             // 
-            this.checkSearchDefs.Location = new System.Drawing.Point(468, 511);
+            this.checkSearchDefs.Location = new System.Drawing.Point(468, 512);
             this.checkSearchDefs.Name = "checkSearchDefs";
             this.checkSearchDefs.Size = new System.Drawing.Size(145, 23);
-            this.checkSearchDefs.TabIndex = 23;
+            this.checkSearchDefs.TabIndex = 7;
             this.checkSearchDefs.Text = "Search definitions too";
             this.checkSearchDefs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkSearchDefs.UseVisualStyleBackColor = true;

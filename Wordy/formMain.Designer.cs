@@ -91,7 +91,7 @@
             this.buttOptions.Name = "buttOptions";
             this.buttOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.buttOptions.Size = new System.Drawing.Size(243, 32);
-            this.buttOptions.TabIndex = 3;
+            this.buttOptions.TabIndex = 5;
             this.buttOptions.Text = "Options";
             this.buttOptions.UseVisualStyleBackColor = true;
             this.buttOptions.Click += new System.EventHandler(this.buttOptions_Click);
@@ -105,7 +105,7 @@
             this.buttNewWotD.Name = "buttNewWotD";
             this.buttNewWotD.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.buttNewWotD.Size = new System.Drawing.Size(160, 80);
-            this.buttNewWotD.TabIndex = 4;
+            this.buttNewWotD.TabIndex = 3;
             this.buttNewWotD.Text = "New Word of the Day!";
             this.buttNewWotD.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttNewWotD.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.buttAbout.Name = "buttAbout";
             this.buttAbout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttAbout.Size = new System.Drawing.Size(243, 32);
-            this.buttAbout.TabIndex = 3;
+            this.buttAbout.TabIndex = 6;
             this.buttAbout.Text = "About";
             this.buttAbout.UseVisualStyleBackColor = true;
             this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
@@ -142,7 +142,7 @@
             this.buttReview.Name = "buttReview";
             this.buttReview.Padding = new System.Windows.Forms.Padding(180, 0, 205, 0);
             this.buttReview.Size = new System.Drawing.Size(492, 32);
-            this.buttReview.TabIndex = 6;
+            this.buttReview.TabIndex = 4;
             this.buttReview.Text = "Review Words";
             this.buttReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttReview.UseVisualStyleBackColor = true;

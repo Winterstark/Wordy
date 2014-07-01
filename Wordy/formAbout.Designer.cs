@@ -71,7 +71,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(226, 76);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(221, 19);
-            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "github.com/Winterstark/Wordy";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -106,7 +106,7 @@
             this.linkLabel4.Location = new System.Drawing.Point(14, 244);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(198, 60);
-            this.linkLabel4.TabIndex = 1;
+            this.linkLabel4.TabIndex = 3;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "This product uses the Flickr API but is not endorsed or certified by Flickr.";
             this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -121,7 +121,7 @@
             this.linkLabel5.Location = new System.Drawing.Point(39, 325);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(173, 21);
-            this.linkLabel5.TabIndex = 1;
+            this.linkLabel5.TabIndex = 5;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Word rhymes by RhymeBrain";
             this.linkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -136,7 +136,7 @@
             this.linkLabel6.Location = new System.Drawing.Point(100, 346);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(112, 21);
-            this.linkLabel6.TabIndex = 1;
+            this.linkLabel6.TabIndex = 6;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Icon by ~XTUX345 ";
             this.linkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -151,7 +151,7 @@
             this.linkLabel7.Location = new System.Drawing.Point(-1, 367);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(212, 21);
-            this.linkLabel7.TabIndex = 1;
+            this.linkLabel7.TabIndex = 7;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Checkmark graphics by psdGraphics";
             this.linkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,7 +166,7 @@
             this.linkLabel8.Location = new System.Drawing.Point(230, 220);
             this.linkLabel8.Name = "linkLabel8";
             this.linkLabel8.Size = new System.Drawing.Size(187, 84);
-            this.linkLabel8.TabIndex = 15;
+            this.linkLabel8.TabIndex = 2;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Send any comments, requests, or bug reports to winterstark@gmail.com\r\nThanks!";
             this.linkLabel8.UseCompatibleTextRendering = true;
@@ -191,7 +191,7 @@
             this.linkLabel3.Location = new System.Drawing.Point(58, 304);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(153, 21);
-            this.linkLabel3.TabIndex = 1;
+            this.linkLabel3.TabIndex = 4;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Uses the Flickr.Net library";
             this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

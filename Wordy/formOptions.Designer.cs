@@ -86,7 +86,7 @@
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
             this.tabs.Size = new System.Drawing.Size(578, 425);
-            this.tabs.TabIndex = 14;
+            this.tabs.TabIndex = 0;
             this.tabs.SelectedIndexChanged += new System.EventHandler(this.tabs_SelectedIndexChanged);
             // 
             // tabPreferences
@@ -113,7 +113,7 @@
             this.checkShowChangelog.Location = new System.Drawing.Point(69, 239);
             this.checkShowChangelog.Name = "checkShowChangelog";
             this.checkShowChangelog.Size = new System.Drawing.Size(166, 17);
-            this.checkShowChangelog.TabIndex = 12;
+            this.checkShowChangelog.TabIndex = 5;
             this.checkShowChangelog.Text = "Show changelog after update";
             this.checkShowChangelog.UseVisualStyleBackColor = true;
             this.checkShowChangelog.CheckedChanged += new System.EventHandler(this.checkShowChangelog_CheckedChanged);
@@ -143,7 +143,7 @@
             this.trackUpdate.Maximum = 3;
             this.trackUpdate.Name = "trackUpdate";
             this.trackUpdate.Size = new System.Drawing.Size(188, 45);
-            this.trackUpdate.TabIndex = 9;
+            this.trackUpdate.TabIndex = 4;
             this.trackUpdate.Scroll += new System.EventHandler(this.trackUpdate_Scroll);
             // 
             // textNewWordsPath
@@ -151,14 +151,14 @@
             this.textNewWordsPath.Location = new System.Drawing.Point(54, 120);
             this.textNewWordsPath.Name = "textNewWordsPath";
             this.textNewWordsPath.Size = new System.Drawing.Size(394, 20);
-            this.textNewWordsPath.TabIndex = 8;
+            this.textNewWordsPath.TabIndex = 2;
             // 
             // buttBrowse
             // 
             this.buttBrowse.Location = new System.Drawing.Point(454, 118);
             this.buttBrowse.Name = "buttBrowse";
             this.buttBrowse.Size = new System.Drawing.Size(42, 23);
-            this.buttBrowse.TabIndex = 7;
+            this.buttBrowse.TabIndex = 3;
             this.buttBrowse.Text = "...";
             this.buttBrowse.UseVisualStyleBackColor = true;
             this.buttBrowse.Click += new System.EventHandler(this.buttBrowse_Click);
@@ -178,7 +178,7 @@
             this.checkAutoVisuals.Location = new System.Drawing.Point(37, 49);
             this.checkAutoVisuals.Name = "checkAutoVisuals";
             this.checkAutoVisuals.Size = new System.Drawing.Size(347, 17);
-            this.checkAutoVisuals.TabIndex = 0;
+            this.checkAutoVisuals.TabIndex = 1;
             this.checkAutoVisuals.Text = "When searching for word definitions, automatically search for visuals";
             this.checkAutoVisuals.UseVisualStyleBackColor = true;
             this.checkAutoVisuals.CheckedChanged += new System.EventHandler(this.checkAutoVisuals_CheckedChanged);
@@ -224,7 +224,7 @@
             this.textSynonyms.Location = new System.Drawing.Point(414, 180);
             this.textSynonyms.Name = "textSynonyms";
             this.textSynonyms.Size = new System.Drawing.Size(130, 20);
-            this.textSynonyms.TabIndex = 27;
+            this.textSynonyms.TabIndex = 9;
             this.textSynonyms.TextChanged += new System.EventHandler(this.textSynonyms_TextChanged);
             // 
             // lblSyns
@@ -241,7 +241,7 @@
             this.textFilter.Location = new System.Drawing.Point(44, 9);
             this.textFilter.Name = "textFilter";
             this.textFilter.Size = new System.Drawing.Size(297, 20);
-            this.textFilter.TabIndex = 25;
+            this.textFilter.TabIndex = 6;
             this.textFilter.TextChanged += new System.EventHandler(this.textFilter_TextChanged);
             // 
             // lblVisualTrigger
@@ -253,7 +253,7 @@
             this.lblVisualTrigger.Location = new System.Drawing.Point(350, 362);
             this.lblVisualTrigger.Name = "lblVisualTrigger";
             this.lblVisualTrigger.Size = new System.Drawing.Size(194, 23);
-            this.lblVisualTrigger.TabIndex = 24;
+            this.lblVisualTrigger.TabIndex = 13;
             this.lblVisualTrigger.Text = "Click to locate visual";
             this.lblVisualTrigger.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblVisualTrigger.Visible = false;
@@ -266,7 +266,7 @@
             this.textDef.Name = "textDef";
             this.textDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.textDef.Size = new System.Drawing.Size(194, 139);
-            this.textDef.TabIndex = 23;
+            this.textDef.TabIndex = 8;
             this.textDef.Text = "";
             this.textDef.SelectionChanged += new System.EventHandler(this.textDef_SelectionChanged);
             this.textDef.TextChanged += new System.EventHandler(this.textDef_TextChanged);
@@ -318,7 +318,7 @@
             this.buttSortName.Location = new System.Drawing.Point(239, 362);
             this.buttSortName.Name = "buttSortName";
             this.buttSortName.Size = new System.Drawing.Size(102, 23);
-            this.buttSortName.TabIndex = 22;
+            this.buttSortName.TabIndex = 12;
             this.buttSortName.Text = "Sort A-Z";
             this.buttSortName.UseVisualStyleBackColor = true;
             this.buttSortName.Click += new System.EventHandler(this.buttSortName_Click);
@@ -347,7 +347,7 @@
             this.buttUpdateDef.Location = new System.Drawing.Point(350, 235);
             this.buttUpdateDef.Name = "buttUpdateDef";
             this.buttUpdateDef.Size = new System.Drawing.Size(194, 23);
-            this.buttUpdateDef.TabIndex = 18;
+            this.buttUpdateDef.TabIndex = 10;
             this.buttUpdateDef.Text = "Update Definition";
             this.buttUpdateDef.UseVisualStyleBackColor = true;
             this.buttUpdateDef.Click += new System.EventHandler(this.buttUpdateDef_Click);
@@ -367,7 +367,7 @@
             this.chklistWords.Location = new System.Drawing.Point(6, 35);
             this.chklistWords.Name = "chklistWords";
             this.chklistWords.Size = new System.Drawing.Size(338, 319);
-            this.chklistWords.TabIndex = 15;
+            this.chklistWords.TabIndex = 7;
             this.chklistWords.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chklistWords_ItemCheck);
             this.chklistWords.SelectedIndexChanged += new System.EventHandler(this.chklistWords_SelectedIndexChanged);
             this.chklistWords.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chklistWords_KeyDown);
@@ -378,7 +378,7 @@
             this.buttDelete.Location = new System.Drawing.Point(6, 362);
             this.buttDelete.Name = "buttDelete";
             this.buttDelete.Size = new System.Drawing.Size(102, 23);
-            this.buttDelete.TabIndex = 14;
+            this.buttDelete.TabIndex = 11;
             this.buttDelete.Text = "Delete";
             this.buttDelete.UseVisualStyleBackColor = true;
             this.buttDelete.Click += new System.EventHandler(this.buttDelete_Click);
@@ -415,7 +415,7 @@
             this.textNewSubTitle.Location = new System.Drawing.Point(297, 105);
             this.textNewSubTitle.Name = "textNewSubTitle";
             this.textNewSubTitle.Size = new System.Drawing.Size(250, 20);
-            this.textNewSubTitle.TabIndex = 10;
+            this.textNewSubTitle.TabIndex = 16;
             this.textNewSubTitle.TextChanged += new System.EventHandler(this.textNewSubTitle_TextChanged);
             // 
             // label6
@@ -432,7 +432,7 @@
             this.textNewSubAddress.Location = new System.Drawing.Point(297, 66);
             this.textNewSubAddress.Name = "textNewSubAddress";
             this.textNewSubAddress.Size = new System.Drawing.Size(250, 20);
-            this.textNewSubAddress.TabIndex = 8;
+            this.textNewSubAddress.TabIndex = 15;
             this.textNewSubAddress.TextChanged += new System.EventHandler(this.textNewSubAddress_TextChanged);
             // 
             // label5
@@ -449,7 +449,7 @@
             this.buttDelSub.Location = new System.Drawing.Point(22, 296);
             this.buttDelSub.Name = "buttDelSub";
             this.buttDelSub.Size = new System.Drawing.Size(255, 23);
-            this.buttDelSub.TabIndex = 5;
+            this.buttDelSub.TabIndex = 18;
             this.buttDelSub.Text = "Delete Subscription";
             this.buttDelSub.UseVisualStyleBackColor = true;
             this.buttDelSub.Click += new System.EventHandler(this.buttDelSub_Click);
@@ -460,7 +460,7 @@
             this.buttAddSub.Location = new System.Drawing.Point(297, 131);
             this.buttAddSub.Name = "buttAddSub";
             this.buttAddSub.Size = new System.Drawing.Size(250, 23);
-            this.buttAddSub.TabIndex = 4;
+            this.buttAddSub.TabIndex = 17;
             this.buttAddSub.Text = "Add Subscription";
             this.buttAddSub.UseVisualStyleBackColor = true;
             this.buttAddSub.Click += new System.EventHandler(this.buttAddSub_Click);
@@ -471,7 +471,7 @@
             this.chklistSubscriptions.Location = new System.Drawing.Point(22, 46);
             this.chklistSubscriptions.Name = "chklistSubscriptions";
             this.chklistSubscriptions.Size = new System.Drawing.Size(255, 244);
-            this.chklistSubscriptions.TabIndex = 0;
+            this.chklistSubscriptions.TabIndex = 14;
             this.chklistSubscriptions.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chklistSubscriptions_ItemCheck);
             this.chklistSubscriptions.SelectedIndexChanged += new System.EventHandler(this.chklistSubscriptions_SelectedIndexChanged);
             this.chklistSubscriptions.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chklistSubscriptions_KeyDown);
