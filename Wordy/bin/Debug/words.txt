@@ -5248,10 +5248,10 @@ council, folkmoot, hustings court, hustings, thing,
 thrusting, dusting, rusting, adjusting, trusting, disgusting, entrusting, hunting, shutting, shunting, 
 2013-03-26 18:05
 0001-01-01 00:00
-2014-05-30 20:50
+2014-07-01 21:05
 2014-04-30 15:16
-1
-10
+4
+13
 10
 8
 False
@@ -11014,10 +11014,10 @@ manhood, caliphate, generalship, captaincy, cadetship, incumbency, excuse, rabbi
 millet, skillet, spirit, village, peerage, fillip, steerage, enfilade, preterit, inspirit, 
 2013-11-06 13:13
 0001-01-01 00:00
-2014-05-30 18:02
+2014-07-01 21:01
 2014-05-09 14:27
 4
-16
+17
 9
 6
 False
@@ -15346,10 +15346,10 @@ transluminal, endometrial, subchronic, dose-dependent, large-bore, organophospha
 cutaneous, subcutaneous, spontaneous, simultaneous, extraneous, miscellaneous, contemporaneous, extemporaneous, macadamias, manias, 
 2014-05-07 14:15
 0001-01-01 00:00
-2014-05-30 18:00
+2014-07-01 21:01
 0001-01-01 00:00
 4
-5
+6
 0
 0
 False
@@ -15648,10 +15648,10 @@ breastwork, parapet, machicolated, castle, battlement,
 modulation, circulation, integration, immigration, migration, modification, navigation, nomination, calibration, emigration, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-30 17:12
+2014-07-01 21:01
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -15687,10 +15687,10 @@ outgoing, waste, waste material, waste product, waste matter, wastewater, sewage
 menstruate, bemusement, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-05-30 17:08
+2014-07-01 21:01
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -15745,10 +15745,10 @@ triturating, triturated, grind, triturates, tablet triturate, trituration,
 retirement, 
 2014-05-30 20:43
 0001-01-01 00:00
-2014-05-30 20:43
+2014-07-01 21:01
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False

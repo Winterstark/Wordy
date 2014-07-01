@@ -603,7 +603,7 @@ namespace Wordy
         public bool CanTest()
         {
             if (!archived)
-                return (int)(DateTime.Now - lastTest).TotalDays >= 1;
+                return (int)(DateTime.Now - lastTest).TotalHours >= 22;
             else
                 return DateTime.Now >= nextTest;
         }
