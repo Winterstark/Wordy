@@ -32,6 +32,7 @@ namespace Wordy
         string[] exampleSentences;
         Answer[] answCorrectly;
         WordnikService wordnik;
+        DateTime startTime;
 
 
         void setupUI()
@@ -473,14 +474,7 @@ namespace Wordy
                 }
             }
             else
-            {
-                if (testUnlearned)
-                    MessageBox.Show("No more unlearned words.");
-                else
-                    MessageBox.Show("No more learned words.");
-
                 this.Close();
-            }
 
             //display how many words remain to be tested and success rate so far
             if (testUnlearned)
@@ -1038,6 +1032,32 @@ namespace Wordy
 
             return success;
         }
+
+        void showResults()
+        {
+            string msg;
+
+            if (words.Count == 0)
+                msg = "No more words ready for testing.";
+            else
+                msg = words.Count + " words remaining.";
+
+            double elapsedTime = DateTime.Now.Subtract(startTime).TotalSeconds;
+            
+            int nAnswered = nTests - words.Count - 1;
+            if (timerProgressChange.Enabled || buttNext.Visible || picRight.Visible)
+                nAnswered++;
+
+            msg += Environment.NewLine + Environment.NewLine + "Answered " + nAnswered + " questions in " + (int)elapsedTime + " secs.";
+
+            if (nAnswered > 0)
+            {
+                msg += Environment.NewLine + "Success rate: " + (int)(100.0f * nCorrectAnswers / nAnswered) + "%.";
+                msg += Environment.NewLine + "Average time spent per question: " + (int)(elapsedTime / nAnswered) + " secs.";
+            }
+
+            MessageBox.Show(msg);
+        }
         
 
         public formTestRecall()
@@ -1068,6 +1088,7 @@ namespace Wordy
             //start testing
             nTests = 0;
             rand = new Random((int)DateTime.Now.Ticks);
+            startTime = DateTime.Now;
 
             nextWord();
         }
@@ -1079,6 +1100,7 @@ namespace Wordy
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
         {
+            showResults();
             main.Show();
         }
 
