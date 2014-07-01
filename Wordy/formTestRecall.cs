@@ -1100,6 +1100,9 @@ namespace Wordy
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
         {
+            timerProgressChange.Enabled = false;
+            timerWait.Enabled = false;
+
             showResults();
             main.Show();
         }

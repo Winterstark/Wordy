@@ -1806,13 +1806,13 @@ venturesomeness, gall, brashness, foolhardiness, precipitancy, recklessness, aud
 polarity, posterity, celerity, prosperity, clarity, sincerity, disparity, parity, rarity, hilarity, 
 2013-02-05 20:09
 0001-01-01 00:00
-2014-05-27 13:09
+2014-07-01 21:09
 2014-07-01 13:09
-7
+1
 18
-10
+11
 9
-True
+False
 </entry>
 
 <entry>
@@ -5242,16 +5242,16 @@ True
 husting
 [defs]
 (n.) A platform where candidates in an election give speeches.::True
-(n.) An assembly, especially one of the retainers of a ruler.::False
+(n.) An assembly, especially one of the retainers of a ruler.::True
 [/defs]
 council, folkmoot, hustings court, hustings, thing, 
 thrusting, dusting, rusting, adjusting, trusting, disgusting, entrusting, hunting, shutting, shunting, 
 2013-03-26 18:05
 0001-01-01 00:00
-2014-07-01 21:05
+2014-07-01 21:09
 2014-04-30 15:16
-4
-13
+5
+14
 10
 8
 False
@@ -5512,12 +5512,12 @@ pussyfoots, pussyfooted, pussyfooting, pussytoe, walk,
 foot, afoot, soot, occiput, underfoot, tenderfoot, put, caput, clubfoot, babyhood, 
 2013-03-30 14:49
 0001-01-01 00:00
-2014-04-12 16:29
-2014-06-07 16:29
+2014-07-01 21:09
+2014-09-02 21:09
 7
 7
-9
-9
+10
+10
 True
 </entry>
 
@@ -10312,12 +10312,12 @@ opaque, turbidity, unsettled, muddy, drumly, lutulent, Riley, thick, confused, r
 forbid, did, amid, bid, undid, mid, rid, grid, hid, kid, 
 2013-10-22 13:05
 0001-01-01 00:00
-2014-04-17 15:23
-2014-06-05 15:23
+2014-07-01 21:10
+2014-08-26 21:10
 7
 12
+9
 8
-7
 True
 </entry>
 
