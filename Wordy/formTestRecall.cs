@@ -1205,22 +1205,25 @@ namespace Wordy
 
         private void buttAnotherExample_Click(object sender, EventArgs e)
         {
-            //do we have any examples?
-            if (exampleSentences == null || exampleSentences.Length == 0)
-                return;
+            if (buttAnotherExample.Visible) //only enabled during questions
+            {
+                //do we have any examples?
+                if (exampleSentences == null || exampleSentences.Length == 0)
+                    return;
 
-            //find current example index
-            int curExample;
-            for (curExample = 0; curExample <= exampleSentences.Length; curExample++)
-                if (exampleSentences[curExample] == lblDef.Text)
-                    break;
+                //find current example index
+                int curExample;
+                for (curExample = 0; curExample < exampleSentences.Length; curExample++)
+                    if (exampleSentences[curExample] == lblDef.Text)
+                        break;
 
-            //display next example
-            curExample = (curExample + 1) % exampleSentences.Length;
-            lblDef.Text = exampleSentences[curExample];
+                //display next example
+                curExample = (curExample + 1) % exampleSentences.Length;
+                lblDef.Text = exampleSentences[curExample];
 
-            //readjust button position
-            buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+                //readjust button position
+                buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+            }
         }
 
         private void buttNext_Click(object sender, EventArgs e)

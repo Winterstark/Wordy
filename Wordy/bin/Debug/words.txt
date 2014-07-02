@@ -1258,12 +1258,12 @@ impure, dirty, depressing, cheerless, soiled, unclean, uncheerful, dinginess, di
 stingy, windy, hindi, minty, flinty, wimpy, gimpy, nimbi, skimpy, bilge, 
 2012-10-27 16:18
 0001-01-01 00:00
-2014-04-12 16:30
-2014-05-31 16:30
+2014-07-02 11:15
+2014-08-27 11:15
 7
 29
-12
-10
+13
+11
 True
 </entry>
 
@@ -1524,12 +1524,12 @@ buttonholer, accost, bore, boutonniere, waylay, buttonholing, buttonholes, butto
 pigeonhole, patrol, cubbyhole, unroll, bedroll, camisole, control, whole, soul, hole, 
 2013-01-10 12:35
 0001-01-01 00:00
-2014-04-12 18:05
-2014-06-07 18:05
+2014-07-02 11:11
+2014-09-03 11:11
 7
 8
-11
-11
+12
+12
 True
 </entry>
 
@@ -1844,12 +1844,12 @@ in the offing, distance, sea, to keep a good offing, to get a good offing, water
 coffin, pausing, tossing, crossing, calling, talking, walking, longing, pouring, boring, 
 2013-02-05 21:11
 0001-01-01 00:00
-2014-05-04 15:01
-2014-06-01 15:01
+2014-07-02 11:11
+2014-08-06 11:11
 7
 16
-14
-12
+15
+13
 True
 </entry>
 
@@ -2064,18 +2064,18 @@ True
 <entry>
 asseveration
 [defs]
-(n.) An earnest affirmation or declaration of support.::True
+(n.) An earnest affirmation or declaration of support.::False
 [/defs]
 avowal, avouchment, ipse dixit, charge, testimony, affirmation, disaffirmation, contention, accusation, claim, 
 urine, assertion, uncertain, aversion, suburban, perversion, subversion, overburden, aspersion, certain, 
 2013-02-06 13:39
 0001-01-01 00:00
-2014-05-27 13:12
-2014-06-17 13:12
+2014-07-02 11:16
+2014-07-30 11:16
 7
 14
-12
-10
+13
+11
 True
 </entry>
 
@@ -4691,13 +4691,13 @@ candlemaker, ship's chandler, wax-chandler, author, maker, retail merchant, writ
 handler, sampler, rambler, scrambler, pander, dander, banner, candor, panther, banter, 
 2013-03-20 19:50
 0001-01-01 00:00
-2014-04-02 14:38
+2014-07-02 11:11
 2014-05-28 14:38
+1
 7
-7
+9
 8
-8
-True
+False
 </entry>
 
 <entry>
@@ -5418,12 +5418,12 @@ fuliginosity, fuliginously, sooty, dark, dusky, nonconducting, sebaceous, bottle
 uralensis, floridanus, autogenous, motionlessness, odoratus, pauperibus, orbitalis, quarrelsomeness, morphologists, immunocompetence, 
 2013-03-29 13:05
 0001-01-01 00:00
-2014-04-06 14:46
-2014-06-01 14:46
+2014-07-02 11:11
+2014-09-03 11:11
 7
 12
-7
-7
+8
+8
 True
 </entry>
 
@@ -7416,12 +7416,12 @@ decussated, crossed, decussating, intersected, intersect, cross,
 percolate, debate, dominate, activate, delegate, dictate, terminate, decorate, dedicate, deviate, 
 2013-05-13 14:48
 0001-01-01 00:00
-2014-05-04 15:05
-2014-06-08 15:05
+2014-07-02 11:16
+2014-08-13 11:16
 7
 14
+11
 10
-9
 True
 </entry>
 
@@ -8508,12 +8508,12 @@ affected, unnatural, competitive, agonistical, competitory, agonistic muscle, ag
 animistic, optimistic, mechanistic, egotistic, realistic, antagonistic, mystic, journalistic, pessimistic, statistic, 
 2013-09-04 14:50
 0001-01-01 00:00
-2014-04-15 13:12
-2014-06-10 13:12
+2014-07-02 11:12
+2014-09-03 11:12
 7
 8
-7
-7
+8
+8
 True
 </entry>
 
@@ -8693,12 +8693,12 @@ pauperization, starvation, pauperisation, impoverishment, starving, negation, ne
 elevation, taxation, derivation, probation, dilation, ligation, relation, application, creation, generation, 
 2013-09-11 13:48
 0001-01-01 00:00
-2014-04-12 16:29
-2014-06-07 16:29
+2014-07-02 11:14
+2014-09-03 11:14
 7
 8
-7
-7
+8
+8
 True
 </entry>
 
@@ -9543,12 +9543,12 @@ paternity, authorship, restoration, Renaissance, repair, renovation, renewal, co
 inspiration, installation, expiration, information, imagination, exploration, indication, inflation, invitation, restoration, 
 2013-09-30 15:06
 0001-01-01 00:00
-2014-04-27 14:18
-2014-06-22 14:18
+2014-07-02 11:14
+2014-09-03 11:14
 7
 6
-7
-7
+8
+8
 True
 </entry>
 
@@ -10661,12 +10661,12 @@ divinity, deity, immortal, God, Gorgon,
 gorgon, sorghum, distortion, motorman, motormen, proportion, misfortune, precaution, extortion, cordon, 
 2013-10-31 12:52
 0001-01-01 00:00
-2014-04-20 13:58
-2014-06-08 13:58
+2014-07-02 11:16
+2014-08-27 11:16
 7
 14
-6
-6
+7
+7
 True
 </entry>
 
@@ -11124,12 +11124,12 @@ Lintel, beam, regall, mantel, balustrade, fretwork, moldings, architrave, entabl
 kindle, brindle, simple, symbol, spindle, nimble, dwindle, swindle, thimble, cymbal, 
 2013-11-09 12:44
 0001-01-01 00:00
-2014-05-29 15:18
-2014-06-19 15:18
+2014-07-02 11:11
+2014-07-30 11:11
 7
 13
+9
 8
-7
 True
 </entry>
 
@@ -13000,12 +13000,12 @@ scrum, rucking, rucked, heap, squat, roc, mob, rick, cower, crowd, crease,
 luck, yuk, yuck, truck, duck, buck, fuck, pluck, suck, chuck, 
 2014-01-04 15:36
 0001-01-01 00:00
-2014-05-27 14:05
-2014-06-17 14:05
+2014-07-02 11:14
+2014-07-30 11:14
 7
 32
-6
-4
+7
+5
 True
 </entry>
 
