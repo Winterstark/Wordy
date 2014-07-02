@@ -65,7 +65,7 @@ Note that in the last screenshot the user correctly filled out only one of the d
 
 Although this may seem like overkill, the point of having so many tests (which become somewhat difficult near the end) is to help the user learn the word thoroughly. Many vocabulary services are much less demanding of their students, but their end result is also much less comprehensive and not as lasting. That is why Wordy is designed for either students that already have a good grasp of English, or native speakers that want to improve their vocabulary.
 
-After a word has been tested, its next test will become available after 24 hours.
+After a word has been tested, its next test will become available after 22 hours. Why 22 and not 24? To avoid "creep"; see this: [/r/Dota2/Why is the daily hero challenge every 22 hours instead of 24?](http://www.reddit.com/r/DotA2/comments/2898qm/why_is_the_daily_hero_challenge_every_22_hours/ci8od2e).
 
 The release version of Wordy has several example words set in various stages of learning so you can see how these tests look. You can delete these words in the Options menu.
 
