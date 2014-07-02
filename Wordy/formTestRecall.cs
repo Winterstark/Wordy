@@ -22,9 +22,13 @@ namespace Wordy
         string def;
         float lineHeight, curX, endX, deltaX;
         int nTests, nCorrectAnswers, correctPick, resetLearningPhase;
+        bool noMoreWords;
 
         Entry testWord;
         Random rand;
+        DateTime startTime;
+        TimeSpan totalTime;
+
         List<MaskedTextBox> mtbDefs;
         List<List<Tuple<int, int>>> kwBounds;
         List<Tuple<int, int, bool, string>> answers;
@@ -32,7 +36,6 @@ namespace Wordy
         string[] exampleSentences;
         Answer[] answCorrectly;
         WordnikService wordnik;
-        DateTime startTime;
 
 
         void setupUI()
@@ -245,11 +248,11 @@ namespace Wordy
                 else
                 {
                     int questionType = -1;
-                    
+
                     while (questionType == -1)
                     {
                         int percent = rand.Next(100);
-                        
+
                         if (percent <= 25)
                             questionType = 0;
                         else if (percent <= 40)
@@ -274,7 +277,7 @@ namespace Wordy
 
                                 for (int i = 0; i < examples.Length; i++)
                                     exampleSentences[i] = removeWordInstances(examples[i].Text, testWord.ToString());
-                                
+
                                 lblDef.Text = exampleSentences[rand.Next(examples.Length)];
                                 questionType = 4;
                             }
@@ -295,7 +298,7 @@ namespace Wordy
                     int offset;
 
                     mtbTestWord.Tag = false; //indicates mtbTestWord is NOT used to read the answer
-                    
+
                     switch (questionType)
                     {
                         case 0: // type word
@@ -317,7 +320,7 @@ namespace Wordy
 
                             buttFinished.Top = mtbDefs[mtbDefs.Count - 1].Top + mtbDefs[mtbDefs.Count - 1].Height + 16;
                             buttSkip.Top = buttFinished.Top;
-                            
+
                             buttFinished.Visible = true;
                             buttSkip.Visible = true;
                             panelDef.Visible = true;
@@ -365,7 +368,7 @@ namespace Wordy
                             lblDef.Text = "What word has these synonyms?";
                             mtbTestWord.Text = "";
                             mtbTestWord.Top = 17;
-                                
+
                             //reveal every other letter
                             mask = createMask();
                             offset = 0;
@@ -379,7 +382,7 @@ namespace Wordy
                             }
 
                             mtbTestWord.Mask = mask;
-                            
+
                             lblWord.Visible = false;
                             lblDef.Visible = true;
                             mtbTestWord.Visible = true;
@@ -400,7 +403,7 @@ namespace Wordy
                             //reveal first letter and vowels
                             mask = createMask();
                             offset = 0;
-                            
+
                             for (int i = 1; i < testWord.ToString().Length; i++)
                             {
                                 offset += mask[i + offset - 1] == '\\' ? 1 : 0;
@@ -435,7 +438,7 @@ namespace Wordy
                             }
 
                             if (lblWord.Text == testWord.ToString()) //extra check
-                                lblWord.Text = lblWord.Text.Substring(1,1) + lblWord.Text.Substring(0,1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
+                                lblWord.Text = lblWord.Text.Substring(1, 1) + lblWord.Text.Substring(0, 1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
 
                             lblDef.Text = "Unscramble this word.";
                             mtbTestWord.Text = "";
@@ -474,7 +477,10 @@ namespace Wordy
                 }
             }
             else
+            {
+                noMoreWords = true;
                 this.Close();
+            }
 
             //display how many words remain to be tested and success rate so far
             if (testUnlearned)
@@ -486,6 +492,8 @@ namespace Wordy
 
             if (prevWordCount != 0) //display the success rate only if this isn't the first test
                 this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
+
+            startTime = DateTime.Now; //start the clock
         }
 
         void finish()
@@ -661,6 +669,8 @@ namespace Wordy
                     }
                 }
             }
+
+            totalTime += DateTime.Now - startTime; //mark time
 
             testWord.LogTest(success, answCorrectly);
             main.SaveWords();
@@ -1035,20 +1045,20 @@ namespace Wordy
 
         void showResults(bool betweenQuestions)
         {
-            string msg;
+            int nRemaining = words.Count;
+            if (!betweenQuestions)
+                nRemaining++;
 
-            if (words.Count == 0)
-                msg = "No more words ready for testing.";
+            string title;
+            if (nRemaining == 0)
+                title = "No more words ready for testing.";
             else
-                msg = words.Count + (words.Count != 1 ? " words remaining." : " word remaining.");
+                title = nRemaining + (nRemaining != 1 ? " words remaining." : " word remaining.");
 
-            double elapsedTime = DateTime.Now.Subtract(startTime).TotalSeconds;
+            double elapsedTime = totalTime.TotalSeconds;
+            int nAnswered = nTests - nRemaining;
 
-            int nAnswered = nTests - words.Count - 1;
-            if (betweenQuestions)
-                nAnswered++;
-
-            msg += Environment.NewLine + Environment.NewLine + "Correctly answered " + nCorrectAnswers + " / " + nAnswered + (nAnswered != 1 ? " questions in " : " question in ") + formatTime(elapsedTime);
+            string msg = "Correctly answered " + nCorrectAnswers + " / " + nAnswered + (nAnswered != 1 ? " questions in " : " question in ") + formatTime(elapsedTime);
 
             if (nAnswered > 0)
             {
@@ -1056,7 +1066,7 @@ namespace Wordy
                 msg += Environment.NewLine + "Average time spent per question: " + formatTime(elapsedTime / nAnswered);
             }
 
-            MessageBox.Show(msg);
+            MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         string formatTime(double totalSecs)
@@ -1104,9 +1114,10 @@ namespace Wordy
             lineHeight = lblDef.CreateGraphics().MeasureString("1", lblDef.Font).Height;
 
             //start testing
+            noMoreWords = false;
             nTests = 0;
             rand = new Random((int)DateTime.Now.Ticks);
-            startTime = DateTime.Now;
+            totalTime = new TimeSpan(0);
 
             nextWord();
         }
@@ -1118,8 +1129,8 @@ namespace Wordy
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
         {
-            bool betweenQuestions = timerProgressChange.Enabled || buttNext.Visible || picRight.Visible;
-
+            bool betweenQuestions = timerProgressChange.Enabled || buttNext.Visible || picRight.Visible || noMoreWords;
+            
             timerProgressChange.Enabled = false;
             timerWait.Enabled = false;
 
