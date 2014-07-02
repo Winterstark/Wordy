@@ -804,7 +804,7 @@ namespace Wordy
                 mtbDef.Width = this.Width - 60;
                 mtbDef.Font = lblDef.Font;
                 mtbDef.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-                mtbDef.Tag = defs[i];
+                mtbDef.TabIndex = i;
                 mtbDef.Click += new EventHandler(mtbDef_Enter);
                 mtbDef.GotFocus += new EventHandler(mtbDef_Enter);
                 mtbDef.KeyPress += new KeyPressEventHandler(mtbDef_KeyPress);
@@ -1033,30 +1033,48 @@ namespace Wordy
             return success;
         }
 
-        void showResults()
+        void showResults(bool betweenQuestions)
         {
             string msg;
 
             if (words.Count == 0)
                 msg = "No more words ready for testing.";
             else
-                msg = words.Count + " words remaining.";
+                msg = words.Count + (words.Count != 1 ? " words remaining." : " word remaining.");
 
             double elapsedTime = DateTime.Now.Subtract(startTime).TotalSeconds;
-            
+
             int nAnswered = nTests - words.Count - 1;
-            if (timerProgressChange.Enabled || buttNext.Visible || picRight.Visible)
+            if (betweenQuestions)
                 nAnswered++;
 
-            msg += Environment.NewLine + Environment.NewLine + "Answered " + nAnswered + " questions in " + (int)elapsedTime + " secs.";
+            msg += Environment.NewLine + Environment.NewLine + "Correctly answered " + nCorrectAnswers + " / " + nAnswered + (nAnswered != 1 ? " questions in " : " question in ") + formatTime(elapsedTime);
 
             if (nAnswered > 0)
             {
                 msg += Environment.NewLine + "Success rate: " + (int)(100.0f * nCorrectAnswers / nAnswered) + "%.";
-                msg += Environment.NewLine + "Average time spent per question: " + (int)(elapsedTime / nAnswered) + " secs.";
+                msg += Environment.NewLine + "Average time spent per question: " + formatTime(elapsedTime / nAnswered);
             }
 
             MessageBox.Show(msg);
+        }
+
+        string formatTime(double totalSecs)
+        {
+            int secs = (int)totalSecs;
+            string time = "";
+
+            if (secs >= 60)
+            {
+                int mins = secs / 60;
+                secs = secs % 60;
+
+                time = mins + (mins > 1 ? " mins " : " min ");
+            }
+
+            time += secs + (secs != 1 ? " secs." : " sec.");
+
+            return time;
         }
         
 
@@ -1100,10 +1118,12 @@ namespace Wordy
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
         {
+            bool betweenQuestions = timerProgressChange.Enabled || buttNext.Visible || picRight.Visible;
+
             timerProgressChange.Enabled = false;
             timerWait.Enabled = false;
 
-            showResults();
+            showResults(betweenQuestions);
             main.Show();
         }
 
