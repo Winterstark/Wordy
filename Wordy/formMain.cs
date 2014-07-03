@@ -20,7 +20,9 @@ namespace Wordy
         List<Entry> words;
         public List<WordOfTheDay> wotds;
         public Preferences prefs;
+        formOptions options;
         public bool needWotDCheck = true;
+        bool checkingWotDs = false;
 
 
         void loadWords()
@@ -82,7 +84,17 @@ namespace Wordy
             fRdr.Close();
         }
 
-        public void LoadSubs()
+        public void LoadSubs(RunWorkerCompletedEventHandler wotdWorker_RunWorkerCompleted)
+        {
+            BackgroundWorker wotdWorker = new BackgroundWorker();
+            wotdWorker.DoWork += new DoWorkEventHandler(wotdWorker_DoWork);
+            wotdWorker.RunWorkerCompleted += wotdWorker_RunWorkerCompleted;
+
+            checkingWotDs = true;
+            wotdWorker.RunWorkerAsync(wotds);
+        }
+
+        void wotdWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             wotds = new List<WordOfTheDay>();
 
@@ -90,6 +102,35 @@ namespace Wordy
             while (!fRdr.EndOfStream)
                 wotds.Add(new WordOfTheDay(fRdr.ReadLine(), fRdr.ReadLine(), bool.Parse(fRdr.ReadLine()), fRdr.ReadLine()));
             fRdr.Close();
+
+            e.Result = wotds;
+        }
+
+        void wotdWorker_RunWorkerCompleted_ShowButton(object sender, RunWorkerCompletedEventArgs e)
+        {
+            wotds = (List<WordOfTheDay>)e.Result;
+
+            checkWotDs();
+
+            prefs.LastFeedCheck = DateTime.Now;
+            prefs.Save();
+
+            checkingWotDs = false;
+            lblInfo.Text = "";
+        }
+
+        void wotdWorker_RunWorkerCompleted_ClickButton(object sender, RunWorkerCompletedEventArgs e)
+        {
+            wotdWorker_RunWorkerCompleted_ShowButton(sender, e); //save wotds
+            buttNewWotD.PerformClick(); //click button to add new wotds
+        }
+
+        public void wotdWorker_RunWorkerCompleted_WotDOptions(object sender, RunWorkerCompletedEventArgs e)
+        {
+            wotdWorker_RunWorkerCompleted_ShowButton(sender, e); //save wotds
+
+            if (options != null)
+                options.DisplaySubs(); //display wotd options
         }
 
         public bool WordExists(string word)
@@ -300,7 +341,6 @@ namespace Wordy
             if (File.Exists(Application.StartupPath + "\\ui\\about.png"))
                 buttAbout.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\about.png");
             
-
             //show tutorial
             new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
 
@@ -321,13 +361,7 @@ namespace Wordy
                 lblInfo.Text = "Checking for new Words of the Day" + Environment.NewLine + "Please wait a moment...";
                 this.Refresh();
 
-                LoadSubs();
-                checkWotDs();
-
-                prefs.LastFeedCheck = DateTime.Now;
-                prefs.Save();
-
-                lblInfo.Text = "";
+                LoadSubs(wotdWorker_RunWorkerCompleted_ShowButton);
             }
         }
 
@@ -344,13 +378,13 @@ namespace Wordy
 
         private void buttOptions_Click(object sender, EventArgs e)
         {
-            formOptions wordlist = new formOptions();
+            options = new formOptions();
 
-            wordlist.main = this;
-            wordlist.words = words;
-            wordlist.wotds = wotds;
+            options.main = this;
+            options.words = words;
+            options.wotds = wotds;
 
-            wordlist.Show();
+            options.Show();
             this.Hide();
         }
 
@@ -405,23 +439,25 @@ namespace Wordy
         private void buttNewWotD_Click(object sender, EventArgs e)
         {
             if (wotds == null)
-                LoadSubs();
+                LoadSubs(wotdWorker_RunWorkerCompleted_ClickButton);
+            else
+            {
+                prefs.NewWotDs = false;
+                prefs.Save();
 
-            prefs.NewWotDs = false;
-            prefs.Save();
+                formAddWords addWords = new formAddWords();
+                addWords.main = this;
 
-            formAddWords addWords = new formAddWords();
-            addWords.main = this;
+                addWords.Show();
+                this.Hide();
 
-            addWords.Show();
-            this.Hide();
+                foreach (WordOfTheDay wotd in wotds)
+                    if (wotd.active && wotd.AnyNewPosts())
+                        addWords.loadWotDs(wotd.getNewWordsLinks(), wotd.getNewWords());
 
-            foreach (WordOfTheDay wotd in wotds)
-                if (wotd.active && wotd.AnyNewPosts())
-                    addWords.loadWotDs(wotd.getNewWordsLinks(), wotd.getNewWords());
-
-            SaveSubs();
-            buttNewWotD.Visible = false;
+                SaveSubs();
+                buttNewWotD.Visible = false;
+            }
         }
 
         private void buttReview_Click(object sender, EventArgs e)
@@ -441,7 +477,10 @@ namespace Wordy
 
         private void button_MouseLeave(object sender, EventArgs e)
         {
-            lblInfo.Text = "";
+            if (!checkingWotDs)
+                lblInfo.Text = "";
+            else
+                lblInfo.Text = "Checking for new Words of the Day" + Environment.NewLine + "Please wait a moment..."; ;
         }
 
         private void buttAdd_MouseEnter(object sender, EventArgs e)

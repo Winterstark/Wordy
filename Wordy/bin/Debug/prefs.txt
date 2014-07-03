@@ -1,6 +1,6 @@
 True
-2014-07-02 10:45
-False
+2014-07-03 15:19
+True
 C:\dev\projex\Wordy\Wordy\bin\Debug\newwords.txt
 1
 True

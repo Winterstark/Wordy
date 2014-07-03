@@ -20,6 +20,9 @@ namespace Wordy
     {
         WordnikService wordnik = new WordnikService("b3bbd1f9103a01de7d00a0fd1300164c17bfcec03eb86a678");
         Flickr flickr = new Flickr("d2a2e14ee946139a8f0d2f0b626522f7");
+        
+        BackgroundWorker searchWordWorker, dlVisualsWorker;
+        delegate void SetTextCallback(string text);
 
         Dictionary<string, Definition> newDefs = new Dictionary<string, Definition>();
         Dictionary<string, string> synonyms = new Dictionary<string, string>();
@@ -29,6 +32,8 @@ namespace Wordy
         Dictionary<string, string> links = new Dictionary<string,string>();
 
         List<string> corewords = new List<string>();
+        Queue<string> wordSearchQ;
+        List<string> flickrSearchList;
 
         public formMain main;
         public bool chkNewWordsFile = false;
@@ -53,31 +58,6 @@ namespace Wordy
             }
 
             return page;
-        }
-
-        bool findDef(string word)
-        {
-            try
-            {
-                updateStatus("Searching definitions for '" + word + "' ...");
-                WordnikDefinition[] wdDefs = wordnik.GetDefinitions(word).ToArray();
-                
-                if (wdDefs.Length > 0)
-                {
-                    newDefs.Add(word, new Definition(wdDefs));
-                    synonyms.Add(word, findSyns(word));
-                    rhymes.Add(word, findRhymes(word));
-
-                    return true;
-                }
-                else
-                    return false;
-            }
-            catch
-            {
-                MessageBox.Show("Your Internet connection might be disrupted, or the Wordnik service might be temporarily down.", "Error while finding word definition for " + word, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
         }
 
         string findSyns(string word)
@@ -144,17 +124,13 @@ namespace Wordy
             }
         }
 
-        void findVisual(string word)
+        PhotoCollection findFlickrImages(string word)
         {
             try
             {
-                if (flickResults.ContainsKey(word))
-                    return;
-
                 updateStatus("Searching visuals for '" + word + "' ...");
 
                 PhotoSearchOptions opts = new PhotoSearchOptions();
-
                 opts.Tags = word;
                 opts.SortOrder = PhotoSearchSortOrder.InterestingnessDescending;
                 opts.Licenses.Add(LicenseType.AttributionCC);
@@ -166,33 +142,18 @@ namespace Wordy
                 opts.MediaType = MediaType.Photos;
                 opts.Extras = PhotoSearchExtras.OwnerName;
 
-                flickResults.Add(word, flickr.PhotosSearch(opts));
-
-                //download visuals
-                visuals.Add(word, new List<Image>());
-                loadVisuals(word);
+                return flickr.PhotosSearch(opts);
             }
             catch (Exception exc)
             {
                 MessageBox.Show("Error while accessing Flickr." + Environment.NewLine + exc.Message);
+                return null;
             }
         }
 
         void loadVisuals(string word)
         {
-            int nVis = Math.Min(flickResults[word].Count, 6) - visuals[word].Count; //how many visuals to load
-
-            for (int i = 0; i < nVis; i++)
-            {
-                updateStatus("Downloading visuals for '" + word + "' (" + (i + 1).ToString() + "/" + nVis.ToString() + ") ...");
-
-                visuals[word].Add(downloadImage(flickResults[word][0].SmallUrl));
-                visuals[word][visuals[word].Count - 1].Tag = flickResults[word][0].WebUrl;
-
-                flickResults[word].RemoveAt(0);
-            }
-
-            updateStatus("Done");
+            
         }
 
         void toggleVisuals()
@@ -302,13 +263,21 @@ namespace Wordy
 
         void updateStatus(string status)
         {
-            labelProgress.Text = status;
-            this.Refresh();
+            if (labelProgress.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(updateStatus);
+                this.Invoke(d, new object[] { status });
+            }
+            else
+                labelProgress.Text = status;
         }
 
         void removeWord()
         {
             newDefs.Remove(listFoundWords.Text);
+            synonyms.Remove(listFoundWords.Text);
+            rhymes.Remove(listFoundWords.Text);
+
             flickResults.Remove(listFoundWords.Text);
             visuals.Remove(listFoundWords.Text);
 
@@ -339,7 +308,7 @@ namespace Wordy
                     newDefs.Add(wotdDef.Key, wotdDef.Value);
                     synonyms.Add(wotdDef.Key, findSyns(wotdDef.Key));
                     rhymes.Add(wotdDef.Key, findRhymes(wotdDef.Key));
-                    findVisual(wotdDef.Key);
+                    findFlickrImages(wotdDef.Key);
 
                     listFoundWords.Items.Add(wotdDef.Key);
                 }
@@ -359,6 +328,188 @@ namespace Wordy
             updateStatus("");
         }
 
+        void searchWordWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string word = (string)e.Argument;
+
+            //prepare result variables
+            Definition definitions = null;
+            string synonyms = "";
+            string rhymes = "";
+
+            //search wordnik
+            try
+            {
+                updateStatus("Searching definitions for '" + word + "' ..."); //may need invoke?
+                WordnikDefinition[] wdDefs = wordnik.GetDefinitions(word).ToArray();
+
+                if (wdDefs.Length > 0)
+                {
+                    definitions = new Definition(wdDefs);
+                    synonyms = findSyns(word);
+                    rhymes = findRhymes(word);
+
+                    e.Result = new Tuple<string, Definition, string, string>(word, definitions, synonyms, rhymes);
+                }
+                else
+                    e.Result = word + " not found";
+            }
+            catch
+            {
+                e.Result = "error";
+                MessageBox.Show("Your Internet connection might be disrupted, or the Wordnik service might be temporarily down.", "Error while finding word definition for " + word, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        void searchWordWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Result is string)
+            {
+                string result = (string)e.Result;
+
+                if (result.Length > 10 && result.Contains(" not found"))
+                {
+                    string word = result.Substring(0, result.Length - 10);
+
+                    //mark the word as not found
+                    int lb = textNewWords.Text.IndexOf(word);
+
+                    if (lb != -1)
+                    {
+                        int ub = textNewWords.Text.IndexOf(Environment.NewLine, lb);
+                        if (ub == -1)
+                            ub = textNewWords.Text.Length;
+
+                        textNewWords.Text = textNewWords.Text.Insert(ub, " <- NOT FOUND");
+                    }
+
+                    //and remove it from flickr search list (if present)
+                    if (flickrSearchList.Contains(word))
+                        flickrSearchList.Remove(word);
+                }
+            }
+            else
+            {
+                var result = (Tuple<string, Definition, string, string>)e.Result;
+                string word = result.Item1;
+
+                //save word data
+                newDefs.Add(word, result.Item2);
+                synonyms.Add(word, result.Item3);
+                rhymes.Add(word, result.Item4);
+
+                //display word data
+                listFoundWords.Items.Add(word);
+
+                //enable UI elements
+                lblRecognizedWords.Enabled = true;
+                listFoundWords.Enabled = true;
+                buttAcceptWords.Enabled = true;
+
+                //remove word from first text box and cleanup if necessary
+                if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
+                    textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
+                else
+                    textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
+
+                if (textNewWords.Text == Environment.NewLine)
+                    textNewWords.Text = "";
+            }
+
+            //next word
+            if (wordSearchQ.Count > 0)
+                searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue());
+            else
+            {
+                if (flickrSearchList.Count > 0 && !dlVisualsWorker.IsBusy) //if need to search Flickr and visuals worker isn't busy
+                {
+                    string nextWord = flickrSearchList[0];
+                    flickrSearchList.RemoveAt(0);
+
+                    dlVisualsWorker.RunWorkerAsync(nextWord); //start downloading visuals for the first word
+                }
+                else
+                {
+                    updateStatus("Done");
+                    buttFindDefs.Enabled = textNewWords.Text != "";
+                }
+            }
+        }
+
+        void dlVisualsWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //extract args
+            string word;
+            PhotoCollection flickResult;
+            int existingVisuals;
+
+            if (e.Argument is string)
+            {
+                //initial Flickr search, or user clicked Reload All (visuals)
+                word = (string)e.Argument;
+                existingVisuals = 0;
+                
+                flickResult = findFlickrImages(word);
+            }
+            else
+            {
+                //loading more visuals
+                var args = (Tuple<string, PhotoCollection, int>)e.Argument;
+
+                word = args.Item1;
+                flickResult = args.Item2;
+                existingVisuals = args.Item3;
+            }
+
+            //download images
+            List<Image> imgs = new List<Image>();
+            int nVis = Math.Min(flickResult.Count, 6) - existingVisuals; //how many visuals to load
+
+            for (int i = 0; i < nVis; i++)
+            {
+                updateStatus("Downloading visuals for '" + word + "' (" + (i + 1).ToString() + "/" + nVis.ToString() + ") ...");
+
+                imgs.Add(downloadImage(flickResult[0].SmallUrl));
+                imgs[imgs.Count - 1].Tag = flickResult[0].WebUrl;
+
+                flickResult.RemoveAt(0);
+            }
+
+            e.Result = new Tuple<string, PhotoCollection, List<Image>>(word, flickResult, imgs);
+        }
+
+        void dlVisualsWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            //extract and save Flickr search and downloaded imgs
+            var result = (Tuple<string, PhotoCollection, List<Image>>)e.Result;
+            string word = result.Item1;
+
+            if (flickResults.ContainsKey(word))
+                flickResults.Remove(word);
+            flickResults.Add(word, result.Item2);
+
+            if (visuals.ContainsKey(word))
+                visuals[word].AddRange(result.Item3);
+            else
+                visuals.Add(word, result.Item3);
+
+            if (flickrSearchList.Count > 0)
+            {
+                string firstWord = flickrSearchList[0];
+                flickrSearchList.RemoveAt(0);
+
+                dlVisualsWorker.RunWorkerAsync(firstWord); //start downloading visuals for the next word
+            }
+            else
+            {
+                updateStatus("Done");
+                buttFindDefs.Enabled = textNewWords.Text != "";
+            }
+
+            if (listFoundWords.SelectedIndex != -1)
+                genThumbnails(); //display new visuals
+        }
+
 
         public formAddWords()
         {
@@ -373,6 +524,15 @@ namespace Wordy
             //icon
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))
                 this.Icon = new Icon(Application.StartupPath + "\\Wordy.ico");
+
+            //prepare workers
+            searchWordWorker = new BackgroundWorker();
+            searchWordWorker.DoWork += new DoWorkEventHandler(searchWordWorker_DoWork);
+            searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
+
+            dlVisualsWorker = new BackgroundWorker();
+            dlVisualsWorker.DoWork += new DoWorkEventHandler(dlVisualsWorker_DoWork);
+            dlVisualsWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(dlVisualsWorker_RunWorkerCompleted);
 
             //load core words
             corewords = Misc.LoadCoreWords();
@@ -392,7 +552,7 @@ namespace Wordy
         {
             if (textNewWords.Text != "")
             {
-                buttFindDefs.Enabled = true;
+                buttFindDefs.Enabled = !searchWordWorker.IsBusy;
                 lblNext.Enabled = true;
             }
             else
@@ -412,13 +572,51 @@ namespace Wordy
 
         private void buttFindDefs_Click(object sender, EventArgs e)
         {
-            //check if words already exist in database
+            if (searchWordWorker.IsBusy)
+            {
+                //already searching
+                MessageBox.Show("Please wait for the search to finish before starting a new one.", "Wordy is already searching word definitions", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            List<string> allNewWords = new List<string>(textNewWords.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
+            int initialCount = allNewWords.Count;
+
+            //remove any blank lines
+            for (int i = 0; i < allNewWords.Count; i++)
+                if (string.IsNullOrWhiteSpace(allNewWords[i]))
+                    allNewWords.RemoveAt(i--);
+
+            //remove any duplicates from the list
+            for (int i = 0; i < allNewWords.Count - 1; i++)
+                for (int j = i + 1; j < allNewWords.Count; j++)
+                    if (allNewWords[j].ToLower() == allNewWords[i].ToLower())
+                        allNewWords.RemoveAt(j--);
+
+            if (allNewWords.Count < initialCount)
+            {
+                //edit text box to include only unique words
+                textNewWords.Text = "";
+
+                for (int i = 0; i < allNewWords.Count; i++)
+                    textNewWords.Text += allNewWords[i] + (i < allNewWords.Count - 1 ? Environment.NewLine : "");
+            }
+
+            //check if words already exist in database (or have already been searched)
             string duplicates = "";
             string[] foundDuplicates = new string[0];
 
-            foreach (string word in textNewWords.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
-                if (main.WordExists(word))
-                    duplicates += Environment.NewLine + word;
+            for (int i = 0; i < allNewWords.Count; i++)
+                if (main.WordExists(allNewWords[i]))
+                {
+                    duplicates += Environment.NewLine + allNewWords[i];
+                    allNewWords.RemoveAt(i--);
+                }
+                else if (listFoundWords.Items.Contains(allNewWords[i]))
+                {
+                    textNewWords.Text = textNewWords.Text.Replace(allNewWords[i], "").Replace(Environment.NewLine + Environment.NewLine, Environment.NewLine);
+                    allNewWords.RemoveAt(i--);
+                }
 
             if (duplicates != "")
             {
@@ -426,35 +624,15 @@ namespace Wordy
                 foundDuplicates = duplicates.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             }
 
-            //search wordnik
-            foreach (string word in textNewWords.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
-                if (foundDuplicates.Contains(word))
-                    continue;
-                else if (listFoundWords.Items.Contains(word))
-                    textNewWords.Text = textNewWords.Text.Replace(word, "").Replace(Environment.NewLine + Environment.NewLine, Environment.NewLine);
-                else if (findDef(word))
-                {
-                    listFoundWords.Items.Add(word);
+            wordSearchQ = new Queue<string>(allNewWords); //process only words that have no duplicates
 
-                    if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
-                        textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
-                    else
-                        textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
+            if (buttToggleVisuals.Text.Contains("<<")) //if flickr search is enabled
+                flickrSearchList = new List<string>(allNewWords);
 
-                    lblRecognizedWords.Enabled = true;
-                    listFoundWords.Enabled = true;
-                    buttAcceptWords.Enabled = true;
-                }
+            if (wordSearchQ.Count > 0)
+                searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue()); //call worker for first word
 
-            if (textNewWords.Text == Environment.NewLine)
-                textNewWords.Text = "";
-
-            //search flickr
-            if (buttToggleVisuals.Text.Contains("<<"))
-                foreach (string word in listFoundWords.Items)
-                    findVisual(word);
-
-            updateStatus("Done");
+            buttFindDefs.Enabled = false; //prevent user from starting a new search while a search is running
         }
 
         private void listFoundWords_SelectedIndexChanged(object sender, EventArgs e)
@@ -567,7 +745,7 @@ namespace Wordy
             toggleVisuals();
 
             if (listFoundWords.SelectedIndex != -1 && buttToggleVisuals.Text.Contains("<<"))
-                findVisual(listFoundWords.Text);
+                findFlickrImages(listFoundWords.Text);
 
             genThumbnails();
         }
@@ -601,24 +779,27 @@ namespace Wordy
 
         private void buttLoadMoreVisuals_Click(object sender, EventArgs e)
         {
-            if (visuals[listFoundWords.Text].Count == 6)
+            string word = listFoundWords.Text;
+
+            if (visuals[word].Count == 6)
                 MessageBox.Show("Already loaded maximum of 6 visuals. Delete some of them by right-clicking on their thumbnail.", "Can't load more visuals", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            else if (flickResults[listFoundWords.Text].Count == 0)
+            else if (flickResults[word].Count == 0)
                 MessageBox.Show("There are no more visuals.", "Can't load more visuals", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else if (dlVisualsWorker.IsBusy)
+                MessageBox.Show("Please wait for the search to finish before starting a new one.", "Wordy is already searching Flickr for images", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
-            {
-                loadVisuals(listFoundWords.Text);
-                genThumbnails();
-            }
+                dlVisualsWorker.RunWorkerAsync(new Tuple<string, PhotoCollection, int>(word, flickResults[word], visuals[word].Count));
         }
 
         private void buttReloadVisuals_Click(object sender, EventArgs e)
         {
-            flickResults.Remove(listFoundWords.Text);
-            visuals.Remove(listFoundWords.Text);
-
-            findVisual(listFoundWords.Text);
-            genThumbnails();
+            if (dlVisualsWorker.IsBusy)
+                MessageBox.Show("Please wait for the search to finish before starting a new one.", "Wordy is already searching Flickr for images", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
+            {
+                visuals[listFoundWords.Text].Clear();
+                dlVisualsWorker.RunWorkerAsync(listFoundWords.Text);
+            }
         }
 
         private void picVisual_Click(object sender, EventArgs e)

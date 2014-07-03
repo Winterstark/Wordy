@@ -116,6 +116,15 @@ namespace Wordy
                     || textSynonyms.Text != words[getSelWordInd()].GetSynonyms().Replace(" / ", ", ");
         }
 
+        public void DisplaySubs()
+        {
+            wotds = main.wotds;
+
+            chklistSubscriptions.Items.Clear();
+            foreach (WordOfTheDay wotd in wotds)
+                chklistSubscriptions.Items.Add(wotd.title, wotd.active);
+        }
+
 
         public formOptions()
         {
@@ -352,16 +361,9 @@ namespace Wordy
             if (tabs.SelectedIndex == 2)
             {
                 if (wotds == null)
-                {
-                    main.LoadSubs();
-                    wotds = main.wotds;
-                }
-
-                //display subscriptions
-                chklistSubscriptions.Items.Clear();
-
-                foreach (WordOfTheDay wotd in wotds)
-                    chklistSubscriptions.Items.Add(wotd.title, wotd.active);
+                    main.LoadSubs(main.wotdWorker_RunWorkerCompleted_WotDOptions);
+                else
+                    DisplaySubs();
             }
         }
 
