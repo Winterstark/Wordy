@@ -447,15 +447,10 @@ namespace Wordy
 
                 formAddWords addWords = new formAddWords();
                 addWords.main = this;
-
+                addWords.LoadWotDs();
                 addWords.Show();
+
                 this.Hide();
-
-                foreach (WordOfTheDay wotd in wotds)
-                    if (wotd.active && wotd.AnyNewPosts())
-                        addWords.loadWotDs(wotd.getNewWordsLinks(), wotd.getNewWords());
-
-                SaveSubs();
                 buttNewWotD.Visible = false;
             }
         }

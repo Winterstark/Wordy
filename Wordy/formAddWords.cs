@@ -21,7 +21,7 @@ namespace Wordy
         WordnikService wordnik = new WordnikService("b3bbd1f9103a01de7d00a0fd1300164c17bfcec03eb86a678");
         Flickr flickr = new Flickr("d2a2e14ee946139a8f0d2f0b626522f7");
         
-        BackgroundWorker searchWordWorker, dlVisualsWorker;
+        BackgroundWorker searchWordWorker, dlVisualsWorker, newWotDWorker;
         delegate void SetTextCallback(string text);
 
         Dictionary<string, Definition> newDefs = new Dictionary<string, Definition>();
@@ -29,9 +29,10 @@ namespace Wordy
         Dictionary<string, string> rhymes = new Dictionary<string, string>();
         Dictionary<string, PhotoCollection> flickResults = new Dictionary<string, PhotoCollection>();
         Dictionary<string, List<Image>> visuals = new Dictionary<string, List<Image>>();
-        Dictionary<string, string> links = new Dictionary<string,string>();
+        Dictionary<string, string> links = new Dictionary<string, string>();
 
         List<string> corewords = new List<string>();
+        Queue<Tuple<string, Definition>> wotdSearchQ;
         Queue<string> wordSearchQ;
         List<string> flickrSearchList;
 
@@ -298,34 +299,38 @@ namespace Wordy
             }
         }
 
-        public void loadWotDs(Dictionary<string, string> links, Dictionary<string, Definition> wotdDefs)
+        public void LoadWotDs()
         {
-            foreach (var wotdDef in wotdDefs)
-                if (main.WordExists(wotdDef.Key))
-                    MessageBox.Show("The following words already exist in Wordy's database and will not be added: " + wotdDef.Key);
-                else if (!newDefs.ContainsKey(wotdDef.Key))
-                {
-                    newDefs.Add(wotdDef.Key, wotdDef.Value);
-                    synonyms.Add(wotdDef.Key, findSyns(wotdDef.Key));
-                    rhymes.Add(wotdDef.Key, findRhymes(wotdDef.Key));
-                    findFlickrImages(wotdDef.Key);
-
-                    listFoundWords.Items.Add(wotdDef.Key);
-                }
-
-            foreach (var link in links)
-                if (!this.links.ContainsKey(link.Key))
-                    this.links.Add(link.Key, link.Value);
-
-            if (listFoundWords.Enabled == false)
+            if (main.wotds.Count > 0)
             {
-                listFoundWords.Enabled = true;
-                lblRecognizedWords.Enabled = true;
-                buttAcceptWords.Enabled = true;
-                buttOpenWotD.Visible = true;
-            }
+                flickrSearchList = new List<string>();
+                wotdSearchQ = new Queue<Tuple<string, Definition>>();
 
-            updateStatus("");
+                //load WotDs data
+                foreach (WordOfTheDay wotd in main.wotds)
+                    if (wotd.active && wotd.AnyNewPosts())
+                    {
+                        //prepare links to WotD webpages
+                        foreach (var link in wotd.getNewWordsLinks())
+                            if (!links.ContainsKey(link.Key))
+                                links.Add(link.Key, link.Value);
+
+                        //prepare a queue of new WotD words
+                        foreach (var wotdDef in wotd.getNewWords())
+                            if (main.WordExists(wotdDef.Key))
+                                MessageBox.Show("The following words already exist in Wordy's database and will not be added: " + wotdDef.Key);
+                            else if (!newDefs.ContainsKey(wotdDef.Key))
+                                wotdSearchQ.Enqueue(new Tuple<string, Definition>(wotdDef.Key, wotdDef.Value));
+                    }
+
+                //prepare worker to get synonyms and rhymes data
+                newWotDWorker = new BackgroundWorker();
+                newWotDWorker.DoWork += new DoWorkEventHandler(newWotDWorker_DoWork);
+                newWotDWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(newWotDWorker_RunWorkerCompleted);
+
+                if (wotdSearchQ.Count > 0)
+                    newWotDWorker.RunWorkerAsync(wotdSearchQ.Dequeue()); //process 1st word
+            }
         }
 
         void searchWordWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -406,14 +411,17 @@ namespace Wordy
                 listFoundWords.Enabled = true;
                 buttAcceptWords.Enabled = true;
 
-                //remove word from first text box and cleanup if necessary
-                if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
-                    textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
-                else
-                    textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
+                if (textNewWords.Text.Contains(word))
+                {
+                    //remove word from first text box and cleanup if necessary
+                    if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
+                        textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
+                    else
+                        textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
 
-                if (textNewWords.Text == Environment.NewLine)
-                    textNewWords.Text = "";
+                    if (textNewWords.Text == Environment.NewLine)
+                        textNewWords.Text = "";
+                }
             }
 
             //next word
@@ -508,6 +516,76 @@ namespace Wordy
 
             if (listFoundWords.SelectedIndex != -1)
                 genThumbnails(); //display new visuals
+        }
+
+        void newWotDWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var args = (Tuple<string, Definition>)e.Argument;
+            string word = args.Item1;
+
+            try
+            {
+                //search for word synonyms and rhymes
+                e.Result = new Tuple<string, Definition, string, string>(word, args.Item2, findSyns(word), findRhymes(word));
+            }
+            catch
+            {
+                e.Result = false; //error
+            }
+        }
+
+        void newWotDWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (!(e.Result is bool)) //if not error
+            {
+                //extract and save result
+                var result = (Tuple<string, Definition, string, string>)e.Result;
+                string word = result.Item1;
+
+                if (newDefs.ContainsKey(word))
+                    newDefs.Remove(word);
+                if (synonyms.ContainsKey(word))
+                    synonyms.Remove(word);
+                if (rhymes.ContainsKey(word))
+                    rhymes.Remove(word);
+
+                newDefs.Add(word, result.Item2);
+                synonyms.Add(word, result.Item3);
+                rhymes.Add(word, result.Item4);
+
+                //display word in list
+                listFoundWords.Items.Add(word);
+
+                if (listFoundWords.Enabled == false)
+                {
+                    listFoundWords.Enabled = true;
+                    lblRecognizedWords.Enabled = true;
+                    buttAcceptWords.Enabled = true;
+                    buttOpenWotD.Visible = true;
+                }
+
+                flickrSearchList.Add(word); //remember to search visuals for this word
+            }
+
+            //process the next WotD word
+            if (wotdSearchQ.Count > 0)
+                newWotDWorker.RunWorkerAsync(wotdSearchQ.Dequeue());
+            else
+            {
+                //no more subscriptions
+                main.SaveSubs();
+
+                //start flickr search
+                if (flickrSearchList.Count > 0)
+                {
+                    string firstWord = flickrSearchList[0];
+                    flickrSearchList.RemoveAt(0);
+
+                    dlVisualsWorker.RunWorkerAsync(firstWord); //start downloading visuals for the next word
+                }
+                else
+                    updateStatus("Done");
+            }
         }
 
 
@@ -797,7 +875,9 @@ namespace Wordy
                 MessageBox.Show("Please wait for the search to finish before starting a new one.", "Wordy is already searching Flickr for images", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
             {
-                visuals[listFoundWords.Text].Clear();
+                if (visuals.ContainsKey(listFoundWords.Text))
+                    visuals[listFoundWords.Text].Clear();
+
                 dlVisualsWorker.RunWorkerAsync(listFoundWords.Text);
             }
         }

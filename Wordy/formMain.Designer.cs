@@ -96,6 +96,7 @@
             this.buttOptions.UseVisualStyleBackColor = true;
             this.buttOptions.Click += new System.EventHandler(this.buttOptions_Click);
             this.buttOptions.MouseEnter += new System.EventHandler(this.buttOptions_MouseEnter);
+            this.buttOptions.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             // 
             // buttNewWotD
             // 
@@ -134,6 +135,7 @@
             this.buttAbout.UseVisualStyleBackColor = true;
             this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
             this.buttAbout.MouseEnter += new System.EventHandler(this.buttAbout_MouseEnter);
+            this.buttAbout.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             // 
             // buttReview
             // 
@@ -148,6 +150,7 @@
             this.buttReview.UseVisualStyleBackColor = true;
             this.buttReview.Click += new System.EventHandler(this.buttReview_Click);
             this.buttReview.MouseEnter += new System.EventHandler(this.buttReview_MouseEnter);
+            this.buttReview.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             // 
             // formMain
             // 
