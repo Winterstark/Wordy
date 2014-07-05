@@ -429,7 +429,7 @@ namespace Wordy
                 searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue());
             else
             {
-                if (flickrSearchList.Count > 0 && !dlVisualsWorker.IsBusy) //if need to search Flickr and visuals worker isn't busy
+                if (flickrSearchList != null && flickrSearchList.Count > 0 && !dlVisualsWorker.IsBusy) //if need to search Flickr and visuals worker isn't busy
                 {
                     string nextWord = flickrSearchList[0];
                     flickrSearchList.RemoveAt(0);
@@ -501,7 +501,7 @@ namespace Wordy
             else
                 visuals.Add(word, result.Item3);
 
-            if (flickrSearchList.Count > 0)
+            if (flickrSearchList != null && flickrSearchList.Count > 0)
             {
                 string firstWord = flickrSearchList[0];
                 flickrSearchList.RemoveAt(0);
@@ -823,7 +823,7 @@ namespace Wordy
             toggleVisuals();
 
             if (listFoundWords.SelectedIndex != -1 && buttToggleVisuals.Text.Contains("<<"))
-                findFlickrImages(listFoundWords.Text);
+                dlVisualsWorker.RunWorkerAsync(listFoundWords.Text);
 
             genThumbnails();
         }
