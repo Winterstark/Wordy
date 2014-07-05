@@ -16,10 +16,20 @@
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/study new.png->root\ui\study new.png[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/ui/test recall.png->root\ui\test recall.png[/FILE]
 [CHANGELOG]IMPORTANT: If you have problems downloading the update you should download the new version manually from Github: https://github.com/Winterstark/Wordy/releases/tag/v1.1
-- Improved UI in main window
-- Various other UI changes
-- Added a Review words feature to allow users to study words at their own pace, without tests
-- Testing words now displays how many more tests remain, as well as success rate
-- Various bug fixes and improvements
-- Updated to newest version of Flickr.Net, so visuals search works again[/CHANGELOG]
+* Improved UI in main window
+* Various other UI changes
+* Added a Review words feature to allow users to study words at their own pace, without tests
+* Testing words now displays how many more tests remain, as well as success rate
+* Various bug fixes and improvements
+* Updated to newest version of Flickr.Net, so visuals search works again[/CHANGELOG]
+[/UPDATE]
+
+[UPDATE]
+[VERSION]1.13[/VERSION]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
+[FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/README.md->root\README.md[/FILE]
+[CHANGELOG]* Testing results are now shown after studying words
+* UI no longer freezes when adding words, downloading visuals, or checking Word of the Day subscriptions
+* Delay until an unlearned word becomes available for testing again is reduced from 24 to 22 hours (reason: http://is.gd/24to22)
+* Several bug fixes[/CHANGELOG]
 [/UPDATE]
