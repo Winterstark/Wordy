@@ -556,12 +556,12 @@ shuttlecock, unfit, bandied, bandying, shinney, hockey, crooked, toss, exchange,
 dandy, sandy, brandy, candy, handy, operandi, grandee, tangy, shanty, scanty, 
 2012-10-02 10:25
 0001-01-01 00:00
-2014-04-15 13:10
-2014-06-10 13:10
+2014-09-05 11:54
+2014-11-07 11:54
 7
 6
-10
-10
+11
+11
 True
 </entry>
 

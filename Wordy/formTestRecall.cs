@@ -159,6 +159,7 @@ namespace Wordy
             if (words.Count > 0)
             {
                 testWord = words[rand.Next(words.Count)];
+                testWord = words.Find(w => w.ToString() == "bandy");
                 words.Remove(testWord);
 
                 lblWord.Text = testWord.ToString();
@@ -252,7 +253,7 @@ namespace Wordy
                     while (questionType == -1)
                     {
                         int percent = rand.Next(100);
-
+                        percent = 49;
                         if (percent <= 25)
                             questionType = 0;
                         else if (percent <= 40)
@@ -349,9 +350,44 @@ namespace Wordy
 
                             chklistDefs.Items.Clear();
                             int ind = 1;
+                            bool removedWord = false;
 
                             foreach (string d in defs)
-                                chklistDefs.Items.Add(ind++ + ".  " + d);
+                            {
+                                chklistDefs.Items.Add(ind++ + ".  " + removeWordInstances(d, testWord.ToString()));
+                                if (chklistDefs.Items[chklistDefs.Items.Count - 1].ToString().Contains("???"))
+                                    removedWord = true;
+                            }
+
+                            if (removedWord && rand.NextDouble() > 0.5)
+                            {
+                                //insert "???" in a random line that isn't the correct definition for this word
+                                //otherwise the user would know that any line with "???" must be the correct definition
+                                int searchStartInd = rand.Next(chklistDefs.Items.Count);
+                                int i = searchStartInd;
+
+                                while (true)
+                                {
+                                    string line = chklistDefs.Items[i].ToString();
+
+                                    if (!line.Contains("???") && !testWord.GetDefinition().Contains(line))
+                                    {
+                                        if (line.Contains(" "))
+                                            line = line.Insert(line.LastIndexOf(' '), " ???");
+                                        else
+                                            line += " ???";
+
+                                        chklistDefs.Items[i] = line;
+                                        break;
+                                    }
+
+                                    i++;
+                                    if (i == chklistDefs.Items.Count)
+                                        i = 0;
+                                    if (i == searchStartInd)
+                                        break;
+                                }
+                            }
 
                             chklistDefs.Height = 22 * chklistDefs.Items.Count;
                             buttFinished.Top = chklistDefs.Top + chklistDefs.Height + 16;
@@ -1190,11 +1226,11 @@ namespace Wordy
                 buttFinished.Visible = false;
                 chklistDefs.Visible = false;
 
-                //remove indices from the items
+                //remove indices from the items and replace "???" with test word
                 for (int i = 0; i < chklistDefs.Items.Count; i++)
                 {
                     string item = chklistDefs.Items[i].ToString();
-                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3);
+                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace("???", testWord.ToString());
                 }
 
                 //check answers
