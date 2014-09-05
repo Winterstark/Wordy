@@ -50,15 +50,6 @@ namespace Wordy
 
         int getSelWordInd()
         {
-            //int ind;
-
-            //if (chklistWords.Sorted)
-            //    for (ind = 0; ind < words.Count && words[ind].ToString() != chklistWords.Text; ind++) ; //find word's entry index
-            //else
-            //    ind = chklistWords.SelectedIndex;
-
-            //return ind;
-
             return words.FindIndex(w => w.ToString() == chklistWords.Text);
         }
 
@@ -166,14 +157,19 @@ namespace Wordy
 
         private void chklistWords_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            int wordInd = getSelWordInd();
+
             if (chklistWords.SelectedIndex != -1)
             {
-                words[getSelWordInd()].archived = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
+                words[wordInd].archived = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
 
-                if (words[getSelWordInd()].archived)
-                    words[getSelWordInd()].learningPhase = 7;
+                if (words[wordInd].archived)
+                    words[wordInd].learningPhase = 7;
                 else
-                    words[getSelWordInd()].learningPhase = 1;
+                {
+                    words[wordInd].learningPhase = 1;
+                    words[wordInd].ResetLearned();
+                }
 
                 main.SaveWords();
             }

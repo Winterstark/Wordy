@@ -6486,7 +6486,7 @@ surd
 [defs]
 (adj.) lacking sense : irrational::True
 (adj.) voiceless - used of speech sounds::True
-"The artist is known for creating videos in which well-known speeches with surd utterances scattered throughout are recited by everyday people."::False
+"The artist is known for creating videos in which well-known speeches with surd utterances scattered throughout are recited by everyday people."::True
 [/defs]
 whispered, sharp, nonvocal, unintonated, aspirated, voiceless, irrational, atonic, radical, 
 heard, third, herd, word, bird, curd, gird, nerd, absurd, unheard, 
@@ -6494,7 +6494,7 @@ heard, third, herd, word, bird, curd, gird, nerd, absurd, unheard,
 0001-01-01 00:00
 2014-07-01 16:40
 2014-05-18 15:00
-5
+1
 22
 11
 8

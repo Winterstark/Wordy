@@ -236,6 +236,12 @@ namespace Wordy
             }
         }
 
+        public void ResetLearned()
+        {
+            for (int i = 0; i < learned.Length; i++)
+                learned[i] = true;
+        }
+
         string cleanUp(string txt)
         {
             //load shortcuts list
@@ -635,6 +641,11 @@ namespace Wordy
             }
 
             return synList;
+        }
+
+        public void ResetLearned()
+        {
+            def.ResetLearned();
         }
     }
 
