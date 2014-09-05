@@ -142,7 +142,7 @@ namespace Wordy
                 opts.ContentType = ContentTypeSearch.PhotosOnly;
                 opts.MediaType = MediaType.Photos;
                 opts.Extras = PhotoSearchExtras.OwnerName;
-
+                
                 return flickr.PhotosSearch(opts);
             }
             catch (Exception exc)
@@ -150,11 +150,6 @@ namespace Wordy
                 MessageBox.Show("Error while accessing Flickr." + Environment.NewLine + exc.Message);
                 return null;
             }
-        }
-
-        void loadVisuals(string word)
-        {
-            
         }
 
         void toggleVisuals()
@@ -767,8 +762,6 @@ namespace Wordy
             if (buttToggleVisuals.Text == "No Visuals <<")
             {
                 //save visuals
-                Graphics gfx;
-                Bitmap visMosaic;
                 int nW, nH, ind;
 
                 foreach (var visual in visuals)
@@ -777,7 +770,7 @@ namespace Wordy
                         nW = 1 + (visual.Value.Count >= 2 ? 1 : 0) + (visual.Value.Count >= 5 ? 1 : 0);
                         nH = 1 + (visual.Value.Count >= 3 ? 1 : 0);
 
-                        visMosaic = new Bitmap(nW * 240, nH * 240);
+                        Bitmap visMosaic = new Bitmap(nW * 240, nH * 240);
 
                         ind = 0;
 
@@ -788,9 +781,21 @@ namespace Wordy
                                     break;
 
                                 visMosaic.SetResolution(visual.Value[ind].HorizontalResolution, visual.Value[ind].VerticalResolution);
-                                gfx = Graphics.FromImage(visMosaic);
+                                Graphics gfx = Graphics.FromImage(visMosaic);
 
-                                gfx.DrawImage(visual.Value[ind], x * 240 + (240 - visual.Value[ind].Width) / 2, y * 240 + (240 - visual.Value[ind].Height) / 2);
+                                int resizedW, resizedH;
+                                if (visual.Value[ind].Width > visual.Value[ind].Height)
+                                {
+                                    resizedW = 240;
+                                    resizedH = (int)((float)visual.Value[ind].Height / visual.Value[ind].Width * 240);
+                                }
+                                else
+                                {
+                                    resizedW = (int)((float)visual.Value[ind].Width / visual.Value[ind].Height * 240);
+                                    resizedH = 240;
+                                }
+
+                                gfx.DrawImage(visual.Value[ind], x * 240 + (240 - resizedW) / 2, y * 240 + (240 - resizedH) / 2, resizedW, resizedH);
 
                                 ind++;
                             }

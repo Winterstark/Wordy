@@ -178,13 +178,13 @@ hobbletehoy, hobbledehoyhood, young person, younker, youth, spring chicken, sout
 destroy, deploy, corduroy, decoy, ahoy, employ, soy, annoy, foi, ploy, 
 2012-07-09 17:38
 0001-01-01 00:00
-2014-08-07 14:26
+2014-09-05 21:57
 2014-10-16 14:26
+1
 7
-6
 14
 13
-True
+False
 </entry>
 
 <entry>
@@ -271,13 +271,13 @@ alarm, dismay, panic, amazement, perturbation, astonishment, surprise, fright, f
 combination, confirmation, conformation, constellation, constipation, consummation, conversation, compensation, conservation, condemnation, 
 2012-07-11 20:31
 0001-01-01 00:00
-2014-08-11 16:32
+2014-09-05 21:57
 2014-10-20 16:32
-7
-21
+1
+22
 13
 12
-True
+False
 </entry>
 
 <entry>
@@ -325,13 +325,13 @@ conjugate,
 heteronymous, generalibus, temporalibus, pleasurableness, heterogenous, teratogens, epigenesis, senegalensis, etymologists, inevitableness, 
 2012-07-12 09:51
 0001-01-01 00:00
-2014-08-06 11:01
+2014-09-05 22:01
 2014-10-15 11:01
-7
-9
+5
+10
 14
 13
-True
+False
 </entry>
 
 <entry>
@@ -17891,6 +17891,126 @@ pre, plea, tlie, pari, prix, brie, three, free, ye, li,
 2014-09-05 21:22
 0001-01-01 00:00
 2014-09-05 21:22
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+planetoid
+[defs]
+(n.) See asteroid.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+kbo, quaoar, Sedna, kuiper belt object, asteroid, planemo, minor planet, dwarf planet, planetesimal, 
+aneuploid, fascistoid, enameloid, alloploid, 
+2014-09-05 22:01
+0001-01-01 00:00
+2014-09-05 22:01
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+asteroid
+[defs]
+(n.) Astronomy   Any of numerous small celestial bodies that revolve around the sun, with orbits lying chiefly between Mars and Jupiter and characteristic diameters between a few and several hundred kilometers. Also called minor planet, planetoid.::False
+(n.) Zoology   See starfish.::False
+(adj.) Star-shaped.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+apollo asteroid, Vesta, Chiron, Ceres, Pallas, angular, angulate, astroid, comet, planetoid, 
+steroid, adenoid, employed, destroyed, deployed, amyloid, overjoyed, alkaloid, sphenoid, anthropoid, 
+2014-09-05 22:21
+0001-01-01 00:00
+2014-09-05 22:21
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+starcraft
+[defs]
+(n.) The art of interpreting or reading the stars, astrology::False
+(n.) a vehicle which travels to or among the stars, spacecraft.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+astrology, common room, mulberry-tree, emus, ±¿½, tutorage, activision, Tm, NW, untruthfulness, 
+bobcat, tomcat, hardhat, contract, subcontract, carjacked, contact, combat, compact, wombat, 
+2014-09-05 22:30
+0001-01-01 00:00
+2014-09-05 22:30
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+shrub
+[defs]
+(n.) A woody plant of relatively low height, having several stems arising from the base and lacking a single trunk; a bush.::False
+(n.) A beverage made from fruit juice, sugar, and a liquor such as rum or brandy.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+hiccough nut, pincushion hakea, desmodium motorium, honeyflower, barbasco, pichi, maleberry, day jessamine, sea holly, gooseberry, 
+club, rub, scrub, grub, stub, snub, sub, tub, hub, pub, 
+2014-09-05 22:32
+0001-01-01 00:00
+2014-09-05 22:32
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+pole
+[defs]
+(n.) Either extremity of an axis through a sphere.::False
+(n.) Either of the regions contiguous to the extremities of the earth's rotational axis, the North Pole or the South Pole.::False
+(n.) Physics   A magnetic pole.::False
+(n.) Electricity   Either of two oppositely charged terminals, as in an electric cell or battery.::False
+(n.) Astronomy   A celestial pole.::False
+(n.) Biology   Either extremity of the main axis of a nucleus, cell, or organism.::False
+(n.) Biology   Either end of the spindle formed in a cell during mitosis.::False
+(n.) Biology   The point on a nerve cell where a process originates.::False
+(n.) Either of two antithetical ideas, propensities, forces, or positions: "the moral poles of modern medicine: on the one hand, a tinkering with procreation with at best ambiguous, at worst monstrous moral possibilities. On the other hand, scientific skill and cunning unambiguously in the service of hope"  ( Charles Krauthammer). ::False
+(n.) A fixed point of reference.::False
+(n.) Mathematics   The origin in a polar coordinate system; the vertex of a polar angle.::False
+(n.) A long, relatively slender, generally rounded piece of wood or other material.::False
+(n.) The long tapering wooden shaft extending up from the front axle of a vehicle to the collars of the animals drawing it; a tongue.::False
+(n.) See rod.::False
+(n.) A unit of area equal to a square rod.::False
+(n.) Sports   The inside position on the starting line of a racetrack "qualified in the time trials to start on the pole. "::False
+(v.-t.) To propel with a pole "boatmen poling barges up a placid river. "::False
+(v.-t.) To propel (oneself) or make (one's way) by the use of ski poles: "We ski through the glades on corn snow, then pole our way over a long one-hour runout to a road"  ( Frederick Selby). ::False
+(v.-t.) To support (plants) with a pole.::False
+(v.-t.) To strike, poke, or stir with a pole.::False
+(v.-i.) To propel a boat or raft with a pole.::False
+(v.-i.) To use ski poles to maintain or gain speed.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+negative magnetic pole, positive pole, negative pole, coat tree, clothes tree, north-seeking pole, coat stand, South Pole, caber, mast, 
+bowl, poll, toll, dole, bole, boll, tole, dolour, whole, role, 
+2014-09-05 22:33
+0001-01-01 00:00
+2014-09-05 22:33
 0001-01-01 00:00
 1
 0

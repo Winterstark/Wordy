@@ -983,6 +983,7 @@ namespace Wordy
 
             int escapeChars = mtbDef.Mask.Substring(0, lb).Count(c => c == '\\');
             lb -= escapeChars;
+            lb--;
 
             if (lb != -1)
                 mtbDef.Select(lb, 0);
