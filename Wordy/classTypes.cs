@@ -564,6 +564,11 @@ namespace Wordy
             return lastTest;
         }
 
+        public DateTime GetNextTest()
+        {
+            return nextTest;
+        }
+
         public void LogTest(bool success, Answer[] answCorrectly)
         {
             if (!archived)

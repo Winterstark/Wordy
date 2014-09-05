@@ -54,8 +54,8 @@ namespace Wordy
             mtbTestWord.Width = this.Width - 60;
             textTestWord.Width = this.Width - 60;
 
-            rtbDef.Size = new Size(this.Width - 60, this.Height - 120);
-
+            rtbDef.Size = new Size(this.Width - 90, this.Height - 120);
+            
             chklistDefs.Size = new Size(this.Width - 80, this.Height - 120);
             chklistDefs.Height = 22 * chklistDefs.Items.Count;
 
@@ -1093,35 +1093,17 @@ namespace Wordy
             double elapsedTime = totalTime.TotalSeconds;
             int nAnswered = nTests - nRemaining;
 
-            string msg = "Correctly answered " + nCorrectAnswers + " / " + nAnswered + (nAnswered != 1 ? " questions in " : " question in ") + formatTime(elapsedTime);
+            string msg = "Correctly answered " + nCorrectAnswers + " / " + nAnswered + (nAnswered != 1 ? " questions in " : " question in ") + Misc.FormatTime(elapsedTime);
 
             if (nAnswered > 0)
             {
                 msg += Environment.NewLine + "Success rate: " + (int)(100.0f * nCorrectAnswers / nAnswered) + "%.";
-                msg += Environment.NewLine + "Average time spent per question: " + formatTime(elapsedTime / nAnswered);
+                msg += Environment.NewLine + "Average time spent per question: " + Misc.FormatTime(elapsedTime / nAnswered);
             }
 
             MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        string formatTime(double totalSecs)
-        {
-            int secs = (int)totalSecs;
-            string time = "";
-
-            if (secs >= 60)
-            {
-                int mins = secs / 60;
-                secs = secs % 60;
-
-                time = mins + (mins > 1 ? " mins " : " min ");
-            }
-
-            time += secs + (secs != 1 ? " secs." : " sec.");
-
-            return time;
-        }
-        
 
         public formTestRecall()
         {

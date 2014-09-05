@@ -164,12 +164,6 @@ namespace Wordy
             return dt.ToString("yyyy-MM-dd HH:mm");
         }
 
-        static void appendText(RichTextBox textDef, string txt, bool keyword)
-        {
-            textDef.SelectionColor = keyword ? Color.Blue : Color.Black;
-            textDef.AppendText(txt);
-        }
-
         public static string LoadNewWordsFromFile(string path)
         {
             if (File.Exists(path))
@@ -182,6 +176,46 @@ namespace Wordy
             }
             else
                 return "";
+        }
+
+        public static string FormatTime(double totalSecs)
+        {
+            int secs = (int)totalSecs;
+            string time = "";
+
+            if (secs >= 86400)
+            {
+                int days = secs / 86400;
+                secs = secs % 86400;
+
+                time += days + (days > 1 ? " days " : " day ");
+            }
+
+            if (secs >= 3600)
+            {
+                int hours = secs / 3600;
+                secs = secs % 3600;
+
+                time += hours + (hours > 1 ? " hours " : " hour ");
+            }
+
+            if (secs >= 60)
+            {
+                int mins = secs / 60;
+                secs = secs % 60;
+
+                time += mins + (mins > 1 ? " mins " : " min ");
+            }
+
+            time += secs + (secs != 1 ? " secs." : " sec.");
+
+            return time;
+        }
+
+        static void appendText(RichTextBox textDef, string txt, bool keyword)
+        {
+            textDef.SelectionColor = keyword ? Color.Blue : Color.Black;
+            textDef.AppendText(txt);
         }
     }
 }

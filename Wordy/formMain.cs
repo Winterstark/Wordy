@@ -491,12 +491,46 @@ namespace Wordy
 
         private void buttStudyWords_MouseEnter(object sender, EventArgs e)
         {
-            displayWordCount(GetWordsReadyForTesting(false));
+            List<Entry> availableWords = GetWordsReadyForTesting(false);
+
+            if (availableWords.Count == 0)
+            {
+                //find out which word will become available first
+                DateTime earliest = new DateTime(2305, 7, 13);
+
+                foreach (Entry word in words)
+                    if (!word.archived && word.GetLastTest() < earliest)
+                        earliest = word.GetLastTest();
+
+                if (earliest.Year != 2305)
+                    setInfo("The next word will become available for testing in " + Misc.FormatTime(earliest.AddHours(22).Subtract(DateTime.Now).TotalSeconds));
+                else
+                    setInfo("You have no words ready to be tested.");
+            }
+            else
+                displayWordCount(availableWords);
         }
 
         private void buttRecall_MouseEnter(object sender, EventArgs e)
         {
-            displayWordCount(GetWordsReadyForTesting(true));
+            List<Entry> availableWords = GetWordsReadyForTesting(true);
+
+            if (availableWords.Count == 0)
+            {
+                //find out which word will become available first
+                DateTime earliest = new DateTime(2305, 7, 13);
+
+                foreach (Entry word in words)
+                    if (word.archived && word.GetLastTest() < earliest)
+                        earliest = word.GetNextTest();
+
+                if (earliest.Year != 2305)
+                    setInfo("The next word will become available for testing in " + Misc.FormatTime(earliest.Subtract(DateTime.Now).TotalSeconds));
+                else
+                    setInfo("You have no words ready to be tested.");
+            }
+            else
+                displayWordCount(availableWords);
         }
 
         private void buttReview_MouseEnter(object sender, EventArgs e)
