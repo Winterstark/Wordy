@@ -159,7 +159,6 @@ namespace Wordy
             if (words.Count > 0)
             {
                 testWord = words[rand.Next(words.Count)];
-                testWord = words.Find(w => w.ToString() == "bandy");
                 words.Remove(testWord);
 
                 lblWord.Text = testWord.ToString();
@@ -253,7 +252,7 @@ namespace Wordy
                     while (questionType == -1)
                     {
                         int percent = rand.Next(100);
-                        percent = 49;
+                        
                         if (percent <= 25)
                             questionType = 0;
                         else if (percent <= 40)
