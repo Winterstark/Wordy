@@ -72,6 +72,11 @@ namespace Wordy
             }
         }
 
+        void updateWordCount()
+        {
+            lblWords.Text = "Learned " + chklistWords.CheckedItems.Count + " of " + chklistWords.Items.Count + " words:";
+        }
+
         void checkIfValidFeed()
         {
             bool valid = textNewSubAddress.Text != "";
@@ -140,8 +145,8 @@ namespace Wordy
             displayWords();
 
             refreshUpdateNotifLabel();
-
-            lblWords.Text = "Learned " + chklistWords.CheckedItems.Count + " of " + chklistWords.Items.Count + " words:";
+            updateWordCount();
+            
             textFilter.Left = lblWords.Width + 12;
             textFilter.Width = 341 - textFilter.Left;
         }
@@ -172,6 +177,7 @@ namespace Wordy
                 }
 
                 main.SaveWords();
+                updateWordCount();
             }
         }
 

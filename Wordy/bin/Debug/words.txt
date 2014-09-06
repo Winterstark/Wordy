@@ -96,9 +96,9 @@ True
 <entry>
 jauntily
 [defs]
-(adv.) In an airy, showy, or affected manner.::False
-(adv.) In a dapper or stylish manner.::False
-(adv.) In an ostentatiously self-confident manner.::False
+(adv.) In an airy, showy, or affected manner.::True
+(adv.) In a dapper or stylish manner.::True
+(adv.) In an ostentatiously self-confident manner.::True
 [/defs]
 stylishly, rakishly, jaunty, jaunt, 
 mortally, wantonly, dorsally, normally, formally, morally, orally, lawfully, paucity, thoughtfully, 
@@ -134,9 +134,9 @@ True
 <entry>
 whitewash
 [defs]
-(n.) A mixture of lime and water, (often with whiting, size, or glue added, that is used to whiten walls, fences, or other structures.)::False
-(n.) Concealment or palliation of flaws or failures.::False
-(n.) A defeat in a game in which the loser scores no points.::False
+(n.) A mixture of lime and water, (often with whiting, size, or glue added, that is used to whiten walls, fences, or other structures.)::True
+(n.) Concealment or palliation of flaws or failures.::True
+(n.) A defeat in a game in which the loser scores no points.::True
 [/defs]
 calcimine, whitewashed, whitewashing, parget, varnish, gild, white, roughcast, skunk, 
 firewalls, ivas, icons, microns, firebox, hydrops, icebox, pylons, tripods, eyelash, 
@@ -209,7 +209,7 @@ True
 <entry>
 overset
 [defs]
-(v-t.) To throw into a confused or disturbed state; upset: "The news is sure to overset him"  ( Charles Dickens).::False
+(v-t.) To throw into a confused or disturbed state; upset: "The news is sure to overset him"  ( Charles Dickens).::True
 [/defs]
 oversetting, superfluity, upset, upsetting, excess, overthrow, subvert, overturn, oversets, 
 overdressed, motorist, vocalist, localist, moralist, inaugurate, inordinate, abortionist, extortionist, disproportionate, 
