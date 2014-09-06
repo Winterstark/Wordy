@@ -521,7 +521,7 @@ namespace Wordy
                 DateTime earliest = new DateTime(2305, 7, 13);
 
                 foreach (Entry word in words)
-                    if (word.archived && word.GetLastTest() < earliest)
+                    if (word.archived && word.GetNextTest() < earliest)
                         earliest = word.GetNextTest();
 
                 if (earliest.Year != 2305)

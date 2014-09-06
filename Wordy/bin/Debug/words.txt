@@ -178,13 +178,13 @@ hobbletehoy, hobbledehoyhood, young person, younker, youth, spring chicken, sout
 destroy, deploy, corduroy, decoy, ahoy, employ, soy, annoy, foi, ploy, 
 2012-07-09 17:38
 0001-01-01 00:00
-2014-09-05 21:57
+2014-08-07 14:26
 2014-10-16 14:26
-1
 7
+6
 14
 13
-False
+True
 </entry>
 
 <entry>
@@ -271,13 +271,13 @@ alarm, dismay, panic, amazement, perturbation, astonishment, surprise, fright, f
 combination, confirmation, conformation, constellation, constipation, consummation, conversation, compensation, conservation, condemnation, 
 2012-07-11 20:31
 0001-01-01 00:00
-2014-09-05 21:57
+2014-08-11 16:32
 2014-10-20 16:32
-1
-22
+7
+21
 13
 12
-False
+True
 </entry>
 
 <entry>
@@ -325,13 +325,13 @@ conjugate,
 heteronymous, generalibus, temporalibus, pleasurableness, heterogenous, teratogens, epigenesis, senegalensis, etymologists, inevitableness, 
 2012-07-12 09:51
 0001-01-01 00:00
-2014-09-05 22:01
+2014-08-06 11:01
 2014-10-15 11:01
-5
-10
+7
+9
 14
 13
-False
+True
 </entry>
 
 <entry>
@@ -2147,18 +2147,18 @@ True
 <entry>
 gasket
 [defs]
-(n.) Any seal or packing used between matched machine parts or around pipe joints to prevent the escape of a gas or fluid.::False
+(n.) Any seal or packing used between matched machine parts or around pipe joints to prevent the escape of a gas or fluid.::True
 [/defs]
 O-ring, head gasket, sea gaskets, harbor gaskets, gaskets, bunt gasket, blow a gasket, quarter gasket, bust a gasket, seal, 
 casket, basket, mascot, jacket, packet, facet, carrot, gamut, casement, gadget, 
 2013-02-11 11:38
 0001-01-01 00:00
-2014-08-30 13:55
-2014-09-06 13:55
+2014-09-06 15:26
+2014-09-20 15:26
 7
 10
-16
-14
+17
+15
 True
 </entry>
 
@@ -3605,12 +3605,12 @@ quincuncial, vert,
 computes, quelques, recluse, groups, disputes, excuse, induce, diffuse, recruits, grassroots, 
 2013-02-21 21:35
 0001-01-01 00:00
-2014-07-05 11:17
-2014-09-06 11:17
+2014-09-06 15:27
+2014-11-15 15:27
 7
 7
+14
 13
-12
 True
 </entry>
 
@@ -6829,18 +6829,18 @@ True
 <entry>
 berceuse
 [defs]
-(n.) A lullaby.::True
+(n.) A lullaby.::False
 [/defs]
 song, vocal, 
 defuse, views, interviews, refuse, reviews, blues, fuse, hues, misuse, pursues, 
 2013-04-25 16:33
 0001-01-01 00:00
-2014-07-05 11:15
-2014-09-06 11:15
+2014-09-06 15:27
+2014-11-15 15:27
 7
 14
+11
 10
-9
 True
 </entry>
 
@@ -7184,12 +7184,12 @@ spangle, spring, leap, bound, strike, impinge on, hit, collide with, run into, f
 sprang, bang, slang, harangue, pang, tang, chang, shebang, hang, gang, 
 2013-05-06 14:17
 0001-01-01 00:00
-2014-07-05 11:18
-2014-09-06 11:18
+2014-09-06 15:27
+2014-11-15 15:27
 7
 14
+11
 10
-9
 True
 </entry>
 
@@ -8032,12 +8032,12 @@ procrustes
 trusts, crusts, adjusts, lusts, thrusts, busts, gusts, dusts, cusps, tufts, 
 2013-08-20 14:40
 0001-01-01 00:00
-2014-08-02 14:26
-2014-09-06 14:26
+2014-09-06 15:27
+2014-10-18 15:27
 7
 20
-12
-10
+13
+11
 True
 </entry>
 
@@ -9677,19 +9677,19 @@ True
 <entry>
 yeoman
 [defs]
-(n.) Historical a man holding a small landed estate; freeholder::False
-(n.) A servant in a royal or noble household::False
+(n.) Historical a man holding a small landed estate; freeholder::True
+(n.) A servant in a royal or noble household::True
 [/defs]
 goodman, freeholder, duniwassal, retainer, beefeater, servant, laird, cocklaird, yeoman in the 1911 Encyclopædia Britannica., yeoman bedel, 
 roman, nomen, showman, bowmen, bowman, showmen, snowmen, abdomen, cognomen, crossbowmen, 
 2013-10-07 12:41
 0001-01-01 00:00
-2014-07-05 11:17
-2014-09-06 11:17
+2014-09-06 15:26
+2014-11-15 15:26
 7
 7
-8
-8
+9
+9
 True
 </entry>
 
@@ -9852,13 +9852,13 @@ lake, vulture, illustri, roc, eagle, tharlarion, kaiila, swan, longi,
 barn, darn, yarn, charm, farm, harm, alarm, psalm, disarm, rearm, 
 2013-10-10 13:19
 0001-01-01 00:00
-2014-07-05 11:14
+2014-09-06 15:26
 2014-09-06 11:14
-7
+1
 6
+9
 8
-8
-True
+False
 </entry>
 
 <entry>
@@ -13731,12 +13731,12 @@ galligaskins
 calabashes, napkins, relaxes, gasses, pickaxes, calcines, lambkins, lambskins, crosshatches, kaffeeklatsches, 
 2014-02-01 14:01
 0001-01-01 00:00
-2014-08-02 14:29
-2014-09-06 14:29
+2014-09-06 15:26
+2014-10-18 15:26
 7
 13
+9
 8
-7
 True
 </entry>
 
@@ -15484,19 +15484,19 @@ True
 <entry>
 hawser
 [defs]
-(n.) A cable or rope used in mooring or towing a ship.::True
+(n.) A cable or rope used in mooring or towing a ship.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 rope, switchblade, grapnel, staysail, windlass, winch, 
 causer, saucer, coffer, scoffer, tosser, mauver, crosser, embosser, counteroffer, horror, 
 2014-05-27 14:04
 0001-01-01 00:00
-2014-08-30 13:48
-2014-09-06 13:48
+2014-09-06 15:26
+2014-09-20 15:26
 7
 14
+5
 4
-3
 True
 </entry>
 
@@ -17538,12 +17538,12 @@ skivvy house, skivvied, skivvies, skivvying, polo-neck, domestic help, house ser
 chivy, spicy, hyphae, pricey, dicey, highly, psyche, ivy, shiny, shyly, 
 2014-08-21 11:10
 0001-01-01 00:00
-2014-08-30 13:48
-2014-09-06 13:48
+2014-09-06 15:26
+2014-09-20 15:26
 7
 6
-0
-0
+1
+1
 True
 </entry>
 
@@ -17862,158 +17862,6 @@ important, sunbonnet, smallest, chocolate, endorsement, torrent, informant, wall
 0001-01-01 00:00
 2
 1
-0
-0
-False
-</entry>
-
-<entry>
-tree
-[defs]
-(n.) A perennial woody plant having a main trunk and usually a distinct crown.::False
-(n.) A plant or shrub resembling a tree in form or size.::False
-(n.) Something, such as a clothes tree, that resembles a tree in form.::False
-(n.) A wooden beam, post, stake, or bar used as part of a framework or structure.::False
-(n.) A saddletree.::False
-(n.) A diagram that has branches in descending lines showing relationships as of hierarchy or lineage "a family tree; a telephone tree. "::False
-(n.) Computer Science   A structure for organizing or classifying data in which every item can be traced to a single origin through a unique path.::False
-(n.) Archaic   A gallows.::False
-(n.) Archaic   The cross on which Jesus was crucified.::False
-(v.-t.) To force up a tree "Dogs treed the raccoon. "::False
-(v.-t.) Informal   To force into a difficult position; corner.::False
-(v.-t.) To supply with trees "treed the field with oaks. "::False
-(v.-t.) To stretch (a shoe or boot) onto a shoetree.::False
-(idiom) up a tree  Informal   In a situation of great difficulty or perplexity; helpless.::False
-(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
-[/defs]
-caesalpinia coriaria, plagianthus regius, neem, tolu balsam tree, vangueria madagascariensis, simal, coralwood, linden tree, virgilia oroboides, platan, 
-pre, plea, tlie, pari, prix, brie, three, free, ye, li, 
-2014-09-05 21:22
-0001-01-01 00:00
-2014-09-05 21:22
-0001-01-01 00:00
-1
-0
-0
-0
-False
-</entry>
-
-<entry>
-planetoid
-[defs]
-(n.) See asteroid.::False
-(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
-[/defs]
-kbo, quaoar, Sedna, kuiper belt object, asteroid, planemo, minor planet, dwarf planet, planetesimal, 
-aneuploid, fascistoid, enameloid, alloploid, 
-2014-09-05 22:01
-0001-01-01 00:00
-2014-09-05 22:01
-0001-01-01 00:00
-1
-0
-0
-0
-False
-</entry>
-
-<entry>
-asteroid
-[defs]
-(n.) Astronomy   Any of numerous small celestial bodies that revolve around the sun, with orbits lying chiefly between Mars and Jupiter and characteristic diameters between a few and several hundred kilometers. Also called minor planet, planetoid.::False
-(n.) Zoology   See starfish.::False
-(adj.) Star-shaped.::False
-(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
-[/defs]
-apollo asteroid, Vesta, Chiron, Ceres, Pallas, angular, angulate, astroid, comet, planetoid, 
-steroid, adenoid, employed, destroyed, deployed, amyloid, overjoyed, alkaloid, sphenoid, anthropoid, 
-2014-09-05 22:21
-0001-01-01 00:00
-2014-09-05 22:21
-0001-01-01 00:00
-1
-0
-0
-0
-False
-</entry>
-
-<entry>
-starcraft
-[defs]
-(n.) The art of interpreting or reading the stars, astrology::False
-(n.) a vehicle which travels to or among the stars, spacecraft.::False
-(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
-[/defs]
-astrology, common room, mulberry-tree, emus, ±¿½, tutorage, activision, Tm, NW, untruthfulness, 
-bobcat, tomcat, hardhat, contract, subcontract, carjacked, contact, combat, compact, wombat, 
-2014-09-05 22:30
-0001-01-01 00:00
-2014-09-05 22:30
-0001-01-01 00:00
-1
-0
-0
-0
-False
-</entry>
-
-<entry>
-shrub
-[defs]
-(n.) A woody plant of relatively low height, having several stems arising from the base and lacking a single trunk; a bush.::False
-(n.) A beverage made from fruit juice, sugar, and a liquor such as rum or brandy.::False
-(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
-[/defs]
-hiccough nut, pincushion hakea, desmodium motorium, honeyflower, barbasco, pichi, maleberry, day jessamine, sea holly, gooseberry, 
-club, rub, scrub, grub, stub, snub, sub, tub, hub, pub, 
-2014-09-05 22:32
-0001-01-01 00:00
-2014-09-05 22:32
-0001-01-01 00:00
-1
-0
-0
-0
-False
-</entry>
-
-<entry>
-pole
-[defs]
-(n.) Either extremity of an axis through a sphere.::False
-(n.) Either of the regions contiguous to the extremities of the earth's rotational axis, the North Pole or the South Pole.::False
-(n.) Physics   A magnetic pole.::False
-(n.) Electricity   Either of two oppositely charged terminals, as in an electric cell or battery.::False
-(n.) Astronomy   A celestial pole.::False
-(n.) Biology   Either extremity of the main axis of a nucleus, cell, or organism.::False
-(n.) Biology   Either end of the spindle formed in a cell during mitosis.::False
-(n.) Biology   The point on a nerve cell where a process originates.::False
-(n.) Either of two antithetical ideas, propensities, forces, or positions: "the moral poles of modern medicine: on the one hand, a tinkering with procreation with at best ambiguous, at worst monstrous moral possibilities. On the other hand, scientific skill and cunning unambiguously in the service of hope"  ( Charles Krauthammer). ::False
-(n.) A fixed point of reference.::False
-(n.) Mathematics   The origin in a polar coordinate system; the vertex of a polar angle.::False
-(n.) A long, relatively slender, generally rounded piece of wood or other material.::False
-(n.) The long tapering wooden shaft extending up from the front axle of a vehicle to the collars of the animals drawing it; a tongue.::False
-(n.) See rod.::False
-(n.) A unit of area equal to a square rod.::False
-(n.) Sports   The inside position on the starting line of a racetrack "qualified in the time trials to start on the pole. "::False
-(v.-t.) To propel with a pole "boatmen poling barges up a placid river. "::False
-(v.-t.) To propel (oneself) or make (one's way) by the use of ski poles: "We ski through the glades on corn snow, then pole our way over a long one-hour runout to a road"  ( Frederick Selby). ::False
-(v.-t.) To support (plants) with a pole.::False
-(v.-t.) To strike, poke, or stir with a pole.::False
-(v.-i.) To propel a boat or raft with a pole.::False
-(v.-i.) To use ski poles to maintain or gain speed.::False
-(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
-[/defs]
-negative magnetic pole, positive pole, negative pole, coat tree, clothes tree, north-seeking pole, coat stand, South Pole, caber, mast, 
-bowl, poll, toll, dole, bole, boll, tole, dolour, whole, role, 
-2014-09-05 22:33
-0001-01-01 00:00
-2014-09-05 22:33
-0001-01-01 00:00
-1
-0
 0
 0
 False
