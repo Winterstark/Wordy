@@ -1,11 +1,11 @@
 <entry>
 athwart
 [defs]
-(adv.) From side to side; crosswise or transversely.::False
-(adv.) So as to thwart, obstruct, or oppose; perversely.::False
-(prep.) From one side to the other of; across: "the Stars that shoot athwart the Night"  ( Alexander Pope). ::False
-(prep.) Contrary to; against.::False
-(prep.) Nautical   Across the course, line, or length of.::False
+(adv.) From side to side; crosswise or transversely.::True
+(adv.) So as to thwart, obstruct, or oppose; perversely.::True
+(prep.) From one side to the other of; across: "the Stars that shoot athwart the Night"  ( Alexander Pope). ::True
+(prep.) Contrary to; against.::True
+(prep.) Nautical   Across the course, line, or length of.::True
 [/defs]
 athwartships, sidewise, obliquely, perversely, across, athwart the forefoot, athwart hawse, new-minted, 40-degree, authorial, 
 thwart, sport, escort, quart, abort, fhort, snort, wart, assort, court, 
@@ -246,7 +246,7 @@ True
 <entry>
 burly
 [defs]
-(adj.) Heavy, strong, and muscular; husky (big and strong)::False
+(adj.) Heavy, strong, and muscular; husky (big and strong)::True
 [/defs]
 robust, stout, boisterous, lusty, stalwart, brawny, uniformed, hulking, blond, stocky, 
 pearly, curly, surly, early, journey, dirty, turkey, jerky, jersey, tersely, 

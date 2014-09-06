@@ -72,9 +72,9 @@ namespace Wordy
             }
         }
 
-        void updateWordCount()
+        void updateWordCount(int change)
         {
-            lblWords.Text = "Learned " + chklistWords.CheckedItems.Count + " of " + chklistWords.Items.Count + " words:";
+            lblWords.Text = "Learned " + (chklistWords.CheckedItems.Count + change) + " of " + chklistWords.Items.Count + " words:";
         }
 
         void checkIfValidFeed()
@@ -145,7 +145,7 @@ namespace Wordy
             displayWords();
 
             refreshUpdateNotifLabel();
-            updateWordCount();
+            updateWordCount(0);
             
             textFilter.Left = lblWords.Width + 12;
             textFilter.Width = 341 - textFilter.Left;
@@ -166,7 +166,8 @@ namespace Wordy
 
             if (chklistWords.SelectedIndex != -1)
             {
-                words[wordInd].archived = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
+                bool newState = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
+                words[wordInd].archived = newState;
 
                 if (words[wordInd].archived)
                     words[wordInd].learningPhase = 7;
@@ -177,7 +178,7 @@ namespace Wordy
                 }
 
                 main.SaveWords();
-                updateWordCount();
+                updateWordCount(newState ? 1 : -1);
             }
         }
 
