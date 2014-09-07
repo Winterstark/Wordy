@@ -94,22 +94,21 @@ namespace Wordy
             try
             {
                 updateStatus("Finding rhymes for '" + word + "' ...");
-                string rhymeList = "", rhymePg = dlPage("http://rhymebrain.com/en/What_rhymes_with_" + word + ".html");
+                string rhymeList = "", rhymePg = dlPage("http://rhymebrain.com/talk?function=getRhymes&word=" + word);
                 int count = 0;
-
-                if (rhymePg.IndexOf("<span class=wordpanel>") != -1)
+                
+                if (rhymePg != "not_found")
                 {
-                    rhymePg = rhymePg.Substring(rhymePg.IndexOf("<span class=wordpanel>"));
-                    int lb = rhymePg.IndexOf("<span class=wordpanel>") + 22, ub;
+                    int lb = rhymePg.IndexOf("\"word\":\"") + 8, ub;
 
-                    while (lb != 21 && count < 10)
+                    while (lb != 7 && count < 10)
                     {
-                        ub = rhymePg.IndexOf(" </span>", lb);
+                        ub = rhymePg.IndexOf("\",\"", lb);
 
                         if (ub != -1)
                             rhymeList += rhymePg.Substring(lb, ub - lb) + ", ";
 
-                        lb = rhymePg.IndexOf("<span class=wordpanel>", ub) + 22;
+                        lb = rhymePg.IndexOf("\"word\":\"", ub) + 8;
                         count++;
                     }
                 }
