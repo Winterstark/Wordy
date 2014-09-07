@@ -45,7 +45,6 @@ namespace Wordy
 
             lblDef.MaximumSize = new Size(this.Width - 60, this.Height - 120);
             lblSynonyms.MaximumSize = new Size(this.Width - 60, lblSynonyms.Height);
-            picVisual.Size = new Size(this.Width - 60, this.Height - 120);
 
             lblTestWordDef.MaximumSize = new Size(this.Width - 60, this.Height - 120);
             flowpanelPickAnswers.Size = new Size(this.Width - 176, flowpanelPickAnswers.Height);
@@ -68,13 +67,77 @@ namespace Wordy
                 buttSkip.Top = buttFinished.Top;
             }
 
-            picRight.Left = lblSynonyms.Left + (this.Width - 70) / 2 - picRight.Width / 2;
-            picWrong.Left = picRight.Left;
-            picRight.Top = lblDef.Top + lblDef.Height + 12;
-            picWrong.Top = picRight.Top;
+            //position pictures
+            if (!picRight.Visible && !picWrong.Visible)
+            {
+                if (lblSynonyms.Text == "What word is represented by this picture?")
+                {
+                    //during testing learned word by visual association
+                    picVisual.Visible = false; //hide visual to prevent image jumping when resizing window
+                     
+                    picVisual.Size = new Size(Math.Min(this.Width - 60, 720), this.Height - 120 - (mtbTestWord.Top + mtbTestWord.Height + 32));
+                    picVisual.Location = new Point(this.Width / 2 - picVisual.Width / 2, mtbTestWord.Top + mtbTestWord.Height + 32);
+                    picVisual.Visible = true;
+                }
+            }
+            else
+            {
+                //after testing
+                if (picVisual.Image == null)
+                {
+                    //only displaying picRight or picWrong
+                    picRight.Left = lblSynonyms.Left + (this.Width - 60) / 2 - picRight.Width / 2;
+                    picWrong.Left = picRight.Left;
+                    picRight.Top = lblDef.Top + lblDef.Height + 12;
+                    picWrong.Top = picRight.Top;
 
-            buttNext.Left = picWrong.Left + picWrong.Width / 2 - buttNext.Width / 2;
-            buttNext.Top = picWrong.Top + picWrong.Height + 12;
+                    //position buttNext
+                    buttNext.Left = this.Width / 2 - buttNext.Width / 2;
+                    buttNext.Top = picWrong.Top + picWrong.Height + 12;
+                }
+                else
+                {
+                    //displaying visual too
+                    picVisual.Visible = false; //hide visual to prevent image jupming when resizing window
+
+                    int top;
+                    if (lblDef.Visible)
+                        top = lblDef.Top + lblDef.Height + 32;
+                    else
+                        top = rtbDef.Top + rtbDef.Height + 32;
+
+                    int areaHeight = this.Height - 120 - top;
+                    float picRatio = (float)picVisual.Image.Width / picVisual.Image.Height;
+
+                    picVisual.Top = top;
+                    picVisual.Height = areaHeight;
+                    picVisual.Width = (int)(picRatio * picVisual.Height);
+
+                    int maxVisualWidth = this.Width - 18 - 18 - buttNext.Width - 18;
+
+                    if (picVisual.Width > maxVisualWidth)
+                    {
+                        //shrink visual so picRight/Wrong can be displayed properly
+                        picVisual.Width = maxVisualWidth;
+                        picVisual.Height = (int)(maxVisualWidth / picRatio);
+                    }
+
+                    //set Top values
+                    picVisual.Top = top + areaHeight / 2 - picVisual.Height / 2;
+                    picRight.Top = top + areaHeight / 2 - picRight.Height / 2;
+                    picWrong.Top = picRight.Top - buttNext.Height;
+                    buttNext.Top = picWrong.Top + picWrong.Height + 12;
+
+                    //set Left values
+                    int spacing = (this.Width - buttNext.Width - picVisual.Width) / 3;
+
+                    buttNext.Left = spacing;
+                    picRight.Left = picWrong.Left = spacing + (buttNext.Width - picRight.Width) / 2;
+                    picVisual.Left = buttNext.Left + buttNext.Width + spacing;
+
+                    picVisual.Visible = true; //show picVisual
+                }
+            }
 
             picWordnik.Left = this.Width - picWordnik.Width - 12;
             picWordnik.Top = this.Height - picWordnik.Height - 48;
@@ -135,7 +198,6 @@ namespace Wordy
             picWrong.Visible = false;
             picVisual.Visible = false;
             buttNext.Visible = false;
-            lblVisualTrigger.Visible = false;
             lblDef.Visible = false;
             rtbDef.Visible = false;
             chklistDefs.Visible = false;
@@ -144,6 +206,12 @@ namespace Wordy
 
             lblWord.ForeColor = Color.Black;
             answCorrectly = null;
+
+            if (picVisual.Image != null)
+            {
+                picVisual.Image.Dispose();
+                picVisual.Image = null;
+            }
 
             //get/refresh word list (some words might've only just become available for testing)
             int prevWordCount = 0;
@@ -168,12 +236,7 @@ namespace Wordy
 
                 //load visual
                 if (File.Exists("visuals\\" + testWord + ".jpg"))
-                {
-                    picVisual.ImageLocation = "visuals\\" + testWord + ".jpg";
-                    lblVisualTrigger.Left = lblWord.Width + 18;
-                }
-                else
-                    picVisual.ImageLocation = "";
+                    picVisual.Image = Image.FromFile(Application.StartupPath + "\\visuals\\" + testWord + ".jpg");
 
                 //prepare UI
                 if (panelDef.Visible)
@@ -288,7 +351,7 @@ namespace Wordy
                         }
                         else if (percent <= 90 && testWord.GetSynonyms() != "" && testWord.ToString().Length > 1)
                             questionType = 5;
-                        else if (percent <= 100 && picVisual.ImageLocation != "")
+                        else if (percent <= 100 && picVisual.Image != null)
                             questionType = 6;
                         else
                             questionType = -1;
@@ -494,11 +557,12 @@ namespace Wordy
                             mtbTestWord.Text = "";
                             mtbTestWord.Mask = "";
 
-                            lblVisualTrigger.Left = lblWord.Left;
+                            lblSynonyms.Top = lblWord.Top + 16;
                             mtbTestWord.Top = lblSynonyms.Top + lblSynonyms.Height + 32;
 
+                            setupUI(); //position visual
+
                             lblWord.Visible = false;
-                            lblVisualTrigger.Visible = true;
                             lblSynonyms.Visible = true;
                             mtbTestWord.Visible = true;
                             panelDef.Visible = true;
@@ -545,6 +609,43 @@ namespace Wordy
             answer(checkAnswers());
         }
 
+        bool checkAnswers()
+        {
+            buttFinished.Visible = false;
+            buttSkip.Visible = false;
+            buttAnotherExample.Visible = false;
+
+            answers = new List<Tuple<int, int, bool, string>>();
+            answCorrectly = new Answer[mtbDefs.Count];
+            int i = 0;
+
+            if (mtbDefs != null)
+                while (mtbDefs.Count > 0)
+                {
+                    answCorrectly[i] = new Answer(mtbDefs[0].Tag.ToString());
+                    answCorrectly[i].correct = true;
+
+                    mtbDefs[0].TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
+
+                    for (int j = 0; j < kwBounds[0].Count; j++)
+                    {
+                        bool res = mtbDefs[0].Text.Length >= kwBounds[0][j].Item2 && mtbDefs[0].Text.Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower() == mtbDefs[0].Tag.ToString().Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
+                        answCorrectly[i].correct = answCorrectly[i].correct && res;
+
+                        answers.Add(new Tuple<int, int, bool, string>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, res, mtbDefs[0].Text));
+                    }
+
+                    mtbDefs[0].Dispose();
+                    panelDef.Controls.Remove(mtbDefs[0]);
+                    mtbDefs.RemoveAt(0);
+                    kwBounds.RemoveAt(0);
+
+                    i++;
+                }
+
+            return answers.All(a => a.Item3);
+        }
+
         void answer(bool success)
         {
             if (success)
@@ -552,7 +653,8 @@ namespace Wordy
 
             if (timerProgressChange.Enabled || timerWait.Enabled || buttNext.Visible) //disable answering between questions
                 return;
-            
+
+            lblSynonyms.Top = 83;
             panelTestWord.Visible = false;
             lblWord.Text = testWord.ToString();
             
@@ -566,11 +668,6 @@ namespace Wordy
             string questionDef = lblDef.Text; //currently displayed definitions
             lblDef.Text = testWord.GetDefinition(); //display full list of definitions
 
-            if (picVisual.ImageLocation != "")
-            {
-                lblVisualTrigger.Visible = true;
-                lblVisualTrigger.Left = lblWord.Width + 18;
-            }
             if (panelDef.Visible)
                 lblSynonyms.Text = testWord.GetSynonyms();
             else
@@ -578,16 +675,7 @@ namespace Wordy
 
             picWordnik.Enabled = true;
 
-            picRight.Left = lblSynonyms.Left + (this.Width - 60) / 2 - picRight.Width / 2;
-            picWrong.Left = picRight.Left;
-            picRight.Top = lblDef.Top + lblDef.Height + 12;
-            picWrong.Top = picRight.Top;
-
-            buttNext.Left = picWrong.Left + picWrong.Width / 2 - buttNext.Width / 2;
-            buttNext.Top = picWrong.Top + picWrong.Height + 12;
-
-            curX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (testWord.learningPhase - 1);
-
+            //color correct/wrong answers
             if (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0)
             {
                 rtbDef.Text = "";
@@ -609,7 +697,7 @@ namespace Wordy
                 //display any other definitions that may be hidden (such as definitions that weren't part of the test or definition sources)
                 rtbDef.SelectionBackColor = SystemColors.Control;
                 string[] defLines = lblDef.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-                
+
                 for (int i = 0; i < defLines.Length; i++)
                 {
                     if (!rtbDef.Text.Contains(defLines[i]))
@@ -635,6 +723,9 @@ namespace Wordy
             else
                 lblDef.Visible = true;
 
+            curX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (testWord.learningPhase - 1); //init animation
+
+            //save test result
             if (success)
             {
                 picRight.Visible = true;
@@ -649,7 +740,6 @@ namespace Wordy
                             lblWord.Text += " relearned!";
 
                         lblWord.ForeColor = Color.Green;
-                        lblVisualTrigger.Left = lblWord.Width + 18;
                     }
 
                     endX = curX + (this.Width - 70 - lblSynonyms.Left - 10) / 6;
@@ -696,7 +786,6 @@ namespace Wordy
                     {
                         lblWord.Text += " forgotten!";
                         lblWord.ForeColor = Color.Red;
-                        lblVisualTrigger.Left = lblWord.Width + 18;
 
                         endX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (resetLearningPhase - 1);
                         deltaX = -9;
@@ -707,48 +796,15 @@ namespace Wordy
 
             totalTime += DateTime.Now - startTime; //mark time
 
-            testWord.LogTest(success, answCorrectly);
+            testWord.LogTest(success, answCorrectly, resetLearningPhase);
             main.SaveWords();
+
+            //position pictures and other UI controls
+            setupUI();
 
             if (buttNext.Visible)
                 buttNext.Focus();
-        }
-
-        bool checkAnswers()
-        {
-            buttFinished.Visible = false;
-            buttSkip.Visible = false;
-            buttAnotherExample.Visible = false;
-
-            answers = new List<Tuple<int, int, bool, string>>();
-            answCorrectly = new Answer[mtbDefs.Count];
-            int i = 0;
-
-            if (mtbDefs != null)
-                while (mtbDefs.Count > 0)
-                {
-                    answCorrectly[i] = new Answer(mtbDefs[0].Tag.ToString());
-                    answCorrectly[i].correct = true;
-
-                    mtbDefs[0].TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
-
-                    for (int j = 0; j < kwBounds[0].Count; j++)
-                    {
-                        bool res = mtbDefs[0].Text.Length >= kwBounds[0][j].Item2 && mtbDefs[0].Text.Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower() == mtbDefs[0].Tag.ToString().Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
-                        answCorrectly[i].correct = answCorrectly[i].correct && res;
-
-                        answers.Add(new Tuple<int, int, bool, string>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, res, mtbDefs[0].Text));
-                    }
-
-                    mtbDefs[0].Dispose();
-                    panelDef.Controls.Remove(mtbDefs[0]);
-                    mtbDefs.RemoveAt(0);
-                    kwBounds.RemoveAt(0);
-
-                    i++;
-                }
-
-            return answers.All(a => a.Item3);
+            drawProgress();
         }
 
         string removeWordInstances(string txt, string word)
@@ -1143,6 +1199,20 @@ namespace Wordy
         private void formTestRecall_Resize(object sender, EventArgs e)
         {
             setupUI();
+
+            if (picRight.Visible || picWrong.Visible)
+            {
+                //resizing the window stops animation
+                if (timerProgressChange.Enabled)
+                {
+                    timerProgressChange.Enabled = false;
+                    buttNext.Visible = true;
+                }
+
+                //redraw progress bar
+                curX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (testWord.learningPhase - 1);
+                drawProgress();
+            }
         }
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
@@ -1183,20 +1253,6 @@ namespace Wordy
                 else if (num >= 0 && num < chklistDefs.Items.Count)
                     chklistDefs.SetItemChecked(num, !chklistDefs.GetItemChecked(num));
             }
-        }
-
-        private void lblVisualTrigger_MouseEnter(object sender, EventArgs e)
-        {
-            lblDef.Visible = false;
-            picVisual.Visible = true;
-        }
-
-        private void lblVisualTrigger_MouseLeave(object sender, EventArgs e)
-        {
-            picVisual.Visible = false;
-
-            if (lblVisualTrigger.Visible)
-                lblDef.Visible = true;
         }
 
         private void buttFinished_Click(object sender, EventArgs e)
@@ -1343,7 +1399,7 @@ namespace Wordy
         private void picWordnik_Click(object sender, EventArgs e)
         {
             if (lblWord.Text != "")
-                Process.Start("http://www.wordnik.com/words/" + lblWord.Text);
+                Process.Start("http://www.wordnik.com/words/" + lblWord.Text.Replace(" forgotten!", "").Replace(" learned!", "").Replace(" relearned!", ""));
         }
     }
 }

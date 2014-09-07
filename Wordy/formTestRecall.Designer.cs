@@ -35,7 +35,6 @@
             this.chklistDefs = new System.Windows.Forms.CheckedListBox();
             this.buttFinished = new System.Windows.Forms.Button();
             this.lblSynonyms = new System.Windows.Forms.Label();
-            this.lblVisualTrigger = new System.Windows.Forms.Label();
             this.lblWord = new System.Windows.Forms.Label();
             this.picWrong = new System.Windows.Forms.PictureBox();
             this.picRight = new System.Windows.Forms.PictureBox();
@@ -73,7 +72,6 @@
             this.panelDef.Controls.Add(this.chklistDefs);
             this.panelDef.Controls.Add(this.buttFinished);
             this.panelDef.Controls.Add(this.lblSynonyms);
-            this.panelDef.Controls.Add(this.lblVisualTrigger);
             this.panelDef.Controls.Add(this.lblWord);
             this.panelDef.Controls.Add(this.picWrong);
             this.panelDef.Controls.Add(this.picRight);
@@ -145,21 +143,6 @@
             this.lblSynonyms.Size = new System.Drawing.Size(49, 19);
             this.lblSynonyms.TabIndex = 9;
             this.lblSynonyms.Text = "label1";
-            // 
-            // lblVisualTrigger
-            // 
-            this.lblVisualTrigger.BackColor = System.Drawing.Color.Black;
-            this.lblVisualTrigger.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblVisualTrigger.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisualTrigger.ForeColor = System.Drawing.Color.White;
-            this.lblVisualTrigger.Location = new System.Drawing.Point(136, 15);
-            this.lblVisualTrigger.Name = "lblVisualTrigger";
-            this.lblVisualTrigger.Size = new System.Drawing.Size(84, 45);
-            this.lblVisualTrigger.TabIndex = 6;
-            this.lblVisualTrigger.Text = "Mouseover for visual";
-            this.lblVisualTrigger.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblVisualTrigger.MouseEnter += new System.EventHandler(this.lblVisualTrigger_MouseEnter);
-            this.lblVisualTrigger.MouseLeave += new System.EventHandler(this.lblVisualTrigger_MouseLeave);
             // 
             // lblWord
             // 
@@ -417,7 +400,6 @@
 
         private System.Windows.Forms.Panel panelDef;
         private System.Windows.Forms.PictureBox picVisual;
-        private System.Windows.Forms.Label lblVisualTrigger;
         private System.Windows.Forms.Label lblWord;
         private System.Windows.Forms.Label lblSynonyms;
         private System.Windows.Forms.Label lblDef;

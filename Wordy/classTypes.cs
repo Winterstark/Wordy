@@ -569,7 +569,7 @@ namespace Wordy
             return nextTest;
         }
 
-        public void LogTest(bool success, Answer[] answCorrectly)
+        public void LogTest(bool success, Answer[] answCorrectly, int resetLearningPhase)
         {
             if (!archived)
             {
@@ -602,7 +602,7 @@ namespace Wordy
                 else
                 {
                     archived = false;
-                    learningPhase = 1;
+                    learningPhase = resetLearningPhase;
                 }
             }
 
