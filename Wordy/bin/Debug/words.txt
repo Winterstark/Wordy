@@ -59,7 +59,7 @@ True
 <entry>
 imprecate
 [defs]
-(v-t.) To invoke evil upon; curse.::False
+(v-t.) To invoke evil upon; curse.::True
 [/defs]
 imprecating, imprecated, invoke, curse, imprecation, imprecates, conjure, call down, 
 indicate, implicate, interrogate, educate, integrate, complicate, emulate, replicate, extricate, abrogate, 
@@ -228,7 +228,7 @@ True
 obdurate
 [defs]
 (adj.) Hardened in wrongdoing or wickedness; stubbornly impenitent: "obdurate conscience of the old sinner"  ( Sir Walter Scott). ::True
-(adj.) Not giving in to persuasion; intractable.::False
+(adj.) Not giving in to persuasion; intractable.::True
 [/defs]
 hard-hearted, unregenerate, heartless, unregenerated, obduracy, recalcitrant, obstinate, firm, unbending, 
 moderate, tolerant, doctorate, modernist, operant, intolerant, conglomerate, postmodernist, operand, accurate, 
@@ -9864,9 +9864,9 @@ False
 <entry>
 sodden
 [defs]
-(adj.) heavy with or as if with moisture or water::False
-(adj.) dull or expressionless (especially from continued indulgence in alcoholic beverages)::False
-"Our shoes and socks were wet from trudging across the sodden field."::False
+(adj.) heavy with or as if with moisture or water::True
+(adj.) dull or expressionless (especially from continued indulgence in alcoholic beverages)::True
+"Our shoes and socks were wet from trudging across the sodden field."::True
 [/defs]
 wet, soddenly, soddenness, soak, boiled, seethed, soaked, saturated, soddening, soddened, 
 shodden, trodden, retrodden, downtrodden, prekindergarten, cotton, gotten, rotten, robin, bobbin, 
@@ -12060,8 +12060,8 @@ True
 <entry>
 pratfall
 [defs]
-(n.) A fall on to one's buttocks.::False
-(n.) A humiliating failure, blunder, or defeat.::False
+(n.) A fall on to one's buttocks.::True
+(n.) A humiliating failure, blunder, or defeat.::True
 [/defs]
 faux pas, slip, misstep, bull, solecism, spectacle, trip-up, muff, fumble, howler, 
 blackball, trackball, landfall, catcall, catchall, fastball, handball, 
@@ -12069,7 +12069,7 @@ blackball, trackball, landfall, catcall, catchall, fastball, handball,
 0001-01-01 00:00
 2014-09-07 23:26
 2014-09-07 12:01
-3
+1
 14
 10
 8

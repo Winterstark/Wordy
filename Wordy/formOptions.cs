@@ -21,6 +21,8 @@ namespace Wordy
 
         List<string> corewords = new List<string>();
 
+        bool populatingWordList;
+
 
         void delWord()
         {
@@ -72,9 +74,9 @@ namespace Wordy
             }
         }
 
-        void updateWordCount(int change)
+        void updateWordCount()
         {
-            lblWords.Text = "Learned " + (chklistWords.CheckedItems.Count + change) + " of " + chklistWords.Items.Count + " words:";
+            lblWords.Text = "Learned " + words.Count<Entry>(w => w.archived) + " of " + words.Count + " words:";
         }
 
         void checkIfValidFeed()
@@ -94,13 +96,16 @@ namespace Wordy
 
         void displayWords()
         {
-            chklistWords.Items.Clear();
+            populatingWordList = true;
 
+            chklistWords.Items.Clear();
             string filter = textFilter.Text.ToLower();
 
             foreach (Entry word in words)
                 if (word.ToString().ToLower().Contains(filter))
                     chklistWords.Items.Add(word.ToString(), word.archived);
+
+            populatingWordList = false;
         }
 
         void checkForDefinitionChanges()
@@ -145,7 +150,7 @@ namespace Wordy
             displayWords();
 
             refreshUpdateNotifLabel();
-            updateWordCount(0);
+            updateWordCount();
             
             textFilter.Left = lblWords.Width + 12;
             textFilter.Width = 341 - textFilter.Left;
@@ -162,23 +167,26 @@ namespace Wordy
 
         private void chklistWords_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            int wordInd = getSelWordInd();
-
-            if (chklistWords.SelectedIndex != -1)
+            if (!populatingWordList) //don't track itemchecks when Wordy is adding words to the listbox
             {
-                bool newState = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
-                words[wordInd].archived = newState;
+                int wordInd = getSelWordInd();
 
-                if (words[wordInd].archived)
-                    words[wordInd].learningPhase = 7;
-                else
+                if (chklistWords.SelectedIndex != -1)
                 {
-                    words[wordInd].learningPhase = 1;
-                    words[wordInd].ResetLearned();
-                }
+                    bool newState = !chklistWords.GetItemChecked(chklistWords.SelectedIndex);
+                    words[wordInd].archived = newState;
 
-                main.SaveWords();
-                updateWordCount(newState ? 1 : -1);
+                    if (words[wordInd].archived)
+                        words[wordInd].learningPhase = 7;
+                    else
+                    {
+                        words[wordInd].learningPhase = 1;
+                        words[wordInd].ResetLearned();
+                    }
+
+                    main.SaveWords();
+                    updateWordCount();
+                }
             }
         }
 
