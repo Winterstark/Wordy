@@ -92,7 +92,7 @@ namespace Wordy
                     picWrong.Top = picRight.Top;
 
                     //position buttNext
-                    buttNext.Left = this.Width / 2 - buttNext.Width / 2;
+                    buttNext.Left = picWrong.Left + picWrong.Width / 2 - buttNext.Width / 2;
                     buttNext.Top = picWrong.Top + picWrong.Height + 12;
                 }
                 else
@@ -100,12 +100,7 @@ namespace Wordy
                     //displaying visual too
                     picVisual.Visible = false; //hide visual to prevent image jupming when resizing window
 
-                    int top;
-                    if (lblDef.Visible)
-                        top = lblDef.Top + lblDef.Height + 32;
-                    else
-                        top = rtbDef.Top + rtbDef.Height + 32;
-
+                    int top = lblDef.Top + lblDef.Height + 32;
                     int areaHeight = this.Height - 120 - top;
                     float picRatio = (float)picVisual.Image.Width / picVisual.Image.Height;
 
@@ -1202,8 +1197,8 @@ namespace Wordy
 
             if (picRight.Visible || picWrong.Visible)
             {
-                //resizing the window stops animation
-                if (timerProgressChange.Enabled)
+                //resizing the window stops animation (of forgetting words)
+                if (timerProgressChange.Enabled && deltaX < 0)
                 {
                     timerProgressChange.Enabled = false;
                     buttNext.Visible = true;
