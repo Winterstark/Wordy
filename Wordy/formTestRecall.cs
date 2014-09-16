@@ -76,7 +76,7 @@ namespace Wordy
                     picVisual.Visible = false; //hide visual to prevent image jumping when resizing window
                      
                     picVisual.Size = new Size(Math.Min(this.Width - 60, 720), this.Height - 120 - (mtbTestWord.Top + mtbTestWord.Height + 32));
-                    picVisual.Location = new Point(this.Width / 2 - picVisual.Width / 2, mtbTestWord.Top + mtbTestWord.Height + 32);
+                    picVisual.Location = new Point(mtbTestWord.Left + mtbTestWord.Width / 2 - picVisual.Width / 2, mtbTestWord.Top + mtbTestWord.Height + 32);
                     picVisual.Visible = true;
                 }
             }

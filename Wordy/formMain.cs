@@ -15,7 +15,7 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.13;
+        const double VERSION = 1.14;
 
         List<Entry> words;
         public List<WordOfTheDay> wotds;

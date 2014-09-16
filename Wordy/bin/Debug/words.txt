@@ -1536,12 +1536,12 @@ vestment, biretta, bodice, neckcloth, neckerchief, pantaloons, tippet, kirtle, c
 hurl, furl, girl, earl, pearl, curl, whirl, swirl, rl, whorl, 
 2013-01-12 14:45
 0001-01-01 00:00
-2014-08-18 13:53
-2014-09-15 13:53
+2014-09-16 11:47
+2014-10-21 11:47
 7
 13
-18
-15
+19
+16
 True
 </entry>
 
@@ -5222,12 +5222,12 @@ flehmen
 airmen, unerring, freshmen, hairpin, gettin, lectin, griffin, lenten, bidden, chairmen, 
 2013-03-27 14:44
 0001-01-01 00:00
-2014-08-01 14:14
-2014-10-10 14:14
+2014-09-16 11:46
+2014-10-02 11:46
 7
 7
-10
-10
+11
+11
 True
 </entry>
 
@@ -5791,18 +5791,18 @@ True
 <entry>
 virga
 [defs]
-(n.) Wisps of precipitation streaming from a cloud but evaporating before reaching the ground.::True
+(n.) Wisps of precipitation streaming from a cloud but evaporating before reaching the ground.::False
 [/defs]
-Virga on Wikipedia.Wikipedia, precipitation, downfall, l'epoca, USAR, Farsi, cti, bellissima, sappi, habent, 
+precipitation, downfall, 
 circa, mazurka, inertia, 
 2013-04-06 16:26
 0001-01-01 00:00
-2014-07-30 11:19
-2014-10-08 11:19
+2014-09-16 11:44
+2014-10-02 11:44
 7
 6
-10
-10
+11
+11
 True
 </entry>
 
@@ -11900,12 +11900,12 @@ dunghill, heap, cumulus, waste-yard, dump, trash dump, mound, rubbish dump, aggl
 bidden, bidding, knitting, kidding, pidgin, ridding, nipping, pippin, widgeon, sitting, 
 2013-12-11 13:22
 0001-01-01 00:00
-2014-08-18 13:53
-2014-09-15 13:53
+2014-09-16 11:47
+2014-10-21 11:47
 7
 27
-16
-11
+17
+12
 True
 </entry>
 
@@ -13472,13 +13472,13 @@ salty, unpalatable, brackishness, sal, acrid, tepid, soapy, malodorous, turbid,
 blackish, waggish, haggish, haggis, parish, lavish, banish, radish, brandish, clannish, 
 2014-01-24 13:12
 0001-01-01 00:00
-2014-08-25 13:50
+2014-09-16 11:47
 2014-09-15 13:50
-7
+2
 8
-13
+14
 11
-True
+False
 </entry>
 
 <entry>
