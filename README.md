@@ -94,7 +94,7 @@ When testing learned words, some minor mistakes are ignored. If you forget to us
 
 Visuals may also be used for testing purposes.
 
-![Screenshot: test type 5](http://i.imgur.com/QKCxEBD.png) ![Screenshot: test type 5 with displayed visuals](http://i.imgur.com/Hbf9ZQt.png)
+![Screenshot: test type 5](http://i.imgur.com/kgKECY3.png)
 
 ### Review words
 
