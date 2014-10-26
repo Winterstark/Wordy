@@ -73,7 +73,7 @@ namespace Wordy
             string logoPath = Application.StartupPath + "\\Wordy.png";
 
             if (File.Exists(logoPath))
-                picLogo.ImageLocation = Application.StartupPath + "\\Wordy.png";
+                picLogo.ImageLocation = logoPath;
         }
 
         private void formAbout_FormClosing(object sender, FormClosingEventArgs e)

@@ -20,13 +20,13 @@ namespace Wordy
         public bool testUnlearned;
 
         string def;
-        float lineHeight, curX, endX, deltaX;
-        int nTests, nCorrectAnswers, correctPick, resetLearningPhase;
+        float lineHeight, animRatio;
+        int nTests, nCorrectAnswers, correctPick, resetLearningPhase, startNotch, endNotch;
         bool noMoreWords;
 
         Entry testWord;
         Random rand;
-        DateTime startTime;
+        DateTime startTime, gotoNextQuestion;
         TimeSpan totalTime;
 
         List<MaskedTextBox> mtbDefs;
@@ -43,10 +43,11 @@ namespace Wordy
             panelDef.Size = new Size(this.Width - 50, this.Height - 120);
             panelTestWord.Size = new Size(this.Width - 50, this.Height - 120);
 
-            lblDef.MaximumSize = new Size(this.Width - 60, this.Height - 120);
+            lblDef.MaximumSize = new Size(this.Width - 80, this.Height - 120);
             lblSynonyms.MaximumSize = new Size(this.Width - 60, lblSynonyms.Height);
-
             lblTestWordDef.MaximumSize = new Size(this.Width - 60, this.Height - 120);
+            picVisual.MaximumSize = new Size(this.Width - 60, this.Height - 120);
+
             flowpanelPickAnswers.Size = new Size(this.Width - 176, flowpanelPickAnswers.Height);
             flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
             textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
@@ -67,6 +68,12 @@ namespace Wordy
                 buttSkip.Top = buttFinished.Top;
             }
 
+            if (testWord != null && testWord.learningPhase == 3)
+            {
+                buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
+                buttSkipLearned.Top = buttFinishedLearned.Top;
+            }
+
             //position pictures
             if (!picRight.Visible && !picWrong.Visible)
             {
@@ -74,9 +81,9 @@ namespace Wordy
                 {
                     //during testing learned word by visual association
                     picVisual.Visible = false; //hide visual to prevent image jumping when resizing window
-                     
-                    picVisual.Size = new Size(Math.Min(this.Width - 60, 720), this.Height - 120 - (mtbTestWord.Top + mtbTestWord.Height + 32));
-                    picVisual.Location = new Point(mtbTestWord.Left + mtbTestWord.Width / 2 - picVisual.Width / 2, mtbTestWord.Top + mtbTestWord.Height + 32);
+
+                    picVisual.Size = new Size(Math.Min(this.Width - 60, 720), this.Height - 120 - (buttFinished.Top + buttFinished.Height + 16));
+                    picVisual.Location = new Point(mtbTestWord.Left + mtbTestWord.Width / 2 - picVisual.Width / 2, buttFinished.Top + buttFinished.Height + 16);
                     picVisual.Visible = true;
                 }
             }
@@ -122,6 +129,10 @@ namespace Wordy
                     picRight.Top = top + areaHeight / 2 - picRight.Height / 2;
                     picWrong.Top = picRight.Top - buttNext.Height;
                     buttNext.Top = picWrong.Top + picWrong.Height + 12;
+
+                    if (buttNext.Visible)
+                        //buttNext & picRight are both visible when the user made a typo or a similar minor error, but his answer was still accepted
+                        picRight.Top = picWrong.Top;
 
                     //set Left values
                     int spacing = (this.Width - buttNext.Width - picVisual.Width) / 3;
@@ -271,9 +282,6 @@ namespace Wordy
                     {
                         panelTestWord.Visible = true;
 
-                        buttFinished.Visible = false;
-                        buttSkip.Visible = false;
-
                         if (testWord.learningPhase <= 2)
                         {
                             flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
@@ -286,6 +294,11 @@ namespace Wordy
                             textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
                             textTestWord.Visible = true;
                             textTestWord.Focus();
+
+                            buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
+                            buttSkipLearned.Top = buttFinishedLearned.Top;
+                            buttFinishedLearned.Visible = true;
+                            buttSkipLearned.Visible = true;
                         }
                     }
                     else
@@ -356,6 +369,7 @@ namespace Wordy
                     int offset;
 
                     mtbTestWord.Tag = false; //indicates mtbTestWord is NOT used to read the answer
+                    mtbTestWord.TextAlign = HorizontalAlignment.Left;
 
                     switch (questionType)
                     {
@@ -364,9 +378,13 @@ namespace Wordy
                             textTestWord.Text = "";
 
                             textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
-
+                            buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
+                            buttSkipLearned.Top = buttFinishedLearned.Top;
+                            
                             textTestWord.Visible = true;
                             panelTestWord.Visible = true;
+                            buttFinishedLearned.Visible = true;
+                            buttSkipLearned.Visible = true;
 
                             textTestWord.Focus();
 
@@ -448,10 +466,12 @@ namespace Wordy
 
                             chklistDefs.Height = 22 * chklistDefs.Items.Count;
                             buttFinished.Top = chklistDefs.Top + chklistDefs.Height + 16;
+                            buttSkip.Top = buttFinished.Top;
 
                             chklistDefs.Visible = true;
                             panelDef.Visible = true;
                             buttFinished.Visible = true;
+                            buttSkip.Visible = true;
 
                             chklistDefs.Focus();
 
@@ -460,7 +480,10 @@ namespace Wordy
                         case 3: // recognize synonyms
                             lblDef.Text = "What word has these synonyms?";
                             mtbTestWord.Text = "";
+
                             mtbTestWord.Top = 17;
+                            buttFinished.Top = lblDef.Top + lblDef.Height + 8;
+                            buttSkip.Top = buttFinished.Top;
 
                             //reveal every other letter
                             mask = createMask();
@@ -475,11 +498,13 @@ namespace Wordy
                             }
 
                             mtbTestWord.Mask = mask;
-
+                            
                             lblWord.Visible = false;
                             lblDef.Visible = true;
                             mtbTestWord.Visible = true;
                             panelDef.Visible = true;
+                            buttFinished.Visible = true;
+                            buttSkip.Visible = true;
 
                             mtbTestWord.Focus();
 
@@ -491,7 +516,12 @@ namespace Wordy
                             mtbTestWord.Top = 17;
 
                             buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+                            buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
+                            buttSkip.Top = buttFinished.Top;
+
                             buttAnotherExample.Visible = true;
+                            buttFinished.Visible = true;
+                            buttSkip.Visible = true;
 
                             //reveal first letter and vowels
                             mask = createMask();
@@ -534,13 +564,20 @@ namespace Wordy
                                 lblWord.Text = lblWord.Text.Substring(1, 1) + lblWord.Text.Substring(0, 1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
 
                             lblDef.Text = "Unscramble this word.";
+                            
                             mtbTestWord.Text = "";
                             mtbTestWord.Mask = "";
-                            mtbTestWord.Top = lblDef.Top + lblDef.Height + 32;
+                            mtbTestWord.TextAlign = HorizontalAlignment.Center;
 
+                            mtbTestWord.Top = lblDef.Top + lblDef.Height + 32;
+                            buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
+                            buttSkip.Top = buttFinished.Top;
+                            
                             lblDef.Visible = true;
                             mtbTestWord.Visible = true;
                             panelDef.Visible = true;
+                            buttFinished.Visible = true;
+                            buttSkip.Visible = true;
 
                             mtbTestWord.Focus();
 
@@ -549,11 +586,15 @@ namespace Wordy
                         case 6: // recognize visuals
                             lblSynonyms.Text = "What word is represented by this picture?";
                             lblDef.Text = "";
+
                             mtbTestWord.Text = "";
                             mtbTestWord.Mask = "";
+                            mtbTestWord.TextAlign = HorizontalAlignment.Center;
 
                             lblSynonyms.Top = lblWord.Top + 16;
                             mtbTestWord.Top = lblSynonyms.Top + lblSynonyms.Height + 32;
+                            buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
+                            buttSkip.Top = buttFinished.Top;
 
                             setupUI(); //position visual
 
@@ -561,6 +602,8 @@ namespace Wordy
                             lblSynonyms.Visible = true;
                             mtbTestWord.Visible = true;
                             panelDef.Visible = true;
+                            buttFinished.Visible = true;
+                            buttSkip.Visible = true;
 
                             mtbTestWord.Focus();
                             mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
@@ -590,13 +633,13 @@ namespace Wordy
             startTime = DateTime.Now; //start the clock
         }
 
-        void finish()
+        void finishFillDefinitions()
         {
             if (mtbDefs != null)
                 foreach (var mtbDef in mtbDefs)
                     if (!mtbDef.MaskCompleted)
                     {
-                        if (MessageBox.Show("Skip question?", "You haven't filled out every blank.", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.No)
+                        if (MessageBox.Show("You haven't filled out every blank.", "Skip question?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.No)
                             return;
                         break;
                     }
@@ -604,12 +647,30 @@ namespace Wordy
             answer(checkAnswers());
         }
 
+        void finishSelectDefinitions()
+        {
+            chklistDefs.Visible = false;
+
+            //remove indices from the items and replace "???" with test word
+            for (int i = 0; i < chklistDefs.Items.Count; i++)
+            {
+                string item = chklistDefs.Items[i].ToString();
+                chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace("???", testWord.ToString());
+            }
+
+            //check answers
+            for (int i = 0; i < chklistDefs.Items.Count; i++)
+                if (chklistDefs.GetItemChecked(i) != testWord.GetDefinition().Contains(chklistDefs.Items[i].ToString()))
+                {
+                    answer(false);
+                    return;
+                }
+
+            answer(true);
+        }
+
         bool checkAnswers()
         {
-            buttFinished.Visible = false;
-            buttSkip.Visible = false;
-            buttAnotherExample.Visible = false;
-
             answers = new List<Tuple<int, int, bool, string>>();
             answCorrectly = new Answer[mtbDefs.Count];
             int i = 0;
@@ -643,16 +704,22 @@ namespace Wordy
 
         void answer(bool success)
         {
+            if (timerProgressChange.Enabled) //disable answering between questions
+                return;
+
             if (success)
                 nCorrectAnswers++;
 
-            if (timerProgressChange.Enabled || timerWait.Enabled || buttNext.Visible) //disable answering between questions
-                return;
-
             lblSynonyms.Top = 83;
-            panelTestWord.Visible = false;
             lblWord.Text = testWord.ToString();
-            
+
+            panelTestWord.Visible = false;
+            buttFinished.Visible = false;
+            buttFinishedLearned.Visible = false;
+            buttSkipLearned.Visible = false;
+            buttSkip.Visible = false;
+            buttAnotherExample.Visible = false;
+
             if (testWord.archived)
             {
                 mtbTestWord.Visible = false;
@@ -669,7 +736,7 @@ namespace Wordy
                 panelDef.Visible = true;
 
             picWordnik.Enabled = true;
-
+            
             //color correct/wrong answers
             if (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0)
             {
@@ -718,7 +785,8 @@ namespace Wordy
             else
                 lblDef.Visible = true;
 
-            curX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (testWord.learningPhase - 1); //init animation
+            startNotch = testWord.learningPhase;
+            animRatio = 0;
 
             //save test result
             if (success)
@@ -737,14 +805,14 @@ namespace Wordy
                         lblWord.ForeColor = Color.Green;
                     }
 
-                    endX = curX + (this.Width - 70 - lblSynonyms.Left - 10) / 6;
-                    deltaX = 3;
+                    endNotch = testWord.learningPhase + 1;
                     timerProgressChange.Enabled = true;
                 }
                 else
                 {
-                    drawProgress();
-                    timerWait.Enabled = true;
+                    gotoNextQuestion = DateTime.Now.AddSeconds(2);
+                    endNotch = startNotch;
+                    timerProgressChange.Enabled = true;
                 }
             }
             else
@@ -754,37 +822,77 @@ namespace Wordy
                 if (!testWord.archived)
                 {
                     buttNext.Visible = true;
-                    drawProgress();
+                    endNotch = startNotch;
+                    timerProgressChange.Enabled = true;
                 }
                 else
                 {
-                    //check if answer given is a synonym
+                    //check if answer has a typo
+                    bool typo = false;
+                    string correctAnswer = testWord.ToString().ToLower();
                     string answerGiven;
+
                     if ((bool)mtbTestWord.Tag)
                         answerGiven = mtbTestWord.Text;
                     else
                         answerGiven = textTestWord.Text;
+                    answerGiven = answerGiven.ToLower();
 
-                    if (testWord.GetSynonyms().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven))
+                    //check for extra letters
+                    for (int i = 0; i < answerGiven.Length; i++)
+                        if (answerGiven.Remove(i, 1) == correctAnswer)
+                        {
+                            typo = true;
+                            break;
+                        }
+
+                    if (!typo)
                     {
-                        picWrong.Visible = false;
-                        picRight.Visible = true;
-                        lblWord.ForeColor = Color.Yellow;
-                        buttNext.Visible = true;
-                        drawProgress();
+                        //check for missing letters
+                        for (int i = 0; i <= answerGiven.Length; i++)
+                            if (i == correctAnswer.Length)
+                                break;
+                            else if (answerGiven.Insert(i, correctAnswer[i].ToString()) == correctAnswer)
+                            {
+                                typo = true;
+                                break;
+                            }
 
+                        if (!typo)
+                        {
+                            //check for a swapped pair of letters
+                            for (int i = 0; i < answerGiven.Length - 1; i++)
+                                if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == correctAnswer)
+                                {
+                                    typo = true;
+                                    break;
+                                }
+                        }
+                    }
+
+                    if (typo)
+                    {
+                        acceptAnswer();
                         success = true;
-
-                        MessageBox.Show("Although it's technically not the right answer, it will be accepted.", "Your answer is a synonym of the correct answer.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("It will be accepted anyway.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        lblWord.Text += " forgotten!";
-                        lblWord.ForeColor = Color.Red;
+                        //check if answer given is a synonym
+                        if (testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven))
+                        {
+                            acceptAnswer();
+                            success = true;
+                            MessageBox.Show("It will be accepted anyway.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            lblWord.Text += " forgotten!";
+                            lblWord.ForeColor = Color.Red;
 
-                        endX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (resetLearningPhase - 1);
-                        deltaX = -9;
-                        timerProgressChange.Enabled = true;
+                            endNotch = resetLearningPhase;
+                            timerProgressChange.Enabled = true;
+                        }
                     }
                 }
             }
@@ -796,10 +904,24 @@ namespace Wordy
 
             //position pictures and other UI controls
             setupUI();
-
+            
             if (buttNext.Visible)
                 buttNext.Focus();
-            drawProgress();
+        }
+
+        void acceptAnswer()
+        {
+            picWrong.Visible = false;
+            picRight.Visible = true;
+            lblWord.ForeColor = Color.LightGreen;
+            buttNext.Visible = true;
+
+            endNotch = startNotch;
+            timerProgressChange.Enabled = true;
+
+            if (picVisual.Visible)
+                //if the visual is displayed ensure all UI positions are accurate
+                setupUI();
         }
 
         string removeWordInstances(string txt, string word)
@@ -895,7 +1017,7 @@ namespace Wordy
             {
                 MaskedTextBox mtbDef = new MaskedTextBox();
 
-                mtbDef.Left = lblDef.Left;
+                mtbDef.Left = lblDef.Left - 20;
                 mtbDef.Top = top;
                 mtbDef.Width = this.Width - 60;
                 mtbDef.Font = lblDef.Font;
@@ -972,14 +1094,19 @@ namespace Wordy
             Pen penGreen = new Pen(Color.Green, 5), penBlack = new Pen(Color.Black, 5), penRed = new Pen(Color.Red, 5);
             Brush brushGreen = new SolidBrush(Color.Green), brushBlack = new SolidBrush(Color.Black), brushRed = new SolidBrush(Color.Red);
 
+            int startX = calcNotchX(startNotch);
+            int endX = calcNotchX(endNotch);
+            int curX = (int)(startX + animRatio * (endX - startX));
+
             gfx.DrawLine(penGreen, x1 + 5, y, curX, y);
-            gfx.DrawLine(deltaX >= 0 ? penBlack : penRed, curX, y, x2 + 5, y);
+            if (endX != startX || endNotch != 7)
+                gfx.DrawLine(endX >= startX ? penBlack : penRed, curX, y, x2 + 5, y);
 
             for (int i = 0; i <= 6; i++)
                 if (x1 + (x2 - x1) / 6 * i <= curX)
                     gfx.FillEllipse(brushGreen, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
                 else
-                    gfx.FillEllipse(deltaX >= 0 ? brushBlack : brushRed, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
+                    gfx.FillEllipse(endX >= startX ? brushBlack : brushRed, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
 
             if (answCorrectly == null)
                 return;
@@ -1044,7 +1171,7 @@ namespace Wordy
         {
             if (e.KeyChar == 13) //enter
             {
-                finish();
+                finishFillDefinitions();
                 e.Handled = true;
             }
         }
@@ -1156,10 +1283,21 @@ namespace Wordy
             MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        int calcNotchX(int notch)
+        {
+            return lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (notch - 1);
+        }
+
 
         public formTestRecall()
         {
             InitializeComponent();
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            if (timerProgressChange.Enabled)
+                drawProgress();
         }
 
         private void formTestRecall_Load(object sender, EventArgs e)
@@ -1177,9 +1315,6 @@ namespace Wordy
 
             corewords = Misc.LoadCoreWords();
 
-            lblDef.MaximumSize = new Size(this.Width - 60, this.Height - 120);
-            picVisual.MaximumSize = new Size(this.Width - 60, this.Height - 120);
-
             lineHeight = lblDef.CreateGraphics().MeasureString("1", lblDef.Font).Height;
 
             //start testing
@@ -1194,20 +1329,6 @@ namespace Wordy
         private void formTestRecall_Resize(object sender, EventArgs e)
         {
             setupUI();
-
-            if (picRight.Visible || picWrong.Visible)
-            {
-                //resizing the window stops animation (of forgetting words)
-                if (timerProgressChange.Enabled && deltaX < 0)
-                {
-                    timerProgressChange.Enabled = false;
-                    buttNext.Visible = true;
-                }
-
-                //redraw progress bar
-                curX = lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (testWord.learningPhase - 1);
-                drawProgress();
-            }
         }
 
         private void formTestRecall_FormClosing(object sender, FormClosingEventArgs e)
@@ -1215,7 +1336,6 @@ namespace Wordy
             bool betweenQuestions = timerProgressChange.Enabled || buttNext.Visible || picRight.Visible || noMoreWords;
             
             timerProgressChange.Enabled = false;
-            timerWait.Enabled = false;
 
             showResults(betweenQuestions);
             main.Show();
@@ -1229,12 +1349,6 @@ namespace Wordy
                     nextWord();
                 else if (chklistDefs.Visible)
                     buttFinished.PerformClick();
-            }
-            else if (e.KeyData == Keys.Tab)
-            {
-                //disable tab jumping when between tests
-                if (timerProgressChange.Enabled || buttNext.Visible)
-                    e.Handled = true;
             }
             else if (char.IsDigit((char)e.KeyData))
             {
@@ -1250,37 +1364,45 @@ namespace Wordy
             }
         }
 
+        private void chklistDefs_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter) //don't call OnKeyDown when Enter is pressed because the function gets called twice
+                this.OnKeyDown(e);
+        }
+
         private void buttFinished_Click(object sender, EventArgs e)
         {
-            if (!chklistDefs.Visible)
-                finish();
-            else
+            if (mtbTestWord.Visible)
             {
-                buttFinished.Visible = false;
-                chklistDefs.Visible = false;
-
-                //remove indices from the items and replace "???" with test word
-                for (int i = 0; i < chklistDefs.Items.Count; i++)
-                {
-                    string item = chklistDefs.Items[i].ToString();
-                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace("???", testWord.ToString());
-                }
-
-                //check answers
-                for (int i = 0; i < chklistDefs.Items.Count; i++)
-                    if (chklistDefs.GetItemChecked(i) != testWord.GetDefinition().Contains(chklistDefs.Items[i].ToString()))
-                    {
-                        answer(false);
-                        return;
-                    }
-
-                answer(true);
+                if (mtbTestWord.MaskCompleted || MessageBox.Show("You haven't filled out every blank.", "Skip question?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
+                    if (mtbTestWord.Text != "" || MessageBox.Show("You haven't entered any text.", "Skip question?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
+                        answer(checkEnteredWord(mtbTestWord.Text));
             }
+            else if (!chklistDefs.Visible)
+                finishFillDefinitions();
+            else if (chklistDefs.CheckedItems.Count > 0 || MessageBox.Show("You haven't selected a single definition.", "Skip question?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
+                finishSelectDefinitions();
+        }
+
+        private void buttFinishedLearned_Click(object sender, EventArgs e)
+        {
+            if (textTestWord.Text != "" || MessageBox.Show("You haven't entered any text.", "Skip question?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
+                answer(checkEnteredWord(textTestWord.Text));
         }
 
         private void buttSkip_Click(object sender, EventArgs e)
         {
-            answer(checkAnswers());
+            if (chklistDefs.Visible)
+                finishSelectDefinitions();
+            else if (mtbTestWord.Visible)
+                answer(checkEnteredWord(mtbTestWord.Text));
+            else
+                answer(checkAnswers());
+        }
+
+        private void buttSkipLearned_Click(object sender, EventArgs e)
+        {
+            answer(checkEnteredWord(textTestWord.Text));
         }
 
         private void buttAnotherExample_Click(object sender, EventArgs e)
@@ -1301,13 +1423,16 @@ namespace Wordy
                 curExample = (curExample + 1) % exampleSentences.Length;
                 lblDef.Text = exampleSentences[curExample];
 
-                //readjust button position
+                //readjust button positions
                 buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+                buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
+                buttSkip.Top = buttFinished.Top;
             }
         }
 
         private void buttNext_Click(object sender, EventArgs e)
         {
+            timerProgressChange.Enabled = false;
             nextWord();
         }
 
@@ -1343,52 +1468,57 @@ namespace Wordy
 
         private void timerProgressChange_Tick(object sender, EventArgs e)
         {
-            drawProgress();
+            this.Invalidate(); //draw progress indicator
 
-            curX += deltaX;
-            if ((deltaX > 0 && curX >= endX) || (deltaX < 0 && curX <= endX))
+            if (startNotch == endNotch) //if no animation
             {
-                curX = endX;
-
-                timerProgressChange.Enabled = false;
-
-                if (deltaX > 0)
-                    nextWord();
-                else
-                {
-                    buttNext.Visible = true;
-                    drawProgress();
-                }
+                if (!buttNext.Visible)
+                    //wait 2 seconds until automatically proceeding to next question
+                    if (DateTime.Now >= gotoNextQuestion)
+                    {
+                        timerProgressChange.Enabled = false;
+                        nextWord();
+                    }
+                //if buttNext IS visible then the user needs to click it to proceed
             }
-        }
-
-        private void timerWait_Tick(object sender, EventArgs e)
-        {
-            timerWait.Enabled = false;
-            nextWord();
+            else
+            {
+                //progress change animation
+                if (animRatio == 1)
+                {
+                    //animation ended
+                    if (endNotch > startNotch)
+                    {
+                        //process to next question
+                        timerProgressChange.Enabled = false;
+                        nextWord();
+                    }
+                    else
+                        //let the user click the button to proceed
+                        buttNext.Visible = true;
+                }
+                else
+                    //update animation
+                    animRatio = Math.Min(animRatio + 0.03f, 1.0f);
+            }
         }
 
         private void textTestWord_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13) //enter
             {
-                answer(checkEnteredWord(textTestWord.Text));
+                buttFinishedLearned.PerformClick();
                 e.Handled = true;
             }
         }
 
         private void mtbTestWord_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 13) //enter
+            if (mtbTestWord.Visible && e.KeyChar == 13) //still testing && enter pressed
             {
-                answer(checkEnteredWord(mtbTestWord.Text));
+                buttFinished.PerformClick();
                 e.Handled = true;
             }
-        }
-
-        private void chklistDefs_KeyDown(object sender, KeyEventArgs e)
-        {
-            formTestRecall_KeyDown(sender, e);
         }
 
         private void picWordnik_Click(object sender, EventArgs e)

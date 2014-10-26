@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelDef = new System.Windows.Forms.Panel();
-            this.picVisual = new System.Windows.Forms.PictureBox();
             this.buttSkip = new System.Windows.Forms.Button();
             this.chklistDefs = new System.Windows.Forms.CheckedListBox();
             this.buttFinished = new System.Windows.Forms.Button();
@@ -39,11 +38,14 @@
             this.picWrong = new System.Windows.Forms.PictureBox();
             this.picRight = new System.Windows.Forms.PictureBox();
             this.buttNext = new System.Windows.Forms.Button();
-            this.rtbDef = new System.Windows.Forms.RichTextBox();
             this.lblDef = new System.Windows.Forms.Label();
             this.mtbTestWord = new System.Windows.Forms.MaskedTextBox();
             this.buttAnotherExample = new System.Windows.Forms.Button();
+            this.picVisual = new System.Windows.Forms.PictureBox();
+            this.rtbDef = new System.Windows.Forms.RichTextBox();
             this.panelTestWord = new System.Windows.Forms.Panel();
+            this.buttSkipLearned = new System.Windows.Forms.Button();
+            this.buttFinishedLearned = new System.Windows.Forms.Button();
             this.textTestWord = new System.Windows.Forms.TextBox();
             this.flowpanelPickAnswers = new System.Windows.Forms.FlowLayoutPanel();
             this.buttPickWord1 = new System.Windows.Forms.Button();
@@ -54,12 +56,11 @@
             this.buttPickWord6 = new System.Windows.Forms.Button();
             this.lblTestWordDef = new System.Windows.Forms.Label();
             this.timerProgressChange = new System.Windows.Forms.Timer(this.components);
-            this.timerWait = new System.Windows.Forms.Timer(this.components);
             this.picWordnik = new System.Windows.Forms.PictureBox();
             this.panelDef.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picVisual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWrong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVisual)).BeginInit();
             this.panelTestWord.SuspendLayout();
             this.flowpanelPickAnswers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
@@ -67,7 +68,6 @@
             // 
             // panelDef
             // 
-            this.panelDef.Controls.Add(this.picVisual);
             this.panelDef.Controls.Add(this.buttSkip);
             this.panelDef.Controls.Add(this.chklistDefs);
             this.panelDef.Controls.Add(this.buttFinished);
@@ -76,25 +76,16 @@
             this.panelDef.Controls.Add(this.picWrong);
             this.panelDef.Controls.Add(this.picRight);
             this.panelDef.Controls.Add(this.buttNext);
-            this.panelDef.Controls.Add(this.rtbDef);
             this.panelDef.Controls.Add(this.lblDef);
             this.panelDef.Controls.Add(this.mtbTestWord);
             this.panelDef.Controls.Add(this.buttAnotherExample);
+            this.panelDef.Controls.Add(this.picVisual);
+            this.panelDef.Controls.Add(this.rtbDef);
             this.panelDef.Location = new System.Drawing.Point(12, 12);
             this.panelDef.Name = "panelDef";
             this.panelDef.Size = new System.Drawing.Size(744, 552);
             this.panelDef.TabIndex = 6;
             this.panelDef.Visible = false;
-            // 
-            // picVisual
-            // 
-            this.picVisual.Location = new System.Drawing.Point(5, 63);
-            this.picVisual.Name = "picVisual";
-            this.picVisual.Size = new System.Drawing.Size(732, 480);
-            this.picVisual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picVisual.TabIndex = 7;
-            this.picVisual.TabStop = false;
-            this.picVisual.Visible = false;
             // 
             // buttSkip
             // 
@@ -186,25 +177,11 @@
             this.buttNext.Visible = false;
             this.buttNext.Click += new System.EventHandler(this.buttNext_Click);
             // 
-            // rtbDef
-            // 
-            this.rtbDef.BackColor = System.Drawing.SystemColors.Control;
-            this.rtbDef.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbDef.Font = new System.Drawing.Font("Calibri", 12F);
-            this.rtbDef.Location = new System.Drawing.Point(34, 108);
-            this.rtbDef.Name = "rtbDef";
-            this.rtbDef.ReadOnly = true;
-            this.rtbDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.rtbDef.Size = new System.Drawing.Size(49, 19);
-            this.rtbDef.TabIndex = 19;
-            this.rtbDef.Text = "";
-            this.rtbDef.Visible = false;
-            // 
             // lblDef
             // 
             this.lblDef.AutoSize = true;
             this.lblDef.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDef.Location = new System.Drawing.Point(14, 108);
+            this.lblDef.Location = new System.Drawing.Point(34, 108);
             this.lblDef.Name = "lblDef";
             this.lblDef.Size = new System.Drawing.Size(49, 19);
             this.lblDef.TabIndex = 8;
@@ -232,8 +209,34 @@
             this.buttAnotherExample.Visible = false;
             this.buttAnotherExample.Click += new System.EventHandler(this.buttAnotherExample_Click);
             // 
+            // picVisual
+            // 
+            this.picVisual.Location = new System.Drawing.Point(5, 63);
+            this.picVisual.Name = "picVisual";
+            this.picVisual.Size = new System.Drawing.Size(732, 480);
+            this.picVisual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picVisual.TabIndex = 7;
+            this.picVisual.TabStop = false;
+            this.picVisual.Visible = false;
+            // 
+            // rtbDef
+            // 
+            this.rtbDef.BackColor = System.Drawing.SystemColors.Control;
+            this.rtbDef.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbDef.Font = new System.Drawing.Font("Calibri", 12F);
+            this.rtbDef.Location = new System.Drawing.Point(34, 108);
+            this.rtbDef.Name = "rtbDef";
+            this.rtbDef.ReadOnly = true;
+            this.rtbDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbDef.Size = new System.Drawing.Size(49, 19);
+            this.rtbDef.TabIndex = 19;
+            this.rtbDef.Text = "";
+            this.rtbDef.Visible = false;
+            // 
             // panelTestWord
             // 
+            this.panelTestWord.Controls.Add(this.buttSkipLearned);
+            this.panelTestWord.Controls.Add(this.buttFinishedLearned);
             this.panelTestWord.Controls.Add(this.textTestWord);
             this.panelTestWord.Controls.Add(this.flowpanelPickAnswers);
             this.panelTestWord.Controls.Add(this.lblTestWordDef);
@@ -242,6 +245,30 @@
             this.panelTestWord.Size = new System.Drawing.Size(744, 552);
             this.panelTestWord.TabIndex = 8;
             this.panelTestWord.Visible = false;
+            // 
+            // buttSkipLearned
+            // 
+            this.buttSkipLearned.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttSkipLearned.Location = new System.Drawing.Point(220, 187);
+            this.buttSkipLearned.Name = "buttSkipLearned";
+            this.buttSkipLearned.Size = new System.Drawing.Size(196, 43);
+            this.buttSkipLearned.TabIndex = 26;
+            this.buttSkipLearned.Text = "Skip question";
+            this.buttSkipLearned.UseVisualStyleBackColor = true;
+            this.buttSkipLearned.Visible = false;
+            this.buttSkipLearned.Click += new System.EventHandler(this.buttSkipLearned_Click);
+            // 
+            // buttFinishedLearned
+            // 
+            this.buttFinishedLearned.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttFinishedLearned.Location = new System.Drawing.Point(18, 187);
+            this.buttFinishedLearned.Name = "buttFinishedLearned";
+            this.buttFinishedLearned.Size = new System.Drawing.Size(196, 43);
+            this.buttFinishedLearned.TabIndex = 26;
+            this.buttFinishedLearned.Text = "Finished";
+            this.buttFinishedLearned.UseVisualStyleBackColor = true;
+            this.buttFinishedLearned.Visible = false;
+            this.buttFinishedLearned.Click += new System.EventHandler(this.buttFinishedLearned_Click);
             // 
             // textTestWord
             // 
@@ -350,11 +377,6 @@
             this.timerProgressChange.Interval = 50;
             this.timerProgressChange.Tick += new System.EventHandler(this.timerProgressChange_Tick);
             // 
-            // timerWait
-            // 
-            this.timerWait.Interval = 1500;
-            this.timerWait.Tick += new System.EventHandler(this.timerWait_Tick);
-            // 
             // picWordnik
             // 
             this.picWordnik.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -373,8 +395,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 577);
             this.Controls.Add(this.picWordnik);
-            this.Controls.Add(this.panelDef);
             this.Controls.Add(this.panelTestWord);
+            this.Controls.Add(this.panelDef);
             this.KeyPreview = true;
             this.Name = "formTestRecall";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -385,9 +407,9 @@
             this.Resize += new System.EventHandler(this.formTestRecall_Resize);
             this.panelDef.ResumeLayout(false);
             this.panelDef.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picVisual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWrong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVisual)).EndInit();
             this.panelTestWord.ResumeLayout(false);
             this.panelTestWord.PerformLayout();
             this.flowpanelPickAnswers.ResumeLayout(false);
@@ -420,11 +442,12 @@
         private System.Windows.Forms.PictureBox picWrong;
         private System.Windows.Forms.Button buttNext;
         private System.Windows.Forms.RichTextBox rtbDef;
-        private System.Windows.Forms.Timer timerWait;
         private System.Windows.Forms.MaskedTextBox mtbTestWord;
         private System.Windows.Forms.CheckedListBox chklistDefs;
         private System.Windows.Forms.Button buttAnotherExample;
         private System.Windows.Forms.PictureBox picWordnik;
+        private System.Windows.Forms.Button buttFinishedLearned;
+        private System.Windows.Forms.Button buttSkipLearned;
 
     }
 }
