@@ -31,7 +31,7 @@ namespace Wordy
 
         List<MaskedTextBox> mtbDefs;
         List<List<Tuple<int, int>>> kwBounds;
-        List<Tuple<int, int, bool, string>> answers;
+        List<Tuple<int, int, Color, string>> answers;
         List<string> corewords = new List<string>();
         string[] exampleSentences;
         Answer[] answCorrectly;
@@ -671,9 +671,10 @@ namespace Wordy
 
         bool checkAnswers()
         {
-            answers = new List<Tuple<int, int, bool, string>>();
+            answers = new List<Tuple<int, int, Color, string>>();
             answCorrectly = new Answer[mtbDefs.Count];
             int i = 0;
+            bool typos = false;
 
             if (mtbDefs != null)
                 while (mtbDefs.Count > 0)
@@ -685,10 +686,41 @@ namespace Wordy
 
                     for (int j = 0; j < kwBounds[0].Count; j++)
                     {
-                        bool res = mtbDefs[0].Text.Length >= kwBounds[0][j].Item2 && mtbDefs[0].Text.Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower() == mtbDefs[0].Tag.ToString().Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
-                        answCorrectly[i].correct = answCorrectly[i].correct && res;
+                        bool res;
+                        Color answerColor = Color.Black;
 
-                        answers.Add(new Tuple<int, int, bool, string>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, res, mtbDefs[0].Text));
+                        if (mtbDefs[0].Text.Length < kwBounds[0][j].Item2)
+                        {
+                            res = false;
+                            answerColor = Color.Red;
+                        }
+                        else
+                        {
+                            string answerGiven = mtbDefs[0].Text.Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
+                            string correctAnswer = mtbDefs[0].Tag.ToString().Substring(kwBounds[0][j].Item1, kwBounds[0][j].Item2 - kwBounds[0][j].Item1).ToLower();
+
+                            res = answerGiven == correctAnswer;
+
+                            if (res)
+                                //correct answer
+                                answerColor = Color.Green;
+                            else if (testWord.archived && isTypo(correctAnswer, answerGiven.Replace("_", "")))
+                            {
+                                //typo in answer
+                                typos = true;
+                                res = true;
+                                answerColor = Color.LightGreen;
+                            }
+                            else
+                            {
+                                //wrong answer
+                                res = false;
+                                answerColor = Color.Red;
+                            }
+                        }
+
+                        answCorrectly[i].correct = answCorrectly[i].correct && res;
+                        answers.Add(new Tuple<int, int, Color, string>(lineOffset(i) + kwBounds[0][j].Item1, lineOffset(i) + kwBounds[0][j].Item2, answerColor, mtbDefs[0].Text));
                     }
 
                     mtbDefs[0].Dispose();
@@ -699,7 +731,10 @@ namespace Wordy
                     i++;
                 }
 
-            return answers.All(a => a.Item3);
+            if (typos)
+                MessageBox.Show("It will be accepted anyway.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            return answers.All(a => a.Item3 != Color.Red);
         }
 
         void answer(bool success)
@@ -745,13 +780,13 @@ namespace Wordy
 
                 for (int i = 0; i < answers.Count - 1; i++)
                 {
-                    rtbDef.SelectionBackColor = answers[i].Item3 ? Color.Green : Color.Red;
+                    rtbDef.SelectionBackColor = answers[i].Item3;
                     rtbDef.AppendText(questionDef.Substring(answers[i].Item1, answers[i].Item2 - answers[i].Item1));
                     rtbDef.SelectionBackColor = SystemColors.Control;
                     rtbDef.AppendText(questionDef.Substring(answers[i].Item2, answers[i + 1].Item1 - answers[i].Item2));
                 }
 
-                rtbDef.SelectionBackColor = answers[answers.Count - 1].Item3 ? Color.Green : Color.Red;
+                rtbDef.SelectionBackColor = answers[answers.Count - 1].Item3;
                 rtbDef.AppendText(questionDef.Substring(answers[answers.Count - 1].Item1, answers[answers.Count - 1].Item2 - answers[answers.Count - 1].Item1));
                 rtbDef.SelectionBackColor = SystemColors.Control;
                 rtbDef.AppendText(questionDef.Substring(answers[answers.Count - 1].Item2));
@@ -828,49 +863,13 @@ namespace Wordy
                 else
                 {
                     //check if answer has a typo
-                    bool typo = false;
-                    string correctAnswer = testWord.ToString().ToLower();
                     string answerGiven;
-
                     if ((bool)mtbTestWord.Tag)
                         answerGiven = mtbTestWord.Text;
                     else
                         answerGiven = textTestWord.Text;
-                    answerGiven = answerGiven.ToLower();
 
-                    //check for extra letters
-                    for (int i = 0; i < answerGiven.Length; i++)
-                        if (answerGiven.Remove(i, 1) == correctAnswer)
-                        {
-                            typo = true;
-                            break;
-                        }
-
-                    if (!typo)
-                    {
-                        //check for missing letters
-                        for (int i = 0; i <= answerGiven.Length; i++)
-                            if (i == correctAnswer.Length)
-                                break;
-                            else if (answerGiven.Insert(i, correctAnswer[i].ToString()) == correctAnswer)
-                            {
-                                typo = true;
-                                break;
-                            }
-
-                        if (!typo)
-                        {
-                            //check for a swapped pair of letters
-                            for (int i = 0; i < answerGiven.Length - 1; i++)
-                                if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == correctAnswer)
-                                {
-                                    typo = true;
-                                    break;
-                                }
-                        }
-                    }
-
-                    if (typo)
+                    if (isTypo(testWord.ToString(), answerGiven))
                     {
                         acceptAnswer();
                         success = true;
@@ -907,6 +906,29 @@ namespace Wordy
             
             if (buttNext.Visible)
                 buttNext.Focus();
+        }
+
+        bool isTypo(string correctAnswer, string answerGiven)
+        {
+            correctAnswer = correctAnswer.ToLower();
+            answerGiven = answerGiven.ToLower();
+
+            //check for extra letters
+            for (int i = 0; i < answerGiven.Length; i++)
+                if (answerGiven.Remove(i, 1) == correctAnswer)
+                    return true;
+
+            //check for missing letters
+            for (int i = 0; i <= answerGiven.Length && i < correctAnswer.Length; i++)
+                if (answerGiven.Insert(i, correctAnswer[i].ToString()) == correctAnswer)
+                    return true;
+
+            //check for a swapped pair of letters
+            for (int i = 0; i < answerGiven.Length - 1; i++)
+                if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == correctAnswer)
+                    return true;
+
+            return false;
         }
 
         void acceptAnswer()

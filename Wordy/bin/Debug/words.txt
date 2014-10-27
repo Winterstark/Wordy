@@ -543,20 +543,20 @@ True
 <entry>
 bandy
 [defs]
-(v-t.) To toss or throw back and forth.::False
-(v-t.) To discuss in a casual or frivolous manner:  bandy an idea about. ::False
-(adj.) Bowed or bent in an outward curve:  bandy legs.::False
+(v-t.) To toss or throw back and forth.::True
+(v-t.) To discuss in a casual or frivolous manner:  bandy an idea about. ::True
+(adj.) Bowed or bent in an outward curve:  bandy legs.::True
 [/defs]
 shuttlecock, unfit, bandied, bandying, shinney, hockey, crooked, toss, exchange, 
 dandy, sandy, brandy, candy, handy, operandi, grandee, tangy, shanty, scanty, 
 2012-10-02 10:25
 0001-01-01 00:00
-2014-08-15 16:32
-2014-10-24 16:32
+2014-10-27 20:24
+2015-01-12 20:24
 7
 6
-12
-12
+13
+13
 True
 </entry>
 
@@ -823,20 +823,20 @@ True
 <entry>
 nuncupative
 [defs]
-(adj.) spoken rather than written::False
-(adj.) oral ::False
+(adj.) spoken rather than written::True
+(adj.) oral ::True
 "On his deathbed Jacob made a nuncupative will for his son and daughter."::False
 [/defs]
 nuncupative testament, nuncupative will, oral, nominal, phonatory, falsifiable, subchronic, 13-week, useof, ascensional, 
 nominative, correlative, declarative, educative, interrogative, ulcerative, predicative, suppurative, evaluative, radiative, 
 2012-10-13 17:18
 0001-01-01 00:00
-2014-08-14 10:47
-2014-10-23 10:47
+2014-10-27 20:19
+2015-01-12 20:19
 7
 15
+13
 12
-11
 True
 </entry>
 
@@ -1298,19 +1298,19 @@ True
 <entry>
 eidolon
 [defs]
-(n.) a phantom; apparition.::False
-(n.) an idealized person or thing.::False
+(n.) a phantom; apparition.::True
+(n.) an idealized person or thing.::True
 [/defs]
 form, phantom, apparition, scagliola, trapezoid, sling-back, burqa, grackle, o'erhung, wedding-dress, 
 stolen, colon, swollen, solum, chosen, spoken, token, potion, bowman, bosun, 
 2012-10-29 11:13
 0001-01-01 00:00
-2014-09-24 11:23
-2014-10-15 11:23
+2014-10-27 15:17
+2014-11-24 15:17
 7
 13
-23
-20
+24
+21
 True
 </entry>
 
@@ -1719,18 +1719,18 @@ True
 <entry>
 epexegesis
 [defs]
-(n.) the addition of a word or words to explain a preceding word or sentence.::False
+(n.) the addition of a word or words to explain a preceding word or sentence.::True
 [/defs]
 exegesis, 
 exegesis, amniocentesis, adhesive, releases, cohesive, brevis, creases, ceases, leases, pleases, 
 2013-02-05 19:47
 0001-01-01 00:00
-2014-08-07 14:31
-2014-10-16 14:31
+2014-10-27 20:23
+2015-01-12 20:23
 7
 7
+13
 12
-11
 True
 </entry>
 
@@ -2074,20 +2074,20 @@ True
 <entry>
 skirl
 [defs]
-(v-i.) To produce a high, shrill, wailing tone. Used of bagpipes.::False
+(v-i.) To produce a high, shrill, wailing tone. Used of bagpipes.::True
 (v-t.) To play (a piece) on bagpipes.::False
 [/defs]
 scream, skirled, skirling, skirls, sound, play, go, umiumi, yeir, carillon, 
 girl, curl, swirl, pearl, whirl, hurl, whorl, twirl, churl, furl, 
 2013-02-06 15:04
 0001-01-01 00:00
-2014-08-07 14:31
+2014-10-27 20:23
 2014-10-16 14:31
-7
+4
 9
+12
 11
-11
-True
+False
 </entry>
 
 <entry>
@@ -3334,7 +3334,7 @@ True
 white elephant
 [defs]
 (n.) a property requiring much care and expense and yielding little profit::False
-(n.) an object no longer of value to its owner but of value to others::False
+(n.) an object no longer of value to its owner but of value to others::True
 (n.) something of little or no value::False
 "The town's white elephant is the run-down but historic theater, which has been closed for several years but still requires thousands of dollars in maintenance costs."::False
 [/defs]
@@ -3342,13 +3342,13 @@ white kite, pure, pallid, hoary, happy, innocent, pale, snowy, favorite, fortuna
 
 2013-02-19 11:22
 0001-01-01 00:00
-2014-08-07 14:25
+2014-10-27 20:20
 2014-10-16 14:25
-7
+4
 8
+13
 12
-12
-True
+False
 </entry>
 
 <entry>
@@ -4248,20 +4248,20 @@ False
 <entry>
 calabash
 [defs]
-(n.) An annual vine (Lagenaria siceraria) (having white flowers and smooth, large, hard-shelled gourds. Also called bottle gourd, white-flowered gourd.)::False
-(n.) A utensil or container (made from the dried, hollowed-out shell of any of these fruits.)::False
-(n.) A smoking pipe (with a curved stem and a large bowl made from the shell of a gourd.)::False
+(n.) An annual vine (Lagenaria siceraria) (having white flowers and smooth, large, hard-shelled gourds. Also called bottle gourd, white-flowered gourd.)::True
+(n.) A utensil or container (made from the dried, hollowed-out shell of any of these fruits.)::True
+(n.) A smoking pipe (with a curved stem and a large bowl made from the shell of a gourd.)::True
 [/defs]
 gourd, sweet calabash, tree, tobacco pipe, gourd vine, bottle, pipe, zucchini, pumpkin, 
 orangutans, maximax, chromatograms, calibers, calipers, talibus, qualitas, solitus, superlattice, astrologers, 
 2013-03-13 21:29
 0001-01-01 00:00
-2014-08-25 13:56
-2014-10-03 13:56
+2014-10-27 20:20
+2014-12-12 20:20
 7
 16
+12
 11
-10
 True
 </entry>
 
@@ -5706,12 +5706,12 @@ unoriginal, timeworn, shopworn, stock, threadbare, tired, commonplace, clichéd,
 fancied, sallied, carried, rallied, candied, backfield, ragweed, intermarried, 
 2013-04-06 15:44
 0001-01-01 00:00
-2014-08-11 15:15
-2014-10-20 15:15
+2014-10-27 13:52
+2015-01-12 13:52
 7
 13
+11
 10
-9
 True
 </entry>
 
@@ -6087,7 +6087,7 @@ True
 <entry>
 doxology
 [defs]
-(n.) a usually liturgical expression of praise to God::True
+(n.) a usually liturgical expression of praise to God::False
 "The church service typically concludes with the congregation singing a short doxology."::False
 [/defs]
 orison, anthem, hymn, shootthat, boxing-match, piano-playing, jitterbug, dark-room, war dance, horse race, foot-race, 
@@ -6182,16 +6182,16 @@ True
 <entry>
 chinwag
 [defs]
-(n.) An informal conversation, usually about everyday matters; a chat, a gossip.::False
+(n.) An informal conversation, usually about everyday matters; a chat, a gossip.::True
 [/defs]
 
 dishrag, wigwag, drag, wag, brag, swag, bag, flag, lag, tag, 
 2013-04-15 15:59
 0001-01-01 00:00
-2014-10-13 13:53
+2014-10-27 20:27
 2014-10-11 14:29
-4
-9
+5
+10
 11
 10
 False
@@ -6531,19 +6531,19 @@ True
 <entry>
 melange
 [defs]
-(n.) A collection containing a variety of miscellaneous things::False
-(n.) A Viennese coffee speciality, half steamed milk and half coffee.::False
+(n.) A collection containing a variety of miscellaneous things::True
+(n.) A Viennese coffee speciality, half steamed milk and half coffee.::True
 [/defs]
 ragbag, assortment, mixture, mingle-mangle, farrago, hotchpotch, mishmash, omnium-gatherum, hodgepodge, 
 
 2013-04-19 16:43
 0001-01-01 00:00
-2014-08-07 14:26
-2014-10-16 14:26
+2014-10-27 20:26
+2015-01-12 20:26
 7
 12
-10
-10
+11
+11
 True
 </entry>
 
@@ -7353,13 +7353,13 @@ pretentious, long, sesquipedalianism — literary style characterised by the use
 episcopalian, bacchanalian, mammalian, subterranean, mediterranean, scandinavian, lithuanian, circadian, canadian, albanian, 
 2013-05-13 14:48
 0001-01-01 00:00
-2014-08-11 15:04
+2014-10-27 20:29
 2014-10-20 15:04
+2
 7
-7
+10
 9
-9
-True
+False
 </entry>
 
 <entry>
@@ -8061,19 +8061,19 @@ True
 <entry>
 dark horse
 [defs]
-(n.) A little-known, unexpectedly successful entrant::True
+(n.) A little-known, unexpectedly successful entrant::False
 [/defs]
 race horse, campaigner, nominee, candidate, racehorse, bangtail, 
 
 2013-08-22 15:08
 0001-01-01 00:00
-2014-08-07 14:35
+2014-10-27 20:19
 2014-10-16 14:35
-7
+4
 8
+10
 9
-9
-True
+False
 </entry>
 
 <entry>
@@ -8136,20 +8136,20 @@ rowel
 [defs]
 (n.) a spiked revolving disc at the end of a spur::False
 (v.) to goad with or as if with a rowel::False
-(v.) vex, trouble::False
+(v.) vex, trouble::True
 "With one of the best fastballs in the league combined with a wicked changeup, Lester roweled the opposing line-up for his second career no-hitter. "::False
 [/defs]
 roweled, roweling, rowelled, rowelling, rowels, foliated rowel, star-rowel, rose-rowel, 
 nowhere, yokel, 
 2013-08-25 17:55
 0001-01-01 00:00
-2014-08-06 11:02
+2014-10-27 20:19
 2014-10-15 11:02
-7
+4
+10
 10
 9
-9
-True
+False
 </entry>
 
 <entry>
@@ -13048,12 +13048,12 @@ strainer, reheat, cheesecloth, sieve, bolter, mash, cullender,
 columnar, commoner, polymer, gardener, almoner, conifer, gossamer, gobbler, bolivar, gossiper, 
 2014-01-13 12:33
 0001-01-01 00:00
-2014-08-27 14:03
-2014-10-22 14:03
+2014-10-27 20:29
+2014-12-29 20:29
 7
 9
-7
-7
+8
+8
 True
 </entry>
 
@@ -13861,13 +13861,13 @@ disreputable, shady, self-glorification, gormandism, thanswahili', hosannas, sta
 rouse, louse, loughs, house, mouth, south, allows, mouse, cows, arouse, 
 2014-02-10 12:37
 0001-01-01 00:00
-2014-09-21 12:19
+2014-10-27 20:23
 2014-10-19 12:19
-7
+4
 18
-11
+12
 9
-True
+False
 </entry>
 
 <entry>
@@ -14336,13 +14336,13 @@ hillock, formicary, kopje, ant-hill, molehill, koppie, hill, protuberance, islet
 stomach, buttock, tussock, alack, rucksack, mukluk, dumbstruck, republic, 
 2014-03-05 20:00
 0001-01-01 00:00
-2014-10-01 10:57
+2014-10-27 20:22
 2014-10-15 10:57
-7
+4
 13
-10
+11
 8
-True
+False
 </entry>
 
 <entry>
@@ -15750,19 +15750,19 @@ True
 <entry>
 crapulent
 [defs]
-(adj.) Literary  relating to the drinking of alcohol or drunkenness.::True
+(adj.) Literary  relating to the drinking of alcohol or drunkenness.::False
 [/defs]
 gluttonous, crapulous, dissipate, drunk, 
 sibilant, consultant, abundant, reluctant, resultant, redundant, indulgent, repugnant, abutment, apposite, 
 2014-06-07 13:17
 0001-01-01 00:00
-2014-10-11 22:17
+2014-10-27 13:52
 2014-10-18 22:17
-7
-14
-5
 4
-True
+14
+6
+4
+False
 </entry>
 
 <entry>
@@ -16617,20 +16617,20 @@ True
 nobble
 [defs]
 (v.-t.) Chiefly British   To outdo or get the better of by devious means.::False
-(v.-t.) Chiefly British   To filch or steal.::False
+(v.-t.) Chiefly British   To filch or steal.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 short, short-change, impress, shanghai, nobbles, nobbling, nobbled, steal, cheat, seize, 
 labile, cobble, gobble, hobble, wobble, squabble, model, mottle, noddle, bottle, 
 2014-07-11 12:36
 0001-01-01 00:00
-2014-09-16 10:31
+2014-10-27 20:19
 2014-10-14 10:31
-7
-14
 4
+14
+5
 3
-True
+False
 </entry>
 
 <entry>
@@ -18545,13 +18545,13 @@ grass-comber
 glassblower, landowner, makeover, callower, hangover, shallower, handover, gasholder, landholder, stallholder, 
 2014-09-19 16:06
 0001-01-01 00:00
-2014-10-04 14:40
+2014-10-27 20:21
 2014-10-18 14:40
+4
 7
-7
+2
 1
-1
-True
+False
 </entry>
 
 <entry>
@@ -18672,7 +18672,7 @@ True
 <entry>
 omadhaun
 [defs]
-(n.) A fool, someone who is out of their senses, simpleton.::True
+(n.) A fool, someone who is out of their senses, simpleton.::False
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 
@@ -18899,7 +18899,7 @@ True
 <entry>
 salutary
 [defs]
-(adj.) Effecting or designed to effect an improvement; remedial "salutary advice. "::True
+(adj.) Effecting or designed to effect an improvement; remedial "salutary advice. "::False
 (adj.) Favorable to health; wholesome "a salutary climate. "::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
@@ -18907,13 +18907,13 @@ healthful, salutariness, salutarily, curative, wholesome, salubrious, profitable
 solitary, secretary, military, arbitrary, monetary, hereditary, cemetery, sanitary, veterinary, savagery, 
 2014-09-25 11:11
 0001-01-01 00:00
-2014-10-13 13:34
+2014-10-27 20:26
 2014-10-20 13:34
-7
+4
 16
+1
 0
-0
-True
+False
 </entry>
 
 <entry>
@@ -18983,12 +18983,12 @@ hypogeum
 lithesome, blithesome, hydrogen, vitamin, cyclin, diatom, thiamin, sidemen, nitrogen, myosin, 
 2014-09-27 13:14
 0001-01-01 00:00
-2014-10-11 22:25
-2014-10-25 22:25
+2014-10-27 20:19
+2014-11-17 20:19
 7
 7
-1
-1
+2
+2
 True
 </entry>
 
@@ -19062,10 +19062,10 @@ fainéant
 complainant, payment, raiment, claimant, repayment, prepayment, nonpayment, underpayment, vacant, sanest, 
 2014-09-27 13:18
 0001-01-01 00:00
-2014-10-13 13:58
+2014-10-27 20:29
 0001-01-01 00:00
 5
-14
+15
 0
 0
 False
@@ -19101,12 +19101,12 @@ funicular action, funiculus amnii, funicular curve, funicular machine, funicular
 infundibular, radicular, mandibular, clavicular, collimator, submandibular, calorimeter, malingerer, supraclavicular, totalisator, 
 2014-09-28 14:02
 0001-01-01 00:00
-2014-10-07 13:21
-2014-10-14 13:21
+2014-10-27 20:22
+2014-11-10 20:22
 7
 8
-0
-0
+1
+1
 True
 </entry>
 
@@ -19158,12 +19158,12 @@ baizes, cloth, fabric, material, textile, burlap, calico, brown paper, travel-in
 days, pays, bays, dais, daze, jays, ways, phase, plays, raise, 
 2014-09-28 14:02
 0001-01-01 00:00
-2014-10-09 14:38
-2014-10-16 14:38
+2014-10-27 20:20
+2014-11-10 20:20
 7
 10
-0
-0
+1
+1
 True
 </entry>
 
@@ -19493,20 +19493,20 @@ False
 <entry>
 estivate
 [defs]
-(v.-i.) Zoology   To pass the summer in a dormant or torpid state.::False
+(v.-i.) Zoology   To pass the summer in a dormant or torpid state.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 estivation, estival, estivates, estivated, estivating, hibernate, log z's, catch some z's, slumber, kip, 
 indicate, activate, educate, interstate, elevate, motivate, distillate, escalate, excavate, extirpate, 
 2014-10-07 12:57
 0001-01-01 00:00
-2014-10-26 16:41
-0001-01-01 00:00
-6
-6
+2014-10-27 20:27
+2014-11-03 20:27
+7
+7
 0
 0
-False
+True
 </entry>
 
 <entry>
