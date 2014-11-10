@@ -323,7 +323,7 @@ namespace Wordy
                     while (questionType == -1)
                     {
                         int percent = rand.Next(100);
-                        
+
                         if (percent <= 25)
                             questionType = 0;
                         else if (percent <= 40)
@@ -928,6 +928,12 @@ namespace Wordy
                 if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == correctAnswer)
                     return true;
 
+            //check for a mistyped letter
+            if (answerGiven.Length == correctAnswer.Length)
+                for (int i = 0; i < answerGiven.Length; i++)
+                    if (answerGiven.Substring(0, i) == correctAnswer.Substring(0, i) && answerGiven.Substring(i + 1) == correctAnswer.Substring(i + 1))
+                        return true;
+
             return false;
         }
 
@@ -1152,7 +1158,7 @@ namespace Wordy
                     }
 
                 if (currAnsw != 0)
-                    gfx.DrawImage(currAnsw == 1 ? picRight.Image : picWrong.Image, lblDef.Left, rtbDef.Top + 20 * (i + skipLines) + 2, 20, 16);
+                    gfx.DrawImage(currAnsw == 1 ? picRight.Image : picWrong.Image, 10, rtbDef.Top + 20 * (i + skipLines) + 2, 20, 16);
 
                 skipLines += (int)(gfx.MeasureString(defs[i], rtbDef.Font).Width / rtbDef.Width);
             }

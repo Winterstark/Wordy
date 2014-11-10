@@ -208,7 +208,7 @@ namespace Wordy
             catch (Exception _Exception)
             {
                 // Error
-                Console.WriteLine("Exception caught in process: {0}", _Exception.ToString());
+                Debug.WriteLine("Exception caught in process: {0}", _Exception.ToString());
                 return null;
             }
 
@@ -450,7 +450,7 @@ namespace Wordy
                 //initial Flickr search, or user clicked Reload All (visuals)
                 word = (string)e.Argument;
                 existingVisuals = 0;
-                
+
                 flickResult = findFlickrImages(word);
             }
             else
@@ -471,8 +471,15 @@ namespace Wordy
             {
                 updateStatus("Downloading visuals for '" + word + "' (" + (i + 1).ToString() + "/" + nVis.ToString() + ") ...");
 
-                imgs.Add(downloadImage(flickResult[0].SmallUrl));
-                imgs[imgs.Count - 1].Tag = flickResult[0].WebUrl;
+                Image img = downloadImage(flickResult[0].SmallUrl);
+
+                if (img != null)
+                {
+                    imgs.Add(img);
+                    imgs[imgs.Count - 1].Tag = flickResult[0].WebUrl;
+                }
+                else
+                    i--;
 
                 flickResult.RemoveAt(0);
             }
@@ -483,9 +490,20 @@ namespace Wordy
         void dlVisualsWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             //extract and save Flickr search and downloaded imgs
-            var result = (Tuple<string, PhotoCollection, List<Image>>)e.Result;
-            string word = result.Item1;
+            Tuple<string, PhotoCollection, List<Image>> result = null;
+            try
+            {
+                result = (Tuple<string, PhotoCollection, List<Image>>)e.Result;
+            }
+            catch
+            {
+                MessageBox.Show("Flickr service is probably temporarily down. Please try again later.", "Error while searching Flickr", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                updateStatus("Done (Flickr search failed)");
+                return;
+            }
 
+            string word = result.Item1;
+            
             if (flickResults.ContainsKey(word))
                 flickResults.Remove(word);
             flickResults.Add(word, result.Item2);
