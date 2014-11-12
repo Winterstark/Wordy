@@ -1,4 +1,4 @@
-﻿<entry>
+<entry>
 athwart
 [defs]
 (adv.) From side to side; crosswise or transversely.::False
@@ -15876,12 +15876,12 @@ codgy, fellow, greybeard, old man, graybeard, Methuselah, oceanographer, back-pa
 lodger, copper, fodder, hotter, mater, robber, solder, chopper, hopper, potter, 
 2014-06-10 16:54
 0001-01-01 00:00
-2014-10-08 14:19
-2014-11-12 14:19
+2014-11-12 17:46
+2014-12-24 17:46
 7
 12
+7
 6
-5
 True
 </entry>
 
@@ -20162,7 +20162,7 @@ True
 <entry>
 manchet
 [defs]
-(n.) A type of high-quality bread made from flour.::True
+(n.) A type of high-quality bread made from flour.::False
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 cheat, raveled, mashloch, blue book, ordinary-sized, discreete, new-baked, sun-nut, day-old, moister, 

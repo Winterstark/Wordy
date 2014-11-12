@@ -955,6 +955,8 @@ namespace Wordy
             if (picVisual.Visible)
                 //if the visual is displayed ensure all UI positions are accurate
                 setupUI();
+
+            nCorrectAnswers++;
         }
 
         string removeWordInstances(string txt, string word)
