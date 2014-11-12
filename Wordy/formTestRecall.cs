@@ -509,6 +509,7 @@ namespace Wordy
                             buttSkip.Visible = true;
 
                             mtbTestWord.Focus();
+                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
 
                             resetLearningPhase = 5;
                             break;
@@ -548,6 +549,7 @@ namespace Wordy
                             panelDef.Visible = true;
 
                             mtbTestWord.Focus();
+                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
 
                             resetLearningPhase = 2;
                             break;
@@ -582,6 +584,7 @@ namespace Wordy
                             buttSkip.Visible = true;
 
                             mtbTestWord.Focus();
+                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
 
                             resetLearningPhase = 6;
                             break;
@@ -1256,7 +1259,6 @@ namespace Wordy
         bool checkEnteredWord(string word)
         {
             word = word.ToLower();
-
             bool success = word == testWord.ToString().ToLower();
 
             //if testing recall ignore hyphen mistakes & diacritic letter mistakes

@@ -1,4 +1,4 @@
-<entry>
+﻿<entry>
 athwart
 [defs]
 (adv.) From side to side; crosswise or transversely.::False
@@ -5254,19 +5254,19 @@ True
 <entry>
 tranche
 [defs]
-(n.) a portion, especially of money::True
+(n.) a portion, especially of money::False
 [/defs]
 share, percentage, part, portion, volcanique, baie, myeloma, rocher, bassin, voie, 
 branch, blanch, ranch, stanch, avalanche, plant, planned, brand, bland, land, 
 2013-03-27 14:44
 0001-01-01 00:00
-2014-09-03 09:55
+2014-11-12 14:02
 2014-11-12 09:55
-7
+2
 12
-12
+13
 11
-True
+False
 </entry>
 
 <entry>
@@ -15529,12 +15529,12 @@ breastwork, parapet, machicolated, castle, battlement,
 modulation, circulation, integration, immigration, migration, modification, navigation, nomination, calibration, emigration, 
 2014-05-28 14:06
 0001-01-01 00:00
-2014-09-30 14:27
-2014-11-11 14:27
+2014-11-12 14:05
+2014-12-31 14:05
 7
 8
-5
-5
+6
+6
 True
 </entry>
 
@@ -15757,12 +15757,12 @@ gluttonous, crapulous, dissipate, drunk,
 sibilant, consultant, abundant, reluctant, resultant, redundant, indulgent, repugnant, abutment, apposite, 
 2014-06-07 13:17
 0001-01-01 00:00
-2014-10-28 15:18
-2014-11-11 15:18
+2014-11-12 14:01
+2014-12-03 14:01
 7
 14
+7
 6
-5
 True
 </entry>
 
@@ -17077,19 +17077,19 @@ True
 <entry>
 haulm
 [defs]
-(n.) Chiefly British  Plant stems (especially of peas, beans, potatoes, or grasses).::True
+(n.) Chiefly British  Plant stems (especially of peas, beans, potatoes, or grasses).::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 stall, thatch, straw, hame, stalk, stem, exportable, quickset, non-null, stover, 
 form, forme, warm, storm, horn, norm, swarm, thorn, shorn, dorm, 
 2014-08-01 14:18
 0001-01-01 00:00
-2014-11-05 13:56
-2014-11-12 13:56
+2014-11-12 13:57
+2014-11-26 13:57
 7
 13
+5
 4
-3
 True
 </entry>
 
@@ -17116,18 +17116,18 @@ True
 <entry>
 diluvial
 [defs]
-(adj.) Of, relating to, or produced by a flood.::True
+(adj.) Of, relating to, or produced by a flood.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 diluvian, uniformitarian, auriferous, Philippic, checkable, handed-down, paleontological, undrained, recriminatory, fluviatile, 
 pluvial, alluvial, fluvial, colluvial, tenurial, marsupial, connubial, dutiful, aneurysmal, undutiful, 
 2014-08-04 14:28
 0001-01-01 00:00
-2014-11-05 13:57
+2014-11-12 14:05
 2014-11-12 13:57
 7
 12
-4
+5
 3
 True
 </entry>
@@ -18254,21 +18254,21 @@ True
 <entry>
 crimp
 [defs]
-(v.-t.) To press or pinch into small regular folds or ridges "crimp a pie crust. "::True
-(v.-t.) To cause (hair) to form tight curls or waves.::True
-(v.-t.) To have a hampering or obstructive effect on "Supplies of foreign oil were crimped by the embargo. "::True
+(v.-t.) To press or pinch into small regular folds or ridges "crimp a pie crust. "::False
+(v.-t.) To cause (hair) to form tight curls or waves.::False
+(v.-t.) To have a hampering or obstructive effect on "Supplies of foreign oil were crimped by the embargo. "::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 kiss curl, kink, pleat, flute, plait, ruck, spit curl, twist, pucker, twirl, 
 limp, shrimp, pimp, grinned, trimmed, rimmed, brimmed, glint, clinch, cringe, 
 2014-09-11 14:21
 0001-01-01 00:00
-2014-11-05 13:53
-2014-11-12 13:53
+2014-11-12 14:04
+2014-11-26 14:04
 7
 19
+3
 2
-1
 True
 </entry>
 
@@ -18920,20 +18920,20 @@ True
 <entry>
 waffle
 [defs]
-(v.-t.) To speak, write, or act evasively about.::True
+(v.-t.) To speak, write, or act evasively about.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 dwell on, linger, waver, Belgian waffle, linger over, oscillate, vibrate, hover, vacillate, boggle, 
 novel, fossil, docile, nozzle, jostle, apostle, brothel, grovel, schnozzle, colossal, 
 2014-09-26 13:41
 0001-01-01 00:00
-2014-11-05 13:49
+2014-11-12 13:57
 2014-11-12 13:49
-7
-10
 2
+10
+3
 1
-True
+False
 </entry>
 
 <entry>
@@ -19082,12 +19082,12 @@ gastric neurasthenia, cerebral neurasthenia, nervous breakdown, arthralgia, hyst
 myasthenia, delphinia, vaccinia, schizophrenia, polycythemia, anemia, leukemia, academia, septicemia, uremia, 
 2014-09-28 14:02
 0001-01-01 00:00
-2014-10-28 15:17
-2014-11-11 15:17
+2014-11-12 13:58
+2014-12-03 13:58
 7
 15
-1
-1
+2
+2
 True
 </entry>
 
@@ -19102,12 +19102,12 @@ funicular action, funiculus amnii, funicular curve, funicular machine, funicular
 infundibular, radicular, mandibular, clavicular, collimator, submandibular, calorimeter, malingerer, supraclavicular, totalisator, 
 2014-09-28 14:02
 0001-01-01 00:00
-2014-10-29 13:56
-2014-11-12 13:56
+2014-11-12 14:04
+2014-12-03 14:04
 7
 8
-1
-1
+2
+2
 True
 </entry>
 
@@ -19196,12 +19196,12 @@ court of probate, probate law, probate court, probate judge, proof, probating, p
 rotate, locate, donate, chromate, cognate, relocate, dichromate, ovate, tollgate, showcased, 
 2014-09-28 14:02
 0001-01-01 00:00
-2014-10-28 15:18
-2014-11-11 15:18
+2014-11-12 13:58
+2014-12-03 13:58
 7
 15
-1
-1
+2
+2
 True
 </entry>
 
@@ -19328,12 +19328,12 @@ expropriated, expropriates, expropriating, divest, deprive, strip, higher-risk, 
 expatriate, extrapolate, extricate, expiate, explicate, evaluate, exaggerate, exterminate, repudiate, extirpate, 
 2014-10-02 13:26
 0001-01-01 00:00
-2014-10-29 13:57
-2014-11-12 13:57
+2014-11-12 14:04
+2014-12-03 14:04
 7
 11
-1
-1
+2
+2
 True
 </entry>
 
@@ -19921,12 +19921,12 @@ pantry, cupboard, almonry, armarium, sea-chest, clothespress, center-table, hand
 amply, lamprey, pantry, gantry, blandly, grandly, polyandry, vacantly, abbey, abbe, 
 2014-10-17 13:57
 0001-01-01 00:00
-2014-11-05 13:55
-2014-11-12 13:55
+2014-11-12 14:02
+2014-11-26 14:02
 7
 10
-0
-0
+1
+1
 True
 </entry>
 
@@ -20276,21 +20276,21 @@ True
 <entry>
 abrosia
 [defs]
-(n.) Abstinence.::True
-(n.) Wasting away as a result of abstinence from food.::True
+(n.) Abstinence.::False
+(n.) Wasting away as a result of abstinence from food.::False
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 
 ambrosia, pavlova, sofa, nervosa, cosa, nodosa, nova, mimosa, samosa, mucosa, 
 2014-10-26 17:04
 0001-01-01 00:00
-2014-11-05 13:57
+2014-11-12 14:04
 2014-11-12 13:57
-7
+3
 9
+1
 0
-0
-True
+False
 </entry>
 
 <entry>
@@ -20599,58 +20599,58 @@ True
 <entry>
 sinecure
 [defs]
-(n.) A position or office that requires little or no work but provides a salary.::True
+(n.) A position or office that requires little or no work but provides a salary.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 position, billet, office, berth, post, ecclesiastical benefice, place, situation, benefice, spot, 
 shire, dire, ire, spire, lyre, mire, afire, titre, tyre, skier, 
 2014-10-30 12:54
 0001-01-01 00:00
-2014-11-05 14:00
-2014-11-12 14:00
+2014-11-12 14:01
+2014-11-26 14:01
 7
 6
-0
-0
+1
+1
 True
 </entry>
 
 <entry>
 knout
 [defs]
-(n.) A leather scourge used for flogging.::True
+(n.) A leather scourge used for flogging.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 knouts, knouted, knouting, whip, deadland, deviser, sub-type, ruckus, tokamak, victim, 
 nowt, doubt, shout, tout, bout, gout, rout, snout, toute, lout, 
 2014-10-30 12:54
 0001-01-01 00:00
-2014-11-05 13:58
 2014-11-12 13:58
+2014-11-26 13:58
 7
 6
-0
-0
+1
+1
 True
 </entry>
 
 <entry>
 roughage
 [defs]
-(n.) Fiber.::True
-(n.) Any rough or coarse material.::True
+(n.) Fiber.::False
+(n.) Any rough or coarse material.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 bran, food product, foodstuff, ovule, guests', proteid, gold-work, timber-land, runny, vetch, 
 routed, brooded, eluded, muted, booted, hooted, cubit, scooted, bruited, colluded, 
 2014-10-30 12:54
 0001-01-01 00:00
-2014-11-05 13:58
 2014-11-12 13:58
+2014-11-26 13:58
 7
 6
-0
-0
+1
+1
 True
 </entry>
 
