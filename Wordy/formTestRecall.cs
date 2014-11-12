@@ -323,7 +323,7 @@ namespace Wordy
                     while (questionType == -1)
                     {
                         int percent = rand.Next(100);
-
+                        
                         if (percent <= 25)
                             questionType = 0;
                         else if (percent <= 40)
@@ -485,6 +485,8 @@ namespace Wordy
                             buttFinished.Top = lblDef.Top + lblDef.Height + 8;
                             buttSkip.Top = buttFinished.Top;
 
+                            lblSynonyms.Text = removeWordInstances(lblSynonyms.Text, testWord.ToString()); //hide instances of test word in the synonyms list
+
                             //reveal every other letter
                             mask = createMask();
                             offset = 0;
@@ -498,7 +500,7 @@ namespace Wordy
                             }
 
                             mtbTestWord.Mask = mask;
-                            
+
                             lblWord.Visible = false;
                             lblDef.Visible = true;
                             mtbTestWord.Visible = true;
