@@ -782,7 +782,7 @@ namespace Wordy
                 int nW, nH, ind;
 
                 foreach (var visual in visuals)
-                    if (visual.Value.Count > 0)
+                    if (visual.Value.Count > 0 && newDefs.ContainsKey(visual.Key))
                     {
                         nW = 1 + (visual.Value.Count >= 2 ? 1 : 0) + (visual.Value.Count >= 5 ? 1 : 0);
                         nH = 1 + (visual.Value.Count >= 3 ? 1 : 0);

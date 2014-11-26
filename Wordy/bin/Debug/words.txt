@@ -15876,12 +15876,12 @@ codgy, fellow, greybeard, old man, graybeard, Methuselah, oceanographer, back-pa
 lodger, copper, fodder, hotter, mater, robber, solder, chopper, hopper, potter, 
 2014-06-10 16:54
 0001-01-01 00:00
-2014-11-12 17:46
-2014-12-24 17:46
+2014-10-08 14:19
+2014-11-12 14:19
 7
 12
-7
 6
+5
 True
 </entry>
 
@@ -20162,7 +20162,7 @@ True
 <entry>
 manchet
 [defs]
-(n.) A type of high-quality bread made from flour.::False
+(n.) A type of high-quality bread made from flour.::True
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 cheat, raveled, mashloch, blue book, ordinary-sized, discreete, new-baked, sun-nut, day-old, moister, 
@@ -21104,6 +21104,328 @@ forum, decorum, quorum, foreign, warren, sporran, boredom, dorsum, autumn, morte
 2014-11-12 13:12
 0001-01-01 00:00
 2014-11-12 13:12
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+test
+[defs]
+(n.) A procedure for critical evaluation; a means of determining the presence, quality, or truth of something; a trial "a test of one's eyesight; subjecting a hypothesis to a test; a test of an athlete's endurance. "::False
+(n.) A series of questions, problems, or physical responses designed to determine knowledge, intelligence, or ability.::False
+(n.) A basis for evaluation or judgment: "A test of democratic government is how Congress and the president work together"  ( Haynes Johnson). ::False
+(n.) Chemistry   A physical or chemical change by which a substance may be detected or its properties ascertained.::False
+(n.) Chemistry   A reagent used to cause or promote such a change.::False
+(n.) Chemistry   A positive result obtained.::False
+(n.) A cupel.::False
+(v.-t.) To subject to a test; try "tested the pen by scribbling on scrap paper; testing job applicants. "::False
+(v.-t.) To determine the presence or properties of (a substance).::False
+(v.-t.) To assay (metal) in a cupel.::False
+(v.-i.) To undergo a test.::False
+(v.-i.) To administer a test "test for acid content; test for the presence of an antibody. "::False
+(v.-i.) To achieve a score or rating on tests "tested high on the entrance exams. "::False
+(v.-i.) To exhibit a given characteristic when subjected to a test "test positive for the tubercle bacillus. "::False
+(n.) A hard external covering, as that of certain amoebas, dinoflagellates, and sea urchins.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+preliminary exam, try-on, comprehensive examination, entrance examination, verify, intelligence test, bar exam, midterm, road test, examination paper, 
+best, chest, jest, pest, rest, west, breast, arrest, blessed, dressed, 
+2014-11-24 14:01
+0001-01-01 00:00
+2014-11-24 14:01
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+tree
+[defs]
+(n.) A perennial woody plant having a main trunk and usually a distinct crown.::False
+(n.) A plant or shrub resembling a tree in form or size.::False
+(n.) Something, such as a clothes tree, that resembles a tree in form.::False
+(n.) A wooden beam, post, stake, or bar used as part of a framework or structure.::False
+(n.) A saddletree.::False
+(n.) A diagram that has branches in descending lines showing relationships as of hierarchy or lineage "a family tree; a telephone tree. "::False
+(n.) Computer Science   A structure for organizing or classifying data in which every item can be traced to a single origin through a unique path.::False
+(n.) Archaic   A gallows.::False
+(n.) Archaic   The cross on which Jesus was crucified.::False
+(v.-t.) To force up a tree "Dogs treed the raccoon. "::False
+(v.-t.) Informal   To force into a difficult position; corner.::False
+(v.-t.) To supply with trees "treed the field with oaks. "::False
+(v.-t.) To stretch (a shoe or boot) onto a shoetree.::False
+(idiom) up a tree  Informal   In a situation of great difficulty or perplexity; helpless.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+caesalpinia coriaria, plagianthus regius, neem, tolu balsam tree, vangueria madagascariensis, simal, coralwood, linden tree, virgilia oroboides, platan, 
+pre, plea, tlie, pari, prix, brie, three, free, ye, li, 
+2014-11-26 13:10
+0001-01-01 00:00
+2014-11-26 13:10
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+dog
+[defs]
+(n.) A domesticated carnivorous mammal (Canis familiaris) related to the foxes and wolves and raised in a wide variety of breeds.::False
+(n.) Any of various carnivorous mammals of the family Canidae, such as the dingo.::False
+(n.) A male animal of the family Canidae, especially of the fox or a domesticated breed.::False
+(n.) Any of various other animals, such as the prairie dog.::False
+(n.) Informal   A person "You won, you lucky dog. "::False
+(n.) Informal   A person regarded as contemptible "You stole my watch, you dog. "::False
+(n.) Slang   A person regarded as unattractive or uninteresting.::False
+(n.) Slang   Something of inferior or low quality: "The President had read the speech to some of his friends and they told him it was a dog"  ( John P. Roche). ::False
+(n.) Slang   An investment that produces a low return or a loss.::False
+(n.) Slang   The feet.::False
+(n.) See andiron.::False
+(n.) Slang   A hot dog; a wiener.::False
+(n.) Any of various hooked or U-shaped metallic devices used for gripping or holding heavy objects.::False
+(n.) Astronomy   A sun dog.::False
+(adv.) Totally; completely. Often used in combination "dog-tired. "::False
+(v.-t.) To track or trail persistently: "A stranger then is still dogging us"  ( Arthur Conan Doyle). ::False
+(v.-t.) To hold or fasten with a mechanical device: "Watertight doors and hatches were dropped into place and dogged down to give the ship full watertight integrity"  ( Tom Clancy). ::False
+(idiom) dog it  Slang   To fail to expend the effort needed to do or accomplish something.::False
+(idiom) go to the dogs  To go to ruin; degenerate.::False
+(idiom) put on the dog  Informal   To make an ostentatious display of elegance, wealth, or culture.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+poodle, working dog, mongrel, Vienna sausage, belgian griffon, pug, Newfoundland, Mexican hairless, Welsh corgi, tree, 
+log, cog, wog, snog, dialogue, epilogue, catalogue, analog, analogue, pedagogue, 
+2014-11-26 13:11
+0001-01-01 00:00
+2014-11-26 13:11
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+bear
+[defs]
+(v.-t.) To hold up; support.::False
+(v.-t.) To carry from one place to another; transport.::False
+(v.-t.) To carry in the mind; harbor "bear a grudge. "::False
+(v.-t.) To transmit at large; relate "bearing glad tidings. "::False
+(v.-t.) To have as a visible characteristic "bore a scar on the left arm. "::False
+(v.-t.) To have as a quality; exhibit: "A thousand different shapes it bears"  ( Abraham Cowley). ::False
+(v.-t.) To carry (oneself) in a specified way; conduct "She bore herself with dignity. "::False
+(v.-t.) To be accountable for; assume "bearing heavy responsibilities. "::False
+(v.-t.) To have a tolerance for; endure "couldn't bear his lying. "::False
+(v.-t.) To call for; warrant "This case bears investigation. "::False
+(v.-t.) To give birth to "bore six children in five years. "::False
+(v.-t.) To produce; yield "plants bearing flowers. "::False
+(v.-t.) To offer; render "I will bear witness to the deed. "::False
+(v.-t.) To move by or as if by steady pressure; push: "boats against the current, borne back ceaselessly into the past"  ( F. Scott Fitzgerald). ::False
+(v.-i.) To yield fruit; produce "peach trees that bear every summer. "::False
+(v.-i.) To have relevance; apply "They studied the ways in which the relativity theory bears on the history of science. "::False
+(v.-i.) To exert pressure, force, or influence.::False
+(v.-i.) To force oneself along; forge.::False
+(v.-i.) To endure something with tolerance and patience "Bear with me while I explain matters. "::False
+(v.-i.) To extend or proceed in a specified direction "The road bears to the right at the bottom of the hill. "::False
+(phras.-v.) bear down  To advance in a threatening manner "The ship bore down on our canoe. "::False
+(phras.-v.) bear down  To apply maximum effort and concentration "If you really bear down, you will finish the task. "::False
+(phras.-v.) bear out  To prove right or justified; confirm "The test results bear out our claims. "::False
+(phras.-v.) bear up  To withstand stress, difficulty, or attrition "The patient bore up well during the long illness. "::False
+(idiom) bear down on  To effect in a harmful or adverse way "Financial pressures are bearing down on them. "::False
+(idiom) bear fruit  To come to a satisfactory conclusion or to fruition.::False
+(idiom) bear in mind  To hold in one's mind; remember "Bear in mind that bridges freeze before roads. "::False
+(n.) Any of various usually omnivorous mammals of the family Ursidae that have a shaggy coat and a short tail and walk with the entire lower surface of the foot touching the ground.::False
+(n.) Any of various other animals, such as the koala, that resemble a true bear.::False
+(n.) A large, clumsy, or ill-mannered person.::False
+(n.) One, such as an investor, that sells securities or commodities in expectation of falling prices.::False
+(n.) A pessimist, especially regarding business conditions.::False
+(n.) Slang   Something that is difficult or unpleasant "The final exam was a bear. "::False
+(n.) Slang   A highway patrol officer.::False
+(adj.) Characterized by falling prices "a bear market. "::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+payoff, accept, drop, comport, put forward, ursus arctos, farrow, overbear, Ursa Minor, Ursa Major, 
+chair, pair, bare, dare, tear, pear, pare, thair, their, there, 
+2014-11-26 13:16
+0001-01-01 00:00
+2014-11-26 13:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+avatar
+[defs]
+(n.) The incarnation of a Hindu deity, especially Vishnu, in human or animal form.::False
+(n.) An embodiment, as of a quality or concept; an archetype "the very avatar of cunning. "::False
+(n.) A temporary manifestation or aspect of a continuing entity "occultism in its present avatar. "::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+reincarnation, Krishna, Jagannatha, jagganath, kalki, juggernaut, Rama, deification, jagannath, personification, 
+star, spar, ajar, isobar, sitar, bar, par, bizarre, cigar, guitar, 
+2014-11-26 13:16
+0001-01-01 00:00
+2014-11-26 13:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+trump
+[defs]
+(n.) Games   A suit in card games that outranks all other suits for the duration of a hand. Often used in the plural.::False
+(n.) Games   A card of such a suit.::False
+(n.) Games   A trump card.::False
+(n.) A key resource to be used at an opportune moment.::False
+(n.) Informal   A reliable or admirable person.::False
+(v.-t.) Games   To take (a card or trick) with a trump.::False
+(v.-t.) To get the better of (an adversary or competitor, for example) by using a crucial, often hidden resource.::False
+(v.-i.) Games   To play a trump.::False
+(phras.-v.) trump up  To devise fraudulently "trumped up a charge of conspiracy. "::False
+(n.) A trumpet.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+serpent, overtrump, crossruff, outsmart, outmaneuver, outmanoeuvre, to put on one's trumps, trumping, the last trump, trump out, 
+plump, lump, clump, rump, slump, pump, jump, bump, dump, stump, 
+2014-11-26 13:23
+0001-01-01 00:00
+2014-11-26 13:23
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+card
+[defs]
+(n.) A flat, usually rectangular piece of stiff paper, cardboard, or plastic, especially:::False
+(n.) One of a set or pack bearing significant numbers, symbols, or figures, used in games and in divination.::False
+(n.) A greeting card.::False
+(n.) A post card.::False
+(n.) One bearing a person's name and other information, used for purposes of identification or classification.::False
+(n.) One bearing the image and often the statistics of a sports figure.::False
+(n.) A business card.::False
+(n.) A credit card.::False
+(n.) A magnetic card.::False
+(n.) One used for recording information in a file "an index card; a recipe card. "::False
+(n.) Games   A game played with cards.::False
+(n.) Games   The playing of games with cards.::False
+(n.) A program, especially for a sports event.::False
+(n.) A menu, as in a restaurant.::False
+(n.) A wine list.::False
+(n.) Computer Science   A circuit board, especially for use in a computer.::False
+(n.) Computer Science   A punch card.::False
+(n.) A compass card.::False
+(n.) Informal   An eccentrically amusing person.::False
+(n.) Something, such as an advantageous circumstance or tactical maneuver, that can be used to help gain an objective. Often used with play: "[He believed that] Soviet Russia ... had far more Iranian cards to play than the United States"  ( Theodore Draper). ::False
+(n.) An appeal to a specified issue or argument, usually one involving strong emotions. Often used with play: "His exposure as a racist ... allowed the defense to play the race card"  ( New York Times). ::False
+(v.-t.) To furnish with or attach to a card.::False
+(v.-t.) To list (something) on a card; catalog.::False
+(v.-t.) To check the identification of, especially in order to verify legal age.::False
+(v.-t.) Sports   To warn or eject (a soccer player who has committed a flagrant foul) by showing a yellow card or a red card.::False
+(phras.-v.) card in  To sign in, as at a place of business, by use of a magnetic card.::False
+(phras.-v.) card out  To sign out, as from a place of business, by use of a magnetic card.::False
+(idiom) card up (one's) sleeve  A secret resource or plan held in reserve "a tough negotiator who had a number of cards up his sleeve. "::False
+(idiom) in the cards  Likely or certain to happen "My promotion to a higher position just isn't in the cards. "::False
+(idiom) put  To make frank and clear revelation, as of one's motives or intentions.::False
+(n.) A wire-toothed brush or a machine fitted with rows of wire teeth, used to disentangle fibers, as of wool, prior to spinning.::False
+(n.) A device used to raise the nap on a fabric.::False
+(v.-t.) To comb out or brush with a card.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+cpu board, prix fixe, keycard, greeting card, ration card, tarot, table d'hote, borrower's card, playing card, membership card, 
+guard, hard, yard, barred, marred, bard, charred, lard, scarred, jarred, 
+2014-11-26 13:23
+0001-01-01 00:00
+2014-11-26 13:23
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+bell
+[defs]
+(n.) A hollow metal musical instrument, usually cup-shaped with a flared opening, that emits a metallic tone when struck.::False
+(n.) Something resembling such an instrument in shape or sound, as:::False
+(n.) The round, flared opening of a wind instrument at the opposite end from the mouthpiece.::False
+(n.) A percussion instrument consisting of metal tubes or bars that emit tones when struck.::False
+(n.) A hollow, usually inverted vessel, such as one used for diving deep below the surface of a body of water.::False
+(n.) The corolla of a flower: "In a cowslip's bell I lie"  ( Shakespeare). ::False
+(n.) Nautical   A stroke on a hollow metal instrument to mark the hour.::False
+(n.) Nautical   The time indicated by the striking of this instrument, divided into half hours.::False
+(v.-t.) To put a bell on.::False
+(v.-t.) To cause to flare like a bell.::False
+(v.-i.) To assume the form of a bell; flare.::False
+(idiom) bell the cat  To perform a daring act.::False
+(n.) The bellowing or baying cry of certain animals, such as a deer in rut or a beagle on the hunt.::False
+(v.-i.) To utter long, deep, resonant sounds; bellow.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+carillon, sleigh bell, dinner bell, church bell, electric bell, Liberty Bell, sheep bell, tocsin, death bell, school bell, 
+tell, del, gel, tel, dell, delle, belle, bel, telle, jell, 
+2014-11-26 13:39
+0001-01-01 00:00
+2014-11-26 13:39
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+whistle
+[defs]
+(v.-i.) To produce a clear musical sound by forcing air through the teeth or through an aperture formed by pursing the lips.::False
+(v.-i.) To produce a clear, shrill, sharp musical sound by blowing on or through a device.::False
+(v.-i.) To produce a high-pitched sound when moving swiftly through the air "The stone whistled past my head. "::False
+(v.-i.) To produce a high-pitched sound by the rapid movement of air through an opening or past an obstruction "Wind whistled through the cracks in the windows. "::False
+(v.-i.) To emit a shrill, sharp, high-pitched cry, as some birds and other animals.::False
+(v.-t.) To produce by whistling "whistle a tune. "::False
+(v.-t.) To summon, signal, or direct by whistling.::False
+(v.-t.) To cause to move with a whistling noise.::False
+(n.) A small wind instrument for making whistling sounds by means of the breath.::False
+(n.) A device for making whistling sounds by means of forced air or steam "a factory whistle. "::False
+(n.) A sound produced by a whistling device or by whistling through the lips.::False
+(n.) A whistling sound, as of an animal or a projectile.::False
+(n.) The act of whistling.::False
+(n.) A whistling sound used to summon or command.::False
+(idiom) blow the whistle  Slang   To expose a wrongdoing in the hope of bringing it to a halt "an attorney who blew the whistle on governmental corruption. "::False
+(idiom) whistle in the dark  To attempt to keep one's courage up.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+boat whistle, factory whistle, steam whistle, whistled, whistling, siren, call, siffle, hooter, flute, 
+missile, thistle, fissile, missal, sisal, epistle, bristle, gristle, dismissal, antimissile, 
+2014-11-26 13:39
+0001-01-01 00:00
+2014-11-26 13:39
 0001-01-01 00:00
 1
 0

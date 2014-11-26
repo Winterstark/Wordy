@@ -230,8 +230,8 @@ namespace Wordy
 
                 if (parseLearned)
                 {
-                    learned[i] = bool.Parse(defs[i].Substring(defs[i].IndexOf("::") + 2));
-                    defs[i] = defs[i].Substring(0, defs[i].IndexOf("::"));
+                    learned[i] = bool.Parse(defs[i].Substring(defs[i].LastIndexOf("::") + 2));
+                    defs[i] = defs[i].Substring(0, defs[i].LastIndexOf("::"));
                 }
             }
         }
