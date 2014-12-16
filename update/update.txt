@@ -42,3 +42,11 @@
 * if a word has visuals they are automatically displayed (the user no longer has to hover over a Show Visuals button)
 * several minor fixes and improvements[/CHANGELOG]
 [/UPDATE]
+
+[UPDATE]
+[VERSION]1.15[/VERSION]
+[FILE]https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
+[FILE]https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update files/GenericForms.dll->root\GenericForms.dll[/FILE]
+[CHANGELOG]* typos are now ignored when testing learned words
+* other minor fixes and improvements[/CHANGELOG]
+[/UPDATE]
