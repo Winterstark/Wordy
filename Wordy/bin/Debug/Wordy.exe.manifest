@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenericForms.dll" size="25600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenericForms.dll" size="32256">
       <assemblyIdentity name="GenericForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+GTzs1qTsF+wKwMNdlQv1Mzb43E=</dsig:DigestValue>
+        <dsig:DigestValue>LMFmoE+h/uQ+VlEGit5crXKlBtQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="504832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="503808">
       <assemblyIdentity name="Wordy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5gAifp33Cq2vGHqM3jc/8olAfrY=</dsig:DigestValue>
+        <dsig:DigestValue>Z5oyvQIi8mZHeC1zqLPyCg33Ya8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

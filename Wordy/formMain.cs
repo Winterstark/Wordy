@@ -15,7 +15,8 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.14;
+        const double VERSION = 1.15;
+        const string UPDATE_URL = "https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update.txt";
 
         List<Entry> words;
         public List<WordOfTheDay> wotds;
@@ -344,12 +345,8 @@ namespace Wordy
             //show tutorial
             new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
 
-            //check for update
-            bool[] askPermissions = new bool[3] { true, true, true };
-            for (int i = 0; i < prefs.UpdateNotifs; i++)
-                askPermissions[i] = false;
-
-            Updater.Update(VERSION, "https://raw.github.com/Winterstark/Wordy/master/update/update.txt", askPermissions, prefs.ShowChangelog);
+            //check for updates
+            Updater.Update(VERSION, UPDATE_URL);
         }
 
         private void formMain_Activated(object sender, EventArgs e)
@@ -383,6 +380,8 @@ namespace Wordy
             options.main = this;
             options.words = words;
             options.wotds = wotds;
+            options.CurrentVersion = VERSION;
+            options.DefaultUpdateURL = UPDATE_URL;
 
             options.Show();
             this.Hide();

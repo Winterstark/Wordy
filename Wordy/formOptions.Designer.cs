@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabPreferences = new System.Windows.Forms.TabPage();
-            this.checkShowChangelog = new System.Windows.Forms.CheckBox();
-            this.lblUpdateNotifications = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.trackUpdate = new System.Windows.Forms.TrackBar();
             this.textNewWordsPath = new System.Windows.Forms.TextBox();
             this.buttBrowse = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -68,9 +64,9 @@
             this.buttAddSub = new System.Windows.Forms.Button();
             this.chklistSubscriptions = new System.Windows.Forms.CheckedListBox();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
+            this.buttUpdateOptions = new System.Windows.Forms.Button();
             this.tabs.SuspendLayout();
             this.tabPreferences.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackUpdate)).BeginInit();
             this.tabWordlist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).BeginInit();
             this.textDefMenu.SuspendLayout();
@@ -91,10 +87,7 @@
             // 
             // tabPreferences
             // 
-            this.tabPreferences.Controls.Add(this.checkShowChangelog);
-            this.tabPreferences.Controls.Add(this.lblUpdateNotifications);
-            this.tabPreferences.Controls.Add(this.label9);
-            this.tabPreferences.Controls.Add(this.trackUpdate);
+            this.tabPreferences.Controls.Add(this.buttUpdateOptions);
             this.tabPreferences.Controls.Add(this.textNewWordsPath);
             this.tabPreferences.Controls.Add(this.buttBrowse);
             this.tabPreferences.Controls.Add(this.label8);
@@ -106,45 +99,6 @@
             this.tabPreferences.TabIndex = 2;
             this.tabPreferences.Text = "Preferences";
             this.tabPreferences.UseVisualStyleBackColor = true;
-            // 
-            // checkShowChangelog
-            // 
-            this.checkShowChangelog.AutoSize = true;
-            this.checkShowChangelog.Location = new System.Drawing.Point(69, 239);
-            this.checkShowChangelog.Name = "checkShowChangelog";
-            this.checkShowChangelog.Size = new System.Drawing.Size(166, 17);
-            this.checkShowChangelog.TabIndex = 5;
-            this.checkShowChangelog.Text = "Show changelog after update";
-            this.checkShowChangelog.UseVisualStyleBackColor = true;
-            this.checkShowChangelog.CheckedChanged += new System.EventHandler(this.checkShowChangelog_CheckedChanged);
-            // 
-            // lblUpdateNotifications
-            // 
-            this.lblUpdateNotifications.AutoSize = true;
-            this.lblUpdateNotifications.Location = new System.Drawing.Point(248, 188);
-            this.lblUpdateNotifications.Name = "lblUpdateNotifications";
-            this.lblUpdateNotifications.Size = new System.Drawing.Size(60, 13);
-            this.lblUpdateNotifications.TabIndex = 11;
-            this.lblUpdateNotifications.Text = "Always ask";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(34, 172);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Update notifications:";
-            // 
-            // trackUpdate
-            // 
-            this.trackUpdate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.trackUpdate.Location = new System.Drawing.Point(54, 188);
-            this.trackUpdate.Maximum = 3;
-            this.trackUpdate.Name = "trackUpdate";
-            this.trackUpdate.Size = new System.Drawing.Size(188, 45);
-            this.trackUpdate.TabIndex = 4;
-            this.trackUpdate.Scroll += new System.EventHandler(this.trackUpdate_Scroll);
             // 
             // textNewWordsPath
             // 
@@ -480,6 +434,16 @@
             // 
             this.openDiag.Filter = "Text files|*.txt";
             // 
+            // buttUpdateOptions
+            // 
+            this.buttUpdateOptions.Location = new System.Drawing.Point(54, 193);
+            this.buttUpdateOptions.Name = "buttUpdateOptions";
+            this.buttUpdateOptions.Size = new System.Drawing.Size(255, 23);
+            this.buttUpdateOptions.TabIndex = 19;
+            this.buttUpdateOptions.Text = "Update Options";
+            this.buttUpdateOptions.UseVisualStyleBackColor = true;
+            this.buttUpdateOptions.Click += new System.EventHandler(this.buttUpdateOptions_Click);
+            // 
             // formOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,7 +460,6 @@
             this.tabs.ResumeLayout(false);
             this.tabPreferences.ResumeLayout(false);
             this.tabPreferences.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackUpdate)).EndInit();
             this.tabWordlist.ResumeLayout(false);
             this.tabWordlist.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWordnik)).EndInit();
@@ -533,10 +496,6 @@
         private System.Windows.Forms.Button buttBrowse;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.OpenFileDialog openDiag;
-        private System.Windows.Forms.CheckBox checkShowChangelog;
-        private System.Windows.Forms.Label lblUpdateNotifications;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TrackBar trackUpdate;
         private System.Windows.Forms.RichTextBox textDef;
         private System.Windows.Forms.ContextMenuStrip textDefMenu;
         private System.Windows.Forms.ToolStripMenuItem menuToggleKeyword;
@@ -548,6 +507,7 @@
         private System.Windows.Forms.TextBox textSynonyms;
         private System.Windows.Forms.Label lblSyns;
         private System.Windows.Forms.PictureBox picWordnik;
+        private System.Windows.Forms.Button buttUpdateOptions;
 
     }
 }

@@ -10,6 +10,7 @@ using System.IO;
 using System.Xml;
 using System.ServiceModel.Syndication;
 using System.Diagnostics;
+using GenericForms;
 
 namespace Wordy
 {
@@ -18,9 +19,11 @@ namespace Wordy
         public formMain main;
         public List<Entry> words;
         public List<WordOfTheDay> wotds;
+        public double CurrentVersion;
+        public string DefaultUpdateURL;
 
+        UpdateConfig updateConfig;
         List<string> corewords = new List<string>();
-
         bool populatingWordList;
 
 
@@ -53,25 +56,6 @@ namespace Wordy
         int getSelWordInd()
         {
             return words.FindIndex(w => w.ToString() == chklistWords.Text);
-        }
-
-        void refreshUpdateNotifLabel()
-        {
-            switch (trackUpdate.Value)
-            {
-                case 0:
-                    lblUpdateNotifications.Text = "Always ask";
-                    break;
-                case 1:
-                    lblUpdateNotifications.Text = "Check for update automatically";
-                    break;
-                case 2:
-                    lblUpdateNotifications.Text = "Download update automatically";
-                    break;
-                case 3:
-                    lblUpdateNotifications.Text = "Install update automatically";
-                    break;
-            }
         }
 
         void updateWordCount()
@@ -144,12 +128,9 @@ namespace Wordy
             //display preferences
             checkAutoVisuals.Checked = main.prefs.AutoVisuals;
             textNewWordsPath.Text = main.prefs.NewWordsPath;
-            trackUpdate.Value = main.prefs.UpdateNotifs;
-            checkShowChangelog.Checked = main.prefs.ShowChangelog;
 
             displayWords();
 
-            refreshUpdateNotifLabel();
             updateWordCount();
             
             textFilter.Left = lblWords.Width + 12;
@@ -378,20 +359,6 @@ namespace Wordy
             }
         }
 
-        private void trackUpdate_Scroll(object sender, EventArgs e)
-        {
-            refreshUpdateNotifLabel();
-
-            main.prefs.UpdateNotifs = trackUpdate.Value;
-            main.prefs.Save();
-        }
-
-        private void checkShowChangelog_CheckedChanged(object sender, EventArgs e)
-        {
-            main.prefs.ShowChangelog = checkShowChangelog.Checked;
-            main.prefs.Save();
-        }
-
         private void textDef_SelectionChanged(object sender, EventArgs e)
         {
             menuToggleKeyword.Enabled = textDef.SelectedText != "";
@@ -446,6 +413,14 @@ namespace Wordy
         private void picWordnik_Click(object sender, EventArgs e)
         {
             Process.Start("http://www.wordnik.com/words/" + chklistWords.Text);
+        }
+
+        private void buttUpdateOptions_Click(object sender, EventArgs e)
+        {
+            updateConfig = new UpdateConfig();
+            updateConfig.CurrentVersion = CurrentVersion;
+            updateConfig.DefaultUpdateURL = DefaultUpdateURL;
+            updateConfig.Show();
         }
     }
 }
