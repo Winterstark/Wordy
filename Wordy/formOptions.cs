@@ -417,10 +417,13 @@ namespace Wordy
 
         private void buttUpdateOptions_Click(object sender, EventArgs e)
         {
-            updateConfig = new UpdateConfig();
-            updateConfig.CurrentVersion = CurrentVersion;
-            updateConfig.DefaultUpdateURL = DefaultUpdateURL;
-            updateConfig.Show();
+            if (updateConfig == null || updateConfig.IsDisposed)
+            {
+                updateConfig = new UpdateConfig();
+                updateConfig.CurrentVersion = CurrentVersion;
+                updateConfig.DefaultUpdateURL = DefaultUpdateURL;
+                updateConfig.Show();
+            }
         }
     }
 }
