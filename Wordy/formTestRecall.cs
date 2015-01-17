@@ -10,11 +10,19 @@ using System.IO;
 using NikSharp;
 using NikSharp.Model;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Wordy
 {
     public partial class formTestRecall : Form
     {
+        #region PlaySound DLL Import
+        [DllImport("WinMM.dll")]
+        static extern bool PlaySound(string fname, int Mod, int flag);
+
+        private int SND_ASYNC = 0x0001; 
+        #endregion
+
         public formMain main;
         public List<Entry> words;
         public bool testUnlearned;
@@ -783,7 +791,7 @@ namespace Wordy
                 panelDef.Visible = true;
 
             picWordnik.Enabled = true;
-            
+
             //color correct/wrong answers
             if (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0)
             {
@@ -915,9 +923,18 @@ namespace Wordy
 
             //position pictures and other UI controls
             setupUI();
-            
+
             if (buttNext.Visible)
                 buttNext.Focus();
+
+            if (main.prefs.PlaySounds)
+            {
+                //play sound
+                if (success)
+                    PlaySound(Application.StartupPath + "\\sounds\\correct.wav", 0, SND_ASYNC);
+                else
+                    PlaySound(Application.StartupPath + "\\sounds\\wrong.wav", 0, SND_ASYNC);
+            }
         }
 
         bool isTypo(string correctAnswer, string answerGiven)

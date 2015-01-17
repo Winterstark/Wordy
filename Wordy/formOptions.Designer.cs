@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabPreferences = new System.Windows.Forms.TabPage();
+            this.buttUpdateOptions = new System.Windows.Forms.Button();
             this.textNewWordsPath = new System.Windows.Forms.TextBox();
             this.buttBrowse = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             this.buttAddSub = new System.Windows.Forms.Button();
             this.chklistSubscriptions = new System.Windows.Forms.CheckedListBox();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
-            this.buttUpdateOptions = new System.Windows.Forms.Button();
+            this.checkPlaySounds = new System.Windows.Forms.CheckBox();
             this.tabs.SuspendLayout();
             this.tabPreferences.SuspendLayout();
             this.tabWordlist.SuspendLayout();
@@ -87,6 +88,7 @@
             // 
             // tabPreferences
             // 
+            this.tabPreferences.Controls.Add(this.checkPlaySounds);
             this.tabPreferences.Controls.Add(this.buttUpdateOptions);
             this.tabPreferences.Controls.Add(this.textNewWordsPath);
             this.tabPreferences.Controls.Add(this.buttBrowse);
@@ -100,16 +102,26 @@
             this.tabPreferences.Text = "Preferences";
             this.tabPreferences.UseVisualStyleBackColor = true;
             // 
+            // buttUpdateOptions
+            // 
+            this.buttUpdateOptions.Location = new System.Drawing.Point(54, 254);
+            this.buttUpdateOptions.Name = "buttUpdateOptions";
+            this.buttUpdateOptions.Size = new System.Drawing.Size(255, 23);
+            this.buttUpdateOptions.TabIndex = 19;
+            this.buttUpdateOptions.Text = "Updater Options";
+            this.buttUpdateOptions.UseVisualStyleBackColor = true;
+            this.buttUpdateOptions.Click += new System.EventHandler(this.buttUpdateOptions_Click);
+            // 
             // textNewWordsPath
             // 
-            this.textNewWordsPath.Location = new System.Drawing.Point(54, 120);
+            this.textNewWordsPath.Location = new System.Drawing.Point(54, 181);
             this.textNewWordsPath.Name = "textNewWordsPath";
             this.textNewWordsPath.Size = new System.Drawing.Size(394, 20);
             this.textNewWordsPath.TabIndex = 2;
             // 
             // buttBrowse
             // 
-            this.buttBrowse.Location = new System.Drawing.Point(454, 118);
+            this.buttBrowse.Location = new System.Drawing.Point(454, 179);
             this.buttBrowse.Name = "buttBrowse";
             this.buttBrowse.Size = new System.Drawing.Size(42, 23);
             this.buttBrowse.TabIndex = 3;
@@ -120,7 +132,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 104);
+            this.label8.Location = new System.Drawing.Point(34, 165);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(201, 13);
             this.label8.TabIndex = 6;
@@ -434,15 +446,16 @@
             // 
             this.openDiag.Filter = "Text files|*.txt";
             // 
-            // buttUpdateOptions
+            // checkPlaySounds
             // 
-            this.buttUpdateOptions.Location = new System.Drawing.Point(54, 193);
-            this.buttUpdateOptions.Name = "buttUpdateOptions";
-            this.buttUpdateOptions.Size = new System.Drawing.Size(255, 23);
-            this.buttUpdateOptions.TabIndex = 19;
-            this.buttUpdateOptions.Text = "Update Options";
-            this.buttUpdateOptions.UseVisualStyleBackColor = true;
-            this.buttUpdateOptions.Click += new System.EventHandler(this.buttUpdateOptions_Click);
+            this.checkPlaySounds.AutoSize = true;
+            this.checkPlaySounds.Location = new System.Drawing.Point(37, 107);
+            this.checkPlaySounds.Name = "checkPlaySounds";
+            this.checkPlaySounds.Size = new System.Drawing.Size(230, 17);
+            this.checkPlaySounds.TabIndex = 20;
+            this.checkPlaySounds.Text = "Play sound effects when testing word recall";
+            this.checkPlaySounds.UseVisualStyleBackColor = true;
+            this.checkPlaySounds.CheckedChanged += new System.EventHandler(this.checkPlaySounds_CheckedChanged);
             // 
             // formOptions
             // 
@@ -508,6 +521,7 @@
         private System.Windows.Forms.Label lblSyns;
         private System.Windows.Forms.PictureBox picWordnik;
         private System.Windows.Forms.Button buttUpdateOptions;
+        private System.Windows.Forms.CheckBox checkPlaySounds;
 
     }
 }

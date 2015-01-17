@@ -658,7 +658,7 @@ namespace Wordy
     {
         public DateTime LastFeedCheck;
         public string NewWordsPath;
-        public bool AutoVisuals, NewWotDs;
+        public bool AutoVisuals, NewWotDs, PlaySounds;
 
 
         public Preferences()
@@ -668,6 +668,13 @@ namespace Wordy
             LastFeedCheck = DateTime.Parse(fRdr.ReadLine());
             NewWotDs = bool.Parse(fRdr.ReadLine());
             NewWordsPath = fRdr.ReadLine();
+
+            //new preferences (as of v1.16)
+            if (!fRdr.EndOfStream)
+                PlaySounds = bool.Parse(fRdr.ReadLine());
+            else
+                PlaySounds = false;
+
             fRdr.Close();
         }
 
@@ -678,6 +685,7 @@ namespace Wordy
             fWrtr.WriteLine(Misc.ToUniversalString(LastFeedCheck));
             fWrtr.WriteLine(NewWotDs.ToString());
             fWrtr.WriteLine(NewWordsPath);
+            fWrtr.WriteLine(PlaySounds);
             fWrtr.Close();
         }
     }

@@ -127,6 +127,7 @@ namespace Wordy
 
             //display preferences
             checkAutoVisuals.Checked = main.prefs.AutoVisuals;
+            checkPlaySounds.Checked = main.prefs.PlaySounds;
             textNewWordsPath.Text = main.prefs.NewWordsPath;
 
             displayWords();
@@ -244,6 +245,12 @@ namespace Wordy
         private void checkAutoVisuals_CheckedChanged(object sender, EventArgs e)
         {
             main.prefs.AutoVisuals = checkAutoVisuals.Checked;
+            main.prefs.Save();
+        }
+
+        private void checkPlaySounds_CheckedChanged(object sender, EventArgs e)
+        {
+            main.prefs.PlaySounds = checkPlaySounds.Checked;
             main.prefs.Save();
         }
 
