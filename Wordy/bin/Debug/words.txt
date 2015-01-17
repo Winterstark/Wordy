@@ -10191,13 +10191,13 @@ orderliness, order, centerboard, stempost, bilges, freeboard, wishbone, undresse
 filter, guilder, builder, weirder, bewilder, killer, winter, silver, sister, bitter, 
 2013-10-22 12:52
 0001-01-01 00:00
-2014-09-11 14:25
+2015-01-17 22:57
 2014-11-13 14:25
-7
+5
 13
-12
+13
 10
-True
+False
 </entry>
 
 <entry>
@@ -13898,12 +13898,12 @@ gibber, gibberish, houses, highfalutin, wyfe, fermer, plaace, beldame, licht, wi
 
 2014-02-10 12:37
 0001-01-01 00:00
-2014-10-10 14:27
-2014-12-05 14:27
+2015-01-17 22:57
+2015-03-21 22:57
 7
 17
+9
 8
-7
 True
 </entry>
 

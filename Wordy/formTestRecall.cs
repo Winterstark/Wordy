@@ -33,6 +33,7 @@ namespace Wordy
         List<List<Tuple<int, int>>> kwBounds;
         List<Tuple<int, int, Color, string>> answers;
         List<string> corewords = new List<string>();
+        List<int> baitQuestionMarksIndices;
         string[] exampleSentences;
         Answer[] answCorrectly;
         WordnikService wordnik;
@@ -434,6 +435,7 @@ namespace Wordy
                                     removedWord = true;
                             }
 
+                            baitQuestionMarksIndices = new List<int>();
                             if (removedWord && rand.NextDouble() > 0.5)
                             {
                                 //insert "???" in a random line that isn't the correct definition for this word
@@ -453,6 +455,7 @@ namespace Wordy
                                             line += " ???";
 
                                         chklistDefs.Items[i] = line;
+                                        baitQuestionMarksIndices.Add(i);
                                         break;
                                     }
 
@@ -660,7 +663,11 @@ namespace Wordy
             for (int i = 0; i < chklistDefs.Items.Count; i++)
             {
                 string item = chklistDefs.Items[i].ToString();
-                chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace("???", testWord.ToString());
+
+                if (baitQuestionMarksIndices.Contains(i))
+                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace(" ???", "");
+                else
+                    chklistDefs.Items[i] = item.Substring(item.IndexOf('.') + 3).Replace("???", testWord.ToString());
             }
 
             //check answers
