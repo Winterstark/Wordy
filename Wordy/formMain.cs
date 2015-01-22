@@ -159,6 +159,12 @@ namespace Wordy
             fWrtr.Close();
         }
 
+        public void AddNewWord(string word, Definition definitions, string synonyms, string rhymes)
+        {
+            words.Add(new Entry(word, definitions, Entry.FormatCommas(synonyms), rhymes));
+            SaveWords();
+        }
+
         public void AddNewWords(Dictionary<string, Definition> newWords, Dictionary<string, string> synonyms, Dictionary<string, string> rhymes)
         {
             foreach (KeyValuePair<string, Definition> word in newWords)
@@ -333,6 +339,9 @@ namespace Wordy
             if (File.Exists(Application.StartupPath + "\\ui\\new wotd.png"))
                 buttNewWotD.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\new wotd.png");
 
+            if (File.Exists(Application.StartupPath + "\\ui\\reading.png"))
+                buttReading.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\reading.png");
+
             if (File.Exists(Application.StartupPath + "\\ui\\review.png"))
                 buttReview.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\review.png");
 
@@ -454,6 +463,16 @@ namespace Wordy
             }
         }
 
+        private void buttReading_Click(object sender, EventArgs e)
+        {
+            formReading reading = new formReading();
+
+            reading.main = this;
+            reading.words = words;
+            reading.Show();
+            this.Hide();
+        }
+
         private void buttReview_Click(object sender, EventArgs e)
         {
             if (words.Count > 0)
@@ -530,6 +549,11 @@ namespace Wordy
             }
             else
                 displayWordCount(availableWords);
+        }
+
+        private void buttReading_MouseEnter(object sender, EventArgs e)
+        {
+            setInfo("Read a text extract with the help of quick word lookups.");
         }
 
         private void buttReview_MouseEnter(object sender, EventArgs e)

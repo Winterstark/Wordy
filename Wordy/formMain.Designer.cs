@@ -36,6 +36,7 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.buttAbout = new System.Windows.Forms.Button();
             this.buttReview = new System.Windows.Forms.Button();
+            this.buttReading = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttAdd
@@ -140,23 +141,37 @@
             // buttReview
             // 
             this.buttReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttReview.Location = new System.Drawing.Point(21, 202);
+            this.buttReview.Location = new System.Drawing.Point(270, 202);
             this.buttReview.Name = "buttReview";
-            this.buttReview.Padding = new System.Windows.Forms.Padding(180, 0, 205, 0);
-            this.buttReview.Size = new System.Drawing.Size(492, 32);
+            this.buttReview.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttReview.Size = new System.Drawing.Size(243, 32);
             this.buttReview.TabIndex = 4;
             this.buttReview.Text = "Review Words";
-            this.buttReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttReview.UseVisualStyleBackColor = true;
             this.buttReview.Click += new System.EventHandler(this.buttReview_Click);
             this.buttReview.MouseEnter += new System.EventHandler(this.buttReview_MouseEnter);
             this.buttReview.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            // 
+            // buttReading
+            // 
+            this.buttReading.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttReading.Location = new System.Drawing.Point(21, 202);
+            this.buttReading.Name = "buttReading";
+            this.buttReading.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.buttReading.Size = new System.Drawing.Size(243, 32);
+            this.buttReading.TabIndex = 7;
+            this.buttReading.Text = "Assisted Reading";
+            this.buttReading.UseVisualStyleBackColor = true;
+            this.buttReading.Click += new System.EventHandler(this.buttReading_Click);
+            this.buttReading.MouseEnter += new System.EventHandler(this.buttReading_MouseEnter);
+            this.buttReading.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 297);
+            this.Controls.Add(this.buttReading);
             this.Controls.Add(this.buttReview);
             this.Controls.Add(this.buttNewWotD);
             this.Controls.Add(this.buttAbout);
@@ -186,6 +201,7 @@
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Button buttAbout;
         private System.Windows.Forms.Button buttReview;
+        private System.Windows.Forms.Button buttReading;
     }
 }
 

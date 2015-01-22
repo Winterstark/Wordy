@@ -21434,3 +21434,82 @@ missile, thistle, fissile, missal, sisal, epistle, bristle, gristle, dismissal, 
 False
 </entry>
 
+<entry>
+finicky
+[defs]
+(adj.) Insisting capriciously on ACQUIRING  just what one wants; difficult to please; fastidious "a finicky eater. "::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+fastidious, finickity, finickiness, fussy, ?-opioid, protrusive, unfussy, interleukin-7, excrementitious, 
+affinity, signally, villainy, sympathy, dignity, vicinity, divinity, officially, tyranny, infinity, 
+2015-01-22 15:22
+0001-01-01 00:00
+2015-01-22 15:22
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+implementations
+[defs]
+(n.) Plural form of implementation.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+
+lamentations, imputations, indentations, improvisations, implications, interpretations, representations, plantations, emendations, imprecations, 
+2015-01-22 15:35
+0001-01-01 00:00
+2015-01-22 15:35
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+thread
+[defs]
+(n.) Fine cord of a fibrous material, such as cotton or flax, made of two or more filaments twisted together and used in needlework and the weaving of cloth.::False
+(n.) A piece of such cord.::False
+(v.-i.) To proceed by a winding course.::False
+(v.-i.) To form a thread when dropped from a spoon, as boiling sugar syrup.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+cotton, Lastex, wire, tinsel, nap, worsted, woof, warp, filling, snake, 
+fled, sled, lead, led, read, red, spread, bread, bred, dread, 
+2015-01-22 15:36
+0001-01-01 00:00
+2015-01-22 15:36
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+tokens
+[defs]
+(n.) Plural form of token.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+token, 
+betokens, blowguns, slogans, potions, doses, notions, opens, motions, oceans, poses, 
+2015-01-22 15:36
+0001-01-01 00:00
+2015-01-22 15:36
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

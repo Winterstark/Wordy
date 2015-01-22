@@ -41,26 +41,6 @@ namespace Wordy
         int thumbIndex;
 
 
-        string dlPage(string url)
-        {
-            string page;
-
-            try
-            {
-                WebClient web = new WebClient();
-                web.Headers.Add("user-agent", "c#");
-                web.Headers[HttpRequestHeader.AcceptLanguage] = "en";
-
-                page = web.DownloadString(url);
-            }
-            catch
-            {
-                page = "not_found";
-            }
-
-            return page;
-        }
-
         string findSyns(string word)
         {
             try
@@ -94,7 +74,7 @@ namespace Wordy
             try
             {
                 updateStatus("Finding rhymes for '" + word + "' ...");
-                string rhymeList = "", rhymePg = dlPage("http://rhymebrain.com/talk?function=getRhymes&word=" + word);
+                string rhymeList = "", rhymePg = Misc.DlPage("http://rhymebrain.com/talk?function=getRhymes&word=" + word);
                 int count = 0;
                 
                 if (rhymePg != "not_found")

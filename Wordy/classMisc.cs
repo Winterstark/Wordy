@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Globalization;
+using System.Net;
 
 namespace Wordy
 {
@@ -210,6 +211,26 @@ namespace Wordy
             time += secs + (secs != 1 ? " secs." : " sec.");
 
             return time;
+        }
+
+        public static string DlPage(string url)
+        {
+            string page;
+
+            try
+            {
+                WebClient web = new WebClient();
+                web.Headers.Add("user-agent", "c#");
+                web.Headers[HttpRequestHeader.AcceptLanguage] = "en";
+
+                page = web.DownloadString(url);
+            }
+            catch
+            {
+                page = "not_found";
+            }
+
+            return page;
         }
 
         static void appendText(RichTextBox textDef, string txt, bool keyword)
