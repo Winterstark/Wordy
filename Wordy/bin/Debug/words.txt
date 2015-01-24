@@ -5577,10 +5577,10 @@ source, origin, provenience, beginning, rootage, root, near-future,
 prominence, providence, dominance, predominance, propagates, ominous, consonance, nitrogenous, continence, protestants, 
 2013-04-02 14:53
 0001-01-01 00:00
-2015-01-18 00:22
+2015-01-24 20:29
 2014-11-20 15:18
-2
-14
+3
+15
 19
 16
 False
@@ -9815,12 +9815,12 @@ pilgarlic
 garlic, periodic, parabolic, bucolic, symbolic, erotic, despotic, narcotic, carbolic, demonic, 
 2013-10-10 13:14
 0001-01-01 00:00
-2014-10-31 14:36
-2015-01-02 14:36
+2015-01-24 19:23
+2015-04-04 19:23
 7
 10
+15
 14
-13
 True
 </entry>
 
@@ -10429,12 +10429,12 @@ pecksniffian
 oblivion, trivium, lithium, obsidian, amphibian, simian, committeeman, postmeridian, criterion, meridian, 
 2013-10-28 13:28
 0001-01-01 00:00
-2014-10-13 14:06
-2014-12-08 14:06
+2015-01-24 19:23
+2015-03-28 19:23
 7
 28
-13
-11
+14
+12
 True
 </entry>
 
@@ -10598,10 +10598,10 @@ resister, obstructionist, obstructer, logomach, arguer, debater, obstructor, log
 artistic, cystic, mystic, holistic, autistic, ballistic, theistic, juristic, realistic, stylistic, 
 2013-11-02 12:36
 0001-01-01 00:00
-2014-11-12 13:09
+2015-01-24 19:23
 2014-11-06 11:24
 6
-32
+33
 14
 11
 False
@@ -10709,13 +10709,13 @@ staggered, staggering, totter, hesitate, bewilderment, fail, sway, shaken, weake
 dagger, swagger, attacker, backer, packer, lacquer, blacker, cracker, hacker, tracker, 
 2013-11-06 13:08
 0001-01-01 00:00
-2014-11-12 13:11
-2014-11-08 14:35
-6
-39
+2015-01-24 19:23
+2015-01-31 19:23
+7
+40
 19
 13
-False
+True
 </entry>
 
 <entry>
@@ -18109,13 +18109,13 @@ Africander, Welsh black, moo-cow, welsh, red poll, milch cow, beef, beef cattle,
 kin, been, skin, sin, thin, win, min, tin, chin, pin, 
 2014-09-09 11:08
 0001-01-01 00:00
-2014-11-05 14:03
+2015-01-24 23:05
 2014-12-03 14:03
-7
+3
 6
+4
 3
-3
-True
+False
 </entry>
 
 <entry>
@@ -18692,19 +18692,19 @@ True
 <entry>
 hebdomadal
 [defs]
-(adj.) Formal  weekly.::True
+(adj.) Formal  weekly.::False
 [/defs]
 periodical, hebdomadary, periodic, hebdomadally adv, weekly, hebdomadal cycle, hebdomadal council, highly-regarded, half-demolished, electronic-only, 
 straddle, sidesaddle, astraddle, packsaddle, saddle, paddle, unsaddle, psychobabble, fragile, prattle, 
 2014-09-22 13:24
 0001-01-01 00:00
-2014-10-28 14:35
+2015-01-24 19:23
 2014-11-18 14:35
-7
+6
 8
+3
 2
-2
-True
+False
 </entry>
 
 <entry>
@@ -18927,10 +18927,10 @@ dwell on, linger, waver, Belgian waffle, linger over, oscillate, vibrate, hover,
 novel, fossil, docile, nozzle, jostle, apostle, brothel, grovel, schnozzle, colossal, 
 2014-09-26 13:41
 0001-01-01 00:00
-2015-01-17 23:19
+2015-01-24 19:23
 2014-11-12 13:49
-2
-11
+3
+12
 3
 1
 False
@@ -19482,10 +19482,10 @@ azoth
 loth, swath, goth, massage, awash, salve, tsars, was, cause, wash, 
 2014-10-06 13:38
 0001-01-01 00:00
-2014-11-12 13:10
+2015-01-24 19:23
 2014-11-10 13:24
 3
-16
+17
 1
 0
 False
@@ -20086,18 +20086,18 @@ True
 <entry>
 freewheeling
 [defs]
-(adj.) Not concerned with or constrained by rules, conventions, or responsibilities.::True
-(adj.) Heedless of consequences; carefree.::True
+(adj.) Not concerned with or constrained by rules, conventions, or responsibilities.::False
+(adj.) Heedless of consequences; carefree.::False
 "Enjoy your fun while you can because it won't be long before you have to bid farewell to your freewheeling lifestyle and settle down."::False
 [/defs]
 unrestrained, irresponsible, careless, reckless, freewheel, free-wheel, 
 prefiling, rekeying, seakeeping, querying, wearying, beekeeping, peacekeeping, timevarying, mediam, delphinidin, 
 2014-10-26 16:49
 0001-01-01 00:00
-2014-11-12 13:10
+2015-01-24 19:23
 0001-01-01 00:00
 5
-16
+17
 0
 0
 False
@@ -20924,17 +20924,17 @@ True
 <entry>
 prevenient
 [defs]
-(adj.) Coming before; preceding.::True
+(adj.) Coming before; preceding.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 antecedent, prevenient grace, preceding, 
 brilliant, stringent, pendent, privet, trivet, distant, infant, malignant, delinquent, pigment, 
 2014-11-07 13:10
 0001-01-01 00:00
-2014-11-12 13:10
+2015-01-24 20:29
 0001-01-01 00:00
 6
-5
+6
 0
 0
 False
@@ -21425,10 +21425,10 @@ boat whistle, factory whistle, steam whistle, whistled, whistling, siren, call, 
 missile, thistle, fissile, missal, sisal, epistle, bristle, gristle, dismissal, antimissile, 
 2014-11-26 13:39
 0001-01-01 00:00
-2015-01-18 00:22
+2015-01-24 19:23
 0001-01-01 00:00
 1
-1
+2
 0
 0
 False
@@ -21444,10 +21444,10 @@ fastidious, finickity, finickiness, fussy, ?-opioid, protrusive, unfussy, interl
 affinity, signally, villainy, sympathy, dignity, vicinity, divinity, officially, tyranny, infinity, 
 2015-01-22 15:22
 0001-01-01 00:00
-2015-01-22 15:22
+2015-01-24 19:23
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False

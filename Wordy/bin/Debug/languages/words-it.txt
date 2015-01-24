@@ -1,0 +1,180 @@
+<entry>
+stanco
+[defs]
+tired::False
+[/defs]
+
+
+2015-01-23 15:58
+2015-01-20 16:02
+2015-01-24 23:23
+2015-02-01 23:23
+5
+0
+1
+1
+True
+</entry>
+
+<entry>
+palcoscenico
+[defs]
+stage::False
+[/defs]
+
+
+2015-01-23 15:58
+2015-01-20 16:02
+2015-01-24 23:23
+2015-02-01 23:23
+5
+0
+1
+1
+True
+</entry>
+
+<entry>
+miracolo
+[defs]
+miracle::False
+[/defs]
+
+
+2015-01-23 16:02
+2015-01-20 16:02
+2015-01-24 23:24
+2015-02-01 23:24
+5
+0
+1
+1
+True
+</entry>
+
+<entry>
+condanna
+[defs]
+sentencing::False
+[/defs]
+
+
+2015-01-23 22:58
+0001-01-01 00:00
+2015-01-24 23:24
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+barboni
+[defs]
+strays::False
+[/defs]
+
+
+2015-01-23 23:11
+0001-01-01 00:00
+2015-01-23 23:11
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+trascurati
+[defs]
+neglected::False
+[/defs]
+
+
+2015-01-23 23:16
+0001-01-01 00:00
+2015-01-23 23:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+peso
+[defs]
+weight::False
+[/defs]
+
+
+2015-01-23 23:20
+0001-01-01 00:00
+2015-01-23 23:20
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+tosatura
+[defs]
+shearing::False
+[/defs]
+
+
+2015-01-23 23:48
+0001-01-01 00:00
+2015-01-23 23:48
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+scelleratezza
+[defs]
+villainy::False
+[/defs]
+
+
+2015-01-23 23:55
+0001-01-01 00:00
+2015-01-23 23:55
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+pericolo
+[defs]
+danger::False
+[/defs]
+
+
+2015-01-24 11:26
+0001-01-01 00:00
+2015-01-24 11:26
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

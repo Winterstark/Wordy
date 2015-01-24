@@ -32,24 +32,26 @@ namespace Wordy
         public formMain main;
         public List<Entry> words;
 
+        Translator translator;
         WordnikService wordnik;
         BackgroundWorker searchWordWorker;
         delegate void SetTextCallback(string text);
         Dictionary<string, Definition> newDefs;
         Dictionary<string, string> synonyms, rhymes;
         Graphics gfx;
-        List<string> corewords, searchedWords, notFoundWords;
-        string[] newWords;
+        StringFormat measuringStringFormat;
+        List<string> corewords, newWords, searchedWords, notFoundWords;
         string activeSearchWord;
         float lineH;
+        Point popupPos;
         int rtbTextVScroll;
-        bool colorizing;
+        bool colorizing, usePrevPopupPos;
 
 
         void loadNewwords()
         {
-            string list = Misc.LoadNewWordsFromFile(main.prefs.NewWordsPath);
-            newWords = list.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string list = Misc.LoadNewWordsFromFile(main.GetNewWordsPath());
+            newWords = list.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
         }
 
         void checkIfTextContainsWord(string txt, string word, List<Tuple<int, int, Color>> knownWords, Color color)
@@ -79,7 +81,7 @@ namespace Wordy
 
             //find learned words
             foreach (Entry word in words.Where(w => !w.archived))
-                checkIfTextContainsWord(txt, word.ToString(), knownWords, Color.Orange);
+                checkIfTextContainsWord(txt, word.ToString(), knownWords, Color.Yellow);
 
             //find learned words
             foreach (Entry word in words.Where(w => w.archived))
@@ -95,7 +97,7 @@ namespace Wordy
 
             //find words with new definitions
             foreach (string word in searchedWords)
-                checkIfTextContainsWord(txt, word, knownWords, Color.Yellow);
+                checkIfTextContainsWord(txt, word, knownWords, Color.Orange);
             
             //find words with failed searches
             foreach (string word in notFoundWords)
@@ -136,14 +138,20 @@ namespace Wordy
             }
             
             setVSCroll(rtbDef, prevScroll);
+
+            usePrevPopupPos = true;
             rtbText.Select(selStart, selLen);
 
+            usePrevPopupPos = false;
             colorizing = false;
         }
 
         void resizeRtbDef()
         {
-            rtbDef.Height = (int)(gfx.MeasureString(rtbDef.Text, rtbDef.Font, 233).Height + lineH);
+            SizeF size = gfx.MeasureString(rtbDef.Text, rtbDef.Font, 233, measuringStringFormat);
+
+            rtbDef.Width = (int)(1.5f * size.Width);
+            rtbDef.Height = (int)(size.Height + lineH);
         }
 
         string getSelection()
@@ -175,41 +183,23 @@ namespace Wordy
             SendMessage(rtbText.Handle, EM_SETSCROLLPOS, 0, ref pt);
         }
 
-        void setPositionNextToSelectedText(Control control)
+        void setPositionNextToPointer(Control control)
         {
-            //move control next to selected text
-            int ub = rtbText.SelectionStart;
-            int lb = rtbText.Text.LastIndexOf("\n", ub) + 1;
+            if (usePrevPopupPos)
+                control.Location = popupPos;
+            else
+            {
+                Point pos = this.PointToClient(Cursor.Position);
+                pos.Offset(0, (int)lineH);
 
-            string prevText = rtbText.Text.Substring(0, lb);
-            string currLine = "";
-            if (lb < ub)
-                currLine = rtbText.Text.Substring(lb, ub - lb);
+                if (pos.X + control.Width + 6 > this.ClientSize.Width)
+                    pos.X = this.ClientSize.Width - 6 - control.Width;
 
-            //calculate Top
-            string[] lines = prevText.Split('\n');
-            float top = lines.Length * lineH;
+                if (pos.Y + control.Height + 6 > this.ClientSize.Height)
+                    pos.Y = Math.Max(this.ClientSize.Height - 6 - control.Height, 6);
 
-            foreach (string line in lines)
-                if (gfx.MeasureString(line, rtbText.Font, rtbText.ClientSize.Width).Height > lineH)
-                    top += gfx.MeasureString(line, rtbText.Font, rtbText.ClientSize.Width).Height - lineH; //check if line is displayed in more than one row
-
-            top -= getVScroll(rtbText); //adjust for vertical scroll of control
-            top += 1.5f * lineH; //don't obscure the selected text
-
-            if (top > rtbText.Top + rtbText.ClientSize.Height - control.Height - 8 && control.Height < rtbText.Height) //if there is not enough space below the selected word (&& control isn't unreasonably big)
-                top -= 2 * lineH + control.Height; //display the definitions above the selected word
-
-            control.Top = (int)top;
-
-            //calculate Left
-            int left = (int)gfx.MeasureString(currLine, rtbText.Font).Width;
-            left += (int)(gfx.MeasureString(rtbText.SelectedText, rtbText.Font).Width * 0.75f); //right-align, more or less
-
-            left = Math.Min(left, rtbText.Left + rtbText.ClientSize.Width - control.Width - 8);
-            left = Math.Max(left, 8);
-
-            control.Left = left;
+                control.Location = popupPos = pos;
+            }
         }
 
         void updateStatus(string status)
@@ -288,19 +278,51 @@ namespace Wordy
                 //display word data
                 Misc.DisplayDefs(rtbDef, result.Item2.ToString(), corewords);
             }
+            
+            if (newWords.Contains(word, StringComparer.OrdinalIgnoreCase))
+            {
+                //remove word from words-to-add
+                newWords.Remove(newWords.Find(w => w.ToLower() == word.ToLower()));
+
+                StreamWriter file = new StreamWriter(main.GetNewWordsPath());
+                foreach (string newWord in newWords)
+                    file.WriteLine(newWord);
+                file.Close();
+            }
+
+            activeSearchWord = "";
+            colorizeRtbText();
+        }
+
+        void doneEvent(string word, string translation)
+        {
+            if (translation == "error" || translation == "" || word.ToLower() == translation.ToLower())
+            {
+                rtbDef.Text = "NOT FOUND!";
+                notFoundWords.Add(word);
+            }
+            else
+            {
+                //save word data
+                newDefs.Add(word, new Definition(translation, true));
+                synonyms.Add(word, "");
+                rhymes.Add(word, "");
+
+                searchedWords.Add(word);
+
+                //display word data
+                Misc.DisplayDefs(rtbDef, translation, corewords);
+            }
 
             if (newWords.Contains(word, StringComparer.OrdinalIgnoreCase))
             {
                 //remove word from words-to-add
-                word = word.ToLower();
+                newWords.Remove(newWords.Find(w => w.ToLower() == word.ToLower()));
 
-                StreamWriter file = new StreamWriter(main.prefs.NewWordsPath);
+                StreamWriter file = new StreamWriter(main.GetNewWordsPath());
                 foreach (string newWord in newWords)
-                    if (newWord.ToLower() != word)
-                        file.WriteLine(newWord);
+                    file.WriteLine(newWord);
                 file.Close();
-
-                loadNewwords();
             }
 
             activeSearchWord = "";
@@ -417,16 +439,23 @@ namespace Wordy
             notFoundWords = new List<string>();
 
             gfx = this.CreateGraphics();
-            lineH = gfx.MeasureString("A", rtbDef.Font).Height;
+            measuringStringFormat = new StringFormat(StringFormatFlags.MeasureTrailingSpaces);
+            lineH = gfx.MeasureString("A", rtbDef.Font, int.MaxValue, measuringStringFormat).Height;
 
             activeSearchWord = "";
             rtbTextVScroll = 0;
             colorizing = false;
+            usePrevPopupPos = false;
 
-            //prepare worker
-            searchWordWorker = new BackgroundWorker();
-            searchWordWorker.DoWork += new DoWorkEventHandler(searchWordWorker_DoWork);
-            searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
+            //prepare language tools
+            if (main.Profile == "English")
+            {
+                searchWordWorker = new BackgroundWorker();
+                searchWordWorker.DoWork += new DoWorkEventHandler(searchWordWorker_DoWork);
+                searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
+            }
+            else
+                translator = new Translator(main.Languages[main.Profile], "en", doneEvent);
         }
 
         private void formReading_Resize(object sender, EventArgs e)
@@ -465,6 +494,12 @@ namespace Wordy
         }
 
         private void rtbText_Enter(object sender, EventArgs e)
+        {
+            if (rtbText.Text == "Paste your text here...")
+                rtbText.SelectAll();
+        }
+
+        private void rtbText_Click(object sender, EventArgs e)
         {
             if (rtbText.Text == "Paste your text here...")
                 rtbText.SelectAll();
@@ -510,7 +545,7 @@ namespace Wordy
                     Misc.DisplayDefs(rtbDef, selectedWord.GetDefinition(), corewords);
                     resizeRtbDef();
                     rtbDef.Enabled = false;
-                    setPositionNextToSelectedText(rtbDef);
+                    setPositionNextToPointer(rtbDef);
 
                     rtbDef.Visible = true;
                     buttAdd.Visible = false;
@@ -521,7 +556,7 @@ namespace Wordy
                 else if (newWords.Contains(selection, StringComparer.OrdinalIgnoreCase))
                 {
                     //word-to-be-added
-                    setPositionNextToSelectedText(buttSearch);
+                    setPositionNextToPointer(buttSearch);
 
                     rtbDef.Visible = false;
                     buttAdd.Visible = false;
@@ -535,9 +570,9 @@ namespace Wordy
                     Misc.DisplayDefs(rtbDef, newDefs[selection].ToString(), corewords);
                     resizeRtbDef();
                     rtbDef.Enabled = true;
-                    setPositionNextToSelectedText(rtbDef);
+                    setPositionNextToPointer(rtbDef);
 
-                    buttSave.Top = rtbDef.Top + rtbDef.Height - buttUpdateDefinition.Height;
+                    buttSave.Top = Math.Max(rtbDef.Top + rtbDef.Height - buttSave.Height, rtbDef.Top);
                     buttSave.Left = rtbDef.Left + rtbDef.Width + 6;
 
                     rtbDef.Visible = true;
@@ -558,7 +593,8 @@ namespace Wordy
                 else
                 {
                     //unknown word
-                    setPositionNextToSelectedText(buttAdd);
+                    setPositionNextToPointer(buttAdd);
+                    buttAdd.Left -= buttSearch.Width + 6;
                     buttSearch.Top = buttAdd.Top;
                     buttSearch.Left = buttAdd.Left + 38;
 
@@ -600,42 +636,50 @@ namespace Wordy
             rtbTextVScroll = currVScroll;
         }
 
-        private void buttAdd_Click(object sender, EventArgs e)
-        {
-            StreamWriter file = new StreamWriter(main.prefs.NewWordsPath, true);
-            file.WriteLine(getSelection());
-            file.Close();
-
-            loadNewwords();
-            colorizeRtbText();
-        }
-
-        private void buttSearch_Click(object sender, EventArgs e)
-        {
-            activeSearchWord = getSelection();
-            rtbDef.Text = "Looking up word. Please wait...";
-            setPositionNextToSelectedText(rtbDef);
-
-            searchWordWorker.RunWorkerAsync(activeSearchWord);
-
-            rtbDef.Visible = true;
-            buttAdd.Visible = false;
-            buttSearch.Visible = false;
-        }
-
         private void rtbDef_TextChanged(object sender, EventArgs e)
         {
             if (newDefs.ContainsKey(getSelection()))
             {
                 if (rtbDef.Text != newDefs[getSelection()].ToString().Replace("\r\n", "\n"))
                 {
-                    buttUpdateDefinition.Left = buttSave.Left;
-                    buttUpdateDefinition.Top = buttSave.Top - 6 - buttUpdateDefinition.Height;
+                    buttUpdateDefinition.Left = buttSave.Left + buttSave.Width + 6;
+                    buttUpdateDefinition.Top = buttSave.Top;
+
                     buttUpdateDefinition.Visible = true;
                 }
                 else
                     buttUpdateDefinition.Visible = false;
             }
+        }
+
+        private void buttAdd_Click(object sender, EventArgs e)
+        {
+            newWords.Add(getSelection());
+
+            StreamWriter file = new StreamWriter(main.GetNewWordsPath());
+            for (int i = 0; i < newWords.Count; i++)
+                file.Write(newWords[i] + (i < newWords.Count - 1 ? Environment.NewLine : ""));
+            file.Close();
+
+            colorizeRtbText();
+        }
+
+        private void buttSearch_Click(object sender, EventArgs e)
+        {
+            activeSearchWord = getSelection().ToLower();
+            
+            rtbDef.Text = "Looking up word. Please wait...";
+            resizeRtbDef();
+            rtbDef.Location = popupPos;
+
+            if (main.Profile == "English")
+                searchWordWorker.RunWorkerAsync(activeSearchWord);
+            else
+                translator.Translate(activeSearchWord);
+
+            rtbDef.Visible = true;
+            buttAdd.Visible = false;
+            buttSearch.Visible = false;
         }
 
         private void buttUpdateDefinition_Click(object sender, EventArgs e)

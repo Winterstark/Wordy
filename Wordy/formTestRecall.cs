@@ -45,6 +45,7 @@ namespace Wordy
         string[] exampleSentences;
         Answer[] answCorrectly;
         WordnikService wordnik;
+        int nNotches;
 
 
         void setupUI()
@@ -160,7 +161,7 @@ namespace Wordy
             panelDef.Refresh();
         }
 
-        void randomizeAnswers(List<string> answers)
+        void randomizeAnswers(List<string> answers, string correctAnswer)
         {
             while (answers.Count < 5) //add random words to complete set
                 answers.AddRange(main.GetRandWords(5 - answers.Count, testWord.ToString()));
@@ -178,22 +179,22 @@ namespace Wordy
             switch (correctPick)
             {
                 case 0:
-                    buttPickWord1.Text = testWord.ToString();
+                    buttPickWord1.Text = correctAnswer;
                     break;
                 case 1:
-                    buttPickWord2.Text = testWord.ToString();
+                    buttPickWord2.Text = correctAnswer;
                     break;
                 case 2:
-                    buttPickWord3.Text = testWord.ToString();
+                    buttPickWord3.Text = correctAnswer;
                     break;
                 case 3:
-                    buttPickWord4.Text = testWord.ToString();
+                    buttPickWord4.Text = correctAnswer;
                     break;
                 case 4:
-                    buttPickWord5.Text = testWord.ToString();
+                    buttPickWord5.Text = correctAnswer;
                     break;
                 case 5:
-                    buttPickWord6.Text = testWord.ToString();
+                    buttPickWord6.Text = correctAnswer;
                     break;
             }
 
@@ -259,373 +260,349 @@ namespace Wordy
 
                 if (!testWord.archived)
                 {
-                    switch (testWord.learningPhase)
+                    if (main.Profile == "English")
                     {
-                        case 1: //multiple choice - random words
-                            lblTestWordDef.Text = "Which word is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
-                            flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
-
-                            randomizeAnswers(main.GetRandWords(5, testWord.ToString()));
-                            break;
-                        case 2: //multiple choice - rhymes
-                            lblTestWordDef.Text = "Which word is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
-
-                            randomizeAnswers(testWord.GetRandomRhymes());
-                            break;
-                        case 3: //type word
-                            lblTestWordDef.Text = "Type the word that is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
-                            textTestWord.Text = "";
-                            break;
-                        case 4: //type 1 keyword per def.
-                            setupDefFillIns(testWord.learningPhase);
-                            break;
-                        case 5: //type half keywords per def.
-                            setupDefFillIns(testWord.learningPhase);
-                            break;
-                        case 6: //type all keywords
-                            setupDefFillIns(testWord.learningPhase);
-                            break;
-                    }
-
-                    if (testWord.learningPhase <= 3)
-                    {
-                        panelTestWord.Visible = true;
-
-                        if (testWord.learningPhase <= 2)
+                        switch (testWord.learningPhase)
                         {
-                            flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
-                            flowpanelPickAnswers.Visible = true;
-                            textTestWord.Visible = false;
-                        }
-                        else
-                        {
-                            flowpanelPickAnswers.Visible = false;
-                            textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
-                            textTestWord.Visible = true;
-                            textTestWord.Focus();
+                            case 1: //multiple choice - random words
+                                lblTestWordDef.Text = "Which word is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
+                                flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
 
-                            buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
-                            buttSkipLearned.Top = buttFinishedLearned.Top;
-                            buttFinishedLearned.Visible = true;
-                            buttSkipLearned.Visible = true;
+                                randomizeAnswers(main.GetRandWords(5, testWord.ToString()), testWord.ToString());
+                                break;
+                            case 2: //multiple choice - rhymes
+                                lblTestWordDef.Text = "Which word is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
+
+                                randomizeAnswers(testWord.GetRandomRhymes(), testWord.ToString());
+                                break;
+                            case 3: //type word
+                                lblTestWordDef.Text = "Type the word that is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
+                                textTestWord.Text = "";
+                                break;
+                            case 4: //type 1 keyword per def.
+                                setupDefFillIns(testWord.learningPhase);
+                                break;
+                            case 5: //type half keywords per def.
+                                setupDefFillIns(testWord.learningPhase);
+                                break;
+                            case 6: //type all keywords
+                                setupDefFillIns(testWord.learningPhase);
+                                break;
                         }
+
+                        prepareUIForNextWord(testWord.learningPhase);
                     }
                     else
-                    {
-                        panelDef.Visible = true;
-                        buttFinished.Visible = true;
-                        buttSkip.Visible = true;
-
-                        lblSynonyms.Text = "Fill in the blanks of the following definitions:";
-
-                        buttFinished.Top = mtbDefs[mtbDefs.Count - 1].Top + mtbDefs[mtbDefs.Count - 1].Height + 16;
-                        buttSkip.Top = buttFinished.Top;
-
-                        if (mtbDefs != null)
-                            mtbDefs[0].Focus();
-                    }
+                        prepareNonEnglishQuestion(testWord.learningPhase);
                 }
                 else
                 {
                     int questionType = -1;
 
-                    while (questionType == -1)
+                    if (main.Profile == "English")
                     {
-                        int percent = rand.Next(100);
-                        
-                        if (percent <= 25)
-                            questionType = 0;
-                        else if (percent <= 40)
-                            questionType = 1;
-                        else if (percent <= 50)
-                            questionType = 2;
-                        else if (percent <= 60 && testWord.GetSynonyms() != "")
-                            questionType = 3;
-                        else if (percent <= 85)
+                        while (questionType == -1)
                         {
-                            try
+                            int percent = rand.Next(100);
+
+                            if (percent <= 25)
+                                questionType = 0;
+                            else if (percent <= 40)
+                                questionType = 1;
+                            else if (percent <= 50)
+                                questionType = 2;
+                            else if (percent <= 60 && testWord.GetSynonyms() != "")
+                                questionType = 3;
+                            else if (percent <= 85)
                             {
-                                if (wordnik == null)
-                                    wordnik = new WordnikService("b3bbd1f9103a01de7d00a0fd1300164c17bfcec03eb86a678");
-                                var exampleResults = wordnik.GetExamples(testWord.ToString());
-
-                                if (exampleResults.Examples == null)
-                                    continue;
-
-                                var examples = exampleResults.Examples.ToArray();
-                                exampleSentences = new string[examples.Length];
-
-                                for (int i = 0; i < examples.Length; i++)
-                                    exampleSentences[i] = removeWordInstances(examples[i].Text, testWord.ToString());
-
-                                lblDef.Text = exampleSentences[rand.Next(examples.Length)];
-                                questionType = 4;
+                                if (getExampleSentences())
+                                    questionType = 4;
+                                else
+                                    questionType = -1;
                             }
-                            catch
-                            {
+                            else if (percent <= 90 && testWord.GetSynonyms() != "" && testWord.ToString().Length > 1)
+                                questionType = 5;
+                            else if (percent <= 100 && picVisual.Image != null)
+                                questionType = 6;
+                            else
                                 questionType = -1;
-                            }
                         }
-                        else if (percent <= 90 && testWord.GetSynonyms() != "" && testWord.ToString().Length > 1)
-                            questionType = 5;
-                        else if (percent <= 100 && picVisual.Image != null)
-                            questionType = 6;
-                        else
-                            questionType = -1;
-                    }
 
-                    string mask;
-                    int offset;
+                        string mask;
+                        int offset;
 
-                    mtbTestWord.Tag = false; //indicates mtbTestWord is NOT used to read the answer
-                    mtbTestWord.TextAlign = HorizontalAlignment.Left;
+                        mtbTestWord.Tag = false; //indicates mtbTestWord is NOT used to read the answer
+                        mtbTestWord.TextAlign = HorizontalAlignment.Left;
 
-                    switch (questionType)
-                    {
-                        case 0: // type word
-                            lblTestWordDef.Text = "Type the word that is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
-                            textTestWord.Text = "";
+                        switch (questionType)
+                        {
+                            case 0: // type word
+                                lblTestWordDef.Text = "Type the word that is defined by the following:" + Environment.NewLine + Environment.NewLine + removeWordInstances(def, testWord.ToString());
+                                textTestWord.Text = "";
 
-                            textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
-                            buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
-                            buttSkipLearned.Top = buttFinishedLearned.Top;
-                            
-                            textTestWord.Visible = true;
-                            panelTestWord.Visible = true;
-                            buttFinishedLearned.Visible = true;
-                            buttSkipLearned.Visible = true;
+                                textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
+                                buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
+                                buttSkipLearned.Top = buttFinishedLearned.Top;
 
-                            textTestWord.Focus();
+                                textTestWord.Visible = true;
+                                panelTestWord.Visible = true;
+                                buttFinishedLearned.Visible = true;
+                                buttSkipLearned.Visible = true;
 
-                            resetLearningPhase = 3;
-                            break;
-                        case 1: // type 1 keywords per def.
-                            setupDefFillIns(4);
-                            lblSynonyms.Text = "Fill in the blanks of the following definitions:";
+                                textTestWord.Focus();
 
-                            buttFinished.Top = mtbDefs[mtbDefs.Count - 1].Top + mtbDefs[mtbDefs.Count - 1].Height + 16;
-                            buttSkip.Top = buttFinished.Top;
+                                resetLearningPhase = 3;
+                                break;
+                            case 1: // type 1 keywords per def.
+                                setupDefFillIns(4);
+                                lblSynonyms.Text = "Fill in the blanks of the following definitions:";
 
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
-                            panelDef.Visible = true;
+                                buttFinished.Top = mtbDefs[mtbDefs.Count - 1].Top + mtbDefs[mtbDefs.Count - 1].Height + 16;
+                                buttSkip.Top = buttFinished.Top;
 
-                            if (mtbDefs != null)
-                                mtbDefs[0].Focus();
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
+                                panelDef.Visible = true;
 
-                            resetLearningPhase = 4;
-                            break;
-                        case 2: // select correct definitions
-                            lblSynonyms.Text = "Select only the correct definitions for this word.";
+                                if (mtbDefs != null)
+                                    mtbDefs[0].Focus();
 
-                            List<string> defs = new List<string>();
-                            defs.AddRange(getLineDefs());
-                            for (int i = rand.Next((int)(defs.Count * 0.75)) - 1; i >= 0; i--)
-                                defs.RemoveAt(rand.Next(defs.Count));
+                                resetLearningPhase = 4;
+                                break;
+                            case 2: // select correct definitions
+                                lblSynonyms.Text = "Select only the correct definitions for this word.";
 
-                            List<string> wrongDefs = main.GetRandDefs(1 + rand.Next(5), testWord.ToString());
-                            while (wrongDefs.Count > 0)
-                            {
-                                int next = rand.Next(wrongDefs.Count);
+                                List<string> defs = new List<string>();
+                                defs.AddRange(getLineDefs());
+                                for (int i = rand.Next((int)(defs.Count * 0.75)) - 1; i >= 0; i--)
+                                    defs.RemoveAt(rand.Next(defs.Count));
 
-                                defs.Insert(rand.Next(defs.Count + 1), wrongDefs[next]);
-                                wrongDefs.RemoveAt(next);
-                            }
-
-                            chklistDefs.Items.Clear();
-                            int ind = 1;
-                            bool removedWord = false;
-
-                            foreach (string d in defs)
-                            {
-                                chklistDefs.Items.Add(ind++ + ".  " + removeWordInstances(d, testWord.ToString()));
-                                if (chklistDefs.Items[chklistDefs.Items.Count - 1].ToString().Contains("???"))
-                                    removedWord = true;
-                            }
-
-                            baitQuestionMarksIndices = new List<int>();
-                            if (removedWord && rand.NextDouble() > 0.5)
-                            {
-                                //insert "???" in a random line that isn't the correct definition for this word
-                                //otherwise the user would know that any line with "???" must be the correct definition
-                                int searchStartInd = rand.Next(chklistDefs.Items.Count);
-                                int i = searchStartInd;
-
-                                while (true)
+                                List<string> wrongDefs = main.GetRandDefs(1 + rand.Next(5), testWord.ToString());
+                                while (wrongDefs.Count > 0)
                                 {
-                                    string line = chklistDefs.Items[i].ToString();
+                                    int next = rand.Next(wrongDefs.Count);
 
-                                    if (!line.Contains("???") && !testWord.GetDefinition().Contains(line))
-                                    {
-                                        if (line.Contains(" "))
-                                            line = line.Insert(line.LastIndexOf(' '), " ???");
-                                        else
-                                            line += " ???";
-
-                                        chklistDefs.Items[i] = line;
-                                        baitQuestionMarksIndices.Add(i);
-                                        break;
-                                    }
-
-                                    i++;
-                                    if (i == chklistDefs.Items.Count)
-                                        i = 0;
-                                    if (i == searchStartInd)
-                                        break;
+                                    defs.Insert(rand.Next(defs.Count + 1), wrongDefs[next]);
+                                    wrongDefs.RemoveAt(next);
                                 }
-                            }
 
-                            chklistDefs.Height = 22 * chklistDefs.Items.Count;
-                            buttFinished.Top = chklistDefs.Top + chklistDefs.Height + 16;
-                            buttSkip.Top = buttFinished.Top;
+                                chklistDefs.Items.Clear();
+                                int ind = 1;
+                                bool removedWord = false;
 
-                            chklistDefs.Visible = true;
-                            panelDef.Visible = true;
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
-
-                            chklistDefs.Focus();
-
-                            resetLearningPhase = 1;
-                            break;
-                        case 3: // recognize synonyms
-                            lblDef.Text = "What word has these synonyms?";
-                            mtbTestWord.Text = "";
-
-                            mtbTestWord.Top = 17;
-                            buttFinished.Top = lblDef.Top + lblDef.Height + 8;
-                            buttSkip.Top = buttFinished.Top;
-
-                            lblSynonyms.Text = removeWordInstances(lblSynonyms.Text, testWord.ToString()); //hide instances of test word in the synonyms list
-
-                            //reveal every other letter
-                            mask = createMask();
-                            offset = 0;
-
-                            for (int i = 2; i < testWord.ToString().Length; i += 2)
-                            {
-                                offset += (mask[i + offset - 2] == '\\' ? 1 : 0) + (mask[i + offset - 1] == '\\' ? 1 : 0);
-
-                                mask = mask.Remove(i + offset, 1);
-                                mask = mask.Insert(i + offset, convToLiterals(testWord.ToString().Substring(i, 1)));
-                            }
-
-                            mtbTestWord.Mask = mask;
-
-                            lblWord.Visible = false;
-                            lblDef.Visible = true;
-                            mtbTestWord.Visible = true;
-                            panelDef.Visible = true;
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
-
-                            mtbTestWord.Focus();
-                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
-
-                            resetLearningPhase = 5;
-                            break;
-                        case 4: // type word for example sentence
-                            lblSynonyms.Text = "What word completes this sentence:";
-                            mtbTestWord.Text = "";
-                            mtbTestWord.Top = 17;
-
-                            buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
-                            buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
-                            buttSkip.Top = buttFinished.Top;
-
-                            buttAnotherExample.Visible = true;
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
-
-                            //reveal first letter and vowels
-                            mask = createMask();
-                            offset = 0;
-
-                            for (int i = 1; i < testWord.ToString().Length; i++)
-                            {
-                                offset += mask[i + offset - 1] == '\\' ? 1 : 0;
-
-                                if (testWord.ToString()[i] == 'a' || testWord.ToString()[i] == 'e' || testWord.ToString()[i] == 'i' || testWord.ToString()[i] == 'o' || testWord.ToString()[i] == 'u' || testWord.ToString()[i] == 'y')
+                                foreach (string d in defs)
                                 {
+                                    chklistDefs.Items.Add(ind++ + ".  " + removeWordInstances(d, testWord.ToString()));
+                                    if (chklistDefs.Items[chklistDefs.Items.Count - 1].ToString().Contains("???"))
+                                        removedWord = true;
+                                }
+
+                                baitQuestionMarksIndices = new List<int>();
+                                if (removedWord && rand.NextDouble() > 0.5)
+                                {
+                                    //insert "???" in a random line that isn't the correct definition for this word
+                                    //otherwise the user would know that any line with "???" must be the correct definition
+                                    int searchStartInd = rand.Next(chklistDefs.Items.Count);
+                                    int i = searchStartInd;
+
+                                    while (true)
+                                    {
+                                        string line = chklistDefs.Items[i].ToString();
+
+                                        if (!line.Contains("???") && !testWord.GetDefinition().Contains(line))
+                                        {
+                                            if (line.Contains(" "))
+                                                line = line.Insert(line.LastIndexOf(' '), " ???");
+                                            else
+                                                line += " ???";
+
+                                            chklistDefs.Items[i] = line;
+                                            baitQuestionMarksIndices.Add(i);
+                                            break;
+                                        }
+
+                                        i++;
+                                        if (i == chklistDefs.Items.Count)
+                                            i = 0;
+                                        if (i == searchStartInd)
+                                            break;
+                                    }
+                                }
+
+                                chklistDefs.Height = 22 * chklistDefs.Items.Count;
+                                buttFinished.Top = chklistDefs.Top + chklistDefs.Height + 16;
+                                buttSkip.Top = buttFinished.Top;
+
+                                chklistDefs.Visible = true;
+                                panelDef.Visible = true;
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
+
+                                chklistDefs.Focus();
+
+                                resetLearningPhase = 1;
+                                break;
+                            case 3: // recognize synonyms
+                                lblDef.Text = "What word has these synonyms?";
+                                mtbTestWord.Text = "";
+
+                                mtbTestWord.Top = 17;
+                                buttFinished.Top = lblDef.Top + lblDef.Height + 8;
+                                buttSkip.Top = buttFinished.Top;
+
+                                lblSynonyms.Text = removeWordInstances(lblSynonyms.Text, testWord.ToString()); //hide instances of test word in the synonyms list
+
+                                //reveal every other letter
+                                mask = createMask();
+                                offset = 0;
+
+                                for (int i = 2; i < testWord.ToString().Length; i += 2)
+                                {
+                                    offset += (mask[i + offset - 2] == '\\' ? 1 : 0) + (mask[i + offset - 1] == '\\' ? 1 : 0);
+
                                     mask = mask.Remove(i + offset, 1);
                                     mask = mask.Insert(i + offset, convToLiterals(testWord.ToString().Substring(i, 1)));
                                 }
-                            }
 
-                            mtbTestWord.Mask = mask;
+                                mtbTestWord.Mask = mask;
 
-                            lblWord.Visible = false;
-                            lblDef.Visible = true;
-                            mtbTestWord.Visible = true;
-                            panelDef.Visible = true;
+                                lblWord.Visible = false;
+                                lblDef.Visible = true;
+                                mtbTestWord.Visible = true;
+                                panelDef.Visible = true;
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
 
-                            mtbTestWord.Focus();
-                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+                                mtbTestWord.Focus();
+                                mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
 
-                            resetLearningPhase = 2;
-                            break;
-                        case 5: // unscramble letters
-                            lblWord.Text = "";
-                            List<char> letters = testWord.ToString().ToList();
+                                resetLearningPhase = 5;
+                                break;
+                            case 4: // type word for example sentence
+                                lblSynonyms.Text = "What word completes this sentence:";
+                                mtbTestWord.Text = "";
+                                mtbTestWord.Top = 17;
 
-                            while (letters.Count > 0)
-                            {
-                                int next = rand.Next(letters.Count);
-                                lblWord.Text += letters[next];
-                                letters.RemoveAt(next);
-                            }
+                                buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+                                buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
+                                buttSkip.Top = buttFinished.Top;
 
-                            if (lblWord.Text == testWord.ToString()) //extra check
-                                lblWord.Text = lblWord.Text.Substring(1, 1) + lblWord.Text.Substring(0, 1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
+                                buttAnotherExample.Visible = true;
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
 
-                            lblDef.Text = "Unscramble this word.";
-                            
-                            mtbTestWord.Text = "";
-                            mtbTestWord.Mask = "";
-                            mtbTestWord.TextAlign = HorizontalAlignment.Center;
+                                //reveal first letter and vowels
+                                mask = createMask();
+                                offset = 0;
 
-                            mtbTestWord.Top = lblDef.Top + lblDef.Height + 32;
-                            buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
-                            buttSkip.Top = buttFinished.Top;
-                            
-                            lblDef.Visible = true;
-                            mtbTestWord.Visible = true;
-                            panelDef.Visible = true;
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
+                                for (int i = 1; i < testWord.ToString().Length; i++)
+                                {
+                                    offset += mask[i + offset - 1] == '\\' ? 1 : 0;
 
-                            mtbTestWord.Focus();
-                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+                                    if (testWord.ToString()[i] == 'a' || testWord.ToString()[i] == 'e' || testWord.ToString()[i] == 'i' || testWord.ToString()[i] == 'o' || testWord.ToString()[i] == 'u' || testWord.ToString()[i] == 'y')
+                                    {
+                                        mask = mask.Remove(i + offset, 1);
+                                        mask = mask.Insert(i + offset, convToLiterals(testWord.ToString().Substring(i, 1)));
+                                    }
+                                }
 
-                            resetLearningPhase = 6;
-                            break;
-                        case 6: // recognize visuals
-                            lblSynonyms.Text = "What word is represented by this picture?";
-                            lblDef.Text = "";
+                                mtbTestWord.Mask = mask;
 
-                            mtbTestWord.Text = "";
-                            mtbTestWord.Mask = "";
-                            mtbTestWord.TextAlign = HorizontalAlignment.Center;
+                                lblWord.Visible = false;
+                                lblDef.Visible = true;
+                                mtbTestWord.Visible = true;
+                                panelDef.Visible = true;
 
-                            lblSynonyms.Top = lblWord.Top + 16;
-                            mtbTestWord.Top = lblSynonyms.Top + lblSynonyms.Height + 32;
-                            buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
-                            buttSkip.Top = buttFinished.Top;
+                                mtbTestWord.Focus();
+                                mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
 
-                            setupUI(); //position visual
+                                resetLearningPhase = 2;
+                                break;
+                            case 5: // unscramble letters
+                                lblWord.Text = "";
+                                List<char> letters = testWord.ToString().ToList();
 
-                            lblWord.Visible = false;
-                            lblSynonyms.Visible = true;
-                            mtbTestWord.Visible = true;
-                            panelDef.Visible = true;
-                            buttFinished.Visible = true;
-                            buttSkip.Visible = true;
+                                while (letters.Count > 0)
+                                {
+                                    int next = rand.Next(letters.Count);
+                                    lblWord.Text += letters[next];
+                                    letters.RemoveAt(next);
+                                }
 
-                            mtbTestWord.Focus();
-                            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+                                if (lblWord.Text == testWord.ToString()) //extra check
+                                    lblWord.Text = lblWord.Text.Substring(1, 1) + lblWord.Text.Substring(0, 1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
 
-                            resetLearningPhase = 3;
-                            break;
+                                lblDef.Text = "Unscramble this word.";
+
+                                mtbTestWord.Text = "";
+                                mtbTestWord.Mask = "";
+                                mtbTestWord.TextAlign = HorizontalAlignment.Center;
+
+                                mtbTestWord.Top = lblDef.Top + lblDef.Height + 32;
+                                buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
+                                buttSkip.Top = buttFinished.Top;
+
+                                lblDef.Visible = true;
+                                mtbTestWord.Visible = true;
+                                panelDef.Visible = true;
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
+
+                                mtbTestWord.Focus();
+                                mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+
+                                resetLearningPhase = 6;
+                                break;
+                            case 6: // recognize visuals
+                                lblSynonyms.Text = "What word is represented by this picture?";
+                                lblDef.Text = "";
+
+                                mtbTestWord.Text = "";
+                                mtbTestWord.Mask = "";
+                                mtbTestWord.TextAlign = HorizontalAlignment.Center;
+
+                                lblSynonyms.Top = lblWord.Top + 16;
+                                mtbTestWord.Top = lblSynonyms.Top + lblSynonyms.Height + 32;
+                                buttFinished.Top = mtbTestWord.Top + mtbTestWord.Height + 8;
+                                buttSkip.Top = buttFinished.Top;
+
+                                setupUI(); //position visual
+
+                                lblWord.Visible = false;
+                                lblSynonyms.Visible = true;
+                                mtbTestWord.Visible = true;
+                                panelDef.Visible = true;
+                                buttFinished.Visible = true;
+                                buttSkip.Visible = true;
+
+                                mtbTestWord.Focus();
+                                mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+
+                                resetLearningPhase = 3;
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        //non-English words
+                        int percent = rand.Next(100);
+
+                        percent = 0;
+                        if (percent <= 15)
+                            prepareNonEnglishQuestion(1);
+                        else if (percent <= 30)
+                            prepareNonEnglishQuestion(2);
+                        else if (percent <= 55)
+                            prepareNonEnglishQuestion(3);
+                        else if (percent <= 80)
+                            prepareNonEnglishQuestion(4);
+                        else
+                        {
+                            if (getExampleSentences())
+                                questionType = 4;
+                            else
+                                prepareNonEnglishQuestion(rand.Next(4) + 1);
+                        }
                     }
                 }
             }
@@ -647,6 +624,102 @@ namespace Wordy
                 this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
 
             startTime = DateTime.Now; //start the clock
+        }
+
+        bool getExampleSentences()
+        {
+            try
+            {
+                if (wordnik == null)
+                    wordnik = new WordnikService("b3bbd1f9103a01de7d00a0fd1300164c17bfcec03eb86a678");
+                var exampleResults = wordnik.GetExamples(testWord.ToString());
+
+                if (exampleResults.Examples == null)
+                    return false;
+
+                var examples = exampleResults.Examples.ToArray();
+                exampleSentences = new string[examples.Length];
+
+                for (int i = 0; i < examples.Length; i++)
+                    exampleSentences[i] = removeWordInstances(examples[i].Text, testWord.ToString());
+
+                lblDef.Text = exampleSentences[rand.Next(examples.Length)];
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        void prepareNonEnglishQuestion(int questionType)
+        {
+            switch (questionType)
+            {
+                case 1: //multiple choice (english)
+                    lblTestWordDef.Text = "What does this word mean?" + Environment.NewLine + Environment.NewLine + testWord.ToString();
+                    flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
+                    randomizeAnswers(main.GetRandWords(5, testWord.GetDefinition()), testWord.GetDefinition());
+                    prepareUIForNextWord(1);
+                    break;
+                case 2: //multiple choice (foreign language)
+                    lblTestWordDef.Text = "Translate this word:" + Environment.NewLine + Environment.NewLine + testWord.GetDefinition();
+                    randomizeAnswers(main.GetRandForeignWords(5, testWord.ToString()), testWord.ToString());
+                    prepareUIForNextWord(2);
+                    break;
+                case 3: //type word (english)
+                    lblTestWordDef.Text = "What does this word mean?" + Environment.NewLine + Environment.NewLine + testWord.ToString();
+                    textTestWord.Text = "";
+                    prepareUIForNextWord(3);
+                    break;
+                case 4: //type word (foreign language)
+                    lblTestWordDef.Text = "Translate this word:" + Environment.NewLine + Environment.NewLine + testWord.GetDefinition();
+                    textTestWord.Text = "";
+                    prepareUIForNextWord(3);
+                    break;
+            }
+        }
+
+        void prepareUIForNextWord(int step)
+        {
+            if (step <= 3)
+            {
+                panelTestWord.Visible = true;
+
+                if (step <= 2)
+                {
+                    flowpanelPickAnswers.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
+                    flowpanelPickAnswers.Visible = true;
+                    textTestWord.Visible = false;
+                }
+                else
+                {
+                    flowpanelPickAnswers.Visible = false;
+                    textTestWord.Top = lblTestWordDef.Top + lblTestWordDef.Height + 32;
+                    textTestWord.Visible = true;
+                    textTestWord.Focus();
+
+                    buttFinishedLearned.Top = textTestWord.Top + textTestWord.Height + 16;
+                    buttSkipLearned.Top = buttFinishedLearned.Top;
+                    buttFinishedLearned.Visible = true;
+                    buttSkipLearned.Visible = true;
+                }
+            }
+            else
+            {
+                panelDef.Visible = true;
+                buttFinished.Visible = true;
+                buttSkip.Visible = true;
+
+                lblSynonyms.Text = "Fill in the blanks of the following definitions:";
+
+                buttFinished.Top = mtbDefs[mtbDefs.Count - 1].Top + mtbDefs[mtbDefs.Count - 1].Height + 16;
+                buttSkip.Top = buttFinished.Top;
+
+                if (mtbDefs != null)
+                    mtbDefs[0].Focus();
+            }
         }
 
         void finishFillDefinitions()
@@ -793,7 +866,8 @@ namespace Wordy
             picWordnik.Enabled = true;
 
             //color correct/wrong answers
-            if (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0)
+            if (main.Profile == "English" && //only applies to testing of English words
+                (((!testWord.archived && testWord.learningPhase >= 4) || (testWord.archived && resetLearningPhase == 4)) && answers.Count > 0))
             {
                 rtbDef.Text = "";
                 rtbDef.AppendText(questionDef.Substring(0, answers[0].Item1));
@@ -884,7 +958,7 @@ namespace Wordy
                 {
                     //check if answer has a typo
                     string answerGiven;
-                    if ((bool)mtbTestWord.Tag)
+                    if (mtbTestWord.Tag != null && (bool)mtbTestWord.Tag)
                         answerGiven = mtbTestWord.Text;
                     else
                         answerGiven = textTestWord.Text;
@@ -909,7 +983,11 @@ namespace Wordy
                             lblWord.Text += " forgotten!";
                             lblWord.ForeColor = Color.Red;
 
-                            endNotch = resetLearningPhase;
+                            if (main.Profile == "English")
+                                endNotch = resetLearningPhase;
+                            else
+                                endNotch = 1;
+
                             timerProgressChange.Enabled = true;
                         }
                     }
@@ -1145,6 +1223,7 @@ namespace Wordy
 
         void drawProgress()
         {
+            //draw progress line
             int x1 = lblSynonyms.Left + 10, x2 = this.Width - 70;
             int y = lblWord.Top + lblWord.Height + 4;
 
@@ -1158,14 +1237,14 @@ namespace Wordy
             int curX = (int)(startX + animRatio * (endX - startX));
 
             gfx.DrawLine(penGreen, x1 + 5, y, curX, y);
-            if (endX != startX || endNotch != 7)
+            if (endX != startX || endNotch != nNotches + 1)
                 gfx.DrawLine(endX >= startX ? penBlack : penRed, curX, y, x2 + 5, y);
 
-            for (int i = 0; i <= 6; i++)
-                if (x1 + (x2 - x1) / 6 * i <= curX)
-                    gfx.FillEllipse(brushGreen, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
+            for (int i = 0; i <= nNotches; i++)
+                if (x1 + (x2 - x1) / nNotches * i <= curX)
+                    gfx.FillEllipse(brushGreen, x1 + (x2 - x1) / nNotches * i - 2, y - 5, 10, 10);
                 else
-                    gfx.FillEllipse(endX >= startX ? brushBlack : brushRed, x1 + (x2 - x1) / 6 * i - 2, y - 5, 10, 10);
+                    gfx.FillEllipse(endX >= startX ? brushBlack : brushRed, x1 + (x2 - x1) / nNotches * i - 2, y - 5, 10, 10);
 
             if (answCorrectly == null)
                 return;
@@ -1285,27 +1364,32 @@ namespace Wordy
         bool checkEnteredWord(string word)
         {
             word = word.ToLower();
-            bool success = word == testWord.ToString().ToLower();
+            string correctAnswer = testWord.ToString().ToLower();
+
+            if (lblTestWordDef.Text.Contains("What does this word mean?"))
+                correctAnswer = testWord.GetDefinition();
+
+            bool success = word == correctAnswer;
 
             //if testing recall ignore hyphen mistakes & diacritic letter mistakes
             if (!success && testWord.archived)
             {
                 //hyphens
-                success = word.ToLower().Replace("-", " ") == testWord.ToString().ToLower().Replace("-", " ") //hyphen or space mistake
-                    || word.ToLower().Replace("-", "") == testWord.ToString().ToLower().Replace("-", ""); //no hyphen mistake
+                success = word.ToLower().Replace("-", " ") == correctAnswer.Replace("-", " ") //hyphen or space mistake
+                    || word.ToLower().Replace("-", "") == correctAnswer.Replace("-", ""); //no hyphen mistake
 
                 if (success)
                     MessageBox.Show("Nevertheless your answer will be accepted.", "You messed up one of the hyphens.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
                     //diacritic letters
-                    success = Misc.RemoveDiacritics(word.ToLower()) == Misc.RemoveDiacritics(testWord.ToString().ToLower());
+                    success = Misc.RemoveDiacritics(word.ToLower()) == Misc.RemoveDiacritics(correctAnswer);
                     if (success)
                         MessageBox.Show("Nevertheless your answer will be accepted.", "You messed up one of the diacritic letters.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                     {
                         //BOTH???
-                        success = Misc.RemoveDiacritics(word.ToLower().Replace("-", " ")) == Misc.RemoveDiacritics(testWord.ToString().ToLower().Replace("-", " "));
+                        success = Misc.RemoveDiacritics(word.ToLower().Replace("-", " ")) == Misc.RemoveDiacritics(correctAnswer.Replace("-", " "));
                         if (success)
                             MessageBox.Show("Nevertheless your answer will be accepted.", "You messed up one of the hyphens AND one of the diacritic letters.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -1343,7 +1427,7 @@ namespace Wordy
 
         int calcNotchX(int notch)
         {
-            return lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / 6 * (notch - 1);
+            return lblSynonyms.Left + 10 + (this.Width - 70 - lblSynonyms.Left - 10) / nNotches * (notch - 1);
         }
 
 
@@ -1361,6 +1445,11 @@ namespace Wordy
         private void formTestRecall_Load(object sender, EventArgs e)
         {
             setupUI();
+
+            if (main.Profile == "English")
+                nNotches = 6;
+            else
+                nNotches = 4;
             
             //icon & images
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))

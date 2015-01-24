@@ -15,22 +15,26 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.15;
+        const double VERSION = 1.2;
         const string UPDATE_URL = "https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update.txt";
 
         List<Entry> words;
+        Dictionary<string, List<Entry>> foreignWords;
+        string[] extraWords, extraForeignWords;
         public List<WordOfTheDay> wotds;
+        public Dictionary<string, string> Languages;
         public Preferences prefs;
         formOptions options;
+        formAddLanguage addLanguage;
+        public string Profile;
         public bool needWotDCheck = true;
         bool checkingWotDs = false;
 
 
-        void loadWords()
+        List<Entry> loadWords(string path)
         {
-            words = new List<Entry>();
-
-            StreamReader fRdr = new StreamReader(Application.StartupPath + "\\words.txt");
+            List<Entry> words = new List<Entry>();
+            StreamReader fRdr = new StreamReader(path);
 
             string line, word, defsTxt, synonyms, rhymes;
             DateTime created, learned, lastTest, nextTest;
@@ -83,6 +87,21 @@ namespace Wordy
             }
 
             fRdr.Close();
+
+            return words;
+        }
+
+        void loadExtraForeignWords()
+        {
+            string path = Application.StartupPath + "\\languages\\random words\\" + Languages[Profile] + ".txt";
+            if (File.Exists(path))
+            {
+                StreamReader file = new StreamReader(path);
+                extraForeignWords = file.ReadToEnd().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                file.Close();
+            }
+            else
+                extraForeignWords = new string[] { "ab", "fed", "nawat", "yyndl", "obl", "marat" };
         }
 
         public void LoadSubs(RunWorkerCompletedEventHandler wotdWorker_RunWorkerCompleted)
@@ -136,17 +155,29 @@ namespace Wordy
 
         public bool WordExists(string word)
         {
-            return words.Any(e => e.ToString() == word);
+            return GetWords().Any(e => e.ToString() == word);
         }
         
         public void SaveWords()
         {
-            StreamWriter fWrtr = new StreamWriter(Application.StartupPath + "\\words.txt");
+            if (Profile == "English")
+            {
+                StreamWriter fWrtr = new StreamWriter(Application.StartupPath + "\\words.txt");
 
-            foreach (Entry word in words)
-                fWrtr.WriteLine(word.FormatEntry());
+                foreach (Entry word in words)
+                    fWrtr.WriteLine(word.FormatEntry());
 
-            fWrtr.Close();
+                fWrtr.Close();
+            }
+            else
+            {
+                StreamWriter fWrtr = new StreamWriter(Application.StartupPath + "\\languages\\words-" + Languages[Profile] + ".txt");
+
+                foreach (Entry word in foreignWords[Profile])
+                    fWrtr.WriteLine(word.FormatEntry());
+
+                fWrtr.Close();
+            }
         }
 
         public void SaveSubs()
@@ -161,23 +192,24 @@ namespace Wordy
 
         public void AddNewWord(string word, Definition definitions, string synonyms, string rhymes)
         {
-            words.Add(new Entry(word, definitions, Entry.FormatCommas(synonyms), rhymes));
+            GetWords().Add(new Entry(word, definitions, Entry.FormatCommas(synonyms), rhymes));
             SaveWords();
         }
 
         public void AddNewWords(Dictionary<string, Definition> newWords, Dictionary<string, string> synonyms, Dictionary<string, string> rhymes)
         {
+            var relevantWords = GetWords();
             foreach (KeyValuePair<string, Definition> word in newWords)
-                words.Add(new Entry(word.Key, word.Value, Entry.FormatCommas(synonyms[word.Key]), rhymes[word.Key]));
+                relevantWords.Add(new Entry(word.Key, word.Value, Entry.FormatCommas(synonyms[word.Key]), rhymes[word.Key]));
 
             SaveWords();
         }
 
-        public List<string> GetRandWords(int n, string exception)
+        List<string> GetRandWords(int n, string exception, List<Entry> relevantWords, string[] relevantExtraWords)
         {
             List<string> wordsCopy = new List<string>(), randWords = new List<string>();
 
-            foreach (Entry word in words)
+            foreach (Entry word in relevantWords)
                 if (word.ToString() != exception)
                     wordsCopy.Add(word.ToString());
 
@@ -193,14 +225,20 @@ namespace Wordy
 
             //need more words?
             if (randWords.Count < n)
-            {
-                string[] constWords = { "defenestration", "palimpsest", "sagittipotent", "slayer", "rarity", "skald" };
-
-                for (int i = randWords.Count; i < n; i++)
-                    randWords.Add(constWords[i % constWords.Length]);
-            }
+                for (int i = rand.Next(relevantExtraWords.Length); randWords.Count < n; i++)
+                    randWords.Add(relevantExtraWords[i % relevantExtraWords.Length]);
 
             return randWords;
+        }
+
+        public List<string> GetRandWords(int n, string exception)
+        {
+            return GetRandWords(n, exception, words, extraWords);
+        }
+
+        public List<string> GetRandForeignWords(int n, string exception)
+        {
+            return GetRandWords(n, exception, GetWords(), extraForeignWords);
         }
 
         public List<string> GetRandDefs(int n, string ignoreWord)
@@ -259,9 +297,9 @@ namespace Wordy
         public List<Entry> GetWordsReadyForTesting(bool archived)
         {
             if (!archived)
-                return copyList(words.Where(w => !w.archived && w.CanTest()).ToList());
+                return copyList(GetWords().Where(w => !w.archived && w.CanTest()).ToList());
             else
-                return copyList(words.Where(w => w.archived && w.CanTest()).ToList());
+                return copyList(GetWords().Where(w => w.archived && w.CanTest()).ToList());
         }
 
         List<Entry> copyList(List<Entry> orig)
@@ -306,6 +344,34 @@ namespace Wordy
                 setInfo("You have " + n + " words ready to be tested.");
         }
 
+        public void LoadActiveLanguages()
+        {
+            comboLanguage.Items.Clear();
+            comboLanguage.Items.Add("English");
+            foreach (var lang in Languages)
+                if (File.Exists(Application.StartupPath + "\\languages\\words-" + lang.Value + ".txt"))
+                    comboLanguage.Items.Add(lang.Key);
+            comboLanguage.Items.Add("Add another language...");
+
+            comboLanguage.SelectedIndex = 0;
+        }
+
+        public string GetNewWordsPath()
+        {
+            if (Profile == "English")
+                return prefs.NewWordsPath;
+            else
+                return Application.StartupPath + "\\languages\\newwords-" + Languages[Profile] + ".txt";
+        }
+
+        public List<Entry> GetWords()
+        {
+            if (Profile == "English")
+                return words;
+            else
+                return foreignWords[Profile];
+        }
+
 
         public formMain()
         {
@@ -315,12 +381,23 @@ namespace Wordy
         private void formMain_Load(object sender, EventArgs e)
         {
             prefs = new Preferences();
-
+            
             needWotDCheck = DateTime.Now.DayOfYear != prefs.LastFeedCheck.DayOfYear;
             if (!needWotDCheck)
                 buttNewWotD.Visible = prefs.NewWotDs;
 
-            loadWords();
+            words = loadWords(Application.StartupPath + "\\words.txt");
+
+            //load extra English words
+            string pathExtraWords = Application.StartupPath + "\\languages\\random words\\en.txt";
+            if (File.Exists(pathExtraWords))
+            {
+                StreamReader fileExtraWords = new StreamReader(pathExtraWords);
+                extraWords = fileExtraWords.ReadToEnd().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                fileExtraWords.Close();
+            }
+            else
+                extraWords = new string[] { "instauration", "spindrift", "chouse", "alight", "amanuensis", "vitriform" };
 
             //app icon
             if (File.Exists(Application.StartupPath + "\\Wordy.ico"))
@@ -350,6 +427,30 @@ namespace Wordy
 
             if (File.Exists(Application.StartupPath + "\\ui\\about.png"))
                 buttAbout.Image = Bitmap.FromFile(Application.StartupPath + "\\ui\\about.png");
+
+            //setup other languages
+            Languages = new Dictionary<string, string>();
+            StreamReader file = new StreamReader(Application.StartupPath + "\\languages\\!available languages.txt");
+
+            while (!file.EndOfStream)
+            {
+                string[] langKeyValue = file.ReadLine().Split(new string[] { " -> " }, StringSplitOptions.RemoveEmptyEntries);
+                Languages.Add(langKeyValue[1], langKeyValue[0]); //Language name -> code
+            }
+
+            file.Close();
+
+            LoadActiveLanguages();
+            Profile = "English";
+            foreignWords = new Dictionary<string, List<Entry>>();
+
+            foreach (var lang in Languages)
+            {
+                string path = Application.StartupPath + "\\languages\\words-" + lang.Value + ".txt";
+
+                if (File.Exists(path))
+                    foreignWords.Add(lang.Key, loadWords(path));
+            }
             
             //show tutorial
             new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
@@ -387,7 +488,7 @@ namespace Wordy
             options = new formOptions();
 
             options.main = this;
-            options.words = words;
+            options.words = GetWords();
             options.wotds = wotds;
             options.CurrentVersion = VERSION;
             options.DefaultUpdateURL = UPDATE_URL;
@@ -412,7 +513,9 @@ namespace Wordy
         
         private void buttStudyWords_Click(object sender, EventArgs e)
         {
-            if (words.Any(w => !w.archived && w.CanTest()))
+            var relevantWords = GetWords();
+
+            if (relevantWords.Any(w => !w.archived && w.CanTest()))
             {
                 formTestRecall test = new formTestRecall();
 
@@ -422,7 +525,7 @@ namespace Wordy
                 test.Show();
                 this.Hide();
             }
-            else if (words.Any(w => !w.archived))
+            else if (relevantWords.Any(w => !w.archived))
                 MessageBox.Show("No new words that haven't been tested recently.");
             else
                 MessageBox.Show("No new words.");
@@ -430,7 +533,7 @@ namespace Wordy
 
         private void buttRecall_Click(object sender, EventArgs e)
         {
-            if (words.Any(w => w.archived && w.CanTest()))
+            if (GetWords().Any(w => w.archived && w.CanTest()))
             {
                 formTestRecall test = new formTestRecall();
 
@@ -466,9 +569,8 @@ namespace Wordy
         private void buttReading_Click(object sender, EventArgs e)
         {
             formReading reading = new formReading();
-
             reading.main = this;
-            reading.words = words;
+            reading.words = GetWords();
             reading.Show();
             this.Hide();
         }
@@ -480,7 +582,7 @@ namespace Wordy
                 formReview review = new formReview();
 
                 review.main = this;
-                review.words = words;
+                review.words = GetWords();
                 review.Show();
                 this.Hide();
             }
@@ -488,7 +590,7 @@ namespace Wordy
                 MessageBox.Show("You have no words! Use the Add New Words button first.");
         }
 
-        private void button_MouseLeave(object sender, EventArgs e)
+        private void control_MouseLeave(object sender, EventArgs e)
         {
             if (!checkingWotDs)
                 lblInfo.Text = "";
@@ -499,7 +601,7 @@ namespace Wordy
         private void buttAdd_MouseEnter(object sender, EventArgs e)
         {
             //get number of new words in text file
-            int n = Misc.LoadNewWordsFromFile(prefs.NewWordsPath).Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Length;
+            int n = Misc.LoadNewWordsFromFile(GetNewWordsPath()).Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Length;
 
             if (n == 0)
                 setInfo("Add new words that you want to study.");
@@ -516,7 +618,7 @@ namespace Wordy
                 //find out which word will become available first
                 DateTime earliest = new DateTime(2305, 7, 13);
 
-                foreach (Entry word in words)
+                foreach (Entry word in GetWords())
                     if (!word.archived && word.GetLastTest() < earliest)
                         earliest = word.GetLastTest();
 
@@ -538,7 +640,7 @@ namespace Wordy
                 //find out which word will become available first
                 DateTime earliest = new DateTime(2305, 7, 13);
 
-                foreach (Entry word in words)
+                foreach (Entry word in GetWords())
                     if (word.archived && word.GetNextTest() < earliest)
                         earliest = word.GetNextTest();
 
@@ -569,6 +671,45 @@ namespace Wordy
         private void buttAbout_MouseEnter(object sender, EventArgs e)
         {
             setInfo("Display information about Wordy.");
+        }
+
+        private void comboLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboLanguage.Text == "Add another language...")
+            {
+                if (addLanguage == null || addLanguage.IsDisposed)
+                {
+                    addLanguage = new formAddLanguage();
+                    addLanguage.main = this;
+                }
+
+                addLanguage.Show();
+
+                comboLanguage.Text = Profile;
+            }
+            else if (comboLanguage.SelectedIndex != -1)
+            {
+                string flagPath;
+                if (comboLanguage.Text == "English")
+                    flagPath = Application.StartupPath + "\\languages\\flags\\en.png";
+                else
+                    flagPath = Application.StartupPath + "\\languages\\flags\\" + Languages[comboLanguage.Text] + ".png";
+
+                if (File.Exists(flagPath))
+                    picFlag.ImageLocation = flagPath;
+                else
+                    picFlag.ImageLocation = "";
+
+                Profile = comboLanguage.Text;
+
+                if (Profile != "English")
+                    loadExtraForeignWords();
+            }
+        }
+
+        private void comboLanguage_MouseEnter(object sender, EventArgs e)
+        {
+            setInfo("Change current language profile.");
         }
     }
 }

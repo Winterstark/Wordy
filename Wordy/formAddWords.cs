@@ -20,6 +20,7 @@ namespace Wordy
     {
         WordnikService wordnik = new WordnikService("b3bbd1f9103a01de7d00a0fd1300164c17bfcec03eb86a678");
         Flickr flickr = new Flickr("d2a2e14ee946139a8f0d2f0b626522f7");
+        Translator translator;
         
         BackgroundWorker searchWordWorker, dlVisualsWorker, newWotDWorker;
         delegate void SetTextCallback(string text);
@@ -273,6 +274,35 @@ namespace Wordy
             }
         }
 
+        void removeFromNewWords(string word)
+        {
+            if (textNewWords.Text.Contains(word))
+            {
+                //remove word from first text box and cleanup if necessary
+                if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
+                    textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
+                else
+                    textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
+
+                if (textNewWords.Text == Environment.NewLine)
+                    textNewWords.Text = "";
+            }
+        }
+
+        void markAsNotFound(string word)
+        {
+            int lb = textNewWords.Text.IndexOf(word);
+
+            if (lb != -1)
+            {
+                int ub = textNewWords.Text.IndexOf(Environment.NewLine, lb);
+                if (ub == -1)
+                    ub = textNewWords.Text.Length;
+
+                textNewWords.Text = textNewWords.Text.Insert(ub, " <- NOT FOUND");
+            }
+        }
+
         public void LoadWotDs()
         {
             if (main.wotds.Count > 0)
@@ -350,19 +380,9 @@ namespace Wordy
                 {
                     string word = result.Substring(0, result.Length - 10);
 
-                    //mark the word as not found
-                    int lb = textNewWords.Text.IndexOf(word);
+                    markAsNotFound(word);
 
-                    if (lb != -1)
-                    {
-                        int ub = textNewWords.Text.IndexOf(Environment.NewLine, lb);
-                        if (ub == -1)
-                            ub = textNewWords.Text.Length;
-
-                        textNewWords.Text = textNewWords.Text.Insert(ub, " <- NOT FOUND");
-                    }
-
-                    //and remove it from flickr search list (if present)
+                    //remove it from flickr search list (if present)
                     if (flickrSearchList.Contains(word))
                         flickrSearchList.Remove(word);
                 }
@@ -385,17 +405,7 @@ namespace Wordy
                 listFoundWords.Enabled = true;
                 buttAcceptWords.Enabled = true;
 
-                if (textNewWords.Text.Contains(word))
-                {
-                    //remove word from first text box and cleanup if necessary
-                    if (textNewWords.Text.Substring(textNewWords.Text.Length - word.Length, word.Length) == word)
-                        textNewWords.Text = textNewWords.Text.Substring(0, textNewWords.Text.Length - word.Length);
-                    else
-                        textNewWords.Text = textNewWords.Text.Replace(word + Environment.NewLine, Environment.NewLine);
-
-                    if (textNewWords.Text == Environment.NewLine)
-                        textNewWords.Text = "";
-                }
+                removeFromNewWords(word);
             }
 
             //next word
@@ -580,6 +590,33 @@ namespace Wordy
             }
         }
 
+        void translatedDoneEvent(string word, string translation)
+        {
+            if (translation == "error" || translation == "" || word.ToLower() == translation.ToLower())
+                markAsNotFound(word);
+            else
+            {
+                //save word data
+                newDefs.Add(word, new Definition(translation, true));
+                synonyms.Add(word, "");
+                rhymes.Add(word, "");
+
+                //display word data
+                listFoundWords.Items.Add(word);
+
+                //enable UI elements
+                lblRecognizedWords.Enabled = true;
+                listFoundWords.Enabled = true;
+                buttAcceptWords.Enabled = true;
+
+                removeFromNewWords(word);
+            }
+
+            //next word
+            if (wordSearchQ.Count > 0)
+                translator.Translate(wordSearchQ.Dequeue());
+        }
+
 
         public formAddWords()
         {
@@ -588,7 +625,18 @@ namespace Wordy
 
         private void formAddWords_Load(object sender, EventArgs e)
         {
-            if (!main.prefs.AutoVisuals)
+            //disable visuals with non-English languages
+            if (main.Profile != "English")
+            {
+                toggleVisuals();
+
+                //hide English-only UI elements
+                lblSyns.Visible = false;
+                textSynonyms.Visible = false;
+                picWordnik.Visible = false;
+                buttToggleVisuals.Visible = false;
+            }
+            else if (!main.prefs.AutoVisuals)
                 toggleVisuals();
 
             //icon
@@ -609,7 +657,11 @@ namespace Wordy
 
             //load new words
             if (chkNewWordsFile)
-                textNewWords.Text = Misc.LoadNewWordsFromFile(main.prefs.NewWordsPath);
+                textNewWords.Text = Misc.LoadNewWordsFromFile(main.GetNewWordsPath());
+
+            //init translator service (if needed)
+            if (main.Profile != "English")
+                translator = new Translator(main.Languages[main.Profile], "en", translatedDoneEvent);
 
             //cleanup
             while (textNewWords.Text.Length >= 2 && textNewWords.Text.Substring(0, 2) == Environment.NewLine)
@@ -642,7 +694,7 @@ namespace Wordy
 
         private void buttFindDefs_Click(object sender, EventArgs e)
         {
-            if (searchWordWorker.IsBusy)
+            if (searchWordWorker.IsBusy || translator != null && translator.IsBusy())
             {
                 //already searching
                 MessageBox.Show("Please wait for the search to finish before starting a new one.", "Wordy is already searching word definitions", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -696,11 +748,16 @@ namespace Wordy
 
             wordSearchQ = new Queue<string>(allNewWords); //process only words that have no duplicates
 
-            if (buttToggleVisuals.Text.Contains("<<")) //if flickr search is enabled
-                flickrSearchList = new List<string>(allNewWords);
+            if (main.Profile == "English")
+            {
+                if (buttToggleVisuals.Text.Contains("<<")) //if flickr search is enabled
+                    flickrSearchList = new List<string>(allNewWords);
 
-            if (wordSearchQ.Count > 0)
-                searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue()); //call worker for first word
+                if (wordSearchQ.Count > 0)
+                    searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue()); //call worker for first word
+            }
+            else
+                translator.Translate(wordSearchQ.Dequeue());
 
             buttFindDefs.Enabled = false; //prevent user from starting a new search while a search is running
         }
@@ -810,9 +867,9 @@ namespace Wordy
             while (textNewWords.Text.Contains(Environment.NewLine + Environment.NewLine))
                 textNewWords.Text = textNewWords.Text.Replace(Environment.NewLine + Environment.NewLine, Environment.NewLine);
 
-            if (chkNewWordsFile && File.Exists(main.prefs.NewWordsPath))
+            if (chkNewWordsFile && File.Exists(main.GetNewWordsPath()))
             {
-                StreamWriter file = new StreamWriter(main.prefs.NewWordsPath);
+                StreamWriter file = new StreamWriter(main.GetNewWordsPath());
                 file.Write(textNewWords.Text);
                 file.Close();
             }

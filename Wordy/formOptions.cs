@@ -136,6 +136,14 @@ namespace Wordy
             
             textFilter.Left = lblWords.Width + 12;
             textFilter.Width = 341 - textFilter.Left;
+
+            if (main.Profile != "English")
+            {
+                //hide English-only UI elements
+                lblSyns.Visible = false;
+                textSynonyms.Visible = false;
+                picWordnik.Visible = false;
+            }
         }
 
         private void formWordlist_FormClosing(object sender, FormClosingEventArgs e)

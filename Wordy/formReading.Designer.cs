@@ -49,6 +49,7 @@
             this.rtbText.Text = "Paste your text here...";
             this.rtbText.SelectionChanged += new System.EventHandler(this.rtbText_SelectionChanged);
             this.rtbText.VScroll += new System.EventHandler(this.rtbText_VScroll);
+            this.rtbText.Click += new System.EventHandler(this.rtbText_Click);
             this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
             this.rtbText.Enter += new System.EventHandler(this.rtbText_Enter);
             // 
@@ -116,6 +117,7 @@
             this.Controls.Add(this.rtbDef);
             this.Controls.Add(this.rtbText);
             this.Name = "formReading";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assisted Reading";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formReading_FormClosing);
             this.Load += new System.EventHandler(this.formReading_Load);

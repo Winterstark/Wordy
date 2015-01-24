@@ -6,7 +6,6 @@ zh-CHT -> Chinese Traditional
 cs -> Czech
 da -> Danish
 nl -> Dutch
-en -> English
 et -> Estonian
 fi -> Finnish
 fr -> French

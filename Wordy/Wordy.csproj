@@ -101,12 +101,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classMisc.cs" />
+    <Compile Include="classTranslator.cs" />
     <Compile Include="classTypes.cs" />
     <Compile Include="formAbout.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formAbout.Designer.cs">
       <DependentUpon>formAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddLanguage.Designer.cs">
+      <DependentUpon>formAddLanguage.cs</DependentUpon>
     </Compile>
     <Compile Include="formAddWords.cs">
       <SubType>Form</SubType>
@@ -148,6 +155,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formAbout.resx">
       <DependentUpon>formAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddLanguage.resx">
+      <DependentUpon>formAddLanguage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formAddWords.resx">
       <DependentUpon>formAddWords.cs</DependentUpon>

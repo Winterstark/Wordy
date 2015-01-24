@@ -37,6 +37,10 @@
             this.buttAbout = new System.Windows.Forms.Button();
             this.buttReview = new System.Windows.Forms.Button();
             this.buttReading = new System.Windows.Forms.Button();
+            this.comboLanguage = new System.Windows.Forms.ComboBox();
+            this.labelSeparator = new System.Windows.Forms.Label();
+            this.picFlag = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picFlag)).BeginInit();
             this.SuspendLayout();
             // 
             // buttAdd
@@ -52,7 +56,7 @@
             this.buttAdd.UseVisualStyleBackColor = true;
             this.buttAdd.Click += new System.EventHandler(this.buttAdd_Click);
             this.buttAdd.MouseEnter += new System.EventHandler(this.buttAdd_MouseEnter);
-            this.buttAdd.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttAdd.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttStudyWords
             // 
@@ -67,7 +71,7 @@
             this.buttStudyWords.UseVisualStyleBackColor = true;
             this.buttStudyWords.Click += new System.EventHandler(this.buttStudyWords_Click);
             this.buttStudyWords.MouseEnter += new System.EventHandler(this.buttStudyWords_MouseEnter);
-            this.buttStudyWords.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttStudyWords.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttRecall
             // 
@@ -83,7 +87,7 @@
             this.buttRecall.UseVisualStyleBackColor = true;
             this.buttRecall.Click += new System.EventHandler(this.buttRecall_Click);
             this.buttRecall.MouseEnter += new System.EventHandler(this.buttRecall_MouseEnter);
-            this.buttRecall.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttRecall.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttOptions
             // 
@@ -97,7 +101,7 @@
             this.buttOptions.UseVisualStyleBackColor = true;
             this.buttOptions.Click += new System.EventHandler(this.buttOptions_Click);
             this.buttOptions.MouseEnter += new System.EventHandler(this.buttOptions_MouseEnter);
-            this.buttOptions.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttOptions.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttNewWotD
             // 
@@ -136,7 +140,7 @@
             this.buttAbout.UseVisualStyleBackColor = true;
             this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
             this.buttAbout.MouseEnter += new System.EventHandler(this.buttAbout_MouseEnter);
-            this.buttAbout.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttAbout.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttReview
             // 
@@ -150,7 +154,7 @@
             this.buttReview.UseVisualStyleBackColor = true;
             this.buttReview.Click += new System.EventHandler(this.buttReview_Click);
             this.buttReview.MouseEnter += new System.EventHandler(this.buttReview_MouseEnter);
-            this.buttReview.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttReview.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // buttReading
             // 
@@ -164,13 +168,44 @@
             this.buttReading.UseVisualStyleBackColor = true;
             this.buttReading.Click += new System.EventHandler(this.buttReading_Click);
             this.buttReading.MouseEnter += new System.EventHandler(this.buttReading_MouseEnter);
-            this.buttReading.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttReading.MouseLeave += new System.EventHandler(this.control_MouseLeave);
+            // 
+            // comboLanguage
+            // 
+            this.comboLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboLanguage.FormattingEnabled = true;
+            this.comboLanguage.Location = new System.Drawing.Point(61, 312);
+            this.comboLanguage.Name = "comboLanguage";
+            this.comboLanguage.Size = new System.Drawing.Size(452, 21);
+            this.comboLanguage.TabIndex = 8;
+            this.comboLanguage.SelectedIndexChanged += new System.EventHandler(this.comboLanguage_SelectedIndexChanged);
+            this.comboLanguage.MouseEnter += new System.EventHandler(this.comboLanguage_MouseEnter);
+            this.comboLanguage.MouseLeave += new System.EventHandler(this.control_MouseLeave);
+            // 
+            // labelSeparator
+            // 
+            this.labelSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelSeparator.Location = new System.Drawing.Point(21, 291);
+            this.labelSeparator.Name = "labelSeparator";
+            this.labelSeparator.Size = new System.Drawing.Size(492, 2);
+            this.labelSeparator.TabIndex = 9;
+            // 
+            // picFlag
+            // 
+            this.picFlag.Location = new System.Drawing.Point(25, 311);
+            this.picFlag.Name = "picFlag";
+            this.picFlag.Size = new System.Drawing.Size(24, 24);
+            this.picFlag.TabIndex = 10;
+            this.picFlag.TabStop = false;
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 297);
+            this.ClientSize = new System.Drawing.Size(534, 356);
+            this.Controls.Add(this.picFlag);
+            this.Controls.Add(this.labelSeparator);
+            this.Controls.Add(this.comboLanguage);
             this.Controls.Add(this.buttReading);
             this.Controls.Add(this.buttReview);
             this.Controls.Add(this.buttNewWotD);
@@ -187,6 +222,7 @@
             this.Text = "Wordy";
             this.Activated += new System.EventHandler(this.formMain_Activated);
             this.Load += new System.EventHandler(this.formMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picFlag)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,6 +238,9 @@
         private System.Windows.Forms.Button buttAbout;
         private System.Windows.Forms.Button buttReview;
         private System.Windows.Forms.Button buttReading;
+        private System.Windows.Forms.ComboBox comboLanguage;
+        private System.Windows.Forms.Label labelSeparator;
+        private System.Windows.Forms.PictureBox picFlag;
     }
 }
 
