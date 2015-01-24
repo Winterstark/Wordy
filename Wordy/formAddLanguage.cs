@@ -37,6 +37,7 @@ namespace Wordy
         private void buttAdd_Click(object sender, EventArgs e)
         {
             bool change = false;
+            string newLanguage = "";
 
             foreach (var item in chklistLanguages.CheckedItems)
             {
@@ -51,12 +52,16 @@ namespace Wordy
                     file = new StreamWriter(filePath.Replace("\\words-", "\\newwords-"));
                     file.Close();
 
+                    newLanguage = item.ToString();
                     change = true;
                 }
             }
 
             if (change)
+            {
                 main.LoadActiveLanguages();
+                main.ComboLanguage.Text = newLanguage;
+            }
 
             this.Close();
         }

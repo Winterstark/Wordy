@@ -346,14 +346,24 @@ namespace Wordy
 
         public void LoadActiveLanguages()
         {
-            comboLanguage.Items.Clear();
-            comboLanguage.Items.Add("English");
+            ComboLanguage.Items.Clear();
+            ComboLanguage.Items.Add("English");
             foreach (var lang in Languages)
                 if (File.Exists(Application.StartupPath + "\\languages\\words-" + lang.Value + ".txt"))
-                    comboLanguage.Items.Add(lang.Key);
-            comboLanguage.Items.Add("Add another language...");
+                    ComboLanguage.Items.Add(lang.Key);
+            ComboLanguage.Items.Add("Add another language...");
+            ComboLanguage.SelectedIndex = 0;
 
-            comboLanguage.SelectedIndex = 0;
+            Profile = "English";
+
+            foreignWords = new Dictionary<string, List<Entry>>();
+            foreach (var lang in Languages)
+            {
+                string path = Application.StartupPath + "\\languages\\words-" + lang.Value + ".txt";
+                if (File.Exists(path))
+                    foreignWords.Add(lang.Key, loadWords(path));
+            }
+            
         }
 
         public string GetNewWordsPath()
@@ -441,17 +451,7 @@ namespace Wordy
             file.Close();
 
             LoadActiveLanguages();
-            Profile = "English";
-            foreignWords = new Dictionary<string, List<Entry>>();
 
-            foreach (var lang in Languages)
-            {
-                string path = Application.StartupPath + "\\languages\\words-" + lang.Value + ".txt";
-
-                if (File.Exists(path))
-                    foreignWords.Add(lang.Key, loadWords(path));
-            }
-            
             //show tutorial
             new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
 
@@ -675,7 +675,7 @@ namespace Wordy
 
         private void comboLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboLanguage.Text == "Add another language...")
+            if (ComboLanguage.Text == "Add another language...")
             {
                 if (addLanguage == null || addLanguage.IsDisposed)
                 {
@@ -685,22 +685,22 @@ namespace Wordy
 
                 addLanguage.Show();
 
-                comboLanguage.Text = Profile;
+                ComboLanguage.Text = Profile;
             }
-            else if (comboLanguage.SelectedIndex != -1)
+            else if (ComboLanguage.SelectedIndex != -1)
             {
                 string flagPath;
-                if (comboLanguage.Text == "English")
+                if (ComboLanguage.Text == "English")
                     flagPath = Application.StartupPath + "\\languages\\flags\\en.png";
                 else
-                    flagPath = Application.StartupPath + "\\languages\\flags\\" + Languages[comboLanguage.Text] + ".png";
+                    flagPath = Application.StartupPath + "\\languages\\flags\\" + Languages[ComboLanguage.Text] + ".png";
 
                 if (File.Exists(flagPath))
                     picFlag.ImageLocation = flagPath;
                 else
                     picFlag.ImageLocation = "";
 
-                Profile = comboLanguage.Text;
+                Profile = ComboLanguage.Text;
 
                 if (Profile != "English")
                     loadExtraForeignWords();

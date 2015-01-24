@@ -37,7 +37,7 @@
             this.buttAbout = new System.Windows.Forms.Button();
             this.buttReview = new System.Windows.Forms.Button();
             this.buttReading = new System.Windows.Forms.Button();
-            this.comboLanguage = new System.Windows.Forms.ComboBox();
+            this.ComboLanguage = new System.Windows.Forms.ComboBox();
             this.labelSeparator = new System.Windows.Forms.Label();
             this.picFlag = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFlag)).BeginInit();
@@ -170,17 +170,17 @@
             this.buttReading.MouseEnter += new System.EventHandler(this.buttReading_MouseEnter);
             this.buttReading.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
-            // comboLanguage
+            // ComboLanguage
             // 
-            this.comboLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboLanguage.FormattingEnabled = true;
-            this.comboLanguage.Location = new System.Drawing.Point(61, 312);
-            this.comboLanguage.Name = "comboLanguage";
-            this.comboLanguage.Size = new System.Drawing.Size(452, 21);
-            this.comboLanguage.TabIndex = 8;
-            this.comboLanguage.SelectedIndexChanged += new System.EventHandler(this.comboLanguage_SelectedIndexChanged);
-            this.comboLanguage.MouseEnter += new System.EventHandler(this.comboLanguage_MouseEnter);
-            this.comboLanguage.MouseLeave += new System.EventHandler(this.control_MouseLeave);
+            this.ComboLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboLanguage.FormattingEnabled = true;
+            this.ComboLanguage.Location = new System.Drawing.Point(61, 312);
+            this.ComboLanguage.Name = "ComboLanguage";
+            this.ComboLanguage.Size = new System.Drawing.Size(452, 21);
+            this.ComboLanguage.TabIndex = 8;
+            this.ComboLanguage.SelectedIndexChanged += new System.EventHandler(this.comboLanguage_SelectedIndexChanged);
+            this.ComboLanguage.MouseEnter += new System.EventHandler(this.comboLanguage_MouseEnter);
+            this.ComboLanguage.MouseLeave += new System.EventHandler(this.control_MouseLeave);
             // 
             // labelSeparator
             // 
@@ -205,7 +205,7 @@
             this.ClientSize = new System.Drawing.Size(534, 356);
             this.Controls.Add(this.picFlag);
             this.Controls.Add(this.labelSeparator);
-            this.Controls.Add(this.comboLanguage);
+            this.Controls.Add(this.ComboLanguage);
             this.Controls.Add(this.buttReading);
             this.Controls.Add(this.buttReview);
             this.Controls.Add(this.buttNewWotD);
@@ -238,9 +238,9 @@
         private System.Windows.Forms.Button buttAbout;
         private System.Windows.Forms.Button buttReview;
         private System.Windows.Forms.Button buttReading;
-        private System.Windows.Forms.ComboBox comboLanguage;
         private System.Windows.Forms.Label labelSeparator;
         private System.Windows.Forms.PictureBox picFlag;
+        public System.Windows.Forms.ComboBox ComboLanguage;
     }
 }
 
