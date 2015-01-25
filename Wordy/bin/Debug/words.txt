@@ -41,7 +41,7 @@ True
 <entry>
 scullery
 [defs]
-(n.) A small room adjoining a kitchen, in which dishwashing and other kitchen chores are done.::False
+(n.) A small room adjoining a kitchen, in which dishwashing and other kitchen chores are done.::True
 [/defs]
 offal, filth, scullery maid, room, pantry, storeroom, workroom, bakehouse, diningroom, outhouse, 
 summary, shrubbery, cutlery, gunnery, summery, fluttery, discovery, adultery, drudgery, southerly, 
@@ -21505,6 +21505,25 @@ betokens, blowguns, slogans, potions, doses, notions, opens, motions, oceans, po
 2015-01-22 15:36
 0001-01-01 00:00
 2015-01-22 15:36
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+parameters
+[defs]
+(n.) Plural form of parameter.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+
+diameters, hexameters, janitors, managers, travellers, travelers, capacitors, catheters, garrotters, fasteners, 
+2015-01-25 17:21
+0001-01-01 00:00
+2015-01-25 17:21
 0001-01-01 00:00
 1
 0

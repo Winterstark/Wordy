@@ -178,3 +178,39 @@ danger::False
 False
 </entry>
 
+<entry>
+piacere
+[defs]
+John Pleasure::False
+[/defs]
+
+
+2015-01-25 17:56
+0001-01-01 00:00
+2015-01-25 17:56
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+Polendina
+[defs]
+cornmeal mush::False
+[/defs]
+
+
+2015-01-25 20:34
+0001-01-01 00:00
+2015-01-25 20:34
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
