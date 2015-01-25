@@ -661,7 +661,7 @@ namespace Wordy
 
             //init translator service (if needed)
             if (main.Profile != "English")
-                translator = new Translator(main.Languages[main.Profile], "en", translatedDoneEvent);
+                translator = new Translator(main.Languages[main.Profile], "en", translatedDoneEvent, main.prefs);
 
             //cleanup
             while (textNewWords.Text.Length >= 2 && textNewWords.Text.Substring(0, 2) == Environment.NewLine)

@@ -34,6 +34,7 @@
             this.buttSave = new System.Windows.Forms.Button();
             this.buttUpdateDefinition = new System.Windows.Forms.Button();
             this.buttAdd = new System.Windows.Forms.Button();
+            this.buttGoogle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbText
@@ -63,6 +64,7 @@
             this.rtbDef.TabIndex = 6;
             this.rtbDef.Text = "";
             this.rtbDef.Visible = false;
+            this.rtbDef.Click += new System.EventHandler(this.rtbDef_Click);
             this.rtbDef.TextChanged += new System.EventHandler(this.rtbDef_TextChanged);
             // 
             // buttSearch
@@ -105,11 +107,22 @@
             this.buttAdd.Visible = false;
             this.buttAdd.Click += new System.EventHandler(this.buttAdd_Click);
             // 
+            // buttGoogle
+            // 
+            this.buttGoogle.Location = new System.Drawing.Point(418, 301);
+            this.buttGoogle.Name = "buttGoogle";
+            this.buttGoogle.Size = new System.Drawing.Size(32, 32);
+            this.buttGoogle.TabIndex = 8;
+            this.buttGoogle.UseVisualStyleBackColor = true;
+            this.buttGoogle.Visible = false;
+            this.buttGoogle.Click += new System.EventHandler(this.buttGoogle_Click);
+            // 
             // formReading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 559);
+            this.Controls.Add(this.buttGoogle);
             this.Controls.Add(this.buttUpdateDefinition);
             this.Controls.Add(this.buttSave);
             this.Controls.Add(this.buttAdd);
@@ -134,5 +147,6 @@
         private System.Windows.Forms.Button buttSave;
         private System.Windows.Forms.Button buttUpdateDefinition;
         private System.Windows.Forms.Button buttAdd;
+        private System.Windows.Forms.Button buttGoogle;
     }
 }

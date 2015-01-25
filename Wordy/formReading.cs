@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 using NikSharp;
 using NikSharp.Model;
 
@@ -152,6 +153,17 @@ namespace Wordy
 
             rtbDef.Width = (int)(1.5f * size.Width);
             rtbDef.Height = (int)(size.Height + lineH);
+        }
+
+        void hideAllControlsExcept(params Control[] exceptions)
+        {
+            rtbDef.Visible = exceptions.Contains(rtbDef);
+
+            buttAdd.Visible = exceptions.Contains(buttAdd);
+            buttSearch.Visible = exceptions.Contains(buttSearch);
+            buttGoogle.Visible = exceptions.Contains(buttGoogle);
+            buttSave.Visible = exceptions.Contains(buttSave);
+            buttUpdateDefinition.Visible = exceptions.Contains(buttUpdateDefinition);
         }
 
         string getSelection()
@@ -415,6 +427,9 @@ namespace Wordy
             if (File.Exists(iconDir + "search.png"))
                 buttSearch.Image = Image.FromFile(iconDir + "search.png");
 
+            if (File.Exists(iconDir + "google.png"))
+                buttGoogle.Image = Image.FromFile(iconDir + "google.png");
+
             if (File.Exists(iconDir + "save.png"))
                 buttSave.Image = Image.FromFile(iconDir + "save.png");
 
@@ -455,7 +470,7 @@ namespace Wordy
                 searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
             }
             else
-                translator = new Translator(main.Languages[main.Profile], "en", doneEvent);
+                translator = new Translator(main.Languages[main.Profile], "en", doneEvent, main.prefs);
         }
 
         private void formReading_Resize(object sender, EventArgs e)
@@ -524,11 +539,7 @@ namespace Wordy
         {
             if (rtbText.Text == "Paste your text here..." || rtbText.SelectionLength == 0 || string.IsNullOrWhiteSpace(rtbText.SelectedText))
             {
-                rtbDef.Visible = false;
-                buttAdd.Visible = false;
-                buttSearch.Visible = false;
-                buttSave.Visible = false;
-                buttUpdateDefinition.Visible = false;
+                hideAllControlsExcept();
                 return;
             }
 
@@ -547,22 +558,13 @@ namespace Wordy
                     rtbDef.Enabled = false;
                     setPositionNextToPointer(rtbDef);
 
-                    rtbDef.Visible = true;
-                    buttAdd.Visible = false;
-                    buttSearch.Visible = false;
-                    buttSave.Visible = false;
-                    buttUpdateDefinition.Visible = false;
+                    hideAllControlsExcept(rtbDef);
                 }
                 else if (newWords.Contains(selection, StringComparer.OrdinalIgnoreCase))
                 {
                     //word-to-be-added
                     setPositionNextToPointer(buttSearch);
-
-                    rtbDef.Visible = false;
-                    buttAdd.Visible = false;
-                    buttSearch.Visible = true;
-                    buttSave.Visible = false;
-                    buttUpdateDefinition.Visible = false;
+                    hideAllControlsExcept(buttSearch);
                 }
                 else if (searchedWords.Contains(selection, StringComparer.OrdinalIgnoreCase))
                 {
@@ -575,20 +577,13 @@ namespace Wordy
                     buttSave.Top = Math.Max(rtbDef.Top + rtbDef.Height - buttSave.Height, rtbDef.Top);
                     buttSave.Left = rtbDef.Left + rtbDef.Width + 6;
 
-                    rtbDef.Visible = true;
-                    buttAdd.Visible = false;
-                    buttSearch.Visible = false;
-                    buttSave.Visible = true;
-                    buttUpdateDefinition.Visible = false;
+                    hideAllControlsExcept(rtbDef, buttSave);
                 }
                 else if (notFoundWords.Contains(selection, StringComparer.OrdinalIgnoreCase))
                 {
                     //nothing found for this word
-                    rtbDef.Visible = false;
-                    buttAdd.Visible = false;
-                    buttSearch.Visible = false;
-                    buttSave.Visible = false;
-                    buttUpdateDefinition.Visible = false;
+                    setPositionNextToPointer(buttGoogle);
+                    hideAllControlsExcept(buttGoogle);
                 }
                 else
                 {
@@ -598,21 +593,11 @@ namespace Wordy
                     buttSearch.Top = buttAdd.Top;
                     buttSearch.Left = buttAdd.Left + 38;
 
-                    rtbDef.Visible = false;
-                    buttAdd.Visible = true;
-                    buttSearch.Visible = true;
-                    buttSave.Visible = false;
-                    buttUpdateDefinition.Visible = false;
+                    hideAllControlsExcept(buttAdd, buttSearch);
                 }
             }
             else
-            {
-                rtbDef.Visible = false;
-                buttAdd.Visible = false;
-                buttSearch.Visible = false;
-                buttSave.Visible = false;
-                buttUpdateDefinition.Visible = false;
-            }
+                hideAllControlsExcept();
         }
 
         private void rtbText_VScroll(object sender, EventArgs e)
@@ -634,6 +619,12 @@ namespace Wordy
                 buttUpdateDefinition.Top += vertChange;
 
             rtbTextVScroll = currVScroll;
+        }
+
+        private void rtbDef_Click(object sender, EventArgs e)
+        {
+            if (rtbDef.Text == "Enter new definition...")
+                rtbDef.SelectAll();
         }
 
         private void rtbDef_TextChanged(object sender, EventArgs e)
@@ -682,9 +673,39 @@ namespace Wordy
             buttSearch.Visible = false;
         }
 
+        private void buttGoogle_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://translate.google.com/#" + main.Languages[main.Profile] + "/en/" + getSelection());
+
+            rtbDef.Enabled = true;
+            rtbDef.Text = "Enter new definition...";
+
+            rtbDef.Location = buttGoogle.Location;
+            buttUpdateDefinition.Top = Math.Max(rtbDef.Top + rtbDef.Height - buttSave.Height, rtbDef.Top);
+            buttUpdateDefinition.Left = rtbDef.Left + rtbDef.Width + 6;
+
+            hideAllControlsExcept(rtbDef, buttUpdateDefinition);
+        }
+
         private void buttUpdateDefinition_Click(object sender, EventArgs e)
         {
-            newDefs[getSelection()].Parse(rtbDef.Text, false);
+            string word = getSelection();
+
+            if (newDefs.ContainsKey(word))
+                newDefs[word].Parse(rtbDef.Text, false);
+            else if (rtbDef.Text != "Enter new definition...")
+            {
+                //user adding definition found via Google
+                notFoundWords.Remove(notFoundWords.Find(w => w.ToLower() == word.ToLower()));
+
+                searchedWords.Add(word);
+                newDefs.Add(word, new Definition(rtbDef.Text, true));
+                synonyms.Add(word, "");
+                rhymes.Add(word, "");
+
+                colorizeRtbText();
+            }
+
             buttUpdateDefinition.Visible = false;
         }
 

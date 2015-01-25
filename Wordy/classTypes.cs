@@ -656,8 +656,8 @@ namespace Wordy
 
     public class Preferences
     {
-        public DateTime LastFeedCheck;
-        public string NewWordsPath;
+        public DateTime LastFeedCheck, TranslationTokenExpires;
+        public string NewWordsPath, TranslationHeaderValue;
         public bool AutoVisuals, NewWotDs, PlaySounds;
 
 
@@ -675,6 +675,17 @@ namespace Wordy
             else
                 PlaySounds = false;
 
+            //new preferences (as of v1.2)
+            if (!fRdr.EndOfStream)
+                TranslationHeaderValue = fRdr.ReadLine();
+            else
+                TranslationHeaderValue = "";
+
+            if (!fRdr.EndOfStream)
+                TranslationTokenExpires = DateTime.Parse(fRdr.ReadLine());
+            else
+                TranslationTokenExpires = DateTime.Now;
+
             fRdr.Close();
         }
 
@@ -686,6 +697,8 @@ namespace Wordy
             fWrtr.WriteLine(NewWotDs.ToString());
             fWrtr.WriteLine(NewWordsPath);
             fWrtr.WriteLine(PlaySounds);
+            fWrtr.WriteLine(TranslationHeaderValue);
+            fWrtr.WriteLine(Misc.ToUniversalString(TranslationTokenExpires));
             fWrtr.Close();
         }
     }

@@ -14,23 +14,36 @@ namespace Wordy
         const string clientID = "Wordy";
         const string clientSecret = "GXaFJEyzQC5uymFIq0QhQDMUjzmtDShMjef+AbHknpU=";
 
+        Preferences prefs;
         BackgroundWorker searchWordWorker;
         Action<string, string> doneEvent;
+        DateTime tokenExpires;
         string headerValue, fromLanguage, toLanguage;
 
 
-        public Translator(string fromLanguage, string toLanguage, Action<string, string> doneEvent)
+        public Translator(string fromLanguage, string toLanguage, Action<string, string> doneEvent, Preferences prefs)
         {
             this.fromLanguage = fromLanguage;
             this.toLanguage = toLanguage;
             this.doneEvent = doneEvent;
+            this.prefs = prefs;
 
             //prepare worker
             searchWordWorker = new BackgroundWorker();
             searchWordWorker.DoWork += new DoWorkEventHandler(searchWordWorker_DoWork);
             searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
 
-            //get access token
+            if (prefs.TranslationTokenExpires > DateTime.Now)
+            {
+                this.headerValue = prefs.TranslationHeaderValue;
+                this.tokenExpires = prefs.TranslationTokenExpires;
+            }
+            else
+                getAccessToken();
+        }
+
+        void getAccessToken()
+        {
             string strTranslatorAccessURI = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
 
             String strRequestDetails = string.Format("grant_type=client_credentials&client_id={0}&client_secret={1}&scope=http://api.microsofttranslator.com", HttpUtility.UrlEncode(clientID), HttpUtility.UrlEncode(clientSecret));
@@ -56,13 +69,30 @@ namespace Wordy
             reader.Close();
             response.Close();
 
-            int lb = content.IndexOf("\"access_token\":\"") + 16;
-            int ub = content.IndexOf('"', lb);
-            headerValue = "Bearer " + content.Substring(lb, ub - lb);
+            headerValue = "Bearer " + getPropertyValue(content, "access_token");
+            tokenExpires = DateTime.Now.AddSeconds(double.Parse(getPropertyValue(content, "expires_in")));
+
+            //save token
+            prefs.TranslationHeaderValue = headerValue;
+            prefs.TranslationTokenExpires = tokenExpires;
+            prefs.Save();
+        }
+
+        string getPropertyValue(string response, string property)
+        {
+            string propertyTag = "\"" + property + "\":\"";
+
+            int lb = response.IndexOf(propertyTag) + propertyTag.Length;
+            int ub = response.IndexOf('"', lb);
+
+            return response.Substring(lb, ub - lb);
         }
 
         public void Translate(string txtToTranslate)
         {
+            if (tokenExpires < DateTime.Now)
+                getAccessToken();
+
             searchWordWorker.RunWorkerAsync(txtToTranslate);
         }
 
