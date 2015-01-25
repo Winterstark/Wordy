@@ -53,6 +53,7 @@
             this.rtbText.Click += new System.EventHandler(this.rtbText_Click);
             this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
             this.rtbText.Enter += new System.EventHandler(this.rtbText_Enter);
+            this.rtbText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtbText_KeyDown);
             // 
             // rtbDef
             // 
@@ -66,6 +67,7 @@
             this.rtbDef.Visible = false;
             this.rtbDef.Click += new System.EventHandler(this.rtbDef_Click);
             this.rtbDef.TextChanged += new System.EventHandler(this.rtbDef_TextChanged);
+            this.rtbDef.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtbDef_KeyDown);
             // 
             // buttSearch
             // 

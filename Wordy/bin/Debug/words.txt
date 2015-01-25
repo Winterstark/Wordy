@@ -21532,3 +21532,23 @@ diameters, hexameters, janitors, managers, travellers, travelers, capacitors, ca
 False
 </entry>
 
+<entry>
+drake
+[defs]
+(n.) A male duck.::False
+(n.) A mayfly used as fishing bait. Also called drake fly.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+ducks and drakes, sheldrake, drake fly, dragon, to make ducks and drakes, Drake on Wikipedia.Wikipedia, full admiral, navigator, duck, admiral, 
+break, brake, lake, rake, flake, lakh, slake, earache, make, take, 
+2015-01-25 22:52
+0001-01-01 00:00
+2015-01-25 22:52
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

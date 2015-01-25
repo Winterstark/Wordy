@@ -404,6 +404,26 @@ namespace Wordy
             }
         }
 
+        bool performHotkey(KeyEventArgs e)
+        {
+            bool hotkeyPerformed = true;
+
+            if (buttAdd.Visible && e.Control && e.KeyCode == Keys.A)
+                buttAdd.PerformClick();
+            else if (buttSearch.Visible && e.Control && e.KeyCode == Keys.F)
+                buttSearch.PerformClick();
+            else if (buttGoogle.Visible && e.Control && e.KeyCode == Keys.G)
+                buttGoogle.PerformClick();
+            else if (buttUpdateDefinition.Visible && e.Control && e.KeyCode == Keys.D)
+                buttUpdateDefinition.PerformClick();
+            else if (buttSave.Visible && e.Control && e.KeyCode == Keys.S)
+                buttSave.PerformClick();
+            else
+                hotkeyPerformed = false;
+
+            return hotkeyPerformed;
+        }
+
 
         public formReading()
         {
@@ -600,6 +620,12 @@ namespace Wordy
                 hideAllControlsExcept();
         }
 
+        private void rtbText_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (performHotkey(e))
+                e.SuppressKeyPress = true;
+        }
+
         private void rtbText_VScroll(object sender, EventArgs e)
         {
             int currVScroll = getVScroll(rtbText);
@@ -625,6 +651,12 @@ namespace Wordy
         {
             if (rtbDef.Text == "Enter new definition...")
                 rtbDef.SelectAll();
+        }
+
+        private void rtbDef_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (performHotkey(e))
+                e.SuppressKeyPress = true;
         }
 
         private void rtbDef_TextChanged(object sender, EventArgs e)
@@ -675,7 +707,10 @@ namespace Wordy
 
         private void buttGoogle_Click(object sender, EventArgs e)
         {
-            Process.Start("https://translate.google.com/#" + main.Languages[main.Profile] + "/en/" + getSelection());
+            if (main.Profile != "English")
+                Process.Start("https://translate.google.com/#" + main.Languages[main.Profile] + "/en/" + getSelection());
+            else
+                Process.Start("https://www.google.com/search?q=" + getSelection());
 
             rtbDef.Enabled = true;
             rtbDef.Text = "Enter new definition...";
