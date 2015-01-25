@@ -3718,13 +3718,13 @@ warn, foresee, prevised, previses, prevising, know,
 pressurize, devise, revise, defies, italicize, televise, size, tries, advise, prize, 
 2013-02-22 18:03
 0001-01-01 00:00
-2014-09-04 11:02
+2015-01-25 21:42
 2014-11-13 11:02
-7
+4
 14
-10
+11
 9
-True
+False
 </entry>
 
 <entry>
@@ -6909,13 +6909,13 @@ churl, cumberland, cord-wood, bauxite, chinaware, signari, idlesse, pitchblende,
 
 2013-04-29 15:35
 0001-01-01 00:00
-2014-10-04 14:40
+2015-01-25 21:42
 2014-11-15 14:40
-7
+2
 16
-14
+15
 13
-True
+False
 </entry>
 
 <entry>
@@ -7685,20 +7685,20 @@ True
 <entry>
 obnubilate
 [defs]
-(v.) To obscure, to shadow.::True
-(v.) To make cloudy.::True
+(v.) To obscure, to shadow.::False
+(v.) To make cloudy.::False
 [/defs]
 muddy, overshadow, cloud, obscure, obnubilating, hide, change, modify, conceal, alter, 
 mutilate, underrate, communicate, subordinate, stimulate, accumulate, postulate, predicate, congratulate, emulate, 
 2013-08-19 16:56
 0001-01-01 00:00
-2014-11-06 14:19
+2015-01-25 21:42
 2014-11-20 14:19
-7
+1
 11
-13
+14
 11
-True
+False
 </entry>
 
 <entry>
@@ -8844,20 +8844,20 @@ True
 <entry>
 importune
 [defs]
-(v.) to urge or beg with troublesome persistence::True
-(v.) annoy, trouble::True
+(v.) to urge or beg with troublesome persistence::False
+(v.) annoy, trouble::False
 "A coalition of town residents, many of them cycling enthusiasts, importuned the mayor to approve funding for the construction of a new bike trail. "::False
 [/defs]
 besiege, importuning, importuned, persistent, urge, urgent, troublesome, inopportune, require, import, 
 inopportune, platoon, opportune, baboon, impugn, afternoon, immune, balloon, buffoon, pontoon, 
 2013-09-19 12:52
 0001-01-01 00:00
-2014-09-11 14:23
-2014-11-13 14:23
+2015-01-25 21:42
+2015-04-05 21:42
 7
 13
+14
 13
-12
 True
 </entry>
 
@@ -9441,13 +9441,13 @@ paternity, authorship, restoration, Renaissance, repair, renovation, renewal, co
 inspiration, installation, expiration, information, imagination, exploration, indication, inflation, invitation, restoration, 
 2013-09-30 15:06
 0001-01-01 00:00
-2014-11-03 13:59
+2015-01-25 21:42
 2015-01-19 13:59
-7
+4
 6
+11
 10
-10
-True
+False
 </entry>
 
 <entry>
@@ -13824,13 +13824,13 @@ ballyhooing, ballyhooed, ballyhoos, advertize, advertise, packaging, publicise, 
 review, pursue, bamboo, taboo, jusqu, piu, tattoo, redo, honeydew, bugaboo, 
 2014-02-06 13:33
 0001-01-01 00:00
-2014-11-01 16:16
+2015-01-25 21:42
 2015-01-03 16:16
+2
 7
-7
+9
 8
-8
-True
+False
 </entry>
 
 <entry>

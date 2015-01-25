@@ -479,44 +479,7 @@ namespace Wordy
                                 resetLearningPhase = 5;
                                 break;
                             case 4: // type word for example sentence
-                                lblSynonyms.Text = "What word completes this sentence:";
-                                mtbTestWord.Text = "";
-                                mtbTestWord.Top = 17;
-
-                                buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
-                                buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
-                                buttSkip.Top = buttFinished.Top;
-
-                                buttAnotherExample.Visible = true;
-                                buttFinished.Visible = true;
-                                buttSkip.Visible = true;
-
-                                //reveal first letter and vowels
-                                mask = createMask();
-                                offset = 0;
-
-                                for (int i = 1; i < testWord.ToString().Length; i++)
-                                {
-                                    offset += mask[i + offset - 1] == '\\' ? 1 : 0;
-
-                                    if (testWord.ToString()[i] == 'a' || testWord.ToString()[i] == 'e' || testWord.ToString()[i] == 'i' || testWord.ToString()[i] == 'o' || testWord.ToString()[i] == 'u' || testWord.ToString()[i] == 'y')
-                                    {
-                                        mask = mask.Remove(i + offset, 1);
-                                        mask = mask.Insert(i + offset, convToLiterals(testWord.ToString().Substring(i, 1)));
-                                    }
-                                }
-
-                                mtbTestWord.Mask = mask;
-
-                                lblWord.Visible = false;
-                                lblDef.Visible = true;
-                                mtbTestWord.Visible = true;
-                                panelDef.Visible = true;
-
-                                mtbTestWord.Focus();
-                                mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
-
-                                resetLearningPhase = 2;
+                                prepareQuestionWithExampleSentences();
                                 break;
                             case 5: // unscramble letters
                                 lblWord.Text = "";
@@ -587,7 +550,7 @@ namespace Wordy
                         //non-English words
                         int percent = rand.Next(100);
 
-                        percent = 0;
+                        percent = 81;
                         if (percent <= 15)
                             prepareNonEnglishQuestion(1);
                         else if (percent <= 30)
@@ -599,7 +562,7 @@ namespace Wordy
                         else
                         {
                             if (getExampleSentences())
-                                questionType = 4;
+                                prepareQuestionWithExampleSentences();
                             else
                                 prepareNonEnglishQuestion(rand.Next(4) + 1);
                         }
@@ -651,6 +614,48 @@ namespace Wordy
             {
                 return false;
             }
+        }
+
+        void prepareQuestionWithExampleSentences()
+        {
+            lblSynonyms.Text = "What word completes this sentence:";
+            mtbTestWord.Text = "";
+            mtbTestWord.Top = 17;
+
+            buttAnotherExample.Top = lblDef.Top + lblDef.Height + 16;
+            buttFinished.Top = buttAnotherExample.Top + buttAnotherExample.Height + 8;
+            buttSkip.Top = buttFinished.Top;
+
+            buttAnotherExample.Visible = true;
+            buttFinished.Visible = true;
+            buttSkip.Visible = true;
+
+            //reveal first letter and vowels
+            string mask = createMask();
+            int offset = 0;
+
+            for (int i = 1; i < testWord.ToString().Length; i++)
+            {
+                offset += mask[i + offset - 1] == '\\' ? 1 : 0;
+
+                if (testWord.ToString()[i] == 'a' || testWord.ToString()[i] == 'e' || testWord.ToString()[i] == 'i' || testWord.ToString()[i] == 'o' || testWord.ToString()[i] == 'u' || testWord.ToString()[i] == 'y')
+                {
+                    mask = mask.Remove(i + offset, 1);
+                    mask = mask.Insert(i + offset, convToLiterals(testWord.ToString().Substring(i, 1)));
+                }
+            }
+
+            mtbTestWord.Mask = mask;
+
+            lblWord.Visible = false;
+            lblDef.Visible = true;
+            mtbTestWord.Visible = true;
+            panelDef.Visible = true;
+
+            mtbTestWord.Focus();
+            mtbTestWord.Tag = true; //indicates mtbTestWord is used to read the answer
+
+            resetLearningPhase = 2;
         }
 
         void prepareNonEnglishQuestion(int questionType)
@@ -963,7 +968,7 @@ namespace Wordy
                     else
                         answerGiven = textTestWord.Text;
 
-                    if (isTypo(testWord.ToString(), answerGiven))
+                    if (isTypo(getCorrectAnswer(), answerGiven))
                     {
                         acceptAnswer();
                         success = true;
@@ -1364,10 +1369,7 @@ namespace Wordy
         bool checkEnteredWord(string word)
         {
             word = word.ToLower();
-            string correctAnswer = testWord.ToString().ToLower();
-
-            if (lblTestWordDef.Text.Contains("What does this word mean?"))
-                correctAnswer = testWord.GetDefinition();
+            string correctAnswer = getCorrectAnswer();
 
             bool success = word == correctAnswer;
 
@@ -1397,6 +1399,15 @@ namespace Wordy
             }
 
             return success;
+        }
+
+        string getCorrectAnswer()
+        {
+            string correctAnswer = testWord.ToString().ToLower();
+            if (lblTestWordDef.Text.Contains("What does this word mean?"))
+                correctAnswer = testWord.GetDefinition();
+
+            return correctAnswer;
         }
 
         void showResults(bool betweenQuestions)
