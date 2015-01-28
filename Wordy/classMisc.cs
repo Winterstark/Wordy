@@ -12,6 +12,9 @@ namespace Wordy
 {
     class Misc
     {
+        public const int MOUSE_UP_CODE = -8472;
+
+
         public static List<string> LoadCoreWords()
         {
             StreamReader coreFile = new StreamReader("corewords.txt");

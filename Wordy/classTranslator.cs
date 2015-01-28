@@ -9,7 +9,7 @@ using System.IO;
 
 namespace Wordy
 {
-    class Translator
+    public class Translator
     {
         const string clientID = "Wordy";
         const string clientSecret = "GXaFJEyzQC5uymFIq0QhQDMUjzmtDShMjef+AbHknpU=";

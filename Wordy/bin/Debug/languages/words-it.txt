@@ -214,3 +214,21 @@ cornmeal mush::False
 False
 </entry>
 
+<entry>
+la fronte
+[defs]
+the forehead::False
+[/defs]
+
+
+2015-01-28 20:47
+0001-01-01 00:00
+2015-01-28 20:47
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

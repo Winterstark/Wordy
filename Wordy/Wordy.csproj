@@ -127,6 +127,12 @@
     <Compile Include="formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="formPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPopup.Designer.cs">
+      <DependentUpon>formPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="formReading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserActivityHook.cs" />
     <EmbeddedResource Include="formAbout.resx">
       <DependentUpon>formAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPopup.resx">
+      <DependentUpon>formPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formReading.resx">
       <DependentUpon>formReading.cs</DependentUpon>

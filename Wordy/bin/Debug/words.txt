@@ -21552,3 +21552,239 @@ break, brake, lake, rake, flake, lakh, slake, earache, make, take,
 False
 </entry>
 
+<entry>
+gregorian
+[defs]
+(adj.) Pertaining to, or originated by, some person named Gregory, especially one of the popes of that name.::False
+14234 23423 423::False
+(Source) (fromof the Collaborative International Dictionary of English)::False
+[/defs]
+gregorian chant, gregorian epact, gregorian sacramentary, gregorian telescope, gregorian epoch, gregorian year, gregorian staff, gregorian mode, gregorian music, gregorian code, 
+praetorian, historian, saurian, stentorian, valedictorian, salutatorian, auditorium, moratorium, crematorium, emporium, 
+2015-01-28 14:48
+0001-01-01 00:00
+2015-01-28 14:48
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+malady
+[defs]
+(n.) A disease, a disorder, or an ailment.::False
+(n.) An unwholesome condition "the malady of discontent. "::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+toxemia, hypermotility, ague, toxaemia of pregnancy, gas embolism, disease, gastrointestinal disorder, aeroembolism, amyloidosis, toxaemia, 
+analogy, morality, reality, duality, finality, tonality, mortality, locality, neutrality, vitality, 
+2015-01-28 14:48
+0001-01-01 00:00
+2015-01-28 14:48
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+Etymology
+[defs]
+(n.) The branch of linguistics that deals with etymologies.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+lexicostatistics, folk etymology, fake etymology, etymological, false etymology, popular etymology, pedigree, derivation, inflection, 
+entomology, pathology, chronology, ethnology, ophthalmology, penology, technology, ideology, biology, methodology, 
+2015-01-28 15:36
+0001-01-01 00:00
+2015-01-28 15:36
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+Taxonomy
+[defs]
+(n.) The classification of organisms in an ordered system that indicates natural relationships.::False
+(n.) The science, laws, or principles of classification; systematics.::False
+(n.) Division into ordered groups or categories: "Scholars have been laboring to develop a taxonomy of young killers"  ( Aric Press). ::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+cladistics, cladistic analysis, folk taxonomy, scientific taxonomy, systematics, alpha taxonomy, categorisation, compartmentalization, compartmentalisation, assortment, 
+actually, passionately, nationally, rationally, diagonally, maximally, casually, capitally, fashionably, irrationally, 
+2015-01-28 15:44
+0001-01-01 00:00
+2015-01-28 15:44
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+Origin
+[defs]
+(n.) The point at which something comes into existence or from which it derives or is derived.::False
+(n.) Ancestry: "We cannot escape our origins, however hard we try"  ( James Baldwin). ::False
+(n.) The fact of originating; rise or derivation "The rumor had its origin in an impulsive remark. "::False
+(n.) Anatomy   The point of attachment of a muscle that remains relatively fixed during contraction.::False
+(n.) Mathematics   The point of intersection of coordinate axes, as in the Cartesian coordinate system.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+home, family line, cause, emanation, jumping-off place, spring, side, rise, family, overture, 
+porcelain, laudanum, quarrelsome, puritan, oestrogen, alderman, doormen, foreperson, nobleman, doberman, 
+2015-01-28 15:54
+0001-01-01 00:00
+2015-01-28 15:54
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+type
+[defs]
+(n.) A number of people or things having in common traits or characteristics that distinguish them as a group or class.::False
+(n.) The general character or structure held in common by a number of people or things considered as a group or class.::False
+(n.) A person or thing having the features of a group or class.::False
+(n.) An example or a model having the ideal features of a group or class; an embodiment: "He was the perfect type of a military dandy"  ( Joyce Cary). ::False
+(n.) A person regarded as exemplifying a particular profession, rank, or social group "a group of executive types; a restaurant frequented by tourist types. "::False
+(n.) A figure, representation, or ; typewrite.::False
+(v.-t.) To determine the antigenic characteristics of (a blood or tissue sample).::False
+(v.-t.) To typecast.::False
+(v.-t.) To represent or typify.::False
+(v.-t.) To prefigure.::False
+(v.-i.) To write with a typewriter; typewrite.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+breed, edition, face, double-space, triple-space, font, variation, kern, space, variant, 
+pipe, ripe, wipe, hype, stripe, snipe, unripe, archetype, windpipe, prototype, 
+2015-01-28 16:02
+0001-01-01 00:00
+2015-01-28 16:02
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+specially
+[defs]
+(adv.) For a special purpose.::False
+(adv.) extremely::False
+(adv.) in particular::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+particularly, especially, expressly, express, 
+heavily, steadily, specialty, verily, therapy, essentially, readily, penalty, potentially, fidelity, 
+2015-01-28 20:19
+0001-01-01 00:00
+2015-01-28 20:19
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+WriteLine
+[defs]
+sadfasdfasf::False
+[/defs]
+
+
+2015-01-28 20:24
+0001-01-01 00:00
+2015-01-28 20:24
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+ExecuteAsync
+[defs]
+asdfasdfasf::False
+[/defs]
+
+
+2015-01-28 20:29
+0001-01-01 00:00
+2015-01-28 20:29
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+fantasy
+[defs]
+(n.) The creative imagination; unrestrained fancy. (See Synonyms at imagination).::False
+(n.) Something, such as an invention, that is a creation of the fancy.::False
+(n.) A capricious or fantastic idea; a conceit.::False
+(n.) Fiction characterized by highly fanciful or supernatural elements.::False
+(n.) An example of such fiction.::False
+(n.) An imagined event or sequence of mental images, such as a daydream, usually fulfilling a wish or psychological need.::False
+(n.) An unrealistic or improbable supposition.::False
+(n.) Music   See fantasia.::False
+(n.) A coin issued especially by a questionable authority and not intended for use as currency.::False
+(n.) Obsolete   A hallucination.::False
+(v.-t.) To imagine; visualize.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+bubble, fairyland, phantasy world, dream, fantasy world, fantasy life, will-o'-the-wisp, ignis fatuus, phantasy life, science fiction, 
+vanity, fallacy, sanity, scantily, satiny, family, happily, canopy, chastity, handsomely, 
+2015-01-28 21:09
+0001-01-01 00:00
+2015-01-28 21:09
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+fancasts
+[defs]
+asdfasdf::False
+[/defs]
+
+
+2015-01-28 21:27
+0001-01-01 00:00
+2015-01-28 21:27
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
