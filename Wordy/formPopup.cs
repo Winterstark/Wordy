@@ -39,16 +39,14 @@ namespace Wordy
                 if (this.Top + this.Height > Screen.PrimaryScreen.Bounds.Height)
                     this.Top = Math.Max(0, reading.PopupPos.Y - (int)reading.LineH - this.Height);
 
-                if (this.Left + this.Width > Screen.PrimaryScreen.Bounds.Width)
-                {
-                    int totalW = 0;
-                    foreach (Control control in controls)
-                        totalW += control.Width; //sum of controls' width
-                    if (controls.Length > 1)
-                        totalW += 6 * (controls.Length - 1); //sum of width of gaps between controls
+                int totalW = 0;
+                foreach (Control control in controls)
+                    totalW += control.Width; //sum of controls' width
+                if (controls.Length > 1)
+                    totalW += 6 * (controls.Length - 1); //sum of width of gaps between controls
 
+                if (this.Left + totalW > Screen.PrimaryScreen.Bounds.Width)
                     this.Left = Math.Max(0, Screen.PrimaryScreen.Bounds.Width - totalW);
-                }
             }
 
             //position controls
