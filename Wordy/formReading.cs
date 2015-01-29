@@ -538,7 +538,10 @@ namespace Wordy
                 timerWaitUntilCopy.Enabled = true;
             }
             else if (e.KeyCode == ALT_KEY)
+            {
                 altKey = true;
+                handled = false;
+            }
             else if (popup.buttAdd.Visible && altKey && e.KeyCode == Keys.A)
                 popup.buttAdd.PerformClick();
             else if (popup.buttSearch.Visible && altKey && e.KeyCode == Keys.F)
@@ -613,7 +616,7 @@ namespace Wordy
             timerGetClipboard.Enabled = false;
 
             //get selected text
-            Selection = Clipboard.GetText();
+            Selection = Clipboard.GetText().ToLower();
 
             //remove extra spaces
             while (Selection.Length > 0 && Selection[0] == ' ')
@@ -625,8 +628,7 @@ namespace Wordy
             //show popup based on selection
             if (Selection != "")
             {
-                string selectionLCase = Selection.ToLower();
-                Entry selectedWord = words.Find(w => w.ToString().ToLower() == selectionLCase);
+                Entry selectedWord = words.Find(w => w.ToString().ToLower() == Selection);
 
                 if (selectedWord != null)
                 {
@@ -635,8 +637,8 @@ namespace Wordy
                     popup.rtbDef.ReadOnly = true;
                     popup.SetPositionNextToPointer(popup.rtbDef);
                 }
-                else if (Selection.ToLower() == ActiveGooglingWord.ToLower())
-                    popup.SetPositionNextToPointer(popup.rtbDef, popup.buttSave, popup.buttUpdateDefinition); //word is waiting for new definition
+                else if (Selection == ActiveGooglingWord)
+                    popup.SetPositionNextToPointer(popup.rtbDef, popup.buttUpdateDefinition); //word is waiting for new definition
                 else if (newWords.Contains(Selection, StringComparer.OrdinalIgnoreCase))
                     popup.SetPositionNextToPointer(popup.buttSearch); //word-to-be-added
                 else if (searchedWords.Contains(Selection, StringComparer.OrdinalIgnoreCase))

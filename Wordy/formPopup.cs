@@ -121,6 +121,17 @@ namespace Wordy
                 buttUpdateDefinition.Image = Image.FromFile(iconDir + "pencil.png");
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         private void rtbDef_Click(object sender, EventArgs e)
         {
             reading.timerPauseBeforeHiding.Enabled = false;
@@ -200,7 +211,7 @@ namespace Wordy
             rtbDef.ReadOnly = false;
             rtbDef.Text = "Enter new definition...";
 
-            SetPositionNextToPointer(rtbDef, buttSave, buttUpdateDefinition);
+            SetPositionNextToPointer(rtbDef, buttUpdateDefinition);
         }
 
         private void buttUpdateDefinition_Click(object sender, EventArgs e)

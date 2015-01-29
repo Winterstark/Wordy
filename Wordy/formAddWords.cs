@@ -756,7 +756,7 @@ namespace Wordy
                 if (wordSearchQ.Count > 0)
                     searchWordWorker.RunWorkerAsync(wordSearchQ.Dequeue()); //call worker for first word
             }
-            else
+            else if (wordSearchQ.Count > 0)
                 translator.Translate(wordSearchQ.Dequeue());
 
             buttFindDefs.Enabled = false; //prevent user from starting a new search while a search is running

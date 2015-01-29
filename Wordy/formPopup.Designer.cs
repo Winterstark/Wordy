@@ -116,6 +116,7 @@
             this.Controls.Add(this.rtbDef);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formPopup";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Wordy";
             this.TopMost = true;

@@ -21788,3 +21788,46 @@ asdfasdf::False
 False
 </entry>
 
+<entry>
+google
+[defs]
+(n.) An internet search, such as that which is performed on the Google search engine.::False
+(n.) A match obtained by a query in the Google search engine.::False
+(v.) To search for (something) on the Internet using the Google search engine.::False
+(v.) To search for (something) on the Internet using any comprehensive search engine.::False
+(v.) To be locatable in a search of the Internet.::False
+(v.) To deliver googlies.::False
+(v.) To move as a ball in a googly.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+googlish, googles, googlebomb, googlewhack, googly, JFGI, madame linkmonger, googlie, googol, 
+bugle, frugal, ducal, buccal, crucial, cruel, dual, duel, jewel, tubal, 
+2015-01-29 10:35
+0001-01-01 00:00
+2015-01-29 10:35
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+vs.net
+[defs]
+asdfadfasd fasd f::False
+[/defs]
+
+
+2015-01-29 11:29
+0001-01-01 00:00
+2015-01-29 11:29
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

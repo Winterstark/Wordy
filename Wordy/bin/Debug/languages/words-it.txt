@@ -232,3 +232,39 @@ the forehead::False
 False
 </entry>
 
+<entry>
+anello
+[defs]
+ring::False
+[/defs]
+
+
+2015-01-29 10:55
+0001-01-01 00:00
+2015-01-29 10:55
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+cacciata
+[defs]
+expulsion::False
+[/defs]
+
+
+2015-01-29 10:57
+0001-01-01 00:00
+2015-01-29 10:57
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
