@@ -16,9 +16,12 @@ namespace Wordy
 {
     public partial class formTestRecall : Form
     {
-        #region PlaySound DLL Import
+        #region PlaySound DLL Imports
         [DllImport("WinMM.dll")]
         static extern bool PlaySound(string fname, int Mod, int flag);
+
+        [DllImport("winmm.dll")]
+        public static extern int waveOutSetVolume(IntPtr hwo, uint dwVolume);
 
         private int SND_ASYNC = 0x0001; 
         #endregion
@@ -1474,6 +1477,9 @@ namespace Wordy
             corewords = Misc.LoadCoreWords();
 
             lineHeight = lblDef.CreateGraphics().MeasureString("1", lblDef.Font).Height;
+
+            //set volume to 50%
+            waveOutSetVolume(IntPtr.Zero, 0x8888);
 
             //start testing
             noMoreWords = false;

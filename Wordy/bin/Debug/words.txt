@@ -3977,13 +3977,13 @@ xerophytic,
 ferric, steric, derrick, cleric, generic, esoteric, numeric, enteric, isomeric, turmeric, 
 2013-02-24 13:04
 0001-01-01 00:00
-2014-10-28 15:25
+2015-01-29 11:50
 2015-01-13 15:25
-7
+3
 6
+13
 12
-12
-True
+False
 </entry>
 
 <entry>
@@ -5260,10 +5260,10 @@ share, percentage, part, portion, volcanique, baie, myeloma, rocher, bassin, voi
 branch, blanch, ranch, stanch, avalanche, plant, planned, brand, bland, land, 
 2013-03-27 14:44
 0001-01-01 00:00
-2014-11-12 14:02
+2015-01-29 11:37
 2014-11-12 09:55
 2
-12
+13
 13
 11
 False
@@ -6666,13 +6666,13 @@ cornerstone, cornet, quoining, quoins, quoined, cantick-quoin, structure, keysto
 groin, join, coin, goin, loin, adjoin, enjoin, rejoin, conjoin, purloin, 
 2013-04-21 18:14
 0001-01-01 00:00
-2014-11-03 13:46
+2015-01-29 11:46
 2015-01-19 13:46
-7
+6
 15
-11
+12
 10
-True
+False
 </entry>
 
 <entry>
@@ -7291,18 +7291,18 @@ True
 <entry>
 donkey's years
 [defs]
-(n.) A long time::False
+(n.) A long time::True
 [/defs]
 ages, 
 
 2013-05-08 15:27
 0001-01-01 00:00
-2014-11-03 13:59
-2014-12-01 13:59
+2015-01-29 11:37
+2015-03-05 11:37
 7
 26
-17
-14
+18
+15
 True
 </entry>
 
@@ -13824,10 +13824,10 @@ ballyhooing, ballyhooed, ballyhoos, advertize, advertise, packaging, publicise, 
 review, pursue, bamboo, taboo, jusqu, piu, tattoo, redo, honeydew, bugaboo, 
 2014-02-06 13:33
 0001-01-01 00:00
-2015-01-25 21:42
+2015-01-29 11:46
 2015-01-03 16:16
 2
-7
+8
 9
 8
 False
@@ -15857,10 +15857,10 @@ chip, spalling, spalled, spalls, fragment, wedge-like, smoke-belching, gold-encr
 stall, small, ball, tall, pol, sprawl, thrall, bawl, appall, sepal, 
 2014-06-09 11:57
 0001-01-01 00:00
-2015-01-17 23:34
+2015-01-29 11:47
 2014-11-25 15:24
 5
-7
+8
 6
 5
 False
@@ -18698,10 +18698,10 @@ periodical, hebdomadary, periodic, hebdomadally adv, weekly, hebdomadal cycle, h
 straddle, sidesaddle, astraddle, packsaddle, saddle, paddle, unsaddle, psychobabble, fragile, prattle, 
 2014-09-22 13:24
 0001-01-01 00:00
-2015-01-24 19:23
+2015-01-29 11:50
 2014-11-18 14:35
 6
-8
+9
 3
 2
 False
@@ -20562,19 +20562,19 @@ False
 <entry>
 synecdoche
 [defs]
-(n.) A figure of speech in which a part stands for the whole or vice versa. "head count' to refer to the count of people."::True
+(n.) A figure of speech in which a part stands for the whole or vice versa. "head count' to refer to the count of people."::False
 [/defs]
 synecdochically, synecdochic, synecdochy, synecdochical, pars pro toto, Synecdoche on Wikipedia.Wikipedia, metonymy, metaphor, figure, trope, 
 crotch, scotch, watch, notch, stop, spot, forgot, facade, squad, atop, 
 2014-10-29 11:07
 0001-01-01 00:00
-2014-11-07 13:51
+2015-01-29 11:50
 2014-11-14 13:51
-7
+5
 9
+1
 0
-0
-True
+False
 </entry>
 
 <entry>
@@ -20893,10 +20893,10 @@ propagandist, propaganda, unite, non-virtuous, fruitive, scuttlebutt, biddies, s
 fop, taupe, abroad, applaud, distraught, brought, broad, defraud, overwrought, juggernaut, 
 2014-11-05 13:48
 0001-01-01 00:00
-2015-01-18 00:22
+2015-01-29 11:37
 0001-01-01 00:00
 6
-8
+9
 0
 0
 False
@@ -20969,10 +20969,10 @@ paramour,
 grunion, bunion, onion, luncheon, scullion, sudden, eruption, suction, summon, dungeon, 
 2014-11-08 14:27
 0001-01-01 00:00
-2014-11-12 13:11
+2015-01-29 11:50
 0001-01-01 00:00
-3
 4
+5
 0
 0
 False
@@ -21168,10 +21168,10 @@ caesalpinia coriaria, plagianthus regius, neem, tolu balsam tree, vangueria mada
 pre, plea, tlie, pari, prix, brie, three, free, ye, li, 
 2014-11-26 13:10
 0001-01-01 00:00
-2014-11-26 13:10
+2015-01-29 11:48
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False
@@ -21206,10 +21206,10 @@ poodle, working dog, mongrel, Vienna sausage, belgian griffon, pug, Newfoundland
 log, cog, wog, snog, dialogue, epilogue, catalogue, analog, analogue, pedagogue, 
 2014-11-26 13:11
 0001-01-01 00:00
-2015-01-18 00:22
+2015-01-29 11:50
 0001-01-01 00:00
 2
-1
+2
 0
 0
 False
@@ -21280,10 +21280,10 @@ reincarnation, Krishna, Jagannatha, jagganath, kalki, juggernaut, Rama, deificat
 star, spar, ajar, isobar, sitar, bar, par, bizarre, cigar, guitar, 
 2014-11-26 13:16
 0001-01-01 00:00
-2014-11-26 13:16
+2015-01-29 11:47
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False
@@ -21444,10 +21444,10 @@ fastidious, finickity, finickiness, fussy, ?-opioid, protrusive, unfussy, interl
 affinity, signally, villainy, sympathy, dignity, vicinity, divinity, officially, tyranny, infinity, 
 2015-01-22 15:22
 0001-01-01 00:00
-2015-01-24 19:23
+2015-01-29 11:48
 0001-01-01 00:00
 1
-1
+2
 0
 0
 False
