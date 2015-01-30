@@ -932,7 +932,7 @@ namespace Wordy
 
                 if (!testWord.archived)
                 {
-                    if (testWord.learningPhase == 6)
+                    if (testWord.learningPhase == (main.Profile == "English" ? 6 : 4))
                     {
                         if (testWord.GetRecallSuccessRate() == -1)
                             lblWord.Text += " learned!";
@@ -1004,7 +1004,7 @@ namespace Wordy
 
             totalTime += DateTime.Now - startTime; //mark time
 
-            testWord.LogTest(success, answCorrectly, resetLearningPhase);
+            testWord.LogTest(success, answCorrectly, resetLearningPhase, main.Profile == "English");
             main.SaveWords();
 
             //position pictures and other UI controls
@@ -1371,8 +1371,8 @@ namespace Wordy
 
         bool checkEnteredWord(string word)
         {
-            word = word.ToLower();
-            string correctAnswer = getCorrectAnswer();
+            word = word.ToLower().Replace("’", "'");
+            string correctAnswer = getCorrectAnswer().Replace("’", "'");
 
             bool success = word == correctAnswer;
 

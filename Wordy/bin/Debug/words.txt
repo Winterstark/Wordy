@@ -12290,10 +12290,10 @@ wheedle, stroke, kotow, truckle, toady, suck up, kowtow, soft soap, adulate, but
 brandish, outlandish, blanches, standeth, mutandis, mantis, avalanches, banish, blackish, brackish, 
 2013-12-18 12:50
 0001-01-01 00:00
-2015-01-17 23:34
+2015-01-30 14:24
 2014-11-10 13:58
-5
-15
+6
+16
 17
 13
 False
@@ -21841,6 +21841,26 @@ deaf, chef, ref, clef, abbess, death, fresh, stress, flesh, afresh,
 2015-01-29 11:34
 0001-01-01 00:00
 2015-01-29 11:34
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+remarkable
+[defs]
+(adj.) Worthy of notice.::False
+(adj.) Attracting notice as being unusual or extraordinary. (See Synonyms at noticeable).::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+significant, important, extraordinary, remarkableness, remarkably, strange, noticeable, eminent, rare, notable, 
+unremarkable, oligarchical, rechargeable, enlargeable, impossible, marginal, hierarchical, chargeable, lockable, nonchargeable, 
+2015-01-30 17:16
+0001-01-01 00:00
+2015-01-30 17:16
 0001-01-01 00:00
 1
 0

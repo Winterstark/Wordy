@@ -507,7 +507,7 @@ namespace Wordy
             synonyms = processList(FormatCommas(synList));
         }
 
-        public string GetInfo()
+        public string GetInfo(bool english)
         {
             string info = "Added on: " + created.ToString("d. MMMM yyyy.");
 
@@ -531,7 +531,7 @@ namespace Wordy
             info += Environment.NewLine + "Next test on: " + nextTestUnlearned.ToString("d. MMMM yyyy.");
 
             if (archived)
-                info += Environment.NewLine + "Word learned in " + (nStudyAttempts - 6).ToString() + " extra steps.";
+                info += Environment.NewLine + "Word learned in " + (nStudyAttempts - (english ? 6 : 4)).ToString() + " extra steps.";
             else
                 info += Environment.NewLine + "Current learning step: " + learningPhase.ToString();
 
@@ -569,7 +569,7 @@ namespace Wordy
             return nextTest;
         }
 
-        public void LogTest(bool success, Answer[] answCorrectly, int resetLearningPhase)
+        public void LogTest(bool success, Answer[] answCorrectly, int resetLearningPhase, bool english)
         {
             if (!archived)
             {
@@ -579,7 +579,7 @@ namespace Wordy
                 {
                     learningPhase++;
 
-                    if (learningPhase == 7)
+                    if (learningPhase == (english ? 7 : 5))
                     {
                         archived = true;
                         nextTest = DateTime.Now.AddDays(7);

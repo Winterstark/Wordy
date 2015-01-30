@@ -44,7 +44,7 @@ namespace Wordy
         public List<string> corewords, newWords, searchedWords, notFoundWords;
         public Graphics Gfx;
         public StringFormat MeasuringStringFormat;
-        public Point PopupPos, DblClickPos;
+        public Point DblClickPos;
         public string ActiveSearchWord, ActiveGooglingWord, Selection;
         public float LineH;
         public bool UsePrevPopupPos, MouseDownOnRtbDef;

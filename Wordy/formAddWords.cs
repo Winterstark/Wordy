@@ -597,7 +597,7 @@ namespace Wordy
             else
             {
                 //save word data
-                newDefs.Add(word, new Definition(translation, true));
+                newDefs.Add(word, new Definition(translation.ToLower(), true));
                 synonyms.Add(word, "");
                 rhymes.Add(word, "");
 

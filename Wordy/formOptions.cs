@@ -208,7 +208,7 @@ namespace Wordy
 
                 Misc.DisplayDefs(textDef, words[ind].GetDefinition(), corewords);
                 textSynonyms.Text = words[getSelWordInd()].GetSynonyms().Replace(" / ", ", ");
-                lblInfo.Text = words[ind].GetInfo();
+                lblInfo.Text = words[ind].GetInfo(main.Profile == "English");
 
                 if (File.Exists("visuals\\" + chklistWords.Text + ".jpg"))
                     lblVisualTrigger.Visible = true;
@@ -367,7 +367,7 @@ namespace Wordy
         {
             if (tabs.SelectedIndex == 2)
             {
-                if (wotds == null)
+                if (wotds == null && (main.WotdWorker == null || !main.WotdWorker.IsBusy))
                     main.LoadSubs(main.wotdWorker_RunWorkerCompleted_WotDOptions);
                 else
                     DisplaySubs();

@@ -1,67 +1,932 @@
 <entry>
-stanco
+smarriti
 [defs]
-tired::False
+lost::False
 [/defs]
 
 
-2015-01-23 15:58
-2015-01-20 16:02
-2015-01-24 23:23
-2015-01-21 23:23
-5
-0
-1
-1
-True
-</entry>
-
-<entry>
-palcoscenico
-[defs]
-stage::False
-[/defs]
-
-
-2015-01-23 15:58
-2015-01-20 16:02
-2015-01-24 23:23
-2015-02-01 23:23
-5
-0
-1
-1
-True
-</entry>
-
-<entry>
-miracolo
-[defs]
-miracle::False
-[/defs]
-
-
-2015-01-23 16:02
-2015-01-20 16:02
-2015-01-24 23:24
-2015-02-01 23:24
-5
-0
-1
-1
-True
-</entry>
-
-<entry>
-condanna
-[defs]
-sentencing::False
-[/defs]
-
-
-2015-01-23 22:58
+2015-01-25 00:19
 0001-01-01 00:00
-2015-01-24 23:24
+2015-01-30 14:03
+0001-01-01 00:00
+4
+5
+0
+0
+False
+</entry>
+
+<entry>
+armadio
+[defs]
+closet::False
+[/defs]
+
+
+2015-01-25 00:20
+0001-01-01 00:00
+2015-01-30 14:35
+2015-02-06 14:35
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+corbello
+[defs]
+basket::False
+[/defs]
+
+
+2015-01-25 00:20
+0001-01-01 00:00
+2015-01-30 14:25
+2015-02-06 14:25
+5
+5
+0
+0
+True
+</entry>
+
+<entry>
+trucioli
+[defs]
+chippings::False
+[/defs]
+
+
+2015-01-24 00:21
+0001-01-01 00:00
+2015-01-30 14:25
+0001-01-01 00:00
+4
+5
+0
+0
+False
+</entry>
+
+<entry>
+segatura
+[defs]
+sawdust::False
+[/defs]
+
+
+2015-01-25 00:21
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+dare un’occhiata
+[defs]
+take a look::False
+[/defs]
+
+
+2015-01-25 00:21
+0001-01-01 00:00
+2015-01-30 14:39
+2015-02-06 14:39
+5
+6
+0
+0
+True
+</entry>
+
+<entry>
+dunque
+[defs]
+therefore::False
+[/defs]
+
+
+2015-01-25 00:21
+0001-01-01 00:00
+2015-01-30 14:35
+2015-02-06 14:35
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+grattandosi
+[defs]
+scratching::False
+[/defs]
+
+
+2015-01-25 00:22
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+spalancata
+[defs]
+wide open::False
+[/defs]
+
+
+2015-01-25 00:27
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+mento
+[defs]
+chin::False
+[/defs]
+
+
+2015-01-25 00:28
+0001-01-01 00:00
+2015-01-30 14:09
+0001-01-01 00:00
+4
+5
+0
+0
+False
+</entry>
+
+<entry>
+mascherone
+[defs]
+mask::False
+[/defs]
+
+
+2015-01-25 00:28
+0001-01-01 00:00
+2015-01-30 14:35
+2015-02-06 14:35
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+riebbe
+[defs]
+recovered::False
+[/defs]
+
+
+2015-01-25 00:28
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+nascosto
+[defs]
+hidden::False
+[/defs]
+
+
+2015-01-25 15:01
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+4
+5
+0
+0
+False
+</entry>
+
+<entry>
+agguantò
+[defs]
+grabbed::False
+[/defs]
+
+
+2015-01-25 15:06
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+sbatacchiare
+[defs]
+to slam::False
+[/defs]
+
+
+2015-01-25 15:08
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+3
+5
+0
+0
+False
+</entry>
+
+<entry>
+arruffare
+[defs]
+ruffle::False
+[/defs]
+
+
+2015-01-25 15:09
+0001-01-01 00:00
+2015-01-30 13:58
+0001-01-01 00:00
+4
+5
+0
+0
+False
+</entry>
+
+<entry>
+burattino
+[defs]
+puppet::False
+[/defs]
+
+
+2015-01-25 18:49
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+4
+4
+0
+0
+False
+</entry>
+
+<entry>
+bussato
+[defs]
+knocked::False
+[/defs]
+
+
+2015-01-25 18:50
+0001-01-01 00:00
+2015-01-30 14:35
+2015-02-06 14:35
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+rizzarsi
+[defs]
+rises::False
+[/defs]
+
+
+2015-01-25 18:50
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+3
+4
+0
+0
+False
+</entry>
+
+<entry>
+arzillo
+[defs]
+spry::False
+[/defs]
+
+
+2015-01-25 18:51
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+3
+4
+0
+0
+False
+</entry>
+
+<entry>
+montare
+[defs]
+mount::False
+[/defs]
+
+
+2015-01-25 18:51
+0001-01-01 00:00
+2015-01-30 13:59
+0001-01-01 00:00
+3
+4
+0
+0
+False
+</entry>
+
+<entry>
+parrucca
+[defs]
+wig::False
+[/defs]
+
+
+2015-01-25 18:52
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+4
+4
+0
+0
+False
+</entry>
+
+<entry>
+polendina
+[defs]
+cornmeal mush::False
+[/defs]
+
+
+2015-01-25 20:37
+0001-01-01 00:00
+2015-01-30 14:34
+2015-02-06 14:34
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+granturco
+[defs]
+maize::False
+[/defs]
+
+
+2015-01-25 20:38
+0001-01-01 00:00
+2015-01-30 14:35
+0001-01-01 00:00
+2
+4
+1
+0
+False
+</entry>
+
+<entry>
+bizzosissimo
+[defs]
+eccentric::False
+[/defs]
+
+
+2015-01-25 20:39
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+4
+4
+0
+0
+False
+</entry>
+
+<entry>
+somigliava
+[defs]
+resembled::False
+[/defs]
+
+
+2015-01-25 20:39
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+4
+4
+0
+0
+False
+</entry>
+
+<entry>
+ginocchi
+[defs]
+knees::False
+[/defs]
+
+
+2015-01-25 20:43
+0001-01-01 00:00
+2015-01-30 14:34
+2015-02-06 14:34
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+asino
+[defs]
+ass::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+somaro
+[defs]
+donkey::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:00
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+graffi
+[defs]
+scratches::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:58
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+giubbetto
+[defs]
+vest::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+2
+3
+0
+0
+False
+</entry>
+
+<entry>
+zoppicando
+[defs]
+limping::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+scherma
+[defs]
+fencing::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+solita
+[defs]
+usual::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+bizza
+[defs]
+tantrum::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+3
+0
+0
+False
+</entry>
+
+<entry>
+voltandosi
+[defs]
+turning around::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+imbestialito
+[defs]
+furious::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:58
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+accorse
+[defs]
+noticed::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+brizzolata
+[defs]
+grizzled::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+3
+0
+0
+False
+</entry>
+
+<entry>
+rifacciamo
+[defs]
+redo::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+ripreso
+[defs]
+resumed::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+strinsero
+[defs]
+shook::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+giurarono
+[defs]
+swore::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+cagione
+[defs]
+cause::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:57
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+consegnare
+[defs]
+deliver::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:58
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+scossone
+[defs]
+jolt::False
+[/defs]
+
+
+2015-01-27 13:48
+0001-01-01 00:00
+2015-01-30 13:55
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+monelleria
+[defs]
+crossed::False
+[/defs]
+
+
+2015-01-28 14:34
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+2
+2
+0
+0
+False
+</entry>
+
+<entry>
+pigliare
+[defs]
+turn::False
+[/defs]
+
+
+2015-01-28 14:34
+0001-01-01 00:00
+2015-01-30 14:09
+0001-01-01 00:00
+2
+2
+0
+0
+False
+</entry>
+
+<entry>
+sottoscala
+[defs]
+understairs::False
+cupboard::False
+[/defs]
+
+
+2015-01-28 14:34
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+3
+2
+0
+0
+False
+</entry>
+
+<entry>
+pentola
+[defs]
+pot::False
+[/defs]
+
+
+2015-01-28 14:34
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+2
+0
+0
+False
+</entry>
+
+<entry>
+l'arnese
+[defs]
+the tool::False
+[/defs]
+
+
+2015-01-28 14:34
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+3
+2
+0
+0
+False
+</entry>
+
+<entry>
+affaticava
+[defs]
+strained himself::False
+[/defs]
+
+
+2015-01-28 23:14
+0001-01-01 00:00
+2015-01-30 13:57
 0001-01-01 00:00
 2
 1
@@ -71,15 +936,1077 @@ False
 </entry>
 
 <entry>
-barboni
+canzonarlo
 [defs]
-strays::False
+tease::False
 [/defs]
 
 
-2015-01-23 23:11
+2015-01-28 23:19
 0001-01-01 00:00
-2015-01-23 23:11
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+smetti
+[defs]
+stop::False
+[/defs]
+
+
+2015-01-28 23:20
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+impermalito
+[defs]
+angrily::False
+[/defs]
+
+
+2015-01-28 23:20
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+cacciò
+[defs]
+drove::False
+[/defs]
+
+
+2015-01-28 23:21
+0001-01-01 00:00
+2015-01-30 14:09
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+guastare
+[defs]
+marring::False
+[/defs]
+
+
+2015-01-28 23:22
+0001-01-01 00:00
+2015-01-30 14:07
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+finse
+[defs]
+he pretended::False
+[/defs]
+
+
+2015-01-28 23:22
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+ormai
+[defs]
+now::False
+[/defs]
+
+
+2015-01-28 23:56
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+aggranchite
+[defs]
+stiff::False
+[/defs]
+
+
+2015-01-28 23:58
+0001-01-01 00:00
+2015-01-30 13:57
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+lepre
+[defs]
+hare::False
+[/defs]
+
+
+2015-01-29 00:02
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+lastrico
+[defs]
+paving::False
+[/defs]
+
+
+2015-01-29 00:02
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+zoccoli
+[defs]
+clogs::False
+[/defs]
+
+
+2015-01-29 00:03
+0001-01-01 00:00
+2015-01-30 13:55
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+barbero
+[defs]
+racehorse::False
+[/defs]
+
+
+2015-01-29 00:37
+0001-01-01 00:00
+2015-01-30 13:57
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+incantata
+[defs]
+enchanted::False
+[/defs]
+
+
+2015-01-29 00:50
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+schiamazzo
+[defs]
+noise::False
+[/defs]
+
+
+2015-01-29 00:50
+0001-01-01 00:00
+2015-01-30 13:55
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+puledro
+[defs]
+foal::False
+[/defs]
+
+
+2015-01-29 00:51
+0001-01-01 00:00
+2015-01-30 13:57
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+collottola
+[defs]
+collar::False
+[/defs]
+
+
+2015-01-29 01:28
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+buttò
+[defs]
+threw::False
+[/defs]
+
+
+2015-01-29 01:29
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+intanto
+[defs]
+meanwhile::False
+[/defs]
+
+
+2015-01-29 01:29
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+dintorno
+[defs]
+surroundings::False
+[/defs]
+
+
+2015-01-29 01:29
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+capannello
+[defs]
+crowd::False
+[/defs]
+
+
+2015-01-29 01:30
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+insomma
+[defs]
+in short::False
+[/defs]
+
+
+2015-01-29 01:33
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+vitellino
+[defs]
+calf::False
+[/defs]
+
+
+2015-01-29 01:34
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+balbettava
+[defs]
+stuttered::False
+[/defs]
+
+
+2015-01-29 01:34
+0001-01-01 00:00
+2015-01-30 13:54
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+singhiozzando
+[defs]
+sobbing::False
+[/defs]
+
+
+2015-01-29 01:34
+0001-01-01 00:00
+2015-01-30 14:06
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+sciagurato
+[defs]
+wretch::False
+[/defs]
+
+
+2015-01-29 01:34
+0001-01-01 00:00
+2015-01-30 14:00
+0001-01-01 00:00
+1
+1
+0
+0
+False
+</entry>
+
+<entry>
+penato
+[defs]
+troubled us::False
+[/defs]
+
+
+2015-01-29 01:35
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+sgranchire
+[defs]
+to stretch::False
+[/defs]
+
+
+2015-01-29 10:38
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+apposta
+[defs]
+on purpose::False
+[/defs]
+
+
+2015-01-29 10:38
+0001-01-01 00:00
+2015-01-30 13:54
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+accorciare
+[defs]
+to shorten::False
+[/defs]
+
+
+2015-01-29 10:41
+0001-01-01 00:00
+2015-01-30 13:57
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+grinfie
+[defs]
+clutches::False
+[/defs]
+
+
+2015-01-29 10:45
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+siepi
+[defs]
+hedges::False
+[/defs]
+
+
+2015-01-29 10:46
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+pruni
+[defs]
+thorns::False
+[/defs]
+
+
+2015-01-29 10:47
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+tale
+[defs]
+such::False
+[/defs]
+
+
+2015-01-29 10:47
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+capretto
+[defs]
+kid::False
+[/defs]
+
+
+2015-01-29 10:47
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+inseguito
+[defs]
+chased::False
+[/defs]
+
+
+2015-01-29 10:49
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+giunto
+[defs]
+now::False
+[/defs]
+
+
+2015-01-29 10:49
+0001-01-01 00:00
+2015-01-30 14:00
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+socchiuso
+[defs]
+ajar::False
+[/defs]
+
+
+2015-01-29 10:49
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+paletto
+[defs]
+bollard::False
+[/defs]
+
+
+2015-01-29 10:50
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+follia
+[defs]
+madness::False
+[/defs]
+
+
+2015-01-29 11:13
+0001-01-01 00:00
+2015-01-30 14:00
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+pozzanghere
+[defs]
+puddles::False
+[/defs]
+
+
+2015-01-29 11:14
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+di colpo
+[defs]
+all of a sudden::False
+[/defs]
+
+
+2015-01-29 11:17
+0001-01-01 00:00
+2015-01-30 13:58
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+fretta
+[defs]
+hurry::False
+[/defs]
+
+
+2015-01-29 11:17
+0001-01-01 00:00
+2015-01-30 13:59
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+remarono
+[defs]
+rowed::False
+[/defs]
+
+
+2015-01-29 11:17
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+riva
+[defs]
+shore::False
+[/defs]
+
+
+2015-01-29 11:19
+0001-01-01 00:00
+2015-01-30 13:55
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+scoprì
+[defs]
+discovered::False
+[/defs]
+
+
+2015-01-29 11:19
+0001-01-01 00:00
+2015-01-30 13:55
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+impronte
+[defs]
+footprints::False
+[/defs]
+
+
+2015-01-29 11:19
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+1
+1
+0
+0
+False
+</entry>
+
+<entry>
+seppellire
+[defs]
+bury::False
+[/defs]
+
+
+2015-01-29 11:19
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+roventi
+[defs]
+hot::False
+[/defs]
+
+
+2015-01-29 11:21
+0001-01-01 00:00
+2015-01-30 14:03
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+scivolati
+[defs]
+slipped::False
+[/defs]
+
+
+2015-01-29 11:22
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+giunsero
+[defs]
+they came::False
+[/defs]
+
+
+2015-01-29 11:23
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+bolle
+[defs]
+bubbles::False
+[/defs]
+
+
+2015-01-29 11:24
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+tazza
+[defs]
+cup::False
+[/defs]
+
+
+2015-01-29 11:24
+0001-01-01 00:00
+2015-01-30 14:05
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+condita
+[defs]
+seasoned::False
+[/defs]
+
+
+2015-01-29 11:25
+0001-01-01 00:00
+2015-01-30 14:04
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+peloso
+[defs]
+hairy::False
+[/defs]
+
+
+2015-01-29 11:25
+0001-01-01 00:00
+2015-01-30 13:56
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+maiale
+[defs]
+pig::False
+[/defs]
+
+
+2015-01-29 14:41
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+civetta
+[defs]
+owl::False
+[/defs]
+
+
+2015-01-29 14:41
+0001-01-01 00:00
+2015-01-30 14:08
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+struzzo
+[defs]
+ostrich::False
+[/defs]
+
+
+2015-01-29 14:41
+0001-01-01 00:00
+2015-01-30 14:01
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+pipistrello
+[defs]
+bat::False
+[/defs]
+
+
+2015-01-29 14:41
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+cervo
+[defs]
+deer::False
+[/defs]
+
+
+2015-01-29 14:43
+0001-01-01 00:00
+2015-01-30 14:02
+0001-01-01 00:00
+2
+1
+0
+0
+False
+</entry>
+
+<entry>
+cucciolo
+[defs]
+puppy::False
+[/defs]
+
+
+2015-01-30 00:36
+0001-01-01 00:00
+2015-01-30 00:36
 0001-01-01 00:00
 1
 0
@@ -89,15 +2016,15 @@ False
 </entry>
 
 <entry>
-trascurati
+palude
 [defs]
-neglected::False
+swamp::False
 [/defs]
 
 
-2015-01-23 23:16
+2015-01-30 00:38
 0001-01-01 00:00
-2015-01-23 23:16
+2015-01-30 00:38
 0001-01-01 00:00
 1
 0
@@ -107,15 +2034,15 @@ False
 </entry>
 
 <entry>
-peso
+preso in giro
 [defs]
-weight::False
+teased::False
 [/defs]
 
 
-2015-01-23 23:20
+2015-01-30 00:42
 0001-01-01 00:00
-2015-01-23 23:20
+2015-01-30 00:42
 0001-01-01 00:00
 1
 0
@@ -125,15 +2052,15 @@ False
 </entry>
 
 <entry>
-tosatura
+capovolge
 [defs]
-shearing::False
+tips::False
 [/defs]
 
 
-2015-01-23 23:48
+2015-01-30 00:45
 0001-01-01 00:00
-2015-01-23 23:48
+2015-01-30 00:45
 0001-01-01 00:00
 1
 0
@@ -143,15 +2070,15 @@ False
 </entry>
 
 <entry>
-scelleratezza
+afferra
 [defs]
-villainy::False
+grab::False
 [/defs]
 
 
-2015-01-23 23:55
+2015-01-30 00:45
 0001-01-01 00:00
-2015-01-23 23:55
+2015-01-30 00:45
 0001-01-01 00:00
 1
 0
@@ -161,15 +2088,15 @@ False
 </entry>
 
 <entry>
-pericolo
+spiaccica
 [defs]
-danger::False
+swat::False
 [/defs]
 
 
-2015-01-24 11:26
+2015-01-30 00:45
 0001-01-01 00:00
-2015-01-24 11:26
+2015-01-30 00:45
 0001-01-01 00:00
 1
 0
@@ -179,15 +2106,15 @@ False
 </entry>
 
 <entry>
-piacere
+andandosene
 [defs]
-John Pleasure::False
+leaving::False
 [/defs]
 
 
-2015-01-25 17:56
+2015-01-30 00:45
 0001-01-01 00:00
-2015-01-25 17:56
+2015-01-30 00:45
 0001-01-01 00:00
 1
 0
@@ -197,15 +2124,15 @@ False
 </entry>
 
 <entry>
-Polendina
+riecheggiare
 [defs]
-cornmeal mush::False
+echo::False
 [/defs]
 
 
-2015-01-25 20:34
+2015-01-30 00:45
 0001-01-01 00:00
-2015-01-25 20:34
+2015-01-30 00:45
 0001-01-01 00:00
 1
 0
@@ -215,15 +2142,15 @@ False
 </entry>
 
 <entry>
-la fronte
+fastidio
 [defs]
-the forehead::False
+nuisance::False
 [/defs]
 
 
-2015-01-28 20:47
+2015-01-30 00:46
 0001-01-01 00:00
-2015-01-28 20:47
+2015-01-30 00:46
 0001-01-01 00:00
 1
 0
@@ -233,15 +2160,15 @@ False
 </entry>
 
 <entry>
-anello
+lucertola
 [defs]
-ring::False
+lizard::False
 [/defs]
 
 
-2015-01-29 10:55
+2015-01-30 01:07
 0001-01-01 00:00
-2015-01-29 10:55
+2015-01-30 01:07
 0001-01-01 00:00
 1
 0
@@ -251,15 +2178,339 @@ False
 </entry>
 
 <entry>
-cacciata
+ruggisce
 [defs]
-expulsion::False
+roars::False
 [/defs]
 
 
-2015-01-29 10:57
+2015-01-30 01:07
 0001-01-01 00:00
-2015-01-29 10:57
+2015-01-30 01:07
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+zuffa
+[defs]
+scuffle::False
+[/defs]
+
+
+2015-01-30 01:11
+0001-01-01 00:00
+2015-01-30 01:11
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+magari
+[defs]
+maybe::False
+[/defs]
+
+
+2015-01-30 01:12
+0001-01-01 00:00
+2015-01-30 01:12
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+avvicinati
+[defs]
+come closer::False
+[/defs]
+
+
+2015-01-30 01:16
+0001-01-01 00:00
+2015-01-30 01:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+ghigna
+[defs]
+sneers::False
+[/defs]
+
+
+2015-01-30 01:16
+0001-01-01 00:00
+2015-01-30 01:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+lotta
+[defs]
+fight::False
+[/defs]
+
+
+2015-01-30 01:16
+0001-01-01 00:00
+2015-01-30 01:16
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+imbatta
+[defs]
+encounter::False
+[/defs]
+
+
+2015-01-30 01:40
+0001-01-01 00:00
+2015-01-30 01:40
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+spuntino
+[defs]
+snack::False
+[/defs]
+
+
+2015-01-30 01:43
+0001-01-01 00:00
+2015-01-30 01:43
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+avvelenato
+[defs]
+poisoned::False
+[/defs]
+
+
+2015-01-30 01:45
+0001-01-01 00:00
+2015-01-30 01:45
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+sciocchezze
+[defs]
+nonsense::False
+[/defs]
+
+
+2015-01-30 01:45
+0001-01-01 00:00
+2015-01-30 01:45
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+geme
+[defs]
+moans::False
+[/defs]
+
+
+2015-01-30 01:50
+0001-01-01 00:00
+2015-01-30 01:50
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+imbroglione
+[defs]
+cheater::False
+[/defs]
+
+
+2015-01-30 01:52
+0001-01-01 00:00
+2015-01-30 01:52
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+regole
+[defs]
+rules::False
+[/defs]
+
+
+2015-01-30 02:02
+0001-01-01 00:00
+2015-01-30 02:02
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+infastiditi
+[defs]
+annoyed::False
+[/defs]
+
+
+2015-01-30 02:03
+0001-01-01 00:00
+2015-01-30 02:03
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+scuotendo
+[defs]
+shaking::False
+[/defs]
+
+
+2015-01-30 11:13
+0001-01-01 00:00
+2015-01-30 11:13
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+inciampò
+[defs]
+he stumbled::False
+[/defs]
+
+
+2015-01-30 11:15
+0001-01-01 00:00
+2015-01-30 11:15
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+viscido
+[defs]
+slimy::False
+[/defs]
+
+
+2015-01-30 11:15
+0001-01-01 00:00
+2015-01-30 11:15
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+traguardo
+[defs]
+finish line::False
+[/defs]
+
+
+2015-01-30 11:15
+0001-01-01 00:00
+2015-01-30 11:15
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
+<entry>
+sul volto
+[defs]
+on the face::False
+[/defs]
+
+
+2015-01-30 11:16
+0001-01-01 00:00
+2015-01-30 11:16
 0001-01-01 00:00
 1
 0

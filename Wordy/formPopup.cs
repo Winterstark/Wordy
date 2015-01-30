@@ -15,19 +15,20 @@ namespace Wordy
     {
         public formMain main;
         public formReading reading;
+        public Point PopupPos;
 
 
         public void SetPositionNextToPointer(params Control[] controls)
         {
             //position form
             if (reading.UsePrevPopupPos)
-                this.Location = reading.PopupPos;
+                this.Location = PopupPos;
             else
             {
-                Point pos = reading.DblClickPos;
-                pos.Offset(0, (int)reading.LineH);
+                PopupPos = reading.DblClickPos;
+                PopupPos.Offset(0, (int)reading.LineH);
 
-                this.Location = reading.PopupPos = pos;
+                this.Location = PopupPos;
             }
 
             //resize rtbDef & window
@@ -37,7 +38,7 @@ namespace Wordy
                 this.Height = rtbDef.Height + 6 + buttAdd.Height;
 
                 if (this.Top + this.Height > Screen.PrimaryScreen.Bounds.Height)
-                    this.Top = Math.Max(0, reading.PopupPos.Y - (int)reading.LineH - this.Height);
+                    this.Top = Math.Max(0, PopupPos.Y - (int)reading.LineH - this.Height);
 
                 int totalW = 0;
                 foreach (Control control in controls)
@@ -184,7 +185,7 @@ namespace Wordy
 
             rtbDef.Text = "Looking up word. Please wait...";
             resizeRtbDef();
-            rtbDef.Location = reading.PopupPos;
+            rtbDef.Location = PopupPos;
 
             if (main.Profile == "English")
                 reading.SearchWordWorker.RunWorkerAsync(reading.ActiveSearchWord);

@@ -27,6 +27,7 @@ namespace Wordy
         formOptions options;
         formAddLanguage addLanguage;
         public string Profile;
+        public BackgroundWorker WotdWorker;
         public bool needWotDCheck = true;
         bool checkingWotDs = false;
 
@@ -106,12 +107,12 @@ namespace Wordy
 
         public void LoadSubs(RunWorkerCompletedEventHandler wotdWorker_RunWorkerCompleted)
         {
-            BackgroundWorker wotdWorker = new BackgroundWorker();
-            wotdWorker.DoWork += new DoWorkEventHandler(wotdWorker_DoWork);
-            wotdWorker.RunWorkerCompleted += wotdWorker_RunWorkerCompleted;
+            WotdWorker = new BackgroundWorker();
+            WotdWorker.DoWork += new DoWorkEventHandler(wotdWorker_DoWork);
+            WotdWorker.RunWorkerCompleted += wotdWorker_RunWorkerCompleted;
 
             checkingWotDs = true;
-            wotdWorker.RunWorkerAsync(wotds);
+            WotdWorker.RunWorkerAsync(wotds);
         }
 
         void wotdWorker_DoWork(object sender, DoWorkEventArgs e)
