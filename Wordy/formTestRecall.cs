@@ -1376,6 +1376,15 @@ namespace Wordy
 
             bool success = word == correctAnswer;
 
+            //when testing non-English words the correctAnswer may include several lines; only one needs to match the user's answer
+            if (!success && correctAnswer.Contains(Environment.NewLine))
+                foreach (string line in correctAnswer.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                    if (line == word)
+                    {
+                        success = true;
+                        break;
+                    }
+
             //if testing recall ignore hyphen mistakes & diacritic letter mistakes
             if (!success && testWord.archived)
             {
