@@ -85,5 +85,30 @@ namespace Wordy
         {
             Process.Start("http://developer.wordnik.com/");
         }
+
+        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://msdn.microsoft.com/en-us/library/dd576287.aspx");
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://adamwhitcroft.com/batch/");
+        }
+
+        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://modernuiicons.com/");
+        }
+
+        private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://www.customicondesign.com/free-icons/flag-icon-set/flat-round-world-flag-icon-set/");
+        }
+
+        private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.freesound.org/people/Bertrof/packs/8276/");
+        }
     }
 }

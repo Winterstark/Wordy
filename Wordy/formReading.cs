@@ -93,7 +93,7 @@ namespace Wordy
             List<Tuple<int, int, Color>> knownWords = new List<Tuple<int, int, Color>>();
             string txt = rtbText.Text.ToLower();
 
-            //find learned words
+            //find unlearned words
             foreach (Entry word in words.Where(w => !w.archived))
                 checkIfTextContainsWord(txt, word.ToString(), knownWords, Color.Yellow);
 

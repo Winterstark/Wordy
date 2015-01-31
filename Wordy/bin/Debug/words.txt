@@ -21869,3 +21869,24 @@ unremarkable, oligarchical, rechargeable, enlargeable, impossible, marginal, hie
 False
 </entry>
 
+<entry>
+beguiling
+[defs]
+(v.) Present participle of beguile.::False
+(n.) A beguilement.::False
+(adj.) That beguiles or beguile.::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+seductive, dishonorable, dishonest, deluding, misleading, diverting, beguile, 
+smiling, filing, piling, styling, exiling, compiling, unsmiling, reconciling, retiring, firing, 
+2015-01-31 11:23
+0001-01-01 00:00
+2015-01-31 11:23
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+
