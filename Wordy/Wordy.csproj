@@ -100,6 +100,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classInputBox.cs" />
     <Compile Include="classMisc.cs" />
     <Compile Include="classTranslator.cs" />
     <Compile Include="classTypes.cs" />

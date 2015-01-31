@@ -497,6 +497,11 @@ namespace Wordy
             return randRhymes;
         }
 
+        public void Rename(string newWord)
+        {
+            word = newWord;
+        }
+
         public void SetDefinition(string newDef)
         {
             def.Parse(newDef, false);

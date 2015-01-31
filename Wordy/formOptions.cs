@@ -42,6 +42,25 @@ namespace Wordy
             }
         }
 
+        void renameWord()
+        {
+            if (chklistWords.SelectedIndex != -1)
+            {
+                string word = chklistWords.Text;
+                if (InputBox.Show("Rename Word", "Set new word:", ref word) == DialogResult.OK)
+                {
+                    words[getSelWordInd()].Rename(word);
+                    main.SaveWords();
+
+                    int ind = chklistWords.SelectedIndex;
+                    bool isChecked = chklistWords.GetItemChecked(ind);
+                    chklistWords.Items.RemoveAt(ind);
+                    chklistWords.Items.Insert(ind, word);
+                    chklistWords.SetItemChecked(ind, isChecked);
+                }
+            }
+        }
+
         void delSub()
         {
             if (MessageBox.Show("Are you sure you want to permanently delete subscription: " + chklistSubscriptions.Text + "?", "Delete WotD Subscription?", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.OK)
@@ -185,6 +204,7 @@ namespace Wordy
             if (chklistWords.SelectedIndex == -1)
             {
                 buttDelete.Enabled = false;
+                buttRenameWord.Enabled = false;
                 picWordnik.Enabled = false;
 
                 textDef.Text = "";
@@ -197,6 +217,7 @@ namespace Wordy
             else
             {
                 buttDelete.Enabled = true;
+                buttRenameWord.Enabled = true;
                 picWordnik.Enabled = true;
 
                 textDef.Enabled = true;
@@ -219,13 +240,25 @@ namespace Wordy
 
         private void chklistWords_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Delete)
-                delWord();
+            switch (e.KeyCode)
+            {
+                case Keys.Delete:
+                    delWord();
+                    break;
+                case Keys.F2:
+                    renameWord();
+                    break;
+            }
         }
 
         private void buttDelete_Click(object sender, EventArgs e)
         {
             delWord();
+        }
+
+        private void buttRenameWord_Click(object sender, EventArgs e)
+        {
+            renameWord();
         }
 
         private void textDef_TextChanged(object sender, EventArgs e)

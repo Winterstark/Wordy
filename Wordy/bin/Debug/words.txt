@@ -39,7 +39,7 @@ True
 </entry>
 
 <entry>
-scullery
+xxx123scullery321xxx
 [defs]
 (n.) A small room adjoining a kitchen, in which dishwashing and other kitchen chores are done.::True
 [/defs]
@@ -90,26 +90,6 @@ muttering, fluttering, sputtering, stuttering, shuddering, covering, coloring, c
 6
 14
 14
-True
-</entry>
-
-<entry>
-jauntily
-[defs]
-(adv.) In an airy, showy, or affected manner.::False
-(adv.) In a dapper or stylish manner.::False
-(adv.) In an ostentatiously self-confident manner.::False
-[/defs]
-stylishly, rakishly, jaunty, jaunt, 
-mortally, wantonly, dorsally, normally, formally, morally, orally, lawfully, paucity, thoughtfully, 
-2012-07-09 17:38
-0001-01-01 00:00
-2014-10-03 14:27
-2014-12-12 14:27
-7
-19
-18
-15
 True
 </entry>
 

@@ -31,12 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabPreferences = new System.Windows.Forms.TabPage();
+            this.checkPlaySounds = new System.Windows.Forms.CheckBox();
             this.buttUpdateOptions = new System.Windows.Forms.Button();
             this.textNewWordsPath = new System.Windows.Forms.TextBox();
             this.buttBrowse = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.checkAutoVisuals = new System.Windows.Forms.CheckBox();
             this.tabWordlist = new System.Windows.Forms.TabPage();
+            this.buttRenameWord = new System.Windows.Forms.Button();
             this.picWordnik = new System.Windows.Forms.PictureBox();
             this.textSynonyms = new System.Windows.Forms.TextBox();
             this.lblSyns = new System.Windows.Forms.Label();
@@ -65,7 +67,6 @@
             this.buttAddSub = new System.Windows.Forms.Button();
             this.chklistSubscriptions = new System.Windows.Forms.CheckedListBox();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
-            this.checkPlaySounds = new System.Windows.Forms.CheckBox();
             this.tabs.SuspendLayout();
             this.tabPreferences.SuspendLayout();
             this.tabWordlist.SuspendLayout();
@@ -101,6 +102,17 @@
             this.tabPreferences.TabIndex = 2;
             this.tabPreferences.Text = "Preferences";
             this.tabPreferences.UseVisualStyleBackColor = true;
+            // 
+            // checkPlaySounds
+            // 
+            this.checkPlaySounds.AutoSize = true;
+            this.checkPlaySounds.Location = new System.Drawing.Point(37, 107);
+            this.checkPlaySounds.Name = "checkPlaySounds";
+            this.checkPlaySounds.Size = new System.Drawing.Size(230, 17);
+            this.checkPlaySounds.TabIndex = 20;
+            this.checkPlaySounds.Text = "Play sound effects when testing word recall";
+            this.checkPlaySounds.UseVisualStyleBackColor = true;
+            this.checkPlaySounds.CheckedChanged += new System.EventHandler(this.checkPlaySounds_CheckedChanged);
             // 
             // buttUpdateOptions
             // 
@@ -151,6 +163,7 @@
             // 
             // tabWordlist
             // 
+            this.tabWordlist.Controls.Add(this.buttRenameWord);
             this.tabWordlist.Controls.Add(this.picWordnik);
             this.tabWordlist.Controls.Add(this.textSynonyms);
             this.tabWordlist.Controls.Add(this.lblSyns);
@@ -171,6 +184,17 @@
             this.tabWordlist.TabIndex = 1;
             this.tabWordlist.Text = "Word List";
             this.tabWordlist.UseVisualStyleBackColor = true;
+            // 
+            // buttRenameWord
+            // 
+            this.buttRenameWord.Enabled = false;
+            this.buttRenameWord.Location = new System.Drawing.Point(114, 362);
+            this.buttRenameWord.Name = "buttRenameWord";
+            this.buttRenameWord.Size = new System.Drawing.Size(102, 23);
+            this.buttRenameWord.TabIndex = 29;
+            this.buttRenameWord.Text = "Rename";
+            this.buttRenameWord.UseVisualStyleBackColor = true;
+            this.buttRenameWord.Click += new System.EventHandler(this.buttRenameWord_Click);
             // 
             // picWordnik
             // 
@@ -446,17 +470,6 @@
             // 
             this.openDiag.Filter = "Text files|*.txt";
             // 
-            // checkPlaySounds
-            // 
-            this.checkPlaySounds.AutoSize = true;
-            this.checkPlaySounds.Location = new System.Drawing.Point(37, 107);
-            this.checkPlaySounds.Name = "checkPlaySounds";
-            this.checkPlaySounds.Size = new System.Drawing.Size(230, 17);
-            this.checkPlaySounds.TabIndex = 20;
-            this.checkPlaySounds.Text = "Play sound effects when testing word recall";
-            this.checkPlaySounds.UseVisualStyleBackColor = true;
-            this.checkPlaySounds.CheckedChanged += new System.EventHandler(this.checkPlaySounds_CheckedChanged);
-            // 
             // formOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -522,6 +535,7 @@
         private System.Windows.Forms.PictureBox picWordnik;
         private System.Windows.Forms.Button buttUpdateOptions;
         private System.Windows.Forms.CheckBox checkPlaySounds;
+        private System.Windows.Forms.Button buttRenameWord;
 
     }
 }
