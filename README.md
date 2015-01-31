@@ -123,9 +123,7 @@ Color code:
 
 ![Screenshot: Assisted Reading](http://i.imgur.com/QaYzdlX.png)
 
-To lookup a word simply double-click it.
-
-Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
+To lookup a word simply double-click it. Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
 
 ![Add](http://i.imgur.com/C2ZsySK.png) Save this word (without looking-up) for later. You can then find it in the Add Words window. (Keyboard shortcut: ALT+A)
 
