@@ -101,6 +101,15 @@ Visuals may also be used for testing purposes.
 
 You can also use Wordy to learn words in another language. The process is the same as with English words: add them -> learn them by testing -> remember them by testing every now and then. However, since Wordnik can only be used to search for English words, Wordy uses Microsoft Translator as the lookup service for other languages. Therefore, a non-English word's "definition" will be its English translation, for example: "civetta" -> "owl". This feature is more useful for beginners in a foreign language, who only need to know the general meaning of a word.
 
+Because Microsoft Translator is much more limited than Wordnik, the learning process consists of only four steps (the "LANG" denotes the foreign language the user is studying):
+
+1. Select the correct word (LANG -> ENG)
+2. Select the correct word (ENG -> LANG)
+3. Type out the word (LANG -> ENG)
+4. Type out the word (ENG -> LANG)
+
+Testing of learned words uses the same four types of questions, with the addition of: Enter the word that fits the example sentence.
+
 To switch Wordy to another language mode use the profile selection menu at the bottom of the main menu. The switch affects every menu and option in Wordy.
 
 ![Screenshot: Language Selection](http://i.imgur.com/8N0k6GS.png)
