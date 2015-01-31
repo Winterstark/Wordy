@@ -1,7 +1,7 @@
 ﻿Wordy
 =====
 
-Wordy is a Windows program that helps users improve their vocabulary. It's primarily aimed at people who already know English and want to expand their vocabulary to include more esoteric words, but it can also be used by beginners in a non-English language who want to memorize a large quantity of words.
+Wordy is a Windows program that helps users improve their vocabulary. It is primarily aimed at people who already know English and want to expand their vocabulary to include more esoteric words, but it can also be used by beginners in a non-English language who want to memorize a large quantity of words.
 
 What sets it apart from other vocabulary-learning software?
 
@@ -99,19 +99,20 @@ Visuals may also be used for testing purposes.
 
 ### Non-English languages
 
-You can also use Wordy to learn words in another language. The process is the same as with English words: add them -> learn them by testing -> remember them by testing every now and then. However, since Wordnik can only be used to lookup English words, Wordy uses Microsoft Translator as the lookup service for other languages. Therefore, a non-English word's "definition" will be its English translation, for example: "civetta" -> "owl". This feature is more useful for beginners in a foreign language, who only need to know the general meaning of a word.
+You can also use Wordy to learn words in another language. The process is the same as with English words: add them -> learn them by testing -> remember them by testing every now and then. However, since Wordnik can only be used to search for English words, Wordy uses Microsoft Translator as the lookup service for other languages. Therefore, a non-English word's "definition" will be its English translation, for example: "civetta" -> "owl". This feature is more useful for beginners in a foreign language, who only need to know the general meaning of a word.
 
-To switch Wordy to another language mode use the profile selection menu at the bottom of the main menu. Once you switch, every menu and option in Wordy will apply to that language profile only.
+To switch Wordy to another language mode use the profile selection menu at the bottom of the main menu. The switch affects every menu and option in Wordy.
 
-[Screenshot: Language Selection](http://i.imgur.com/8N0k6GS.png)
+![Screenshot: Language Selection](http://i.imgur.com/8N0k6GS.png)
 
-Microsoft Translator, and therefore Wordy, supports the following languages: Arabic, Bulgarian, Catalan, Chinese Simplified, Chinese Traditional, Czech, Danish, Dutch, Estonian, Finnish, French, German, Greek, Haitian Creole, Hebrew, Hindi, Hmong Daw, Hungarian, Indonesian, Italian, Japanese, Klingon, Klingon (pIqaD), Korean, Latvian, Lithuanian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
+Microsoft Translator, and by extension Wordy, supports the following languages: Arabic, Bulgarian, Catalan, Chinese Simplified, Chinese Traditional, Czech, Danish, Dutch, Estonian, Finnish, French, German, Greek, Haitian Creole, Hebrew, Hindi, Hmong Daw, Hungarian, Indonesian, Italian, Japanese, Klingon, Klingon (pIqaD), Korean, Latvian, Lithuanian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
 
 ### Assisted Reading
 
-[Screenshot: Assisted Reading in Chrome](http://i.imgur.com/TaBncCT.png)
+![Screenshot: Assisted Reading in Chrome](http://i.imgur.com/TaBncCT.png)
 
-Wordy can help you read difficult texts by allowing you to quickly lookup or translate a word or phrase. This is most useful for texts in foreign languages that you are learning, or for archaic and literary English texts with many abstruse words. You can copy and paste your text into Wordy, but you can also lookup words from any other Windows application (e.g. a PDF reader or a browser). The advantage of pasting the text into Wordy is that you can see which words you have added or saved (by their color).
+Wordy can help you read difficult texts by allowing you to quickly lookup a word or phrase. This is most useful for texts in foreign languages that you are learning, or for archaic and literary English texts with many abstruse words. You can copy and paste your text into Wordy, but you can also lookup words from any other Windows application (e.g. a PDF reader or an Internet browser). The advantage of pasting the text into Wordy is that you can see which words you've added or saved (by their color).
+
 Color code:
 
 * Words saved without definitions - purple.
@@ -120,7 +121,7 @@ Color code:
 * Words already in your archive - yellow.
 * Archived words that you've already learned - green.
 
-[Screenshot: Assisted Reading](http://i.imgur.com/QaYzdlX.png)
+![Screenshot: Assisted Reading](http://i.imgur.com/QaYzdlX.png)
 
 To lookup a word simply double-click it. Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
 
@@ -130,9 +131,9 @@ To lookup a word simply double-click it. Depending on the status of the word (sh
 
 ![Update Definition](http://i.imgur.com/OgiZ5id.png) - Update the word definition with your edits.
 
-![Save](http://i.imgur.com/vVQzNTi.png) - Save the word and its definition to your archive, so you can study it later.
+![Save](http://i.imgur.com/vVQzNTi.png) - Save the word and its definition to your archive.
 
-![Google](http://i.imgur.com/OSx3K25.png) - This button only shows up if the lookup failed. Clicking it will open a google search in your default browser, or a Google Translate search if the word is not in English.
+![Google](http://i.imgur.com/OSx3K25.png) - This button shows up only if the lookup failed. Clicking it will open a google search in your default browser, or a Google Translate search if the word is not in English.
 
 ### Review words
 
