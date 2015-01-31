@@ -123,17 +123,21 @@ Color code:
 
 ![Screenshot: Assisted Reading](http://i.imgur.com/QaYzdlX.png)
 
-To lookup a word simply double-click it. Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
+To lookup a word simply double-click it.
 
-![Add](http://i.imgur.com/C2ZsySK.png) - Save this word (without looking-up) for later. You can then find it in the Add Words window.
+Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
 
-![Search](http://i.imgur.com/abRM2mL.png) - Search Wordnik (for English) or Microsoft Translator (for other languages). After the definition is displayed you can edit it.
+![Add](http://i.imgur.com/C2ZsySK.png) Save this word (without looking-up) for later. You can then find it in the Add Words window. (Keyboard shortcut: ALT+A)
 
-![Update Definition](http://i.imgur.com/OgiZ5id.png) - Update the word definition with your edits.
+![Search](http://i.imgur.com/abRM2mL.png) Search Wordnik (for English) or Microsoft Translator (for other languages). After the definition is displayed you can edit it. (ALT+F)
 
-![Save](http://i.imgur.com/vVQzNTi.png) - Save the word and its definition to your archive.
+![Update Definition](http://i.imgur.com/OgiZ5id.png) Update the word definition with your edits. (ALT+D)
 
-![Google](http://i.imgur.com/OSx3K25.png) - This button shows up only if the lookup failed. Clicking it will open a google search in your default browser, or a Google Translate search if the word is not in English.
+![Save](http://i.imgur.com/vVQzNTi.png) Save the word and its definition to your archive. (ALT+S)
+
+![Google](http://i.imgur.com/OSx3K25.png) This button shows up only if the lookup failed. Clicking it will open a google search in your default browser, or a Google Translate search if the word is not in English. (ALT+G)
+
+Tip: To select a phrase double-click the first word in it and, without releasing the button, drag the mouse until you've selected everything. You can also just select the phrase without double-clicking and then press ALT+W to bring up the popup menu.
 
 ### Review words
 
