@@ -703,8 +703,13 @@ namespace Wordy
 
                 Profile = ComboLanguage.Text;
 
-                if (Profile != "English")
+                if (Profile == "English")
+                    buttNewWotD.Visible = prefs.NewWotDs;
+                else
+                {
                     loadExtraForeignWords();
+                    buttNewWotD.Visible = false;
+                }
             }
         }
 

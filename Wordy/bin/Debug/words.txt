@@ -6889,10 +6889,10 @@ churl, cumberland, cord-wood, bauxite, chinaware, signari, idlesse, pitchblende,
 
 2013-04-29 15:35
 0001-01-01 00:00
-2015-01-25 21:42
+2015-02-01 13:23
 2014-11-15 14:40
-2
-16
+3
+17
 15
 13
 False
@@ -12270,13 +12270,13 @@ wheedle, stroke, kotow, truckle, toady, suck up, kowtow, soft soap, adulate, but
 brandish, outlandish, blanches, standeth, mutandis, mantis, avalanches, banish, blackish, brackish, 
 2013-12-18 12:50
 0001-01-01 00:00
-2015-01-30 14:24
-2014-11-10 13:58
-6
-16
+2015-02-01 13:23
+2015-02-08 13:23
+7
+17
 17
 13
-False
+True
 </entry>
 
 <entry>
@@ -17406,13 +17406,13 @@ full, beating, componenti, zh, kazoo, confezione, evento, conductorship, toutw, 
 tangent, rampant, lambent, abandoned, dampened, blanket, pageant, patent, talent, fragment, 
 2014-08-20 13:11
 0001-01-01 00:00
-2014-11-12 13:10
-2014-11-08 22:25
-6
-9
+2015-02-01 13:47
+2015-02-08 13:47
+7
+10
 4
 3
-False
+True
 </entry>
 
 <entry>
@@ -19462,10 +19462,10 @@ azoth
 loth, swath, goth, massage, awash, salve, tsars, was, cause, wash, 
 2014-10-06 13:38
 0001-01-01 00:00
-2015-01-24 19:23
+2015-02-01 13:47
 2014-11-10 13:24
-3
-17
+4
+18
 1
 0
 False
@@ -20548,10 +20548,10 @@ synecdochically, synecdochic, synecdochy, synecdochical, pars pro toto, Synecdoc
 crotch, scotch, watch, notch, stop, spot, forgot, facade, squad, atop, 
 2014-10-29 11:07
 0001-01-01 00:00
-2015-01-29 11:50
+2015-02-01 13:23
 2014-11-14 13:51
 5
-9
+10
 1
 0
 False
@@ -21019,16 +21019,16 @@ False
 <entry>
 hoyden
 [defs]
-(n.) Dated  a boisterous girl.::False
+(n.) Dated  a boisterous girl.::True
 [/defs]
 tomboy, romp, girl, young woman, missy, fille, miss, young lady, hoiden, 
 deutschen, poison, moisten, coition, besoin, cloisonne, oilcan, noisome, toilsome, oilman, 
 2014-11-10 13:55
 0001-01-01 00:00
-2015-01-18 00:22
+2015-02-01 13:22
 0001-01-01 00:00
+5
 4
-3
 0
 0
 False
@@ -21443,10 +21443,10 @@ implementations
 lamentations, imputations, indentations, improvisations, implications, interpretations, representations, plantations, emendations, imprecations, 
 2015-01-22 15:35
 0001-01-01 00:00
-2015-01-22 15:35
+2015-02-01 13:22
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
@@ -21484,10 +21484,10 @@ token,
 betokens, blowguns, slogans, potions, doses, notions, opens, motions, oceans, poses, 
 2015-01-22 15:36
 0001-01-01 00:00
-2015-01-22 15:36
+2015-02-01 13:22
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
@@ -21563,10 +21563,10 @@ toxemia, hypermotility, ague, toxaemia of pregnancy, gas embolism, disease, gast
 analogy, morality, reality, duality, finality, tonality, mortality, locality, neutrality, vitality, 
 2015-01-28 14:48
 0001-01-01 00:00
-2015-01-28 14:48
+2015-02-01 13:47
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
@@ -21655,10 +21655,10 @@ breed, edition, face, double-space, triple-space, font, variation, kern, space, 
 pipe, ripe, wipe, hype, stripe, snipe, unripe, archetype, windpipe, prototype, 
 2015-01-28 16:02
 0001-01-01 00:00
-2015-01-28 16:02
+2015-02-01 13:23
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
