@@ -1487,8 +1487,8 @@ namespace Wordy
 
             lineHeight = lblDef.CreateGraphics().MeasureString("1", lblDef.Font).Height;
 
-            //set volume to 50%
-            waveOutSetVolume(IntPtr.Zero, 0x8888);
+            //set volume to 25%
+            waveOutSetVolume(IntPtr.Zero, 0x4444);
 
             //start testing
             noMoreWords = false;
