@@ -54,9 +54,11 @@ namespace Wordy
 
                     int ind = chklistWords.SelectedIndex;
                     bool isChecked = chklistWords.GetItemChecked(ind);
+
                     chklistWords.Items.RemoveAt(ind);
                     chklistWords.Items.Insert(ind, word);
                     chklistWords.SetItemChecked(ind, isChecked);
+                    chklistWords.SelectedIndex = ind;
                 }
             }
         }

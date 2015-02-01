@@ -224,7 +224,7 @@ True
 </entry>
 
 <entry>
-burly
+32424
 [defs]
 (adj.) Heavy, strong, and muscular; husky (big and strong)::False
 [/defs]
@@ -333,9 +333,9 @@ True
 </entry>
 
 <entry>
-dishabille
+23423423424
 [defs]
-(n.) The state of being partly dressed.::True
+d being partly dressed.::True
 [/defs]
 shirtsleeves, deshabille, undress, habiliment, status, condition, judicatory, foppishness, misread, 
 distill, daffodil, still, spill, ftill, instill, instil, until, till, bill, 
