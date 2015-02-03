@@ -674,22 +674,21 @@ namespace Wordy
             NewWotDs = bool.Parse(fRdr.ReadLine());
             NewWordsPath = fRdr.ReadLine();
 
-            //new preferences (as of v1.16)
-            if (!fRdr.EndOfStream)
+            try
+            {
+                //new preferences (as of v1.16)
                 PlaySounds = bool.Parse(fRdr.ReadLine());
-            else
-                PlaySounds = false;
 
-            //new preferences (as of v1.2)
-            if (!fRdr.EndOfStream)
+                //new preferences (as of v1.2)
                 TranslationHeaderValue = fRdr.ReadLine();
-            else
-                TranslationHeaderValue = "";
-
-            if (!fRdr.EndOfStream)
                 TranslationTokenExpires = DateTime.Parse(fRdr.ReadLine());
-            else
+            }
+            catch
+            {
+                PlaySounds = true;
+                TranslationHeaderValue = "";
                 TranslationTokenExpires = DateTime.Now;
+            }
 
             fRdr.Close();
         }
