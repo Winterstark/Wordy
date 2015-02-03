@@ -1527,13 +1527,29 @@ namespace Wordy
             {
                 int num = (char)e.KeyData - 49;
 
-                if (buttPickWord1.Visible)
+                if (buttPickWord1.Visible && num >= 0 && num < 6)
                 {
                     answer(correctPick == num);
                     e.Handled = e.SuppressKeyPress = true;
                 }
                 else if (num >= 0 && num < chklistDefs.Items.Count)
                     chklistDefs.SetItemChecked(num, !chklistDefs.GetItemChecked(num));
+            }
+            else if (char.IsLetter((char)e.KeyData) && buttPickWord1.Visible)
+            {
+                //pressing Q W E is the same as pressing 4 5 6
+                switch (e.KeyData)
+                {
+                    case Keys.Q:
+                        answer(correctPick == 3);
+                        break;
+                    case Keys.W:
+                        answer(correctPick == 4);
+                        break;
+                    case Keys.E:
+                        answer(correctPick == 5);
+                        break;
+                }
             }
         }
 
