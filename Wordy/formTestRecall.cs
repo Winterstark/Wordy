@@ -253,7 +253,6 @@ namespace Wordy
             if (words.Count > 0)
             {
                 testWord = words[rand.Next(words.Count)];
-                testWord = words.Find(w => w.ToString() == "riuscire");
                 words.Remove(testWord);
 
                 lblWord.Text = testWord.ToString();
