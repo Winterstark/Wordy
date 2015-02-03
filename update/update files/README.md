@@ -1,7 +1,7 @@
 ﻿Wordy
 =====
 
-Wordy is a Windows program that helps users improve their English vocabulary.
+Wordy is a Windows program that helps users improve their vocabulary. It is primarily aimed at people who already know English and want to expand their vocabulary to include more esoteric words, but it can also be used by beginners in a non-English language who want to memorize a large quantity of words.
 
 What sets it apart from other vocabulary-learning software?
 
@@ -9,9 +9,10 @@ What sets it apart from other vocabulary-learning software?
 - At first, these tests are simple (e.g. choose the correct word), but later on they involve filling out multiple definitions, which is what makes Wordy more suited for advanced students.
 - Besides definitions words can have images associated with them to help with the learning process.
 - After a word has been learned it becomes available in the long-term memory tests. There it appears much less frequently but with a different set of question types.
+- The Assisted Reading mode gives you quick access to word lookups and translations from any Windows application.
 - Wordy also supports word of the day subscriptions, which are an easy way to discover new words.
 
-![Screenshot: Wordy main window](http://i.imgur.com/GkpybHW.png)
+![Screenshot: Wordy's main window](http://i.imgur.com/rDFtmAZ.png)
 
 
 Installation
@@ -96,11 +97,60 @@ Visuals may also be used for testing purposes.
 
 ![Screenshot: test type 5](http://i.imgur.com/kgKECY3.png)
 
+### Non-English languages
+
+You can also use Wordy to learn words in another language. The process is the same as with English words: add them -> learn them by testing -> remember them by testing every now and then. However, since Wordnik can only be used to search for English words, Wordy uses Microsoft Translator as the lookup service for other languages. Therefore, a non-English word's "definition" will be its English translation, for example: "civetta" -> "owl". This feature is more useful for beginners in a foreign language, who only need to know the general meaning of a word.
+
+Because Microsoft Translator is much more limited than Wordnik, the learning process consists of only four steps (the "LANG" denotes the foreign language the user is studying):
+
+1. Select the correct word (LANG -> ENG)
+2. Select the correct word (ENG -> LANG)
+3. Type out the word (LANG -> ENG)
+4. Type out the word (ENG -> LANG)
+
+Testing of learned words uses the same four types of questions, with the addition of: Enter the word that fits the example sentence.
+
+To switch Wordy to another language mode use the profile selection menu at the bottom of the main menu. The switch affects every menu and option in Wordy.
+
+![Screenshot: Language Selection](http://i.imgur.com/8N0k6GS.png)
+
+Microsoft Translator, and by extension Wordy, supports the following languages: Arabic, Bulgarian, Catalan, Chinese Simplified, Chinese Traditional, Czech, Danish, Dutch, Estonian, Finnish, French, German, Greek, Haitian Creole, Hebrew, Hindi, Hmong Daw, Hungarian, Indonesian, Italian, Japanese, Klingon, Klingon (pIqaD), Korean, Latvian, Lithuanian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
+
+### Assisted Reading
+
+![Screenshot: Assisted Reading in Chrome](http://i.imgur.com/TaBncCT.png)
+
+Wordy can help you read difficult texts by allowing you to quickly lookup a word or phrase. This is most useful for texts in foreign languages that you are learning, or for archaic and literary English texts with many abstruse words. You can copy and paste your text into Wordy, but you can also lookup words from any other Windows application (e.g. a PDF reader or an Internet browser). The advantage of pasting the text into Wordy is that you can see which words you've added or saved (by their color).
+
+Color code:
+
+* Words saved without definitions - purple.
+* Words that couldn't be looked-up - red.
+* Looked-up words - orange.
+* Words already in your archive - yellow.
+* Archived words that you've already learned - green.
+
+![Screenshot: Assisted Reading](http://i.imgur.com/QaYzdlX.png)
+
+To lookup a word simply double-click it. Depending on the status of the word (shown by its color) one or more of these buttons will be displayed:
+
+![Add](http://i.imgur.com/C2ZsySK.png) Save this word (without looking-up) for later. You can then find it in the Add Words window. (Keyboard shortcut: ALT+A)
+
+![Search](http://i.imgur.com/abRM2mL.png) Search Wordnik (for English) or Microsoft Translator (for other languages). After the definition is displayed you can edit it. (ALT+F)
+
+![Update Definition](http://i.imgur.com/OgiZ5id.png) Update the word definition with your edits. (ALT+D)
+
+![Save](http://i.imgur.com/vVQzNTi.png) Save the word and its definition to your archive. (ALT+S)
+
+![Google](http://i.imgur.com/OSx3K25.png) This button shows up only if the lookup failed. Clicking it will open a google search in your default browser, or a Google Translate search if the word is not in English. (ALT+G)
+
+Tip: To select a phrase double-click the first word in it and, without releasing the button, drag the mouse until you've selected everything. You can also just select the phrase without double-clicking and then press ALT+W to bring up the popup menu.
+
 ### Review words
 
 This feature allows you to review the words in Wordy's database, which can be useful if you want to study the words before actually testing yourself.
 
-Besides definitions and visuals, you can also see other information, such as which words are hardest to learn or remember.
+Besides definitions and visuals, you can also see other information, such as which words were hardest for you to learn or remember.
 
 ![Screenshot: Review words](http://i.imgur.com/K5azIi7.png)
 
@@ -144,6 +194,9 @@ APIs used & other credits
 * Word visuals: [Flickr API](http://www.flickr.com/services/api/)
 * Flickr API accessed through the [Flickr.Net](http://flickrnet.codeplex.com/) library
 * Word rhymes: [RhymeBrain](http://rhymebrain.com/)
+* Translation service: [Microsoft Translator](https://msdn.microsoft.com/en-us/library/dd576287.aspx)
 * UI icons by: [Adam Whitcroft](http://adamwhitcroft.com/batch/) and [Modern UI Icons](http://modernuiicons.com/)
 * Book icon by ~XTUX345 @ [deviantART](http://xtux345.deviantart.com/art/Elements-of-Harmony-Dictionary-Icon-280443607?q=boost%3Apopular%20dictionary%20icon&qo=9)
 * Checkmark graphics: [psdGraphics](http://www.psdgraphics.com/psd-icons/psd-check-and-cross-icons/)
+* Country flags from: [CustomIconDesign](http://www.customicondesign.com/free-icons/flag-icon-set/flat-round-world-flag-icon-set/)
+* Sound effects by: [Bertrof](https://www.freesound.org/people/Bertrof/packs/8276/)
