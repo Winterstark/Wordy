@@ -89,6 +89,8 @@ To ensure that the words you learn remain in your long-term memory you should ke
 
 ![Screenshot: test type 4](http://i.imgur.com/4Scmch1.png)
 
+Note: In tests that ask you to choose or select the correct answer, you can press the numbers 1-6 to pick an answer. You can also use Q/W/A instead of 4/5/6 (because by default the buttons are divided into two lines).
+
 If you fail a test then the word becomes "unlearned" again; answer correctly and the word will be available for testing again in a week. After each successful test the length of time before the next test increases by a week.
 
 When testing learned words, some minor mistakes are ignored. If you forget to use a diacritic mark or a hyphen, your answer will still be correct. Synonyms of the requested word will also be accepted.
