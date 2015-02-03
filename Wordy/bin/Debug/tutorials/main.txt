@@ -2,6 +2,8 @@ SKIP
 "Click here to add new words you wish to study."->(buttAdd)
 "After you've added some words you can study them in this section."->(buttStudyWords)*After adding a new word (and after every test) you will need to wait 24 hours before testing becomes available again for that word.
 "Finally, after you have learned a word, you should test your long term memory in this section."->(buttRecall)*If you fail to recall it, the word will be regarded as 'new' again; if you succeed, the word will not be tested for another week. After another successful test, the word won't be tested for another two weeks, and so on.
-"Click here to view a list of all the words you've added. Besides definitions and visuals, you can also see what words were the hardest to learn or remember."->(buttReview)
+"This feature gives you quick access to word lookup and translation when you are reading a book or website."->(buttReading)
+"Click here to view a list of all the words you've added. Besides definitions and visuals, you can also see which words were the hardest to learn or remember."->(buttReview)
+"Use this menu to change the current language profile."->[ComboLanguage]
 "If you have set up a Word of the Day subscription (found in Options), Wordy will regularly check for new updates and notify you about them here with a button."->(buttNewWotD)
 "To view, add, or remove words click here. You can also edit WotD subscriptions, as well as modify other general options."->(buttOptions)

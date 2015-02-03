@@ -453,11 +453,11 @@ namespace Wordy
 
             LoadActiveLanguages();
 
-            //show tutorial
-            new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
-
             //check for updates
             Updater.Update(VERSION, UPDATE_URL);
+
+            //show tutorial
+            new Tutorial(Application.StartupPath + "\\tutorials\\main.txt", this);
         }
 
         private void formMain_Activated(object sender, EventArgs e)
