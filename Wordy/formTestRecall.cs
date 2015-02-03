@@ -166,6 +166,13 @@ namespace Wordy
 
         void randomizeAnswers(List<string> answers, string correctAnswer)
         {
+            if (correctAnswer.Contains(Environment.NewLine))
+            {
+                //don't show more than one line (applies to non-English words only)
+                string[] lines = correctAnswer.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                correctAnswer = lines[rand.Next(lines.Length)];
+            }
+
             while (answers.Count < 5) //add random words to complete set
                 answers.AddRange(main.GetRandWords(5 - answers.Count, testWord.ToString()));
 
@@ -246,6 +253,7 @@ namespace Wordy
             if (words.Count > 0)
             {
                 testWord = words[rand.Next(words.Count)];
+                testWord = words.Find(w => w.ToString() == "riuscire");
                 words.Remove(testWord);
 
                 lblWord.Text = testWord.ToString();
