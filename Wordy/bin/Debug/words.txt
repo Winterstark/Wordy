@@ -75,7 +75,7 @@ True
 </entry>
 
 <entry>
-guttering
+sdf
 [defs]
 (n.) gutters considered as a group::False
 (adj.) flickering and about to be extinguished::False

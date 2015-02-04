@@ -49,16 +49,21 @@ namespace Wordy
                 string word = chklistWords.Text;
                 if (InputBox.Show("Rename Word", "Set new word:", ref word) == DialogResult.OK)
                 {
-                    words[getSelWordInd()].Rename(word);
-                    main.SaveWords();
+                    if (words.Any(w => w.ToString().ToLower() == word.ToLower()))
+                        MessageBox.Show("A word already exists with that name.", "Cannot rename word!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        words[getSelWordInd()].Rename(word);
+                        main.SaveWords();
 
-                    int ind = chklistWords.SelectedIndex;
-                    bool isChecked = chklistWords.GetItemChecked(ind);
+                        int ind = chklistWords.SelectedIndex;
+                        bool isChecked = chklistWords.GetItemChecked(ind);
 
-                    chklistWords.Items.RemoveAt(ind);
-                    chklistWords.Items.Insert(ind, word);
-                    chklistWords.SetItemChecked(ind, isChecked);
-                    chklistWords.SelectedIndex = ind;
+                        chklistWords.Items.RemoveAt(ind);
+                        chklistWords.Items.Insert(ind, word);
+                        chklistWords.SetItemChecked(ind, isChecked);
+                        chklistWords.SelectedIndex = ind;
+                    }
                 }
             }
         }
