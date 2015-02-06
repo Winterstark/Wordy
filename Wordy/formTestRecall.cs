@@ -560,7 +560,6 @@ namespace Wordy
                         //non-English words
                         int percent = rand.Next(100);
 
-                        percent = 81;
                         if (percent <= 15)
                             prepareNonEnglishQuestion(1);
                         else if (percent <= 30)
