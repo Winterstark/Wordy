@@ -693,6 +693,8 @@ namespace Wordy
                     prepareUIForNextWord(3);
                     break;
             }
+
+            resetLearningPhase = 1;
         }
 
         void prepareUIForNextWord(int step)
