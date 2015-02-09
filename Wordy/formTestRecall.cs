@@ -996,15 +996,25 @@ namespace Wordy
                         }
                         else
                         {
-                            lblWord.Text += " forgotten!";
-                            lblWord.ForeColor = Color.Red;
-
-                            if (main.Profile == "English")
-                                endNotch = resetLearningPhase;
+                            //[non-English words only] check if a word exists in the archive that is a synonym of the answer given
+                            if (main.Profile != "English" && main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
+                            {
+                                acceptAnswer();
+                                success = true;
+                                MessageBox.Show("It will be accepted anyway.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
                             else
-                                endNotch = 1;
+                            {
+                                lblWord.Text += " forgotten!";
+                                lblWord.ForeColor = Color.Red;
 
-                            timerProgressChange.Enabled = true;
+                                if (main.Profile == "English")
+                                    endNotch = resetLearningPhase;
+                                else
+                                    endNotch = 1;
+
+                                timerProgressChange.Enabled = true;
+                            }
                         }
                     }
                 }
@@ -1056,6 +1066,18 @@ namespace Wordy
                 for (int i = 0; i < answerGiven.Length; i++)
                     if (answerGiven.Substring(0, i) == correctAnswer.Substring(0, i) && answerGiven.Substring(i + 1) == correctAnswer.Substring(i + 1))
                         return true;
+
+            return false;
+        }
+
+        bool doesDefinitionContainWord(string definition, string word)
+        {
+            definition = definition.ToLower();
+            word = word.ToLower();
+
+            foreach (string line in definition.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                if (line == word)
+                    return true;
 
             return false;
         }
@@ -1386,12 +1408,7 @@ namespace Wordy
 
             //when testing non-English words the correctAnswer may include several lines; only one needs to match the user's answer
             if (!success && correctAnswer.Contains(Environment.NewLine))
-                foreach (string line in correctAnswer.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
-                    if (line == word)
-                    {
-                        success = true;
-                        break;
-                    }
+                success = doesDefinitionContainWord(correctAnswer, word);
 
             //if testing recall ignore hyphen mistakes & diacritic letter mistakes
             if (!success && testWord.archived)
