@@ -1,7 +1,7 @@
-﻿<entry>
+<entry>
 smarrito
 [defs]
-lost::False
+lost::True
 [/defs]
 
 
@@ -19,7 +19,7 @@ True
 <entry>
 armadio
 [defs]
-closet::False
+closet::True
 [/defs]
 
 
@@ -27,7 +27,7 @@ closet::False
 0001-01-01 00:00
 2015-02-06 14:43
 2015-02-20 14:43
-5
+7
 4
 3
 3
@@ -135,7 +135,7 @@ scratch::False
 0001-01-01 00:00
 2015-02-09 15:15
 2015-02-09 13:09
-7
+5
 8
 1
 0

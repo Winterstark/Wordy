@@ -193,7 +193,7 @@ namespace Wordy
                     words[wordInd].archived = newState;
 
                     if (words[wordInd].archived)
-                        words[wordInd].learningPhase = 7;
+                        words[wordInd].learningPhase = (main.Profile == "English" ? 7 : 5);
                     else
                     {
                         words[wordInd].learningPhase = 1;
