@@ -4660,3 +4660,21 @@ he heard::False
 False
 </entry>
 
+<entry>
+blizzcon
+[defs]
+BLIZZCON!::False
+[/defs]
+
+
+2015-02-15 14:32
+0001-01-01 00:00
+2015-02-15 14:32
+0001-01-01 00:00
+1
+0
+0
+0
+False
+</entry>
+

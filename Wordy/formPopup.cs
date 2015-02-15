@@ -235,7 +235,7 @@ namespace Wordy
             }
 
             reading.ActiveGooglingWord = "";
-            buttUpdateDefinition.Visible = false;
+            SetPositionNextToPointer(rtbDef, buttSave);
         }
 
         private void buttSave_Click(object sender, EventArgs e)
