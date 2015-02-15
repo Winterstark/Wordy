@@ -234,7 +234,35 @@ namespace Wordy
 
         public List<string> GetRandWords(int n, string exception)
         {
-            return GetRandWords(n, exception, words, extraWords);
+            if (Profile == "English")
+                return GetRandWords(n, exception, words, extraWords);
+            else
+            {
+                //for non-English tests use the English words that appear in that word archive (so it is more difficult for the user to eliminate wrong answers)
+                List<string> defs = new List<string>();
+
+                foreach (Entry word in foreignWords[Profile])
+                    defs.AddRange(word.GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
+
+                defs.RemoveAll(w => w.ToLower() == exception.ToLower());
+
+                List<string> randDefs = new List<string>();
+                Random rand = new Random((int)DateTime.Now.Ticks);
+
+                for (int i = 0; i < n; i++)
+                {
+                    int ind = rand.Next(defs.Count);
+                    
+                    randDefs.Add(defs[ind]);
+                    defs.RemoveAt(ind);
+                }
+
+                //need more words?
+                if (randDefs.Count < 9)
+                    randDefs.AddRange(GetRandWords(9 - randDefs.Count, exception, words, extraWords));
+
+                return randDefs;
+            }
         }
 
         public List<string> GetRandForeignWords(int n, string exception)

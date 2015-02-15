@@ -3265,10 +3265,10 @@ queue, pigtail, ringlet, lock, nazarite tresses, tressed point, to braid st. cat
 press, dress, bless, less, stress, les, yes, ls, ts, oppress, 
 2013-02-12 22:02
 0001-01-01 00:00
-2015-02-12 13:22
+2015-02-15 15:14
 2015-02-12 13:21
 3
-20
+21
 14
 11
 False
@@ -22379,17 +22379,17 @@ True
 <entry>
 hoi polloi
 [defs]
-(n.) Derogatory  The common people; the masses.::True
+(n.) Derogatory  The common people; the masses.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 canaille, following, followers, audience, temporalty, laity, the proletariat, the riffraff, the masses, the multitude, the canaille, 
 employ, deploy, ploy, decoy, employe, troy, savoy, destroy, annoy, roi, 
 2014-12-13 14:17
 0001-01-01 00:00
-2015-02-11 16:40
+2015-02-15 15:14
 2015-02-09 14:10
 5
-8
+9
 5
 3
 False
@@ -24494,10 +24494,10 @@ tantara
 tiara, corolla, cantata, pajama, drama, mamma, papa, plaza, cassava, java, 
 2015-02-09 14:27
 0001-01-01 00:00
-2015-02-11 16:35
+2015-02-15 15:14
 0001-01-01 00:00
 2
-2
+3
 0
 0
 False
