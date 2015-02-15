@@ -208,11 +208,26 @@ namespace Wordy
 
         List<string> GetRandWords(int n, string exception, List<Entry> relevantWords, string[] relevantExtraWords)
         {
+            string[] testWordDefs = relevantWords.Find(w => w.ToString() == exception).GetDefinition().ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+
             List<string> wordsCopy = new List<string>(), randWords = new List<string>();
 
             foreach (Entry word in relevantWords)
                 if (word.ToString() != exception)
-                    wordsCopy.Add(word.ToString());
+                {
+                    //ignore words that are synonyms of the exception word
+                    bool synonym = false;
+
+                    foreach (string def in word.GetDefinition().ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                        if (testWordDefs.Contains(def))
+                        {
+                            synonym = true;
+                            break;
+                        }
+
+                    if (!synonym)
+                        wordsCopy.Add(word.ToString());
+                }
 
             Random rand = new Random((int)DateTime.Now.Ticks);
 
