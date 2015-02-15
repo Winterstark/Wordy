@@ -90,10 +90,15 @@ namespace Wordy
 
         public void Translate(string txtToTranslate)
         {
-            if (tokenExpires < DateTime.Now)
-                getAccessToken();
+            if (txtToTranslate.Length > 200)
+                doneEvent(txtToTranslate, "Error: Text too long!");
+            else
+            {
+                if (tokenExpires < DateTime.Now)
+                    getAccessToken();
 
-            searchWordWorker.RunWorkerAsync(txtToTranslate);
+                searchWordWorker.RunWorkerAsync(txtToTranslate);
+            }
         }
 
         void searchWordWorker_DoWork(object sender, DoWorkEventArgs e)

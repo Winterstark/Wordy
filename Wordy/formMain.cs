@@ -364,7 +364,6 @@ namespace Wordy
                 if (File.Exists(path))
                     foreignWords.Add(lang.Key, loadWords(path));
             }
-            
         }
 
         public string GetNewWordsPath()
