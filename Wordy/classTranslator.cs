@@ -15,7 +15,7 @@ namespace Wordy
         const string clientSecret = "GXaFJEyzQC5uymFIq0QhQDMUjzmtDShMjef+AbHknpU=";
 
         Preferences prefs;
-        BackgroundWorker searchWordWorker;
+        BackgroundWorker getAccessTokenWorker, searchWordWorker;
         Action<string, string> doneEvent;
         DateTime tokenExpires;
         string headerValue, fromLanguage, toLanguage;
@@ -28,7 +28,11 @@ namespace Wordy
             this.doneEvent = doneEvent;
             this.prefs = prefs;
 
-            //prepare worker
+            //prepare workers
+            getAccessTokenWorker = new BackgroundWorker();
+            getAccessTokenWorker.DoWork += new DoWorkEventHandler(getAccessTokenWorker_DoWork);
+            getAccessTokenWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(getAccessTokenWorker_RunWorkerCompleted);
+
             searchWordWorker = new BackgroundWorker();
             searchWordWorker.DoWork += new DoWorkEventHandler(searchWordWorker_DoWork);
             searchWordWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(searchWordWorker_RunWorkerCompleted);
@@ -39,10 +43,33 @@ namespace Wordy
                 this.tokenExpires = prefs.TranslationTokenExpires;
             }
             else
-                getAccessToken();
+                getAccessTokenWorker.RunWorkerAsync();
         }
 
-        void getAccessToken()
+        string getPropertyValue(string response, string property)
+        {
+            string propertyTag = "\"" + property + "\":\"";
+
+            int lb = response.IndexOf(propertyTag) + propertyTag.Length;
+            int ub = response.IndexOf('"', lb);
+
+            return response.Substring(lb, ub - lb);
+        }
+
+        public void Translate(string txtToTranslate)
+        {
+            if (txtToTranslate.Length > 200)
+                doneEvent(txtToTranslate, "Error: Text too long!");
+            else
+            {
+                if (tokenExpires < DateTime.Now)
+                    getAccessTokenWorker.RunWorkerAsync(txtToTranslate);
+                else
+                    searchWordWorker.RunWorkerAsync(txtToTranslate);
+            }
+        }
+
+        void getAccessTokenWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             string strTranslatorAccessURI = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
 
@@ -76,29 +103,14 @@ namespace Wordy
             prefs.TranslationHeaderValue = headerValue;
             prefs.TranslationTokenExpires = tokenExpires;
             prefs.Save();
+
+            e.Result = e.Argument;
         }
 
-        string getPropertyValue(string response, string property)
+        void getAccessTokenWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            string propertyTag = "\"" + property + "\":\"";
-
-            int lb = response.IndexOf(propertyTag) + propertyTag.Length;
-            int ub = response.IndexOf('"', lb);
-
-            return response.Substring(lb, ub - lb);
-        }
-
-        public void Translate(string txtToTranslate)
-        {
-            if (txtToTranslate.Length > 200)
-                doneEvent(txtToTranslate, "Error: Text too long!");
-            else
-            {
-                if (tokenExpires < DateTime.Now)
-                    getAccessToken();
-
-                searchWordWorker.RunWorkerAsync(txtToTranslate);
-            }
+            if (e.Result is string)
+                searchWordWorker.RunWorkerAsync(e.Result.ToString());
         }
 
         void searchWordWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -135,7 +147,7 @@ namespace Wordy
 
         public bool IsBusy()
         {
-            return searchWordWorker.IsBusy;
+            return searchWordWorker.IsBusy || getAccessTokenWorker.IsBusy;
         }
     }
 }
