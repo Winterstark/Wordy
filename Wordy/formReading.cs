@@ -455,29 +455,6 @@ namespace Wordy
 
         private void formReading_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (searchedWords.Count > 0)
-            {
-                string msg = "Do you want to save these words:";
-                foreach (string word in searchedWords)
-                    msg += Environment.NewLine + word;
-
-                DialogResult answer = MessageBox.Show(msg, "You haven't saved all of the looked-up words.", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
-                switch (answer)
-                {
-                    case DialogResult.Yes:
-                        //add words
-                        main.AddNewWords(newDefs, synonyms, rhymes);
-                        break;
-                    case DialogResult.No:
-                        //do nothing
-                        break;
-                    case DialogResult.Cancel:
-                        //stop window from closing
-                        e.Cancel = true;
-                        return;
-                }
-            }
-
             try
             {
                 actHook.Stop();
