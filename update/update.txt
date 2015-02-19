@@ -1,4 +1,10 @@
 [UPDATE]
+[VERSION]1.21[/VERSION]
+[FILE]https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
+[CHANGELOG]* fixed many issues with the new features introduced in v1.2[/CHANGELOG]
+[/UPDATE]
+
+[UPDATE]
 [VERSION]1.2[/VERSION]
 [FILE]https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update files/Wordy.exe->root\Wordy.exe[/FILE]
 [FILE]https://raw.github.com/Winterstark/Wordy/master/update/update files/README.md->root\README.md[/FILE]
