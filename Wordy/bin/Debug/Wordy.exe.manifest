@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="546304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wordy.exe" size="547264">
       <assemblyIdentity name="Wordy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vbyp6y7T5yMlpkzWqOHHcUoLl9k=</dsig:DigestValue>
+        <dsig:DigestValue>jocZRX6g4BMF/bFUK6xcHIZSFz4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

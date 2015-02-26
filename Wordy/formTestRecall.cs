@@ -1070,14 +1070,12 @@ namespace Wordy
             return false;
         }
 
-        bool doesDefinitionContainWord(string definition, string word)
+        bool doesDefinitionContainWord(string definition, string words)
         {
-            definition = definition.ToLower();
-            word = word.ToLower();
-
-            foreach (string line in definition.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
-                if (line == word)
-                    return true;
+            foreach (string line in definition.ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (string word in words.ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                    if (line == word)
+                        return true;
 
             return false;
         }

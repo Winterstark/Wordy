@@ -3265,10 +3265,10 @@ queue, pigtail, ringlet, lock, nazarite tresses, tressed point, to braid st. cat
 press, dress, bless, less, stress, les, yes, ls, ts, oppress, 
 2013-02-12 22:02
 0001-01-01 00:00
-2015-02-15 15:14
+2015-02-24 11:53
 2015-02-12 13:21
-3
-21
+4
+22
 14
 11
 False
@@ -24512,10 +24512,10 @@ preface, beginning, introduction, proem, judicat, sacratum, suarum, mobilium, co
 mausoleum, imperium, encomium, labium, cilium, solarium, coliseum, francium, museum, cerium, 
 2015-02-09 14:27
 0001-01-01 00:00
-2015-02-11 16:34
+2015-02-24 11:53
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False

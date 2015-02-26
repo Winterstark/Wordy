@@ -54,10 +54,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>C9DA7A4DEFBD54563BFC6E617AF76BB6A0855553</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>E8115B9368559F8485ED7FF3BB58B5BFE30C7778</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Wordy_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Wordy_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -208,6 +208,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Wordy_1_TemporaryKey.pfx" />
+    <None Include="Wordy_2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
