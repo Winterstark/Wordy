@@ -627,6 +627,7 @@ namespace Wordy
 
         void prepareQuestionWithExampleSentences()
         {
+            lblTestWordDef.Text = "";
             lblSynonyms.Text = "What word completes this sentence:";
             mtbTestWord.Text = "";
             mtbTestWord.Top = 17;

@@ -19902,12 +19902,12 @@ love vine, cuscuta gronovii, doddery, doddering, dodderer, hellbine, pull-down, 
 fodder, solder, chopper, potter, jobber, totter, proper, copper, hotter, mater, 
 2014-10-17 13:57
 0001-01-01 00:00
-2015-01-14 13:47
-2015-02-18 13:47
+2015-03-03 15:37
+2015-04-14 15:37
 7
 9
-4
-4
+5
+5
 True
 </entry>
 
