@@ -986,7 +986,7 @@ namespace Wordy
                         if (isTypo(getCorrectAnswer(), answerGiven))
                         {
                             nextWord(true);
-                            MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
 
@@ -994,7 +994,7 @@ namespace Wordy
                         if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
                         {
                             nextWord(true);
-                            MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
                     }
