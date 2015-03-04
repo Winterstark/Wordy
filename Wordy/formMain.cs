@@ -260,9 +260,10 @@ namespace Wordy
                 List<string> defs = new List<string>();
 
                 foreach (Entry word in foreignWords[Profile])
-                    defs.AddRange(word.GetDefinition().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
+                    defs.AddRange(word.GetDefinition().ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
 
-                defs.RemoveAll(w => w.ToLower() == exception.ToLower());
+                string[] exceptions = exception.ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                defs.RemoveAll(w => exceptions.Contains(w));
 
                 List<string> randDefs = new List<string>();
                 Random rand = new Random((int)DateTime.Now.Ticks);
