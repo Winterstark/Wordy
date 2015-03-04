@@ -982,11 +982,19 @@ namespace Wordy
                 {
                     if (main.Profile != "English") //exceptions for non-English words
                     {
-                        //if the user's answer is a synonym inform him and allow him to enter another answer
-                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
+                        //if answer has a typo allow the user to try again
+                        if (isTypo(getCorrectAnswer(), answerGiven))
                         {
                             nextWord(true);
                             MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+
+                        //if the user's answer is a synonym also let him try again
+                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
+                        {
+                            nextWord(true);
+                            MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
                     }
