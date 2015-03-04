@@ -216,7 +216,7 @@ namespace Wordy
             buttPickWord6.Text = "6. " + buttPickWord6.Text;
         }
 
-        void nextWord()
+        void nextWord(bool repeatLastTest)
         {
             //reset UI
             panelDef.Visible = false;
@@ -252,8 +252,11 @@ namespace Wordy
             //load word
             if (words.Count > 0)
             {
-                testWord = words[rand.Next(words.Count)];
-                words.Remove(testWord);
+                if (!repeatLastTest)
+                {
+                    testWord = words[rand.Next(words.Count)];
+                    words.Remove(testWord);
+                }
 
                 lblWord.Text = testWord.ToString();
                 lblSynonyms.Text = testWord.GetSynonyms();
@@ -559,7 +562,7 @@ namespace Wordy
                     {
                         //non-English words
                         int percent = rand.Next(100);
-                        
+
                         if (percent <= 20)
                             prepareNonEnglishQuestion(1);
                         else if (percent <= 40)
@@ -584,16 +587,19 @@ namespace Wordy
                 this.Close();
             }
 
-            //display how many words remain to be tested and success rate so far
-            if (testUnlearned)
-                this.Text = "Study New Words (";
-            else
-                this.Text = "Test Learned Words (";
+            if (!repeatLastTest)
+            {
+                //display how many words remain to be tested and success rate so far
+                if (testUnlearned)
+                    this.Text = "Study New Words (";
+                else
+                    this.Text = "Test Learned Words (";
 
-            this.Text += (nTests - words.Count) + " / " + nTests + ")";
+                this.Text += (nTests - words.Count) + " / " + nTests + ")";
 
-            if (prevWordCount != 0) //display the success rate only if this isn't the first test
-                this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
+                if (prevWordCount != 0) //display the success rate only if this isn't the first test
+                    this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
+            }
 
             startTime = DateTime.Now; //start the clock
         }
@@ -854,6 +860,7 @@ namespace Wordy
 
             if (success)
                 nCorrectAnswers++;
+            totalTime += DateTime.Now - startTime; //mark time
 
             lblSynonyms.Top = 83;
             lblWord.Text = testWord.ToString();
@@ -965,8 +972,25 @@ namespace Wordy
             {
                 picWrong.Visible = true;
 
+                string answerGiven;
+                if (mtbTestWord.Tag != null && (bool)mtbTestWord.Tag)
+                    answerGiven = mtbTestWord.Text;
+                else
+                    answerGiven = textTestWord.Text;
+
                 if (!testWord.archived)
                 {
+                    if (main.Profile != "English") //exceptions for non-English words
+                    {
+                        //if the user's answer is a synonym inform him and allow him to enter another answer
+                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
+                        {
+                            nextWord(true);
+                            MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+                    }
+
                     buttNext.Visible = true;
                     endNotch = startNotch;
                     timerProgressChange.Enabled = true;
@@ -974,12 +998,6 @@ namespace Wordy
                 else
                 {
                     //check if answer has a typo
-                    string answerGiven;
-                    if (mtbTestWord.Tag != null && (bool)mtbTestWord.Tag)
-                        answerGiven = mtbTestWord.Text;
-                    else
-                        answerGiven = textTestWord.Text;
-
                     if (isTypo(getCorrectAnswer(), answerGiven))
                     {
                         acceptAnswer();
@@ -1020,8 +1038,6 @@ namespace Wordy
                     }
                 }
             }
-
-            totalTime += DateTime.Now - startTime; //mark time
 
             testWord.LogTest(success, answCorrectly, resetLearningPhase, main.Profile == "English");
             main.SaveWords();
@@ -1520,7 +1536,7 @@ namespace Wordy
             rand = new Random((int)DateTime.Now.Ticks);
             totalTime = new TimeSpan(0);
 
-            nextWord();
+            nextWord(false);
         }
 
         private void formTestRecall_Resize(object sender, EventArgs e)
@@ -1543,7 +1559,7 @@ namespace Wordy
             if (e.KeyValue == 13) //enter
             {
                 if (picWrong.Visible && !timerProgressChange.Enabled && !buttNext.Visible)
-                    nextWord();
+                    nextWord(false);
                 else if (chklistDefs.Visible)
                     buttFinished.PerformClick();
             }
@@ -1646,7 +1662,7 @@ namespace Wordy
         private void buttNext_Click(object sender, EventArgs e)
         {
             timerProgressChange.Enabled = false;
-            nextWord();
+            nextWord(false);
         }
 
         private void buttPickWord1_Click(object sender, EventArgs e)
@@ -1690,7 +1706,7 @@ namespace Wordy
                     if (DateTime.Now >= gotoNextQuestion)
                     {
                         timerProgressChange.Enabled = false;
-                        nextWord();
+                        nextWord(false);
                     }
                 //if buttNext IS visible then the user needs to click it to proceed
             }
@@ -1704,7 +1720,7 @@ namespace Wordy
                     {
                         //process to next question
                         timerProgressChange.Enabled = false;
-                        nextWord();
+                        nextWord(false);
                     }
                     else
                         //let the user click the button to proceed

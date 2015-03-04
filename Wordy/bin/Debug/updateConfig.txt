@@ -1,5 +1,5 @@
 https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update.txt
-2015-03-03 15:58
+2015-03-04 14:17
 0
 1
 True
