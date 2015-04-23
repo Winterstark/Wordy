@@ -45,6 +45,8 @@ Any found visuals will be displayed in a row of small thumbnails. Mouse over one
 
 Wordy also has a built-in tutorial that will inform you about the process of adding words in more detail.
 
+NOTE: When adding non-English words, you can manually set their translation without having to search online. This can be useful when Microsoft Translator doesn't recognize a word, but you already know its translation. Use the following syntax: [word] -> [translation1]; [translation2]; ...
+
 ### Learning words
 
 To learn a word you will have to solve six increasingly difficult tests about it:

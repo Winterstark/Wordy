@@ -58,7 +58,24 @@ namespace Wordy
 
         public void Translate(string txtToTranslate)
         {
-            if (txtToTranslate.Length > 200)
+            if (txtToTranslate.Contains("->"))
+            {
+                //user manually entered word translation
+                string[] txtParts = txtToTranslate.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (txtParts.Length == 2)
+                {
+                    //remove extra spaces from word and translations
+                    string[] translations = txtParts[1].Split(';');
+                    txtParts[1] = "";
+                    foreach (string translation in translations)
+                        txtParts[1] += translation.Trim() + Environment.NewLine;
+                    txtParts[1] = txtParts[1].Substring(0, txtParts[1].Length - Environment.NewLine.Length);
+
+                    doneEvent(txtToTranslate, txtParts[1]);
+                }
+            }
+            else if (txtToTranslate.Length > 200)
                 doneEvent(txtToTranslate, "Error: Text too long!");
             else
             {

@@ -596,6 +596,10 @@ namespace Wordy
                 markAsNotFound(word);
             else
             {
+                string fullQuery = word;
+                if (word.Contains("->"))
+                    word = word.Substring(0, word.IndexOf("->")).Trim();
+
                 //save word data
                 newDefs.Add(word, new Definition(translation.ToLower(), true));
                 synonyms.Add(word, "");
@@ -609,12 +613,19 @@ namespace Wordy
                 listFoundWords.Enabled = true;
                 buttAcceptWords.Enabled = true;
 
-                removeFromNewWords(word);
+                removeFromNewWords(fullQuery);
             }
 
             //next word
             if (wordSearchQ.Count > 0)
                 translator.Translate(wordSearchQ.Dequeue());
+        }
+
+        void renameDictionaryKey<ValueType>(Dictionary<string, ValueType> dictionary, string oldKey, string newKey)
+        {
+            object value = dictionary[oldKey];
+            dictionary.Remove(oldKey);
+            dictionary.Add(newKey, (ValueType)value);
         }
 
 
@@ -951,8 +962,37 @@ namespace Wordy
 
         private void listFoundWords_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Delete && listFoundWords.SelectedIndex != -1)
-                removeWord();
+            if (listFoundWords.SelectedIndex != -1)
+                switch (e.KeyCode)
+                {
+                    case Keys.Delete:
+                        removeWord();
+                        break;
+                    case Keys.F2:
+                        if (main.Profile != "English")
+                        {
+                            string word = listFoundWords.Text;
+                            if (InputBox.Show("Rename Word", "Set new word:", ref word) == DialogResult.OK)
+                            {
+                                if (main.WordExists(word))
+                                    MessageBox.Show("Wordy's archive already contains that word.", "Cannot rename word!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                else
+                                {
+                                    if (listFoundWords.Items.Contains(word))
+                                        MessageBox.Show("The list of new words already contains that word.", "Cannot rename word!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    else
+                                    {
+                                        renameDictionaryKey(newDefs, listFoundWords.Text, word);
+                                        renameDictionaryKey(synonyms, listFoundWords.Text, word);
+                                        renameDictionaryKey(rhymes, listFoundWords.Text, word);
+
+                                        listFoundWords.Items[listFoundWords.SelectedIndex] = word;
+                                    }
+                                }
+                            }
+                        }
+                        break;
+                }
         }
 
         private void textDef_DoubleClick(object sender, EventArgs e)
