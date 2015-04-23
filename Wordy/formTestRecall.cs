@@ -216,7 +216,12 @@ namespace Wordy
             buttPickWord6.Text = "6. " + buttPickWord6.Text;
         }
 
-        void nextWord(bool repeatLastTest)
+        void nextWord()
+        {
+            nextWord(false, "");
+        }
+
+        void nextWord(bool repeatLastTest, string prevAnswer)
         {
             //reset UI
             panelDef.Visible = false;
@@ -599,6 +604,14 @@ namespace Wordy
 
                 if (prevWordCount != 0) //display the success rate only if this isn't the first test
                     this.Text += " - " + (int)(100.0f * nCorrectAnswers / (nTests - words.Count - 1)) + "%";
+            }
+            else
+            {
+                //re-enter the user's last answer
+                if (mtbTestWord.Tag != null && (bool)mtbTestWord.Tag)
+                    mtbTestWord.Text = prevAnswer;
+                else
+                    textTestWord.Text = prevAnswer;
             }
 
             startTime = DateTime.Now; //start the clock
@@ -986,7 +999,7 @@ namespace Wordy
                         //if answer has a typo allow the user to try again
                         if (isTypo(getCorrectAnswer(), answerGiven))
                         {
-                            nextWord(true);
+                            nextWord(true, answerGiven);
                             MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
@@ -994,7 +1007,7 @@ namespace Wordy
                         //if the user's answer is a synonym also let him try again
                         if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
                         {
-                            nextWord(true);
+                            nextWord(true, answerGiven);
                             MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
@@ -1545,7 +1558,7 @@ namespace Wordy
             rand = new Random((int)DateTime.Now.Ticks);
             totalTime = new TimeSpan(0);
 
-            nextWord(false);
+            nextWord();
         }
 
         private void formTestRecall_Resize(object sender, EventArgs e)
@@ -1568,7 +1581,7 @@ namespace Wordy
             if (e.KeyValue == 13) //enter
             {
                 if (picWrong.Visible && !timerProgressChange.Enabled && !buttNext.Visible)
-                    nextWord(false);
+                    nextWord();
                 else if (chklistDefs.Visible)
                     buttFinished.PerformClick();
             }
@@ -1671,7 +1684,7 @@ namespace Wordy
         private void buttNext_Click(object sender, EventArgs e)
         {
             timerProgressChange.Enabled = false;
-            nextWord(false);
+            nextWord();
         }
 
         private void buttPickWord1_Click(object sender, EventArgs e)
@@ -1715,7 +1728,7 @@ namespace Wordy
                     if (DateTime.Now >= gotoNextQuestion)
                     {
                         timerProgressChange.Enabled = false;
-                        nextWord(false);
+                        nextWord();
                     }
                 //if buttNext IS visible then the user needs to click it to proceed
             }
@@ -1729,7 +1742,7 @@ namespace Wordy
                     {
                         //process to next question
                         timerProgressChange.Enabled = false;
-                        nextWord(false);
+                        nextWord();
                     }
                     else
                         //let the user click the button to proceed
