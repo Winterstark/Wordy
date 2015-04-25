@@ -164,12 +164,7 @@ namespace Wordy
             textFilter.Width = 341 - textFilter.Left;
 
             if (main.Profile != "English")
-            {
-                //hide English-only UI elements
-                lblSyns.Visible = false;
-                textSynonyms.Visible = false;
-                picWordnik.Visible = false;
-            }
+                picWordnik.Visible = false; //hide Wordnik logo
         }
 
         private void formWordlist_FormClosing(object sender, FormClosingEventArgs e)

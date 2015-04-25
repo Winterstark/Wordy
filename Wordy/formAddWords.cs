@@ -642,8 +642,6 @@ namespace Wordy
                 toggleVisuals();
 
                 //hide English-only UI elements
-                lblSyns.Visible = false;
-                textSynonyms.Visible = false;
                 picWordnik.Visible = false;
                 buttToggleVisuals.Visible = false;
             }

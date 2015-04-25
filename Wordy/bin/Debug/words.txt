@@ -24568,10 +24568,29 @@ harangue, end, declaim, perorates, perorated, perorating, conclude, recite, pero
 debate, plate, trait, dilate, permeate, plait, great, late, rate, straight, 
 2015-02-12 13:20
 0001-01-01 00:00
-2015-04-23 16:45
+2015-04-25 18:42
 0001-01-01 00:00
+3
 2
+0
+0
+False
+</entry>
+
+<entry>
+geronimo
+[defs]
+(interj.) A cry before jumping out of or into something (originally by American parachutists).::False
+(Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
+[/defs]
+sadfasdf, 
+politico, dynamo, domino, dunno, romeo, below, plateau, buffalo, portico, bungalow, 
+2015-04-25 18:41
+0001-01-01 00:00
+2015-04-25 18:41
+0001-01-01 00:00
 1
+0
 0
 0
 False
