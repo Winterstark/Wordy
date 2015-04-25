@@ -2433,18 +2433,18 @@ True
 <entry>
 bray
 [defs]
-(v-i.) To utter the loud, harsh cry of a donkey.::True
-(v-t.) To crush and pound to a fine consistency, as in a mortar.::True
-(v-t.) To spread (ink) thinly over a surface.::True
+(v-i.) To utter the loud, harsh cry of a donkey.::False
+(v-t.) To crush and pound to a fine consistency, as in a mortar.::False
+(v-t.) To spread (ink) thinly over a surface.::False
 [/defs]
 mill, pestle, pulp, brayed, braying, grind, hee-haw, bank, cry, 
 play, pray, prey, tray, tre, dray, re, lay, delay, clay, 
 2013-02-11 19:25
 0001-01-01 00:00
-2015-02-11 16:37
+2015-04-23 16:45
 2015-02-05 13:42
 6
-22
+23
 17
 15
 False
@@ -3259,16 +3259,16 @@ True
 <entry>
 tress
 [defs]
-(n.) A long lock or ringlet of hair.::False
+(n.) A long lock or ringlet of hair.::True
 [/defs]
 queue, pigtail, ringlet, lock, nazarite tresses, tressed point, to braid st. catherine's tresses, hairdo, hairstyle, hair style, 
 press, dress, bless, less, stress, les, yes, ls, ts, oppress, 
 2013-02-12 22:02
 0001-01-01 00:00
-2015-02-24 11:53
+2015-04-23 16:45
 2015-02-12 13:21
-4
-22
+5
+23
 14
 11
 False
@@ -9231,17 +9231,17 @@ True
 <entry>
 lucubration
 [defs]
-(n.) laborious or intensive study; also : the product of such study - usually used in plural::True
+(n.) laborious or intensive study; also : the product of such study - usually used in plural::False
 "The historical archives include handwritten lucubrations from Benjamin Franklin himself."::False
 [/defs]
 meditation, literary work, study, literary composition, cogitation, titanthrop, ex-sergeant, ghostliness, anthropologists, landslide, 
 legislation, regulation, revelation, celebration, penetration, calibration, escalation, regurgitation, ablation, mutilation, 
 2013-09-28 12:47
 0001-01-01 00:00
-2015-02-11 16:35
+2015-04-23 16:42
 2015-02-09 13:00
 5
-21
+22
 15
 12
 False
@@ -12614,16 +12614,16 @@ True
 <entry>
 escarpment
 [defs]
-(n.) A steep slope or long cliff that results from erosion or faulting and separates two relatively level areas of differing elevations.::True
+(n.) A steep slope or long cliff that results from erosion or faulting and separates two relatively level areas of differing elevations.::False
 [/defs]
 band, side, slope, fortification, munition, incline, precipice, acclivity, kopje, promontory, 
 enlargement, department, apartment, parchment, bombardment, compartment, garment, disbarment, carpet, scarlet, 
 2013-12-30 12:26
 0001-01-01 00:00
-2015-02-11 16:37
+2015-04-23 16:45
 2015-02-05 13:41
 6
-13
+14
 10
 9
 False
@@ -12768,10 +12768,10 @@ questionable, self-styled, self-named, would-be, pretended, salival, sebaceous, 
 soidisant, choisissent, noircissent, voinut, eurichment, jointtenant, appoiniment, 
 2014-01-02 12:45
 0001-01-01 00:00
-2015-02-11 19:32
+2015-04-23 16:45
 2015-02-11 13:35
 3
-8
+9
 10
 9
 False
@@ -16361,10 +16361,10 @@ formal, pro forma invoice, perfunctory,
 
 2014-07-04 20:06
 0001-01-01 00:00
-2015-02-11 16:36
+2015-04-23 16:45
 2015-02-08 13:43
 5
-13
+14
 7
 6
 False
@@ -22171,17 +22171,17 @@ True
 <entry>
 balaclava
 [defs]
-(n.) A warm woolen hood covering the head and neck (worn especially by mountain climbers and skiers).::True
+(n.) A warm woolen hood covering the head and neck (worn especially by mountain climbers and skiers).::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 balaclava helmet, cap, fur-trimmed, head-covering, cannonball, one-horned, Kevlar, annexe, child, visored, 
 lava, cassava, guava, java, plaza, raja, drama, melodrama, substrata, regatta, 
 2014-12-07 16:38
 0001-01-01 00:00
-2015-02-11 16:40
+2015-04-23 16:45
 2015-02-08 13:46
 5
-17
+18
 4
 2
 False
@@ -22386,10 +22386,10 @@ canaille, following, followers, audience, temporalty, laity, the proletariat, th
 employ, deploy, ploy, decoy, employe, troy, savoy, destroy, annoy, roi, 
 2014-12-13 14:17
 0001-01-01 00:00
-2015-02-15 15:14
+2015-04-23 16:45
 2015-02-09 14:10
 5
-9
+10
 5
 3
 False
@@ -22571,16 +22571,16 @@ True
 <entry>
 ecotone
 [defs]
-(n.) Ecology  a region of transition between two biological communities.::True
+(n.) Ecology  a region of transition between two biological communities.::False
 [/defs]
 
 stone, bone, grown, tone, acetone, clone, groan, atone, condone, peptone, 
 2014-12-22 12:54
 0001-01-01 00:00
-2015-02-11 16:39
+2015-04-23 16:42
 2015-02-10 14:02
 5
-8
+9
 3
 2
 False
@@ -23078,10 +23078,10 @@ openly, briskly, comprehensively, generally, vigorously, boldly, peremptorily, p
 soundly, profoundly, unsoundly, foundry, loudly, proudly, rowdy, county, bounty, hourly, 
 2015-01-12 14:40
 0001-01-01 00:00
-2015-02-11 19:29
+2015-04-23 16:45
 2015-02-11 13:24
 3
-9
+10
 2
 1
 False
@@ -23133,10 +23133,10 @@ self-denial, self-control, self-discipline, asceses,
 exegesis, amniocentesis, ceases, adhesive, leases, cohesive, brevis, nieces, seizes, creases, 
 2015-01-13 12:53
 0001-01-01 00:00
-2015-02-12 13:24
+2015-04-23 16:45
 2015-02-12 13:15
 3
-9
+10
 2
 1
 False
@@ -23281,10 +23281,10 @@ work of art, musical composition, composition, piece, opus, piece of music, obli
 baksheesh, unleash, leash, quiche, trustees, draftees, police, achieve, perceive, prestige, 
 2015-01-15 13:01
 0001-01-01 00:00
-2015-02-12 13:25
+2015-04-23 16:45
 2015-02-12 13:24
 5
-7
+8
 2
 1
 False
@@ -24194,13 +24194,13 @@ chef-d'oeuvre
 verruca, verrucae, issuer, rescuer, continua, ventricular, periventricular, interventricular, atrioventricular, intraventricular, 
 2015-02-01 13:09
 0001-01-01 00:00
-2015-02-11 16:39
-0001-01-01 00:00
-6
-10
+2015-04-23 16:45
+2015-04-30 16:45
+7
+11
 0
 0
-False
+True
 </entry>
 
 <entry>
@@ -24214,10 +24214,10 @@ huge, fierce, vast, atrocious, inhuman, immanely,
 women, linen, given, written, vision, hidden, kitchen, listen, mission, arisen, 
 2015-02-01 13:09
 0001-01-01 00:00
-2015-02-11 16:36
+2015-04-23 16:45
 0001-01-01 00:00
 6
-10
+11
 0
 0
 False
@@ -24316,17 +24316,17 @@ True
 <entry>
 orenda
 [defs]
-(n.) A mystical power thought to pervade all things.::True
+(n.) A mystical power thought to pervade all things.::False
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 mana, wakan, 
 agenda, addenda, hacienda, referenda, placenta, magenta, placentae, impedimenta, omega, henna, 
 2015-02-04 13:30
 0001-01-01 00:00
-2015-02-11 16:39
+2015-04-23 16:44
 0001-01-01 00:00
 6
-7
+8
 0
 0
 False
@@ -24344,10 +24344,10 @@ swag, bale, faggot, pack, fagot, grab, sheave, bundle, bind, reap,
 thief, fief, chief, leaf, beef, reef, lief, brief, grief, massif, 
 2015-02-04 13:30
 0001-01-01 00:00
-2015-02-11 16:40
+2015-04-23 16:45
 0001-01-01 00:00
 5
-7
+8
 0
 0
 False
@@ -24394,16 +24394,16 @@ True
 <entry>
 scuncheon
 [defs]
-(n.) the inside face of a doorjamb or window frame.::True
+(n.) the inside face of a doorjamb or window frame.::False
 [/defs]
 
 hewn, saloon, shewn, strewn, aucune, croon, soon, immune, balloon, spoon, 
 2015-02-05 12:54
 0001-01-01 00:00
-2015-02-11 16:40
+2015-04-23 16:45
 0001-01-01 00:00
 5
-6
+7
 0
 0
 False
@@ -24420,10 +24420,10 @@ imperial capacity unit, british capacity unit, keg, warto, hogshead, assize, j±
 jerkin, gherkin, shirking, working, lurking, jerking, smirking, perking, clerking, quirking, 
 2015-02-05 12:57
 0001-01-01 00:00
-2015-02-11 16:36
+2015-04-23 16:44
 0001-01-01 00:00
 5
-6
+7
 0
 0
 False
@@ -24432,17 +24432,17 @@ False
 <entry>
 doorjamb
 [defs]
-(n.) Either of the two vertical pieces framing a doorway and supporting the lintel. Also called doorpost.::True
+(n.) Either of the two vertical pieces framing a doorway and supporting the lintel. Also called doorpost.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 jamb, key-operated, curbstone, clinch, overhead, deadbolt, doorframe, dreadful-looking, nose, thumper, 
 dam, damn, jam, tam, tram, dram, jamb, pram, spam, buckram, 
 2015-02-05 12:57
 0001-01-01 00:00
-2015-02-11 16:39
+2015-04-23 16:45
 0001-01-01 00:00
 6
-6
+7
 0
 0
 False
@@ -24451,16 +24451,16 @@ False
 <entry>
 Pendragon
 [defs]
-(n.) title for an ancient (British or Welsh) prince holding supreme power.::True
+(n.) title for an ancient (British or Welsh) prince holding supreme power.::False
 [/defs]
 
 undergone, leprechaun, foregone, begone, tenon, mastodon, predawn, woebegone, methadon, drawn, 
 2015-02-07 12:49
 0001-01-01 00:00
-2015-02-11 16:36
+2015-04-23 16:45
 0001-01-01 00:00
 5
-4
+5
 0
 0
 False
@@ -24475,10 +24475,10 @@ dishonorable, dishonest, picaresqueness, picaresquely, Picaresque novel, boy-and
 preheadache, headache, headach, neckache, wapentake, headshake, sheldrake, fishcake, windbreak, milkshake, 
 2015-02-08 13:42
 0001-01-01 00:00
-2015-02-11 16:35
+2015-04-23 16:45
 0001-01-01 00:00
 4
-3
+4
 0
 0
 False
@@ -24494,10 +24494,10 @@ tantara
 tiara, corolla, cantata, pajama, drama, mamma, papa, plaza, cassava, java, 
 2015-02-09 14:27
 0001-01-01 00:00
-2015-02-15 15:14
+2015-04-23 16:45
 0001-01-01 00:00
 2
-3
+4
 0
 0
 False
@@ -24512,10 +24512,10 @@ preface, beginning, introduction, proem, judicat, sacratum, suarum, mobilium, co
 mausoleum, imperium, encomium, labium, cilium, solarium, coliseum, francium, museum, cerium, 
 2015-02-09 14:27
 0001-01-01 00:00
-2015-02-24 11:53
+2015-04-23 16:45
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -24531,10 +24531,10 @@ sternutate, ptarmus, sneeze, reflex action, reflex response, physiological react
 plantation, fermentation, sanitation, permutation, salutation, foundation, translation, adaptation, accommodation, agitation, 
 2015-02-11 16:34
 0001-01-01 00:00
-2015-02-11 16:34
+2015-04-23 16:45
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
@@ -24550,10 +24550,10 @@ xerophytism, xerophytically, xerophyte, xerophytic, xeric,
 escape, videotape, cape, scrape, agape, gape, reshape, shape, tape, rape, 
 2015-02-12 13:20
 0001-01-01 00:00
-2015-03-04 14:17
+2015-04-23 16:45
 0001-01-01 00:00
-1
-1
+2
+2
 0
 0
 False
@@ -24568,10 +24568,10 @@ harangue, end, declaim, perorates, perorated, perorating, conclude, recite, pero
 debate, plate, trait, dilate, permeate, plait, great, late, rate, straight, 
 2015-02-12 13:20
 0001-01-01 00:00
-2015-02-12 13:20
+2015-04-23 16:45
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False

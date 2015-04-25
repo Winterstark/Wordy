@@ -369,7 +369,8 @@ namespace Wordy
                     break;
                 }
 
-            buttNewWotD.Visible = prefs.NewWotDs;
+            if (Profile == "English")
+                buttNewWotD.Visible = prefs.NewWotDs;
             prefs.Save();
         }
 
