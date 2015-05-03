@@ -1,4 +1,4 @@
-<entry>
+﻿<entry>
 smarrito
 [defs]
 lost::False
@@ -7774,7 +7774,7 @@ spare::False
 5
 0
 0
-False
+
 </entry>
 
 <entry>

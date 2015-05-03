@@ -260,6 +260,7 @@ namespace Wordy
                 if (!repeatLastTest)
                 {
                     testWord = words[rand.Next(words.Count)];
+                    testWord = words.Find(w => w.ToString() == "risparmiare");
                     words.Remove(testWord);
                 }
 
@@ -1005,7 +1006,8 @@ namespace Wordy
                         }
 
                         //if the user's answer is a synonym also let him try again
-                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition())))
+                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition()))
+                            || testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower())) //also check the test word's own synonyms list
                         {
                             nextWord(true, answerGiven);
                             MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1029,7 +1031,7 @@ namespace Wordy
                     else
                     {
                         //check if answer given is a synonym
-                        if (testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven))
+                        if (testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower()))
                         {
                             acceptAnswer();
                             success = true;
