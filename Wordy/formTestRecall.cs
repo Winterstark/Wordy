@@ -260,7 +260,6 @@ namespace Wordy
                 if (!repeatLastTest)
                 {
                     testWord = words[rand.Next(words.Count)];
-                    testWord = words.Find(w => w.ToString() == "risparmiare");
                     words.Remove(testWord);
                 }
 
@@ -1087,26 +1086,29 @@ namespace Wordy
             correctAnswer = correctAnswer.ToLower();
             answerGiven = answerGiven.ToLower();
 
-            //check for extra letters
-            for (int i = 0; i < answerGiven.Length; i++)
-                if (answerGiven.Remove(i, 1) == correctAnswer)
-                    return true;
-
-            //check for missing letters
-            for (int i = 0; i <= answerGiven.Length && i < correctAnswer.Length; i++)
-                if (answerGiven.Insert(i, correctAnswer[i].ToString()) == correctAnswer)
-                    return true;
-
-            //check for a swapped pair of letters
-            for (int i = 0; i < answerGiven.Length - 1; i++)
-                if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == correctAnswer)
-                    return true;
-
-            //check for a mistyped letter
-            if (answerGiven.Length == correctAnswer.Length)
+            foreach (string line in correctAnswer.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)) //in case of multiple correct answers separated by newline
+            {
+                //check for extra letters
                 for (int i = 0; i < answerGiven.Length; i++)
-                    if (answerGiven.Substring(0, i) == correctAnswer.Substring(0, i) && answerGiven.Substring(i + 1) == correctAnswer.Substring(i + 1))
+                    if (answerGiven.Remove(i, 1) == line)
                         return true;
+
+                //check for missing letters
+                for (int i = 0; i <= answerGiven.Length && i < line.Length; i++)
+                    if (answerGiven.Insert(i, line[i].ToString()) == line)
+                        return true;
+
+                //check for a swapped pair of letters
+                for (int i = 0; i < answerGiven.Length - 1; i++)
+                    if (answerGiven.Substring(0, i) + answerGiven[i + 1] + answerGiven[i] + (i + 2 < answerGiven.Length ? answerGiven.Substring(i + 2) : "") == line)
+                        return true;
+
+                //check for a mistyped letter
+                if (answerGiven.Length == line.Length)
+                    for (int i = 0; i < answerGiven.Length; i++)
+                        if (answerGiven.Substring(0, i) == line.Substring(0, i) && answerGiven.Substring(i + 1) == line.Substring(i + 1))
+                            return true;
+            }
 
             return false;
         }
