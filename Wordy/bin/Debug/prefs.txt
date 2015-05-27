@@ -1,7 +1,7 @@
 True
-2015-05-03 14:43
+2015-05-27 10:57
 True
 C:\dev\projex\Wordy\Wordy\bin\Debug\newwords.txt
 True
-Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=Wordy&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1429980646&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=qMxPq7iMOWAbWaJEh499cRlcyt%2fgm2iDfwX3RZTUoec%3d
-2015-04-25 18:50
+Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=Wordy&http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.com&ExpiresOn=1432720200&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&HMACSHA256=TRbz8B59V755Be0E%2bkHE0hlVq%2bXUlO0Mkfh5VQa3FuM%3d
+2015-05-27 11:49

@@ -790,7 +790,7 @@ namespace Wordy
 
             //check answers
             for (int i = 0; i < chklistDefs.Items.Count; i++)
-                if (chklistDefs.GetItemChecked(i) != testWord.GetDefinition().Contains(chklistDefs.Items[i].ToString()))
+                if (chklistDefs.GetItemChecked(i) != testWord.GetDefinition().ToLower().Contains(chklistDefs.Items[i].ToString().ToLower()))
                 {
                     answer(false);
                     return;

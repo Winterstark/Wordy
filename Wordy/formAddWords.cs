@@ -733,6 +733,11 @@ namespace Wordy
                     textNewWords.Text += allNewWords[i] + (i < allNewWords.Count - 1 ? Environment.NewLine : "");
             }
 
+            //remove words already searched and not found
+            for (int i = 0; i < allNewWords.Count; i++)
+                if (allNewWords[i].Contains(" <- NOT FOUND"))
+                    allNewWords.RemoveAt(i--);
+
             //check if words already exist in database (or have already been searched)
             string duplicates = "";
             string[] foundDuplicates = new string[0];
@@ -754,6 +759,9 @@ namespace Wordy
                 MessageBox.Show("The following words already exist in Wordy's database and will not be added:" + duplicates);
                 foundDuplicates = duplicates.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             }
+
+            if (allNewWords.Count == 0)
+                return;
 
             wordSearchQ = new Queue<string>(allNewWords); //process only words that have no duplicates
 
