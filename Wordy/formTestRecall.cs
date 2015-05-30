@@ -468,7 +468,7 @@ namespace Wordy
                                 buttFinished.Top = lblDef.Top + lblDef.Height + 8;
                                 buttSkip.Top = buttFinished.Top;
 
-                                lblSynonyms.Text = removeWordInstances(lblSynonyms.Text, testWord.ToString()); //hide instances of test word in the synonyms list
+                                lblSynonyms.Text = lblSynonyms.Text.Replace(testWord.ToString(), "???"); //hide instances of test word in the synonyms list
 
                                 //reveal every other letter
                                 mask = createMask();
