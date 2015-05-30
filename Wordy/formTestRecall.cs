@@ -1381,7 +1381,12 @@ namespace Wordy
             lb--;
 
             if (lb != -1)
-                mtbDef.Select(lb, 0);
+            {
+                if (mtbDef.Text == "") //if the user hasn't entered any text yet...
+                    mtbDef.Select(lb, 0); //...focus on the first letter (on the 'l' in "l_____")...
+                else
+                    mtbDef.Select(lb + 1, 0); //...otherwise, focus on the first BLANK (on the first '_' in "le____")
+            }
         }
 
         void mtbDef_KeyPress(object sender, KeyPressEventArgs e)
