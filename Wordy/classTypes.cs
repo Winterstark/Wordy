@@ -37,10 +37,9 @@ namespace Wordy
                     defs[i] = defs[i].Replace('—', '-');
                 
                 //moar cleanup
-                int lb = defs[i].IndexOf("See Synonyms");
-
-                while (lb != -1)
+                while (defs[i].Contains("See Synonyms"))
                 {
+                    int lb = defs[i].IndexOf("See Synonyms");
                     int ub = defs[i].Length;
 
                     int altUB = defs[i].IndexOf(Environment.NewLine, lb);
@@ -51,9 +50,9 @@ namespace Wordy
                     if (altUB != -1 && altUB < ub)
                         ub = altUB;
 
-                    defs[i] = defs[i].Insert(ub, ")").Insert(lb, "(");
-
-                    lb = defs[i].IndexOf("See Synonyms", ub);
+                    defs[i] = defs[i].Remove(lb, ub - lb);
+                    if (defs[i].Substring(lb - 1, 2) == " .")
+                        defs[i] = defs[i].Remove(lb - 1, 2);
                 }
             }
 

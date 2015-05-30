@@ -351,7 +351,7 @@ namespace Wordy
             {
                 updateStatus("Searching definitions for '" + word + "' ..."); //may need invoke?
                 WordnikDefinition[] wdDefs = wordnik.GetDefinitions(word).ToArray();
-
+                
                 if (wdDefs.Length > 0)
                 {
                     definitions = new Definition(wdDefs);
