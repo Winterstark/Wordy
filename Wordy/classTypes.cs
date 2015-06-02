@@ -27,6 +27,9 @@ namespace Wordy
             for (int i = 0; i < wdDefs.Length; i++)
             {
                 defs[i] = wdDefs[i].Text;
+
+                if (string.IsNullOrEmpty(wdDefs[i].PartOfSpeech))
+                    wdDefs[i].PartOfSpeech = "???";
                 partsOfSpeech[i] = cleanUp(wdDefs[i].PartOfSpeech);
                 
                 if (defs[i].Contains(":  ")) // quote examples separated only by a colon
