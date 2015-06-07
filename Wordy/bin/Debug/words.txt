@@ -4,7 +4,7 @@ athwart
 (adv.) From side to side; crosswise or transversely.::False
 (adv.) So as to thwart, obstruct, or oppose; perversely.::False
 (prep.) From one side to the other of; across: "the Stars that shoot athwart the Night"  ( Alexander Pope). ::False
-(prep.) Contrary to; against.::False
+(prep.) Contrary to; dagainst.::False
 (prep.) Nautical   Across the course, line, or length of.::False
 [/defs]
 athwartships, sidewise, obliquely, perversely, across, athwart the forefoot, athwart hawse, new-minted, 40-degree, authorial, 
@@ -15108,17 +15108,17 @@ True
 <entry>
 svelte
 [defs]
-(adj.) slender, lithe::False
+(adj.) slender, lithe::True
 "The TV star posted an online photo of herself, looking svelte in a figure-hugging dress."::False
 [/defs]
 lean, thin, graceful, sophisticated, long-fingered, ambassadorial, pigtail, curvaceous, debonair, willowy, 
 felt, smelt, spelt, belt, dealt, melt, dwelt, knelt, help, held, 
 2014-04-30 16:57
 0001-01-01 00:00
-2015-05-07 13:03
+2015-06-07 17:02
 2015-05-05 13:04
-4
-15
+5
+16
 12
 10
 False
@@ -27846,10 +27846,10 @@ cuddy, guards van, card, cookroom, car, railcar, railway car, kitchen, railroad 
 reduce, adduce, conduce, papoose, produce, abuse, induce, juice, deduce, obtuse, 
 2015-05-03 13:27
 0001-01-01 00:00
-2015-05-07 12:59
+2015-06-07 17:02
 0001-01-01 00:00
+6
 5
-4
 0
 0
 False
@@ -27914,16 +27914,16 @@ False
 <entry>
 dormer
 [defs]
-(n.) a window that projects vertically from a sloping roof.::False
+(n.) a window that projects vertically from a sloping roof.::True
 [/defs]
 dormer window, window, roundheaded, bottle glass, diamond-paned, unpartitioned, drive-up, driver's-side, west-facing, glassless, 
 former, warmer, performer, reformer, informer, conformer, transformer, corner, mourner, scorner, 
 2015-05-04 13:15
 0001-01-01 00:00
-2015-05-07 12:59
+2015-06-07 17:02
 0001-01-01 00:00
+5
 4
-3
 0
 0
 False
@@ -27940,10 +27940,10 @@ slops, pigswill, mash, feed grain, cud, petfood, fish meal, food cache, cattle c
 defender, pretender, offender, vendor, sender, blender, fender, transgender, vender, gender, 
 2015-05-04 13:15
 0001-01-01 00:00
-2015-05-07 13:00
+2015-06-07 17:02
 0001-01-01 00:00
-3
-3
+4
+4
 0
 0
 False
@@ -28015,10 +28015,10 @@ motte-and-bailey, lexicologist, vocaliser, rampart, vocalizer, court, singer, le
 daily, palely, gaily, gayly, frailly, regale, ukulele, baby, basely, daisy, 
 2015-05-05 13:05
 0001-01-01 00:00
-2015-05-30 10:51
+2015-06-07 17:02
 0001-01-01 00:00
-3
-3
+4
+4
 0
 0
 False
@@ -28053,10 +28053,10 @@ haruspex
 roughnecks, runlets, cossets, sunsets, cutlets, anopheles, gutless, subtexts, loveth, dumbbells, 
 2015-05-07 12:56
 0001-01-01 00:00
-2015-05-30 10:51
+2015-06-07 17:02
 0001-01-01 00:00
+3
 2
-1
 0
 0
 False
@@ -28092,10 +28092,10 @@ exarchal, exarchy, exarchate, viceroy, vicereine, bishop, commissary-general, de
 etch, bench, fetch, wretch, wrench, wench, ketch, vetch, sketch, trench, 
 2015-05-07 12:56
 0001-01-01 00:00
-2015-05-07 12:56
+2015-06-07 17:02
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False

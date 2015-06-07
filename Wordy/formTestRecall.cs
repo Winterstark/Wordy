@@ -1613,12 +1613,15 @@ namespace Wordy
                 {
                     case Keys.Q:
                         answer(correctPick == 3);
+                        e.Handled = e.SuppressKeyPress = true;
                         break;
                     case Keys.W:
                         answer(correctPick == 4);
+                        e.Handled = e.SuppressKeyPress = true;
                         break;
                     case Keys.E:
                         answer(correctPick == 5);
+                        e.Handled = e.SuppressKeyPress = true;
                         break;
                 }
             }
