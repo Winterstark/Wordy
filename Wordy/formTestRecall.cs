@@ -1032,9 +1032,18 @@ namespace Wordy
                         //check if answer given is a synonym
                         if (testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower()))
                         {
-                            acceptAnswer();
-                            success = true;
-                            MessageBox.Show("It will be accepted anyway.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            if (removeWordInstances(def.ToLower(), answerGiven.ToLower()).Contains("???"))
+                            {
+                                //however, do NOT accept the user's answer if the synonym is present in the word's definition
+                                rejectAnswer();
+                                MessageBox.Show("However, the word's definition contains your answer, so it will NOT be accepted.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                            else
+                            {
+                                acceptAnswer();
+                                success = true;
+                                MessageBox.Show("It will be accepted anyway.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
                         }
                         else
                         {
@@ -1046,17 +1055,7 @@ namespace Wordy
                                 MessageBox.Show("It will be accepted anyway.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else
-                            {
-                                lblWord.Text += " forgotten!";
-                                lblWord.ForeColor = Color.Red;
-
-                                if (main.Profile == "English")
-                                    endNotch = resetLearningPhase;
-                                else
-                                    endNotch = 1;
-
-                                timerProgressChange.Enabled = true;
-                            }
+                                rejectAnswer();
                         }
                     }
                 }
@@ -1138,6 +1137,19 @@ namespace Wordy
                 setupUI();
 
             nCorrectAnswers++;
+        }
+
+        void rejectAnswer()
+        {
+            lblWord.Text += " forgotten!";
+            lblWord.ForeColor = Color.Red;
+
+            if (main.Profile == "English")
+                endNotch = resetLearningPhase;
+            else
+                endNotch = 1;
+
+            timerProgressChange.Enabled = true;
         }
 
         string removeWordInstances(string txt, string word)
