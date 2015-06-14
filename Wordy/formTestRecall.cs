@@ -514,6 +514,7 @@ namespace Wordy
                                     lblWord.Text = lblWord.Text.Substring(1, 1) + lblWord.Text.Substring(0, 1) + (lblWord.Text.Length > 2 ? lblWord.Text.Substring(2) : "");
 
                                 lblDef.Text = "Unscramble this word.";
+                                lblSynonyms.Text = lblSynonyms.Text.Replace(testWord.ToString(), "???"); //hide instances of test word in the synonyms list
 
                                 mtbTestWord.Text = "";
                                 mtbTestWord.Mask = "";

@@ -2191,12 +2191,12 @@ spray, murderousness, straightly, pimpernel, bornouse, pompons, motherwort, haik
 snowdrift, drift, thrift, adrift, shrift, lift, swift, rift, gift, shift, 
 2013-02-11 11:38
 0001-01-01 00:00
-2015-06-07 17:58
-2015-08-16 17:58
+2015-03-29 14:02
+2015-05-31 14:02
 7
 14
-22
-19
+21
+18
 True
 </entry>
 
@@ -3319,13 +3319,13 @@ roisterously, roisterous, roisterer, bully, bluster, revel, swagger, roistering,
 cloister, moisture, oyster, loiter, pointer, goiter, boiler, foyer, neuer, broiler, 
 2013-02-12 22:02
 0001-01-01 00:00
-2015-06-07 17:57
+2015-04-02 13:16
 2015-06-04 13:16
-3
+7
 21
-21
+20
 18
-False
+True
 </entry>
 
 <entry>
@@ -12417,10 +12417,10 @@ golden-crowned, chameleonlike, proprietory, absolutely, square-shouldered, capab
 peptic, septic, sceptic, aseptic, skeptic, epileptic, dyspeptic, antiseptic, cataleptic, neuroleptic, 
 2013-12-23 12:48
 0001-01-01 00:00
-2015-05-30 10:51
+2015-06-14 16:24
 2015-05-11 14:43
 1
-15
+16
 14
 12
 False
@@ -12944,21 +12944,21 @@ True
 <entry>
 plastron
 [defs]
-(n.) a metal breastplate formerly worn under the hauberk::True
-(n.) a quilted pad worn in fencing practice to protect the chest, waist, and the side on which the weapon is held::True
-(n.) the ventral part of the shell of a tortoise or turtle::True
+(n.) a metal breastplate formerly worn under the hauberk::False
+(n.) a quilted pad worn in fencing practice to protect the chest, waist, and the side on which the weapon is held::False
+(n.) the ventral part of the shell of a tortoise or turtle::False
 "'History buffs would recognise the jacket for its trademark 'British Empire of the late 1800s' features including the royal blue fabric, gold rope embellishments and gilded brass buttons, while fashion lovers would be drawn to its Michael Jackson-like rich red plastron and Sergeant Pepper's Lonely Hearts Club-style glitzy epaulettes.'  From an article by Jenna Clarke in the Canberra Times (Australia),October 6, 2012"::False
 [/defs]
 pad, ægis, breastplate, exoskeleton, shirtfront, subcellular, non-smoking, morion, 
 plantain, platen, barren, dragon, traction, baron, bastion, plankton, blacken, bracken, 
 2014-01-09 12:34
 0001-01-01 00:00
-2015-04-29 13:27
-2015-05-20 13:27
+2015-06-14 16:23
+2015-07-12 16:23
 7
 22
-16
-14
+17
+15
 True
 </entry>
 
@@ -16041,20 +16041,20 @@ True
 <entry>
 retiring
 [defs]
-(adj.) Shy and reserved; modest.::False
+(adj.) Shy and reserved; modest.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 bashful, modest, outgoing, unassertive, shy, reserved, retire, 
 aspiring, tiring, untiring, respiring, firing, acquiring, admiring, hiring, inspiring, wiring, 
 2014-06-18 13:22
 0001-01-01 00:00
-2015-06-07 17:58
+2015-04-04 13:05
 2015-05-23 13:05
-3
+7
 14
-14
+13
 11
-False
+True
 </entry>
 
 <entry>
@@ -16340,12 +16340,12 @@ crow, racetrack tout, puff, gloat, triumph, ticket tout, touted, touting, solici
 doubt, bout, toute, pout, about, shout, drought, stout, trout, gout, 
 2014-07-04 20:06
 0001-01-01 00:00
-2015-06-07 17:58
-2015-08-09 17:58
+2015-03-17 12:53
+2015-05-12 12:53
 7
 21
-10
 9
+8
 True
 </entry>
 
@@ -20303,13 +20303,13 @@ unfavourable, unfavorable, envious, desirable, offensive, enviable, hateful, mal
 insidious, hideous, fastidious, amphibious, tibias, imperious, serious, initiates, lascivious, incipience, 
 2014-10-26 17:04
 0001-01-01 00:00
-2015-06-07 17:58
+2015-04-29 13:24
 2015-05-13 13:24
-3
+7
 19
-9
+8
 6
-False
+True
 </entry>
 
 <entry>
@@ -21248,20 +21248,20 @@ True
 <entry>
 caliga
 [defs]
-(n.) In Roman antiquity, a military shoe; the most common form of foot-covering.::False
+(n.) In Roman antiquity, a military shoe; the most common form of foot-covering.::True
 (Source) (from The Century Dictionary and Cyclopedia)::False
 [/defs]
 
 capita, candida, mantissa, frolicker, malinger, laminar, polisher, solider, packager, ravager, 
 2014-11-15 14:09
 0001-01-01 00:00
-2015-06-07 17:58
+2015-05-01 13:38
 2015-05-15 13:38
-3
+7
 10
-8
+7
 6
-False
+True
 </entry>
 
 <entry>
@@ -24323,13 +24323,13 @@ brunet, brunette, gray, grayish, grizzle,
 frizzled, chiseled, fizzled, sizzled, bristled, shriveled, whistled, swiveled, initialed, initialled, 
 2015-02-04 14:26
 0001-01-01 00:00
-2015-06-07 17:58
+2015-04-22 13:59
 2015-05-27 13:59
-1
+7
 6
-5
 4
-False
+4
+True
 </entry>
 
 <entry>
@@ -26700,10 +26700,10 @@ ground pine, erect bugle, ajuga chamaepitys, ajuga pyramidalis, ajuga genevensis
 frugal, google, buccal, ducal, pupil, brutal, butyl, dural, pupal, bluegill, 
 2015-04-11 12:55
 0001-01-01 00:00
-2015-05-27 11:41
+2015-06-14 16:24
 2015-05-09 13:09
-1
-7
+2
+8
 2
 1
 False
@@ -27628,19 +27628,19 @@ True
 <entry>
 tumbril
 [defs]
-(n.) A kind of medieval torture device.::True
-(n.) A cart which opens at the back to release its load.::True
-(n.) A cart used to carry condemned prisoners to their death, especially to the guillotine during the French Revolution.::True
+(n.) A kind of medieval torture device.::False
+(n.) A cart which opens at the back to release its load.::False
+(n.) A cart used to carry condemned prisoners to their death, especially to the guillotine during the French Revolution.::False
 (Source) (from Wiktionary, Creative Commons Attribution/Share-Alike License)::False
 [/defs]
 dumpcart, room-service, battle-plain, two-wheeled, dobbin, leader-writer, waysto, high-wheeled, anklet, tipped-over, 
 unreal, unreel, automobile, conceal, genteel, popliteal, puerile, fibril, congeal, unseal, 
 2015-04-29 13:00
 0001-01-01 00:00
-2015-05-07 12:59
+2015-06-14 16:24
 0001-01-01 00:00
 6
-8
+9
 0
 0
 False
