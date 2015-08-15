@@ -1117,6 +1117,20 @@ namespace Wordy
                 foreach (string word in words.ToLower().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
                     if (line == word)
                         return true;
+                    else if (line.Contains('('))
+                    {
+                        //remove parentheses-enclosed texts and compare again
+                        string tempLine = line;
+                        while (tempLine.Contains('('))
+                        {
+                            int lb = tempLine.IndexOf('(');
+                            int ub = tempLine.IndexOf(')', lb) + 1;
+                            tempLine = line.Remove(lb, ub - lb).Trim();
+                        }
+
+                        if (tempLine == word)
+                            return true;
+                    }
 
             return false;
         }
@@ -1463,8 +1477,8 @@ namespace Wordy
 
             bool success = word == correctAnswer;
 
-            //when testing non-English words the correctAnswer may include several lines; only one needs to match the user's answer
-            if (!success && correctAnswer.Contains(Environment.NewLine))
+            //when testing non-English words the correctAnswer may include several lines; only one needs to match the user's answer (also parentheses can be ignored)
+            if (!success)
                 success = doesDefinitionContainWord(correctAnswer, word);
 
             //if testing recall ignore hyphen mistakes & diacritic letter mistakes

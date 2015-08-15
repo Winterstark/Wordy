@@ -1,0 +1,4931 @@
+<entry>
+treten
+[defs]
+step::False
+tread::False
+kick::False
+[/defs]
+gehen, kicken, 
+
+2015-07-03 21:37
+0001-01-01 00:00
+2015-07-30 13:46
+2015-08-20 13:46
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+nahe
+[defs]
+near::False
+nigh::False
+close::False
+[/defs]
+
+
+2015-07-03 21:37
+0001-01-01 00:00
+2015-07-30 13:49
+2015-08-20 13:49
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Nachtigall
+[defs]
+the nightingale::False
+[/defs]
+
+
+2015-07-03 21:39
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+lieber
+[defs]
+rather::False
+better::False
+[/defs]
+eher, 
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-25 14:51
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+der Biber
+[defs]
+the beaver::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-30 13:45
+2015-08-20 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+speisen
+[defs]
+dine::False
+feed::False
+eat::False
+[/defs]
+essen, fressen, 
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+schreien
+[defs]
+shout::False
+scream::False
+cry::False
+yell::False
+shriek::False
+[/defs]
+weinen, 
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+das Schaf
+[defs]
+the sheep::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-31 13:35
+2015-08-21 13:35
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+das Geflügel
+[defs]
+the poultry::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-22 14:05
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+das Hammelfleisch
+[defs]
+the mutton::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-08-12 14:05
+2015-09-02 14:05
+5
+9
+3
+2
+True
+</entry>
+
+<entry>
+die Eule
+[defs]
+the owl::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-30 13:44
+2015-08-20 13:44
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+bellen
+[defs]
+bay::False
+bark::False
+[/defs]
+anbellen, 
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-08-02 13:32
+2015-08-23 13:32
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+miauen
+[defs]
+meow::False
+[/defs]
+
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-07-30 13:46
+2015-08-20 13:46
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Brühe
+[defs]
+the broth::False
+[/defs]
+die Fleischbrühe, die Suppe, 
+
+2015-07-03 21:58
+0001-01-01 00:00
+2015-08-02 13:31
+2015-08-23 13:31
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+brummen
+[defs]
+buzz::False
+hum::False
+growl::False
+grumble::False
+[/defs]
+
+
+2015-07-03 22:04
+0001-01-01 00:00
+2015-08-04 14:49
+2015-08-25 14:49
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+das Brötchen
+[defs]
+the bun::False
+[/defs]
+
+
+2015-07-03 22:04
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-22 14:05
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+die Semmel
+[defs]
+the roll::False
+the bun::False
+[/defs]
+
+
+2015-07-03 22:04
+0001-01-01 00:00
+2015-08-12 14:05
+2015-08-26 14:05
+5
+9
+3
+2
+True
+</entry>
+
+<entry>
+blöken
+[defs]
+bleat::False
+[/defs]
+
+
+2015-07-03 23:03
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-25 14:51
+5
+8
+2
+2
+True
+</entry>
+
+<entry>
+grunzen
+[defs]
+grunt::False
+snort::False
+[/defs]
+
+
+2015-07-03 23:03
+0001-01-01 00:00
+2015-07-31 13:35
+2015-08-21 13:35
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+muhen
+[defs]
+moo::False
+[/defs]
+
+
+2015-07-03 23:03
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+wiehern
+[defs]
+neigh::False
+whinny::False
+[/defs]
+
+
+2015-07-04 00:11
+0001-01-01 00:00
+2015-08-14 13:39
+2015-08-28 13:39
+5
+11
+3
+2
+True
+</entry>
+
+<entry>
+der Klops
+[defs]
+the blob::False
+the meatball::False
+[/defs]
+Kloß, Fleischkloß, 
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+knurren
+[defs]
+growl::False
+snarl::False
+rumble::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-08-12 14:02
+2015-08-19 14:02
+5
+24
+2
+0
+True
+</entry>
+
+<entry>
+die Tunke
+[defs]
+the sauce::False
+the gravy::False
+[/defs]
+die Soße, der Fleischsaft, 
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-07-31 13:35
+2015-08-21 13:35
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+der Frosch
+[defs]
+the frog::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-07-31 13:33
+2015-08-21 13:33
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+brüllen
+[defs]
+roar::False
+bellow::False
+shout::False
+yell::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-22 13:39
+5
+20
+2
+1
+True
+</entry>
+
+<entry>
+meckern
+[defs]
+gripe::False
+bitch::False
+moan::False
+bleat::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-08-01 14:02
+2015-08-22 14:02
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+grinsen
+[defs]
+grin::False
+smirk::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-07-30 13:45
+2015-08-20 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+der Affe
+[defs]
+the monkey::False
+the ape::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-07-30 13:48
+2015-08-20 13:48
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Reh
+[defs]
+the deer::False
+the roe::False
+[/defs]
+die Rehe, 
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-08-01 14:04
+2015-08-22 14:04
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+der Aal
+[defs]
+the eel::False
+[/defs]
+
+
+2015-07-04 00:48
+0001-01-01 00:00
+2015-08-01 14:02
+2015-08-22 14:02
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+der Wettkampf
+[defs]
+the competition::False
+the contest::False
+[/defs]
+der Wettbewerb, die Konkurenz, das Turnier, der Konkurrenzkampf, 
+
+2015-07-04 15:31
+0001-01-01 00:00
+2015-07-31 13:35
+2015-08-21 13:35
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+der Löwe
+[defs]
+the lion::False
+[/defs]
+
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-30 13:49
+2015-08-20 13:49
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+der Fuchs
+[defs]
+the fox::False
+[/defs]
+
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-30 13:45
+2015-08-20 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+listig
+[defs]
+crafty::False
+cunning::False
+sly::False
+clever::False
+[/defs]
+
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-31 13:35
+2015-08-21 13:35
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+böse
+[defs]
+evil::False
+bad::False
+wicked::False
+angry::False
+vicious::False
+[/defs]
+schlecht, 
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-08-02 13:33
+2015-08-23 13:33
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+die Schlange
+[defs]
+the snake::False
+[/defs]
+
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-30 13:47
+2015-08-20 13:47
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+schlau
+[defs]
+smart::False
+clever::False
+cunning::False
+[/defs]
+intelligent, 
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+ziemlich
+[defs]
+pretty::False
+quite::False
+rather::False
+fairly::False
+[/defs]
+eher, 
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+ob
+[defs]
+whether::False
+if::False
+[/defs]
+wenn, falls, 
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-07-31 13:33
+2015-08-21 13:33
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+deshalb
+[defs]
+therefore::False
+that is why::False
+that's why::False
+hence::False
+[/defs]
+daher, 
+
+2015-07-04 16:29
+0001-01-01 00:00
+2015-08-12 14:05
+2015-09-02 14:05
+5
+9
+3
+2
+True
+</entry>
+
+<entry>
+die Brille
+[defs]
+the glasses::False
+[/defs]
+
+
+2015-07-04 20:07
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+klagen
+[defs]
+complain::False
+sue::False
+lament::False
+moan::False
+[/defs]
+
+
+2015-07-05 15:19
+0001-01-01 00:00
+2015-08-04 14:50
+2015-08-25 14:50
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+so lala
+[defs]
+so-so::False
+[/defs]
+
+
+2015-07-05 15:19
+0001-01-01 00:00
+2015-07-31 13:33
+2015-08-21 13:33
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+spät
+[defs]
+late::False
+[/defs]
+
+
+2015-07-05 15:19
+0001-01-01 00:00
+2015-07-31 13:34
+2015-08-21 13:34
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+der Pilz
+[defs]
+the mushroom::False
+the fungus::False
+[/defs]
+
+
+2015-07-05 15:19
+0001-01-01 00:00
+2015-08-01 14:02
+2015-08-22 14:02
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+zeichnen
+[defs]
+draw::False
+sign::False
+mark::False
+[/defs]
+malen, unterschreiben, signieren, markieren, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-27 14:19
+5
+10
+2
+2
+True
+</entry>
+
+<entry>
+gern geschehen
+[defs]
+my pleasure::False
+you are welcome::False
+you're welcome::False
+[/defs]
+bitte, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-22 14:05
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+schön dich kennen zu lernen
+[defs]
+nice to meet you::False
+[/defs]
+
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-22 14:05
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+die Verzeihung
+[defs]
+the forgiveness::False
+the pardon::False
+[/defs]
+die Vergebung, der Pardon, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-26 13:41
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+verzeihen
+[defs]
+forgive::False
+pardon::False
+excuse::False
+[/defs]
+vergeben, entschuldigen, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-15 13:08
+1
+12
+5
+1
+False
+</entry>
+
+<entry>
+wiederholen
+[defs]
+repeat::False
+retry::False
+[/defs]
+repetieren, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-01 14:02
+2015-08-15 14:02
+5
+11
+2
+1
+True
+</entry>
+
+<entry>
+holen
+[defs]
+get::False
+fetch::False
+pick up::False
+[/defs]
+erhalten, bekommen, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-12 14:05
+2015-09-02 14:05
+5
+15
+2
+2
+True
+</entry>
+
+<entry>
+die Mohnblume
+[defs]
+the poppy::False
+the poppy flower::False
+[/defs]
+die Mohn, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-12 14:04
+2015-09-02 14:04
+5
+8
+3
+2
+True
+</entry>
+
+<entry>
+weiter
+[defs]
+further::False
+more::False
+[/defs]
+mehr, 
+
+2015-07-05 15:42
+0001-01-01 00:00
+2015-08-02 13:32
+2015-08-23 13:32
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+geschehen
+[defs]
+happen::False
+occur::False
+[/defs]
+passieren, kommen, vorkommen, erfolgen, auftreten, 
+
+2015-07-06 14:08
+0001-01-01 00:00
+2015-08-08 13:11
+2015-08-29 13:11
+5
+10
+2
+2
+True
+</entry>
+
+<entry>
+das Rindfleisch
+[defs]
+the beef::False
+[/defs]
+
+
+2015-07-07 13:53
+0001-01-01 00:00
+2015-08-04 14:50
+2015-08-25 14:50
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+das Kalbfleisch
+[defs]
+the veal::False
+[/defs]
+
+
+2015-07-07 13:53
+0001-01-01 00:00
+2015-08-02 13:32
+2015-08-23 13:32
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+solche
+[defs]
+such::False
+[/defs]
+
+
+2015-07-08 16:33
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+8
+3
+2
+True
+</entry>
+
+<entry>
+die Verallgemeinerung
+[defs]
+the generalization::False
+[/defs]
+
+
+2015-07-08 16:34
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+das Vorurteil
+[defs]
+the prejudice::False
+the bias::False
+[/defs]
+
+
+2015-07-08 16:34
+0001-01-01 00:00
+2015-08-13 13:09
+2015-08-20 13:09
+5
+12
+2
+1
+True
+</entry>
+
+<entry>
+daneben
+[defs]
+in addition::False
+beside that::False
+wrong::False
+missed::False
+[/defs]
+außerdem, hinzu, falsch, 
+
+2015-07-08 16:35
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-23 13:44
+5
+15
+2
+1
+True
+</entry>
+
+<entry>
+das Beispiel
+[defs]
+the example::False
+[/defs]
+
+
+2015-07-08 16:37
+0001-01-01 00:00
+2015-08-04 14:49
+2015-08-25 14:49
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+gerade
+[defs]
+just::False
+straight::False
+[/defs]
+nur, einfach, eben, direkt, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-04 14:50
+2015-08-25 14:50
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+fürchterlich
+[defs]
+terrible::False
+dreadful::False
+awful::False
+horrible::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-08 13:11
+2015-08-29 13:11
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+krachen
+[defs]
+crash::False
+crack::False
+bang::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-04 14:49
+2015-08-25 14:49
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+verkrachen
+[defs]
+fall out::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-26 13:41
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+weil
+[defs]
+because::False
+since::False
+[/defs]
+da, seit, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+behaupten
+[defs]
+claim::False
+assert::False
+maintain::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-02 13:31
+2015-08-16 13:31
+5
+16
+1
+1
+True
+</entry>
+
+<entry>
+überbieten
+[defs]
+outdo::False
+outbid::False
+overbid::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+9
+2
+2
+True
+</entry>
+
+<entry>
+geradezu
+[defs]
+almost::False
+virtually::False
+really::False
+downright::False
+outright::False
+[/defs]
+fast, wirklich, tatsätlich, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-19 13:41
+5
+12
+2
+1
+True
+</entry>
+
+<entry>
+wüsten
+[defs]
+waste::False
+squander::False
+[/defs]
+verschwenden, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-26 13:42
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+angeben
+[defs]
+specify::False
+indicate::False
+boast::False
+show off::False
+[/defs]
+spezifizieren, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-12 14:03
+2015-09-02 14:03
+5
+12
+2
+2
+True
+</entry>
+
+<entry>
+prahlen
+[defs]
+brag::False
+boast::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-26 13:41
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+ausdrücken
+[defs]
+express::False
+squeeze::False
+[/defs]
+aussprechen, drücken, pressen, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-08 13:11
+2015-08-29 13:11
+5
+7
+2
+2
+True
+</entry>
+
+<entry>
+beschließen
+[defs]
+choose::False
+resolve::False
+determine::False
+[/defs]
+lösen, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-12 13:35
+3
+23
+2
+0
+False
+</entry>
+
+<entry>
+künftig
+[defs]
+future::False
+in the future::False
+[/defs]
+zukünftig, 
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-09 13:42
+2015-08-16 13:42
+5
+9
+2
+1
+True
+</entry>
+
+<entry>
+bescheiden
+[defs]
+modest::False
+humble::False
+[/defs]
+
+
+2015-07-09 15:45
+0001-01-01 00:00
+2015-08-12 14:03
+2015-08-26 14:03
+5
+20
+2
+1
+True
+</entry>
+
+<entry>
+die Ungeduld
+[defs]
+the impatience::False
+[/defs]
+
+
+2015-07-09 16:03
+0001-01-01 00:00
+2015-08-11 13:12
+2015-08-18 13:12
+5
+11
+2
+1
+True
+</entry>
+
+<entry>
+langweilig
+[defs]
+boring::False
+tedious::False
+[/defs]
+
+
+2015-07-09 16:03
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-25 14:51
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+der Kuchen
+[defs]
+the cake::False
+[/defs]
+die Torte, 
+
+2015-07-09 16:03
+0001-01-01 00:00
+2015-08-04 14:50
+2015-08-25 14:50
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+leise
+[defs]
+quiet::False
+soft::False
+gentle::False
+faint::False
+slight::False
+[/defs]
+ruhig, still, leicht, 
+
+2015-07-09 16:03
+0001-01-01 00:00
+2015-08-14 13:45
+2015-09-04 13:45
+5
+13
+2
+2
+True
+</entry>
+
+<entry>
+gleiten
+[defs]
+glide::False
+slide::False
+slip::False
+[/defs]
+
+
+2015-07-09 16:03
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-27 14:19
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+weiblich
+[defs]
+female::False
+[/defs]
+
+
+2015-07-09 16:09
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-30 13:45
+5
+8
+2
+2
+True
+</entry>
+
+<entry>
+sachlich
+[defs]
+neuter::False
+[/defs]
+
+
+2015-07-09 16:09
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-26 13:41
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+der Kaninchen
+[defs]
+the rabbit::False
+the bunny::False
+[/defs]
+das Kanin, 
+
+2015-07-09 16:16
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-25 14:51
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+der Hase
+[defs]
+the hare::False
+the rabbit::False
+the bunny::False
+[/defs]
+
+
+2015-07-09 16:16
+0001-01-01 00:00
+2015-08-01 14:06
+2015-08-15 14:06
+5
+8
+2
+1
+True
+</entry>
+
+<entry>
+der Topf
+[defs]
+the pot::False
+[/defs]
+
+
+2015-07-09 16:16
+0001-01-01 00:00
+2015-08-09 13:41
+2015-08-16 13:41
+5
+9
+2
+1
+True
+</entry>
+
+<entry>
+bunt
+[defs]
+colorful::False
+[/defs]
+farbig, 
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-05 13:40
+2015-08-26 13:40
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+hell
+[defs]
+bright::False
+light::False
+[/defs]
+licht, leicht, 
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-05 13:41
+2015-08-26 13:41
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+dunkel
+[defs]
+dark::False
+deep::False
+obscure::False
+dim::False
+[/defs]
+hoch, obskur, 
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-08 13:11
+2015-08-29 13:11
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+gestreift
+[defs]
+striped::False
+streaked::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-26 13:42
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Birne
+[defs]
+the pear::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-12 14:01
+2015-08-19 14:01
+5
+10
+2
+1
+True
+</entry>
+
+<entry>
+der Pfirsich
+[defs]
+the peach::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+8
+2
+2
+True
+</entry>
+
+<entry>
+die Pflaume
+[defs]
+the plum::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-20 14:19
+5
+12
+2
+1
+True
+</entry>
+
+<entry>
+die Traube
+[defs]
+the grape::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-27 14:19
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+die Kopfhörer
+[defs]
+the headphones::False
+the earphones::False
+[/defs]
+
+
+2015-07-09 20:05
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-27 14:19
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+das Nomen
+[defs]
+the noun::False
+[/defs]
+das Substantiv, 
+
+2015-07-11 15:44
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-27 14:20
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+gelassen
+[defs]
+calm::False
+serene::False
+[/defs]
+ruhig, still, 
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-18 14:51
+5
+14
+1
+1
+True
+</entry>
+
+<entry>
+sag mal
+[defs]
+tell me::False
+tell me something::False
+[/defs]
+sag mir, 
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-30 13:44
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+lachen
+[defs]
+laugh::False
+[/defs]
+
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-30 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+dass ich nicht lache
+[defs]
+don't make me laugh::False
+[/defs]
+
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-12 14:04
+2015-09-02 14:04
+5
+8
+2
+2
+True
+</entry>
+
+<entry>
+jucken
+[defs]
+itch::False
+[/defs]
+
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-13 13:10
+2015-08-20 13:10
+5
+8
+2
+1
+True
+</entry>
+
+<entry>
+wen juckt das
+[defs]
+who cares::False
+[/defs]
+
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-30 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+verächtlich
+[defs]
+contemptible::False
+contemptuous::False
+scornful::False
+disdainful::False
+despicable::False
+[/defs]
+
+
+2015-07-12 17:35
+0001-01-01 00:00
+2015-08-02 13:33
+2015-08-16 13:33
+5
+12
+1
+1
+True
+</entry>
+
+<entry>
+einzig
+[defs]
+only::False
+sole::False
+unique::False
+[/defs]
+
+
+2015-07-12 17:45
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-30 13:44
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+dafür
+[defs]
+for this::False
+for that::False
+in favor::False
+in return::False
+in exchange::False
+[/defs]
+dazu, 
+
+2015-07-12 17:45
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-20 14:20
+5
+9
+2
+1
+True
+</entry>
+
+<entry>
+klug
+[defs]
+clever::False
+wise::False
+smart::False
+[/defs]
+weise, intelligent, clever, 
+
+2015-07-12 17:45
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+der Beweis
+[defs]
+the proof::False
+the evidence::False
+[/defs]
+der Nachweis, die Evidenz, 
+
+2015-07-12 18:02
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-31 13:38
+5
+5
+2
+2
+True
+</entry>
+
+<entry>
+der Handschuh
+[defs]
+the glove::False
+[/defs]
+
+
+2015-07-14 17:32
+0001-01-01 00:00
+2015-08-12 14:04
+2015-09-02 14:04
+5
+6
+2
+2
+True
+</entry>
+
+<entry>
+die Rache
+[defs]
+the revenge::False
+the vengeance::False
+[/defs]
+die Revanche, 
+
+2015-07-17 10:40
+0001-01-01 00:00
+2015-08-12 14:05
+2015-09-02 14:05
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+zischen
+[defs]
+hiss::False
+sizzle::False
+fizzle::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-11 13:12
+2015-08-18 13:12
+5
+15
+1
+0
+True
+</entry>
+
+<entry>
+vorführen
+[defs]
+show::False
+demonstrate::False
+perform::False
+[/defs]
+zeigen, anzeigen, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-12 14:04
+2015-08-26 14:04
+5
+17
+1
+1
+True
+</entry>
+
+<entry>
+verstecken
+[defs]
+hide::False
+conceal::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-20 14:20
+5
+11
+1
+1
+True
+</entry>
+
+<entry>
+fortfahren
+[defs]
+continue::False
+proceed::False
+go on::False
+resume::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-09 13:42
+2015-08-16 13:42
+5
+13
+1
+0
+True
+</entry>
+
+<entry>
+gucken
+[defs]
+watch::False
+see::False
+look::False
+[/defs]
+sehen, ansehen, aussehen, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+fügen
+[defs]
+put::False
+place::False
+[/defs]
+setzen, platzieren, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-13 14:16
+2
+19
+1
+0
+False
+</entry>
+
+<entry>
+spotten
+[defs]
+mock::False
+scoff::False
+ridicule::False
+sneer::False
+deride::False
+scorn::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-14 13:34
+2015-08-28 13:34
+5
+10
+2
+1
+True
+</entry>
+
+<entry>
+das Loch
+[defs]
+the hole::False
+the opening::False
+the pit::False
+[/defs]
+die Höhle, die Öffnung, das Öffnen, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+wetten
+[defs]
+bet::False
+wager::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-14 13:35
+2015-09-04 13:35
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+wahnsinnig
+[defs]
+crazy::False
+mad::False
+insane::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+der Wahn
+[defs]
+the mania::False
+the delusion::False
+the illusion::False
+[/defs]
+die Manie, die Illusion, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-02 13:31
+2015-08-16 13:31
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+sinnig
+[defs]
+apt::False
+practical::False
+[/defs]
+praktisch, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-14 13:39
+2015-08-28 13:39
+5
+10
+2
+1
+True
+</entry>
+
+<entry>
+mithalten
+[defs]
+match::False
+keep up with::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-09 13:42
+2015-08-16 13:42
+5
+13
+1
+0
+True
+</entry>
+
+<entry>
+der Blödsinn
+[defs]
+the nonsense::False
+the rubbish::False
+the bullshit::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-13 13:48
+2
+5
+2
+1
+False
+</entry>
+
+<entry>
+wundern
+[defs]
+surprise::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-14 13:38
+2015-09-04 13:38
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+rasen
+[defs]
+race::False
+rush::False
+hurtle::False
+[/defs]
+fahren, laufen, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-03 13:35
+2015-08-17 13:35
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+schwach
+[defs]
+weak::False
+faint::False
+frail::False
+poor::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-02 13:32
+2015-08-16 13:32
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+qualmen
+[defs]
+smoke::False
+puff::False
+[/defs]
+
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-13 13:48
+1
+5
+2
+1
+False
+</entry>
+
+<entry>
+das Blatt
+[defs]
+the sheet::True
+the leaf::True
+the page::False
+[/defs]
+die Folie, die Platte, 
+
+2015-07-19 11:53
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+10
+1
+1
+True
+</entry>
+
+<entry>
+der Ast
+[defs]
+the branch::False
+the bough::False
+the limb::False
+[/defs]
+
+
+2015-07-19 11:55
+0001-01-01 00:00
+2015-08-14 13:39
+2015-09-04 13:39
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+tief
+[defs]
+deep::False
+low::False
+[/defs]
+
+
+2015-07-19 11:56
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Grube
+[defs]
+the pit::False
+the mine::False
+[/defs]
+die Box, die Mine, 
+
+2015-07-19 11:56
+0001-01-01 00:00
+2015-08-14 13:39
+2015-09-04 13:39
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+dumpf
+[defs]
+dull::False
+muffled::False
+hollow::False
+[/defs]
+stumpf, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-24 13:38
+5
+8
+3
+1
+True
+</entry>
+
+<entry>
+der Schlag
+[defs]
+the shock::False
+the blow::False
+the shot::False
+the strike::False
+the hit::False
+the slap::False
+[/defs]
+der Schock, der Streik, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-14 13:35
+2015-09-04 13:35
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Sahne
+[defs]
+the cream::False
+[/defs]
+die Creme, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-02 13:31
+2015-08-16 13:31
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+ankommen
+[defs]
+arrive::False
+come::False
+[/defs]
+kommen, landen, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-23 13:45
+5
+7
+2
+1
+True
+</entry>
+
+<entry>
+heilig
+[defs]
+holy::False
+sacred::False
+saint::False
+saintly::False
+[/defs]
+sankt, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-14 13:39
+2015-09-04 13:39
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+jammern
+[defs]
+whine::False
+yammer::False
+wail::False
+lament::False
+moan::False
+[/defs]
+
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-14 13:44
+2015-08-28 13:44
+5
+11
+2
+1
+True
+</entry>
+
+<entry>
+die Falle
+[defs]
+the trap::False
+the catch::False
+the pit::False
+[/defs]
+die Klappe, 
+
+2015-07-19 12:05
+0001-01-01 00:00
+2015-08-14 13:35
+2015-09-04 13:35
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Wand
+[defs]
+the wall::False
+[/defs]
+
+
+2015-07-19 14:58
+0001-01-01 00:00
+2015-08-02 13:33
+2015-08-16 13:33
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+wachsen
+[defs]
+grow::False
+wax::False
+expand::False
+[/defs]
+werden, erweitern, expandieren, 
+
+2015-07-19 14:58
+0001-01-01 00:00
+2015-08-14 13:34
+2015-09-04 13:34
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+mutlos
+[defs]
+disheartened::False
+discouraged::False
+despondent::False
+dejected::False
+[/defs]
+
+
+2015-07-19 14:58
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+10
+1
+1
+True
+</entry>
+
+<entry>
+bloß
+[defs]
+only::False
+just::False
+merely::False
+purely::False
+[/defs]
+nur, 
+
+2015-07-19 15:10
+0001-01-01 00:00
+2015-08-03 13:35
+2015-08-17 13:35
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+Moment mal
+[defs]
+wait a moment::False
+wait a minute::False
+[/defs]
+warte ein Moment, 
+
+2015-07-19 15:10
+0001-01-01 00:00
+2015-08-14 13:40
+2015-09-04 13:40
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+einfallen
+[defs]
+occur::False
+happen::False
+collapse::False
+invade::False
+fall::False
+[/defs]
+fallen, sinken, überfallen, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-18 14:51
+5
+9
+1
+1
+True
+</entry>
+
+<entry>
+der Kreis
+[defs]
+the circle::False
+the circuit::False
+the cycle::False
+the district::False
+[/defs]
+der Zirkel, der Ring, der Zyklus, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-01 14:06
+2015-08-15 14:06
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+herum
+[defs]
+around::False
+[/defs]
+umher, rund, zirka, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-14 13:45
+2015-09-04 13:45
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+feiern
+[defs]
+celebrate::False
+[/defs]
+zelebrieren, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-01 14:04
+2015-08-15 14:04
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+geraten
+[defs]
+get::False
+[/defs]
+erhalten, bekommen, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-01 14:04
+2015-08-15 14:04
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+nachdenklich
+[defs]
+thoughtful::False
+pensive::False
+contemplative::False
+[/defs]
+kontemplativ, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-01 14:04
+2015-08-15 14:04
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+hin
+[defs]
+down::False
+broken::False
+[/defs]
+hinunter, herunter, kaputt, 
+
+2015-07-19 15:22
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+packen
+[defs]
+pack::False
+grab::False
+catch::False
+seize::False
+grasp::False
+grip::False
+[/defs]
+
+
+2015-07-19 15:25
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+überraschen
+[defs]
+surprise::False
+astonish::False
+astound::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-13 13:46
+2
+5
+2
+1
+False
+</entry>
+
+<entry>
+wirbeln
+[defs]
+swirl::False
+whirl::False
+twirl::False
+roll::False
+[/defs]
+rollen, strudeln, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-04 14:51
+2015-08-18 14:51
+5
+8
+1
+1
+True
+</entry>
+
+<entry>
+der Strudel
+[defs]
+the strudel::False
+the swirl::False
+the whirlpool::False
+the vortex::False
+the eddy::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+werfen
+[defs]
+throw::False
+cast::False
+toss::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-14 13:38
+2015-09-04 13:38
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+begreifen
+[defs]
+understand::False
+comprehend::False
+realize::False
+grasp::False
+grip::False
+[/defs]
+verstehen, erkennen, erfassen, realisieren, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-12 14:04
+2015-08-26 14:04
+5
+17
+1
+1
+True
+</entry>
+
+<entry>
+greifen
+[defs]
+grab::False
+grip::False
+reach::False
+grasp::False
+seize::False
+hold::False
+[/defs]
+erreichen, halten, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-01 14:02
+2015-08-15 14:02
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+wickeln
+[defs]
+wrap::False
+wind::False
+twist::False
+coil::False
+roll::False
+[/defs]
+verpacken, rollen, winden, spulen, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-23 13:44
+5
+13
+1
+1
+True
+</entry>
+
+<entry>
+das Seil
+[defs]
+the rope::False
+the cable::False
+the wire::False
+[/defs]
+das Kabel, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-01 14:05
+2015-08-15 14:05
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+klettern
+[defs]
+climb::False
+clamber::False
+scramble::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+11
+2
+1
+True
+</entry>
+
+<entry>
+fassen
+[defs]
+grasp::False
+take::False
+touch::False
+hold::False
+catch::False
+seize::False
+grip::False
+grab::False
+understand::False
+[/defs]
+nehmen, halten, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-20 14:20
+5
+11
+1
+1
+True
+</entry>
+
+<entry>
+prima
+[defs]
+fine::False
+great::False
+fantastic::False
+[/defs]
+toll, groß, fantastisch, gut, 
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-14 13:46
+2015-09-04 13:46
+5
+4
+2
+2
+True
+</entry>
+
+<entry>
+die Rettung
+[defs]
+the rescue::False
+the salvation::False
+the deliverance::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+13
+2
+1
+True
+</entry>
+
+<entry>
+der Wurf
+[defs]
+the throw::False
+the toss::False
+the shot::False
+the litter::False
+[/defs]
+
+
+2015-07-19 15:45
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-24 13:38
+5
+8
+2
+1
+True
+</entry>
+
+<entry>
+die Weise
+[defs]
+the way::False
+the manner::False
+the fashion::False
+the means::False
+[/defs]
+der Weg, die Art, die Mode, das Mittel, 
+
+2015-07-19 15:48
+0001-01-01 00:00
+2015-08-02 13:31
+2015-08-16 13:31
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+anfügen
+[defs]
+attach::False
+add::False
+join::False
+[/defs]
+addieren, 
+
+2015-07-23 13:33
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-23 13:45
+5
+9
+1
+1
+True
+</entry>
+
+<entry>
+der Esel
+[defs]
+the donkey::False
+the ass::False
+the jackass::False
+[/defs]
+
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+die Mühle
+[defs]
+the mill::False
+[/defs]
+
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-20 14:19
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+genug
+[defs]
+enough::False
+sufficient::False
+[/defs]
+genügend, genügsam, 
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-24 13:38
+5
+9
+1
+1
+True
+</entry>
+
+<entry>
+der Bauer
+[defs]
+the farmer::False
+the peasant::False
+[/defs]
+der Farmer, 
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+die Seite
+[defs]
+the page::False
+the side::False
+the flank::False
+[/defs]
+der Page, die Flanke, die Wand, 
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+beiseite
+[defs]
+aside::False
+apart::False
+[/defs]
+
+
+2015-07-24 22:06
+0001-01-01 00:00
+2015-08-13 13:10
+2015-08-20 13:10
+5
+12
+1
+0
+True
+</entry>
+
+<entry>
+schaffen
+[defs]
+create::False
+make::False
+establish::False
+[/defs]
+kreiern, machen, etablieren, 
+
+2015-07-24 22:11
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-20 14:20
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Jagd
+[defs]
+the hunting::False
+the hunt::False
+the chase::False
+[/defs]
+
+
+2015-07-25 11:21
+0001-01-01 00:00
+2015-08-07 14:02
+2015-08-21 14:02
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+der Rand
+[defs]
+the edge::False
+the border::False
+the side::False
+[/defs]
+die Seite, 
+
+2015-07-25 11:21
+0001-01-01 00:00
+2015-08-06 14:18
+2015-08-20 14:18
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Laute
+[defs]
+the lute::False
+[/defs]
+
+
+2015-07-25 11:21
+0001-01-01 00:00
+2015-08-07 14:02
+2015-08-21 14:02
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+die Trommel
+[defs]
+the drum::False
+[/defs]
+
+
+2015-07-25 11:21
+0001-01-01 00:00
+2015-08-13 13:10
+2015-08-20 13:10
+5
+11
+1
+0
+True
+</entry>
+
+<entry>
+einige
+[defs]
+some::False
+several::False
+a few::False
+[/defs]
+etwas, ein paar, manche, 
+
+2015-07-25 11:23
+0001-01-01 00:00
+2015-08-09 13:46
+2015-08-23 13:46
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+traurig
+[defs]
+sad::False
+sorry::False
+sorrowful::False
+mournful::False
+unhappy::False
+[/defs]
+trist, unzufrieden, 
+
+2015-07-25 11:23
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-23 13:44
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+putzen
+[defs]
+clean::False
+brush::False
+polish::False
+wipe::False
+[/defs]
+reinigen, waschen, polieren, 
+
+2015-07-25 11:38
+0001-01-01 00:00
+2015-08-09 13:43
+2015-08-23 13:43
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+der Bart
+[defs]
+the beard::False
+the whiskers::False
+[/defs]
+die Schnurrhaare, 
+
+2015-07-25 11:38
+0001-01-01 00:00
+2015-08-06 14:18
+2015-08-20 14:18
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+der Schnurrbart
+[defs]
+the moustache::False
+the whiskers::False
+[/defs]
+
+
+2015-07-25 11:38
+0001-01-01 00:00
+2015-08-06 14:20
+2015-08-20 14:20
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Gefahr
+[defs]
+the danger::False
+the risk::False
+[/defs]
+das Risiko, 
+
+2015-07-25 11:38
+0001-01-01 00:00
+2015-08-09 13:46
+2015-08-23 13:46
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+der Zahn
+[defs]
+the tooth::False
+[/defs]
+
+
+2015-07-25 11:38
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+fangen
+[defs]
+catch::False
+trap::False
+[/defs]
+nehmen, holen, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-07 14:02
+2015-08-21 14:02
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+der Ofen
+[defs]
+the oven::False
+the stove::False
+the furnace::False
+[/defs]
+der Kocher, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-07 14:02
+2015-08-21 14:02
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+ersaufen
+[defs]
+drown::False
+flood::False
+[/defs]
+ertrinken, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-14 13:34
+2015-08-21 13:34
+5
+12
+1
+0
+True
+</entry>
+
+<entry>
+saufen
+[defs]
+booze::False
+drink::False
+guzzle::False
+[/defs]
+trinken, schnapsen, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-10 13:36
+2015-08-17 13:36
+5
+9
+1
+0
+True
+</entry>
+
+<entry>
+der Ausreißer
+[defs]
+the runaway::False
+[/defs]
+der Flüchtling, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-23 13:45
+5
+8
+1
+1
+True
+</entry>
+
+<entry>
+der Bauernhof
+[defs]
+the farm::False
+[/defs]
+die Farm, der Hof, die Landwirtschaft, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-06 14:19
+2015-08-20 14:19
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+krähen
+[defs]
+crow::False
+[/defs]
+schreien, 
+
+2015-07-25 11:51
+0001-01-01 00:00
+2015-08-07 14:02
+2015-08-21 14:02
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+voraus
+[defs]
+advance::False
+ahead::False
+[/defs]
+vorneweg, 
+
+2015-07-25 12:02
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-23 13:44
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+befehlen
+[defs]
+command::False
+order::False
+[/defs]
+kommandieren, führen, bestellen, 
+
+2015-07-25 12:02
+0001-01-01 00:00
+2015-08-15 13:07
+2015-08-13 14:15
+2
+13
+1
+0
+False
+</entry>
+
+<entry>
+die Stimme
+[defs]
+the voice::False
+the vote::False
+[/defs]
+die Wahl, 
+
+2015-07-25 12:02
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+klingen
+[defs]
+sound::False
+ring::False
+[/defs]
+erklingen, tönen, ertönen, klingeln, 
+
+2015-07-25 12:02
+0001-01-01 00:00
+2015-08-05 13:42
+2015-08-19 13:42
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+verlockend
+[defs]
+tempting::False
+enticing::False
+attractive::False
+[/defs]
+lockend, appetitlich, attraktiv, 
+
+2015-07-25 12:02
+0001-01-01 00:00
+2015-08-12 14:04
+2015-08-26 14:04
+5
+10
+1
+1
+True
+</entry>
+
+<entry>
+das Ereignis
+[defs]
+the event::False
+the incident::False
+the occurrence::False
+the occasion::False
+[/defs]
+der Fall, der Vorfall, 
+
+2015-07-27 16:02
+0001-01-01 00:00
+2015-08-13 13:11
+2015-08-20 13:11
+5
+9
+1
+0
+True
+</entry>
+
+<entry>
+die Leinwand
+[defs]
+the canvas::False
+the screen::False
+[/defs]
+der Bildschirm, der Schirm, 
+
+2015-07-27 16:02
+0001-01-01 00:00
+2015-08-09 13:43
+2015-08-23 13:43
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+die Schildkröte
+[defs]
+the turtle::False
+the tortoise::False
+[/defs]
+
+
+2015-07-27 16:02
+0001-01-01 00:00
+2015-08-09 13:43
+2015-08-23 13:43
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Kröte
+[defs]
+the toad::False
+[/defs]
+
+
+2015-07-27 16:02
+0001-01-01 00:00
+2015-08-09 13:44
+2015-08-23 13:44
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+der Lein
+[defs]
+the flax::False
+[/defs]
+der Flachs, 
+
+2015-07-27 16:02
+0001-01-01 00:00
+2015-08-10 13:39
+2015-08-24 13:39
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+der Donner
+[defs]
+the thunder::False
+[/defs]
+
+
+2015-07-28 17:42
+0001-01-01 00:00
+2015-08-10 13:38
+2015-08-24 13:38
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+übermorgen
+[defs]
+day after tomorrow::False
+[/defs]
+
+
+2015-07-28 17:42
+0001-01-01 00:00
+2015-08-09 13:45
+2015-08-23 13:45
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+fies
+[defs]
+nasty::False
+mean::False
+vicious::False
+horrible::False
+[/defs]
+
+
+2015-07-28 21:03
+0001-01-01 00:00
+2015-08-09 13:43
+2015-08-23 13:43
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+das Kissen
+[defs]
+the pillow::False
+the cushion::False
+[/defs]
+
+
+2015-07-31 16:35
+0001-01-01 00:00
+2015-08-15 13:37
+2015-08-14 13:00
+2
+7
+1
+0
+False
+</entry>
+
+<entry>
+schwül
+[defs]
+humid::False
+sultry::False
+muggy::False
+[/defs]
+
+
+2015-07-31 16:35
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-29 13:39
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+das Handtuch
+[defs]
+the towel::False
+[/defs]
+
+
+2015-07-31 16:39
+0001-01-01 00:00
+2015-08-14 13:46
+2015-08-28 13:46
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+der Tacker
+[defs]
+the stapler::False
+[/defs]
+der Hefter, 
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-15 13:08
+1
+7
+1
+0
+False
+</entry>
+
+<entry>
+der Mund
+[defs]
+the mouth::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Zunge
+[defs]
+the tongue::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+der Flügel
+[defs]
+the wing::False
+the vane::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-12 14:04
+2015-08-19 14:04
+5
+4
+2
+1
+True
+</entry>
+
+<entry>
+der Augapfel
+[defs]
+the eyeball::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:35
+2015-08-28 13:35
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Wimper
+[defs]
+the eyelash::False
+the lash::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:45
+2015-08-28 13:45
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+das Ohr
+[defs]
+the ear::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:47
+2015-08-28 13:47
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Stirn
+[defs]
+the forehead::False
+the front::False
+the brow::False
+[/defs]
+die Braue, 
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+7
+1
+1
+True
+</entry>
+
+<entry>
+der Kiefer
+[defs]
+the jaw::False
+the pine::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-12 14:04
+2015-08-26 14:04
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+das Kinn
+[defs]
+the chin::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-12 14:05
+2015-08-26 14:05
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+die Wange
+[defs]
+the cheek::False
+[/defs]
+
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:39
+2015-08-28 13:39
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+die Kehle
+[defs]
+the throat::False
+[/defs]
+der Hals, 
+
+2015-08-01 15:26
+0001-01-01 00:00
+2015-08-14 13:40
+2015-08-28 13:40
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+weit
+[defs]
+far::False
+wide::False
+broad::False
+long::False
+[/defs]
+fern, groß, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+verbringen
+[defs]
+spend::False
+pass::False
+[/defs]
+passieren, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-09 13:42
+2015-08-16 13:42
+5
+7
+0
+0
+True
+</entry>
+
+<entry>
+der Zweig
+[defs]
+the branch::False
+the twig::False
+the sprig::False
+the bough::False
+[/defs]
+
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-29 13:39
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+die Spitze
+[defs]
+the tip::False
+the peak::False
+the top::False
+the point::False
+[/defs]
+das Ende, das Top, der Punkt, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-15 13:39
+2015-08-14 13:03
+2
+6
+1
+0
+False
+</entry>
+
+<entry>
+einschlafen
+[defs]
+fall asleep::False
+go to sleep::False
+[/defs]
+
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-13 14:13
+2
+5
+1
+0
+False
+</entry>
+
+<entry>
+blicken
+[defs]
+look::False
+glance::False
+[/defs]
+sehen, schauen, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-11 13:10
+2015-08-18 13:10
+5
+9
+0
+0
+True
+</entry>
+
+<entry>
+die Himmelsrichtung
+[defs]
+the direction::False
+the compass direction::False
+the cardinal point::False
+[/defs]
+die Richtung, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+die Entfernung
+[defs]
+the distance::False
+the range::False
+[/defs]
+die Distanz, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+nachsehen
+[defs]
+check::False
+look up::False
+[/defs]
+überprüfen, prüfen, kontrollieren, checken, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-09 13:41
+2015-08-16 13:41
+5
+7
+0
+0
+True
+</entry>
+
+<entry>
+sowieso
+[defs]
+anyway::False
+anyhow::False
+in any case::False
+[/defs]
+jedenfalls, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-13 13:10
+2015-08-20 13:10
+5
+11
+0
+0
+True
+</entry>
+
+<entry>
+gemütlich
+[defs]
+cozy::False
+comfortable::False
+comfy::False
+pleasant::False
+[/defs]
+komfortabel, 
+
+2015-08-01 15:46
+0001-01-01 00:00
+2015-08-14 13:39
+2015-08-28 13:39
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+der Räuber
+[defs]
+the robber::False
+the bandit::False
+the brigand::False
+[/defs]
+der Bandit, 
+
+2015-08-01 15:48
+0001-01-01 00:00
+2015-08-14 13:46
+2015-08-28 13:46
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+erleuchten
+[defs]
+enlighten::False
+illuminate::False
+light up::False
+[/defs]
+illuminieren, 
+
+2015-08-01 15:48
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+das Fensterbrett
+[defs]
+the windowsill::False
+the sill::False
+the ledge::False
+[/defs]
+die Fensterbank, 
+
+2015-08-01 15:52
+0001-01-01 00:00
+2015-08-14 13:46
+2015-08-28 13:46
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+das Brett
+[defs]
+the board::False
+the plank::False
+the shelf::False
+[/defs]
+das Board, die Planke, 
+
+2015-08-01 15:52
+0001-01-01 00:00
+2015-08-14 13:39
+2015-08-28 13:39
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+das Regal
+[defs]
+the shelf::False
+the rack::False
+[/defs]
+
+
+2015-08-01 15:52
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+das Tuch
+[defs]
+the cloth::False
+the fabric::False
+the scarf::False
+the shawl::False
+[/defs]
+
+
+2015-08-02 13:30
+0001-01-01 00:00
+2015-08-14 13:35
+2015-08-28 13:35
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+nass
+[defs]
+wet::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-10 13:37
+2015-08-17 13:37
+5
+8
+0
+0
+True
+</entry>
+
+<entry>
+die Brust
+[defs]
+the breast::False
+the chest::False
+[/defs]
+der Busen, 
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:36
+2015-08-28 13:36
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+der Rücken
+[defs]
+the back::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-10 13:37
+2015-08-17 13:37
+5
+8
+0
+0
+True
+</entry>
+
+<entry>
+die Wirbelsäule
+[defs]
+the spine::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:38
+2015-08-28 13:38
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+die Säule
+[defs]
+the column::False
+the pillar::False
+[/defs]
+die Kolonne, die Kolumne, 
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-15 13:38
+2015-08-14 13:05
+2
+6
+1
+0
+False
+</entry>
+
+<entry>
+die Schulter
+[defs]
+the shoulder::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:46
+2015-08-28 13:46
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+der Ellenbogen
+[defs]
+the elbow::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-15 13:40
+2015-08-29 13:40
+5
+6
+1
+1
+True
+</entry>
+
+<entry>
+das Handgelenk
+[defs]
+the wrist::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:35
+2015-08-28 13:35
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+das Gelenk
+[defs]
+the joint::False
+the link::False
+the hinge::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:35
+2015-08-28 13:35
+5
+5
+1
+1
+True
+</entry>
+
+<entry>
+der Daumen
+[defs]
+the thumb::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-10 13:36
+2015-08-17 13:36
+5
+8
+0
+0
+True
+</entry>
+
+<entry>
+die Taille
+[defs]
+the waist::False
+the waists::False
+the waistline::False
+[/defs]
+
+
+2015-08-02 15:09
+0001-01-01 00:00
+2015-08-14 13:37
+2015-08-28 13:37
+5
+4
+1
+1
+True
+</entry>
+
+<entry>
+beratschlagen
+[defs]
+discuss::False
+counsel::False
+[/defs]
+
+
+2015-08-10 23:18
+0001-01-01 00:00
+2015-08-15 13:07
+2015-08-22 13:07
+5
+4
+0
+0
+True
+</entry>
+
+<entry>
+der Haufen
+[defs]
+the pile::False
+the heap::False
+the bunch::False
+[/defs]
+die Menge, das Bündel, 
+
+2015-08-11 18:16
+0001-01-01 00:00
+2015-08-15 13:36
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
+<entry>
+die Sache
+[defs]
+the thing::False
+the matter::False
+[/defs]
+das Ding, 
+
+2015-08-11 22:37
+0001-01-01 00:00
+2015-08-15 13:37
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+stellen
+[defs]
+put::False
+set::False
+place::False
+stand::False
+[/defs]
+setzen, platzieren, 
+
+2015-08-11 23:14
+0001-01-01 00:00
+2015-08-15 13:38
+0001-01-01 00:00
+4
+3
+0
+0
+False
+</entry>
+
+<entry>
+anstellen
+[defs]
+do::False
+hire::False
+employ::False
+engage::False
+start::False
+place::False
+manage::False
+[/defs]
+verwenden, engagieren, starten, beginnen, managen, 
+
+2015-08-11 23:14
+0001-01-01 00:00
+2015-08-15 13:38
+0001-01-01 00:00
+3
+3
+0
+0
+False
+</entry>
+
