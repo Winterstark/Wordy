@@ -96,7 +96,7 @@
             this.buttOptions.Name = "buttOptions";
             this.buttOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.buttOptions.Size = new System.Drawing.Size(243, 32);
-            this.buttOptions.TabIndex = 5;
+            this.buttOptions.TabIndex = 6;
             this.buttOptions.Text = "Options";
             this.buttOptions.UseVisualStyleBackColor = true;
             this.buttOptions.Click += new System.EventHandler(this.buttOptions_Click);
@@ -135,7 +135,7 @@
             this.buttAbout.Name = "buttAbout";
             this.buttAbout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttAbout.Size = new System.Drawing.Size(243, 32);
-            this.buttAbout.TabIndex = 6;
+            this.buttAbout.TabIndex = 7;
             this.buttAbout.Text = "About";
             this.buttAbout.UseVisualStyleBackColor = true;
             this.buttAbout.Click += new System.EventHandler(this.buttAbout_Click);
@@ -149,7 +149,7 @@
             this.buttReview.Name = "buttReview";
             this.buttReview.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttReview.Size = new System.Drawing.Size(243, 32);
-            this.buttReview.TabIndex = 4;
+            this.buttReview.TabIndex = 5;
             this.buttReview.Text = "Review Words";
             this.buttReview.UseVisualStyleBackColor = true;
             this.buttReview.Click += new System.EventHandler(this.buttReview_Click);
@@ -163,7 +163,7 @@
             this.buttReading.Name = "buttReading";
             this.buttReading.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.buttReading.Size = new System.Drawing.Size(243, 32);
-            this.buttReading.TabIndex = 7;
+            this.buttReading.TabIndex = 4;
             this.buttReading.Text = "Assisted Reading";
             this.buttReading.UseVisualStyleBackColor = true;
             this.buttReading.Click += new System.EventHandler(this.buttReading_Click);

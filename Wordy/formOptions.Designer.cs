@@ -109,7 +109,7 @@
             this.checkPlaySounds.Location = new System.Drawing.Point(37, 107);
             this.checkPlaySounds.Name = "checkPlaySounds";
             this.checkPlaySounds.Size = new System.Drawing.Size(230, 17);
-            this.checkPlaySounds.TabIndex = 20;
+            this.checkPlaySounds.TabIndex = 2;
             this.checkPlaySounds.Text = "Play sound effects when testing word recall";
             this.checkPlaySounds.UseVisualStyleBackColor = true;
             this.checkPlaySounds.CheckedChanged += new System.EventHandler(this.checkPlaySounds_CheckedChanged);
@@ -119,7 +119,7 @@
             this.buttUpdateOptions.Location = new System.Drawing.Point(54, 254);
             this.buttUpdateOptions.Name = "buttUpdateOptions";
             this.buttUpdateOptions.Size = new System.Drawing.Size(255, 23);
-            this.buttUpdateOptions.TabIndex = 19;
+            this.buttUpdateOptions.TabIndex = 5;
             this.buttUpdateOptions.Text = "Updater Options";
             this.buttUpdateOptions.UseVisualStyleBackColor = true;
             this.buttUpdateOptions.Click += new System.EventHandler(this.buttUpdateOptions_Click);
@@ -129,14 +129,14 @@
             this.textNewWordsPath.Location = new System.Drawing.Point(54, 181);
             this.textNewWordsPath.Name = "textNewWordsPath";
             this.textNewWordsPath.Size = new System.Drawing.Size(394, 20);
-            this.textNewWordsPath.TabIndex = 2;
+            this.textNewWordsPath.TabIndex = 3;
             // 
             // buttBrowse
             // 
             this.buttBrowse.Location = new System.Drawing.Point(454, 179);
             this.buttBrowse.Name = "buttBrowse";
             this.buttBrowse.Size = new System.Drawing.Size(42, 23);
-            this.buttBrowse.TabIndex = 3;
+            this.buttBrowse.TabIndex = 4;
             this.buttBrowse.Text = "...";
             this.buttBrowse.UseVisualStyleBackColor = true;
             this.buttBrowse.Click += new System.EventHandler(this.buttBrowse_Click);
@@ -191,7 +191,7 @@
             this.buttRenameWord.Location = new System.Drawing.Point(114, 362);
             this.buttRenameWord.Name = "buttRenameWord";
             this.buttRenameWord.Size = new System.Drawing.Size(102, 23);
-            this.buttRenameWord.TabIndex = 29;
+            this.buttRenameWord.TabIndex = 12;
             this.buttRenameWord.Text = "Rename";
             this.buttRenameWord.UseVisualStyleBackColor = true;
             this.buttRenameWord.Click += new System.EventHandler(this.buttRenameWord_Click);
@@ -243,7 +243,7 @@
             this.lblVisualTrigger.Location = new System.Drawing.Point(350, 362);
             this.lblVisualTrigger.Name = "lblVisualTrigger";
             this.lblVisualTrigger.Size = new System.Drawing.Size(194, 23);
-            this.lblVisualTrigger.TabIndex = 13;
+            this.lblVisualTrigger.TabIndex = 14;
             this.lblVisualTrigger.Text = "Click to locate visual";
             this.lblVisualTrigger.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblVisualTrigger.Visible = false;
@@ -308,7 +308,7 @@
             this.buttSortName.Location = new System.Drawing.Point(239, 362);
             this.buttSortName.Name = "buttSortName";
             this.buttSortName.Size = new System.Drawing.Size(102, 23);
-            this.buttSortName.TabIndex = 12;
+            this.buttSortName.TabIndex = 13;
             this.buttSortName.Text = "Sort A-Z";
             this.buttSortName.UseVisualStyleBackColor = true;
             this.buttSortName.Click += new System.EventHandler(this.buttSortName_Click);

@@ -141,7 +141,7 @@
             this.linkLabel6.Location = new System.Drawing.Point(218, 247);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(112, 21);
-            this.linkLabel6.TabIndex = 6;
+            this.linkLabel6.TabIndex = 7;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Icon by ~XTUX345 ";
             this.linkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,7 +156,7 @@
             this.linkLabel7.Location = new System.Drawing.Point(218, 310);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(212, 21);
-            this.linkLabel7.TabIndex = 7;
+            this.linkLabel7.TabIndex = 10;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Checkmark graphics by psdGraphics";
             this.linkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,7 +211,7 @@
             this.linkLabel9.Location = new System.Drawing.Point(58, 352);
             this.linkLabel9.Name = "linkLabel9";
             this.linkLabel9.Size = new System.Drawing.Size(154, 21);
-            this.linkLabel9.TabIndex = 17;
+            this.linkLabel9.TabIndex = 6;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Uses Microsoft Translator";
             this.linkLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -226,7 +226,7 @@
             this.linkLabel10.Location = new System.Drawing.Point(218, 289);
             this.linkLabel10.Name = "linkLabel10";
             this.linkLabel10.Size = new System.Drawing.Size(126, 21);
-            this.linkLabel10.TabIndex = 19;
+            this.linkLabel10.TabIndex = 9;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "and Modern UI Icons";
             this.linkLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -241,7 +241,7 @@
             this.linkLabel11.Location = new System.Drawing.Point(218, 268);
             this.linkLabel11.Name = "linkLabel11";
             this.linkLabel11.Size = new System.Drawing.Size(164, 21);
-            this.linkLabel11.TabIndex = 18;
+            this.linkLabel11.TabIndex = 8;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "UI icons by Adam Whitcroft";
             this.linkLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,7 +256,7 @@
             this.linkLabel12.Location = new System.Drawing.Point(218, 331);
             this.linkLabel12.Name = "linkLabel12";
             this.linkLabel12.Size = new System.Drawing.Size(225, 21);
-            this.linkLabel12.TabIndex = 20;
+            this.linkLabel12.TabIndex = 11;
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "Country flags from CustomIconDesign";
             this.linkLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -271,7 +271,7 @@
             this.linkLabel13.Location = new System.Drawing.Point(218, 352);
             this.linkLabel13.Name = "linkLabel13";
             this.linkLabel13.Size = new System.Drawing.Size(147, 21);
-            this.linkLabel13.TabIndex = 21;
+            this.linkLabel13.TabIndex = 12;
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "Sound effects by Bertrof";
             this.linkLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
