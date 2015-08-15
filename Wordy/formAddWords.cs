@@ -817,6 +817,8 @@ namespace Wordy
             newDefs[listFoundWords.Text].Parse(textDef.Text, false);
             Misc.DisplayDefs(textDef, newDefs[listFoundWords.Text].ToString(), corewords);
 
+            synonyms[listFoundWords.Text] = textSynonyms.Text;
+
             buttUpdateDef.Enabled = false;
         }
 
@@ -1063,8 +1065,7 @@ namespace Wordy
 
         private void textSynonyms_KeyUp(object sender, KeyEventArgs e)
         {
-            if (listFoundWords.Text != "")
-                synonyms[listFoundWords.Text] = textSynonyms.Text;
+            buttUpdateDef.Enabled = listFoundWords.Text != "";
         }
 
         private void picWordnik_Click(object sender, EventArgs e)
