@@ -15115,10 +15115,10 @@ lean, thin, graceful, sophisticated, long-fingered, ambassadorial, pigtail, curv
 felt, smelt, spelt, belt, dealt, melt, dwelt, knelt, help, held, 
 2014-04-30 16:57
 0001-01-01 00:00
-2015-05-07 13:03
+2015-08-15 22:00
 2015-05-05 13:04
 4
-15
+16
 12
 10
 False
@@ -18812,10 +18812,10 @@ fail and divot, greensward, sod, cavity, turf, sward, pit, improvementand, profa
 pivot, rivet, civet, privet, trivet, visit, bishop, vivid, illicit, visage, 
 2014-09-23 12:47
 0001-01-01 00:00
-2015-05-30 10:44
+2015-08-15 21:59
 2015-05-21 13:39
 5
-18
+19
 10
 8
 False
@@ -22717,17 +22717,17 @@ True
 <entry>
 passible
 [defs]
-(adj.) Capable of feeling or suffering; sensitive "a passible type of personality. "::True
+(adj.) Capable of feeling or suffering; sensitive "a passible type of personality. "::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 reconcilable, corruptible, sufficent, realisable, hygrometric, reality, inhabitable, avowable, human-shaped, half-veiled, 
 passable, chasuble, impassable, impassible, laughable, satiable, savable, taxable, tangible, palpable, 
 2014-12-30 13:51
 0001-01-01 00:00
-2015-05-07 13:03
+2015-08-15 21:59
 2015-05-03 14:01
 5
-20
+21
 5
 4
 False
@@ -25450,10 +25450,10 @@ intenerating, intenerated, soften, softened, intenerates,
 indicate, integrate, interstate, enumerate, generate, compensate, imitate, condensate, inculcate, intimidate, 
 2015-03-13 12:55
 0001-01-01 00:00
-2015-05-07 13:03
+2015-08-15 21:52
 2015-05-05 13:54
 3
-12
+13
 4
 2
 False
@@ -27597,10 +27597,10 @@ inactive, passive, unerect, supination, reclined, peaceful, sloping, lethargic, 
 spine, iodine, stein, assign, pine, shrine, dine, align, refine, swine, 
 2015-04-28 12:54
 0001-01-01 00:00
-2015-05-07 13:00
+2015-08-15 21:59
 0001-01-01 00:00
 6
-9
+10
 0
 0
 False
@@ -27865,10 +27865,10 @@ wander, play a trick on, fox, entrap, chisel, play tricks, fool, shill, gull, pl
 chosen, frozen, refrozen, motion, notion, woven, corrosion, lotion, cloven, potion, 
 2015-05-04 12:55
 0001-01-01 00:00
-2015-05-30 10:51
+2015-08-15 21:52
 0001-01-01 00:00
 3
-4
+5
 0
 0
 False
@@ -27976,10 +27976,10 @@ parergy,
 zircon, circum, desertion, determine, urine, dispersion, diversion, immersion, perversion, reversion, 
 2015-05-05 12:59
 0001-01-01 00:00
-2015-05-30 10:51
+2015-08-15 21:59
 0001-01-01 00:00
 3
-3
+4
 0
 0
 False
@@ -27995,10 +27995,10 @@ Postilion on Wikipedia.Wikipedia, horseman, horseback rider, equestrian, landau,
 billion, pavilion, trillion, reptilian, million, civilian, vermilion, position, decision, opinion, 
 2015-05-05 13:05
 0001-01-01 00:00
-2015-05-30 10:51
+2015-08-15 21:59
 0001-01-01 00:00
-3
-3
+4
+4
 0
 0
 False
@@ -28034,10 +28034,10 @@ greasy, fat, unctuous,
 tingled, jingled, liquid, mingled, bearded, singled, tilted, pitted, shingled, tinkled, 
 2015-05-06 12:31
 0001-01-01 00:00
-2015-05-30 10:51
+2015-08-15 21:52
 0001-01-01 00:00
 3
-2
+3
 0
 0
 False
@@ -28053,10 +28053,10 @@ haruspex
 roughnecks, runlets, cossets, sunsets, cutlets, anopheles, gutless, subtexts, loveth, dumbbells, 
 2015-05-07 12:56
 0001-01-01 00:00
-2015-05-30 10:51
+2015-08-15 21:52
 0001-01-01 00:00
 2
-1
+2
 0
 0
 False
@@ -28072,10 +28072,10 @@ l'esprit de l'escalier
 trespasser, sledgehammer, stepladder, webmaster, headbanger, intramolecular, extracellular, intracellular, intermolecular, intercellular, 
 2015-05-07 12:56
 0001-01-01 00:00
-2015-05-07 12:56
+2015-08-15 21:59
 0001-01-01 00:00
+2
 1
-0
 0
 0
 False
@@ -28092,10 +28092,10 @@ exarchal, exarchy, exarchate, viceroy, vicereine, bishop, commissary-general, de
 etch, bench, fetch, wretch, wrench, wench, ketch, vetch, sketch, trench, 
 2015-05-07 12:56
 0001-01-01 00:00
-2015-05-07 12:56
+2015-08-15 21:52
 0001-01-01 00:00
 1
-0
+1
 0
 0
 False

@@ -995,24 +995,22 @@ namespace Wordy
 
                 if (!testWord.archived)
                 {
-                    if (main.Profile != "English") //exceptions for non-English words
+                    //if answer has a typo allow the user to try again
+                    if (isTypo(getCorrectAnswer(), answerGiven))
                     {
-                        //if answer has a typo allow the user to try again
-                        if (isTypo(getCorrectAnswer(), answerGiven))
-                        {
-                            nextWord(true, answerGiven);
-                            MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            return;
-                        }
+                        nextWord(true, answerGiven);
+                        MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
 
-                        //if the user's answer is a synonym also let him try again
-                        if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition()))
-                            || testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower())) //also check the test word's own synonyms list
-                        {
-                            nextWord(true, answerGiven);
-                            MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            return;
-                        }
+                    //non-English words: if the user's answer is a synonym also let him try again
+                    if (main.Profile != "English"
+                        && (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition()))
+                        || testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower()))) //also check the test word's own synonyms list
+                    {
+                        nextWord(true, answerGiven);
+                        MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
                     }
 
                     buttNext.Visible = true;
