@@ -168,7 +168,7 @@ namespace Wordy
             corewords = Misc.LoadCoreWords();
 
             //init controls
-            comboSortBy.SelectedIndex = 0;
+            comboSortBy.Text = "Sort by date tested";
 
             this.BackColor = Color.FromArgb(211, 211, 211);
             rtbDef.BackColor = this.BackColor;

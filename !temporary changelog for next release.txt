@@ -1,6 +1,7 @@
 CHANGELOG:
 * when adding non-English words the user can now manually set its translation without having to search online, which is helpful when Microsoft Translator fails to recognize a word. Check the README for details
 * synonyms of non-English words can now be edited
+* Improved UI for switching language profile
 * various other fixes
 
 
