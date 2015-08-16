@@ -17558,12 +17558,12 @@ purflew, embroider, border, purfled, purfles, purfling, purl,
 chervil, servile, inertial, commercial, reversal, rehearsal, dispersal, disbursal, universal, transversal, 
 2014-08-23 19:29
 0001-01-01 00:00
-2015-04-26 13:07
-2015-06-21 13:07
+2015-08-15 22:22
+2015-10-17 22:22
 7
 10
+10
 9
-8
 True
 </entry>
 
@@ -19320,21 +19320,21 @@ True
 <entry>
 expropriate
 [defs]
-(v.) to deprive of possession or proprietary rights::True
-(v.) to transfer (the property of another) to one's own possession::True
+(v.) to deprive of possession or proprietary rights::False
+(v.) to transfer (the property of another) to one's own possession::False
 "The city council rejected a proposal to expropriate private property for the highway expansion."::False
 [/defs]
 arrogate, expropriated, expropriates, expropriating, divest, deprive, strip, higher-risk, home, much-abused, unknotted, 
 expatriate, extrapolate, extricate, expiate, explicate, evaluate, exaggerate, exterminate, repudiate, extirpate, 
 2014-10-02 13:26
 0001-01-01 00:00
-2015-05-03 13:45
+2015-08-15 22:22
 2015-06-21 13:45
-7
+3
 11
-10
+11
 9
-True
+False
 </entry>
 
 <entry>

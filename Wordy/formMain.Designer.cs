@@ -39,8 +39,6 @@
             this.buttReading = new System.Windows.Forms.Button();
             this.ComboLanguage = new System.Windows.Forms.ComboBox();
             this.labelSeparator = new System.Windows.Forms.Label();
-            this.picFlag = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picFlag)).BeginInit();
             this.SuspendLayout();
             // 
             // buttAdd
@@ -190,20 +188,11 @@
             this.labelSeparator.Size = new System.Drawing.Size(492, 2);
             this.labelSeparator.TabIndex = 9;
             // 
-            // picFlag
-            // 
-            this.picFlag.Location = new System.Drawing.Point(25, 311);
-            this.picFlag.Name = "picFlag";
-            this.picFlag.Size = new System.Drawing.Size(24, 24);
-            this.picFlag.TabIndex = 10;
-            this.picFlag.TabStop = false;
-            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 356);
-            this.Controls.Add(this.picFlag);
             this.Controls.Add(this.labelSeparator);
             this.Controls.Add(this.ComboLanguage);
             this.Controls.Add(this.buttReading);
@@ -222,7 +211,6 @@
             this.Text = "Wordy";
             this.Activated += new System.EventHandler(this.formMain_Activated);
             this.Load += new System.EventHandler(this.formMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picFlag)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,7 +227,6 @@
         private System.Windows.Forms.Button buttReview;
         private System.Windows.Forms.Button buttReading;
         private System.Windows.Forms.Label labelSeparator;
-        private System.Windows.Forms.PictureBox picFlag;
         public System.Windows.Forms.ComboBox ComboLanguage;
     }
 }

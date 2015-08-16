@@ -26,6 +26,9 @@ namespace Wordy
         public Preferences prefs;
         formOptions options;
         formAddLanguage addLanguage;
+        List<PictureBox> picLanguageFlags;
+        PictureBox mouseOverPic;
+        Dictionary<string, Tuple<Image, Image>> languageFlags;
         public string Profile;
         public BackgroundWorker WotdWorker;
         public bool needWotDCheck = true;
@@ -72,7 +75,7 @@ namespace Wordy
                 learned = DateTime.Parse(fRdr.ReadLine());
                 lastTest = DateTime.Parse(fRdr.ReadLine());
                 nextTest = DateTime.Parse(fRdr.ReadLine());
-                
+
                 learningPhase = int.Parse(fRdr.ReadLine());
                 nStudyAttempts = int.Parse(fRdr.ReadLine());
                 nRecallAttempts = int.Parse(fRdr.ReadLine());
@@ -158,7 +161,7 @@ namespace Wordy
         {
             return GetWords().Any(e => e.ToString() == word);
         }
-        
+
         public void SaveWords()
         {
             if (Profile == "English")
@@ -271,7 +274,7 @@ namespace Wordy
                 for (int i = 0; i < n; i++)
                 {
                     int ind = rand.Next(defs.Count);
-                    
+
                     randDefs.Add(defs[ind]);
                     defs.RemoveAt(ind);
                 }
@@ -430,6 +433,74 @@ namespace Wordy
                 return foreignWords[Profile];
         }
 
+        Tuple<Image, Image> loadFlag(string path)
+        {
+            if (File.Exists(path))
+            {
+                Bitmap colorFlag = new Bitmap(path);
+                Bitmap grayscaleFlag = new Bitmap(colorFlag.Width, colorFlag.Height);
+
+                //convert flag to grayscale
+                for (int x = 0; x < colorFlag.Width; x++)
+                    for (int y = 0; y < colorFlag.Height; y++)
+                    {
+                        Color pixelColor = colorFlag.GetPixel(x, y);
+                        int grayscale = (pixelColor.R + pixelColor.G + pixelColor.B) / 3;
+                        grayscaleFlag.SetPixel(x, y, Color.FromArgb(pixelColor.A, grayscale, grayscale, grayscale));
+                    }
+
+                return new Tuple<Image, Image>(colorFlag, grayscaleFlag);
+            }
+            else
+                return new Tuple<Image, Image>(new Bitmap(24, 24), new Bitmap(24, 24));
+        }
+
+        void setupFlags()
+        {
+            languageFlags = new Dictionary<string, Tuple<Image, Image>>();
+            picLanguageFlags = new List<PictureBox>();
+            int left = 25;
+
+            //English Flag
+            PictureBox enLangFlag = new PictureBox();
+            enLangFlag.Top = 311;
+            enLangFlag.Left = left;
+            enLangFlag.Size = new Size(24, 24);
+            enLangFlag.MouseEnter += picLanguageFlag_MouseEnter;
+            enLangFlag.MouseLeave += control_MouseLeave;
+            enLangFlag.Click += picLanguageFlag_Click;
+
+            languageFlags.Add("English", loadFlag(Application.StartupPath + "\\languages\\flags\\en.png"));
+            enLangFlag.Image = languageFlags["English"].Item1;
+            enLangFlag.Tag = "English";
+
+            this.Controls.Add(enLangFlag);
+            picLanguageFlags.Add(enLangFlag);
+
+            foreach (var lang in foreignWords)
+            {
+                left += 24 + 12;
+
+                PictureBox langFlag = new PictureBox();
+                langFlag.Top = 311;
+                langFlag.Left = left;
+                langFlag.Size = new Size(24, 24);
+                langFlag.MouseEnter += picLanguageFlag_MouseEnter;
+                langFlag.MouseLeave += control_MouseLeave;
+                langFlag.Click += picLanguageFlag_Click;
+
+                languageFlags.Add(lang.Key, loadFlag(Application.StartupPath + "\\languages\\flags\\" + Languages[lang.Key] + ".png"));
+                langFlag.Image = languageFlags[lang.Key].Item2;
+                langFlag.Tag = lang.Key;
+
+                this.Controls.Add(langFlag);
+                picLanguageFlags.Add(langFlag);
+            }
+
+            ComboLanguage.Left = left + 24 + 12;
+            ComboLanguage.Width = 513 - ComboLanguage.Left;
+        }
+
 
         public formMain()
         {
@@ -439,7 +510,7 @@ namespace Wordy
         private void formMain_Load(object sender, EventArgs e)
         {
             prefs = new Preferences();
-            
+
             needWotDCheck = DateTime.Now.DayOfYear != prefs.LastFeedCheck.DayOfYear;
             if (!needWotDCheck)
                 buttNewWotD.Visible = prefs.NewWotDs;
@@ -499,6 +570,7 @@ namespace Wordy
             file.Close();
 
             LoadActiveLanguages();
+            setupFlags();
 
             //check for updates
             Updater.Update(VERSION, UPDATE_URL);
@@ -558,7 +630,7 @@ namespace Wordy
             about.Show();
             this.Hide();
         }
-        
+
         private void buttStudyWords_Click(object sender, EventArgs e)
         {
             var relevantWords = GetWords();
@@ -644,6 +716,9 @@ namespace Wordy
                 lblInfo.Text = "";
             else
                 lblInfo.Text = "Checking for new Words of the Day" + Environment.NewLine + "Please wait a moment..."; ;
+
+            if (mouseOverPic != null && mouseOverPic.Tag.ToString() != ComboLanguage.Text)
+                mouseOverPic.Image = languageFlags[mouseOverPic.Tag.ToString()].Item2; //make language flag grayscale again
         }
 
         private void buttAdd_MouseEnter(object sender, EventArgs e)
@@ -721,6 +796,21 @@ namespace Wordy
             setInfo("Display information about Wordy.");
         }
 
+        private void picLanguageFlag_MouseEnter(object sender, EventArgs e)
+        {
+            mouseOverPic = ((PictureBox)sender);
+
+            mouseOverPic.Image = languageFlags[mouseOverPic.Tag.ToString()].Item1;
+            setInfo("Set current language profile to " + mouseOverPic.Tag.ToString() + ".");
+        }
+
+        private void picLanguageFlag_Click(object sender, EventArgs e)
+        {
+            mouseOverPic = ((PictureBox)sender);
+
+            ComboLanguage.Text = mouseOverPic.Tag.ToString();
+        }
+
         private void comboLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ComboLanguage.Text == "Add another language...")
@@ -737,19 +827,17 @@ namespace Wordy
             }
             else if (ComboLanguage.SelectedIndex != -1)
             {
-                string flagPath;
-                if (ComboLanguage.Text == "English")
-                    flagPath = Application.StartupPath + "\\languages\\flags\\en.png";
-                else
-                    flagPath = Application.StartupPath + "\\languages\\flags\\" + Languages[ComboLanguage.Text] + ".png";
-
-                if (File.Exists(flagPath))
-                    picFlag.ImageLocation = flagPath;
-                else
-                    picFlag.ImageLocation = "";
-
                 Profile = ComboLanguage.Text;
 
+                //change active flag
+                if (picLanguageFlags != null)
+                    foreach (var pic in picLanguageFlags)
+                        if (pic.Tag.ToString() == ComboLanguage.Text)
+                            pic.Image = languageFlags[pic.Tag.ToString()].Item1;
+                        else
+                            pic.Image = languageFlags[pic.Tag.ToString()].Item2;
+
+                //show new WotDs button if English is active
                 if (Profile == "English")
                     buttNewWotD.Visible = prefs.NewWotDs;
                 else
