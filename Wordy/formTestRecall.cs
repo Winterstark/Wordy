@@ -835,7 +835,7 @@ namespace Wordy
                             if (res)
                                 //correct answer
                                 answerColor = Color.Green;
-                            else if (testWord.archived && isTypo(correctAnswer, answerGiven.Replace("_", "")))
+                            else if (isTypo(correctAnswer, answerGiven.Replace("_", "")))
                             {
                                 //typo in answer
                                 typos = true;

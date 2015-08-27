@@ -1,4 +1,4 @@
-<entry>
+﻿<entry>
 athwart
 [defs]
 (adv.) From side to side; crosswise or transversely.::False
@@ -155,6 +155,7 @@ True
 cadge
 [defs]
 (v-t.) To beg or get by begging.::False
+(v-t.) To beg or get by begging some more.::False
 [/defs]
 freeload, cadging, cadged, cadger, codger, scrounge, beg, bum, 
 badge, catch, cap, cat, gap, cab, cad, gab, gad, that, 
