@@ -1003,10 +1003,9 @@ namespace Wordy
                         return;
                     }
 
-                    //non-English words: if the user's answer is a synonym also let him try again
-                    if (main.Profile != "English"
-                        && (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition()))
-                        || testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower()))) //also check the test word's own synonyms list
+                    //if the user's answer is a synonym also let him try again
+                    if (main.GetWords().Any(w => w.ToString().ToLower() == answerGiven.ToLower() && doesDefinitionContainWord(w.GetDefinition(), testWord.GetDefinition()))
+                        || testWord.GetSynonyms().ToLower().Split(new string[] { " / " }, StringSplitOptions.RemoveEmptyEntries).Contains(answerGiven.ToLower())) //also check the test word's own synonyms list
                     {
                         nextWord(true, answerGiven);
                         MessageBox.Show("Try again.", "Your answer is a synonym of the correct answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
