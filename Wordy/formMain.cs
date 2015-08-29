@@ -15,7 +15,7 @@ namespace Wordy
 {
     public partial class formMain : Form
     {
-        const double VERSION = 1.21;
+        const double VERSION = 1.22;
         const string UPDATE_URL = "https://raw.githubusercontent.com/Winterstark/Wordy/master/update/update.txt";
 
         List<Entry> words;

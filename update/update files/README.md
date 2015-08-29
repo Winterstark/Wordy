@@ -12,7 +12,7 @@ What sets it apart from other vocabulary-learning software?
 - The Assisted Reading mode gives you quick access to word lookups and translations from any Windows application.
 - Wordy also supports word of the day subscriptions, which are an easy way to discover new words.
 
-![Screenshot: Wordy's main window](http://i.imgur.com/rDFtmAZ.png)
+![Screenshot: Wordy's main window](http://i.imgur.com/eTJv29c.png)
 
 
 Installation
@@ -44,6 +44,8 @@ You can also surround parts of text with quotes or parentheses - in both cases t
 Any found visuals will be displayed in a row of small thumbnails. Mouse over one of the thumbnails to view the visual in full size. Left-click on it to open its Flickr page; right-click on it to remove it. After you delete some of them you can search for more visuals.
 
 Wordy also has a built-in tutorial that will inform you about the process of adding words in more detail.
+
+NOTE: When adding non-English words, you can manually set their translation without having to search online. This can be useful when Microsoft Translator doesn't recognize a word, but you already know its translation. Use the following syntax: [word] -> [translation1]; [translation2]; ...
 
 ### Learning words
 
@@ -114,7 +116,7 @@ Testing of learned words uses the same four types of questions, with the additio
 
 To switch Wordy to another language mode use the profile selection menu at the bottom of the main menu. The switch affects every menu and option in Wordy.
 
-![Screenshot: Language Selection](http://i.imgur.com/8N0k6GS.png)
+![Screenshot: Language Selection](http://i.imgur.com/m6YXjj4.png)
 
 Microsoft Translator, and by extension Wordy, supports the following languages: Arabic, Bulgarian, Catalan, Chinese Simplified, Chinese Traditional, Czech, Danish, Dutch, Estonian, Finnish, French, German, Greek, Haitian Creole, Hebrew, Hindi, Hmong Daw, Hungarian, Indonesian, Italian, Japanese, Klingon, Klingon (pIqaD), Korean, Latvian, Lithuanian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
 
