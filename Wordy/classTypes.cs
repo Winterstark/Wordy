@@ -589,7 +589,7 @@ namespace Wordy
                     if (learningPhase == (english ? 7 : 5))
                     {
                         archived = true;
-                        nextTest = DateTime.Now.AddDays(7);
+                        nextTest = DateTime.Now.AddDays(6).AddHours(22);
                     }
                 }
             }
@@ -602,9 +602,9 @@ namespace Wordy
                     nRecallSuccesses++;
 
                     if (DateTime.Now.Subtract(lastTest).TotalDays < 1) //in case of a bug where last test occured today (probably caused when the user tests a learned word, fails the test, and then in Options checks the word as learned again)
-                        nextTest = DateTime.Now.AddDays(7);
+                        nextTest = DateTime.Now.AddDays(6).AddHours(22);
                     else
-                        nextTest = DateTime.Now.AddDays(nextTest.Subtract(lastTest).Days + 7);
+                        nextTest = DateTime.Now.AddDays(nextTest.Subtract(lastTest).Days + 6).AddHours(22);
                 }
                 else
                 {
