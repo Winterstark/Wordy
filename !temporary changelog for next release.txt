@@ -1,1 +1,1 @@
-* fixed a bug
+* fixed miscellaneous issues
