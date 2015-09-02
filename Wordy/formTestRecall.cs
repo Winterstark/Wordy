@@ -877,6 +877,8 @@ namespace Wordy
                 nCorrectAnswers++;
             totalTime += DateTime.Now - startTime; //mark time
 
+            bool usedTextTestWord = textTestWord.Visible;
+
             lblSynonyms.Top = 83;
             lblWord.Text = testWord.ToString();
 
@@ -990,13 +992,15 @@ namespace Wordy
                 string answerGiven;
                 if (mtbTestWord.Tag != null && (bool)mtbTestWord.Tag)
                     answerGiven = mtbTestWord.Text;
-                else
+                else if (usedTextTestWord)
                     answerGiven = textTestWord.Text;
+                else
+                    answerGiven = "";
 
                 if (!testWord.archived)
                 {
                     //if answer has a typo allow the user to try again
-                    if (isTypo(getCorrectAnswer(), answerGiven))
+                    if (answerGiven != "" && isTypo(getCorrectAnswer(), answerGiven))
                     {
                         nextWord(true, answerGiven);
                         MessageBox.Show("Try again.", "You have a typo in your answer", MessageBoxButtons.OK, MessageBoxIcon.Information);
