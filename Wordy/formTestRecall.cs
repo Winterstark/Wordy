@@ -1128,7 +1128,7 @@ namespace Wordy
                         {
                             int lb = tempLine.IndexOf('(');
                             int ub = tempLine.IndexOf(')', lb) + 1;
-                            tempLine = line.Remove(lb, ub - lb).Trim();
+                            tempLine = tempLine.Remove(lb, ub - lb).Trim();
                         }
 
                         if (tempLine == word)

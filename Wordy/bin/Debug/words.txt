@@ -1,4 +1,4 @@
-﻿<entry>
+<entry>
 athwart
 [defs]
 (adv.) From side to side; crosswise or transversely.::False
@@ -251,12 +251,12 @@ robust, stout, boisterous, lusty, stalwart, brawny, uniformed, hulking, blond, s
 pearly, curly, surly, early, journey, dirty, turkey, jerky, jersey, tersely, 
 2012-07-11 20:31
 0001-01-01 00:00
-2015-07-10 13:34
 2015-09-04 13:34
+2015-11-06 11:34
 7
 22
-26
-23
+27
+24
 True
 </entry>
 
@@ -1812,19 +1812,19 @@ True
 <entry>
 scurf
 [defs]
-(n.) Scaly or shredded dry skin, such as dandruff.::True
-(n.) A loose scaly crust coating a surface, especially of a plant.::True
+(n.) Scaly or shredded dry skin, such as dandruff.::False
+(n.) A loose scaly crust coating a surface, especially of a plant.::False
 [/defs]
 dander, dandruff, furfur, scales, dandriff, retort scurf, chip, bit, flake, 
 courfe, turf, surf, serf, occurs, curve, curse, spurs, girth, stirs, 
 2013-02-05 21:25
 0001-01-01 00:00
-2015-08-28 13:12
-2015-09-04 13:12
+2015-09-04 13:31
+2015-09-18 11:31
 7
 40
-22
-18
+23
+19
 True
 </entry>
 
@@ -2397,20 +2397,20 @@ True
 <entry>
 bray
 [defs]
-(v-i.) To utter the loud, harsh cry of a donkey.::True
-(v-t.) To crush and pound to a fine consistency, as in a mortar.::True
-(v-t.) To spread (ink) thinly over a surface.::True
+(v-i.) To utter the loud, harsh cry of a donkey.::False
+(v-t.) To crush and pound to a fine consistency, as in a mortar.::False
+(v-t.) To spread (ink) thinly over a surface.::False
 [/defs]
 mill, pestle, pulp, brayed, braying, grind, hee-haw, bank, cry, 
 play, pray, prey, tray, tre, dray, re, lay, delay, clay, 
 2013-02-11 19:25
 0001-01-01 00:00
-2015-07-14 14:37
-2015-09-01 14:37
+2015-09-02 14:52
+2015-10-28 12:52
 7
 23
-23
-21
+24
+22
 True
 </entry>
 
@@ -2926,12 +2926,12 @@ lump, mouthful, raw meat, dollop, handprint, gob, carry-over, drool, ell, washra
 cadet, gibbet, debt, bet, jet, pet, cassette, get, set, yet, 
 2013-02-12 17:54
 0001-01-01 00:00
-2015-07-30 12:52
-2015-09-03 12:52
+2015-09-03 13:48
+2015-10-15 11:48
 7
 16
-22
-19
+23
+20
 True
 </entry>
 
@@ -3095,12 +3095,12 @@ refulgent, bright, beaming, splendid, shining, luminous, effulgence, late-mornin
 element, excellent, settlement, eminent, elegant, eloquent, arrogant, elephant, efferent, emigrant, 
 2013-02-12 20:30
 0001-01-01 00:00
-2015-08-18 13:20
-2015-09-01 13:20
+2015-09-02 14:55
+2015-09-23 12:55
 7
 25
-27
-23
+28
+24
 True
 </entry>
 
@@ -3467,19 +3467,19 @@ True
 <entry>
 limn
 [defs]
-(v.) Literary  Represent in painting or words.::True
+(v.) Literary  Represent in painting or words.::False
 [/defs]
 limn, silvered, man-hunting, cabbage-garden, white-blue, 
 rilled, ind, inde, git, beft, ete, dist, hist, pecked, resp, 
 2013-02-21 21:35
 0001-01-01 00:00
-2015-08-26 13:04
+2015-09-04 13:24
 2015-09-02 13:04
-7
-29
-16
+4
+31
+17
 13
-True
+False
 </entry>
 
 <entry>
@@ -3842,18 +3842,18 @@ True
 <entry>
 animadvert
 [defs]
-(v-i.) To remark or comment critically, usually with strong disapproval or censure: "a man . . . who animadverts on miserly patients, egocentric doctors, psychoanalysis and Lucky Luciano with evenhanded fervor"  ( Irwin Faust). ::False
+(v-i.) To remark or comment critically, usually with strong disapproval or censure: "a man . . . who animadverts on miserly patients, egocentric doctors, psychoanalysis and Lucky Luciano with evenhanded fervor"  ( Irwin Faust). ::True
 [/defs]
 editorialise, editorialize, animadverted, animadverting, criticise, remark, observe, censure, comment, commen, 
 subvert, advert, undershirt, assert, insert, avert, invert, controvert, introvert, hurt, 
 2013-02-23 15:39
 0001-01-01 00:00
-2015-08-07 12:43
-2015-09-04 12:43
+2015-09-04 13:30
+2015-10-09 11:30
 7
 18
+18
 17
-16
 True
 </entry>
 
@@ -4873,12 +4873,12 @@ intelligent, acquisitive, prehensility, grasping, prehensive, prehensory, seizin
 utensil, pencil, tensile, essential, differential, potential, inferential, confidential, quintessential, experiential, 
 2013-03-23 09:55
 0001-01-01 00:00
-2015-06-03 13:23
-2015-09-02 13:23
+2015-09-02 14:48
+2015-12-09 12:48
 7
 13
+19
 18
-17
 True
 </entry>
 
@@ -6180,19 +6180,19 @@ True
 <entry>
 cockamamie
 [defs]
-(adj.) Slang   Trifling; nearly valueless.::False
-(adj.) Slang   Ludicrous; nonsensical "gave me a cockamamie reason for not going. "::False
+(adj.) Slang   Trifling; nearly valueless.::True
+(adj.) Slang   Ludicrous; nonsensical "gave me a cockamamie reason for not going. "::True
 [/defs]
 foolish, wacky, sappy, goofy, zany, unreasonable, copy-protection, nanite, predistribution, e-cash, 
 miscellany, grainy, rainy, seine, brainy, zany, ukulele, namely, maybe, crazy, 
 2013-04-15 15:59
 0001-01-01 00:00
-2015-08-04 13:41
-2015-09-01 13:41
+2015-09-02 14:59
+2015-10-07 12:59
 7
 26
-22
-19
+23
+20
 True
 </entry>
 
@@ -7292,16 +7292,16 @@ True
 <entry>
 sui generis
 [defs]
-(adj.) Being the only example of its kind; unique: "sui generis works like Mary Chesnut's Civil War diary"  ( Linda Orr). ::False
+(adj.) Being the only example of its kind; unique: "sui generis works like Mary Chesnut's Civil War diary"  ( Linda Orr). ::True
 [/defs]
 nonpareil, single, unique, per se, one of a kind, 
 
 2013-05-13 14:48
 0001-01-01 00:00
-2015-09-01 13:04
+2015-09-04 13:24
 2015-09-01 12:44
-3
-21
+6
+24
 26
 21
 False
@@ -7865,12 +7865,12 @@ ditherer, dithering, dithered, dithers, niggle, fret, fuss, agitation, crow's-fe
 hither, thither, whither, wither, zither, slither, differ, river, liver, fissure, 
 2013-08-19 16:56
 0001-01-01 00:00
-2015-07-10 13:14
-2015-09-04 13:14
+2015-09-04 13:31
+2015-11-06 11:31
 7
 33
-24
-20
+25
+21
 True
 </entry>
 
@@ -8403,19 +8403,19 @@ True
 <entry>
 fomite
 [defs]
-(n.) an object (as a dish or an article of clothing) that may be contaminated with infectious organisms and serve in their transmission::True
+(n.) an object (as a dish or an article of clothing) that may be contaminated with infectious organisms and serve in their transmission::False
 "'Through a trail of infection left on fomites like credit cards, casino chips, phones, files and airport bar peanutsfeeling paranoid yet?she starts a new plague that begins in Asia and the Midwest and soon spreads throughout the globe.'  From a film review by Kathi Maio in Fantasy & Science Fiction, January/February 2012"::False
 [/defs]
 physical object, object, 
 smite, might, night, flight, slight, spite, knight, tonight, fright, overnight, 
 2013-09-06 12:41
 0001-01-01 00:00
-2015-08-26 13:09
-2015-09-02 13:09
+2015-09-02 14:46
+2015-09-16 12:46
 7
 28
-22
-19
+23
+20
 True
 </entry>
 
@@ -9124,19 +9124,19 @@ True
 <entry>
 paregmenon
 [defs]
-(n.) The juxtaposition of words that have the same root. "Sense and sensibility; a manly man; the texture of textile."::True
+(n.) The juxtaposition of words that have the same root. "Sense and sensibility; a manly man; the texture of textile."::False
 [/defs]
 rhetorical device, 
 lexicon, denouement, paragon, trimaran, pantechnicon, phenomenon, thereupon, whereupon, polygon, pantheon, 
 2013-09-27 13:01
 0001-01-01 00:00
-2015-08-28 13:14
+2015-09-04 13:32
 2015-09-04 13:14
-7
+6
 30
-25
+26
 20
-True
+False
 </entry>
 
 <entry>
@@ -9168,13 +9168,13 @@ meditation, literary work, study, literary composition, cogitation, titanthrop, 
 legislation, regulation, revelation, celebration, penetration, calibration, escalation, regurgitation, ablation, mutilation, 
 2013-09-28 12:47
 0001-01-01 00:00
-2015-07-14 14:08
+2015-09-04 13:21
 2015-09-01 14:08
-7
-23
-21
+4
+25
+22
 18
-True
+False
 </entry>
 
 <entry>
@@ -10284,12 +10284,12 @@ ragamuffin, gamin, street arab, gamine, throwaway, urchin, bottled-up, smasher, 
 snipe, prototype, stripe, archetype, unripe, type, pipe, ripe, wipe, hype, 
 2013-10-26 14:15
 0001-01-01 00:00
-2015-08-04 13:39
-2015-09-01 13:39
+2015-09-02 14:53
+2015-10-07 12:53
 7
 18
-19
-17
+20
+18
 True
 </entry>
 
@@ -10483,20 +10483,20 @@ True
 <entry>
 huckster
 [defs]
-(n.) One who sells small items in the street; a peddler or hawker.::False
-(n.) One who uses aggressive, showy, and sometimes devious methods to promote or sell a product.::False
-(v.-t.) To haggle or bargain::False
+(n.) One who sells small items in the street; a peddler or hawker.::True
+(n.) One who uses aggressive, showy, and sometimes devious methods to promote or sell a product.::True
+(v.-t.) To haggle or bargain::True
 [/defs]
 beat down, bargain down, hucksterism, huckstered, huckstering, hawker, peddler, hucksters, 
 hunter, lustre, muster, shutter, youngster, luster, sucker, succor, duster, juster, 
 2013-11-01 14:02
 0001-01-01 00:00
-2015-08-18 13:24
-2015-09-01 13:24
+2015-09-02 14:58
+2015-09-23 12:58
 7
 24
-18
-16
+19
+17
 True
 </entry>
 
@@ -10602,12 +10602,12 @@ inessential, extrinsic, unessential, adventitious, additional, supplemental, asc
 adventitious, ambitious, suspicious, judicious, auspicious, propitious, seditious, avaricious, unambitious, delicious, 
 2013-11-06 12:36
 0001-01-01 00:00
-2015-07-09 13:33
-2015-09-03 13:33
+2015-09-03 13:53
+2015-11-05 11:53
 7
 9
-22
-20
+23
+21
 True
 </entry>
 
@@ -11398,19 +11398,19 @@ True
 <entry>
 lather
 [defs]
-(n.) Agitation resulting from active worry.::True
+(n.) Agitation resulting from active worry.::False
 "'I'm not going to get into a lather over this defeat,' said the manager."::False
 [/defs]
 birch, horsewhip, cat, flagellate, scourge, switch, cowhide, leather, shaving soap, shaving cream, 
 rather, gather, passer, placer, staffer, cadaver, latter, ladder, lacquer, wrapper, 
 2013-12-02 12:50
 0001-01-01 00:00
-2015-08-27 12:41
-2015-09-03 12:41
+2015-09-03 13:51
+2015-09-17 11:51
 7
 15
+18
 17
-16
 True
 </entry>
 
@@ -12011,20 +12011,20 @@ True
 <entry>
 penurious
 [defs]
-(adj.) Unwilling to spend money; stingy.::False
-(adj.) Poverty-stricken; destitute.::False
+(adj.) Unwilling to spend money; stingy.::True
+(adj.) Poverty-stricken; destitute.::True
 [/defs]
 stingy, poor, ungenerous, avaricious, covetous, parsimonious, sting, scanty, niggardly, 
 salubrious, impecunious, lugubrious, insouciance, insalubrious, nucleus, dubious, studious, subareas, gloominess, 
 2013-12-14 12:39
 0001-01-01 00:00
-2015-09-01 13:03
-2015-08-29 12:57
-4
-23
+2015-09-04 13:08
+2015-09-11 11:08
+7
+26
 18
 15
-False
+True
 </entry>
 
 <entry>
@@ -12149,13 +12149,13 @@ bloviate, plain, talk about, support, discuss,
 plant, cant, scant, grant, chant, slant, implant, supplant, transplant, demand, 
 2013-12-17 13:30
 0001-01-01 00:00
-2015-08-13 12:58
+2015-09-04 13:08
 2015-09-03 12:58
-7
-22
-20
+3
+23
+21
 17
-True
+False
 </entry>
 
 <entry>
@@ -12519,12 +12519,12 @@ band, side, slope, fortification, munition, incline, precipice, acclivity, kopje
 enlargement, department, apartment, parchment, bombardment, compartment, garment, disbarment, carpet, scarlet, 
 2013-12-30 12:26
 0001-01-01 00:00
-2015-07-15 13:45
-2015-09-02 13:45
+2015-09-02 14:47
+2015-10-28 12:47
 7
 16
+17
 16
-15
 True
 </entry>
 
@@ -12667,12 +12667,12 @@ questionable, self-styled, self-named, would-be, pretended, salival, sebaceous, 
 soidisant, choisissent, noircissent, voinut, eurichment, jointtenant, appoiniment, 
 2014-01-02 12:45
 0001-01-01 00:00
-2015-07-15 13:41
-2015-09-02 13:41
+2015-09-02 14:53
+2015-10-28 12:53
 7
 13
+17
 16
-15
 True
 </entry>
 
@@ -12853,12 +12853,12 @@ pad, ægis, breastplate, exoskeleton, shirtfront, subcellular, non-smoking, mori
 plantain, platen, barren, dragon, traction, baron, bastion, plankton, blacken, bracken, 
 2014-01-09 12:34
 0001-01-01 00:00
-2015-07-24 13:33
-2015-09-04 13:33
+2015-09-04 13:36
+2015-10-23 11:36
 7
 22
-19
-17
+20
+18
 True
 </entry>
 
@@ -13503,12 +13503,12 @@ shining,
 jubilant, ruminant, lutenist, lutanist, lubricant, nutriment, neutralist, fumigant, unionist, illusionist, 
 2014-01-28 13:01
 0001-01-01 00:00
-2015-07-22 13:56
-2015-09-02 13:56
+2015-09-02 14:49
+2015-10-21 12:49
 7
 17
+20
 19
-18
 True
 </entry>
 
@@ -14178,12 +14178,12 @@ stingy, ungenerous, closefisted, acquisitive, incontrovertible, petram, laoreet,
 ephedrine, fledgling, accepting, preparing, sharing, defending, descending, possessing, excepting, despairing, 
 2014-02-28 13:35
 0001-01-01 00:00
-2015-07-30 12:56
-2015-09-03 12:56
+2015-09-03 13:54
+2015-10-15 11:54
 7
 19
-15
-13
+16
+14
 True
 </entry>
 
@@ -14368,12 +14368,12 @@ critical, captiously, captiousness, hypercritical, thorny; sophistical, tricky, 
 campus, cactus, callous, callus, hapless, factious, anxious, palace, canvas, lattice, 
 2014-03-14 13:20
 0001-01-01 00:00
-2015-08-21 13:33
-2015-09-04 13:33
+2015-09-04 13:36
+2015-09-25 11:36
 7
 21
-19
-16
+20
+17
 True
 </entry>
 
@@ -14721,19 +14721,19 @@ True
 <entry>
 vitta
 [defs]
-(n.) Zoology   A streak or band of color, as on the bill of a bird.::False
+(n.) Zoology   A streak or band of color, as on the bill of a bird.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 
 excreta, sera, villa, vista, cilia, dicta, lire, lira, sigma, nigga, 
 2014-04-05 15:41
 0001-01-01 00:00
-2015-08-12 13:24
-2015-09-02 13:24
+2015-09-02 14:51
+2015-09-30 12:51
 7
 23
-25
-19
+26
+20
 True
 </entry>
 
@@ -15250,10 +15250,10 @@ True
 <entry>
 bijou
 [defs]
-(n.) a small dainty usually ornamental piece of delicate workmanship::False
-"Bijoux from around the world will be on exhibit and later auctioned off."::False
+(n.) a small dainty usually ornamental piece of delicate workmanship::True
+"Bijoux from around the world will be on exhibit and later auctioned off."::True
 [/defs]
-jewel, trinket, jewellery, jewelry, door-plate, nuns', fraudulence, encrustation, milk-pail, nob, 
+bibelot, jewel, trinket, jewellery, jewelry, door-plate, nuns', fraudulence, encrustation, milk-pail, nob, 
 bijoux, iu, preview, emu, itu, eeuw, hsiu, iew, sieu, redrew, 
 2014-05-24 15:21
 0001-01-01 00:00
@@ -15506,13 +15506,13 @@ cruftware, crufty, crufting,
 stuffed, puffed, tuft, rebuffed, crushed, crust, trust, rushed, thrust, brushed, 
 2014-05-30 17:11
 0001-01-01 00:00
-2015-09-01 13:01
-2015-08-30 13:21
-6
-32
+2015-09-02 13:57
+2015-09-09 13:57
+7
+33
 19
 15
-False
+True
 </entry>
 
 <entry>
@@ -16259,12 +16259,12 @@ formal, pro forma invoice, perfunctory,
 
 2014-07-04 20:06
 0001-01-01 00:00
-2015-07-15 13:45
-2015-09-02 13:45
+2015-09-02 14:52
+2015-10-28 12:52
 7
 16
+14
 13
-12
 True
 </entry>
 
@@ -16524,12 +16524,12 @@ pilfer, wangle, short, short-change, impress, shanghai, nobbles, nobbling, nobbl
 labile, cobble, gobble, hobble, wobble, squabble, model, mottle, noddle, bottle, 
 2014-07-11 12:36
 0001-01-01 00:00
-2015-08-25 13:28
-2015-09-01 13:28
+2015-09-02 14:45
+2015-09-16 12:45
 7
 30
-19
-13
+20
+14
 True
 </entry>
 
@@ -16732,13 +16732,13 @@ welch, welsh hook, funk, crawfish, weaken, jib, back out, welshing, welshes, wel
 weld, welled, help, felt, held, belt, dealt, melt, dwelt, knelt, 
 2014-07-20 12:57
 0001-01-01 00:00
-2015-07-09 13:25
+2015-09-04 13:05
 2015-09-03 13:25
-7
-10
-18
+4
+11
+19
 15
-True
+False
 </entry>
 
 <entry>
@@ -16791,13 +16791,13 @@ imperative, demanding, allocatur exigent, pressing, critical, distressful, urgen
 reticent, evidenced, effeminate, celibate, embellishment, disparagement, indelicate, replenishment, 
 2014-07-23 13:09
 0001-01-01 00:00
-2015-07-22 13:47
+2015-09-04 13:09
 2015-09-02 13:47
-7
-27
-14
+3
+29
+15
 12
-True
+False
 </entry>
 
 <entry>
@@ -17363,13 +17363,13 @@ comportment, properness, correctitude, swashbuckling, citizenship, manner, perso
 assortment, comportment, engorgement, disgorgement, adornment, important, endorsement, dormant, indorsement, portant, 
 2014-08-21 11:08
 0001-01-01 00:00
-2015-08-12 13:22
+2015-09-04 13:21
 2015-09-02 13:22
-7
-8
-19
+4
+10
+20
 16
-True
+False
 </entry>
 
 <entry>
@@ -17770,19 +17770,19 @@ True
 <entry>
 snapdragon
 [defs]
-(n.) Any of several plants, especially one having showy racemes of two-lipped, variously colored flowers.::True
+(n.) Any of several plants, especially one having showy racemes of two-lipped, variously colored flowers.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 antirrhinum coulterianum, antirrhinum majus, yellow twining snapdragon, antirrhinum filipes, white snapdragon, mediterranean snapdragon, jamaica snapdragon, flower, hollyhock, mignonette, 
 bandwagon, backgammon, mandarin, suffragan, halogen, anderen, saccharin, antigen, masculine, collagen, 
 2014-09-09 10:40
 0001-01-01 00:00
-2015-08-26 13:08
-2015-09-02 13:08
+2015-09-02 15:02
+2015-09-16 13:02
 7
 18
-12
-10
+13
+11
 True
 </entry>
 
@@ -17827,19 +17827,19 @@ True
 <entry>
 costive
 [defs]
-(adj.) Suffering from constipation.::True
+(adj.) Suffering from constipation.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 constipate, formal, impermeable, cold, unyielding, constipated, reserved, close, atherogenic, thy, 
 waspish, octave, adoptive, responsive, unresponsive, caustics, garnish, codfish, copses, gouaches, 
 2014-09-09 11:08
 0001-01-01 00:00
-2015-08-05 13:14
-2015-09-02 13:14
+2015-09-02 14:49
+2015-10-07 12:49
 7
 16
-14
-12
+15
+13
 True
 </entry>
 
@@ -18163,12 +18163,12 @@ kiss curl, kink, pleat, flute, plait, ruck, spit curl, twist, pucker, twirl,
 limp, shrimp, pimp, grinned, trimmed, rimmed, brimmed, glint, clinch, cringe, 
 2014-09-11 14:21
 0001-01-01 00:00
-2015-08-28 13:13
-2015-09-04 13:13
+2015-09-04 13:33
+2015-09-18 11:33
 7
 43
-16
-11
+17
+12
 True
 </entry>
 
@@ -18201,13 +18201,13 @@ support, grubstakes, grubstaked, grubstaking, stake, interest, fund, one!', begi
 reuptake, uptake, cupcake, canebrake, unmake, muckrake, spongecake, heartache, earthquake, handshake, 
 2014-09-13 10:38
 0001-01-01 00:00
-2015-07-10 13:14
+2015-09-04 13:32
 2015-09-04 13:14
-7
+3
 19
-11
+12
 10
-True
+False
 </entry>
 
 <entry>
@@ -18232,20 +18232,20 @@ True
 <entry>
 camber
 [defs]
-(n.) A slightly arched surface, as of a road, a ship's deck (an airfoil, or a snow ski).::True
-(n.) A setting of automobile wheels in which they are closer together at the bottom than at the top.::True
+(n.) A slightly arched surface, as of a road, a ship's deck (an airfoil, or a snow ski).::False
+(n.) A setting of automobile wheels in which they are closer together at the bottom than at the top.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 cambered, cambering, cambers, curve, convex shape, alignment, convexity, arch, 
 clamber, camper, candor, damper, hamper, canter, tamper, cantor, gander, scamper, 
 2014-09-13 13:31
 0001-01-01 00:00
-2015-07-09 13:38
-2015-09-03 13:38
+2015-09-03 13:52
+2015-11-05 11:52
 7
 14
+12
 11
-10
 True
 </entry>
 
@@ -18308,20 +18308,20 @@ True
 <entry>
 divarication
 [defs]
-(n.) the action or process of spreading apart::False
-(n.) a divergence of opinion::False
+(n.) the action or process of spreading apart::True
+(n.) a divergence of opinion::True
 "The team of botanists studied the growth patterns of the trees, including the divarication of their branches. "::False
 [/defs]
 divergence, forking, divaricate, divaricated, fork, branching, ramification, 
 delegation, desegregation, deformation, irrigation, segregation, dedication, derivation, dilatation, dislocation, dissemination, 
 2014-09-15 10:26
 0001-01-01 00:00
-2015-07-10 13:33
 2015-09-04 13:33
+2015-11-06 11:33
 7
 17
+12
 11
-10
 True
 </entry>
 
@@ -18448,12 +18448,12 @@ decoration, ornament, embellishment, ornamentation, court order, carsdirect, eff
 cognisant, ravishment, accomplishment, astonishment, acknowledgment, acknowledgement, impoverishment, recombinant, provident, solidest, 
 2014-09-19 16:06
 0001-01-01 00:00
-2015-07-10 13:34
 2015-09-04 13:34
+2015-11-06 11:34
 7
 20
+12
 11
-10
 True
 </entry>
 
@@ -18685,20 +18685,20 @@ True
 <entry>
 divot
 [defs]
-(n.) A piece of turf torn up by a golf club in striking a ball, or by a horse's hoof.::True
-(n.) Scots   A thin square of turf or sod used for roofing.::True
+(n.) A piece of turf torn up by a golf club in striking a ball, or by a horse's hoof.::False
+(n.) Scots   A thin square of turf or sod used for roofing.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 fail and divot, greensward, sod, cavity, turf, sward, pit, improvementand, profaner, liver-spotted, 
 pivot, rivet, civet, privet, trivet, visit, bishop, vivid, illicit, visage, 
 2014-09-23 12:47
 0001-01-01 00:00
-2015-07-10 13:34
-2015-09-04 13:34
+2015-09-04 13:36
+2015-11-06 11:36
 7
 18
+12
 11
-10
 True
 </entry>
 
@@ -19002,12 +19002,12 @@ tout de suite
 bittersweet, sweet, suite, deplete, preheat, preterite, downbeat, semisweet, tweet, tenderfeet, 
 2014-09-28 14:02
 0001-01-01 00:00
-2015-07-30 12:55
-2015-09-03 12:55
+2015-09-03 13:55
+2015-10-15 11:55
 7
 14
-12
-10
+13
+11
 True
 </entry>
 
@@ -19209,12 +19209,12 @@ arrogate, expropriated, expropriates, expropriating, divest, deprive, strip, hig
 expatriate, extrapolate, extricate, expiate, explicate, evaluate, exaggerate, exterminate, repudiate, extirpate, 
 2014-10-02 13:26
 0001-01-01 00:00
-2015-08-14 13:21
-2015-09-04 13:21
+2015-09-04 13:31
+2015-10-02 11:31
 7
 19
-15
-12
+16
+13
 True
 </entry>
 
@@ -19260,20 +19260,20 @@ True
 <entry>
 solipsism
 [defs]
-(n.) The view or theory that the self is all that can be known to exist.::False
-(n.) Self-centeredness or selfishness.::False
+(n.) The view or theory that the self is all that can be known to exist.::True
+(n.) Self-centeredness or selfishness.::True
 "The actors memoir of the years during which he struggled to break into show business is loaded with so much introspection that it borders on solipsism."::False
 [/defs]
 egoism, egotism, philosophical doctrine, philosophical theory, back-seat, locked-in, lymphoproliferative, aids-related, hypoventilation, neurovascular, 
 barbarism, positivism, relativism, militarism, narcissism, ostracism, stoicism, voluntarism, charlatanism, futurism, 
 2014-10-03 13:38
 0001-01-01 00:00
-2015-08-13 12:58
-2015-09-03 12:58
+2015-09-03 13:52
+2015-10-01 11:52
 7
 21
+11
 10
-9
 True
 </entry>
 
@@ -19412,17 +19412,17 @@ True
 <entry>
 pork barrel
 [defs]
-(n.) Informal  the use of government funds for projects designed to win votes.::False
+(n.) Informal  the use of government funds for projects designed to win votes.::True
 [/defs]
 appropriation, 
 barrel, apparel, carol, carrel, forecastle, travel, prattle, treacle, trammel, packsaddle, 
 2014-10-10 13:58
 0001-01-01 00:00
-2015-07-15 13:51
-2015-09-02 13:51
+2015-09-04 13:21
+2015-09-11 11:21
 7
-11
-11
+13
+12
 10
 True
 </entry>
@@ -19437,12 +19437,12 @@ whirl, twist, spin, twirl, twisting, exchange, logroll, shipbuilder, epostal, on
 growling, scrolling, rolling, patrolling, strolling, enrolling, trolling, unrolling, controlling, polling, 
 2014-10-10 13:58
 0001-01-01 00:00
-2015-07-22 13:57
-2015-09-02 13:57
+2015-09-02 15:00
+2015-10-21 13:00
 7
 16
+12
 11
-10
 True
 </entry>
 
@@ -19547,19 +19547,19 @@ True
 <entry>
 aide-de-camp
 [defs]
-(n.) A military officer acting as secretary and confidential assistant to a superior officer of general or flag rank.::True
+(n.) A military officer acting as secretary and confidential assistant to a superior officer of general or flag rank.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 adjutant general, equerry, officer, military officer, sonarman, midshipman, brigadier, intendants, valet, aide, 
 intelligat, marriadge, nesciebat, gettytab, marriadg, naryad, negligat, wickiup, wikiup, chimneytop, 
 2014-10-13 13:34
 0001-01-01 00:00
-2015-08-12 13:24
-2015-09-02 13:24
+2015-09-02 14:45
+2015-09-30 12:45
 7
 14
+11
 10
-9
 True
 </entry>
 
@@ -19593,12 +19593,12 @@ tenebrous, subfuscous,
 boolean, lndian, plebeian, protean, chorion, dn, occafion, ruffian, zijn, paean, 
 2014-10-14 09:57
 0001-01-01 00:00
-2015-07-15 13:56
-2015-09-02 13:56
+2015-09-02 14:54
+2015-10-28 12:54
 7
 7
+13
 12
-11
 True
 </entry>
 
@@ -19631,12 +19631,12 @@ instructive, informative, partisan, drumbeater, zealot, wooly, conspiratory, pos
 debonair, billionaire, debonaire, millionaire, underwear, aftercare, bugbear, solitaire, parterre, legionnaire, 
 2014-10-15 13:15
 0001-01-01 00:00
-2015-07-09 13:22
-2015-09-03 13:22
+2015-09-03 13:49
+2015-11-05 11:49
 7
 14
+11
 10
-9
 True
 </entry>
 
@@ -19669,12 +19669,12 @@ forswore, forsworn, forswearing, perjure, deny, abjure, abandon, forswears,
 horsehair, foursquare, foreswear, forbear, silverware, square, everywhere, swear, solitaire, spyware, 
 2014-10-17 13:43
 0001-01-01 00:00
-2015-08-20 13:17
-2015-09-03 13:17
+2015-09-03 13:50
+2015-09-24 11:50
 7
 18
-12
-10
+13
+11
 True
 </entry>
 
@@ -19688,12 +19688,12 @@ fire-eater, misanthrope, crabby person, misanthropist, crab, hot-head, pinchgut,
 pearl, purl, burl, girl, curl, whirl, hurl, whorl, twirl, furl, 
 2014-10-17 13:43
 0001-01-01 00:00
-2015-08-12 13:25
-2015-09-02 13:25
+2015-09-02 14:57
+2015-09-30 12:57
 7
 13
+11
 10
-9
 True
 </entry>
 
@@ -21118,12 +21118,12 @@ content, ration, delimit, hold down, cap, demarcate, cutback, curb, number, keep
 subscribe, transcribe, ascribe, prescribe, inscribe, describe, scribe, diatribe, tribe, bribe, 
 2014-11-17 13:50
 0001-01-01 00:00
-2015-07-09 13:23
-2015-09-03 13:23
+2015-09-03 13:51
+2015-11-05 11:51
 7
 13
+10
 9
-8
 True
 </entry>
 
@@ -21249,12 +21249,12 @@ dovetail, inosculated, inosculating, interjoin, united, intercommunicate, anasto
 cubit, cruet, absolutist, acutest, cubist, cutest, flutist, manumit, forewent, pewit, 
 2014-11-19 13:07
 0001-01-01 00:00
-2015-08-20 13:18
-2015-09-03 13:18
+2015-09-03 13:50
+2015-09-24 11:50
 7
 11
+11
 10
-9
 True
 </entry>
 
@@ -21741,13 +21741,13 @@ dynamic, moral force, corruption, causation, persuasive, cause, occasioning, rea
 improvement, amusement, mouvement, movement, entombment, insouciant, imprudent, impudent, intuit, student, 
 2014-11-28 14:22
 0001-01-01 00:00
-2015-09-01 13:02
-2015-08-28 13:42
-5
-19
+2015-09-03 13:43
+2015-09-10 11:43
+7
+21
 11
 9
-False
+True
 </entry>
 
 <entry>
@@ -21826,18 +21826,18 @@ True
 <entry>
 impedimenta
 [defs]
-(n.) Baggage, supplies, or equipment related to an activity or expedition, especially when regarded as slowing one's progress.::True
+(n.) Baggage, supplies, or equipment related to an activity or expedition, especially when regarded as slowing one's progress.::False
 [/defs]
 incumbrance, stop, blockage, occlusion, hinderance, obstacle, hindrance, block, encumbrance, tumbler, 
 placenta, magenta, placentae, agenda, referenda, addenda, hacienda, influenza, operetta, ephemera, 
 2014-12-03 13:22
 0001-01-01 00:00
-2015-07-10 13:33
 2015-09-04 13:33
+2015-11-06 11:33
 7
 21
-7
-7
+8
+8
 True
 </entry>
 
@@ -21889,12 +21889,12 @@ form of address, title, sobriquet, soubriquet, byname, nickname, title of respec
 adulation, agitation, modulation, oscillation, education, operation, population, application, duration, observation, 
 2014-12-03 13:24
 0001-01-01 00:00
-2015-08-26 13:07
-2015-09-02 13:07
+2015-09-02 14:55
+2015-09-16 12:55
 7
 11
+9
 8
-7
 True
 </entry>
 
@@ -21927,12 +21927,12 @@ hash out, discuss, talk over,
 throughout, without, shout, devout, stout, scout, ahout, snout, spout, sprout, 
 2014-12-03 13:43
 0001-01-01 00:00
-2015-08-05 13:13
-2015-09-02 13:13
+2015-09-02 14:48
+2015-10-07 12:48
 7
 21
-12
-10
+13
+11
 True
 </entry>
 
@@ -21958,18 +21958,18 @@ True
 <entry>
 wanion
 [defs]
-(n.) Archaic  curse; vengeance.::False
+(n.) Archaic  curse; vengeance.::True
 [/defs]
 malison, 
 taken, nation, haven, basin, pagan, shaken, awaken, bacon, hasten, laden, 
 2014-12-04 14:29
 0001-01-01 00:00
-2015-07-09 13:29
-2015-09-03 13:29
+2015-09-03 13:54
+2015-11-05 11:54
 7
 10
+10
 9
-8
 True
 </entry>
 
@@ -22001,12 +22001,12 @@ balaclava helmet, cap, fur-trimmed, head-covering, cannonball, one-horned, Kevla
 lava, cassava, guava, java, plaza, raja, drama, melodrama, substrata, regatta, 
 2014-12-07 16:38
 0001-01-01 00:00
-2015-07-14 13:59
-2015-09-01 13:59
+2015-09-02 15:00
+2015-10-28 13:00
 7
 19
-10
-8
+11
+9
 True
 </entry>
 
@@ -22099,12 +22099,12 @@ templet, strike, pattern, rifle, strickling, strickles, level, flush, tool, even
 trickle, prickle, ventricle, nickel, sickle, fickle, pedicle, pickle, tickle, chicle, 
 2014-12-09 13:39
 0001-01-01 00:00
-2015-07-09 13:22
-2015-09-03 13:22
+2015-09-03 13:48
+2015-11-05 11:48
 7
 12
-7
-7
+8
+8
 True
 </entry>
 
@@ -22210,12 +22210,12 @@ canaille, following, followers, audience, temporalty, laity, the proletariat, th
 employ, deploy, ploy, decoy, employe, troy, savoy, destroy, annoy, roi, 
 2014-12-13 14:17
 0001-01-01 00:00
-2015-07-14 14:08
-2015-09-01 14:08
+2015-09-02 14:54
+2015-10-28 12:54
 7
 10
-11
-9
+12
+10
 True
 </entry>
 
@@ -22260,18 +22260,18 @@ True
 <entry>
 Childe
 [defs]
-(n.) a youth of noble birth::True
+(n.) a youth of noble birth::False
 [/defs]
 
 build, chilled, billed, tilled, filled, killed, drilled, guild, spilled, willed, 
 2014-12-16 15:00
 0001-01-01 00:00
-2015-07-10 13:14
-2015-09-04 13:14
+2015-09-04 13:33
+2015-11-06 11:33
 7
 7
-7
-7
+8
+8
 True
 </entry>
 
@@ -22285,12 +22285,12 @@ promenade, Bund, lawn, maidan, Marina, mall, Marsala, cortile,
 facade, nod, squad, trod, prod, god, rod, cod, sod, pod, 
 2014-12-16 15:18
 0001-01-01 00:00
-2015-07-10 13:30
 2015-09-04 13:30
+2015-11-06 11:30
 7
 7
-7
-7
+8
+8
 True
 </entry>
 
@@ -22381,12 +22381,12 @@ ecotone
 stone, bone, grown, tone, acetone, clone, groan, atone, condone, peptone, 
 2014-12-22 12:54
 0001-01-01 00:00
-2015-07-14 14:07
-2015-09-01 14:07
+2015-09-02 15:02
+2015-10-28 13:02
 7
 10
+10
 9
-8
 True
 </entry>
 
@@ -22875,19 +22875,19 @@ True
 <entry>
 roundly
 [defs]
-(adv.) With full force or vigor; thoroughly "applauded roundly; was roundly criticized. "::True
+(adv.) With full force or vigor; thoroughly "applauded roundly; was roundly criticized. "::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 openly, briskly, comprehensively, generally, vigorously, boldly, peremptorily, plumply, completely, to come off roundly, 
 soundly, profoundly, unsoundly, foundry, loudly, proudly, rowdy, county, bounty, hourly, 
 2015-01-12 14:40
 0001-01-01 00:00
-2015-07-15 13:55
-2015-09-02 13:55
+2015-09-02 15:01
+2015-10-28 13:01
 7
 14
+9
 8
-7
 True
 </entry>
 
@@ -22901,12 +22901,12 @@ pendulous, hanging, pendent, suspended, fringy, terraqueous, near-record, sunwar
 pencil, tensile, utensil, prehensile, essential, potential, differential, inferential, confidential, experiential, 
 2015-01-12 15:32
 0001-01-01 00:00
-2015-08-21 13:32
-2015-09-04 13:32
+2015-09-04 13:33
+2015-09-25 11:33
 7
 14
+9
 8
-7
 True
 </entry>
 
@@ -22973,12 +22973,12 @@ octonary, tertiary, vigenary, septenary, primary, denary, secondary, duodenary, 
 marry, merry, cemetery, visionary, seminary, scary, ternary, canary, remarry, nary, 
 2015-01-14 13:28
 0001-01-01 00:00
-2015-07-22 13:57
-2015-09-02 13:57
+2015-09-02 14:53
+2015-10-21 12:53
 7
 11
+10
 9
-8
 True
 </entry>
 
@@ -23059,19 +23059,19 @@ True
 <entry>
 ristra
 [defs]
-(n.) A string on which foodstuffs (such as chilies, onions, or garlic) are threaded or tied for storage.::False
+(n.) A string on which foodstuffs (such as chilies, onions, or garlic) are threaded or tied for storage.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 
 lire, vista, lira, infra, sera, dicta, villa, cilia, kinda, sigma, 
 2015-01-15 13:01
 0001-01-01 00:00
-2015-08-07 12:43
-2015-09-04 12:43
+2015-09-04 13:31
+2015-10-09 11:31
 7
 12
+10
 9
-8
 True
 </entry>
 
@@ -23160,12 +23160,12 @@ ill-natured, covered, snappish, peevish, gound, sleep, surly, sleepy dust, sour,
 rusty, lusty, trusty, dusty, musty, gusty, mufti, clumsy, glumly, grubby, 
 2015-01-16 13:13
 0001-01-01 00:00
-2015-08-27 12:39
-2015-09-03 12:39
+2015-09-03 13:52
+2015-09-17 11:52
 7
 16
-8
-6
+9
+7
 True
 </entry>
 
@@ -23239,12 +23239,12 @@ cupidity, covetousness, avariciousness, greed, deadly sin, mortal sin, envy, laz
 amorous, cavernous, cancerous, glamorous, clamorous, rapturous, languorous, rancorous, saturates, cankerous, 
 2015-01-17 13:29
 0001-01-01 00:00
-2015-08-06 13:26
-2015-09-03 13:26
+2015-09-03 13:54
+2015-10-08 11:54
 7
 15
-11
-9
+12
+10
 True
 </entry>
 
@@ -23391,12 +23391,12 @@ pyrophorous, light-producing, vile-looking, differences.what, antianxiety, secre
 metaphoric, pyloric, euphoric, allegoric, caloric, historic, hydrochloric, prehistoric, boric, meteoric, 
 2015-01-21 12:48
 0001-01-01 00:00
-2015-08-07 12:43
-2015-09-04 12:43
+2015-09-04 13:30
+2015-10-09 11:30
 7
 13
-11
-9
+12
+10
 True
 </entry>
 
@@ -23687,18 +23687,18 @@ True
 <entry>
 concinnity
 [defs]
-(n.) Rare  elegance of literary or artistic style.::False
+(n.) Rare  elegance of literary or artistic style.::True
 [/defs]
 atticism, elegance, inconcinnity, 
 concavity, consanguinity, vivacity, sonority, smutty, impiety, nutty, suavity, loquacity, dimity, 
 2015-01-24 13:20
 0001-01-01 00:00
-2015-07-29 13:01
-2015-09-02 13:01
+2015-09-02 14:50
+2015-10-14 12:50
 7
 8
+11
 10
-9
 True
 </entry>
 
@@ -23844,12 +23844,12 @@ colloquist, colloquial, conversation, conference, colloquium, group discussion, 
 colony, obloquy, policy, quality, commonly, comedy, ecology, polity, solidly, topically, 
 2015-01-29 12:48
 0001-01-01 00:00
-2015-08-27 12:42
-2015-09-03 12:42
+2015-09-03 13:53
+2015-09-17 11:53
 7
 18
-9
-7
+10
+8
 True
 </entry>
 
@@ -23905,12 +23905,12 @@ penny ante,
 tenente, tenante, realmente, regnante, segmentai, entranceway, echoue, sevenday, deejay, relinquere, 
 2015-01-30 13:18
 0001-01-01 00:00
-2015-08-04 13:31
-2015-09-01 13:31
+2015-09-02 14:48
+2015-10-07 12:48
 7
 14
-10
-8
+11
+9
 True
 </entry>
 
@@ -23980,12 +23980,12 @@ huge, fierce, vast, atrocious, inhuman, immanely,
 women, linen, given, written, vision, hidden, kitchen, listen, mission, arisen, 
 2015-02-01 13:09
 0001-01-01 00:00
-2015-07-14 14:34
-2015-09-01 14:34
+2015-09-02 15:00
+2015-10-28 13:00
 7
 11
-6
-6
+7
+7
 True
 </entry>
 
@@ -24102,21 +24102,21 @@ True
 sheaf
 [defs]
 (n.) A bundle of cut stalks of grain or similar plants bound with straw or twine.::False
-(n.) A collection of items held or bound together "a sheaf of printouts. "::False
-(n.) An archer's quiver.::False
+(n.) A collection of items held or bound together "a sheaf of printouts. "::True
+(n.) An archer's quiver.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 swag, bale, faggot, pack, fagot, grab, sheave, bundle, bind, reap, 
 thief, fief, chief, leaf, beef, reef, lief, brief, grief, massif, 
 2015-02-04 13:30
 0001-01-01 00:00
-2015-07-15 13:50
+2015-09-04 13:25
 2015-09-02 13:50
+4
+12
 7
-10
 6
-6
-True
+False
 </entry>
 
 <entry>
@@ -24166,12 +24166,12 @@ scuncheon
 hewn, saloon, shewn, strewn, aucune, croon, soon, immune, balloon, spoon, 
 2015-02-05 12:54
 0001-01-01 00:00
-2015-07-14 13:59
-2015-09-01 13:59
+2015-09-02 14:52
+2015-10-28 12:52
 7
 8
-6
-6
+7
+7
 True
 </entry>
 
@@ -24186,12 +24186,12 @@ imperial capacity unit, british capacity unit, keg, warto, hogshead, assize, j±
 jerkin, gherkin, shirking, working, lurking, jerking, smirking, perking, clerking, quirking, 
 2015-02-05 12:57
 0001-01-01 00:00
-2015-07-14 14:39
-2015-09-01 14:39
+2015-09-02 14:51
+2015-10-28 12:51
 7
 8
-6
-6
+7
+7
 True
 </entry>
 
@@ -24205,12 +24205,12 @@ jamb, key-operated, curbstone, clinch, overhead, deadbolt, doorframe, dreadful-l
 dam, damn, jam, tam, tram, dram, jamb, pram, spam, buckram, 
 2015-02-05 12:57
 0001-01-01 00:00
-2015-07-15 13:51
-2015-09-02 13:51
+2015-09-02 14:57
+2015-10-28 12:57
 7
 9
-6
-6
+7
+7
 True
 </entry>
 
@@ -24223,12 +24223,12 @@ Pendragon
 undergone, leprechaun, foregone, begone, tenon, mastodon, predawn, woebegone, methadon, drawn, 
 2015-02-07 12:49
 0001-01-01 00:00
-2015-07-15 13:55
-2015-09-02 13:55
+2015-09-02 14:57
+2015-10-28 12:57
 7
 7
-6
-6
+7
+7
 True
 </entry>
 
@@ -24518,19 +24518,19 @@ True
 <entry>
 bryology
 [defs]
-(n.) The branch of botany that deals with mosses, liverworts, and hornworts.::False
+(n.) The branch of botany that deals with mosses, liverworts, and hornworts.::True
 [/defs]
 
 geology, ideology, theology, biology, pathology, archaeology, etiology, genealogy, aetiology, embryology, 
 2015-02-20 14:40
 0001-01-01 00:00
-2015-08-04 13:44
+2015-09-04 13:25
 2015-09-01 13:44
+5
+16
+9
 7
-14
-8
-7
-True
+False
 </entry>
 
 <entry>
@@ -24636,12 +24636,12 @@ ex ante,
 post, boast, toast, inmost, innermost, dosed, riposte, tost, grossed, overdosed, 
 2015-02-25 12:53
 0001-01-01 00:00
-2015-08-07 12:43
-2015-09-04 12:43
+2015-09-04 13:31
+2015-10-09 11:31
 7
 14
+9
 8
-7
 True
 </entry>
 
@@ -25671,12 +25671,12 @@ banter, raillery, backchat, give-and-take, chaff, chitchat, facetiousness, sarca
 camouflage, sabotage, collage, entourage, massage, barrage, arbitrage, montage, garage, mirage, 
 2015-03-28 12:49
 0001-01-01 00:00
-2015-07-22 13:58
-2015-09-02 13:58
+2015-09-02 14:51
+2015-10-21 12:51
 7
 9
-5
-5
+6
+6
 True
 </entry>
 
@@ -25747,12 +25747,12 @@ pleasantry, banter, badinages, raillery, backchat, give-and-take, chaff, facetio
 seepage, repeated, albeit, competed, depleted, impeded, beaded, collegiate, speeded, trusteeship, 
 2015-03-28 12:53
 0001-01-01 00:00
-2015-07-22 13:53
-2015-09-02 13:53
+2015-09-02 14:55
+2015-10-21 12:55
 7
 9
-5
-5
+6
+6
 True
 </entry>
 
@@ -25797,19 +25797,19 @@ True
 <entry>
 propitiate
 [defs]
-(v.-t.) To conciliate (an offended power); appease "propitiate the gods with a sacrifice. "::False
+(v.-t.) To conciliate (an offended power); appease "propitiate the gods with a sacrifice. "::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 ingratiate, propitiated, propitiation, propitiating, atone, pacify, appease, conciliate, propitiates, 
 perpetuate, illustrate, precipitate, translate, predicate, delineate, deteriorate, liberate, propagate, affiliate, 
 2015-03-29 13:17
 0001-01-01 00:00
-2015-07-22 13:56
-2015-09-02 13:56
+2015-09-02 14:52
+2015-10-21 12:52
 7
 9
-5
-5
+6
+6
 True
 </entry>
 
@@ -25823,13 +25823,13 @@ organdie, organdy, nainsook, dacca muslin, swiss muslin, india muslin, arni musl
 biathlon, cousin, dozen, mutton, sullen, muffin, mullion, nubbin, someone, sudden, 
 2015-03-29 14:05
 0001-01-01 00:00
-2015-07-22 13:54
+2015-09-04 13:23
 2015-09-02 13:54
-7
-9
+6
+11
+6
 5
-5
-True
+False
 </entry>
 
 <entry>
@@ -25917,12 +25917,12 @@ creamer, cream pitcher, vessel, chalice, platter, ashtray, bason, washbasin, sau
 fewer, newer, viewer, sewer, truer, brewer, bluer, wooer, hewer, chewer, 
 2015-03-30 23:16
 0001-01-01 00:00
-2015-07-22 13:57
-2015-09-02 13:57
+2015-09-02 14:52
+2015-10-21 12:52
 7
 7
-5
-5
+6
+6
 True
 </entry>
 
@@ -25975,12 +25975,12 @@ pontifical zouaves, Zouave on Wikipedia.Wikipedia, whiskey-colored, blouson, sue
 save, shave, gave, slave, wave, cave, nave, knave, pave, stave, 
 2015-04-01 12:48
 0001-01-01 00:00
-2015-07-24 13:34
 2015-09-04 13:34
+2015-10-23 11:34
 7
 7
-5
-5
+6
+6
 True
 </entry>
 
@@ -26424,17 +26424,17 @@ True
 <entry>
 duffer
 [defs]
-(n.) Informal   An incompetent or dull-witted person.::False
+(n.) Informal   An incompetent or dull-witted person.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 omadhaun, clumsy person, bounder, externalism, snub, deadheads, inexactitude, blighter, bloggers/, mumbo-jumbo, determinist, 
 buffer, tougher, suffer, rougher, cartographer, buzzer, mother, brother, cover, lover, 
 2015-04-11 12:55
 0001-01-01 00:00
-2015-09-01 13:01
+2015-09-04 13:08
 2015-08-29 13:32
-3
-15
+6
+18
 8
 6
 False
@@ -27155,12 +27155,12 @@ ruby, contagious carbuncle, staphylococcal infection, garnet, carnelian, jade, m
 granduncle, peduncle, jungle, bungle, fungal, antifungal, buckle, chuckle, crustal, truckle, 
 2015-04-24 12:58
 0001-01-01 00:00
-2015-08-05 13:14
-2015-09-02 13:14
+2015-09-02 14:51
+2015-10-07 12:51
 7
 18
+7
 6
-5
 True
 </entry>
 
@@ -27287,12 +27287,12 @@ pull, moment, drag, instant, haul, triced, trices, tricing, minute, wind,
 price, twice, rice, slice, lice, thrice, splice, advice, device, nice, 
 2015-04-27 12:43
 0001-01-01 00:00
-2015-08-12 13:24
-2015-09-02 13:24
+2015-09-02 14:53
+2015-09-30 12:53
 7
 13
+7
 6
-5
 True
 </entry>
 
@@ -27473,19 +27473,19 @@ True
 <entry>
 jackboot
 [defs]
-(n.) A stout military boot that extends above the knee.::True
+(n.) A stout military boot that extends above the knee.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 jackbooted, Hessian boot, Wellington boot, Wellington, Hessian, cowboy boot, boot, flightsuit, pigtail, 
 tracksuit, gumboot, acute, dispute, pursuit, boot, brute, dilute, recruit, astute, 
 2015-04-30 12:51
 0001-01-01 00:00
-2015-08-26 13:07
-2015-09-02 13:07
+2015-09-02 15:02
+2015-09-16 13:02
 7
 12
+6
 5
-4
 True
 </entry>
 
@@ -27499,12 +27499,12 @@ minnower, spot-tailed minnow, leather-sided minnow, mangrove minnow, sheepshead 
 vino, winnow, limo, milieux, window, zero, hero, widow, pillow, ditto, 
 2015-04-30 12:51
 0001-01-01 00:00
-2015-08-12 13:20
-2015-09-02 13:20
+2015-09-02 15:01
+2015-09-30 13:01
 7
 12
+7
 6
-5
 True
 </entry>
 
@@ -27918,13 +27918,13 @@ remise, four-wheeler, hackney writer, hack, hackneyed, hackneying, hackney cab, 
 acne, fanny, happy, valley, fancy, fatty, sandy, handy, sadly, taxi, 
 2015-05-09 12:51
 0001-01-01 00:00
-2015-09-01 13:00
-2015-08-29 13:39
-5
-9
+2015-09-03 13:44
+2015-09-10 11:44
+7
+11
 5
 4
-False
+True
 </entry>
 
 <entry>
@@ -27968,18 +27968,18 @@ True
 <entry>
 frabjous
 [defs]
-(adj.) Humorous  wonderful, elegant, superb.::False
+(adj.) Humorous  wonderful, elegant, superb.::True
 [/defs]
 
 reproduce, spruce, produce, abuse, reduce, introduce, truce, deduce, profuse, reuse, 
 2015-05-10 13:22
 0001-01-01 00:00
-2015-07-30 12:55
-2015-09-03 12:55
+2015-09-03 13:55
+2015-10-15 11:55
 7
 7
-4
-4
+5
+5
 True
 </entry>
 
@@ -28033,12 +28033,12 @@ frizzling, frizzled, crinkle, cook, curl, friz, frizzles, frizzled fowl,
 drizzle, grizzle, chisel, sizzle, fizzle, shrivel, bristle, swivel, drivel, gristle, 
 2015-05-10 16:33
 0001-01-01 00:00
-2015-07-30 12:58
-2015-09-03 12:58
+2015-09-03 13:54
+2015-10-15 11:54
 7
 8
-4
-4
+5
+5
 True
 </entry>
 
@@ -28051,12 +28051,12 @@ catalepsis, cataleptoid, cataleptic, Catalepsy on Wikipedia.Wikipedia, hypersomn
 epilepsy, narcolepsy, intermezzi, baronetcy, capillary, apoplexy, dressy, catchpenny, cobwebby, preppy, 
 2015-05-10 16:33
 0001-01-01 00:00
-2015-07-30 12:54
-2015-09-03 12:54
+2015-09-03 13:51
+2015-10-15 11:51
 7
 8
-4
-4
+5
+5
 True
 </entry>
 
@@ -28103,38 +28103,38 @@ True
 <entry>
 jalousie
 [defs]
-(n.) A blind or shutter having adjustable horizontal slats for regulating the passage of air and light.::True
+(n.) A blind or shutter having adjustable horizontal slats for regulating the passage of air and light.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 blind, curtain, window, shutter, haleine, well-received, distribue, volonte, eternelle, d'agir, 
 prosy, fussy, phantasy, hussy, indelicacy, fluffy, strophe, scruffy, slushy, lovey, 
 2015-05-12 12:44
 0001-01-01 00:00
-2015-07-30 12:53
-2015-09-03 12:53
+2015-09-03 13:48
+2015-10-15 11:48
 7
 6
-4
-4
+5
+5
 True
 </entry>
 
 <entry>
 poniard
 [defs]
-(n.) Historical  A dagger typically having a slender square or triangular blade.::True
+(n.) Historical  A dagger typically having a slender square or triangular blade.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 poniarded, poniarding, stab, poniards, sticker, dagger, knife, 
 wondered, plundered, buffered, thundered, blundered, buttered, puckered, buzzard, sundered, covered, 
 2015-05-12 12:44
 0001-01-01 00:00
-2015-07-30 12:58
-2015-09-03 12:58
+2015-09-03 13:49
+2015-10-15 11:49
 7
 6
-4
-4
+5
+5
 True
 </entry>
 
@@ -28866,8 +28866,8 @@ True
 <entry>
 precipitate
 [defs]
-(v.-t.) To cause to happen, especially suddenly or prematurely.::False
-(v.) (precipitate someone/thing into) send someone or something without warning into a particular state or condition.::False
+(v.-t.) To cause to happen, especially suddenly or prematurely.::True
+(v.) (precipitate someone/thing into) send someone or something without warning into a particular state or condition.::True
 (v.-t.) Chemistry   To cause (a solid substance) to be separated from a solution.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
@@ -28875,10 +28875,10 @@ sleet, hail, spat, sludge, snow, rain down, rain, hurried, precipitated, precipi
 predicate, disseminate, dissipate, distillate, liquidate, profligate, gravitate, propitiate, reciprocate, separate, 
 2015-06-06 13:11
 0001-01-01 00:00
-2015-09-01 13:03
+2015-09-04 13:21
 2015-08-29 13:22
-3
-14
+4
+17
 4
 3
 False
@@ -28930,13 +28930,13 @@ conniption, log in, log-in, door, log on, back door, entrance, entryway, disk ac
 abscess, address, assets, accents, annex, annexe, mantes, bassets, aspects, handsets, 
 2015-06-08 12:43
 0001-01-01 00:00
-2015-08-25 13:21
+2015-09-04 13:25
 2015-09-01 13:21
-7
-7
-5
 4
-True
+9
+6
+4
+False
 </entry>
 
 <entry>
@@ -28968,12 +28968,12 @@ tergiversation, desert, prevaricate, shuffle, shift, tergiversating, tergiversat
 participate, negotiate, perpetuate, necessitate, dissipate, officiate, pontificate, debate, estate, facilitate, 
 2015-06-09 12:43
 0001-01-01 00:00
-2015-08-04 13:38
-2015-09-01 13:38
+2015-09-02 14:44
+2015-10-07 12:44
 7
 12
-3
-3
+4
+4
 True
 </entry>
 
@@ -29064,12 +29064,12 @@ with, likewise, also,
 befall, fall, vol, hall, haul, shawl, fmall, severall, sepal, small, 
 2015-06-13 12:43
 0001-01-01 00:00
-2015-08-04 13:37
-2015-09-01 13:37
+2015-09-02 14:53
+2015-10-07 12:53
 7
 8
-3
-3
+4
+4
 True
 </entry>
 
@@ -29094,21 +29094,21 @@ True
 <entry>
 argosy
 [defs]
-(n.) Nautical   A large merchant ship.::True
-(n.) Nautical   A fleet of ships.::True
-(n.) A rich source or supply "an argosy of adventure lore. "::True
+(n.) Nautical   A large merchant ship.::False
+(n.) Nautical   A fleet of ships.::False
+(n.) A rich source or supply "an argosy of adventure lore. "::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 ship, fleet, casinos|free, chinook, Starr, Biloxi, jack|online, Niagara, sizar, Asbury, 
 pharmacy, odyssey, policy, harmony, partially, honesty, heartily, artfully, larceny, oddity, 
 2015-06-14 14:18
 0001-01-01 00:00
-2015-08-04 13:38
-2015-09-01 13:38
+2015-09-02 14:53
+2015-10-07 12:53
 7
 8
-3
-3
+4
+4
 True
 </entry>
 
@@ -29199,47 +29199,47 @@ alum, astringent, styptic pencil, mechanical styptic, styptic powder, vascular s
 scenic, seasick, beatnik, hygienic, phonemic, anemic, uremic, anapaestic, leukemic, amnesic, 
 2015-06-16 12:46
 0001-01-01 00:00
-2015-08-05 13:12
-2015-09-02 13:12
+2015-09-02 14:51
+2015-10-07 12:51
 7
 7
-3
-3
+4
+4
 True
 </entry>
 
 <entry>
 ecdysiast
 [defs]
-(n.) a striptease performer.::False
+(n.) a striptease performer.::True
 [/defs]
 rose louise hovick, lee, gypsy rose lee, stripper, exotic dancer, performer, performing artist, ecdysis, ecdysone, striptease, 
 enthusiast, blast, classed, harassed, last, passed, past, fast, cast, vast, 
 2015-06-17 12:37
 0001-01-01 00:00
-2015-08-06 13:22
-2015-09-03 13:22
+2015-09-03 13:50
+2015-10-08 11:50
 7
 7
-3
-3
+4
+4
 True
 </entry>
 
 <entry>
 ludic
 [defs]
-(adj.) Of or relating to play or playfulness: "Fiction . . . now makes [language] the center of its reflexive concern, and explodes in ludic, parodic, ironic forms"  ( Ihab Hassan). ::False
+(adj.) Of or relating to play or playfulness: "Fiction . . . now makes [language] the center of its reflexive concern, and explodes in ludic, parodic, ironic forms"  ( Ihab Hassan). ::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 ludic fallacy, ludenic, ludology, 
 cubic, pubic, cherubic, therapeutic, hermeneutic, scorbutic, pharmaceutic, psychotherapeutic, chemotherapeutic, runic, 
 2015-06-17 12:48
 0001-01-01 00:00
-2015-09-01 12:39
+2015-09-04 13:24
 2015-08-31 13:10
-3
-12
+6
+15
 5
 3
 False
@@ -29248,19 +29248,19 @@ False
 <entry>
 baseboard
 [defs]
-(n.) A molding that conceals the joint between an interior wall and the floor. Also called mopboard and skirting.::False
+(n.) A molding that conceals the joint between an interior wall and the floor. Also called mopboard and skirting.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 baseboard heating, skirting board, moulding, molding, tolaunch, thermoplastic, wainscoting, ink-jet, hot-water, 10-inch, 
 spaceport, pasteboard, tailboard, drainboard, neighboured, sailboard, skateboard, chainsawed, brainstormed, jaywalked, 
 2015-06-17 12:48
 0001-01-01 00:00
-2015-08-07 12:44
-2015-09-04 12:44
+2015-09-04 13:33
+2015-10-09 11:33
 7
 8
-3
-3
+4
+4
 True
 </entry>
 
@@ -29295,12 +29295,12 @@ sculled, sculling, sculler, double scull, quad scull, single scull, chug, boat, 
 skull, colour, cl, cul, coeval, cull, gull, dull, ml, null, 
 2015-06-17 13:15
 0001-01-01 00:00
-2015-08-07 12:43
-2015-09-04 12:43
+2015-09-04 13:30
+2015-10-09 11:30
 7
 8
-3
-3
+4
+4
 True
 </entry>
 
@@ -29349,13 +29349,13 @@ navvy, jack, gob, mariner, tar, Jack tar, seaman, seafarer, old salt, sea dog, c
 roundabout, redoubt, runabout, gadabout, layabout, about, stout, spout, sprout, thereabout, 
 2015-06-22 12:37
 0001-01-01 00:00
-2015-08-12 13:25
+2015-09-04 13:08
 2015-09-02 13:25
-7
-7
-5
 4
-True
+9
+6
+4
+False
 </entry>
 
 <entry>
@@ -29607,17 +29607,17 @@ True
 <entry>
 glockenspiel
 [defs]
-(n.) A percussion instrument with a series of tuned metal bars and played with light hammers.::False
+(n.) A percussion instrument with a series of tuned metal bars and played with light hammers.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 carillon, percussion instrument, percussive instrument, sulin, marimba, matchstick, tocsin, lance-head, tetrahedra, sternutatory, 
 congeal, bloodmobile, automobile, conceal, gluteal, bookmobile, appeal, steel, steal, ordeal, 
 2015-07-01 12:46
 0001-01-01 00:00
-2015-09-01 13:08
+2015-09-04 13:07
 2015-09-01 12:43
-2
-12
+5
+15
 4
 2
 False
@@ -29780,36 +29780,36 @@ True
 <entry>
 buff
 [defs]
-(n.) a pale yellow-brown color.::True
+(n.) a pale yellow-brown color.::False
 [/defs]
 aerophile, bacchant, bacchanal, aficionado, groupie, snuff-colour, snuff-color, amorist, metalhead, chromatic, 
 tough, puff, duff, rough, stuff, bluff, cuff, huff, muff, ruff, 
 2015-07-03 13:20
 0001-01-01 00:00
-2015-08-28 13:11
+2015-09-04 13:26
 2015-09-04 13:11
-7
-13
-3
 2
-True
+13
+4
+2
+False
 </entry>
 
 <entry>
 ormolu
 [defs]
-(n.) a gold-colored alloy of copper, zinc, and tin used in decoration and making ornaments.::True
+(n.) a gold-colored alloy of copper, zinc, and tin used in decoration and making ornaments.::False
 [/defs]
 brass, marquetry, vine-carved, ogee, lancers, dingier, magnesite, fire-shovel, taffety, sattin, 
 ormulu, auditu, foreigu, origiu, kurabu, sonitu, dotoku, shosetsu, dolomieu, shishosetsu, 
 2015-07-03 13:20
 0001-01-01 00:00
-2015-08-28 13:13
-2015-09-04 13:13
+2015-09-04 13:31
+2015-09-18 11:31
 7
 12
+4
 3
-2
 True
 </entry>
 
@@ -30184,17 +30184,17 @@ True
 <entry>
 chancel
 [defs]
-(n.) The space around the altar of a church for the clergy and sometimes the choir, often enclosed by a lattice or railing.::True
+(n.) The space around the altar of a church for the clergy and sometimes the choir, often enclosed by a lattice or railing.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 bema, sanctuary, apse, area, altar, organist, colonnade, aisle, cloister, 
 dal, pal, al, shall, alle, cal, gal, mal, sal, val, 
 2015-07-06 13:00
 0001-01-01 00:00
-2015-09-01 13:01
+2015-09-04 13:09
 2015-08-30 13:13
-5
-13
+6
+16
 3
 2
 False
@@ -30209,31 +30209,31 @@ judicature, tribunal, exchequer, court, treasury, accountancy, self-incriminatio
 risk, disk, disc, whisk, bisque, frisk, brisk, obelisk, basilisk, videodisk, 
 2015-07-07 12:46
 0001-01-01 00:00
-2015-08-20 13:18
-2015-09-03 13:18
+2015-09-03 13:48
+2015-09-24 11:48
 7
 13
+4
 3
-2
 True
 </entry>
 
 <entry>
 patten
 [defs]
-(n.) Historical  a shoe or clog having a raised sole or set on an iron ring, worn to raise the feet above wet ground.::False
+(n.) Historical  a shoe or clog having a raised sole or set on an iron ring, worn to raise the feet above wet ground.::True
 [/defs]
 stilt, footwear, footgear, geta, sabot, chopine, to run on pattens, sandal, clog, 
 batten, satin, fatten, platen, flatten, datum, happen, hadn, cabin, haben, 
 2015-07-07 12:48
 0001-01-01 00:00
-2015-09-01 12:58
-2015-08-29 12:52
-5
-12
+2015-09-03 13:47
+2015-09-10 11:47
+7
+14
 3
 2
-False
+True
 </entry>
 
 <entry>
@@ -30322,13 +30322,13 @@ tasteless, worn, tatty bye, cordovan, flea-ridden, rose-hued, squirrel-skin, low
 chatty, patty, fatty, catty, natty, ratty, daddy, paddy, patchy, tabby, 
 2015-07-08 13:12
 0001-01-01 00:00
-2015-09-01 12:58
-2015-08-29 12:51
-6
-11
+2015-09-02 14:29
+2015-09-09 14:29
+7
+12
 3
 2
-False
+True
 </entry>
 
 <entry>
@@ -30359,10 +30359,10 @@ displume, deplume, despoiling, despoiled, rob, bereave, divest, deprive, spoil, 
 spoil, tinfoil, toil, boil, broil, embroil, trefoil, gumboil, reboil, soil, 
 2015-07-09 13:03
 0001-01-01 00:00
-2015-09-01 12:40
+2015-09-04 20:22
 2015-08-27 13:28
 3
-10
+13
 3
 2
 False
@@ -30400,12 +30400,12 @@ snooker, fobbing, fobbed, to fob off, cheat, maul, deceive, beat, pocket, chain,
 daub, thought, sought, fought, sawed, sot, thawed, fop, hawed, taught, 
 2015-07-09 13:03
 0001-01-01 00:00
-2015-08-12 13:20
-2015-09-02 13:20
+2015-09-02 14:50
+2015-09-30 12:50
 7
 12
-2
-2
+3
+3
 True
 </entry>
 
@@ -30422,12 +30422,12 @@ dog, chapped, chapstick, chappo, chappy, chappie, chapping, beat, person, buy,
 tap, pap, map, cap, gap, lap, trap, wrap, nap, rap, 
 2015-07-09 13:03
 0001-01-01 00:00
-2015-08-13 12:58
-2015-09-03 12:58
+2015-09-03 13:48
+2015-10-01 11:48
 7
 13
-2
-2
+3
+3
 True
 </entry>
 
@@ -30458,10 +30458,10 @@ revitalization, think-tank, athome, precariousness, trainwreck, breadbasket, iss
 initiation, information, inflation, inspiration, insulation, enumeration, invocation, infestation, generation, imagination, 
 2015-07-09 16:43
 0001-01-01 00:00
-2015-09-01 13:05
+2015-09-04 13:06
 2015-09-01 12:45
 6
-10
+13
 3
 2
 False
@@ -30592,13 +30592,13 @@ twilling, twilled, twills, cloth, weave, tissue, fabric, material,
 will, drill, quill, quelle, trill, wil, wilh, gerbil, swill, brill, 
 2015-07-10 12:52
 0001-01-01 00:00
-2015-09-01 12:39
-2015-08-29 12:47
-5
-9
+2015-09-03 13:46
+2015-09-10 11:46
+7
+11
 3
 2
-False
+True
 </entry>
 
 <entry>
@@ -30627,35 +30627,35 @@ bibelot
 (n.) A small decorative object; a trinket.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
-
+bijou, 
 plot, blot, trot, afterthought, kilowatt, lot, forgot, rot, slot, clot, 
 2015-07-11 12:58
 0001-01-01 00:00
-2015-08-13 12:57
-2015-09-03 12:57
+2015-09-03 13:54
+2015-09-10 11:54
 7
 11
-2
-2
+4
+3
 True
 </entry>
 
 <entry>
 cenacle
 [defs]
-(n.) a discussion group or literary clique.::True
-(n.) the room in which the Last Supper was held.::True
+(n.) a discussion group or literary clique.::False
+(n.) the room in which the Last Supper was held.::False
 [/defs]
 
 unshackle, tackle, tabernacle, crackle, hackle, jackal, cackle, shackle, treacle, grackle, 
 2015-07-11 12:58
 0001-01-01 00:00
-2015-08-26 13:06
-2015-09-02 13:06
+2015-09-02 14:45
+2015-09-16 12:45
 7
 17
-3
-1
+4
+2
 True
 </entry>
 
@@ -30725,12 +30725,12 @@ Cody, Hurok, Diaghilev, pornographer, solomon hurok, william f. cody, sergei dia
 embryo, presidio, portfolio, mistletoe, ratio, bestow, folio, indigo, patio, stereo, 
 2015-07-12 13:42
 0001-01-01 00:00
-2015-08-12 13:22
-2015-09-02 13:22
+2015-09-02 14:51
+2015-09-30 12:51
 7
 9
-2
-2
+3
+3
 True
 </entry>
 
@@ -30793,19 +30793,19 @@ True
 <entry>
 blackleg
 [defs]
-(n.) British derogatory  One who works while other workers are on strike. ::False
-(n.) One of various diseases of plants or cattle.::False
+(n.) British derogatory  One who works while other workers are on strike. ::True
+(n.) One of various diseases of plants or cattle.::True
 [/defs]
 blacklegging, scalie, blacklegged, blacklegs, work, worker, do work, boozer, antichrist, 
 jackleg, metagallic, malamig, nachhaltig, aborig, ansassig, erstmalig, andachtig, underlig, verdenskrig, 
 2015-07-14 12:55
 0001-01-01 00:00
-2015-08-12 13:23
-2015-09-02 13:23
+2015-09-02 14:58
+2015-09-30 12:58
 7
 7
-2
-2
+3
+3
 True
 </entry>
 
@@ -30831,19 +30831,19 @@ True
 <entry>
 costermonger
 [defs]
-(n.) Chiefly British   One who sells fruit, vegetables, fish, or other goods from a cart, barrow, or stand in the streets.::True
+(n.) Chiefly British   One who sells fruit, vegetables, fish, or other goods from a cart, barrow, or stand in the streets.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 fruiterer, dealer, bargainer, monger, trader, gilla, battle-sword, pan-hellenic, ragman, greengrocer, 
 correlator, voltameter, overmaster, organiser, mobiliser, corpuscular, organiza, socialiste, ordinata, immobiliser, 
 2015-07-14 13:03
 0001-01-01 00:00
-2015-08-12 13:19
-2015-09-02 13:19
+2015-09-02 14:45
+2015-09-30 12:45
 7
 6
-2
-2
+3
+3
 True
 </entry>
 
@@ -30857,12 +30857,12 @@ perorate, specialize, expound, detail, specialise, exposit, exemplify, particula
 expatriate, expiate, extricate, explicate, extirpate, initiate, deviate, exaggerate, exacerbate, exterminate, 
 2015-07-14 13:03
 0001-01-01 00:00
-2015-08-20 13:14
-2015-09-03 13:14
+2015-09-03 13:50
+2015-09-24 11:50
 7
 8
+5
 4
-3
 True
 </entry>
 
@@ -30955,12 +30955,12 @@ irridentist, proponent, exponent, advocator, advocate, irredentism, irredentisti
 dentist, apprenticed, tempest, iridescent, repentant, intensest, librettist, embarrassed, lieutenant, expectant, 
 2015-07-14 13:12
 0001-01-01 00:00
-2015-08-20 13:22
-2015-09-03 13:22
+2015-09-03 13:52
+2015-09-24 11:52
 7
 23
+3
 2
-1
 True
 </entry>
 
@@ -30973,12 +30973,12 @@ counterglow, visible radiation, light, visible light,
 secondline, socresonline, pentaquine, breakfasttime, singleline, driveline, insuline, inuline, picketline, springeronline, 
 2015-07-15 13:02
 0001-01-01 00:00
-2015-08-13 12:58
-2015-09-03 12:58
+2015-09-03 13:54
+2015-10-01 11:54
 7
 7
-2
-2
+3
+3
 True
 </entry>
 
@@ -30992,12 +30992,12 @@ fishtailed, fishtails, fishtailing, slow down, decelerate, low-nox, natural-draf
 detaille, fiscale, multiscale, telltale, airmail, rescale, widescale, timescale, limescale, largescale, 
 2015-07-15 13:15
 0001-01-01 00:00
-2015-08-14 13:21
-2015-09-04 13:21
+2015-09-04 13:33
+2015-10-02 11:33
 7
 8
-2
-2
+3
+3
 True
 </entry>
 
@@ -31025,20 +31025,20 @@ True
 <entry>
 snick
 [defs]
-(v.) cut a small notch or incision in.::False
-(v.) make or cause to make a sharp click.::False
+(v.) cut a small notch or incision in.::True
+(v.) make or cause to make a sharp click.::True
 [/defs]
 snicking, snicked, snicks, hit, cutting, cut, physical contact, contact, 
 stick, nick, slick, flick, mic, spic, mick, shtick, spik, schtick, 
 2015-07-15 13:15
 0001-01-01 00:00
-2015-08-12 13:24
+2015-09-04 13:08
 2015-09-02 13:24
-7
 6
+8
+3
 2
-2
-True
+False
 </entry>
 
 <entry>
@@ -31210,12 +31210,12 @@ pad, digs, domiciliation, lodgings, excavation, living quarters, quarters,
 pickings, lickings, tilings, billings, chippings, buildings, shillings, fittings, earrings, killings, 
 2015-07-16 13:12
 0001-01-01 00:00
-2015-08-13 12:57
-2015-09-03 12:57
+2015-09-03 13:48
+2015-10-01 11:48
 7
 6
-2
-2
+3
+3
 True
 </entry>
 
@@ -31252,12 +31252,12 @@ breakfast, pea flour, matzo meal, rolled oats, mess, brunch, potluck, tea, cornm
 kneel, feel, real, deal, seal, wheel, zeal, heal, heel, keel, 
 2015-07-16 13:40
 0001-01-01 00:00
-2015-08-14 13:20
-2015-09-04 13:20
+2015-09-04 13:32
+2015-10-02 11:32
 7
 8
-2
-2
+3
+3
 True
 </entry>
 
@@ -31291,12 +31291,12 @@ exurbia, whatthe, free-hand, raisin', tombola, demons', futbol, wherethe, calker
 injured, figured, inward, wizard, lizard, gizzard, niggard, enured, scissored, jiggered, 
 2015-07-17 13:15
 0001-01-01 00:00
-2015-08-14 13:21
-2015-09-04 13:21
+2015-09-04 13:31
+2015-10-02 11:31
 7
 7
-2
-2
+3
+3
 True
 </entry>
 
@@ -31346,7 +31346,7 @@ disquisition
 (n.) A formal discourse on a subject, often in writing.::False
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
-dissertation, essay, harangue, autobiography, oration, speculations, monograph, memoir, eulogy, preface, 
+excursus, dissertation, essay, harangue, autobiography, oration, speculations, monograph, memoir, eulogy, preface, 
 disposition, technician, inquisition, position, definition, physician, transition, acquisition, proposition, deposition, 
 2015-07-17 13:28
 0001-01-01 00:00
@@ -31362,21 +31362,21 @@ True
 <entry>
 cove
 [defs]
-(n.) A small sheltered bay in the shoreline of a sea, river, or lake.::False
-(n.) Architecture   A concave molding.::False
-(n.) British informal, dated  A fellow; a man.::False
+(n.) A small sheltered bay in the shoreline of a sea, river, or lake.::True
+(n.) Architecture   A concave molding.::True
+(n.) British informal, dated  A fellow; a man.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 lough, Abram cove, coving, bang up cove, badge-cove, coved, retreat, arch, recess, inlet, 
 grove, wove, clove, hove, rove, drove, stove, throve, trove, strove, 
 2015-07-17 13:28
 0001-01-01 00:00
-2015-08-14 13:21
-2015-09-04 13:21
+2015-09-04 13:32
+2015-10-02 11:32
 7
 6
-2
-2
+3
+3
 True
 </entry>
 
@@ -31733,12 +31733,12 @@ highjacker, hijacker, highwayman, road agent, old-man, tongue-lashing, blunderbu
 moorland, woodland, bushwhacked, woodcraft, notepad, voted, sugared, forward, noted, coated, 
 2015-07-26 12:46
 0001-01-01 00:00
-2015-08-20 13:24
-2015-09-03 13:24
+2015-09-03 13:51
+2015-09-24 11:51
 7
 11
+3
 2
-1
 True
 </entry>
 
@@ -31887,12 +31887,12 @@ cutting, tonsured, tonsures, tonsuring, shave, poll, crown, shaving, pate, immun
 ensure, insure, brochure, unsure, demure, sure, pure, honour, assure, reassure, 
 2015-07-27 13:08
 0001-01-01 00:00
-2015-08-20 13:17
-2015-09-03 13:17
+2015-09-03 13:52
+2015-09-24 11:52
 7
 10
+3
 2
-1
 True
 </entry>
 
@@ -31981,12 +31981,12 @@ omnium-gatherum, mixture, medley, bully-beef, salmagundi, gallimaufry, fricassee
 socio, propio, gobierno, matrimonio, testimonio, curio, oratorio, territorio, coffeepot, portio, 
 2015-07-30 12:44
 0001-01-01 00:00
-2015-08-28 13:31
-2015-09-04 13:31
+2015-09-04 13:33
+2015-09-18 11:33
 7
 8
+4
 3
-2
 True
 </entry>
 
@@ -32034,14 +32034,14 @@ excursus
 (n.) A digression.::False
 "After yet another long excursus on the subject of housecats, the absent-minded professor finally returned to his main point."::False
 [/defs]
-digression, discussion, message, content, subject-matter, substance, re-examination, dialing, bath-robe, catechising, 
+disquisition, digression, discussion, message, content, subject-matter, substance, re-examination, dialing, bath-robe, catechising, 
 versus, disperses, inverses, service, surface, nervous, nurses, verses, disservice, resurface, 
 2015-08-01 12:55
 0001-01-01 00:00
-2015-09-01 13:04
+2015-09-04 13:06
 2015-09-01 13:01
-3
-24
+4
+27
 1
 0
 False
@@ -32096,12 +32096,12 @@ millenary, thousand, large integer, chiliastic, chiliasm,
 period, myriad, chilliest, lineage, idiot, busiest, silliest, cheeriest, dizziest, pithiest, 
 2015-08-07 12:33
 0001-01-01 00:00
-2015-08-21 13:33
 2015-09-04 13:33
+2015-09-25 11:33
 7
 7
-1
-1
+2
+2
 True
 </entry>
 
@@ -32114,12 +32114,12 @@ démarche
 march, starch, larch, parch, smart, marred, mart, marge, dogcart, jacquard, 
 2015-08-07 12:33
 0001-01-01 00:00
-2015-08-20 13:18
-2015-09-03 13:18
+2015-09-03 13:51
+2015-09-24 11:51
 7
 6
-1
-1
+2
+2
 True
 </entry>
 
@@ -32162,18 +32162,18 @@ True
 <entry>
 venery
 [defs]
-(n.) Archaic  Indulgence in sexual activity.::True
+(n.) Archaic  Indulgence in sexual activity.::False
 [/defs]
 beast of venery, terms of venery, coition, hunting, chase, copulation, uncleanness, disjunction, quarrelling, 
 plenary, memory, century, sensory, celery, feathery, every, energy, reverie, beggary, 
 2015-08-12 13:10
 0001-01-01 00:00
-2015-08-26 13:02
-2015-09-02 13:02
+2015-09-02 14:52
+2015-09-16 12:52
 7
 14
-0
-0
+1
+1
 True
 </entry>
 
@@ -32186,13 +32186,13 @@ ballpark, internationality, spectrum, expanse, confines, palette, horizon, sweep
 gambit, anted, bandage, banded, chanted, panted, sanded, canted, branded, scanted, 
 2015-08-12 13:36
 0001-01-01 00:00
-2015-09-01 13:03
-2015-08-29 13:20
-6
-12
+2015-09-02 13:55
+2015-09-09 13:55
+7
+13
 1
 0
-False
+True
 </entry>
 
 <entry>
@@ -32205,12 +32205,12 @@ scurrility, vitriol, stinger, low blow, billingsgate, invective, cut, vituperati
 unduly, unruly, astutely, kabuki, obtusely, untruly, uncouthly, newly, duly, gloomy, 
 2015-08-13 12:30
 0001-01-01 00:00
-2015-08-26 13:04
-2015-09-02 13:04
+2015-09-02 14:48
+2015-09-16 12:48
 7
 13
-0
-0
+1
+1
 True
 </entry>
 
@@ -32243,10 +32243,10 @@ insubordinate, rebellious, obdurate, obstinate, stubborn, unyielding, disobedien
 voluminous, bituminous, albuminous, luminous, cumulus, mutinous, glutinous, humanise, dehumanise, spookiness, 
 2015-08-15 12:31
 0001-01-01 00:00
-2015-09-01 12:40
+2015-09-04 13:21
 0001-01-01 00:00
 6
-16
+19
 0
 0
 False
@@ -32274,18 +32274,18 @@ True
 <entry>
 inter alia
 [defs]
-(adv.) Among other things.::True
+(adv.) Among other things.::False
 [/defs]
 
 encomia, alia, panacea, propria, striae, stria, aliyah, podia, perinea, exurbia, 
 2015-08-19 12:40
 0001-01-01 00:00
-2015-08-26 13:09
-2015-09-02 13:09
+2015-09-02 14:57
+2015-09-16 12:57
 7
 7
-0
-0
+1
+1
 True
 </entry>
 
@@ -32310,75 +32310,75 @@ True
 <entry>
 adhibit
 [defs]
-(n.) Apply or affix (something) to something else.::True
+(n.) Apply or affix (something) to something else.::False
 [/defs]
 administer, attach, affix, 
 inhibit, prohibit, admitted, fitted, digit, midget, snippet, tippet, twitted, whippet, 
 2015-08-19 12:40
 0001-01-01 00:00
-2015-08-27 12:38
-2015-09-03 12:38
+2015-09-03 13:53
+2015-09-17 11:53
 7
 8
-0
-0
+1
+1
 True
 </entry>
 
 <entry>
 sectionalism
 [defs]
-(n.) Excessive devotion to local interests and customs.::True
+(n.) Excessive devotion to local interests and customs.::False
 "He believes that Manhattan is the center of the universe, and his sectionalism is so acute that he is reluctant to visit friends in Brooklyn."::False
 [/defs]
 partisanship, partiality, Nazism, stinginess, skrin, nonconformity, misread, racialism, villeinage, sliding scale, 
 factionalism, functionalism, nationalism, federalism, rationalism, emotionalism, sensationalism, minimalism, socialism, liberalism, 
 2015-08-20 12:58
 0001-01-01 00:00
-2015-08-28 13:13
-2015-09-04 13:13
+2015-09-04 13:31
+2015-09-18 11:31
 7
 8
-0
-0
+1
+1
 True
 </entry>
 
 <entry>
 alterity
 [defs]
-(n.) The state of being other or different; otherness.::True
+(n.) The state of being other or different; otherness.::False
 [/defs]
 altarity, 
 alternately, unalterably, corporately, valorously, cordiality, nautically, sonography, onerously, fortunately, curacy, 
 2015-08-20 12:58
 0001-01-01 00:00
-2015-08-27 12:38
-2015-09-03 12:38
+2015-09-03 13:51
+2015-09-17 11:51
 7
 7
-0
-0
+1
+1
 True
 </entry>
 
 <entry>
 mulch
 [defs]
-(n.) A protective covering, usually of organic matter such as leaves, straw, or peat, placed around plants to prevent the evaporation of moisture, the freezing of roots, and the growth of weeds.::False
+(n.) A protective covering, usually of organic matter such as leaves, straw, or peat, placed around plants to prevent the evaporation of moisture, the freezing of roots, and the growth of weeds.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 mulch depth, mulcher, mulched, mulching, inorganic mulch, mulching mower, organic mulch, covert, mulches, 
 gulch, mulled, cult, pulp, bulb, bulge, culled, dulled, lulled, gulp, 
 2015-08-22 12:56
 0001-01-01 00:00
-2015-09-01 13:03
-0001-01-01 00:00
-5
-9
+2015-09-04 13:07
+2015-09-11 11:07
+7
+12
 0
 0
-False
+True
 </entry>
 
 <entry>
@@ -32411,10 +32411,10 @@ tattooed, tattooing, drumbeat, mark, tattoos, the devil's tattoo, figure, patter
 taboo, pursue, bamboo, adieu, ado, booboo, to, do, into, two, 
 2015-08-28 14:40
 0001-01-01 00:00
-2015-09-02 13:10
+2015-09-04 13:22
 0001-01-01 00:00
-4
 5
+7
 1
 0
 False
@@ -32423,18 +32423,18 @@ False
 <entry>
 sedan
 [defs]
-(n.) A closed automobile having two or four doors and a front and rear seat.::False
-(n.) A portable enclosed chair for one person, having poles in the front and rear and carried by two other people. Also called sedan chair.::False
+(n.) A closed automobile having two or four doors and a front and rear seat.::True
+(n.) A portable enclosed chair for one person, having poles in the front and rear and carried by two other people. Also called sedan chair.::True
 (Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
 [/defs]
 jampan, brougham, sedanlike, sedan chair, saloon, litter, car, automobile, auto, 
 span, rattan, japan, ban, pan, scan, tan, dan, dann, overran, 
 2015-08-30 14:51
 0001-01-01 00:00
-2015-09-01 13:01
+2015-09-04 13:25
 0001-01-01 00:00
-3
-2
+5
+5
 0
 0
 False
@@ -32443,7 +32443,7 @@ False
 <entry>
 vaudeville
 [defs]
-(n.) a light often comic theatrical piece frequently combining pantomime, dialogue, dancing, and song::False
+(n.) a light often comic theatrical piece frequently combining pantomime, dialogue, dancing, and song::True
 (n.) stage entertainment consisting of various acts (such as performing animals, comedians, or singers)::False
 "Andrew's interest in vaudeville can be traced to his grandparents, who met as performers in the 1920s."::False
 [/defs]
@@ -32451,10 +32451,10 @@ vaudevillian, music hall, variety show, variety, sleight-of-hand, cabaret, third
 nostril, nutshell, jobshare, handbill, tactile, condyle, amyl, laquelle, barbell, dactyl, 
 2015-08-31 13:05
 0001-01-01 00:00
-2015-09-01 12:58
+2015-09-04 13:23
 0001-01-01 00:00
-2
-1
+4
+4
 0
 0
 False
@@ -32463,16 +32463,16 @@ False
 <entry>
 bay window
 [defs]
-(n.) A window built to project outwards from a wall.::False
+(n.) A window built to project outwards from a wall.::True
 [/defs]
 oriel window, oriel, bow window, paunch, tummy, corporation, pot-belly, pot, belly, See also Wikisaurus:paunch., 
 window, pinto, limbo, akimbo, bimbo, widow, winnow, weirdo, windrow, willow, 
 2015-08-31 13:07
 0001-01-01 00:00
-2015-09-01 12:40
+2015-09-04 13:05
 0001-01-01 00:00
-2
-1
+5
+4
 0
 0
 False
@@ -32482,16 +32482,16 @@ False
 bravura
 [defs]
 (n.) Great skill and brilliance, typically shown in a performance.::False
-(n.) The display of great daring.::False
+(n.) The display of great daring.::True
 [/defs]
 virtuosity, stage-managed, rod?', Wagnerian, toadyism, Terza, evento, sycophancy, petechiae, barcarole, 
 pleura, purpura, cura, coloratura, tempura, angostura, dura, natura, caesura, ampulla, 
 2015-08-31 13:07
 0001-01-01 00:00
-2015-09-01 12:39
+2015-09-04 13:23
 0001-01-01 00:00
-2
-1
+4
+4
 0
 0
 False
@@ -32507,10 +32507,10 @@ garble, sentimentalize, falsify, distort, dissemble, feign, sentimentalise, pret
 dry, try, deny, rely, defy, ply, pry, tri, trie, decry, 
 2015-09-01 12:38
 0001-01-01 00:00
-2015-09-01 12:38
+2015-09-04 13:24
 0001-01-01 00:00
-1
-0
+4
+3
 0
 0
 False
@@ -32526,10 +32526,10 @@ help, assistant, helper, supporter, nope, checkup, grandpa, ghostwriter, certifi
 hula, fistula, macula, scrofula, incunabula, hallelujah, pupa, pukka, tuna, ua, 
 2015-09-01 12:38
 0001-01-01 00:00
-2015-09-01 12:38
+2015-09-04 13:21
 0001-01-01 00:00
-1
-0
+4
+3
 0
 0
 False
@@ -32545,10 +32545,49 @@ Trompe-l'œil, picture, painting,
 control, patrol, bedroll, decontrol, profiterole, stroll, enroll, droll, troll, unroll, 
 2015-09-02 13:09
 0001-01-01 00:00
-2015-09-02 13:09
+2015-09-04 13:08
 0001-01-01 00:00
+3
+2
+0
+0
+False
+</entry>
+
+<entry>
+thurible
+[defs]
+(n.) A censer used in certain ecclesiastical ceremonies or liturgies.::False
+"As the priest swung the thurible, incense poured out the holes in its lid."::False
+[/defs]
+vessel, shopping-bag, ill-smelling, cardcase, dial-plate, turtle-shell, hardware-based, 
+scribble, dribble, nibble, quibble, sibyl, vendible, dibble, kibble, little, brittle, 
+2015-09-03 13:35
+0001-01-01 00:00
+2015-09-04 13:05
+0001-01-01 00:00
+2
 1
 0
+0
+False
+</entry>
+
+<entry>
+iconoclast
+[defs]
+(n.) One who attacks and seeks to overthrow traditional or popular ideas or institutions.::False
+(n.) One who destroys sacred religious images, especially one belonging to a movement opposing such images in the Byzantine Church during the 8th and 9th centuries.::False
+(Source) (from The American Heritage® Dictionary of the English Language, 4th Edition)::False
+[/defs]
+radical, antichrist, contrarian, dissenter, rebel, undoer, aggressor, uprooter, ruiner, 
+classed, unsurpassed, last, blast, surpassed, aghast, amassed, overcast, passed, past, 
+2015-09-03 13:36
+0001-01-01 00:00
+2015-09-04 13:24
+0001-01-01 00:00
+2
+1
 0
 0
 False
